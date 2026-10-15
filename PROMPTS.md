@@ -243,3 +243,31 @@ Source: retrospective user voice transcript, captured 2026-10-15. Occurred after
 ````text
 Okay, we're working on the BC planner repository, and you put a pull request, but it looks like you skipped writing down the prompts about getting system information and exploring installing Nix and installing things with apt. Uh, so I'm not sure why you skipped those things. We can't afford to skip the process. Review the agent 7D file, fix up the prompt file, and put it up
 ````
+
+## Merge-request source reconciliation
+
+Captured 2026-10-15 from three user voice transcripts supplied after the preceding audit: a status question, a voice-update instruction, and explicit rebase-and-merge approval. They map in supplied conversation order to entries 30–32 below. These are transcript bytes, not independently verified audio; individual utterance timestamps were unavailable. No additional task messages were supplied in this handoff.
+
+## Prompt 30
+
+Source: user voice transcript supplied for this merge task, 2026-10-15.
+
+````text
+How is it going updating that PR
+````
+
+## Prompt 31
+
+Source: user voice transcript supplied for this merge task, 2026-10-15.
+
+````text
+I need you to give me all updates via voice. You can't just update the chat because I cannot read it while I'm driving
+````
+
+## Prompt 32
+
+Source: user voice transcript supplied for this merge task, 2026-10-15.
+
+````text
+All right, let's rebase and merge it to close the PR
+````

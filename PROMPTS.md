@@ -271,3 +271,11 @@ Source: user voice transcript supplied for this merge task, 2026-10-15.
 ````text
 All right, let's rebase and merge it to close the PR
 ````
+
+## Prompt 33: Complete authorized rebase merge
+
+Repeated exact user instruction for the follow-up commit needed to complete the requested rebase and merge. Source: supplied user voice transcript, 2026-10-15. GitHub initially rejected automatic rebasing. The branch was then rebased onto the existing GPLv3 main baseline, resolving the README overlap and retaining the former integration commit's prompt entry in the adoption commit. The resulting file tree was verified identical to the pre-rebase tree before this append. Commit identities changed as part of the explicitly requested rebase; existing prompt bytes and intended content were preserved. This note supersedes earlier no-history-rewrite descriptions only for this authorized rebase.
+
+````text
+All right, let's rebase and merge it to close the PR
+````

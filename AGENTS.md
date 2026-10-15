@@ -9,3 +9,11 @@
 
 - See CONTRIBUTING.md for retrospective voice transcription, sensitive-data exceptions, and CI limits. Never invent exact quotes or publish secrets. Record a clearly marked omission instead and explain it outside the prompt.
 - Historical commits before this policy are not rewritten or represented as compliant. Keep design PRs open until the user approves merging.
+
+## Completeness before every commit
+
+- Reconcile every available task-related user message since the last recorded source boundary with PROMPTS.md, including questions, clarifications, status requests, corrections, and follow-ups, not only instructions that directly changed a file.
+- Before committing, list the messages checked and map each to an existing or new prompt entry. Record the source coverage, missing context, and any exclusions outside the verbatim text; do not claim an audit covers inaccessible history.
+- When work is delegated, pass exact relevant user prompts and require the worker to report which entries capture them. A summary of an instruction is not a substitute for its transcript. Obtain missing exact text from the coordinating conversation before claiming complete provenance.
+- If an older omission is discovered, append it with its original relative occurrence and retrospective capture metadata. Do not reorder or edit existing entries to repair chronology.
+- Byte-level hooks and CI cannot detect an omitted conversation message. Perform this source-to-record reconciliation even when all automated checks pass.

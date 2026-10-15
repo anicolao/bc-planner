@@ -21,3 +21,13 @@ CI runs tests and validates prompt additions in every post-adoption commit in th
 Hooks can be bypassed and CI workflows can be changed. These checks cannot prove a prompt is a faithful transcript or prevent every malicious edit. Making the CI check required through branch protection/rulesets is a separate repository setting; it has not been configured by this change. Reviewers should inspect changes to the policy, validator, and workflows themselves.
 
 The initial local hook and test implementation is adapted from anicolao/bcenv (GPL-3.0-only). bcenv is unchanged.
+
+## Pre-commit completeness checklist
+
+1. Read AGENTS.md and gather the available task-related user messages since the last recorded source boundary, including questions and follow-ups.
+2. Compare exact text against PROMPTS.md. Map each message to an existing entry or append a new entry; record coverage and any unavailable source material outside quotations. Do not silently narrow the record to implementation commands.
+3. For historical omissions, append the exact recovered text and note where it occurred relative to existing entries. Preserve all old bytes. Never invent a missing ending.
+4. Ensure delegated work returns both its changes and the exact prompts it used. Request unavailable wording before describing provenance as complete.
+5. Stage the record with the changes, run the hooks and tests, and review the source-to-entry reconciliation separately. A passing byte check is not a completeness check.
+
+For this correction, the nine supplied voice utterances map in conversation order to entries 23, 24, 25, 20, 26, 22, 27, 28, and 29. Entries 20 and 22 already existed; the others were recovered append-only. The scope is those supplied transcripts, not an assertion that all historical audio or messages were available.

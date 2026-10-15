@@ -181,3 +181,65 @@ Source: available user voice transcript, 2026-10-15. Recorded with the installat
 ````text
 I've forgotten what version of Debian you're on, but try to get Nix installed and see if you can run Nix to install further software
 ````
+
+## Retrospective completeness correction
+
+Captured 2026-10-15 from the available user voice transcripts forwarded for this audit. Exact utterance timestamps were not supplied. These entries preserve transcript text, not a guarantee of verbatim audio. They fill gaps without moving, editing, or deleting prior bytes. Entry numbers describe append order; the occurrence notes below recover the conversation order where known.
+
+The audit compared nine supplied task-related utterances against the record: the system-information write instruction was already recorded as Prompt 20, and the Nix installation instruction was already recorded as Prompt 22. They are not missing and are not duplicated here. The seven remaining utterances are appended below, including this correction request. The earlier record captured the two direct implementation requests but omitted the surrounding system-inspection, clarification, status, apt, and VM-control questions. Passing hooks did not establish completeness: they checked append-only additions without access to the conversation. This audit establishes coverage of these nine supplied utterances, not of inaccessible conversation or audio.
+
+## Prompt 23: Inspect execution system
+
+Source: retrospective user voice transcript, captured 2026-10-15. Occurred before Prompt 20.
+
+````text
+Why are you doing that? I'd also like to understand more about the system that you're running on. Normally, I do things like run uname dash A, cat proc CPU info, and look at free, to understand what the CPUs are, how much RAM we have, and what operating system that we have available. What can you tell me about the system that you're on
+````
+
+## Prompt 24: Clarify GitHub execution machine
+
+Source: retrospective user voice transcript, captured 2026-10-15. Occurred after the question recovered as Prompt 23 and before Prompt 20.
+
+````text
+Yes, I understand. This is the machine that, for example, if you're running gh on, correct
+````
+
+## Prompt 25: Ask available disk space
+
+Source: retrospective user voice transcript, captured 2026-10-15. Occurred after the question recovered as Prompt 24 and before Prompt 20.
+
+````text
+Very good. And I forgot, uh... How much disk space is available
+````
+
+## Prompt 26: Request pull request status
+
+Source: retrospective user voice transcript, captured 2026-10-15. Occurred after Prompt 20 and before Prompt 22.
+
+````text
+Great, let me know when the PR is updated How are we doing on updating that PR
+````
+
+## Prompt 27: Ask apt installation capability
+
+Source: retrospective user voice transcript, captured 2026-10-15. Occurred after Prompt 22.
+
+````text
+Are you able to install things with apt
+````
+
+## Prompt 28: Ask virtual machine control
+
+Source: retrospective user voice transcript, captured 2026-10-15. Occurred after the question recovered as Prompt 27. The available transcript ends at “using”; no missing ending has been reconstructed.
+
+````text
+Do we have any control over the VM that was created for you when we started using
+````
+
+## Prompt 29: Correct missing prompt provenance
+
+Source: retrospective user voice transcript, captured 2026-10-15. Occurred after the question recovered as Prompt 28. “agent 7D” is preserved as transcribed; the requested repository instruction file is interpreted as AGENTS.md outside the quotation.
+
+````text
+Okay, we're working on the BC planner repository, and you put a pull request, but it looks like you skipped writing down the prompts about getting system information and exploring installing Nix and installing things with apt. Uh, so I'm not sure why you skipped those things. We can't afford to skip the process. Review the agent 7D file, fix up the prompt file, and put it up
+````

@@ -50,3 +50,26 @@ Missing quota files do not mean unlimited resources. Available memory, free stor
 - The default npm cache was also not writable. `npm ci --cache /tmp/bc-planner-npm-cache` succeeded, installed pinned Husky, and activated hooks. This cache is disposable.
 - This session's workspace is usable for this task. Persistence across restarts, durable hosting, background-process lifetime, dedicated capacity, and future executor equivalence are not verified.
 - These measurements do not select a Battlecode hosting platform or authorize running competitors or spending on compute.
+
+## Nix installation probe (2026-10-15, approximately 23:12 UTC)
+
+**Result: blocked before installation; installing or running a package with Nix has not been demonstrated.**
+
+The repository-work executor still reports Debian 13.6. `command -v nix` found no Nix executable; `/nix` does not exist; `sudo` is unavailable; the shell runs as the unprivileged `agent` user. The official installer was successfully downloaded from <https://nixos.org/nix/install> into the writable workspace. This verifies that download, not access to every Nix package/cache endpoint.
+
+The [official binary-installation instructions](https://nix.dev/manual/nix/stable/installation/installing-binary) describe a single-user installation using `--no-daemon`, with `/nix` owned by the invoking user. This avoids assuming a running systemd daemon, but it still requires a writable `/nix` store. The current execution permissions allow writes in the task workspace and `/tmp`, not `/nix`.
+
+A normal elevated request to run `mkdir -m 0755 /nix` failed in the execution launcher before the command ran: it could not create an internal state file on a read-only filesystem. This was a launcher failure, not evidence that the Nix installer itself failed. No protected state path was accessed or modified, no alternative namespace or mount workaround was attempted, and no GitHub credentials were changed.
+
+Read-only inspection and download commands used:
+
+```sh
+cat /etc/os-release
+command -v nix
+command -v sudo
+id
+ls -ld / /nix
+curl -fL --max-time 30 https://nixos.org/nix/install -o install.sh
+```
+
+Next requirement: a supported execution environment or approved working write route for `/nix`, plus writable user configuration/profile locations. Once that is available, inspect and run the official single-user installer and verify a real small package installation and execution (for example GNU Hello). Until then, do not rely on Nix for this runtime or describe software installation through Nix as working. Workspace relocation, privileged mounts, and security-setting changes are not assumed to be authorized workarounds.

@@ -173,3 +173,11 @@ Repeated exact instruction for the merge of existing public GPLv3 main-branch ch
 ````text
 Alright, so let's do that. It sounds like we need some commit hook and so on to make it all enforced properly, and we need to go back and record all the voice prompts that we can remember that led us up to this point for the design PR. And that can be on the design PR as part of it, uh...heritage
 ````
+
+## Prompt 22: Probe Nix package installation
+
+Source: available user voice transcript, 2026-10-15. Recorded with the installation probe documentation. This preserves the transcript as available, not a guarantee of verbatim audio. The installation was blocked before execution; no successful Nix package run is claimed.
+
+````text
+I've forgotten what version of Debian you're on, but try to get Nix installed and see if you can run Nix to install further software
+````

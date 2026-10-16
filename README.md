@@ -8,3 +8,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) and [AGENTS.md](AGENTS.md). Install hooks
 ## License
 
 This project is licensed under the GNU General Public License, version 3 (GPL-3.0). See [LICENSE](LICENSE) for the full text.
+
+## Runtime experiments
+
+[Consolidated findings and provenance](experiments/README.md): local Nix, WireGuard and SSH probes retained; usable remote access was not achieved and is deferred because there is no immediate need.

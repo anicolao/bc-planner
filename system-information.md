@@ -73,3 +73,20 @@ curl -fL --max-time 30 https://nixos.org/nix/install -o install.sh
 ```
 
 Next requirement: a supported execution environment or approved working write route for `/nix`, plus writable user configuration/profile locations. Once that is available, inspect and run the official single-user installer and verify a real small package installation and execution (for example GNU Hello). Until then, do not rely on Nix for this runtime or describe software installation through Nix as working. Workspace relocation, privileged mounts, and security-setting changes are not assumed to be authorized workarounds.
+
+## Alternate logical Nix store experiment (2026-10-16)
+
+**Update to the earlier probe: a workspace-local Nix executable and alternate logical store now work for limited, measured tasks.** This does not make the standard `/nix` installation available or establish general nixpkgs compatibility. See [the experiment report](experiments/alternate-nix-store.md) for the bootstrap, commands, evidence, and limits.
+
+- Debian-packaged Nix 2.26.3 and three missing shared libraries were extracted under the writable workspace without system installation.
+- Nix fetched GNU Hello source and an official Debian Hello binary package into a custom store. After workspace extraction and Nix registration, the packaged executable ran from that store and printed `Hello, world!`.
+- With explicit user approval for **one command**, Nix built a tiny C program using the host shell/compiler, and the output ran successfully from the alternate store. Only Nix's own build sandbox was disabled for that command; the platform sandbox remained in place. No global setting was changed.
+- No `/nix` writes, root, mounts, chroot, namespaces, system apt installation, or credential changes were involved.
+- The changed logical store path prevents use of the normal `/nix/store` binary cache. This is an impure host-tool experiment, not a hermetic nixpkgs toolchain or a validated Battlecode environment.
+
+
+## Canonical-store cache execution update (2026-10-16)
+
+A later, explicitly approved minimal-root test succeeded: Nix downloaded GNU Hello and four dependencies from the normal Nix binary cache into a workspace-owned root while retaining logical `/nix/store` paths. Recursive trusted-signature/content verification passed. The program then printed `Hello, world!` inside a single child user namespace and chroot, with no bind mounts or host-root mirror. Host `/nix` and the outer sandbox were unchanged. See the [full commands, closure and limitations](experiments/alternate-nix-store.md#successful-canonical-store-execution-in-a-minimal-root-2026-10-16).
+
+The earlier limitation applies to the alternate **logical** store, not this separate canonical-logical-path root store. Ordinary cached binary execution has now been demonstrated for one small closure. General builds and a complete Nix development environment remain unverified.

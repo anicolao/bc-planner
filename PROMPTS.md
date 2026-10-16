@@ -279,3 +279,347 @@ Repeated exact user instruction for the follow-up commit needed to complete the 
 ````text
 All right, let's rebase and merge it to close the PR
 ````
+
+
+## Imported PR #2 provenance
+
+Exact append from [9840f6a8ce14b77e9a963ef920c525f51ef7a1dc](https://github.com/anicolao/bc-planner/commit/9840f6a8ce14b77e9a963ef920c525f51ef7a1dc), relative to 5bae4f192fb7bcd24296f28f57016dbd6e9efd44. Original entry numbers are retained; independent branches may reuse numbers. Imported in PR order; this is integration order, not a reconstructed global utterance chronology.
+
+## Alternate-store experiment source reconciliation
+
+Captured 2026-10-16 from available user voice transcripts supplied to this task. Entries 34–37 cover the prior unrecorded merge-status question, two consecutive request fragments, and the test approval. Voice text is a transcript, not independently verified audio; per-utterance timestamps and inaccessible conversation were not reconstructed. Existing bytes are retained. No credentials or unrelated conversation are included.
+
+## Prompt 34: Recover merge status question
+
+Source: supplied user voice transcript; captured 2026-10-16. Retrospective capture of the supplied status question during the preceding rebase/merge task, before the alternate-store request. It was not present in entries 30–33.
+
+````text
+How’s that going? You’d be taking too long
+````
+
+## Prompt 35: Explore alternate Nix store
+
+Source: supplied user voice transcript; captured 2026-10-16. First available fragment of the new request; no missing ending reconstructed.
+
+````text
+All right, let's do some more experiments involving Nix. We found that we couldn't use
+````
+
+## Prompt 36: Continue alternate store request
+
+Source: supplied user voice transcript; captured 2026-10-16. Continuation fragment; transcription errors including “half” are preserved.
+
+````text
+install it in a way that would use half of the slash nix the nix store. My understanding is that it is possible to use other paths for the nix store other than slash nix. Let’s try to figure out if we can make that work
+````
+
+## Prompt 37: Approve single build test
+
+Source: supplied user voice transcript; captured 2026-10-16. Reply to the explicit question: “To actually build and run even a tiny test package here, I need to turn off Nix’s own build isolation for that command, while keeping the platform sandbox in place. Can I do that for this test?” Approval is limited to that one tiny host-tool build, not a global configuration change.
+
+````text
+Sure
+````
+
+
+## Chroot feasibility source reconciliation
+
+Captured 2026-10-16 from the available task-related user voice transcripts after Prompt 37. Entries 38–40 record the PR-status question, binary-cache clarification, and new chroot request in supplied order. Duplicate deliveries of those utterances are recorded once. Further deliveries of “Sure” appear in the supplied window without reliable identifiers establishing additional distinct utterances; Prompt 37 records the known scoped approval, and no broader approval is inferred. Transcript text is not independently verified audio. Inaccessible history and missing timestamps have not been reconstructed.
+
+## Prompt 38: Check experiment PR status
+
+Source: supplied user voice transcript; captured 2026-10-16.
+
+````text
+Are you done with that PR yet
+````
+
+## Prompt 39: Clarify binary cache limitation
+
+Source: supplied user voice transcript; captured 2026-10-16.
+
+````text
+Let’s review the limitations. So I understand correctly that the Nix store path is not slash-Nix, but something else, and that means that we can’t install binaries from a binary cache
+````
+
+## Prompt 40: Explore workspace chroot layout
+
+Source: supplied user voice transcript; captured 2026-10-16. This requests a legitimate experiment within existing execution permissions; it does not authorize bypassing the platform sandbox.
+
+````text
+Let’s try another experiment. Is it possible to use a chroot to set up a new root directory that contains all the things that are in our real root, plus a Nix directory that’s writable by us
+````
+
+
+## Prompt 41: Consider other root layouts
+
+Source: supplied user voice transcript; captured 2026-10-16 after Prompt 40. This is the newly supplied follow-up; mirrored fragment delivery is not a separate instruction. The earlier source reconciliation remains unchanged.
+
+````text
+Can you come up with any other way to make a root that looks the way Nix wants it to look that will work on the system that we're on
+````
+
+
+## Prompt 42: Verify tracing prerequisite
+
+Repeated exact Prompt 41 for the follow-up commit recording a harmless own-child tracing diagnostic. Source: supplied user voice transcript, captured 2026-10-16. No new user instruction is inferred; this is continuation of that experiment.
+
+````text
+Can you come up with any other way to make a root that looks the way Nix wants it to look that will work on the system that we're on
+````
+
+
+## Prompt 43: Test namespace option separately
+
+Source: supplied user voice transcript; captured 2026-10-16 after the tracing diagnostic. This asks to test the previously untested first option, rather than infer its result from ptrace failure.
+
+````text
+I thought you suggested two different options, but you didn’t test the first one
+````
+
+
+## Prompt 44: Approve minimal canonical root
+
+Source: supplied user voice transcript; captured 2026-10-16 after Prompt 43. Reply to this explicit bounded-test question: “Okay, I have a bounded test: put GNU Hello and its dependencies in a workspace-only root, then run it at slash nix store inside a child user namespace, without mirroring the host root or using bind mounts. The host account stays unprivileged. May I run that one test with root confined to the child namespace?” The following response authorizes that test. It does not remove platform restrictions.
+
+````text
+Yes, stop asking me for permissions to run things on this VM
+````
+
+
+## Imported PR #3 provenance
+
+Exact append from [3a771d21077932c1459fa911a38727c0026bd66d](https://github.com/anicolao/bc-planner/commit/3a771d21077932c1459fa911a38727c0026bd66d), relative to 5bae4f192fb7bcd24296f28f57016dbd6e9efd44. Original entry numbers are retained; independent branches may reuse numbers. Imported in PR order; this is integration order, not a reconstructed global utterance chronology.
+
+## Prompt 34: Pin tools and prepare Tailscale
+
+Source: supplied user voice transcript, captured 2026-10-16. This branch starts from merged PR #1; intermediate Nix experiments and their prompts remain on separate PR #2. This records the new environment implementation request, not a claim of complete audio access. The namespace/bootstrap capability was established by those experiments. No network enrollment is inferred until the user chooses and authorizes the target.
+
+````text
+Okay, so now that we have Nix working, let’s create a flake, sync our environment so that we install required tools, and the first of those is going to be Tailscale. Let’s make sure that we have the ability to add this node to a Tailscale network
+````
+
+## Prompt 35: Request environment setup status
+
+Source: exact user follow-up supplied by coordinating conversation, captured 2026-10-16. Coverage reconciliation for this commit: new task request maps to Prompt 34; supplied status follow-up maps to Prompt 35. Earlier experiment prompts belong to PR #2, not repeated here. Voice transcription may differ from original audio; mirrored duplicates are not new utterances.
+
+````text
+Where are we at
+````
+
+## Prompt 36: Diagnose denied network inspection
+
+Source: exact user voice transcript supplied by the coordinating conversation, captured 2026-10-16. Transcription is not independently verified audio. This records a follow-up after the installation result.
+
+````text
+So, what exactly is the thing that’s being denied, and are there any workarounds to make that work
+````
+
+## Prompt 37: Explore no-netlink operation
+
+Source: exact follow-up supplied by the coordinating conversation, captured 2026-10-16. Source reconciliation: the two newly supplied task messages map to entries 36–37. Earlier entries remain byte-for-byte unchanged. No claim of access to additional audio or missing transcript context.
+
+````text
+Sounds like that might be a harder requirement. Is there any way to get Tailscale to work without it
+````
+
+
+## Imported PR #4 provenance
+
+Exact append from [5a6a1ec1dfc0a497eea878aae7503152264940bd](https://github.com/anicolao/bc-planner/commit/5a6a1ec1dfc0a497eea878aae7503152264940bd), relative to 5bae4f192fb7bcd24296f28f57016dbd6e9efd44. Original entry numbers are retained; independent branches may reuse numbers. Imported in PR order; this is integration order, not a reconstructed global utterance chronology.
+
+
+## WireGuard experiment source coverage
+
+Captured 2026-10-16 from the available user voice transcripts and coordinating conversation. These are transcriptions, not a guarantee of verbatim audio. Coverage for this branch is the four task-related utterances below, in supplied order. Earlier Nix/Tailscale prompts are recorded in their separate PRs; this branch starts from merged main and does not claim those PR records are already merged. No inaccessible audio was reconstructed. The apparent transcription “You Nix” is interpreted as “Use Nix” outside the quote only. Mapping: endpoint request → 34; status question → 35; Go installation correction → 36; AGENTS policy instruction → 37.
+
+## Prompt 34: Explore userspace WireGuard endpoint
+
+Source: available user voice transcript, 2026-10-16.
+
+````text
+All right, let’s go lower level. Can we get a WireGuard endpoint set up
+````
+
+## Prompt 35: Check endpoint experiment progress
+
+Source: available user voice transcript, 2026-10-16.
+
+````text
+How’s that going
+````
+
+## Prompt 36: Use Nix for Go
+
+Source: available user voice transcript, 2026-10-16.
+
+````text
+You Nix to install Go
+````
+
+## Prompt 37: Require flake managed installs
+
+Source: available user voice transcript, 2026-10-16.
+
+````text
+Make sure agents dot md makes it clear that you must use the Nix flake for all software installs
+````
+
+
+## Imported PR #5 provenance
+
+Exact append from [9313ba997a989c5f54d6ee88f0e5407bb5726ecb](https://github.com/anicolao/bc-planner/commit/9313ba997a989c5f54d6ee88f0e5407bb5726ecb), relative to 5a6a1ec1dfc0a497eea878aae7503152264940bd. Original entry numbers are retained; independent branches may reuse numbers. Imported in PR order; this is integration order, not a reconstructed global utterance chronology.
+
+
+## Local SSH experiment source coverage
+
+Captured 2026-10-16 from available voice transcriptions supplied by the coordinating conversation. Entries 38–51 map the remote-peer question, public endpoint question, Tailscale interoperability question, public-IP request, UDP echo question, scope correction, errno question, GitHub UDP test, HTTPS question, exact HTTPS test question, SSH daemon question, port-22 clarification, short utterance, and Nix SSHD request in supplied order. Transcription errors are retained. The flake-only instruction is already recorded in entry 37. No inaccessible audio is reconstructed. The interrupted-call recall below was supplied retrospectively without its exact position among these utterances; entry 52 records that uncertainty rather than inventing chronology. Diagnostics in the experiment README are summarized evidence, not user quotes.
+
+## Prompt 38
+
+Source: supplied user voice transcript, 2026-10-16.
+
+````text
+So how do we configure a remote peer for the test
+````
+
+## Prompt 39
+
+Source: supplied user voice transcript, 2026-10-16.
+
+````text
+No, I'm gonna have to set up an endpoint that'll work. I don't have one. So I need a machine that has um... the ability to receive UDP on a public facing IP, right
+````
+
+## Prompt 40
+
+Source: supplied user voice transcript, 2026-10-16.
+
+````text
+If I use Tail Scale on the target machine, will I be able to extract the right information to give you to configure the WireGuard side of the endpoint
+````
+
+## Prompt 41
+
+Source: supplied user voice transcript, 2026-10-16.
+
+````text
+Um ...let's uh... do something like... curl whatismyip dot com, to figure out if we're behind some kind of NAT on the...the M
+````
+
+## Prompt 42
+
+Source: supplied user voice transcript, 2026-10-16.
+
+````text
+Is there any public facing... service we can use to test... outbound UDP? Is there a UDP echo service we can hit
+````
+
+## Prompt 43
+
+Source: supplied user voice transcript, 2026-10-16.
+
+````text
+But... Hmm. I’m not sure you can say any. You can say DNS packets are being filtered. Um... But we don’t know about any packet, right
+````
+
+## Prompt 44
+
+Source: supplied user voice transcript, 2026-10-16.
+
+````text
+So... we're getting network unreachable, or what's the error we're getting
+````
+
+## Prompt 45
+
+Source: supplied user voice transcript, 2026-10-16.
+
+````text
+Is there some way we can test UDP to some GitHub target
+````
+
+## Prompt 46
+
+Source: supplied user voice transcript, 2026-10-16.
+
+````text
+So... you say HTTPS works? Why? Is that because that’s what
+````
+
+## Prompt 47
+
+Source: supplied user voice transcript, 2026-10-16.
+
+````text
+What exact test did you do for HTTPS
+````
+
+## Prompt 48
+
+Source: supplied user voice transcript, 2026-10-16.
+
+````text
+Nonetheless, it looks like UDP is blocked, but TCP is not. Do we have a necessary, running on this VM
+````
+
+## Prompt 49
+
+Source: supplied user voice transcript, 2026-10-16.
+
+````text
+I mean... Do we have... port 22 open on the VM, that is listening with the SSH
+````
+
+## Prompt 50
+
+Source: supplied user voice transcript, 2026-10-16.
+
+````text
+Uh
+````
+
+## Prompt 51
+
+Source: supplied user voice transcript, 2026-10-16.
+
+````text
+Can we run ...an SSHD installed by Nix bound to some localhost port
+````
+
+## Prompt 52: Recall interrupted call context
+
+Retrospective capture from supplied voice transcript, 2026-10-16; exact relative occurrence within the intervening conversation unavailable.
+
+````text
+Hi, can you recall where we were at? Our call got interrupted
+````
+
+
+## Consolidation source reconciliation
+
+Captured 2026-10-16. All source branch prompt additions above are preserved byte-for-byte. The available parent transcript after PR #5 contains three distinct user messages, mapped below to entries 53-55. The repeated mirrored SSHD request is the same utterance already in PR #5 entry 51; no extra entry is needed. Worker/lifecycle/environment notifications are not user task prompts. Earlier entries 38-52 retain their original bounded source coverage. Inaccessible audio/history is not audited or reconstructed.
+
+## Prompt 53: Acknowledge local SSH probe
+
+Source: exact user text supplied by the coordinating conversation, 2026-10-16.
+
+````text
+Mm Mm-hmm
+````
+
+## Prompt 54: Review experiment status
+
+Source: exact user text supplied by the coordinating conversation, 2026-10-16.
+
+````text
+Review and summarize the status
+````
+
+## Prompt 55: Consolidate and begin prior-art research
+
+Source: exact user text supplied by the coordinating conversation, 2026-10-16.
+
+````text
+OK let's consolidate the branches, conclude that we failed to provide remote access but don't have an immediate need for it, rebase and merge onto main. Then let's put up a new branch that examine's terry's prior art on battlecode implementation.
+````

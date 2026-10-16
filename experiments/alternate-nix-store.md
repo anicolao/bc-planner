@@ -136,3 +136,12 @@ done
 This follow-up is a documentation and capability assessment, **not a successful or failed chroot execution test**. No chroot, user namespace, mount, ptrace emulation, root copying, or system-directory write was attempted. We could not establish a supported namespace/mount execution route consistent with the current platform restrictions, and stopped before those operations. The earlier approval to disable Nix's build sandbox covered only the tiny host-tool build, not this setup.
 
 A practical next step is an explicitly supported runner with writable canonical `/nix`, or a documented platform-supported local-root-store namespace route that preserves the outer sandbox. A minimal package closure is preferable to copying the real root, which could expose unrelated credentials and data. The working workspace-logical-store experiment remains usable within its stated limits; this assessment does not upgrade it to ordinary cached nixpkgs execution.
+
+
+### Other approaches considered
+
+[PRoot](https://proot-me.github.io/) is a concrete userspace alternative: it translates filesystem-related system calls with `ptrace`, emulating a different root and path bindings without real privileged bind mounts or `CAP_SYS_CHROOT`. Conceptually it could map the process-visible `/nix` to workspace storage while physical accesses remain subject to the platform's restrictions. Missing chroot capability alone therefore does not rule it out.
+
+PRoot is not installed in this runtime, and permitted tracing/path translation has not been established. Seccomp being active does not reveal which calls it permits. No PRoot, ptrace, or fake-root test has been run; installing a translator is not proof that it can execute here. A supported route must retain all outer filesystem restrictions, including denied reads, and must not depend on disabling the platform filter or exposing host credentials. Until that is established, this remains an unverified candidate rather than a working solution.
+
+A workspace symlink alone cannot alter absolute `/nix/store` resolution. Rewriting ELF interpreter/library paths would instead modify the package artifacts and can miss embedded absolute paths; that is not a faithful canonical-store solution. The already-tested custom logical store remains the only demonstrated execution route in this experiment.

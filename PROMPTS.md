@@ -344,3 +344,12 @@ Source: supplied user voice transcript; captured 2026-10-16. This requests a leg
 ````text
 Let’s try another experiment. Is it possible to use a chroot to set up a new root directory that contains all the things that are in our real root, plus a Nix directory that’s writable by us
 ````
+
+
+## Prompt 41: Consider other root layouts
+
+Source: supplied user voice transcript; captured 2026-10-16 after Prompt 40. This is the newly supplied follow-up; mirrored fragment delivery is not a separate instruction. The earlier source reconciliation remains unchanged.
+
+````text
+Can you come up with any other way to make a root that looks the way Nix wants it to look that will work on the system that we're on
+````

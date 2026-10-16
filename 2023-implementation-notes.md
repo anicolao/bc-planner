@@ -167,3 +167,57 @@ status belongs to that exact revision; future export fixes are a separate iterat
 These are explicitly future gates, not claims of implemented capabilities or
 changes to the approved plan. The native pilot cannot identify which of the two
 CLI models will perform better.
+
+## Follow-up: paired CLI comparison 001 stopped before inference
+
+Observed 2026-10-16, after publication of this draft PR. The future comparison
+above was attempted; it produced a shared startup failure, not model-performance
+results. Explicit `gpt-6.1-sol` / high and `gpt-6-astra` / high runs launched in
+parallel at 21:50:01 UTC in two separate local Git repositories with independent
+`.git` directories. Neither repository was published remotely. Both processes
+exited with code 1 about six seconds later, before any model event, candidate
+source, build, or game:
+
+> failed to initialize in-process app-server client: Read-only file system (os error 30)
+
+The existing authenticated `CODEX_HOME` is read-only. Ephemeral execution and
+supported separate writable SQLite/log locations did not resolve initialization;
+additional non-inference prompt-rendering checks failed the same way. This
+identifies a runtime prerequisite, not evidence that either model refused or
+could not solve the Battlecode task. Catalog recognition and an existing login
+status did not establish inference entitlement. Actual backend model/version,
+effective effort and token usage were unobserved. An empty usage/event log is
+not proof of a particular billing amount.
+
+The runner was preinstalled Codex CLI 0.159.2, not newly installed or represented
+as Nix-pinned. Both runs received the same kickoff and refreshed diagnostic
+export `bc23-local-pilot-002`. Export 002 repaired missing local instruction
+references without copying the prior competitor's source/results. It retained
+the verified Nix runtime package; pilot 001 remained unchanged. The audit found
+zero frozen-input hash mismatches, empty candidate/work inventories and clean
+Git baselines in both repositories. General agent filesystem isolation remained
+behavioral; BC23 runtime commands retained their separate namespace/chroot
+boundary. No credential copying, relocation or reconfiguration, new API key,
+paid infrastructure, or native-agent fallback was used.
+
+Sanitized retained evidence identities (SHA-256):
+
+- CLI binary: `1748767b230ebfc3d4ab7e4e254920d0c0ad9691fd8c11f190e7d44511a4a92e`.
+- Export release: `710265c659a519e33da55c067e457fb1a29c18256e82dcefe0930404b37113d0`.
+- Kickoff: `6191901bbd82fcd850b8cfbfd01147500c0b9463e03e4ea7c4f6854941aaaa7f`.
+- Comparison report: `67b63b7206da74910724c0bc845f4cb8684c9ad38f6892c80c06713b8f909b4d`.
+- Launch manifest: `6289f12f7d70fd4437f485af3c5358ccdaf6c2a89805b89bc6b222dfc9544eb9`.
+- Independent audit: `a5e0e4fd415ac121289ba939f6135d556c3a357e58fa5c61c38c390c01c4f7f1`.
+
+The report, manifest, audit and observer launcher were checked against their
+retained evidence checksum inventory before this summary was appended. Raw
+runtime/environment records and logs remain private. No superiority, legality,
+replay, behavioral-learning or playing-strength comparison is possible from
+these failed starts.
+
+Next prerequisite: a supported writable CLI runtime using the existing account
+connection, with any required setup specifically authorized. Verify successful
+initialization there before creating a new frozen paired run. Preserve this
+failed comparison as-is; do not silently substitute native agents or treat a
+catalog listing as a successful model invocation. No such rerun or setup change
+is performed by this notes update.

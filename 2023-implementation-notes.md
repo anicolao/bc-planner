@@ -1,5 +1,10 @@
 # BC23 implementation notes: first LLM pilot
 
+Latest stage: [BCENV-002 tooling and BCENV-003 model-selection results](2023-model-selection-results.md).
+The sections below preserve the earlier dated pilot, CLI and review history.
+The later authorized foundation merge is recorded in the new results note;
+earlier draft/approval statements describe their original checkpoints.
+
 Status: observed local-only diagnostic result, 2026-10-16. This is a separate
 implementation/evaluation note. It does not amend the approved
 [2023 experiment plan](2023-experiment-plan.md), merged in

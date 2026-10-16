@@ -811,3 +811,11 @@ Source: exact available user text/transcript supplied by the coordinating conver
 ````text
 Alright, you can iterate on that and notify me when you're done
 ````
+
+## Prompt 101: Keep ledger additions testable
+
+Repeated Prompt 94 for a second commit responding to the same process request. Review found the repository-data test should permit future ledger appends instead of fixing its current event count. Source coverage remains through Prompt 100; no additional user text was supplied before this commit.
+
+````text
+Alright, so just like the bots you're trying to change, give yourself need a process for making these changes, evaluating them, recording your results, and so on
+````

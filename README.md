@@ -16,3 +16,7 @@ This project is licensed under the GNU General Public License, version 3 (GPL-3.
 ## Prior art
 
 [Terry Van Belle’s Battlecode implementations](terry-battlecode-prior-art.md): pinned source review, implementation findings, learning-loop observations, and verification limits.
+
+## Proposed experiments
+
+[Battlecode 2023 experiment plan](2023-experiment-plan.md): proposed steps for local bot execution, replay understanding, and a local replica of the competition scrimmage infrastructure. Awaiting review; no implementation is included.

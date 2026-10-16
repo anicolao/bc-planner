@@ -20,3 +20,7 @@ This project is licensed under the GNU General Public License, version 3 (GPL-3.
 ## Proposed experiments
 
 [Battlecode 2023 experiment plan](2023-experiment-plan.md): proposed steps for local bot execution, replay understanding, and a local replica of the competition scrimmage infrastructure. Awaiting review; no implementation is included.
+
+## Environment improvement process
+
+[bcenv experiment loop, reusable protocol and append-only ledger](experiments/bcenv/README.md): proposed process for testing our environment changes, with an unrun replay-diagnosis proposal. Separate from the approved 2023 plan and implementation findings.

@@ -1,0 +1,55 @@
+{
+  "id": "BCENV-001",
+  "status": "proposal",
+  "record_kind": "prospective proposal informed by retrospective review; not preregistered or run",
+  "question": "Does a bounded replay-evidence workflow in bcenv improve an agent's independent causal diagnosis of resource-allocation weaknesses?",
+  "deficiency": {
+    "evidence": [{"repository": "anicolao/bc-planner", "commit": "302822e", "path": "2023-implementation-notes.md", "section": "Observer analysis: direct review of Astra's code and experiment"}],
+    "observations": ["The prior artifact checker checked status, hashes and selection identity, not causal correctness.", "The prior timing change failed its both-sides prediction; the agent retained baseline and labeled explanations as hypotheses."],
+    "inferences": ["Observer code review and resource accounting identified a plausible allocation weakness, but did not establish the temporal cause of the slowdown."],
+    "unknowns": ["Whether a fresh uncoached agent would independently find the weakness.", "Whether turn-level evidence would support the hypothesized causal chain."]
+  },
+  "pins": {
+    "baseline_env_commit": null, "candidate_env_commit": null,
+    "kickoff_artifact_sha256": null, "kickoff_artifact_locator": null,
+    "model_id": null, "reasoning_effort": null, "provider_version_limits": null,
+    "harness_commit_and_version": null, "engine_rules_commit": null,
+    "nix_lock_sha256": null, "dependency_manifest_sha256": null,
+    "initial_bot_commit_and_sha256": null, "fixture_manifest_sha256": null
+  },
+  "treatment": {
+    "one_change": "Add one generic replay-evidence workflow requiring unit/turn observations, available information, inferred cause, alternatives and a disconfirming check before accepting a diagnosis. Specify exact instruction-only patch before preregistration; do not combine with new decoder tools.",
+    "diff_artifact": null,
+    "confounds": ["If existing tooling cannot supply required turn evidence, stop this design and propose a separate tooling experiment.", "Do not name the suspected allocation weakness in competitor instructions."]
+  },
+  "hypothesis": "Against the same seeded bot and evidence, the candidate workflow increases evidence-grounded causal diagnoses and independent discovery, without increasing unsupported causal claims.",
+  "behavioral_test": {
+    "observables": ["Exact match/unit/turn citations and reproduction commands.", "Distinction between observed state, accounting deductions, bot-visible knowledge and inferred cause.", "At least one alternative cause and an attempted disconfirming check.", "Independent identification of a consequential allocation weakness, or evidence that falsifies the observer's suspected weakness."],
+    "pass_rule": "PROPOSED: across three fresh agents per arm, candidate has at least two valid evidence-grounded diagnoses, at least one more than baseline, and no more unsupported causal claims. Freeze hidden scoring examples before launch. This is a small diagnostic screen, not a generalization claim.",
+    "fail_rule": "PROPOSED: a complete valid comparison that misses that threshold rejects this workflow candidate for this diagnostic task. Missing evidence or contaminated arms are inconclusive, not failed agent performance.",
+    "counterevidence": ["Baseline performs equally well or better.", "Candidate produces citations without a supported mechanism.", "Turn evidence contradicts the observer's suspected weakness.", "Improved reports merely repeat exposed observer analysis."]
+  },
+  "downstream_test": {
+    "metrics": ["Diagnostic validity", "Unsupported causal claims", "Time and token cost"],
+    "regression_limits": "Freeze operational limits after verifying available budget; no strategy-code change or competitive-performance claim in this diagnostic experiment.",
+    "claim_limits": ["Known anchor case selected after observer review: biased diagnostic case.", "No holdout or model superiority claim.", "No evidence yet that improved diagnosis improves win rate."]
+  },
+  "design": {
+    "task_mode": "fresh_continuation",
+    "arms": ["baseline", "candidate"],
+    "independent_agents_per_arm": 3,
+    "assignment_and_run_order": "Proposed counterbalanced arm order with matched model/settings; freeze exact assignment before launch.",
+    "matched_scenarios": ["Same frozen baseline bot and replay set, exact IDs/hashes unresolved."],
+    "known_cases": ["Prior Astra allocation/anchor case; observer-selected after code review."],
+    "holdouts": [],
+    "holdout_access_log": "None in this screen. A separate untouched-case evaluation is required before broader adoption claims.",
+    "allowed_context_manifest": null,
+    "observer_rubric_commitment": null,
+    "blinding_and_scoring": "Independent observer scores blinded reports where feasible. Hide this proposal, PR9, observer review and rubric from competitors; inspect delivered context and artifact allowlist. A fresh agent receives baseline bot, not previous conversation.",
+    "time_token_compute_ceilings": null,
+    "stop_retry_missing_data_rules": "Proposed: no coaching or strategy edits; retain every attempt. Final wall/token ceilings and infrastructure retry policy must be approved and frozen. Unavailable causal evidence yields unknown, not invented diagnosis."
+  },
+  "launch_gates": {"authorization_reference": null, "protocol_commit": null, "pins_verified": false, "isolation_verified": false},
+  "results": {"run_manifest": [], "artifact_audit": null, "mechanism_assessment": null, "downstream_assessment": null, "deviations": [], "actual_cost": null},
+  "decision": {"verdict": null, "rationale": "For review only. Resolve pins, budget, exact patch and scoring rubric before launch under the subsequent iteration authorization.", "uncertainty": "No new results exist.", "lessons": [], "next_question": "If this diagnostic screen succeeds, does the workflow transfer to untouched weaknesses and from-scratch agents?"}
+}

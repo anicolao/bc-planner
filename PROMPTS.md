@@ -1038,3 +1038,94 @@ The user approves merging PR #9 while qualifying the analysis. Future evaluation
 ````text
 I can go with this outcome though I don't love the analysis which seems to focus on game results rather than LLM reasoning process and code quality. in these trivial tests, the game results are barely relevant. Nonetheless let's approve and merge PR9, and comment on why we haven't merged PR10 yet.
 ````
+
+
+## PR10 rebase provenance preservation
+
+Captured 2026-10-19. Rebase onto main 578ac000ceb1fd77636a2808a5b912c3dbde9250 preserves its complete PROMPTS.md prefix. The following original process-branch addition from 123d19f is appended byte-for-byte, including its historical metadata and numbering. Entries 92-100 duplicate source already imported by PR9; retaining them preserves the original process provenance, not new user messages. Historical references to unmerged PR9 describe the original capture time.
+
+
+## Environment process source reconciliation
+
+Captured 2026-10-16 from exact available user text/transcripts supplied by the coordinating conversation. This branch begins at main `7bf66b0`, ending with Prompt 68. Subsequent supplied source through Prompt 91 is recorded on the separate, unmerged PR #9 snapshot `302822e` in PROMPTS.md; that snapshot is a provenance reference, not imported findings or a merge into this branch. To retain cross-branch source identity, numbering continues at 92. The coordinating conversation confirmed the next three distinct utterances below are in order, followed by two process/readiness follow-ups and the iteration authorization. Duplicate mirrored deliveries are recorded once. The final fragment repeats the end of the authorization but is preserved as separately supplied source. No inaccessible audio/history completeness is claimed. Readiness, bcenv merging and launched trials belong to separate tasks; this change only implements the process.
+
+## Prompt 92: Ask about Astra code
+
+Source: exact available user text/transcript supplied by the coordinating conversation, 2026-10-16.
+
+````text
+Have you looked at Astra's well, how does the code look
+````
+
+## Prompt 93: Ask next experiment
+
+Source: exact available user text/transcript supplied by the coordinating conversation, 2026-10-16.
+
+````text
+So, what's the next thing that you would want to test
+````
+
+## Prompt 94: Request environment improvement process
+
+Source: exact available user text/transcript supplied by the coordinating conversation, 2026-10-16.
+
+````text
+Alright, so just like the bots you're trying to change, give yourself need a process for making these changes, evaluating them, recording your results, and so on
+````
+
+## Prompt 95: Clarify meta level process
+
+Source: exact available user text/transcript supplied by the coordinating conversation, 2026-10-16.
+
+````text
+. So what's your process going to be for designing meta level
+````
+
+## Prompt 96: Ask current PR readiness
+
+Source: exact available user text/transcript supplied by the coordinating conversation, 2026-10-16.
+
+````text
+So, for the current PR that's on BCN, how would you consider its state now? Is it ready to commit and then iterate on, or does it need fixes before it can be committed
+````
+
+## Prompt 97: Authorize merge and iteration
+
+Source: exact available user text/transcript supplied by the coordinating conversation, 2026-10-16.
+
+````text
+Alright, go ahead, merge and keep iterating, and keep going until you're satisfied that you know which model we should be using
+````
+
+## Prompt 98: Repeat model selection goal
+
+Source: exact available user text/transcript supplied by the coordinating conversation, 2026-10-16.
+
+````text
+satisfied that you know which model we should be using
+````
+
+## Prompt 99: Require good environment performance
+
+Source: exact available user text/transcript supplied by the coordinating conversation, 2026-10-16; subsequent to Prompt 98.
+
+````text
+and that you feel that model is doing a good job inside the environment as you defined it
+````
+
+## Prompt 100: Iterate and notify completion
+
+Source: exact available user text/transcript supplied by the coordinating conversation, 2026-10-16; subsequent to Prompt 99.
+
+````text
+Alright, you can iterate on that and notify me when you're done
+````
+
+
+## Prompt 103: Reconcile process prompt history
+
+Source: exact user message Sentinel_07676e2937e88191b0284d02853501f1, 2026-10-19 12:35:51 UTC, supplied by the coordinating conversation in response to the report that merging PR9 introduced a prompt-history conflict in draft PR10. Source reconciliation: the merge approval and evaluation critique are recorded in main Prompt102; the only subsequent supplied task-related user message is recorded below. Original process messages are retained above; assistant status reports and lifecycle notifications are not user task prompts. Coverage is the supplied conversation text, not inaccessible history or audio. This instruction authorizes fixing the integration conflict, not merging PR10 or changing the evaluation design.
+
+````text
+fix it
+````

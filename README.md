@@ -12,3 +12,7 @@ This project is licensed under the GNU General Public License, version 3 (GPL-3.
 ## Runtime experiments
 
 [Consolidated findings and provenance](experiments/README.md): local Nix, WireGuard and SSH probes retained; usable remote access was not achieved and is deferred because there is no immediate need.
+
+## Prior art
+
+[Terry Van Belle’s Battlecode implementations](terry-battlecode-prior-art.md): pinned source review, replay and evaluation reuse candidates, integration risks, and a proposed first end-to-end experiment.

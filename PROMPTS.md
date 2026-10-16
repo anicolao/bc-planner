@@ -656,3 +656,11 @@ Repeated exact current user task for the separate 2023 planning commit, as requi
 ````text
 ok this document should not define future direction, only learnings and info from examining Terry's system. Let's fix that and then merge the PR. For the system we are building, we need to be able to both run oru own code locally and schedule scrimmages against a replica of battlecode's infrstructure. Let's start with 2023's battlecode. Examine my prior repository for 2023, and write a 2023-experiment-plan.md that specifies proposed implementation steps for me to review on a new PR
 ````
+
+## Prompt 60: Correct environment experiment layering
+
+Source: exact user text supplied by the coordinating conversation, 2026-10-16, message Sentinel_be8663ecba948191a6834c66fa7cda50. Source reconciliation: Prompt 59 is the previous planning-commit boundary and repeats the full original request captured in Prompt 58. The coordinating conversation confirmed that the correction below is the only intervening actual user message; background tool notifications are excluded. Checked messages: original 2023 planning request → Prompts 58–59; current layering correction → Prompt 60. The earlier source coverage and its limits remain unchanged. This reconciliation covers the supplied text, not inaccessible history or audio.
+
+````text
+the plan misinterprets the layering. bc-planner's repository is for tooling and documents about building the LLM's environment for working on battlecode; bcenv is supposed to be the repository that creates the environment and skills and that enable a sub-agent to actually start competing. So the plan you need to make is a plan about setting up bcenv for the sub-agent, adn then starting the sub-agent and seeing if it can follow your instructions/prompts to actually build a competitor. Your work is all indirect: you create the environment, hten start a new agent with no additional context than what you provide in bcenv and a prompt to kick it off, and then observe it to see if it does what you want. You don't directly correct it or direct it; you provide the bcenv environment to enable it to operate autonomously, and if htat fails, you modify bcenv and try again.
+````

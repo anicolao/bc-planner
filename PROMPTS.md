@@ -279,3 +279,39 @@ Repeated exact user instruction for the follow-up commit needed to complete the 
 ````text
 All right, let's rebase and merge it to close the PR
 ````
+
+## Alternate-store experiment source reconciliation
+
+Captured 2026-10-16 from available user voice transcripts supplied to this task. Entries 34–37 cover the prior unrecorded merge-status question, two consecutive request fragments, and the test approval. Voice text is a transcript, not independently verified audio; per-utterance timestamps and inaccessible conversation were not reconstructed. Existing bytes are retained. No credentials or unrelated conversation are included.
+
+## Prompt 34: Recover merge status question
+
+Source: supplied user voice transcript; captured 2026-10-16. Retrospective capture of the supplied status question during the preceding rebase/merge task, before the alternate-store request. It was not present in entries 30–33.
+
+````text
+How’s that going? You’d be taking too long
+````
+
+## Prompt 35: Explore alternate Nix store
+
+Source: supplied user voice transcript; captured 2026-10-16. First available fragment of the new request; no missing ending reconstructed.
+
+````text
+All right, let's do some more experiments involving Nix. We found that we couldn't use
+````
+
+## Prompt 36: Continue alternate store request
+
+Source: supplied user voice transcript; captured 2026-10-16. Continuation fragment; transcription errors including “half” are preserved.
+
+````text
+install it in a way that would use half of the slash nix the nix store. My understanding is that it is possible to use other paths for the nix store other than slash nix. Let’s try to figure out if we can make that work
+````
+
+## Prompt 37: Approve single build test
+
+Source: supplied user voice transcript; captured 2026-10-16. Reply to the explicit question: “To actually build and run even a tiny test package here, I need to turn off Nix’s own build isolation for that command, while keeping the platform sandbox in place. Can I do that for this test?” Approval is limited to that one tiny host-tool build, not a global configuration change.
+
+````text
+Sure
+````

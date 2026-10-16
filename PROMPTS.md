@@ -362,3 +362,12 @@ Repeated exact Prompt 41 for the follow-up commit recording a harmless own-child
 ````text
 Can you come up with any other way to make a root that looks the way Nix wants it to look that will work on the system that we're on
 ````
+
+
+## Prompt 43: Test namespace option separately
+
+Source: supplied user voice transcript; captured 2026-10-16 after the tracing diagnostic. This asks to test the previously untested first option, rather than infer its result from ptrace failure.
+
+````text
+I thought you suggested two different options, but you didn’t test the first one
+````

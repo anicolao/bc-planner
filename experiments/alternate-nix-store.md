@@ -152,3 +152,15 @@ A workspace symlink alone cannot alter absolute `/nix/store` resolution. Rewriti
 After the read-only assessment above, a minimal own-child diagnostic was performed: a Python process forked a short-lived child; the child called `ptrace(PTRACE_TRACEME, 0, NULL, NULL)` and immediately exited. No unrelated process was inspected, and there was no path remapping, namespace creation, mount, or security-setting change.
 
 **Result:** return value `-1`, errno `1` (`Operation not permitted`). This blocks the basic tracing mechanism needed by the proposed PRoot execution path. The precise enforcement layer is not identified by that errno alone. No PRoot installation or alternate tracer was attempted after the denial. A working canonical-root execution route has not been established here; bypassing the denial is outside this experiment.
+
+
+### Subsequent namespace-creation check
+
+The user correctly requested an independent check of the first option. The following minimal diagnostic ran a no-op child in new user and mount namespaces:
+
+```sh
+unshare --user --mount /usr/bin/true
+# exit status: 0
+```
+
+**Result: basic namespace creation succeeded.** This corrects any inference that the earlier ptrace denial also rules out Nix's namespace-based root-store route. No UID/GID mappings, mounts, chroot, root-path translations, protected-directory writes, or security-setting changes were made by this diagnostic. Success does not yet prove that the mappings and mounts required for Nix's documented root-store execution are available or permitted. That more complete supported-operation assessment remains open; the namespace option must not be described as blocked on the basis of the earlier observations alone.

@@ -819,3 +819,48 @@ Source: exact available user text supplied by the coordinating conversation, 202
 ````text
 Looks like we got disconnected. How did the trial go
 ````
+
+
+## Workspace repair source reconciliation
+
+Captured 2026-10-16 from exact available user text/transcripts supplied by the coordinating conversation. Prompt 78 is the previous source boundary. The five subsequent supplied messages map in chronological order to Prompts 79–83: clarified comparison status, workspace-write repair, prior Nix workaround question, progress question, and workaround request. The first two arrived after the previous notes commit and are captured here before this commit. Worker/tool notifications are excluded. Coverage is limited to supplied text, not inaccessible history or audio. These prompts authorize investigation and a workspace-local repair; they do not authorize changing administrator sandbox requirements, relocating credentials, using another computer without authorization, or merging this PR.
+
+## Prompt 79: Clarify interrupted model comparison
+
+Source: exact available user text/transcript supplied by the coordinating conversation, 2026-10-16.
+
+````text
+looks like I got disconnected again. What I want to know is how the six dot one Sol versus six Astra trial went
+````
+
+## Prompt 80: Authorize writable workspace harness
+
+Source: exact available user text/transcript supplied by the coordinating conversation, 2026-10-16.
+
+````text
+All right, let's fix it by making sure that the harness has somewhere to write that's inside the workspace , uh, so it will be allowed to go
+````
+
+## Prompt 81: Consider previous writable Nix workaround
+
+Source: exact available user text/transcript supplied by the coordinating conversation, 2026-10-16.
+
+````text
+Remember the workaround we did to give Nix a writable directory? Can we apply that here
+````
+
+## Prompt 82: Check workaround progress
+
+Source: exact available user text/transcript supplied by the coordinating conversation, 2026-10-16.
+
+````text
+Any luck
+````
+
+## Prompt 83: Request supported execution workaround
+
+Source: exact available user text/transcript supplied by the coordinating conversation, 2026-10-16.
+
+````text
+Okay, try to find a workaround
+````

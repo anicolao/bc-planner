@@ -83,3 +83,10 @@ Next requirement: a supported execution environment or approved working write ro
 - With explicit user approval for **one command**, Nix built a tiny C program using the host shell/compiler, and the output ran successfully from the alternate store. Only Nix's own build sandbox was disabled for that command; the platform sandbox remained in place. No global setting was changed.
 - No `/nix` writes, root, mounts, chroot, namespaces, system apt installation, or credential changes were involved.
 - The changed logical store path prevents use of the normal `/nix/store` binary cache. This is an impure host-tool experiment, not a hermetic nixpkgs toolchain or a validated Battlecode environment.
+
+
+## Canonical-store cache execution update (2026-10-16)
+
+A later, explicitly approved minimal-root test succeeded: Nix downloaded GNU Hello and four dependencies from the normal Nix binary cache into a workspace-owned root while retaining logical `/nix/store` paths. Recursive trusted-signature/content verification passed. The program then printed `Hello, world!` inside a single child user namespace and chroot, with no bind mounts or host-root mirror. Host `/nix` and the outer sandbox were unchanged. See the [full commands, closure and limitations](experiments/alternate-nix-store.md#successful-canonical-store-execution-in-a-minimal-root-2026-10-16).
+
+The earlier limitation applies to the alternate **logical** store, not this separate canonical-logical-path root store. Ordinary cached binary execution has now been demonstrated for one small closure. General builds and a complete Nix development environment remain unverified.

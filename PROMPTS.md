@@ -371,3 +371,12 @@ Source: supplied user voice transcript; captured 2026-10-16 after the tracing di
 ````text
 I thought you suggested two different options, but you didn’t test the first one
 ````
+
+
+## Prompt 44: Approve minimal canonical root
+
+Source: supplied user voice transcript; captured 2026-10-16 after Prompt 43. Reply to this explicit bounded-test question: “Okay, I have a bounded test: put GNU Hello and its dependencies in a workspace-only root, then run it at slash nix store inside a child user namespace, without mirroring the host root or using bind mounts. The host account stays unprivileged. May I run that one test with root confined to the child namespace?” The following response authorizes that test. It does not remove platform restrictions.
+
+````text
+Yes, stop asking me for permissions to run things on this VM
+````

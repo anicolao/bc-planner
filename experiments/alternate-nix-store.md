@@ -164,3 +164,51 @@ unshare --user --mount /usr/bin/true
 ```
 
 **Result: basic namespace creation succeeded.** This corrects any inference that the earlier ptrace denial also rules out Nix's namespace-based root-store route. No UID/GID mappings, mounts, chroot, root-path translations, protected-directory writes, or security-setting changes were made by this diagnostic. Success does not yet prove that the mappings and mounts required for Nix's documented root-store execution are available or permitted. That more complete supported-operation assessment remains open; the namespace option must not be described as blocked on the basis of the earlier observations alone.
+
+
+## Successful canonical-store execution in a minimal root (2026-10-16)
+
+**This later experiment establishes a working canonical-store route and supersedes the earlier unresolved execution outcome.** Following explicit approval for one bounded child-namespace test, Nix substituted GNU Hello 2.12.1 and four dependencies from the standard `https://cache.nixos.org` cache into a workspace-owned local-root store. All five paths passed an explicit recursive content/signature verification requiring at least one trusted signature. A clean-environment child user namespace mapped the invoking user to namespace-local root, changed its root to that workspace directory, and ran Hello at its original `/nix/store/...` path. It printed `Hello, world!` and exited 0.
+
+There were no bind mounts, mount namespace changes in this execution command, host-root mirroring, host `/nix` writes, ptrace use, or outer-sandbox changes. Only official downloaded package/source material and Nix metadata were placed in the root; no host credentials or unrelated host files were copied. Namespace-local root does not confer root privilege in the parent namespace. The child UID/GID mapping and chroot were the newly approved operations.
+
+### Reproduction
+
+From the workspace containing the earlier `nix-alternate/bootstrap` installation:
+
+```sh
+BASE="$PWD/nix-alternate"
+EXP="$PWD/nix-canonical-root"
+ROOT="$EXP/root"
+mkdir -p "$ROOT" "$EXP/cache" "$EXP/config" "$EXP/data"
+export LD_LIBRARY_PATH="$BASE/bootstrap/usr/lib/nix:$BASE/bootstrap/usr/lib/x86_64-linux-gnu"
+export XDG_CACHE_HOME="$EXP/cache" XDG_CONFIG_HOME="$EXP/config"
+export XDG_DATA_HOME="$EXP/data" NIX_CONF_DIR="$EXP/config/nix"
+nix_root() {
+  "$BASE/bootstrap/usr/bin/nix" --extra-experimental-features nix-command \
+    --store "local?root=$ROOT" "$@"
+}
+nix_root build --impure \
+  --expr '(import (builtins.fetchTarball "https://channels.nixos.org/nixos-25.05/nixexprs.tar.xz") {}).hello' \
+  --no-link --max-jobs 0 --print-out-paths > "$EXP/hello-store-path"
+HELLO=$(cat "$EXP/hello-store-path")
+nix_root store verify --recursive --sigs-needed 1 "$HELLO"
+env -i PATH=/usr/sbin:/usr/bin:/bin LANG=C \
+  /usr/bin/unshare --user --map-root-user -- \
+  /usr/sbin/chroot "$ROOT" "$HELLO/bin/hello"
+# Hello, world!
+```
+
+`--max-jobs 0` prevented local derivation builds: the package and its runtime dependencies were substituted. The experiment did not disable Nix's build sandbox. `env -i` excludes inherited credentials and host-library overrides from the execution child. The channel URL is a moving reference rather than a pinned package-set revision; the exact realized closure below records what was tested, but the expression is not a claim of immutable future resolution.
+
+### Verified closure and limits
+
+Nix reported 9.74 MiB downloaded and 31.54 MiB unpacked for these five package paths:
+
+- `/nix/store/na5dnb0l6rjkzrbld3xn4188dd8nknhh-hello-2.12.1`
+- `/nix/store/i3ibgfskl99qd8rslafbpaa1dmxdzh1z-glibc-2.40-66`
+- `/nix/store/vi5fmmv0q0z9rjf3jfis7q2i9g05l8s2-libidn2-2.3.8`
+- `/nix/store/d5s1ab9ynjsh45js7d75ijxklzqm49r0-libunistring-1.3`
+- `/nix/store/16hvpw4b3r05girazh4rnwbw0jgjkb4l-xgcc-14.3.0-libgcc`
+
+Each logical path exists physically below `ROOT`. The signature verification succeeded before execution. This proves standard-cache substitution and canonical-path execution for this closure, unlike the earlier Debian Hello/custom-logical-store test. It does not demonstrate generic package builds, arbitrary applications, persistent environments, Nix daemon operation, or Battlecode tooling. Programs needing devices, `/proc`, network configuration, home directories, or additional runtime files need separate assessment. The minimal root deliberately does not mirror the host.

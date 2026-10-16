@@ -864,3 +864,32 @@ Source: exact available user text/transcript supplied by the coordinating conver
 ````text
 Okay, try to find a workaround
 ````
+
+
+## Native comparison source reconciliation
+
+Captured 2026-10-16 from exact available user text/transcripts supplied by the coordinating conversation. Prompt 83 is the previous boundary. The three subsequently supplied messages map in order to Prompts 84–86: native-model configuration question, approval, and status request. The coordinating conversation identifies Prompt 85 as approval after explaining the explicitly configured native-agent harness differs from the blocked Codex CLI. The earlier CLI failure remains historical evidence. Worker/tool notifications are excluded. Coverage is limited to supplied text, not inaccessible history or audio.
+
+## Prompt 84: Ask about explicit native models
+
+Source: exact available user text/transcript supplied by the coordinating conversation, 2026-10-16.
+
+````text
+Is there a way to configure the model for the thing that did work where we couldn't see what it was
+````
+
+## Prompt 85: Authorize explicit native model comparison
+
+Source: exact available user text/transcript supplied by the coordinating conversation, 2026-10-16.
+
+````text
+Let's do that
+````
+
+## Prompt 86: Check native comparison progress
+
+Source: exact available user text/transcript supplied by the coordinating conversation, 2026-10-16.
+
+````text
+What's the current status
+````

@@ -302,3 +302,103 @@ Retained evidence identities (SHA-256), with raw environment/log records private
 
 This is the documented blocker outcome of the requested repair investigation,
 not a completed comparison or evidence favoring either model.
+
+## Authorized native comparison 001: both workflows completed
+
+Observed 2026-10-16. After the CLI blocker was explained, the user explicitly
+approved a different, native-agent harness with requested model/effort overrides.
+Both `gpt-6.1-sol` / high and `gpt-6-astra` / high configurations were accepted
+by the native launcher, with fresh no-history sessions (`fork_turns=none`).
+The backend version and token usage were not separately exposed. These are explicitly configured
+native trials, **not** successful Codex CLI trials; the CLI failures above remain
+unchanged and do not become successes through this separate authorization.
+
+The trials overlapped in time in independent local Git repositories. Sol's launch
+was confirmed at 22:00:52 UTC and terminal report received at 22:04:28 UTC;
+Astra's launch was confirmed at 22:01:02 UTC and terminal report received at
+22:05:35 UTC. These observed timings are not a controlled speed benchmark.
+Both used frozen export 002 and identical kickoff bytes, with prompt differences
+limited to assigned absolute directories. Each had a 20-minute/12-game limit,
+sequential games within its own trial, no inherited conversation or mid-run
+strategy coaching, behavioral general-tool isolation and separately sandboxed
+BC23 runtime invocations. Neither received the other's code or results.
+
+### Audited results
+
+Each agent authored its own bot, produced two verified candidate builds plus a
+verified fixture build, ran four complete games and produced one verified source
+package. The audit found zero frozen-input hash mismatches or artifact errors;
+compiler, official-verifier, engine and extractor exits were successful. Selected
+ZIP contents matched the agent's current candidate, and package identities matched
+the selected verified build. All eight games ended in island-capture wins against
+the same inert fixture; each replay recorded five anchor placements.
+
+| Requested native model | Baseline A / B rounds | Changed A / B rounds | Agent's selected build |
+| --- | --- | --- | --- |
+| gpt-6.1-sol / high | 377 / 391 | 237 / 402 | Changed build-002 |
+| gpt-6-astra / high | 362 / 235 | 448 / 143 | Baseline build-001 |
+
+Sol changed its anchor-start gate from round 300 to 30. Its prediction of capture
+wins before round 300 in **both** positions was refuted by the 402-round B game.
+A improved by 140 rounds while B worsened by 11. Sol explicitly retained that
+failed joint prediction and selected the changed build for its lower observed
+two-position mean: 319.5 versus 384 rounds, despite a worse maximum of 402 versus
+391. That selection criterion was the agent's choice, not a shared benchmark
+criterion imposed on both models.
+
+Astra changed its anchor-start gate from round 150 to 1. Its prediction of faster
+capture wins in **both** positions was refuted by the A game: 448 versus 362
+rounds, while B improved from 235 to 143. It retained the failed joint prediction
+and selected the baseline for its lower observed maximum: 362 versus 448 rounds.
+The changed mean was 295.5 versus baseline 298.5, only three rounds lower; Astra
+did not present that as evidence of strength. Thus the two agents made different
+selection tradeoffs while correctly reporting their own counterexamples.
+
+### Interpretation and limits
+
+The useful result is that both explicitly configured native agents completed the
+same bounded build/test/inspect/change/package workflow and rejected a prediction
+when one side contradicted it. This shows usable environment support and bounded
+evidence handling. It does not establish either model's superiority: there was
+one trial per model, different self-authored strategies and selection objectives,
+one map, no repetitions, no head-to-head games and no active opponent. The inert
+fixture's headquarters freeze on round 1. Faster fixture completion is not a
+playing-strength estimate.
+
+Prediction-file timestamps and retained text support ordering, but are not an
+immutable precommit journal. In both runs, prediction and changed source first
+appeared within the same three-second observer polling interval. There is no
+strong independent observer-precommit proof. No strong preregistration claim
+follows. Replay
+extraction validates only selected fields, not full replay comprehension or
+world reconstruction. Bounded action samples do not explain the side-dependent
+regressions; suggested routing/economy explanations remain hypotheses. No full
+replica acceptance, stronger general-agent isolation or CLI compatibility was
+established by this native comparison.
+
+### Selected artifact identities
+
+All digests below are SHA-256; candidate sources and full evidence remain private.
+Both packages bind to verified engine identity
+`5e862aa10e85caeb67ae69e1692f7451893e801e0d81597032c1442bbb9deb4e`.
+
+- gpt-6.1-sol: package `islandbound`, `package-002`.
+  - source_sha256: `66c811fda95120d7a7abc9434d1234a965763add5e70f145b675df91b63bbcd6`.
+  - binary_sha256: `9ed2346af6f3d4c030f6563ecb6a847df377ad70318f5734106d8de0c5b0414c`.
+  - zip_sha256: `a1164bd70b5d1cf33fa700f81a0c1929e736b56b35e08aced16bd8ec589ebb1a`.
+
+- gpt-6-astra: package `mybot`, `package-001`.
+  - source_sha256: `15aa5a112e14aac186345ce104e132d57b0d899af08a07d3903a26f016a55327`.
+  - binary_sha256: `10df8c561b16b2fc62b7a154fa20dd858e68ceef4a78071c714c8eb9afca92d6`.
+  - zip_sha256: `d6f2ca7955012378eda7e895894bacd591b4522687b97aa3763a07f5c77a7f5e`.
+
+The private evidence archive, with 589 files independently byte-verified and zero
+mismatches, has SHA-256
+`de6e6b20367dc18d0b0e4200b34b0fab52dc254994ae511bfbadce00d66a557e`.
+It contains candidate workspaces, reports and observer evidence, excluding the
+large Nix/runtime closure retained separately with frozen export 002. Additional
+retained SHA-256 identities:
+
+- Native comparison report: `36a3643070591a4c70c63e9af8265e43b02e0c43e6762afa5e810a2c687c7214`.
+- Independent audit: `b4cf5c4bcd7824c1e6f77ca02a816506deea6e5deff0b9da420da6792f14d80d`.
+- Launch manifest: `18fe4ad03ee91f03228fc6fdb495c20d71941901425acb3acdf6b09da13105aa`.

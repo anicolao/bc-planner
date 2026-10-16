@@ -101,3 +101,38 @@ Nix reported a derivation being built and returned a path ending `r400f985lfp4jr
 - Host `/bin/sh`, compiler, loader, and libraries are outside Nix's dependency closure; the result is not portable or hermetic.
 - General nixpkgs builds, normal binary-cache substitution, profiles, reproducibility across machines, and Battlecode tooling were not tested.
 - A practical production choice remains open: maintain this host-dependent custom-store bootstrap, investigate a properly provisioned standard Nix environment, or evaluate another supported runtime. This result demonstrates feasibility of a limited alternate store, not equivalence to a conventional Nix installation.
+
+
+## Follow-up: canonical store inside a workspace root (2026-10-16)
+
+The proposal is conceptually valid. Nix distinguishes the **logical** store path seen by programs from its **physical** location. Its [official local-store documentation](https://nix.dev/manual/nix/2.35/store/types/local-store.html) describes a local chroot store whose logical path remains `/nix/store` while files reside under a chosen root, such as `WORKSPACE/root/nix/store`. That preserves the store-path prerequisite for ordinary cache substitution; cache availability, trust and package execution still need separate verification. The documented Linux build/run implementation requires user and mount namespaces. This differs from our tested alternate **logical** store.
+
+### Read-only capability observations
+
+The command executor reported:
+
+- UID/GID 1000 (`agent`).
+- `chroot`, `unshare` and `bwrap` executables present; `proot` not found on PATH.
+- `CapInh`, `CapPrm`, `CapEff`, `CapBnd`, and `CapAmb`: all zero.
+- `NoNewPrivs: 1`; `Seccomp: 2`.
+- `/proc/sys/user/max_user_namespaces`: 2147483647; `/proc/sys/kernel/unprivileged_userns_clone` unavailable.
+
+[Linux chroot documentation](https://www.man7.org/linux/man-pages/man2/chroot.2.html) requires `CAP_SYS_CHROOT` in the calling process's user namespace. That capability is absent in the current namespace. A root-tree mirror using bind mounts also needs privileges not established here. A nonzero namespace count limit and installed tools do **not** prove that namespace creation or mounts are permitted by the platform and syscall filters. Conversely, these observations alone do not prove all unprivileged namespace creation is technically impossible.
+
+```sh
+id
+command -v chroot
+command -v unshare
+command -v bwrap
+command -v proot
+grep -E '^(Cap(Inh|Prm|Eff|Bnd|Amb)|NoNewPrivs|Seccomp):' /proc/self/status
+for f in /proc/sys/kernel/unprivileged_userns_clone /proc/sys/user/max_user_namespaces; do
+  if test -r "$f"; then printf '%s: ' "$f"; cat "$f"; fi
+done
+```
+
+### Outcome and boundary
+
+This follow-up is a documentation and capability assessment, **not a successful or failed chroot execution test**. No chroot, user namespace, mount, ptrace emulation, root copying, or system-directory write was attempted. We could not establish a supported namespace/mount execution route consistent with the current platform restrictions, and stopped before those operations. The earlier approval to disable Nix's build sandbox covered only the tiny host-tool build, not this setup.
+
+A practical next step is an explicitly supported runner with writable canonical `/nix`, or a documented platform-supported local-root-store namespace route that preserves the outer sandbox. A minimal package closure is preferable to copying the real root, which could expose unrelated credentials and data. The working workspace-logical-store experiment remains usable within its stated limits; this assessment does not upgrade it to ordinary cached nixpkgs execution.

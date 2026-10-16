@@ -315,3 +315,32 @@ Source: supplied user voice transcript; captured 2026-10-16. Reply to the explic
 ````text
 Sure
 ````
+
+
+## Chroot feasibility source reconciliation
+
+Captured 2026-10-16 from the available task-related user voice transcripts after Prompt 37. Entries 38–40 record the PR-status question, binary-cache clarification, and new chroot request in supplied order. Duplicate deliveries of those utterances are recorded once. Further deliveries of “Sure” appear in the supplied window without reliable identifiers establishing additional distinct utterances; Prompt 37 records the known scoped approval, and no broader approval is inferred. Transcript text is not independently verified audio. Inaccessible history and missing timestamps have not been reconstructed.
+
+## Prompt 38: Check experiment PR status
+
+Source: supplied user voice transcript; captured 2026-10-16.
+
+````text
+Are you done with that PR yet
+````
+
+## Prompt 39: Clarify binary cache limitation
+
+Source: supplied user voice transcript; captured 2026-10-16.
+
+````text
+Let’s review the limitations. So I understand correctly that the Nix store path is not slash-Nix, but something else, and that means that we can’t install binaries from a binary cache
+````
+
+## Prompt 40: Explore workspace chroot layout
+
+Source: supplied user voice transcript; captured 2026-10-16. This requests a legitimate experiment within existing execution permissions; it does not authorize bypassing the platform sandbox.
+
+````text
+Let’s try another experiment. Is it possible to use a chroot to set up a new root directory that contains all the things that are in our real root, plus a Nix directory that’s writable by us
+````

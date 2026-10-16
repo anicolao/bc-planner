@@ -72,3 +72,65 @@ layer. We stopped at the denied operation rather than weakening security or
 patching around it. Installation is verified; enrollment readiness is **blocked**
 in this tested runtime configuration. A supported runtime that allows Tailscale's
 network inspection is needed before an enrollment test can proceed.
+
+## Follow-up diagnosis: initial interface enumeration
+
+A narrow host-side probe (outside our user namespace/chroot) failed at
+`socket(AF_NETLINK, SOCK_RAW, NETLINK_ROUTE)` with errno 1 (`EPERM`). No bind,
+route request, receive, or route modification was attempted after that failure.
+Python creates sockets non-inheritable; Go's corresponding operation explicitly
+adds `SOCK_CLOEXEC`. This reproduces the relevant socket-family denial outside
+our root setup, rather than attributing it solely to the child namespace.
+The exact runtime enforcement layer (for example, a syscall filter versus
+another mechanism) has not been established.
+
+The pinned Tailscale 1.90.9 source explains the observed startup error:
+
+1. `netmon.New` requests an initial interface-state snapshot.
+2. `getState` enumerates interfaces through `net.Interfaces`.
+3. Go's Linux interface enumeration uses `NetlinkRIB`; its first operation is
+   opening that route-netlink socket. The `route ip+net` error describes this
+   enumeration API, not an attempt to install a route or enable a VPN interface.
+4. Only after the snapshot succeeds does Tailscale initialize change monitoring.
+   Its existing polling fallback for failed netlink multicast monitoring cannot
+   rescue failure in the earlier snapshot.
+
+Selecting userspace networking avoids a TUN device, but not this initial query.
+The same release's `tsnet.Server` also calls `netmon.New`, so switching to tsnet
+alone does not remove the dependency. No stock daemon CLI/configuration switch
+to skip that initial enumeration was found in the inspected pinned startup path.
+
+There is a potential **custom platform-integration** route, not a verified
+installation workaround: Tailscale exposes `netmon.RegisterInterfaceGetter`
+and alternate interface addresses for platforms such as Android where standard
+Go enumeration is unavailable. An adapter must report actual accessible network
+information, not fabricated interfaces or successful route results. A read-only
+`SIOCGIFCONF` ioctl probe succeeded here but reported only loopback; the standard
+netlink-based `if_nameindex` failed. That limited result does not establish a
+usable adapter: the source excludes loopback when determining Internet
+availability. Building such an integration would still require demonstrating
+valid address discovery, permitted control/relay connectivity, and ongoing
+network-state handling. None of those successes is claimed here.
+
+The practical verified status remains: stock binary installed; daemon blocked
+before login. A runtime that permits the necessary inspection is the known
+straightforward deployment option. A custom no-netlink integration is a research
+possibility, not a tested fix. No security restrictions were disabled, no denied
+socket operation was escalated, and no enrollment was attempted.
+
+Primary source references:
+
+- [Tailscale 1.90.9 monitor initialization](https://github.com/tailscale/tailscale/blob/v1.90.9/net/netmon/netmon.go)
+- [Interface snapshot and alternate getter](https://github.com/tailscale/tailscale/blob/v1.90.9/net/netmon/state.go)
+- [Linux monitoring and polling fallback](https://github.com/tailscale/tailscale/blob/v1.90.9/net/netmon/netmon_linux.go)
+- [Daemon startup](https://github.com/tailscale/tailscale/blob/v1.90.9/cmd/tailscaled/tailscaled.go)
+- [tsnet startup](https://github.com/tailscale/tailscale/blob/v1.90.9/tsnet/tsnet.go)
+- [Go Linux NetlinkRIB implementation](https://github.com/golang/go/blob/go1.25.1/src/syscall/netlink_linux.go)
+
+Reproduce the first non-mutating probe without changing network configuration:
+
+```python
+import socket
+s = socket.socket(socket.AF_NETLINK, socket.SOCK_RAW, socket.NETLINK_ROUTE)
+s.close()  # Not reached in the observed runtime: socket creation raises EPERM.
+```

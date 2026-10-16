@@ -295,3 +295,19 @@ Source: exact user follow-up supplied by coordinating conversation, captured 202
 ````text
 Where are we at
 ````
+
+## Prompt 36: Diagnose denied network inspection
+
+Source: exact user voice transcript supplied by the coordinating conversation, captured 2026-10-16. Transcription is not independently verified audio. This records a follow-up after the installation result.
+
+````text
+So, what exactly is the thing that’s being denied, and are there any workarounds to make that work
+````
+
+## Prompt 37: Explore no-netlink operation
+
+Source: exact follow-up supplied by the coordinating conversation, captured 2026-10-16. Source reconciliation: the two newly supplied task messages map to entries 36–37. Earlier entries remain byte-for-byte unchanged. No claim of access to additional audio or missing transcript context.
+
+````text
+Sounds like that might be a harder requirement. Is there any way to get Tailscale to work without it
+````

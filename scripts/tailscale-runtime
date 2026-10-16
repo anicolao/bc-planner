@@ -1,0 +1,14 @@
+#!/bin/sh
+set -eu
+HERE=$(CDPATH= cd -- "$(dirname -- "$0")/.." && pwd)
+: "${BC_RUNTIME:?Set BC_RUNTIME}"
+PACKAGE=$(cat "$BC_RUNTIME/tailscale-path")
+case "$PACKAGE" in /nix/store/*-tailscale-*) ;; *) echo 'Unexpected package path' >&2; exit 2;; esac
+case "${1:-status}" in
+  daemon)
+    umask 077
+    mkdir -p "$BC_RUNTIME/root/var/lib/tailscale" "$BC_RUNTIME/root/run/tailscale" "$BC_RUNTIME/root/tmp"
+    exec "$HERE/scripts/run-in-root" "$PACKAGE/bin/tailscaled" --tun=userspace-networking --state=/var/lib/tailscale/tailscaled.state --socket=/run/tailscale/tailscaled.sock --socks5-server=127.0.0.1:1055
+    ;;
+  *) exec "$HERE/scripts/run-in-root" "$PACKAGE/bin/tailscale" --socket=/run/tailscale/tailscaled.sock "$@" ;;
+esac

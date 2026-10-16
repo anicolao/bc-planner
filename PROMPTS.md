@@ -279,3 +279,19 @@ Repeated exact user instruction for the follow-up commit needed to complete the 
 ````text
 All right, let's rebase and merge it to close the PR
 ````
+
+## Prompt 34: Pin tools and prepare Tailscale
+
+Source: supplied user voice transcript, captured 2026-10-16. This branch starts from merged PR #1; intermediate Nix experiments and their prompts remain on separate PR #2. This records the new environment implementation request, not a claim of complete audio access. The namespace/bootstrap capability was established by those experiments. No network enrollment is inferred until the user chooses and authorizes the target.
+
+````text
+Okay, so now that we have Nix working, let’s create a flake, sync our environment so that we install required tools, and the first of those is going to be Tailscale. Let’s make sure that we have the ability to add this node to a Tailscale network
+````
+
+## Prompt 35: Request environment setup status
+
+Source: exact user follow-up supplied by coordinating conversation, captured 2026-10-16. Coverage reconciliation for this commit: new task request maps to Prompt 34; supplied status follow-up maps to Prompt 35. Earlier experiment prompts belong to PR #2, not repeated here. Voice transcription may differ from original audio; mirrored duplicates are not new utterances.
+
+````text
+Where are we at
+````

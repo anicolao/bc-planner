@@ -316,3 +316,128 @@ Source: available user voice transcript, 2026-10-16.
 ````text
 Make sure agents dot md makes it clear that you must use the Nix flake for all software installs
 ````
+
+
+## Local SSH experiment source coverage
+
+Captured 2026-10-16 from available voice transcriptions supplied by the coordinating conversation. Entries 38–51 map the remote-peer question, public endpoint question, Tailscale interoperability question, public-IP request, UDP echo question, scope correction, errno question, GitHub UDP test, HTTPS question, exact HTTPS test question, SSH daemon question, port-22 clarification, short utterance, and Nix SSHD request in supplied order. Transcription errors are retained. The flake-only instruction is already recorded in entry 37. No inaccessible audio is reconstructed. The interrupted-call recall below was supplied retrospectively without its exact position among these utterances; entry 52 records that uncertainty rather than inventing chronology. Diagnostics in the experiment README are summarized evidence, not user quotes.
+
+## Prompt 38
+
+Source: supplied user voice transcript, 2026-10-16.
+
+````text
+So how do we configure a remote peer for the test
+````
+
+## Prompt 39
+
+Source: supplied user voice transcript, 2026-10-16.
+
+````text
+No, I'm gonna have to set up an endpoint that'll work. I don't have one. So I need a machine that has um... the ability to receive UDP on a public facing IP, right
+````
+
+## Prompt 40
+
+Source: supplied user voice transcript, 2026-10-16.
+
+````text
+If I use Tail Scale on the target machine, will I be able to extract the right information to give you to configure the WireGuard side of the endpoint
+````
+
+## Prompt 41
+
+Source: supplied user voice transcript, 2026-10-16.
+
+````text
+Um ...let's uh... do something like... curl whatismyip dot com, to figure out if we're behind some kind of NAT on the...the M
+````
+
+## Prompt 42
+
+Source: supplied user voice transcript, 2026-10-16.
+
+````text
+Is there any public facing... service we can use to test... outbound UDP? Is there a UDP echo service we can hit
+````
+
+## Prompt 43
+
+Source: supplied user voice transcript, 2026-10-16.
+
+````text
+But... Hmm. I’m not sure you can say any. You can say DNS packets are being filtered. Um... But we don’t know about any packet, right
+````
+
+## Prompt 44
+
+Source: supplied user voice transcript, 2026-10-16.
+
+````text
+So... we're getting network unreachable, or what's the error we're getting
+````
+
+## Prompt 45
+
+Source: supplied user voice transcript, 2026-10-16.
+
+````text
+Is there some way we can test UDP to some GitHub target
+````
+
+## Prompt 46
+
+Source: supplied user voice transcript, 2026-10-16.
+
+````text
+So... you say HTTPS works? Why? Is that because that’s what
+````
+
+## Prompt 47
+
+Source: supplied user voice transcript, 2026-10-16.
+
+````text
+What exact test did you do for HTTPS
+````
+
+## Prompt 48
+
+Source: supplied user voice transcript, 2026-10-16.
+
+````text
+Nonetheless, it looks like UDP is blocked, but TCP is not. Do we have a necessary, running on this VM
+````
+
+## Prompt 49
+
+Source: supplied user voice transcript, 2026-10-16.
+
+````text
+I mean... Do we have... port 22 open on the VM, that is listening with the SSH
+````
+
+## Prompt 50
+
+Source: supplied user voice transcript, 2026-10-16.
+
+````text
+Uh
+````
+
+## Prompt 51
+
+Source: supplied user voice transcript, 2026-10-16.
+
+````text
+Can we run ...an SSHD installed by Nix bound to some localhost port
+````
+
+## Prompt 52: Recall interrupted call context
+
+Retrospective capture from supplied voice transcript, 2026-10-16; exact relative occurrence within the intervening conversation unavailable.
+
+````text
+Hi, can you recall where we were at? Our call got interrupted
+````

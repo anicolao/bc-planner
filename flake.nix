@@ -5,6 +5,6 @@
     system = "x86_64-linux";
     pkgs = import nixpkgs { inherit system; };
   in {
-    packages.${system} = { go = pkgs.go; tailscale = pkgs.tailscale; default = pkgs.tailscale; };
+    packages.${system} = { openssh = pkgs.openssh; go = pkgs.go; tailscale = pkgs.tailscale; default = pkgs.tailscale; };
   };
 }

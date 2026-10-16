@@ -1,0 +1,11 @@
+#!/bin/sh
+set -eu
+HERE=$(CDPATH= cd -- "$(dirname -- "$0")/.." && pwd)
+: "${BC_RUNTIME:?Set BC_RUNTIME}"
+umask 077
+mkdir -p "$BC_RUNTIME"
+"$HERE/scripts/nix-root" build "path:$HERE#tailscale" --no-write-lock-file --no-link --max-jobs 0 --print-out-paths > "$BC_RUNTIME/tailscale-path.next"
+PACKAGE=$(cat "$BC_RUNTIME/tailscale-path.next")
+"$HERE/scripts/nix-root" store verify --recursive --sigs-needed 1 "$PACKAGE"
+mv "$BC_RUNTIME/tailscale-path.next" "$BC_RUNTIME/tailscale-path"
+printf 'Synced %s\n' "$PACKAGE"

@@ -1,0 +1,10 @@
+#!/bin/sh
+set -eu
+: "${BC_NIX_BOOTSTRAP:?Set BC_NIX_BOOTSTRAP to the existing extracted Nix bootstrap directory}"
+: "${BC_RUNTIME:?Set BC_RUNTIME to an absolute writable directory outside the repository}"
+case "$BC_RUNTIME" in /*) ;; *) echo 'BC_RUNTIME must be absolute' >&2; exit 2;; esac
+umask 077
+mkdir -p "$BC_RUNTIME/root" "$BC_RUNTIME/cache" "$BC_RUNTIME/config" "$BC_RUNTIME/data"
+export LD_LIBRARY_PATH="$BC_NIX_BOOTSTRAP/usr/lib/nix:$BC_NIX_BOOTSTRAP/usr/lib/x86_64-linux-gnu"
+export XDG_CACHE_HOME="$BC_RUNTIME/cache" XDG_CONFIG_HOME="$BC_RUNTIME/config" XDG_DATA_HOME="$BC_RUNTIME/data" NIX_CONF_DIR="$BC_RUNTIME/config/nix"
+exec "$BC_NIX_BOOTSTRAP/usr/bin/nix" --extra-experimental-features 'nix-command flakes' --store "local?root=$BC_RUNTIME/root" "$@"

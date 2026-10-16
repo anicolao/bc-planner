@@ -1,0 +1,5 @@
+#!/bin/sh
+set -eu
+: "${BC_RUNTIME:?Set BC_RUNTIME}"
+# No host-root mirrors, bind mounts, inherited credentials or system /nix writes.
+exec env -i PATH=/usr/sbin:/usr/bin:/bin LANG=C /usr/bin/unshare --user --map-root-user -- /usr/sbin/chroot "$BC_RUNTIME/root" "$@"

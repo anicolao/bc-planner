@@ -1,0 +1,61 @@
+{
+  "base": "5bae4f192fb7bcd24296f28f57016dbd6e9efd44",
+  "sources": [
+    {
+      "pr": 2,
+      "head": "9840f6a8ce14b77e9a963ef920c525f51ef7a1dc",
+      "base": "5bae4f192fb7bcd24296f28f57016dbd6e9efd44",
+      "promptAppendSha256": "2e160463145501a78023b6847647bad31d933a4874775829b64ff67e28b0d412",
+      "files": {
+        "experiments/alternate-nix-store.md": "6bcfc6eca7e3254c492b33e5b72275467014292a728822a1598012be62e38a83",
+        "system-information.md": "4e49bdb10c86726461a2a38c1e28321f5ce07a5fd872bb09dc97301ad648f79a"
+      }
+    },
+    {
+      "pr": 3,
+      "head": "3a771d21077932c1459fa911a38727c0026bd66d",
+      "base": "5bae4f192fb7bcd24296f28f57016dbd6e9efd44",
+      "promptAppendSha256": "abe0632f946735cb8c7c9dbaca1db7fdaa7e19195f34f4cd3139f19d0fa1dbd5",
+      "files": {
+        "environment/README.md": "b14eee9e52ecb7b3471add434a097a512e69a1baa3e408b9e0a9bba1dc017472",
+        "flake.lock": "0a740ebdd672e61bb3f3ac375e898c6d0c2ee0027e5f7fe5974f517ceaa2ec9b",
+        "flake.nix": "aa0a4167cf77b3c493104c1535d80b1691cabcc55fbf95bee3dc0dc4d1ea5128",
+        "scripts/environment.test.mjs": "7bb0971d5858d0e3aae09d19ce5590777ebbeeae8b9654470d57daa83baaffca",
+        "scripts/nix-root": "6d2f9e58cd69cd029905a1c5b20d31ebe94d1e4c1d2befc49ae1aabcbf0f1062",
+        "scripts/run-in-root": "8907428c264be9676f185295ced7f7c273f191fe0a2ba4e3cf194b4fabab04a9",
+        "scripts/sync-environment": "d0cf1db1a7d5d36229e9629de5816a27f9decaddc3e745375ec26c7673c1b38e",
+        "scripts/tailscale-runtime": "26507ed1b8289551f23651166044352433935066f9b5ae3c7747af18187b33eb"
+      }
+    },
+    {
+      "pr": 4,
+      "head": "5a6a1ec1dfc0a497eea878aae7503152264940bd",
+      "base": "5bae4f192fb7bcd24296f28f57016dbd6e9efd44",
+      "promptAppendSha256": "b3a0fd84f2b33835dd91d7e661a75d5b4d617cb6c83f62a3cf69cce6e47e30b7",
+      "files": {
+        "AGENTS.md": "fec15297451cc699ad3b9dc782f53c7f164f08073b51476ea1b79fee854854f0",
+        "experiments/wireguard/README.md": "1b52b6358b423f209fc568a8f3fe81a53975068fc920c351adb382c32ccd344c",
+        "experiments/wireguard/bind.go": "924a36b5f94475072600f3cbe1c35253c1d6d82257d38c2ac22ac542454c4b22",
+        "experiments/wireguard/bind_test.go": "6f4b40b6c80039f44d1be1e2236702ea5867c4c52b965b46f3c3d328e1e04fb0",
+        "experiments/wireguard/go.mod": "70ed4807e83f8b0e10a718be3247a1bde54fbdb5a42a34e3dabb7772f965fd6f",
+        "experiments/wireguard/go.sum": "444c109ab9cd7b3144cb098ac0b60eaf91b19b087ed880353676aaddb72c74e0",
+        "experiments/wireguard/main.go": "41cde900a9cff865a06a504105e63c2fda5870bad85c0b7fe36c1223e1d21710",
+        "flake.lock": "0a740ebdd672e61bb3f3ac375e898c6d0c2ee0027e5f7fe5974f517ceaa2ec9b",
+        "flake.nix": "addbbc49fb6ae04c10f673cc77af00d32396d49e09f8e7218247e7cf2ceb73f8",
+        "scripts/nix-root": "6d2f9e58cd69cd029905a1c5b20d31ebe94d1e4c1d2befc49ae1aabcbf0f1062",
+        "scripts/test-wireguard": "2d903fbe5c0ded68ee4d1b40d3d13701a2391683d7e4cbc364ba830b7e15b2c8"
+      }
+    },
+    {
+      "pr": 5,
+      "head": "9313ba997a989c5f54d6ee88f0e5407bb5726ecb",
+      "base": "5a6a1ec1dfc0a497eea878aae7503152264940bd",
+      "promptAppendSha256": "cf4de7bfcc92273e2bab08ebdcd67c552a99601754cc091afdba10d2922ee20b",
+      "files": {
+        "experiments/sshd/README.md": "92633c7f4c98e4bcdd99707885e28f6708bacce987c82bd6850cb06bf35c7384",
+        "experiments/sshd/test.py": "ea0907396eefffacebf361cd42612a85b24b8740c8554be74f138ef64b6f264b",
+        "flake.nix": "0fe3ac77ef66cdd1d35cc1520d0ad032bb945dc1b464260917f7f867a5a15d26"
+      }
+    }
+  ]
+}

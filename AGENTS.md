@@ -17,3 +17,7 @@
 - When work is delegated, pass exact relevant user prompts and require the worker to report which entries capture them. A summary of an instruction is not a substitute for its transcript. Obtain missing exact text from the coordinating conversation before claiming complete provenance.
 - If an older omission is discovered, append it with its original relative occurrence and retrospective capture metadata. Do not reorder or edit existing entries to repair chronology.
 - Byte-level hooks and CI cannot detect an omitted conversation message. Perform this source-to-record reconciliation even when all automated checks pass.
+
+## Software installation
+
+Use the repository's pinned Nix flake for all software installs, including language toolchains and new dependency acquisition where applicable. Do not silently fall back to apt, direct-download installers, or another package manager. If the flake cannot provide a required tool, report the concrete blocker and update the flake through the normal review process. Earlier bootstrap experiments are historical evidence, not an ongoing exception. Never replace or expose authentication configuration while preparing tools.

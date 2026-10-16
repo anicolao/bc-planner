@@ -1,0 +1,20 @@
+#!/bin/sh
+set -eu
+HERE=$(CDPATH= cd -- "$(dirname -- "$0")/.." && pwd)
+: "${BC_RUNTIME:?Set BC_RUNTIME to the workspace runtime outside the repository}"
+: "${BC_GO_MODULE_CACHE:?Set BC_GO_MODULE_CACHE to the previously populated, go.sum-verified module cache}"
+case "$BC_GO_MODULE_CACHE" in /*) ;; *) echo 'Module cache must be absolute' >&2; exit 2;; esac
+GO_PACKAGE=$("$HERE/scripts/nix-root" build "path:$HERE#go" --no-write-lock-file --no-link --max-jobs 0 --print-out-paths)
+"$HERE/scripts/nix-root" store verify --recursive --sigs-needed 1 "$GO_PACKAGE"
+# This pinned Go distribution is static and supports an explicit physical GOROOT.
+# Running it directly retains the outer sandbox and requires no host /nix alias.
+export GOROOT="$BC_RUNTIME/root$GO_PACKAGE/share/go"
+export GOCACHE="$BC_RUNTIME/wireguard-go-cache" GOMODCACHE="$BC_GO_MODULE_CACHE" GOPATH="$BC_RUNTIME/wireguard-gopath"
+export GOPROXY=off GOSUMDB=off GOTOOLCHAIN=local CGO_ENABLED=0
+cd "$HERE/experiments/wireguard"
+"$GOROOT/bin/go" version
+"$GOROOT/bin/go" mod verify
+"$GOROOT/bin/go" test ./...
+"$GOROOT/bin/go" build -buildvcs=false -o "$BC_RUNTIME/wireguard-local-proof" .
+# The program has its own overall deadline and does not persist any keys.
+exec "$BC_RUNTIME/wireguard-local-proof"

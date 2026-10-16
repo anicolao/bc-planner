@@ -279,3 +279,40 @@ Repeated exact user instruction for the follow-up commit needed to complete the 
 ````text
 All right, let's rebase and merge it to close the PR
 ````
+
+
+## WireGuard experiment source coverage
+
+Captured 2026-10-16 from the available user voice transcripts and coordinating conversation. These are transcriptions, not a guarantee of verbatim audio. Coverage for this branch is the four task-related utterances below, in supplied order. Earlier Nix/Tailscale prompts are recorded in their separate PRs; this branch starts from merged main and does not claim those PR records are already merged. No inaccessible audio was reconstructed. The apparent transcription “You Nix” is interpreted as “Use Nix” outside the quote only. Mapping: endpoint request → 34; status question → 35; Go installation correction → 36; AGENTS policy instruction → 37.
+
+## Prompt 34: Explore userspace WireGuard endpoint
+
+Source: available user voice transcript, 2026-10-16.
+
+````text
+All right, let’s go lower level. Can we get a WireGuard endpoint set up
+````
+
+## Prompt 35: Check endpoint experiment progress
+
+Source: available user voice transcript, 2026-10-16.
+
+````text
+How’s that going
+````
+
+## Prompt 36: Use Nix for Go
+
+Source: available user voice transcript, 2026-10-16.
+
+````text
+You Nix to install Go
+````
+
+## Prompt 37: Require flake managed installs
+
+Source: available user voice transcript, 2026-10-16.
+
+````text
+Make sure agents dot md makes it clear that you must use the Nix flake for all software installs
+````

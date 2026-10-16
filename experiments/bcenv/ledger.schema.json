@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Append-only bcenv experiment event",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["event_id", "experiment_id", "recorded_at", "kind", "references", "record", "note"],
+  "properties": {
+    "event_id": {"type": "string", "minLength": 1},
+    "experiment_id": {"type": "string", "pattern": "^BCENV-[0-9]+$"},
+    "recorded_at": {"type": "string", "format": "date-time"},
+    "kind": {"enum": ["proposed", "preregistered", "started", "artifact", "deviation", "decision", "correction"]},
+    "references": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+    "record": {"type": "object", "description": "Event-specific payload checked by check-bcenv-ledger.mjs; immutable artifact locators include commit and SHA-256."},
+    "note": {"type": "string", "minLength": 1}
+  }
+}

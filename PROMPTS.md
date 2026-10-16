@@ -811,3 +811,11 @@ Source: exact available user text/transcript supplied by the coordinating conver
 ````text
 Once that PR is up, can we run the 6.1 Sol versus 6 Astra comparison in parallel in two separate repos
 ````
+
+## Prompt 78: Report interrupted comparison result
+
+Source: exact available user text supplied by the coordinating conversation, 2026-10-16. Source reconciliation: Prompt 77 is the previous recorded boundary; the only additional user message supplied for this update is the status request below. Prior publication and comparison authorization remain recorded at Prompts 76–77. This commit appends the observed terminal comparison outcome to the already requested implementation notes; no new run, setup change or merge is authorized by it. Worker/tool notifications are excluded. Coverage is limited to supplied messages, not inaccessible history or audio.
+
+````text
+Looks like we got disconnected. How did the trial go
+````

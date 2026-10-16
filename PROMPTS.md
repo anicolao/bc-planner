@@ -647,3 +647,12 @@ Source: exact user text supplied by the coordinating conversation, 2026-10-16. S
 ````text
 ok this document should not define future direction, only learnings and info from examining Terry's system. Let's fix that and then merge the PR. For the system we are building, we need to be able to both run oru own code locally and schedule scrimmages against a replica of battlecode's infrstructure. Let's start with 2023's battlecode. Examine my prior repository for 2023, and write a 2023-experiment-plan.md that specifies proposed implementation steps for me to review on a new PR
 ````
+
+
+## Prompt 59: Plan Battlecode 2023 experiments
+
+Repeated exact current user task for the separate 2023 planning commit, as required by repository policy. Source reconciliation: the coordinating conversation supplied one new task-related user message after Prompt 57, captured in full in Prompt 58. This entry repeats it for the new plan PR based on merged main f2d27c0. No additional task-related user messages were supplied before this commit. Environment notifications and worker reports are not user task prompts. This covers the available supplied text, not inaccessible historical conversation or audio.
+
+````text
+ok this document should not define future direction, only learnings and info from examining Terry's system. Let's fix that and then merge the PR. For the system we are building, we need to be able to both run oru own code locally and schedule scrimmages against a replica of battlecode's infrstructure. Let's start with 2023's battlecode. Examine my prior repository for 2023, and write a 2023-experiment-plan.md that specifies proposed implementation steps for me to review on a new PR
+````

@@ -639,3 +639,11 @@ Repeated exact current user task for the separate research commit required by re
 ````text
 OK let's consolidate the branches, conclude that we failed to provide remote access but don't have an immediate need for it, rebase and merge onto main. Then let's put up a new branch that examine's terry's prior art on battlecode implementation.
 ````
+
+## Prompt 58: Bound Terry review scope
+
+Source: exact user text supplied by the coordinating conversation, 2026-10-16. Source reconciliation: Prompt 57 is the previous task boundary. The coordinating conversation confirmed this is the only new task-related human message since that boundary. It is captured in full, including the separate 2023 planning request; this commit addresses only the Terry document correction and merge. No unavailable history or audio is claimed as audited.
+
+````text
+ok this document should not define future direction, only learnings and info from examining Terry's system. Let's fix that and then merge the PR. For the system we are building, we need to be able to both run oru own code locally and schedule scrimmages against a replica of battlecode's infrstructure. Let's start with 2023's battlecode. Examine my prior repository for 2023, and write a 2023-experiment-plan.md that specifies proposed implementation steps for me to review on a new PR
+````

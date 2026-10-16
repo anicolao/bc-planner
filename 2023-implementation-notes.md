@@ -502,3 +502,124 @@ Overall, the review supports confidence in Sol's basic implementation and candor
 It does not yet support confidence in competitive strategy or deep causal replay
 analysis. These are observer findings and proposed evaluation improvements, not
 changes to the frozen candidate or the approved implementation plan.
+
+## Observer analysis: direct review of Astra's code and experiment
+
+This separate post-trial review read all 205 lines of both Java versions, their
+complete diff, the authored `inspect_results.py`, experiment/selection notes,
+commands, report and README, all four result/summary/log sets, build/package
+manifests, fixture and relevant pinned rules/API. It used read-only comparison
+and hash inspection: no edits, reruns, installations or coaching. Source-line
+references below apply to `mybot/RobotPlayer.java` in both retained build source
+snapshots; only line 8 differs. The selected editable source and ZIP match the
+baseline. Raw candidate source remains private.
+
+**Assessment:** Astra built a compact, rule-aware capture bot and handled a failed
+experiment cleanly. Its strongest work is test honesty, scope control and artifact
+handling. Its principal implementation weakness is allocating anchors without
+allocating useful courier jobs, while communication freshness and local movement
+remain brittle. This is a competent response to the narrow legal-bot/local-
+diagnostic brief, not proof of a strong tournament strategy or model superiority.
+
+### Priority findings
+
+1. **Medium: surplus anchors and courier overcommitment.** Headquarters produce
+   exactly three carriers over their lifetime, then replace any stored anchor
+   that is taken (51–69). Empty carriers take anchors without a demand check,
+   destination reservation or minimum mining workforce (115–124, 129–134).
+   Anchor carriers exclusively deliver, with no return-anchor path (108,
+   148–165). One stored anchor per HQ does not limit anchors already in transit.
+   Observed builds/pickups/placements are 16/13/5 and 15/13/5 for the baselines,
+   and 16/13/5 and 9/7/5 for the revisions. Each game records nine own spawns and
+   only the three fixture-HQ death records. Given that code has no returns or
+   other disposal path, accounting implies eight of nine carriers still hold
+   anchors at the end of each baseline and revised A, versus two in revised B.
+   Corresponding stored counts are three, two, three and two. These are
+   **accounting deductions**, not decoded end-state observations. Baseline A's
+   eleven unplaced anchors represent 1,100 adamantium plus 1,100 mana committed
+   at finish (pinned Anchor.java 16; rules 132–134). This establishes surplus
+   allocation, not the missing temporal cause of revised A's slowdown.
+2. **Medium: shared reads can erase newer unpublished ownership knowledge.**
+   `updateKnowledge` imports every nonzero shared record before sensing nearby
+   islands and attempting publication (81–101). A newer ownership observation
+   made outside communication range can therefore be overwritten by an older
+   shared value on a later turn after leaving vision, before the carrier reaches
+   a relay. No timestamp, version or dirty-local flag protects it. The finding
+   is conditional: a newly discovered island whose shared entry is zero remains
+   cached; current-turn visible data takes priority; successful own placement
+   explicitly writes ownership (149–155). It is not true that all scouting data
+   is lost. The inert fixture does not exercise enemy ownership changes, and
+   this defect is not an established cause of those timings. Write-range rules:
+   pinned rules 146–148 and RobotController 1027–1051.
+3. **Low/medium: navigation is a thoughtful local heuristic, not robust routing.**
+   The move loop checks legality/cooldown, scores eight directions, randomizes
+   ties, penalizes recent visits, and considers distance, clouds, currents and
+   sensed enemy HQ danger (176–203). The HQ penalty is grounded in the pinned
+   passive-damage rule: four damage within squared radius nine, despite HQs not
+   being active attacking units (rules 70, 202, 206). However, each of up to two
+   voluntary moves is scored using a current-shifted endpoint (178, 191), while
+   currents apply after voluntary movement (rules 58). Estimated endpoints check
+   boundaries/passability but not robot occupancy (192), and there is no global
+   obstacle routing. Recent-visit penalties can outweigh several tiles of goal
+   distance. Placement is checked before movement only (149–165), so arrival
+   does not trigger same-turn placement and a current could move a carrier off
+   the island first. These are code-path limitations, not verified failed paths
+   or replay-derived explanations of the regression.
+4. **Scoped strategic limitations: crude economy and no recovery/combat policy.**
+   Resource preference starts from ID parity, flips after a completed return,
+   and searches only the preferred resource (24, 115–141). There is no inventory-
+   demand balancing, shared well allocation, fallback resource or congestion
+   control. Carriers choose the nearest known HQ at their current position
+   (75–79); with isolated HQ stockpiles, per-carrier alternation does not guarantee
+   the needed balance at each HQ. Lifetime production counters never replace
+   losses (51, 65); there are no combat units or mobile-enemy avoidance. These
+   limits are disclosed and do not violate the narrow kickoff.
+
+### Strengths and rule correctness
+
+Capacity and empty-before-anchor handling match the 40 kg rules. Build, transfer,
+collect, take, place and move operations use legality checks. Neutral-only island
+placement avoids wasting anchors replacing allied ones, even though the API
+allows that replacement. Encoding, owner bits, array sizes and shared-array slot
+choices fit the pinned limits; shared writes are range-gated. Per-robot static
+state is legitimate, loops are bounded, and the finally-yield loop preserves
+progress after handled controller exceptions (25–33). It catches
+GameActionException, not arbitrary runtime errors; successful matches still do
+not prove no exceptions or bytecode overruns. No disqualifying legality defect
+was found in this review.
+
+### Experiment and selection judgment
+
+The entire candidate change is `ANCHOR_START_ROUND = 150` to `1` at line 8.
+Three-carrier production and resource checks remain unchanged. All four games
+share the same pinned engine, fixture and map identity
+`a53211fc3fb4cc6427693f6f65b0732cc4bdf9ecb90f911ffbd71b5af82bb910`,
+with matched A/B slots and verified replay hashes. This is a clean first probe
+of a deliberate opening delay. The prediction explicitly requires faster
+capture on each side and anticipates lost mining labor as a possible downside
+(`001-prediction.md`, 10–27).
+
+Astra correctly reports that 362/235 baseline rounds versus 448/143 changed
+rounds refute the both-sides prediction. The 143-round B finish logically proves
+that game's five placements preceded round 150; it does not reveal exact first-
+anchor timings. Sampled action counts and net resource deltas cannot establish
+throughput or navigation quality. `inspect_results.py` correctly checks artifact
+status, replay hashes and selected-source/package identities (14–39), but is an
+artifact-consistency audit, not a semantic or causal test.
+
+Retaining the baseline for its lower observed worst-side duration, 362 versus
+448, is a reasonable conservative choice after the failed proposal. The minimax
+criterion appears after outcomes, rather than as a preregistered optimization
+objective. A mean objective would instead marginally prefer the revision, 295.5
+versus 298.5; neither establishes a uniquely best version or model strength.
+The result note explicitly labels suggested routing/allocation explanations as
+hypotheses (20–35). Broader distinct scenarios and causal traces would improve
+the evaluation; identical deterministic reruns are not independent statistical
+replicates. Those further tests were outside the completed workflow and were not
+run for this review.
+
+Stopping after four games and a completed workflow followed the trial stop rule;
+twenty minutes was a ceiling, not an obligation to continue optimizing. Overall,
+Astra demonstrated solid small-program engineering and disciplined handling of
+negative evidence, with much less evidence of adaptive strategy. This is observer
+analysis only, not a change to the bot, approved plan or comparison result.

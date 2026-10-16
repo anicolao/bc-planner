@@ -145,3 +145,10 @@ A practical next step is an explicitly supported runner with writable canonical 
 PRoot is not installed in this runtime, and permitted tracing/path translation has not been established. Seccomp being active does not reveal which calls it permits. No PRoot, ptrace, or fake-root test has been run; installing a translator is not proof that it can execute here. A supported route must retain all outer filesystem restrictions, including denied reads, and must not depend on disabling the platform filter or exposing host credentials. Until that is established, this remains an unverified candidate rather than a working solution.
 
 A workspace symlink alone cannot alter absolute `/nix/store` resolution. Rewriting ELF interpreter/library paths would instead modify the package artifacts and can miss embedded absolute paths; that is not a faithful canonical-store solution. The already-tested custom logical store remains the only demonstrated execution route in this experiment.
+
+
+### Subsequent tracing prerequisite check
+
+After the read-only assessment above, a minimal own-child diagnostic was performed: a Python process forked a short-lived child; the child called `ptrace(PTRACE_TRACEME, 0, NULL, NULL)` and immediately exited. No unrelated process was inspected, and there was no path remapping, namespace creation, mount, or security-setting change.
+
+**Result:** return value `-1`, errno `1` (`Operation not permitted`). This blocks the basic tracing mechanism needed by the proposed PRoot execution path. The precise enforcement layer is not identified by that errno alone. No PRoot installation or alternate tracer was attempted after the denial. A working canonical-root execution route has not been established here; bypassing the denial is outside this experiment.

@@ -353,3 +353,12 @@ Source: supplied user voice transcript; captured 2026-10-16 after Prompt 40. Thi
 ````text
 Can you come up with any other way to make a root that looks the way Nix wants it to look that will work on the system that we're on
 ````
+
+
+## Prompt 42: Verify tracing prerequisite
+
+Repeated exact Prompt 41 for the follow-up commit recording a harmless own-child tracing diagnostic. Source: supplied user voice transcript, captured 2026-10-16. No new user instruction is inferred; this is continuation of that experiment.
+
+````text
+Can you come up with any other way to make a root that looks the way Nix wants it to look that will work on the system that we're on
+````

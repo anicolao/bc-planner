@@ -1129,3 +1129,25 @@ Source: exact user message Sentinel_07676e2937e88191b0284d02853501f1, 2026-10-19
 ````text
 fix it
 ````
+
+
+## Preserve second process commit provenance
+
+Captured 2026-10-19. The following addition from original process commit c04a66e is retained byte-for-byte. Its historical Prompt101 heading is preserved; it is not a new source message.
+
+## Prompt 101: Keep ledger additions testable
+
+Repeated Prompt 94 for a second commit responding to the same process request. Review found the repository-data test should permit future ledger appends instead of fixing its current event count. Source coverage remains through Prompt 100; no additional user text was supplied before this commit.
+
+````text
+Alright, so just like the bots you're trying to change, give yourself need a process for making these changes, evaluating them, recording your results, and so on
+````
+
+
+## Prompt 104: Complete process history reconciliation
+
+Repeated exact user message Sentinel_07676e2937e88191b0284d02853501f1 for the second rebased commit responding to the same integration fix. Source coverage remains through Prompt103; no additional task-related user message was supplied. Both original process commit additions and the main prefix are preserved, with historical duplicate entry numbers explicitly retained.
+
+````text
+fix it
+````

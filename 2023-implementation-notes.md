@@ -221,3 +221,84 @@ initialization there before creating a new frozen paired run. Preserve this
 failed comparison as-is; do not silently substitute native agents or treat a
 catalog listing as a successful model invocation. No such rerun or setup change
 is performed by this notes update.
+
+## Follow-up: workspace repair and supported-route investigation
+
+Observed 2026-10-16. The user subsequently authorized fixing workspace-local
+writability and finding a workaround. This investigation progressed beyond the
+first generic read-only error but did **not** launch paired comparison 002 or
+perform competitor inference. It does not revise either earlier frozen result.
+
+### Implemented repair and precise remaining prerequisites
+
+The documented per-command `CODEX_HOME` setting selected a new writable home
+inside the workspace. The CLI wrote installation/migration metadata there.
+Workspace-local XDG runtime, SQLite and log locations were also tested. This
+applies the useful part of the earlier writable-directory approach: relocating
+ordinary state through supported configuration.
+
+Two independent blockers remained:
+
+1. The new home reports `Not logged in`. Original authentication was untouched;
+   no credential was read, copied, mounted, uploaded or reconfigured. An authorized
+   account connection remains necessary in a usable executor.
+2. Prompt preparation fails on the fixed `/tmp/codex-daemon-1000` socket directory.
+   Local metadata showed UID 1000 ownership, mode 000 and a read-only tmpfs mask;
+   the CLI requires an owned directory with mode 0700. Supported writable-home
+   overrides do not relocate this security-sensitive directory.
+
+[Official Codex socket-directory source](https://github.com/openai/codex/blob/main/codex-rs/uds/src/daemon_directory.rs)
+and the [upstream nested-sandbox issue](https://github.com/openai/codex/issues/53799)
+support the diagnosis. The local observations, rather than the issue alone,
+establish this executor's condition. No mask, ownership, permission or outer
+sandbox setting was changed. This is no longer merely a missing writable
+working directory.
+
+### Supported alternatives tested without inference
+
+- The installed CLI documents `codex app-server --stdio`. JSON-RPC initialization
+  succeeded using the empty workspace-local home. This establishes transport
+  initialization, not successful model inference or shell execution.
+- A standalone `command/exec` request for harmless `/bin/true` with `readOnly`
+  reached inner sandbox startup and failed with the same required-mode-0700
+  socket-directory error. The ordinary `workspaceWrite` CLI preparation path
+  likewise remained blocked by the mask.
+- [Official app-server documentation](https://learn.chatgpt.com/docs/app-server)
+  describes `externalSandbox` for a server already running in an external
+  sandbox; [the official implementation discussion](https://github.com/openai/codex/pull/8290)
+  provides related context. This mode is a distinct API execution configuration,
+  not a successful literal `codex exec` run or permission to weaken protections.
+- A harmless `/bin/true` request using that documented mode with restricted
+  network access was explicitly rejected by administrator policy:
+  `ExternalSandbox is not in the allowed set [read-only, workspace-write]`,
+  set by `/etc/codex/requirements.toml`. Investigation stopped at that denial.
+  No alternate route was used to evade it and no requirement was changed.
+
+Generated local schemas expose requested model/effort and returned model/provider/
+reasoning fields, but no successful inference exercised them. There is still no
+entitlement determination, effective model configuration, token-usage result,
+bot artifact or playing-strength comparison. No native-agent substitution was
+made. No authorized alternative executor was available in the checked catalog;
+no other computer or new infrastructure was used.
+
+### Outcome and next prerequisite
+
+No permitted competitor execution route was established in this executor. A
+supported, separately authorized executor/account connection, or resolution by
+the environment owner within supported policy, is required before retrying.
+Logging into the new home alone would not repair the socket/sandbox conflict.
+Once both prerequisites are verified, create a new paired run with the same
+frozen export, equal limits, independent repositories and no cross-agent context.
+Do not alter failed comparison 001 or repair evidence 002.
+
+Retained evidence identities (SHA-256), with raw environment/log records private:
+
+- Repair report: `b474c658281f825c0ba3578bbc8cdce313888e40d270d1a75c235d9de1df3798`.
+- Repair preflight: `18add95ef161521be6b46d24b05ee913c5f21611449478a29b1c0df88360ffc6`.
+- Supported-route report: `c71b68adeb0b93824d97505259c25012562bafc33bec32c5cded8d53d36504c1`.
+- Stdio initialization evidence: `218a18c8d9795fd0a26ec12743e11bf2057d73924bd01edf2c573ac04b5980cd`.
+- Read-only command evidence: `6e22b557c42534871b96814a6cf8cca3ba6882dc70afc4cc76ba16a79078d188`.
+- Policy-denial evidence: `56de5cbef14692888498fa8441ba22fa18316f40b0649da691721f3d87573704`.
+
+This is the documented blocker outcome of the requested repair investigation,
+not a completed comparison or evidence favoring either model.

@@ -922,3 +922,24 @@ Source: exact available user voice transcript supplied by the coordinating conve
 ````text
 How would Astra, is it done yet
 ````
+
+
+## Direct Astra review source reconciliation
+
+Captured 2026-10-16 from exact available user text/transcripts supplied by the coordinating conversation. Prompt 89 is the previous boundary. The two subsequently supplied messages map in order to Prompts 90–91: disconnected Astra report and direct Astra review request. Worker/tool notifications are excluded. Coverage is limited to supplied text, not inaccessible history or audio. This observer review leaves candidate artifacts and the approved plan unchanged.
+
+## Prompt 90: Resume disconnected Astra report
+
+Source: exact available user text/transcript supplied by the coordinating conversation, 2026-10-16.
+
+````text
+You are trying to report on the Astra results, but you got disconnected
+````
+
+## Prompt 91: Request direct Astra code review
+
+Source: exact available user text/transcript supplied by the coordinating conversation, 2026-10-16.
+
+````text
+Understood. Deep dive into Astra and see what you think
+````

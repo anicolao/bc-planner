@@ -25,3 +25,7 @@ jobs:
           BASE_SHA: ${{ github.event.pull_request.base.sha || github.event.before }}
           HEAD_SHA: ${{ github.event.pull_request.head.sha || github.sha }}
         run: node scripts/check-prompt-history.mjs "$BASE_SHA" "$HEAD_SHA"
+      - name: Validate append-only environment experiment ledger
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha || github.event.before }}
+        run: node scripts/check-bcenv-ledger.mjs experiments/bcenv/ledger.jsonl "$BASE_SHA"

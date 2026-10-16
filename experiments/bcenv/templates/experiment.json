@@ -1,0 +1,31 @@
+{
+  "id": "BCENV-NNN",
+  "status": "proposal",
+  "record_kind": "prospective",
+  "question": "",
+  "deficiency": {"evidence": [], "observations": [], "inferences": [], "unknowns": []},
+  "pins": {
+    "baseline_env_commit": null, "candidate_env_commit": null,
+    "kickoff_artifact_sha256": null, "kickoff_artifact_locator": null,
+    "model_id": null, "reasoning_effort": null, "provider_version_limits": null,
+    "harness_commit_and_version": null, "engine_rules_commit": null,
+    "nix_lock_sha256": null, "dependency_manifest_sha256": null,
+    "initial_bot_commit_and_sha256": null, "fixture_manifest_sha256": null
+  },
+  "treatment": {"one_change": "", "diff_artifact": null, "confounds": []},
+  "hypothesis": "",
+  "behavioral_test": {"observables": [], "pass_rule": null, "fail_rule": null, "counterevidence": []},
+  "downstream_test": {"metrics": [], "regression_limits": null, "claim_limits": []},
+  "design": {
+    "task_mode": "fresh_continuation",
+    "arms": ["baseline", "candidate"], "independent_agents_per_arm": null,
+    "assignment_and_run_order": null, "matched_scenarios": [],
+    "known_cases": [], "holdouts": [], "holdout_access_log": null,
+    "allowed_context_manifest": null, "observer_rubric_commitment": null,
+    "blinding_and_scoring": null, "time_token_compute_ceilings": null,
+    "stop_retry_missing_data_rules": null
+  },
+  "launch_gates": {"authorization_reference": null, "protocol_commit": null, "pins_verified": false, "isolation_verified": false},
+  "results": {"run_manifest": [], "artifact_audit": null, "mechanism_assessment": null, "downstream_assessment": null, "deviations": [], "actual_cost": null},
+  "decision": {"verdict": null, "rationale": null, "uncertainty": null, "lessons": [], "next_question": null}
+}

@@ -664,3 +664,12 @@ Source: exact user text supplied by the coordinating conversation, 2026-10-16, m
 ````text
 the plan misinterprets the layering. bc-planner's repository is for tooling and documents about building the LLM's environment for working on battlecode; bcenv is supposed to be the repository that creates the environment and skills and that enable a sub-agent to actually start competing. So the plan you need to make is a plan about setting up bcenv for the sub-agent, adn then starting the sub-agent and seeing if it can follow your instructions/prompts to actually build a competitor. Your work is all indirect: you create the environment, hten start a new agent with no additional context than what you provide in bcenv and a prompt to kick it off, and then observe it to see if it does what you want. You don't directly correct it or direct it; you provide the bcenv environment to enable it to operate autonomously, and if htat fails, you modify bcenv and try again.
 ````
+
+
+## Prompt 61: Split reusable and competitor layers
+
+Source: exact user text supplied by the coordinating conversation, 2026-10-16, message Sentinel_ee7c01ed1d948191a96344d6cfa1d716. Source reconciliation: Prompt 60 is the previous recorded boundary. The coordinating conversation confirmed no intervening user messages other than the request below. Checked messages: prior indirect-environment correction → Prompt 60; current base/year-layer and proposed persistent-fork request → Prompt 61. Worker/tool notifications are excluded. Coverage is bounded to supplied exact text; inaccessible history and audio are not claimed as audited.
+
+````text
+probably we need to split bcenv into two layers: a base layer that we think will be usable across multiple contest years, and a specific competitor layer that adds in the year's engine and ruleset. this second layer could be a fork of the base layer that the competitor LLM owns so that it has a place to persist its work. let's update the plan accordingly
+````

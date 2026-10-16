@@ -402,3 +402,103 @@ retained SHA-256 identities:
 - Native comparison report: `36a3643070591a4c70c63e9af8265e43b02e0c43e6762afa5e810a2c687c7214`.
 - Independent audit: `b4cf5c4bcd7824c1e6f77ca02a816506deea6e5deff0b9da420da6792f14d80d`.
 - Launch manifest: `18fe4ad03ee91f03228fc6fdb495c20d71941901425acb3acdf6b09da13105aa`.
+
+## Observer analysis: direct review of Sol's code and experiment
+
+This is a post-trial observer review requested by the user, distinct from the
+agent's own report and the artifact audit. No bot files were edited and no games
+were rerun. The review read all 203 lines of both candidate versions, their full
+diff, commands, experiment notes and reports, four result/summary records, and
+relevant pinned API/rules. The complete Java diff is one constant at line 12:
+`ANCHOR_START = 300` becomes `30`. No additional persisted authored Java, Python
+or shell helpers were found under the candidate/work directories; the supplied
+launcher, extractor and fixture are infrastructure, not Sol-authored code.
+
+**Assessment:** good execution of the narrow legal-working-bot and truthful
+local-diagnostic brief; a readable, competent prototype with modest strategic
+depth. The experiment was sensible and well controlled, but shallow in explaining
+why outcomes changed. Choosing the changed candidate is provisional, not a
+robust improvement claim. This assessment does not compare Astra's code quality.
+
+Source references below refer to `islandbound/RobotPlayer.java` in the preserved
+baseline `build-001/source` and changed `build-002/source` artifacts; line numbers
+are identical in both versions. The earlier recorded source hashes identify the
+exact reviewed versions. The source itself remains private.
+
+### What it did well
+
+The bot has a coherent headquarters/carrier flow, guarded controller actions,
+load/unload handling, deterministic ID-seeded exploration, and a finally-yield
+loop that preserves liveness after caught exceptions (lines 21–35, 114–143).
+Array/encoding choices fit the pinned 60×60 map, 35-island, four-HQ and 64-shared-
+slot limits. It checks shared-write permission and movement legality. Lack of
+combat and replacement of lost carriers limits competitiveness, but does not
+violate the narrow kickoff. Its reports explicitly avoid equating successful
+games with exception-free execution or full replay understanding.
+
+### Priority findings
+
+1. **Medium: anchor supply is not tied to delivery demand.** Headquarters build
+   when their stored anchor count is zero (68–69); every eligible empty returning
+   carrier takes one (124–128). An anchor-carrying unit exclusively delivers or
+   explores, with no cancellation/return policy or reservation/in-flight cap
+   (117, 146–159). Baselines built 20/19 anchors, picked up 18/18 and placed 5/5;
+   changed games built 14/16, picked up 12/16 and placed 5/5. Under the pinned
+   rules, an anchor fills the carrier's 40 kg capacity and costs 100 adamantium
+   plus 100 mana. Excess assignments therefore divert mining capacity and spend
+   resources. These facts do **not** establish the cause of the B-side regression.
+2. **Medium: island state conflates neutral and enemy-held.** Lines 99–100 store
+   only whether an island is ours, and 155–159 target the nearest island that is
+   not ours. Placement at 148 requires neutral ownership. This can prioritize
+   an enemy-held island over neutral alternatives without an explicit threat or
+   siege policy. It was not exercised by the inert fixture. The rules allow
+   occupancy-based enemy-anchor decay, so this is **not** a claim of permanent
+   deadlock. Relevant pinned references: RobotController 990–993 and rules 136.
+3. **Medium: remembered discoveries lack a later publication path.** Lines
+   91–102 publish currently visible islands only; 103–110 read shared values.
+   Discoveries made outside communication range are not explicitly flushed when
+   the carrier later returns to write range, and older shared values can overwrite
+   nonvisible local knowledge without freshness metadata. This weakens team
+   information sharing. Relevant write-range references: rules 148 and
+   RobotController 1027–1049. It is a code-path finding, not a measured cause of
+   one particular game's duration.
+4. **Low/medium: movement uses an approximate current model.** The loop permits
+   two moves (176), while each move candidate is scored using a hypothetical
+   current-pushed landing (184–193). Pinned rules 58 apply currents at end of
+   turn, after movement, so the first candidate's pushed location need not be
+   the actual intermediate state. This is a heuristic approximation, not an
+   illegal action: movement legality and actual position are still checked.
+   There is no full pathfinder, target reservation or threat avoidance. The
+   provided replay summaries do not establish that this caused the regression.
+
+### Was the improvement test well chosen?
+
+Yes as a first local probe: the original code deliberately prevents anchors
+before round 300, so testing an earlier gate addresses an obvious constraint.
+The one-line change, fixed map/engine identities, identical fixture and matched
+A/B positions make the test easy to interpret at the outcome level. The
+prediction is falsifiable, and its rationale already recognizes the risk of
+stranding miners with anchors (`001-prediction.md`, lines 18–31). Predicting five
+placements adds little beyond the capture-victory condition.
+
+The experiment measures outcome, not mechanism. It does not extract first-anchor
+and placement timelines, carrier roles, or delivery/mining allocation traces.
+That leaves the 140-round A improvement and 11-round B regression unexplained.
+Sol correctly rejects its joint prediction (`001-result.md`, 6–18) and admits
+those analysis limits (32–38). It then introduces the lower-mean selection
+criterion after the joint prediction failed (20–24), rather than using a
+predeclared acceptance objective. Selecting a 319.5-round mean over 384 while
+accepting a worse maximum is a defensible local preference, but only provisional.
+
+The next stronger test would specify the selection objective beforehand, inspect
+allocation/timing evidence, and cover distinct scenarios or seeds. Identical
+reruns are not automatically independent evidence: the pinned rules describe
+reproducible identical matches, with the separately documented final coin-flip
+exception. ID-seeded random exploration and changed RNG consumption following a
+policy change are part of this implementation's behavior, not by themselves an
+uncontrolled experimental confounder.
+
+Overall, the review supports confidence in Sol's basic implementation and candor.
+It does not yet support confidence in competitive strategy or deep causal replay
+analysis. These are observer findings and proposed evaluation improvements, not
+changes to the frozen candidate or the approved implementation plan.

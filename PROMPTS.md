@@ -893,3 +893,32 @@ Source: exact available user text/transcript supplied by the coordinating conver
 ````text
 What's the current status
 ````
+
+
+## Direct Sol review source reconciliation
+
+Captured 2026-10-16 from exact available user text/transcripts supplied by the coordinating conversation. Prompt 86 is the previous boundary. The three subsequent supplied user messages map in order to Prompts 87–89: Sol completion clarification, direct review of the original implementation and improvement experiment, and Astra completion question. The last arrived via voice handback before this commit; mirrored deliveries of that same utterance are deduplicated. Worker/tool notifications are excluded. Coverage is bounded to supplied text, not inaccessible history or audio. The observer review does not modify the frozen competitor or approved plan.
+
+## Prompt 87: Clarify Sol completion status
+
+Source: exact available user text/transcript supplied by the coordinating conversation, 2026-10-16.
+
+````text
+So did you say Sol was finished
+````
+
+## Prompt 88: Review original bot and experiment
+
+Source: exact available user text/transcript supplied by the coordinating conversation, 2026-10-16.
+
+````text
+Take a minute and read all of the code that it wrote, and try to assess whether it did a good job directly from a code review, uh, both its original implementation and the improvement test. Did it choose a good test to do? Did it do a good job of the original implementation? What do you think of its work
+````
+
+## Prompt 89: Check Astra completion status
+
+Source: exact available user voice transcript supplied by the coordinating conversation, 2026-10-16.
+
+````text
+How would Astra, is it done yet
+````

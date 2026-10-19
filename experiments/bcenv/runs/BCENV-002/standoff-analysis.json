@@ -1,0 +1,425 @@
+{
+  "version": "standoff",
+  "fixed_round_window": [
+    1,
+    150
+  ],
+  "metric_semantics": "Geometric recorded position observations, not reconstructed visibility, attack success, damage, or causal combat attribution. Distances use records of each round without inferring vector execution order. Deaths include all causes.",
+  "conditions": [
+    {
+      "condition": "default-A",
+      "candidate_slot": "A",
+      "win": true,
+      "total_rounds": 270,
+      "first150": {
+        "spawn_CARRIER": 21,
+        "spawn_LAUNCHER": 22,
+        "CHANGE_ADAMANTIUM": 898,
+        "CHANGE_MANA": 997,
+        "CHANGE_ELIXIR": 49,
+        "SPAWN_UNIT": 43,
+        "PICK_UP_RESOURCE": 1557,
+        "CHANGE_HEALTH": 63,
+        "LAUNCH_ATTACK": 95,
+        "PLACE_RESOURCE": 27,
+        "death_CARRIER": 3,
+        "BUILD_ANCHOR": 2,
+        "PICK_UP_ANCHOR": 2,
+        "PLACE_ANCHOR": 1,
+        "death_LAUNCHER": 1,
+        "launcher_geometric_engagement_observations": 23,
+        "launcher_close_observations": 5
+      },
+      "close_fraction": 0.21739130434782608,
+      "close_examples": [
+        {
+          "round": 138,
+          "candidate": 13123,
+          "opponent": 13611,
+          "distance_squared": 5,
+          "event_index": 139,
+          "candidate_row": 11,
+          "opponent_row": 34
+        },
+        {
+          "round": 138,
+          "candidate": 13099,
+          "opponent": 10765,
+          "distance_squared": 5,
+          "event_index": 139,
+          "candidate_row": 20,
+          "opponent_row": 23
+        },
+        {
+          "round": 139,
+          "candidate": 13123,
+          "opponent": 13611,
+          "distance_squared": 5,
+          "event_index": 140,
+          "candidate_row": 11,
+          "opponent_row": 33
+        },
+        {
+          "round": 141,
+          "candidate": 13123,
+          "opponent": 13611,
+          "distance_squared": 5,
+          "event_index": 142,
+          "candidate_row": 11,
+          "opponent_row": 33
+        },
+        {
+          "round": 145,
+          "candidate": 13749,
+          "opponent": 10881,
+          "distance_squared": 5,
+          "event_index": 146,
+          "candidate_row": 31,
+          "opponent_row": 27
+        }
+      ],
+      "coverage": [
+        {
+          "range": [
+            1,
+            50
+          ],
+          "records": 3406,
+          "sha256": "770bed93c090af36bc7552a2eea1d3495e7bdbd331920245f30fdb5a9286bb32"
+        },
+        {
+          "range": [
+            51,
+            100
+          ],
+          "records": 3126,
+          "sha256": "770bed93c090af36bc7552a2eea1d3495e7bdbd331920245f30fdb5a9286bb32"
+        },
+        {
+          "range": [
+            101,
+            150
+          ],
+          "records": 4209,
+          "sha256": "770bed93c090af36bc7552a2eea1d3495e7bdbd331920245f30fdb5a9286bb32"
+        }
+      ]
+    },
+    {
+      "condition": "default-B",
+      "candidate_slot": "B",
+      "win": true,
+      "total_rounds": 328,
+      "first150": {
+        "spawn_CARRIER": 22,
+        "spawn_LAUNCHER": 22,
+        "CHANGE_ADAMANTIUM": 720,
+        "CHANGE_MANA": 1100,
+        "CHANGE_ELIXIR": 46,
+        "SPAWN_UNIT": 44,
+        "PICK_UP_RESOURCE": 1494,
+        "CHANGE_HEALTH": 24,
+        "LAUNCH_ATTACK": 76,
+        "PLACE_RESOURCE": 24,
+        "BUILD_ANCHOR": 2,
+        "PICK_UP_ANCHOR": 2,
+        "PLACE_ANCHOR": 1
+      },
+      "close_fraction": 0.0,
+      "close_examples": [],
+      "coverage": [
+        {
+          "range": [
+            1,
+            50
+          ],
+          "records": 3028,
+          "sha256": "232296d572ae69b6e6e88875ebda8f18bde5e84e960d736f027ba1051d568e12"
+        },
+        {
+          "range": [
+            51,
+            100
+          ],
+          "records": 2982,
+          "sha256": "232296d572ae69b6e6e88875ebda8f18bde5e84e960d736f027ba1051d568e12"
+        },
+        {
+          "range": [
+            101,
+            150
+          ],
+          "records": 4117,
+          "sha256": "232296d572ae69b6e6e88875ebda8f18bde5e84e960d736f027ba1051d568e12"
+        }
+      ]
+    },
+    {
+      "condition": "small-A",
+      "candidate_slot": "A",
+      "win": true,
+      "total_rounds": 171,
+      "first150": {
+        "spawn_CARRIER": 13,
+        "spawn_LAUNCHER": 17,
+        "CHANGE_ADAMANTIUM": 495,
+        "CHANGE_MANA": 943,
+        "CHANGE_ELIXIR": 34,
+        "SPAWN_UNIT": 30,
+        "PICK_UP_RESOURCE": 1200,
+        "PLACE_RESOURCE": 23,
+        "LAUNCH_ATTACK": 85,
+        "CHANGE_HEALTH": 26,
+        "death_LAUNCHER": 2,
+        "BUILD_ANCHOR": 2,
+        "PICK_UP_ANCHOR": 2,
+        "PLACE_ANCHOR": 2,
+        "launcher_geometric_engagement_observations": 47,
+        "launcher_close_observations": 17
+      },
+      "close_fraction": 0.3617021276595745,
+      "close_examples": [
+        {
+          "round": 102,
+          "candidate": 10057,
+          "opponent": 10155,
+          "distance_squared": 4,
+          "event_index": 103,
+          "candidate_row": 8,
+          "opponent_row": 7
+        },
+        {
+          "round": 103,
+          "candidate": 10057,
+          "opponent": 10155,
+          "distance_squared": 5,
+          "event_index": 104,
+          "candidate_row": 8,
+          "opponent_row": 7
+        },
+        {
+          "round": 103,
+          "candidate": 11369,
+          "opponent": 14008,
+          "distance_squared": 8,
+          "event_index": 104,
+          "candidate_row": 27,
+          "opponent_row": 18
+        },
+        {
+          "round": 104,
+          "candidate": 10057,
+          "opponent": 13617,
+          "distance_squared": 1,
+          "event_index": 105,
+          "candidate_row": 8,
+          "opponent_row": 20
+        },
+        {
+          "round": 104,
+          "candidate": 11369,
+          "opponent": 14008,
+          "distance_squared": 1,
+          "event_index": 105,
+          "candidate_row": 27,
+          "opponent_row": 18
+        },
+        {
+          "round": 105,
+          "candidate": 11369,
+          "opponent": 14008,
+          "distance_squared": 5,
+          "event_index": 106,
+          "candidate_row": 26,
+          "opponent_row": 17
+        },
+        {
+          "round": 106,
+          "candidate": 13241,
+          "opponent": 14008,
+          "distance_squared": 5,
+          "event_index": 107,
+          "candidate_row": 14,
+          "opponent_row": 17
+        },
+        {
+          "round": 106,
+          "candidate": 11369,
+          "opponent": 10606,
+          "distance_squared": 2,
+          "event_index": 107,
+          "candidate_row": 26,
+          "opponent_row": 16
+        },
+        {
+          "round": 107,
+          "candidate": 11369,
+          "opponent": 10606,
+          "distance_squared": 2,
+          "event_index": 108,
+          "candidate_row": 26,
+          "opponent_row": 16
+        },
+        {
+          "round": 108,
+          "candidate": 11369,
+          "opponent": 10606,
+          "distance_squared": 2,
+          "event_index": 109,
+          "candidate_row": 2,
+          "opponent_row": 24
+        }
+      ],
+      "coverage": [
+        {
+          "range": [
+            1,
+            50
+          ],
+          "records": 2411,
+          "sha256": "ed140a79ad433bfb4e4f417e3e4a9f93bfa073cd0976558daade4d951daaf59a"
+        },
+        {
+          "range": [
+            51,
+            100
+          ],
+          "records": 2551,
+          "sha256": "ed140a79ad433bfb4e4f417e3e4a9f93bfa073cd0976558daade4d951daaf59a"
+        },
+        {
+          "range": [
+            101,
+            150
+          ],
+          "records": 3080,
+          "sha256": "ed140a79ad433bfb4e4f417e3e4a9f93bfa073cd0976558daade4d951daaf59a"
+        }
+      ]
+    },
+    {
+      "condition": "small-B",
+      "candidate_slot": "B",
+      "win": true,
+      "total_rounds": 190,
+      "first150": {
+        "spawn_CARRIER": 12,
+        "spawn_LAUNCHER": 17,
+        "CHANGE_ADAMANTIUM": 370,
+        "CHANGE_MANA": 957,
+        "CHANGE_ELIXIR": 31,
+        "SPAWN_UNIT": 29,
+        "PICK_UP_RESOURCE": 1097,
+        "LAUNCH_ATTACK": 86,
+        "PLACE_RESOURCE": 22,
+        "CHANGE_HEALTH": 14,
+        "BUILD_ANCHOR": 2,
+        "PICK_UP_ANCHOR": 2,
+        "PLACE_ANCHOR": 2,
+        "launcher_geometric_engagement_observations": 37,
+        "launcher_close_observations": 8
+      },
+      "close_fraction": 0.21621621621621623,
+      "close_examples": [
+        {
+          "round": 136,
+          "candidate": 12674,
+          "opponent": 11736,
+          "distance_squared": 8,
+          "event_index": 137,
+          "candidate_row": 17,
+          "opponent_row": 9
+        },
+        {
+          "round": 137,
+          "candidate": 11057,
+          "opponent": 11592,
+          "distance_squared": 5,
+          "event_index": 138,
+          "candidate_row": 6,
+          "opponent_row": 11
+        },
+        {
+          "round": 137,
+          "candidate": 13231,
+          "opponent": 13472,
+          "distance_squared": 4,
+          "event_index": 138,
+          "candidate_row": 12,
+          "opponent_row": 22
+        },
+        {
+          "round": 137,
+          "candidate": 10057,
+          "opponent": 13585,
+          "distance_squared": 4,
+          "event_index": 138,
+          "candidate_row": 19,
+          "opponent_row": 30
+        },
+        {
+          "round": 137,
+          "candidate": 10447,
+          "opponent": 13472,
+          "distance_squared": 5,
+          "event_index": 138,
+          "candidate_row": 25,
+          "opponent_row": 22
+        },
+        {
+          "round": 138,
+          "candidate": 11057,
+          "opponent": 11592,
+          "distance_squared": 1,
+          "event_index": 139,
+          "candidate_row": 6,
+          "opponent_row": 11
+        },
+        {
+          "round": 138,
+          "candidate": 13241,
+          "opponent": 11592,
+          "distance_squared": 8,
+          "event_index": 139,
+          "candidate_row": 9,
+          "opponent_row": 11
+        },
+        {
+          "round": 138,
+          "candidate": 12674,
+          "opponent": 13472,
+          "distance_squared": 8,
+          "event_index": 139,
+          "candidate_row": 16,
+          "opponent_row": 22
+        }
+      ],
+      "coverage": [
+        {
+          "range": [
+            1,
+            50
+          ],
+          "records": 2226,
+          "sha256": "4db480af5bb7c989cf0efc972736af6595c0c87596d7ff88553bdbbf0ed01d60"
+        },
+        {
+          "range": [
+            51,
+            100
+          ],
+          "records": 2395,
+          "sha256": "4db480af5bb7c989cf0efc972736af6595c0c87596d7ff88553bdbbf0ed01d60"
+        },
+        {
+          "range": [
+            101,
+            150
+          ],
+          "records": 3036,
+          "sha256": "4db480af5bb7c989cf0efc972736af6595c0c87596d7ff88553bdbbf0ed01d60"
+        }
+      ]
+    }
+  ]
+}

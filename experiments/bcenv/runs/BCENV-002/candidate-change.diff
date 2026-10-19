@@ -1,0 +1,35 @@
+--- work/baseline-source.java	2026-10-19 17:17:35.664681919 -0400
++++ competitor/src/mybot/RobotPlayer.java	2026-10-19 17:17:35.674261534 -0400
+@@ -149,7 +149,10 @@
+             int d=rc.getLocation().distanceSquaredTo(e.location);int score=d+(e.type==RobotType.LAUNCHER?0:100);
+             if(score<best){best=score;closest=e;}
+         }
+-        if(closest!=null)moveToward(closest.location);
++        if(closest!=null) {
++            if(closest.type==RobotType.LAUNCHER && rc.getLocation().distanceSquaredTo(closest.location)<=16)standoff(closest.location);
++            else moveToward(closest.location);
++        }
+         else {
+             MapLocation center=new MapLocation(rc.getMapWidth()/2,rc.getMapHeight()/2);
+             if(age<40 || home==null)moveToward(center);
+@@ -161,6 +164,20 @@
+         }
+         attackTarget();
+     }
++    // Experiment001: only engaged-launcher movement is changed.
++    static void standoff(MapLocation enemy) throws GameActionException {
++        if(!rc.isMovementReady())return;
++        Direction choice=null;
++        int best=Math.abs(rc.getLocation().distanceSquaredTo(enemy)-13)*4;
++        RobotInfo[] enemies=rc.senseNearbyRobots(-1,rc.getTeam().opponent());
++        for(Direction d:DIRS)if(rc.canMove(d)) {
++            MapLocation p=rc.getLocation().add(d);
++            int score=Math.abs(p.distanceSquaredTo(enemy)-13)*4;
++            for(RobotInfo e:enemies)if(e.type==RobotType.HEADQUARTERS && p.distanceSquaredTo(e.location)<=9)score+=1000;
++            if(score<best){best=score;choice=d;}
++        }
++        if(choice!=null)rc.move(choice);
++    }
+     static void explore() throws GameActionException {
+         if(waypoint==null || rc.getLocation().distanceSquaredTo(waypoint)<=4 || age%40==0) {
+             exploration++;

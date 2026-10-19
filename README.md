@@ -24,3 +24,5 @@ This project is licensed under the GNU General Public License, version 3 (GPL-3.
 ## Environment improvement process
 
 [bcenv experiment loop, reusable protocol and append-only ledger](experiments/bcenv/README.md): proposed process for testing our environment changes, with an unrun replay-diagnosis proposal. Separate from the approved 2023 plan and implementation findings.
+
+- [Lecture-opponent diagnostic: reasoning, code review and holdout results](2023-lecture-opponent-results.md)

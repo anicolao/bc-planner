@@ -30,3 +30,4 @@ This project is licensed under the GNU General Public License, version 3 (GPL-3.
 - [Competitive BC2023 program and acceptance gates](2023-competitive-program.md)
 - [Current competitive-program checkpoint](2023-competitive-checkpoint.md)
 - [Enforced scrimmage architecture and launch blocker](2023-isolated-scrimmage-architecture.md)
+- [Public opponent provenance and final-season rules compatibility](2023-public-opponent-candidates.md)

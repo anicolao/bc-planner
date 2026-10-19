@@ -1,0 +1,292 @@
+{
+  "checked_at": "2026-10-19T21:22:00Z",
+  "frozen_inputs_checked": 132,
+  "errors": [],
+  "builds": [
+    {
+      "name": "baseline-build",
+      "status": "verified",
+      "source": "04b46aa65f4aecb6ddcd95e6c6cad8faffbe4f6a5d8c526d54cf1810919abec8",
+      "binary": "12e27cebd099cf5639e09949d652dc73c5d44568f8689c45a61eef20eeaac085"
+    },
+    {
+      "name": "opponent-build",
+      "status": "verified",
+      "source": "f824855a89f50784b5c848ee559232d4405789788ddda92317b3b419257bc694",
+      "binary": "2ec96f458fb2cb6219efb33da246dd0d6f3da610693ac60d440fedc95ad2c008"
+    },
+    {
+      "name": "standoff-build",
+      "status": "verified",
+      "source": "a469c308c9923869056eb6cb4d838a3057d33f5bfaa7cb13c49d1a06f96901d5",
+      "binary": "d648c82e433402e21cee1b623e3a3a4048d4c33a92e69e109db2e764638db377"
+    }
+  ],
+  "matches": [
+    {
+      "name": "baseline-default-A",
+      "status": "completed",
+      "winner": "A",
+      "rounds": 372,
+      "replay_sha256": "fdac7e80b2dc2ea359a5dd7999a0e1ba5fab024d378d495e50c6df530660f219",
+      "summary_sha256": "57bde1703404dc15d67630ac53a4e7c789936d8659b99478deddda82ddb9e7e8",
+      "teams": {
+        "A": {
+          "binary_sha256": "12e27cebd099cf5639e09949d652dc73c5d44568f8689c45a61eef20eeaac085",
+          "package": "mybot",
+          "source_sha256": "04b46aa65f4aecb6ddcd95e6c6cad8faffbe4f6a5d8c526d54cf1810919abec8"
+        },
+        "B": {
+          "binary_sha256": "2ec96f458fb2cb6219efb33da246dd0d6f3da610693ac60d440fedc95ad2c008",
+          "package": "lectureplayer",
+          "source_sha256": "f824855a89f50784b5c848ee559232d4405789788ddda92317b3b419257bc694"
+        }
+      },
+      "map_sha256": "a53211fc3fb4cc6427693f6f65b0732cc4bdf9ecb90f911ffbd71b5af82bb910"
+    },
+    {
+      "name": "baseline-default-B",
+      "status": "completed",
+      "winner": "B",
+      "rounds": 324,
+      "replay_sha256": "5841f49eaa270e10cb9309100479ffff5ed07b858542c706fde0b70f45f568f4",
+      "summary_sha256": "8b982b30aeb4e144001bc1d25ec1868c337347f746728357dbfc6cf22840c577",
+      "teams": {
+        "A": {
+          "binary_sha256": "2ec96f458fb2cb6219efb33da246dd0d6f3da610693ac60d440fedc95ad2c008",
+          "package": "lectureplayer",
+          "source_sha256": "f824855a89f50784b5c848ee559232d4405789788ddda92317b3b419257bc694"
+        },
+        "B": {
+          "binary_sha256": "12e27cebd099cf5639e09949d652dc73c5d44568f8689c45a61eef20eeaac085",
+          "package": "mybot",
+          "source_sha256": "04b46aa65f4aecb6ddcd95e6c6cad8faffbe4f6a5d8c526d54cf1810919abec8"
+        }
+      },
+      "map_sha256": "a53211fc3fb4cc6427693f6f65b0732cc4bdf9ecb90f911ffbd71b5af82bb910"
+    },
+    {
+      "name": "baseline-small-A",
+      "status": "completed",
+      "winner": "A",
+      "rounds": 171,
+      "replay_sha256": "fedfcfc5f530c275e466108b6b3c3a81430a88c65b7635729f930da7ee82e983",
+      "summary_sha256": "999fdec9412381b63e66b9f9f8befa37b9ad6fa1bf9ccaac74e148fc2610dfbe",
+      "teams": {
+        "A": {
+          "binary_sha256": "12e27cebd099cf5639e09949d652dc73c5d44568f8689c45a61eef20eeaac085",
+          "package": "mybot",
+          "source_sha256": "04b46aa65f4aecb6ddcd95e6c6cad8faffbe4f6a5d8c526d54cf1810919abec8"
+        },
+        "B": {
+          "binary_sha256": "2ec96f458fb2cb6219efb33da246dd0d6f3da610693ac60d440fedc95ad2c008",
+          "package": "lectureplayer",
+          "source_sha256": "f824855a89f50784b5c848ee559232d4405789788ddda92317b3b419257bc694"
+        }
+      },
+      "map_sha256": "85d2835f910b40442523b5db054c9d3fd961906ce41822a6cc3cf27dab5f3c06"
+    },
+    {
+      "name": "baseline-small-B",
+      "status": "completed",
+      "winner": "B",
+      "rounds": 190,
+      "replay_sha256": "cf291ade870c83f1a83ddd5f840041d586e4d295c5f816f2f248dc43963f896f",
+      "summary_sha256": "028b7c7c18f9f2ce7fb97cf3436278607e35f3a1c67c2c921b675d0ac789f429",
+      "teams": {
+        "A": {
+          "binary_sha256": "2ec96f458fb2cb6219efb33da246dd0d6f3da610693ac60d440fedc95ad2c008",
+          "package": "lectureplayer",
+          "source_sha256": "f824855a89f50784b5c848ee559232d4405789788ddda92317b3b419257bc694"
+        },
+        "B": {
+          "binary_sha256": "12e27cebd099cf5639e09949d652dc73c5d44568f8689c45a61eef20eeaac085",
+          "package": "mybot",
+          "source_sha256": "04b46aa65f4aecb6ddcd95e6c6cad8faffbe4f6a5d8c526d54cf1810919abec8"
+        }
+      },
+      "map_sha256": "85d2835f910b40442523b5db054c9d3fd961906ce41822a6cc3cf27dab5f3c06"
+    },
+    {
+      "name": "standoff-default-A",
+      "status": "completed",
+      "winner": "A",
+      "rounds": 270,
+      "replay_sha256": "770bed93c090af36bc7552a2eea1d3495e7bdbd331920245f30fdb5a9286bb32",
+      "summary_sha256": "f1f017d04dff88e8b0a58d9c71a17ede8d9bf3c2f32d2fb20953075ec029f2f6",
+      "teams": {
+        "A": {
+          "binary_sha256": "d648c82e433402e21cee1b623e3a3a4048d4c33a92e69e109db2e764638db377",
+          "package": "mybot",
+          "source_sha256": "a469c308c9923869056eb6cb4d838a3057d33f5bfaa7cb13c49d1a06f96901d5"
+        },
+        "B": {
+          "binary_sha256": "2ec96f458fb2cb6219efb33da246dd0d6f3da610693ac60d440fedc95ad2c008",
+          "package": "lectureplayer",
+          "source_sha256": "f824855a89f50784b5c848ee559232d4405789788ddda92317b3b419257bc694"
+        }
+      },
+      "map_sha256": "a53211fc3fb4cc6427693f6f65b0732cc4bdf9ecb90f911ffbd71b5af82bb910"
+    },
+    {
+      "name": "standoff-default-B",
+      "status": "completed",
+      "winner": "B",
+      "rounds": 328,
+      "replay_sha256": "232296d572ae69b6e6e88875ebda8f18bde5e84e960d736f027ba1051d568e12",
+      "summary_sha256": "82e127e080eaf615e61e67c1034e0990ca299d855a2c8f9354d0bee2e8a5b2d0",
+      "teams": {
+        "A": {
+          "binary_sha256": "2ec96f458fb2cb6219efb33da246dd0d6f3da610693ac60d440fedc95ad2c008",
+          "package": "lectureplayer",
+          "source_sha256": "f824855a89f50784b5c848ee559232d4405789788ddda92317b3b419257bc694"
+        },
+        "B": {
+          "binary_sha256": "d648c82e433402e21cee1b623e3a3a4048d4c33a92e69e109db2e764638db377",
+          "package": "mybot",
+          "source_sha256": "a469c308c9923869056eb6cb4d838a3057d33f5bfaa7cb13c49d1a06f96901d5"
+        }
+      },
+      "map_sha256": "a53211fc3fb4cc6427693f6f65b0732cc4bdf9ecb90f911ffbd71b5af82bb910"
+    },
+    {
+      "name": "standoff-small-A",
+      "status": "completed",
+      "winner": "A",
+      "rounds": 171,
+      "replay_sha256": "ed140a79ad433bfb4e4f417e3e4a9f93bfa073cd0976558daade4d951daaf59a",
+      "summary_sha256": "30357670a31a56d1875cd06f544aff25627c7396fdaab7af84be37cad1bbe9a0",
+      "teams": {
+        "A": {
+          "binary_sha256": "d648c82e433402e21cee1b623e3a3a4048d4c33a92e69e109db2e764638db377",
+          "package": "mybot",
+          "source_sha256": "a469c308c9923869056eb6cb4d838a3057d33f5bfaa7cb13c49d1a06f96901d5"
+        },
+        "B": {
+          "binary_sha256": "2ec96f458fb2cb6219efb33da246dd0d6f3da610693ac60d440fedc95ad2c008",
+          "package": "lectureplayer",
+          "source_sha256": "f824855a89f50784b5c848ee559232d4405789788ddda92317b3b419257bc694"
+        }
+      },
+      "map_sha256": "85d2835f910b40442523b5db054c9d3fd961906ce41822a6cc3cf27dab5f3c06"
+    },
+    {
+      "name": "standoff-small-B",
+      "status": "completed",
+      "winner": "B",
+      "rounds": 190,
+      "replay_sha256": "4db480af5bb7c989cf0efc972736af6595c0c87596d7ff88553bdbbf0ed01d60",
+      "summary_sha256": "676d2736bd456721da850b37b58e6df4a5352dc25424d725aea436569764a167",
+      "teams": {
+        "A": {
+          "binary_sha256": "2ec96f458fb2cb6219efb33da246dd0d6f3da610693ac60d440fedc95ad2c008",
+          "package": "lectureplayer",
+          "source_sha256": "f824855a89f50784b5c848ee559232d4405789788ddda92317b3b419257bc694"
+        },
+        "B": {
+          "binary_sha256": "d648c82e433402e21cee1b623e3a3a4048d4c33a92e69e109db2e764638db377",
+          "package": "mybot",
+          "source_sha256": "a469c308c9923869056eb6cb4d838a3057d33f5bfaa7cb13c49d1a06f96901d5"
+        }
+      },
+      "map_sha256": "85d2835f910b40442523b5db054c9d3fd961906ce41822a6cc3cf27dab5f3c06"
+    },
+    {
+      "name": "heldout-baseline-A",
+      "status": "completed",
+      "winner": "A",
+      "rounds": 221,
+      "replay_sha256": "1d368f76c2beecfe7e6c8d9a433538d47faefb536997615509031087310e0add",
+      "summary_sha256": "607b8ab2c01ca191bc44640f53340911f0a976fb4797c1a5b15fcaf37b4a8831",
+      "teams": {
+        "A": {
+          "binary_sha256": "12e27cebd099cf5639e09949d652dc73c5d44568f8689c45a61eef20eeaac085",
+          "package": "mybot",
+          "source_sha256": "04b46aa65f4aecb6ddcd95e6c6cad8faffbe4f6a5d8c526d54cf1810919abec8"
+        },
+        "B": {
+          "binary_sha256": "2ec96f458fb2cb6219efb33da246dd0d6f3da610693ac60d440fedc95ad2c008",
+          "package": "lectureplayer",
+          "source_sha256": "f824855a89f50784b5c848ee559232d4405789788ddda92317b3b419257bc694"
+        }
+      },
+      "map_sha256": "6112212dbc999d776e15a2b88d0c32fbbf8341483e549c9a7a6f45a0489642e6"
+    },
+    {
+      "name": "heldout-baseline-B",
+      "status": "completed",
+      "winner": "B",
+      "rounds": 206,
+      "replay_sha256": "73241c636ba48374004ba34c55e9d95c3450483098b8c846a4eef51268f2eca4",
+      "summary_sha256": "43d4752f08ca7a44fc5257e91a4d9a0208bb6d8565c8629c3bb07710145f95aa",
+      "teams": {
+        "A": {
+          "binary_sha256": "2ec96f458fb2cb6219efb33da246dd0d6f3da610693ac60d440fedc95ad2c008",
+          "package": "lectureplayer",
+          "source_sha256": "f824855a89f50784b5c848ee559232d4405789788ddda92317b3b419257bc694"
+        },
+        "B": {
+          "binary_sha256": "12e27cebd099cf5639e09949d652dc73c5d44568f8689c45a61eef20eeaac085",
+          "package": "mybot",
+          "source_sha256": "04b46aa65f4aecb6ddcd95e6c6cad8faffbe4f6a5d8c526d54cf1810919abec8"
+        }
+      },
+      "map_sha256": "6112212dbc999d776e15a2b88d0c32fbbf8341483e549c9a7a6f45a0489642e6"
+    },
+    {
+      "name": "heldout-standoff-A",
+      "status": "completed",
+      "winner": "A",
+      "rounds": 221,
+      "replay_sha256": "35127559d0701a0df0ea06ee86a815fa936f514fd406774f3696fe2c6fe78e0c",
+      "summary_sha256": "2babc09fdf1021e71e3d28196a18d98c985b809cb4db63bd6df014beca74521e",
+      "teams": {
+        "A": {
+          "binary_sha256": "d648c82e433402e21cee1b623e3a3a4048d4c33a92e69e109db2e764638db377",
+          "package": "mybot",
+          "source_sha256": "a469c308c9923869056eb6cb4d838a3057d33f5bfaa7cb13c49d1a06f96901d5"
+        },
+        "B": {
+          "binary_sha256": "2ec96f458fb2cb6219efb33da246dd0d6f3da610693ac60d440fedc95ad2c008",
+          "package": "lectureplayer",
+          "source_sha256": "f824855a89f50784b5c848ee559232d4405789788ddda92317b3b419257bc694"
+        }
+      },
+      "map_sha256": "6112212dbc999d776e15a2b88d0c32fbbf8341483e549c9a7a6f45a0489642e6"
+    },
+    {
+      "name": "heldout-standoff-B",
+      "status": "completed",
+      "winner": "B",
+      "rounds": 206,
+      "replay_sha256": "53cffffbab208629e09c1f02437aea232a0c36d220c9ec5c7cdd0686a7d31b13",
+      "summary_sha256": "42c426419d7030c2d7196cbc81f3111a59efff0124e360b6113976cb0378cacc",
+      "teams": {
+        "A": {
+          "binary_sha256": "2ec96f458fb2cb6219efb33da246dd0d6f3da610693ac60d440fedc95ad2c008",
+          "package": "lectureplayer",
+          "source_sha256": "f824855a89f50784b5c848ee559232d4405789788ddda92317b3b419257bc694"
+        },
+        "B": {
+          "binary_sha256": "d648c82e433402e21cee1b623e3a3a4048d4c33a92e69e109db2e764638db377",
+          "package": "mybot",
+          "source_sha256": "a469c308c9923869056eb6cb4d838a3057d33f5bfaa7cb13c49d1a06f96901d5"
+        }
+      },
+      "map_sha256": "6112212dbc999d776e15a2b88d0c32fbbf8341483e549c9a7a6f45a0489642e6"
+    }
+  ],
+  "package": {
+    "binary_sha256": "d648c82e433402e21cee1b623e3a3a4048d4c33a92e69e109db2e764638db377",
+    "kind": "source-package",
+    "package": "mybot",
+    "schema": "bcenv.artifact.v1",
+    "source_sha256": "a469c308c9923869056eb6cb4d838a3057d33f5bfaa7cb13c49d1a06f96901d5",
+    "verified_engine_sha256": "5e862aa10e85caeb67ae69e1692f7451893e801e0d81597032c1442bbb9deb4e",
+    "zip_sha256": "c03da311741fc725f7f130db2b6a2c403ab55c5c31b39b4181ac4e4433ad77f6"
+  },
+  "game_count": 12,
+  "original_competitor_games": 8,
+  "observer_holdout_games": 4,
+  "claim": "Hash/lineage and process audit, not proof of semantic correctness or exception-free execution"
+}

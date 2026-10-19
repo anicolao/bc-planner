@@ -1151,3 +1151,11 @@ Repeated exact user message Sentinel_07676e2937e88191b0284d02853501f1 for the se
 ````text
 fix it
 ````
+
+## Prompt 105: Analyze authentic lecture opponent trial
+
+Source: exact user message Sentinel_4073168f2ab4819182a167b4934faa8f, 2026-10-19T21:08:52Z, supplied by the coordinating conversation. Reconciliation: prior analysis emphasis/PR9 approval is already Prompt102; intervening “fix it” is preserved in103–104; the only subsequent supplied Battlecode user request is below. Coordinator confirms no other intervening task messages. Assistant reports, tool status and externally observed PR10 merge are not user prompts. Publication is separately pending approval; no transcript beyond supplied text is claimed audited.
+
+````text
+OK. Durign the actual competition, the lecture bot is a good opponent to play to test our own bot. Let's make the LLM competing aware of this so that it finds and uses the lecture bot instead of an inert fixture, and analyze its results.
+````

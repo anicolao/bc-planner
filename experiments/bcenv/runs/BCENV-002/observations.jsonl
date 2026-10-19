@@ -1,0 +1,14 @@
+{"observed_utc": "2026-10-19T21:15:55.055963+00:00", "path": "competitor/src/mybot/RobotPlayer.java", "sha256": "05287e36957dfccb8718ff16f870ed48a293cfa7c1ca4865bd547a27a34ea087", "bytes": 9833}
+{"observed_utc": "2026-10-19T21:15:55.056130+00:00", "path": "work/initial-plan.md", "sha256": "96dfb50041c965875cc082dc335c711770d5e2dc0917f87d0b859b3f1de6896b", "bytes": 2724}
+{"observed_utc": "2026-10-19T21:17:09.082704+00:00", "path": "work/baseline-analysis.json", "sha256": "031b4dee3d4fedef9719f7b648e546e2a3f05bfc9959df0286a093ccf202bc38", "bytes": 12458}
+{"observed_utc": "2026-10-19T21:17:37.097485+00:00", "path": "competitor/src/mybot/RobotPlayer.java", "sha256": "965c8645a0e42a752868806f23fce8b71efb0d99f8bf628be9aebefd650f0e1c", "bytes": 10754}
+{"observed_utc": "2026-10-19T21:17:37.097692+00:00", "path": "work/experiments/001-preregistered.md", "sha256": "ecd0abb15cc9ab86b0013a230a76982f9879d0729fa13418a19f95ce9d183056", "bytes": 3360}
+{"observed_utc": "2026-10-19T21:17:37.097774+00:00", "path": "work/experiments/001-change.diff", "sha256": "43994a2291019ffac0eb49699d3cfc139fa3655b311aaf45657b757261000949", "bytes": 1795}
+{"observed_utc": "2026-10-19T21:18:21.120057+00:00", "path": "work/standoff-analysis.json", "sha256": "d513682863d3f9c3e5a673ff8aa6bd6f0e8d3ed824989c5504eb54f04ee4525c", "bytes": 10872}
+{"observed_utc": "2026-10-19T21:20:19.180304+00:00", "path": "competitor/README.md", "sha256": "11d86a10c0a7c37a660e675e347bf69acbf1f18c448053b7ea16a2cd87d7be10", "bytes": 885}
+{"observed_utc": "2026-10-19T21:20:19.180555+00:00", "path": "work/final-report.md", "sha256": "72b160ba986a10df05acd356f1f45afc5226fd3d0fa972f8f0de3803ad96797e", "bytes": 10993}
+{"observed_utc": "2026-10-19T21:20:19.180643+00:00", "path": "work/evidence-index.json", "sha256": "a2d38343354aa15f516c503aadec6c4c25dd2cf9244a57811c0c508b69a2339a", "bytes": 4617}
+{"observed_utc": "2026-10-19T21:20:51.199810+00:00", "path": "competitor/README.md", "sha256": "1ecd4640ed8f25d924baeb983aba8d880faa1262a31602e75252768f25040bb7", "bytes": 890}
+{"observed_utc": "2026-10-19T21:20:51.200045+00:00", "path": "work/final-report.md", "sha256": "ca1080375add06eb5b7cd1756ae8a2a90ac36d9615bca6813d9a86f39cf7e1a8", "bytes": 11107}
+{"observed_utc": "2026-10-19T21:20:51.200442+00:00", "path": "work/experiments/001-decision.json", "sha256": "2b8c648fd7fa2d6a6de9a21261c155c9ee7d1b503dda767050ca35b38939f8fb", "bytes": 1315}
+{"observed_utc": "2026-10-19T21:21:01.207194+00:00", "path": "work/final-report.md", "sha256": "56e0a388432ff633e4c9719d4f734fe15d4a73f858d0f5f15eace763d2ce2f89", "bytes": 11107}

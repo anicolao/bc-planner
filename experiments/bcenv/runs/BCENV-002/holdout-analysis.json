@@ -1,0 +1,102 @@
+[
+  {
+    "version": "baseline",
+    "candidate_side": "A",
+    "winner": "A",
+    "rounds": 221,
+    "close": 20,
+    "engagement": 33,
+    "close_fraction": 0.6060606060606061,
+    "attacks": 44,
+    "coverage": [
+      {
+        "path": "query-baseline-A-1-50/replay-query.json",
+        "source_sha256": "1d368f76c2beecfe7e6c8d9a433538d47faefb536997615509031087310e0add"
+      },
+      {
+        "path": "query-baseline-A-51-100/replay-query.json",
+        "source_sha256": "1d368f76c2beecfe7e6c8d9a433538d47faefb536997615509031087310e0add"
+      },
+      {
+        "path": "query-baseline-A-101-150/replay-query.json",
+        "source_sha256": "1d368f76c2beecfe7e6c8d9a433538d47faefb536997615509031087310e0add"
+      }
+    ],
+    "replay_sha256": "1d368f76c2beecfe7e6c8d9a433538d47faefb536997615509031087310e0add"
+  },
+  {
+    "version": "baseline",
+    "candidate_side": "B",
+    "winner": "B",
+    "rounds": 206,
+    "close": 27,
+    "engagement": 67,
+    "close_fraction": 0.40298507462686567,
+    "attacks": 56,
+    "coverage": [
+      {
+        "path": "query-baseline-B-1-50/replay-query.json",
+        "source_sha256": "73241c636ba48374004ba34c55e9d95c3450483098b8c846a4eef51268f2eca4"
+      },
+      {
+        "path": "query-baseline-B-51-100/replay-query.json",
+        "source_sha256": "73241c636ba48374004ba34c55e9d95c3450483098b8c846a4eef51268f2eca4"
+      },
+      {
+        "path": "query-baseline-B-101-150/replay-query.json",
+        "source_sha256": "73241c636ba48374004ba34c55e9d95c3450483098b8c846a4eef51268f2eca4"
+      }
+    ],
+    "replay_sha256": "73241c636ba48374004ba34c55e9d95c3450483098b8c846a4eef51268f2eca4"
+  },
+  {
+    "version": "standoff",
+    "candidate_side": "A",
+    "winner": "A",
+    "rounds": 221,
+    "close": 19,
+    "engagement": 39,
+    "close_fraction": 0.48717948717948717,
+    "attacks": 49,
+    "coverage": [
+      {
+        "path": "query-standoff-A-1-50/replay-query.json",
+        "source_sha256": "35127559d0701a0df0ea06ee86a815fa936f514fd406774f3696fe2c6fe78e0c"
+      },
+      {
+        "path": "query-standoff-A-51-100/replay-query.json",
+        "source_sha256": "35127559d0701a0df0ea06ee86a815fa936f514fd406774f3696fe2c6fe78e0c"
+      },
+      {
+        "path": "query-standoff-A-101-150/replay-query.json",
+        "source_sha256": "35127559d0701a0df0ea06ee86a815fa936f514fd406774f3696fe2c6fe78e0c"
+      }
+    ],
+    "replay_sha256": "35127559d0701a0df0ea06ee86a815fa936f514fd406774f3696fe2c6fe78e0c"
+  },
+  {
+    "version": "standoff",
+    "candidate_side": "B",
+    "winner": "B",
+    "rounds": 206,
+    "close": 26,
+    "engagement": 67,
+    "close_fraction": 0.3880597014925373,
+    "attacks": 56,
+    "coverage": [
+      {
+        "path": "query-standoff-B-1-50/replay-query.json",
+        "source_sha256": "53cffffbab208629e09c1f02437aea232a0c36d220c9ec5c7cdd0686a7d31b13"
+      },
+      {
+        "path": "query-standoff-B-51-100/replay-query.json",
+        "source_sha256": "53cffffbab208629e09c1f02437aea232a0c36d220c9ec5c7cdd0686a7d31b13"
+      },
+      {
+        "path": "query-standoff-B-101-150/replay-query.json",
+        "source_sha256": "53cffffbab208629e09c1f02437aea232a0c36d220c9ec5c7cdd0686a7d31b13"
+      }
+    ],
+    "replay_sha256": "53cffffbab208629e09c1f02437aea232a0c36d220c9ec5c7cdd0686a7d31b13"
+  }
+]

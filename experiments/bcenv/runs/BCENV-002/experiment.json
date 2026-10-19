@@ -1,0 +1,40 @@
+{
+  "id": "BCENV-002",
+  "status": "completed",
+  "record_kind": "retrospective ledger transcription of pre-launch frozen protocol and observed run",
+  "question": "Can a fresh Sol/high discover/integrate the authentic lecture opponent and perform a rule-grounded falsifiable learning loop with reviewable code?",
+  "protocol_repository": "anicolao/bcenv",
+  "protocol_commit": "3b648e2b2f40e5fcd826b89083bfb361f191bae6",
+  "protocol_path": "docs/LECTURE-TRIAL-001.md",
+  "protocol_sha256": "603d6520f519a27b8a61125a452b50e932c61bb7b07aff480ed22e07dc6bb193",
+  "runtime_dependency": "bcenv PR5 commit4d9813ac022a4be94686cf7d39cdb40edb5eec33",
+  "nix_lock_sha256": "74e82887c605bf915315abfe5fe722cb45dcda293f6808de48375b75a68862d5",
+  "launch": {
+    "trial": "lecture-001",
+    "requested_model": "gpt-6.1-sol",
+    "requested_effort": "high",
+    "fork_turns": "none",
+    "agent": "/root/evaluate_lecture_bot_trial/compete_lecture_trial",
+    "launch_utc": "2026-10-19T21:14:18Z",
+    "kickoff_sha256": "4afa938bae95e35b3099ae0ed61c3598318a112f8ac9d0b5979f231a0ac20b2a",
+    "actual_message_sha256": "c78829627d0937495e4af802c1133c63ffa4829bd60bf46293f4fb799c6fe192",
+    "release_sha256": "4a68a1c44b292b805206fa1848d32205b0c44e7582ca6e9ba4648562c37a9eeb",
+    "implementation_commit": "3b648e2b2f40e5fcd826b89083bfb361f191bae6",
+    "runtime_package": "/nix/store/70r8k1hx9s8l6gqb0b07gzkmq7y2wyqa-bcenv-2023-0.1.0",
+    "runtime_note": "Verified prior query runtime; new runbooks/catalog/kickoff copied independently by exporter and release-hashed. No claim new instructions are included in old Nix package identity.",
+    "holdout_map": "Rectangle",
+    "holdout_games": 4,
+    "coaching": false
+  },
+  "competitor_games": 8,
+  "observer_games": 4,
+  "cost": "about seven minutes competitor wall time; token/currency usage unavailable",
+  "failure_or_retry": false,
+  "conclusions": [
+    "Successful bounded active-opponent engineering workflow",
+    "Code has material unresolved defects",
+    "Geometric effect transfers weakly to one holdout map",
+    "No controlled environment superiority, model-ranking or tournament-strength claim"
+  ],
+  "report": "2023-lecture-opponent-results.md"
+}

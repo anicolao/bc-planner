@@ -1,6 +1,6 @@
 # Competitive program checkpoint
 
-Updated 2026-10-19 23:36 UTC. Current state: M0/M1 in progress; no new competitor
+Updated 2026-10-19 23:40 UTC. Current state: M0/M1 in progress; no new competitor
 trial, private benchmark or deployed service. [Roadmap](2023-competitive-program.md).
 
 ## Repository boundaries
@@ -36,3 +36,9 @@ and continue useful public integration work meanwhile.
 The host tool surface can bypass a per-command namespace/chroot. Native fresh
 conversation isolation alone is inadequate. No claim of enforced isolation or
 credible tournament competitiveness is currently justified.
+
+## Published and newly established
+
+- Roadmap PR12: https://github.com/anicolao/bc-planner/pull/12, commit 8ef1da9; prompt-hygiene CI passed.
+- Independent assessment confirms no currently verified supported capability-limited inference route; see [architecture](2023-isolated-scrimmage-architecture.md). No blocked CLI route retried.
+- Finalist-source research exposed a material rules mismatch: runtime 2.0.3 predates the final-season 3.x rules. Final tournament release provenance and migration are being checked before competitive execution. Old diagnostic evidence remains tied to 2.0.3.

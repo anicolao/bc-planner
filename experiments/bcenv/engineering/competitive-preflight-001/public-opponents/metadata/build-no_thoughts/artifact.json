@@ -1,0 +1,88 @@
+{
+  "binary_files": {
+    "v5anaconda/AmplifierStrategy.class": "1865584052be1a7fde02e0a2c769245c90cd46f55f79e350eda402aa3271873a",
+    "v5anaconda/BellmanFord.class": "c8a7f69feb341f66a06cef322059ab4616178c23ceb4c9dad832686090100e14",
+    "v5anaconda/CarrierStrategy$1.class": "5c971ac89b1ad7a2d5b022b783fc6eafed278e2c4f90e482073c61c603611a16",
+    "v5anaconda/CarrierStrategy$CarrierState.class": "f739949723051d2516c0705365ed6c556c29923b7e4bca3d0dee19d7d94c8211",
+    "v5anaconda/CarrierStrategy.class": "b6a58c35b80cc7f450c7b355fb71c112f516ab7ef25872d43476aef5bb1a2d77",
+    "v5anaconda/Communication$1.class": "176076d456bd1243ed8a05b8d613b041634a21ebeb9fcf6e981b12156081c95e",
+    "v5anaconda/Communication.class": "9d8f39666eed3ade17bc004b5edc49c529cbdb4e052b12edd71466ccb676924a",
+    "v5anaconda/HQStrategy.class": "4906aad6ea97529219fe56cd3ec5654cdcdeba2125e90924c4c5f1b95ceafd94",
+    "v5anaconda/LauncherStrategy$1.class": "011213b3344f36fe82522d4b725d8cfe5f9cc7ac45d94ef5e14c76d14eba819d",
+    "v5anaconda/LauncherStrategy$LauncherState.class": "d43b41ea004ac8a4b8e19c235d8584e1affedf3371bce2ca003fda1ad3e0b3de",
+    "v5anaconda/LauncherStrategy.class": "15618e5718b5da6ede2f23076440ab017b04d1fa516726fb7791ae11ba35cb2b",
+    "v5anaconda/Message.class": "b750dd352fe0345c768fa846c61932b469f68ec5c1a723a4316c9f07fb5c3f10",
+    "v5anaconda/Pathing.class": "cdc6297a638acb76f5e5f939fd7d837bc4e81d73be6e303dd3143e62cce5f95b",
+    "v5anaconda/PathingMode.class": "c0a93d6767659084b83e6ed485b15fc1e7cd57b148d93ee3c4d98c9648f9a285",
+    "v5anaconda/Report.class": "a1b4f4cd6d03c6dd67784c9d21fdfed791742f06c6e4d49b644fda0b88eff4e5",
+    "v5anaconda/RobotPlayer$1.class": "baaf9c4012d4c91909af73c2c19671bc615513dd77149199d69b3bede788b135",
+    "v5anaconda/RobotPlayer.class": "9af00b716e26101784e25eff625fec9d827eeb4aa63c2f4d606d57ecadd3c1f3",
+    "v5anaconda/SusList.class": "39f0ccfb3b4f103d70b2c43ce8e13e84476277f503441b9006e6bef520de2c26"
+  },
+  "binary_sha256": "0fd0495ec4cd76c042f3f23cbcdc4cb1eadb6cccd8ca2833f10ce8faf1905d88",
+  "engine_sha256": "2b6db98e312e0e509d599acc46bffbb55c2569de0f12c8214a85ee57625f15f2",
+  "kind": "build",
+  "package": "v5anaconda",
+  "schema": "bcenv.artifact.v1",
+  "season": "2023",
+  "source_files": {
+    "v5anaconda/AmplifierStrategy.java": "706861707abdbe19a96b5913466de07e5526752f8300a1b5dae0ab8e442963cb",
+    "v5anaconda/BellmanFord.java": "79153e14386280c1c78ed1f84d54d7fc4dcf0c4ba6e12ae8920cf8bb26a109b7",
+    "v5anaconda/CarrierStrategy.java": "8c5993d04f5da8d8ce438986292a6fc4b7691bbf352ba3cc8d1c643dd22cb794",
+    "v5anaconda/Communication.java": "22ca4442bf39e661f376f91475e2c78ae478474ca1ae9a6dae3c0398f9b484d6",
+    "v5anaconda/HQStrategy.java": "2e53cb0d9d0a5e56ef949d2d8905ad05d62745e0c12e38d8dcd6ae2101f7071d",
+    "v5anaconda/LauncherStrategy.java": "d197844d0fcefb7842ccea11c359729ec2918e109cd28948892184bb615a5fde",
+    "v5anaconda/Pathing.java": "09f9788c8bd3d3ca04c0f0c4508acd5ced1bae2933033481b66028e1cc1a1f02",
+    "v5anaconda/RobotPlayer.java": "2993ec8084f6f5712120e12c93e6f93d094f79e1f89d5ff2c660fbedc492585c",
+    "v5anaconda/SusList.java": "5134c5ceed5f6a414532a2145da88a265327469a29a3e02b153da715cae1ed59"
+  },
+  "source_sha256": "0a769441f3f50a4b3670987d91779be661689507b2a91858a4e069b3118dd8f7",
+  "status": "verified",
+  "steps": [
+    {
+      "command": [
+        "/nix/store/84sr5jfh99mdgfwa0sa8nxifgy0vqicf-openjdk-8u504-b01/bin/javac",
+        "-source",
+        "8",
+        "-target",
+        "8",
+        "-encoding",
+        "UTF-8",
+        "-proc:none",
+        "-classpath",
+        "/opt/battlecode23/engine.jar",
+        "-d",
+        "/workspace/work/build-no_thoughts/classes",
+        "/workspace/work/build-no_thoughts/source/v5anaconda/AmplifierStrategy.java",
+        "/workspace/work/build-no_thoughts/source/v5anaconda/BellmanFord.java",
+        "/workspace/work/build-no_thoughts/source/v5anaconda/CarrierStrategy.java",
+        "/workspace/work/build-no_thoughts/source/v5anaconda/Communication.java",
+        "/workspace/work/build-no_thoughts/source/v5anaconda/HQStrategy.java",
+        "/workspace/work/build-no_thoughts/source/v5anaconda/LauncherStrategy.java",
+        "/workspace/work/build-no_thoughts/source/v5anaconda/Pathing.java",
+        "/workspace/work/build-no_thoughts/source/v5anaconda/RobotPlayer.java",
+        "/workspace/work/build-no_thoughts/source/v5anaconda/SusList.java"
+      ],
+      "elapsed_seconds": 0.876,
+      "exit_code": 0,
+      "log": "compile.log",
+      "log_sha256": "2edc0ba36ae8c5184abdbc26ac514b96f3b1c683162f23dd8517d9c0a837333d",
+      "status": "succeeded"
+    },
+    {
+      "command": [
+        "/nix/store/84sr5jfh99mdgfwa0sa8nxifgy0vqicf-openjdk-8u504-b01/bin/java",
+        "-cp",
+        "/opt/battlecode23/engine.jar",
+        "battlecode.instrumenter.Verifier",
+        "v5anaconda",
+        "/workspace/work/build-no_thoughts/classes"
+      ],
+      "elapsed_seconds": 0.365,
+      "exit_code": 0,
+      "log": "verify.log",
+      "log_sha256": "2edc0ba36ae8c5184abdbc26ac514b96f3b1c683162f23dd8517d9c0a837333d",
+      "status": "succeeded"
+    }
+  ]
+}

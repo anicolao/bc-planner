@@ -1,0 +1,288 @@
+{
+  "schema": "bcenv.unshare-boundary-probe.v1",
+  "scope": "fresh synthetic fixture, no model invocation",
+  "tests": [
+    {
+      "test": "outside_root_confidentiality",
+      "status": "passed",
+      "evidence": {
+        "attempts": {
+          "/workspace/shared/bc23-sandbox-probe/host-canary.txt": {
+            "errno": 2
+          },
+          "/proc/1/root/workspace/shared/bc23-sandbox-probe/host-canary.txt": {
+            "errno": 2
+          },
+          "/proc/self/root/workspace/shared/bc23-sandbox-probe/host-canary.txt": {
+            "errno": 2
+          },
+          "/../../workspace/shared/bc23-sandbox-probe/host-canary.txt": {
+            "errno": 2
+          },
+          "/workspace/../../workspace/shared/bc23-sandbox-probe/host-canary.txt": {
+            "errno": 2
+          }
+        },
+        "supervisor": {
+          "exit_code": 0,
+          "stop_reason": null,
+          "elapsed_seconds": 0.0527,
+          "output_bytes_retained": 400
+        }
+      },
+      "elapsed_seconds": 0.0529
+    },
+    {
+      "test": "immutable_reference_runtime_helper",
+      "status": "failed",
+      "error": "AssertionError({'/workspace/docs/canary.txt': {'write': 30, 'chmod': 30}, '/opt/io_worker.py': {'write': 30, 'chmod': 30}, '/nix/store/h3l4z7p6wny3phbckwwhy1i2g52pdnj4-python3-3.13.15/bin/python3': {'write': 13, 'chmod': 30}})",
+      "elapsed_seconds": 0.0518
+    },
+    {
+      "test": "dropped_capabilities_no_new_privileges",
+      "status": "passed",
+      "evidence": {
+        "candidate": {
+          "status": {
+            "CapInh": "0000000000000000",
+            "CapPrm": "0000000000000000",
+            "CapEff": "0000000000000000",
+            "CapBnd": "000001ffffffffff",
+            "CapAmb": "0000000000000000",
+            "NoNewPrivs": "1",
+            "Seccomp": "2",
+            "Seccomp_filters": "1"
+          },
+          "pid": 1,
+          "chroot": 1,
+          "remount": {
+            "rc": -1,
+            "errno": 1
+          }
+        },
+        "supervisor": {
+          "exit_code": 0,
+          "stop_reason": null,
+          "elapsed_seconds": 0.0662,
+          "output_bytes_retained": 280
+        }
+      },
+      "elapsed_seconds": 0.0663
+    },
+    {
+      "test": "clean_descriptors_and_environment",
+      "status": "passed",
+      "evidence": {
+        "candidate": {
+          "fds": {
+            "0": "pipe:[156499]",
+            "1": "pipe:[156500]",
+            "2": "pipe:[156501]"
+          },
+          "environment": {
+            "HOME": "/workspace",
+            "PATH": "/nix/store/h3l4z7p6wny3phbckwwhy1i2g52pdnj4-python3-3.13.15/bin",
+            "LANG": "C.UTF-8",
+            "PYTHONDONTWRITEBYTECODE": "1"
+          }
+        },
+        "supervisor": {
+          "exit_code": 0,
+          "stop_reason": null,
+          "elapsed_seconds": 0.0555,
+          "output_bytes_retained": 241
+        }
+      },
+      "elapsed_seconds": 0.0557
+    },
+    {
+      "test": "private_process_namespace",
+      "status": "passed",
+      "evidence": {
+        "candidate": {
+          "pids": [
+            1
+          ],
+          "outside_process_signal_zero": 3
+        },
+        "supervisor": {
+          "exit_code": 0,
+          "stop_reason": null,
+          "elapsed_seconds": 0.0517,
+          "output_bytes_retained": 48
+        }
+      },
+      "elapsed_seconds": 0.0533
+    },
+    {
+      "test": "host_loopback_unreachable",
+      "status": "passed",
+      "evidence": {
+        "candidate": {
+          "errno": 101
+        },
+        "host_listener_accepted": false,
+        "supervisor": {
+          "exit_code": 0,
+          "stop_reason": null,
+          "elapsed_seconds": 0.0641,
+          "output_bytes_retained": 15
+        },
+        "network_configuration": "none; no NETLINK_ROUTE use"
+      },
+      "elapsed_seconds": 0.2649
+    },
+    {
+      "test": "same_root_read_write_exec",
+      "status": "passed",
+      "evidence": {
+        "read_write_exec_same_file": true,
+        "supervisor": {
+          "exit_code": 0,
+          "stop_reason": null,
+          "elapsed_seconds": 0.0479,
+          "output_bytes_retained": 30
+        }
+      },
+      "elapsed_seconds": 0.1693
+    },
+    {
+      "test": "symlink_io_rejection",
+      "status": "passed",
+      "evidence": {
+        "rejected_operations": [
+          "outside-link-1792454544291438300:read",
+          "outside-link-1792454544291438300:write",
+          "reference-link-1792454544291438300:read",
+          "reference-link-1792454544291438300:write"
+        ],
+        "canaries_unchanged": true,
+        "supervisor": {
+          "exit_code": 0,
+          "stop_reason": null,
+          "elapsed_seconds": 0.0581,
+          "output_bytes_retained": 37
+        }
+      },
+      "elapsed_seconds": 0.3193
+    },
+    {
+      "test": "timeout_kills_setsid_descendant",
+      "status": "passed",
+      "evidence": {
+        "status": "timeout",
+        "heartbeat_bytes": 38,
+        "heartbeat_stable_after_return_seconds": 0.2,
+        "supervisor": {
+          "exit_code": -9,
+          "stop_reason": "timeout",
+          "elapsed_seconds": 1.0049,
+          "output_bytes_retained": 0
+        }
+      },
+      "elapsed_seconds": 1.2055
+    },
+    {
+      "test": "init_exit_kills_setsid_descendant",
+      "status": "passed",
+      "evidence": {
+        "status": "succeeded",
+        "heartbeat_bytes": 13,
+        "heartbeat_stable_after_return_seconds": 0.2,
+        "supervisor": {
+          "exit_code": 0,
+          "stop_reason": null,
+          "elapsed_seconds": 0.3488,
+          "output_bytes_retained": 0
+        }
+      },
+      "elapsed_seconds": 0.5493
+    },
+    {
+      "test": "bounded_combined_output",
+      "status": "passed",
+      "evidence": {
+        "exit_code": -9,
+        "stop_reason": "output_limit",
+        "elapsed_seconds": 0.0512,
+        "output_bytes_retained": 2048
+      },
+      "elapsed_seconds": 0.0513
+    },
+    {
+      "test": "per_process_address_space_limit",
+      "status": "passed",
+      "evidence": {
+        "candidate": {
+          "memory_error": true
+        },
+        "per_process_only": true,
+        "supervisor": {
+          "exit_code": 0,
+          "stop_reason": null,
+          "elapsed_seconds": 0.0504,
+          "output_bytes_retained": 23
+        }
+      },
+      "elapsed_seconds": 0.0505
+    },
+    {
+      "test": "per_file_size_limit",
+      "status": "passed",
+      "evidence": {
+        "candidate": {
+          "errno": 27,
+          "size": 1048576
+        },
+        "per_file_only": true,
+        "supervisor": {
+          "exit_code": 0,
+          "stop_reason": null,
+          "elapsed_seconds": 0.053,
+          "output_bytes_retained": 31
+        }
+      },
+      "elapsed_seconds": 0.0531
+    },
+    {
+      "test": "synthetic_controller_actual_adapter",
+      "status": "passed",
+      "evidence": {
+        "status": "complete",
+        "tool_calls": 3,
+        "initial_sha256": "3b6a242acb1bae77ae732dbb469a16643432f56b1527caf223ad7803ca8b59a9",
+        "outputs": [
+          {
+            "call_id": "w",
+            "result": {
+              "bytes_written": 25,
+              "status": "complete"
+            }
+          },
+          {
+            "call_id": "r",
+            "result": {
+              "status": "complete",
+              "text": "controller actual sandbox"
+            }
+          },
+          {
+            "call_id": "e",
+            "result": {
+              "status": "succeeded",
+              "stderr": "",
+              "stdout": "controller actual sandbox\n",
+              "truncated": false
+            }
+          }
+        ],
+        "transport": "synthetic fixed replies; no model invocation"
+      },
+      "elapsed_seconds": 0.1517
+    }
+  ],
+  "passed": 13,
+  "failed": 1,
+  "aggregate_resource_enforcement": "not implemented or accepted",
+  "complete_isolation_claim": "not accepted"
+}

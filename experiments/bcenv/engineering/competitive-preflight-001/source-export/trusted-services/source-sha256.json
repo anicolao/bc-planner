@@ -1,0 +1,12 @@
+{
+  "source_checkout": "/workspace/shared/bcenv-controller-ledger",
+  "base_commit": "df7a20d63d04faae829b97e786f4cb4f985b0071",
+  "files": {
+    "controller.py": "83d585a54d1e3c8698cf7efba8ae16e494683230865b698e0677f9b7964b4929",
+    "controller_ledger.py": "738c263437acb3427b8543f4481622c9966a7ce1ee42897fbc899c7a2badc2ff",
+    "ledger.py": "b98577bd5e558c2c59862041fd0b0a85172b0c815a08f532f06d5e44c2eb2a96",
+    "scrimmage.py": "6128436a9d2a43fca1a7359d9add89a64ce4598ed1d2b6b1f914ee56d674746a"
+  },
+  "copy_state": "Files copied while controller-ledger changes were staged above the base commit; file hashes are authoritative.",
+  "subsequent_commit_with_identical_files": "8f2125d12db4df1f16bca721179ec52cf16273d6"
+}

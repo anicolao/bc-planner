@@ -1,0 +1,33 @@
+test_01_fresh_database_eight_process_init_submit (__main__.Review.test_01_fresh_database_eight_process_init_submit) ... ok
+test_02_incompatible_initializers_commit_one_complete_configuration (__main__.Review.test_02_incompatible_initializers_commit_one_complete_configuration) ... ok
+test_03_atomic_submit_binding_failure_has_no_payload_orphans (__main__.Review.test_03_atomic_submit_binding_failure_has_no_payload_orphans) ... ok
+test_04_second_registration_failure_rolls_back_entire_completion (__main__.Review.test_04_second_registration_failure_rolls_back_entire_completion) ... ok
+test_05_expired_exact_repeat_never_reruns_provider_or_changes_rows (__main__.Review.test_05_expired_exact_repeat_never_reruns_provider_or_changes_rows) ... ok
+test_06_legacy_and_other_run_guesses_have_no_existence_oracle (__main__.Review.test_06_legacy_and_other_run_guesses_have_no_existence_oracle) ... ok
+test_07_legacy_finish_never_gains_replay (__main__.Review.test_07_legacy_finish_never_gains_replay) ... ok
+test_08_supported_clock_and_large_ttl_manifest_numbers (__main__.Review.test_08_supported_clock_and_large_ttl_manifest_numbers) ... ok
+test_09_fractional_rollback_via_legacy_api_fences_page_durably (__main__.Review.test_09_fractional_rollback_via_legacy_api_fences_page_durably) ... ok
+test_10_stale_generation_after_retry_cannot_publish (__main__.Review.test_10_stale_generation_after_retry_cannot_publish) ... ok
+test_11_cross_submission_view_and_altered_reservation_never_publish (__main__.Review.test_11_cross_submission_view_and_altered_reservation_never_publish) ... ok
+test_12_unknown_reservation_commit_has_no_provider_or_retry (__main__.Review.test_12_unknown_reservation_commit_has_no_provider_or_retry) ... ok
+test_13_actual_commit_uncertainty_preserves_unknown_outcome (__main__.Review.test_13_actual_commit_uncertainty_preserves_unknown_outcome) ... ok
+test_14_unknown_completion_commit_exact_inspection_no_second_provider (__main__.Review.test_14_unknown_completion_commit_exact_inspection_no_second_provider) ... ok
+test_15_failed_page_preserves_first_fingerprint_and_charge (__main__.Review.test_15_failed_page_preserves_first_fingerprint_and_charge) ... ok
+test_16_logical_source_cap_equal_and_distinct_guesses_fail_equally (__main__.Review.test_16_logical_source_cap_equal_and_distinct_guesses_fail_equally) ... ok
+test_17_source_integrity_changed_during_callback_never_releases_page (__main__.Review.test_17_source_integrity_changed_during_callback_never_releases_page) ... ok
+test_18_exact_v1_registry_flat_strict_v2_and_transport_binding (__main__.Review.test_18_exact_v1_registry_flat_strict_v2_and_transport_binding) ... ok
+test_19_strict_inactive_fields_boolean_offset_and_malformed_envelopes (__main__.Review.test_19_strict_inactive_fields_boolean_offset_and_malformed_envelopes) ... ok
+test_20_v2_complete_envelope_cap_and_exact_aggregate_accounting (__main__.Review.test_20_v2_complete_envelope_cap_and_exact_aggregate_accounting) ... ok
+test_21_composed_offline_responses_capture_ledger_and_full_pagination (__main__.Review.test_21_composed_offline_responses_capture_ledger_and_full_pagination) ... ok
+test_22_eight_process_page_admission_charges_exactly_one_attempt (__main__.Review.test_22_eight_process_page_admission_charges_exactly_one_attempt) ... COMPOSED_SYNTHETIC_EVIDENCE {"envelope_max": 11476, "output_bytes": 50406, "pages": 5, "records": 196, "tool_calls": 11}
+ok
+test_23_failed_attempt_quota_survives_restart_and_blocks_callback (__main__.Review.test_23_failed_attempt_quota_survives_restart_and_blocks_callback) ... ok
+test_24_expired_source_stays_charged_and_immutable (__main__.Review.test_24_expired_source_stays_charged_and_immutable) ... ok
+test_25_default_v1_with_v2_adapter_still_withholds (__main__.Review.test_25_default_v1_with_v2_adapter_still_withholds) ... ok
+test_26_minimum_payload_budget_keeps_exact_pagination_progress (__main__.Review.test_26_minimum_payload_budget_keeps_exact_pagination_progress) ... ok
+test_27_explicit_3013_profile_is_bound_without_version_inference (__main__.Review.test_27_explicit_3013_profile_is_bound_without_version_inference) ... ok
+
+----------------------------------------------------------------------
+Ran 27 tests in 0.551s
+
+OK

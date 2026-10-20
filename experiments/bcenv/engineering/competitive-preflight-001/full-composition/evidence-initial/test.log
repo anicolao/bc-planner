@@ -1,0 +1,10 @@
+test_01_full_continuity_immutable_export_and_durable_completion (__main__.FullCompositionSmoke.test_01_full_continuity_immutable_export_and_durable_completion) ... ok
+test_02_failed_export_does_not_mint_handle_or_create_job (__main__.FullCompositionSmoke.test_02_failed_export_does_not_mint_handle_or_create_job) ... ok
+test_03_cross_owner_and_cross_run_handles_are_denied (__main__.FullCompositionSmoke.test_03_cross_owner_and_cross_run_handles_are_denied) ... ok
+test_04_unknown_model_outcome_retains_budget_and_never_autoretries (__main__.FullCompositionSmoke.test_04_unknown_model_outcome_retains_budget_and_never_autoretries) ... ok
+test_05_launch_stays_closed_with_composed_adapters (__main__.FullCompositionSmoke.test_05_launch_stays_closed_with_composed_adapters) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.023s
+
+OK

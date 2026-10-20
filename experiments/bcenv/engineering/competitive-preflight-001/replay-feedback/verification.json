@@ -1,0 +1,202 @@
+{
+  "all_schema_fields_validated": false,
+  "exact_raw_prefix_and_coverage_checks": "passed",
+  "expected_spec_version": "3.0.13",
+  "facade_integration": false,
+  "heldout_gate": "closed",
+  "limitations": [
+    "Core replay validation is not full FlatBuffers verification.",
+    "Hashes detect drift but do not establish an isolation or authenticity boundary.",
+    "No new game, heldout evaluation, service deployment or model learning loop was run.",
+    "Gameplay can reveal recognizable behavior even after identity metadata is removed.",
+    "The fixed window and prefix are not representative sampling or causal analysis."
+  ],
+  "negative_checks": [
+    {
+      "case": "wrong_expected_version",
+      "reason": "invalid_evidence",
+      "result": "rejected"
+    },
+    {
+      "case": "incomplete_source",
+      "reason": "invalid_evidence",
+      "result": "rejected"
+    },
+    {
+      "case": "corrupt_tail_beyond_projection_cap",
+      "reason": "invalid_evidence",
+      "result": "rejected"
+    }
+  ],
+  "nested_injection_check": "passed",
+  "new_matches": 0,
+  "original_artifacts_unchanged": true,
+  "outputs": {
+    "feedback-byte-capped.json": {
+      "bytes": 4026,
+      "coverage": {
+        "all_schema_fields_validated": false,
+        "extracted_fields_valid": true,
+        "matching_counts_by_kind": {
+          "action": 179,
+          "movement": 261,
+          "spawn": 3,
+          "team_resource_delta": 12
+        },
+        "matching_record_count": 455,
+        "projection_truncated": true,
+        "returned_record_count": 13,
+        "selected_records_complete": false,
+        "source_returned_record_count": 455,
+        "source_stream_complete": true,
+        "source_truncated": false,
+        "truncated": true,
+        "truncation_reasons": [
+          "projection_record_limit",
+          "projection_output_limit"
+        ]
+      },
+      "returned_counts_by_kind": {
+        "movement": 11,
+        "team_resource_delta": 2
+      },
+      "returned_team_slots": [
+        "opponent",
+        "own"
+      ],
+      "sha256": "731e9839dbc3abd439f60fb5c594efedf5bafffe138d0c5b197352222c350f08"
+    },
+    "feedback-source-capped.json": {
+      "bytes": 7988,
+      "coverage": {
+        "all_schema_fields_validated": false,
+        "extracted_fields_valid": true,
+        "matching_counts_by_kind": {
+          "action": 179,
+          "movement": 261,
+          "spawn": 3,
+          "team_resource_delta": 12
+        },
+        "matching_record_count": 455,
+        "projection_truncated": false,
+        "returned_record_count": 32,
+        "selected_records_complete": false,
+        "source_returned_record_count": 32,
+        "source_stream_complete": true,
+        "source_truncated": true,
+        "truncated": true,
+        "truncation_reasons": [
+          "source_record_limit"
+        ]
+      },
+      "returned_counts_by_kind": {
+        "movement": 30,
+        "team_resource_delta": 2
+      },
+      "returned_team_slots": [
+        "opponent",
+        "own"
+      ],
+      "sha256": "1b25fbb38ac98a8992e5e11227c2148789418cf6821e66f67ba35ecb19c987c3"
+    },
+    "feedback-window-complete.json": {
+      "bytes": 104406,
+      "coverage": {
+        "all_schema_fields_validated": false,
+        "extracted_fields_valid": true,
+        "matching_counts_by_kind": {
+          "action": 179,
+          "movement": 261,
+          "spawn": 3,
+          "team_resource_delta": 12
+        },
+        "matching_record_count": 455,
+        "projection_truncated": false,
+        "returned_record_count": 455,
+        "selected_records_complete": true,
+        "source_returned_record_count": 455,
+        "source_stream_complete": true,
+        "source_truncated": false,
+        "truncated": false,
+        "truncation_reasons": []
+      },
+      "returned_counts_by_kind": {
+        "action": 179,
+        "movement": 261,
+        "spawn": 3,
+        "team_resource_delta": 12
+      },
+      "returned_team_slots": [
+        "opponent",
+        "own"
+      ],
+      "sha256": "f62fb9bc20e248f0af9b598c8251772fe00c464019b351512d8d8ac384afff1d"
+    },
+    "feedback.json": {
+      "bytes": 15639,
+      "coverage": {
+        "all_schema_fields_validated": false,
+        "extracted_fields_valid": true,
+        "matching_counts_by_kind": {
+          "action": 179,
+          "movement": 261,
+          "spawn": 3,
+          "team_resource_delta": 12
+        },
+        "matching_record_count": 455,
+        "projection_truncated": true,
+        "returned_record_count": 64,
+        "selected_records_complete": false,
+        "source_returned_record_count": 455,
+        "source_stream_complete": true,
+        "source_truncated": false,
+        "truncated": true,
+        "truncation_reasons": [
+          "projection_record_limit"
+        ]
+      },
+      "returned_counts_by_kind": {
+        "action": 21,
+        "movement": 41,
+        "team_resource_delta": 2
+      },
+      "returned_team_slots": [
+        "opponent",
+        "own"
+      ],
+      "sha256": "cb7a128638fbd9a02dc08223adf8ed5b852b023b2887bb62ad8504ce2abec2b3"
+    }
+  },
+  "persisted_bridge_checks": {
+    "new_engine_runs": 0,
+    "passed": 8
+  },
+  "private_metadata_absence_checks": "passed",
+  "producer_diagnostics": {
+    "classification": "jdk_stack_location_warning",
+    "parser_exit_codes": [
+      0,
+      0
+    ],
+    "processes": 2,
+    "raw_stderr_retained_privately": true
+  },
+  "projector_commit": "04c815954154a9be691bb531245f74e35cbd6edf",
+  "schema": "bcenv.bc2023.feedback-integration-evidence.v1",
+  "scope": "Offline projection from one previously completed public game; no new matches.",
+  "source_matching_counts_by_kind": {
+    "action": 179,
+    "movement": 261,
+    "spawn": 3,
+    "team_resource_delta": 12
+  },
+  "source_matching_record_count": 455,
+  "source_query_records_complete": true,
+  "source_stream_complete": true,
+  "source_window": {
+    "robot_id": null,
+    "round_end": 40,
+    "round_start": 35
+  },
+  "source_window_rounds_present": true
+}

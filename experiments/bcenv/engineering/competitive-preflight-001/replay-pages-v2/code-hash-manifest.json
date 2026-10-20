@@ -1,0 +1,36 @@
+{
+  "base_commit": "d769760da47cedb4acf6c44b24497a7f29ef1fc5",
+  "compiled_classes_sha256": {
+    "ReplayQuery$Body.class": "e1decf26d91db56543fc78ca654dda4bf74c5fbf337da7fc6649cc4bb4f5f092",
+    "ReplayQuery$Collector.class": "1f47a80d049c436d9d026177298fff99ece37010160cf82176ce7d64cf99ff8c",
+    "ReplayQuery$Selection.class": "d8ee3a7847ab30d85fbdfc59e5a93145e9f4b61312f2b6940210c5adac2f208b",
+    "ReplayQuery.class": "ff648bfc34c648577a0aef1f4c875ef4c7f3dfb45a6cf02ac5a7ce66ea34f661",
+    "ReplayQueryTest.class": "541fc75145ae31b7b61df00cd356384b845976e5e46daa84e18cbe9b2af9f7cd",
+    "ReplaySummary$Match.class": "e1c30883072cabecd2cbb46d0494fa2c8c20af17152d6cdf574fe56c8db28bff",
+    "ReplaySummary.class": "46f8b9a8dd908c3ca01d7b614c07539ebe8ea39318d1aaf74eb4eea4681e193a",
+    "ReplaySummaryTest.class": "476b1078a0bbf396635c07d7188d5d5b424446628453752d72c4c6a37ca2e5a4"
+  },
+  "engine_sha256": "2b6db98e312e0e509d599acc46bffbb55c2569de0f12c8214a85ee57625f15f2",
+  "excludes": [
+    "raw replay",
+    "raw upstream query",
+    "engine/map/bot binaries",
+    "raw logs",
+    "runtime closure"
+  ],
+  "notes": "Source snapshot and hashes; compiled classes and runtime artifacts are not distributed.",
+  "source_sha256": {
+    "contracts/replay-feedback-v2.md": "2a913c3fb20ba4ae40b3eec6cc5fa58e9a7b6a8d6eec7d960db0d82ff1a74e82",
+    "runtime/artifacts.py": "a7d7b8ba7266ed53855b904fd85c60996a43deba0cf78d6231221c9ec10a62fa",
+    "seasons/2023/adapter.py": "356a42cc9429c75bdf485a752ff633eb82e4353d297027102bad2f6168fc53b7",
+    "seasons/2023/replay/ReplayQuery.java": "dc3edbe7af68353dfaa4a18e22a0a00a87cb4e1381dd0a4cea1d4e72e412ebbe",
+    "seasons/2023/replay/ReplayQueryTest.java": "631d9cee3336c0c7ccdbd53b2fed2c05cd5464c91f7ff2f3c5dd25b324324515",
+    "seasons/2023/replay/ReplaySummary.java": "ad13c29639d0893e744bce0e04736c8c84959a439d0b0843d7f8a3b44cb2c349",
+    "seasons/2023/replay/ReplaySummaryTest.java": "212de9c026ae84bf84a313f345fe60e62e7564e36e0306509c535b31207a2708",
+    "services/replay_feedback.py": "bd68a1c4a768a07cc90f7d0cd65017053d2d542fb9fc48f9fcc9b59d235be865",
+    "services/replay_feedback_v2.py": "d1864505c392a520f69f38aa9f865be940c300bc884fce5c506045d92695f927",
+    "tests/test_replay_feedback.py": "d18ceeb110997326b052b252522a4967efa5959b7d7082d7831b024b6ba8db55",
+    "tests/test_replay_feedback_v2.py": "29af75bcbdf416cb46d6e8e928eafd6c8a9dcbec2b6bd8b9184592bbcf451abf",
+    "tests/test_replay_query.py": "6c66852859694c167f9d09f16b8b247bfcd36c2c852d8b8d2537be2a469cdd89"
+  }
+}

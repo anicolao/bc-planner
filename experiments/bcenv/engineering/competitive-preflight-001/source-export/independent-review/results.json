@@ -1,0 +1,135 @@
+{
+  "schema": "bcenv.independent-source-export-review.v1",
+  "verdict": "accepted_for_bounded_synthetic_fixture_only",
+  "unresolved_must_fix": [],
+  "tests_passed": 38,
+  "tests_failed": 0,
+  "author_tests": 28,
+  "independent_additional_tests": 10,
+  "elapsed_seconds": 10.284,
+  "checks": [
+    "test_actual_six_tool_controller_export_submit_feedback_zero_games",
+    "test_archive_size_limit",
+    "test_candidate_stdout_cannot_mint_handle",
+    "test_case_collision_is_rejected",
+    "test_collector_argument_alias_cannot_export",
+    "test_collector_requires_readonly_workspace_and_is_immutable",
+    "test_depth_limit",
+    "test_duplicate_capture_is_deterministic_bytes",
+    "test_empty_source_rejected",
+    "test_exact_128_files_is_accepted",
+    "test_exact_file_byte_cap_is_accepted",
+    "test_exact_path_cap_then_excess_is_rejected",
+    "test_export_timeout_never_publishes_handle",
+    "test_failed_export_after_success_never_reuses_old_handle",
+    "test_fifo_rejected_without_blocking",
+    "test_file_count_limit",
+    "test_file_size_limit",
+    "test_fresh_copy_writes_do_not_reach_author_fixture",
+    "test_hardlink_rejected",
+    "test_hostile_candidate_teardown_precedes_capture",
+    "test_intake_reserved_identifier_rejected",
+    "test_invalid_unicode_and_nul_rejected",
+    "test_malformed_collector_result_never_publishes_handle",
+    "test_non_java_name_rejected",
+    "test_operation_lock_waits_for_candidate_exit_before_capture",
+    "test_outside_symlink_leaf_rejected",
+    "test_owner_and_run_scope_cannot_resolve_handle",
+    "test_private_collector_output_limit_is_enforced",
+    "test_real_export_validates_and_private_zip_is_not_tool_output",
+    "test_reserved_operation_is_exact_and_has_no_path_parameter",
+    "test_selector_poll_exception_cleanup_blocks_future_export",
+    "test_snapshot_stays_frozen_after_candidate_mutation",
+    "test_symlink_directory_rejected",
+    "test_uncertain_exec_cleanup_permanently_blocks_export",
+    "test_uncertain_read_cleanup_blocks_export",
+    "test_valid_zip_on_normal_stdout_never_mints_handle",
+    "test_visited_entry_cap_is_rejected",
+    "test_wrong_package_tree_rejected"
+  ],
+  "actual_games": 0,
+  "actual_model_calls": 0,
+  "network_setup": false,
+  "denied_operation_retries": 0,
+  "materializer_readonly_check": "passed_22_runtime_paths",
+  "materializer_execution": "not_run",
+  "original_sha256": {
+    "source_collector.py": "931c54aff87cdc3f9403fdf8785122f402468af9111831e35568802868397208",
+    "export_backend.py": "e74df490028e5eb397d7a03400fdb19ce6918aa6621e7aebf3363e19a5855148",
+    "probe_adapter.py": "0dc3db7f3ba73b1e2304fac6e1a73443548e03e90530ccaa83d045ae84223cdb",
+    "namespace_launcher.py": "b5c48b2c20d4e9416170632989be24ad2093e74497f8d0e70c460016155e8620",
+    "parent_death_guard.py": "8cf87f5e7475e37efb1113e63b3b4b8855b22b25742e2cc8e41c4b3366335aa7",
+    "io_worker.py": "f2d05b9537c52dba3e0cefa0f44f800320ccab497c5e459a07cf48d93ad2004c",
+    "test_source_export.py": "ef1253be3b193202ab0a406960fbb5500201ab14498c39a06268481181d8133b"
+  },
+  "relocated_sha256": {
+    "source_collector.py": "931c54aff87cdc3f9403fdf8785122f402468af9111831e35568802868397208",
+    "export_backend.py": "e74df490028e5eb397d7a03400fdb19ce6918aa6621e7aebf3363e19a5855148",
+    "probe_adapter.py": "47ed34e6d88fd7c95554b37ed8d2ddc55c61a4af4593b51bbfc6ce7faed7d923",
+    "namespace_launcher.py": "2423e8b733201e4e5de6f4f035f5da1a566d09ae2a1f0ce9c9978e93d12d337f",
+    "parent_death_guard.py": "8cf87f5e7475e37efb1113e63b3b4b8855b22b25742e2cc8e41c4b3366335aa7",
+    "io_worker.py": "f2d05b9537c52dba3e0cefa0f44f800320ccab497c5e459a07cf48d93ad2004c",
+    "test_source_export.py": "ef1253be3b193202ab0a406960fbb5500201ab14498c39a06268481181d8133b"
+  },
+  "baseline_verification": {
+    "namespace_baselines": {
+      "probe_adapter.py": {
+        "manifest": "8f122ea5fc27759cc8f202dcc10916f2ace49a66cba32e55b9d68bae2c8010d3",
+        "copy": "8f122ea5fc27759cc8f202dcc10916f2ace49a66cba32e55b9d68bae2c8010d3",
+        "previous_fixture": "8f122ea5fc27759cc8f202dcc10916f2ace49a66cba32e55b9d68bae2c8010d3",
+        "match": true
+      },
+      "namespace_launcher.py": {
+        "manifest": "f38310213cfc56ebfb8daa2c068d04019ffcbcf2a5c931cf11802e9edda74afb",
+        "copy": "f38310213cfc56ebfb8daa2c068d04019ffcbcf2a5c931cf11802e9edda74afb",
+        "previous_fixture": "f38310213cfc56ebfb8daa2c068d04019ffcbcf2a5c931cf11802e9edda74afb",
+        "match": true
+      },
+      "parent_death_guard.py": {
+        "manifest": "8cf87f5e7475e37efb1113e63b3b4b8855b22b25742e2cc8e41c4b3366335aa7",
+        "copy": "8cf87f5e7475e37efb1113e63b3b4b8855b22b25742e2cc8e41c4b3366335aa7",
+        "previous_fixture": "8cf87f5e7475e37efb1113e63b3b4b8855b22b25742e2cc8e41c4b3366335aa7",
+        "match": true
+      },
+      "io_worker.py": {
+        "manifest": "f2d05b9537c52dba3e0cefa0f44f800320ccab497c5e459a07cf48d93ad2004c",
+        "copy": "f2d05b9537c52dba3e0cefa0f44f800320ccab497c5e459a07cf48d93ad2004c",
+        "previous_fixture": "f2d05b9537c52dba3e0cefa0f44f800320ccab497c5e459a07cf48d93ad2004c",
+        "match": true
+      },
+      "test_boundary.py": {
+        "manifest": "2bf31d3e4504dc1d14bbf8b7825802a93195cd505afc9660940b1aeabb791f1b",
+        "copy": "2bf31d3e4504dc1d14bbf8b7825802a93195cd505afc9660940b1aeabb791f1b",
+        "previous_fixture": "2bf31d3e4504dc1d14bbf8b7825802a93195cd505afc9660940b1aeabb791f1b",
+        "match": true
+      }
+    },
+    "trusted_service_snapshots": {
+      "controller.py": {
+        "manifest": "83d585a54d1e3c8698cf7efba8ae16e494683230865b698e0677f9b7964b4929",
+        "copy": "83d585a54d1e3c8698cf7efba8ae16e494683230865b698e0677f9b7964b4929",
+        "source_checkout": "83d585a54d1e3c8698cf7efba8ae16e494683230865b698e0677f9b7964b4929",
+        "match": true
+      },
+      "controller_ledger.py": {
+        "manifest": "738c263437acb3427b8543f4481622c9966a7ce1ee42897fbc899c7a2badc2ff",
+        "copy": "738c263437acb3427b8543f4481622c9966a7ce1ee42897fbc899c7a2badc2ff",
+        "source_checkout": "738c263437acb3427b8543f4481622c9966a7ce1ee42897fbc899c7a2badc2ff",
+        "match": true
+      },
+      "ledger.py": {
+        "manifest": "b98577bd5e558c2c59862041fd0b0a85172b0c815a08f532f06d5e44c2eb2a96",
+        "copy": "b98577bd5e558c2c59862041fd0b0a85172b0c815a08f532f06d5e44c2eb2a96",
+        "source_checkout": "b98577bd5e558c2c59862041fd0b0a85172b0c815a08f532f06d5e44c2eb2a96",
+        "match": true
+      },
+      "scrimmage.py": {
+        "manifest": "6128436a9d2a43fca1a7359d9add89a64ce4598ed1d2b6b1f914ee56d674746a",
+        "copy": "6128436a9d2a43fca1a7359d9add89a64ce4598ed1d2b6b1f914ee56d674746a",
+        "source_checkout": "6128436a9d2a43fca1a7359d9add89a64ce4598ed1d2b6b1f914ee56d674746a",
+        "match": true
+      }
+    }
+  },
+  "review_source_sha256": "5f74b562d4fc7719d8f7f503d8dc674137aeeda6df7f15d70069f5f95bf0157a"
+}

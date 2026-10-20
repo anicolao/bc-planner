@@ -1,0 +1,18 @@
+{
+  "default": [
+    "{\"name\":\"workspace_read\",\"parameters\":{\"additionalProperties\":false,\"properties\":{\"limit\":{\"maximum\":8192,\"minimum\":1,\"type\":\"integer\"},\"offset\":{\"maximum\":1048576,\"minimum\":0,\"type\":\"integer\"},\"path\":{\"maxLength\":240,\"type\":\"string\"}},\"required\":[\"path\",\"offset\",\"limit\"],\"type\":\"object\"}}",
+    "{\"name\":\"workspace_write\",\"parameters\":{\"additionalProperties\":false,\"properties\":{\"content\":{\"type\":\"string\"},\"path\":{\"maxLength\":240,\"type\":\"string\"}},\"required\":[\"path\",\"content\"],\"type\":\"object\"}}",
+    "{\"name\":\"workspace_exec\",\"parameters\":{\"additionalProperties\":false,\"properties\":{\"argv\":{\"items\":{\"maxLength\":4096,\"type\":\"string\"},\"maxItems\":64,\"minItems\":1,\"type\":\"array\"},\"cwd\":{\"maxLength\":240,\"type\":\"string\"},\"timeout_seconds\":{\"maximum\":10,\"minimum\":1,\"type\":\"integer\"}},\"required\":[\"argv\",\"cwd\",\"timeout_seconds\"],\"type\":\"object\"}}",
+    "{\"name\":\"scrimmage_submit\",\"parameters\":{\"additionalProperties\":false,\"properties\":{\"artifact_id\":{\"pattern\":\"^a_[0-9a-f]{32}$\",\"type\":\"string\"},\"package\":{\"maxLength\":240,\"type\":\"string\"}},\"required\":[\"artifact_id\",\"package\"],\"type\":\"object\"}}",
+    "{\"name\":\"scrimmage_result\",\"parameters\":{\"additionalProperties\":false,\"properties\":{\"submission_id\":{\"pattern\":\"^s_[0-9a-f]{32}$\",\"type\":\"string\"}},\"required\":[\"submission_id\"],\"type\":\"object\"}}",
+    "{\"name\":\"scrimmage_replay\",\"parameters\":{\"additionalProperties\":false,\"properties\":{\"submission_id\":{\"pattern\":\"^s_[0-9a-f]{32}$\",\"type\":\"string\"}},\"required\":[\"submission_id\"],\"type\":\"object\"}}"
+  ],
+  "tightened": [
+    "{\"name\":\"workspace_read\",\"parameters\":{\"additionalProperties\":false,\"properties\":{\"limit\":{\"maximum\":123,\"minimum\":1,\"type\":\"integer\"},\"offset\":{\"maximum\":1048576,\"minimum\":0,\"type\":\"integer\"},\"path\":{\"maxLength\":240,\"type\":\"string\"}},\"required\":[\"path\",\"offset\",\"limit\"],\"type\":\"object\"}}",
+    "{\"name\":\"workspace_write\",\"parameters\":{\"additionalProperties\":false,\"properties\":{\"content\":{\"type\":\"string\"},\"path\":{\"maxLength\":240,\"type\":\"string\"}},\"required\":[\"path\",\"content\"],\"type\":\"object\"}}",
+    "{\"name\":\"workspace_exec\",\"parameters\":{\"additionalProperties\":false,\"properties\":{\"argv\":{\"items\":{\"maxLength\":4096,\"type\":\"string\"},\"maxItems\":64,\"minItems\":1,\"type\":\"array\"},\"cwd\":{\"maxLength\":240,\"type\":\"string\"},\"timeout_seconds\":{\"maximum\":7,\"minimum\":1,\"type\":\"integer\"}},\"required\":[\"argv\",\"cwd\",\"timeout_seconds\"],\"type\":\"object\"}}",
+    "{\"name\":\"scrimmage_submit\",\"parameters\":{\"additionalProperties\":false,\"properties\":{\"artifact_id\":{\"pattern\":\"^a_[0-9a-f]{32}$\",\"type\":\"string\"},\"package\":{\"maxLength\":240,\"type\":\"string\"}},\"required\":[\"artifact_id\",\"package\"],\"type\":\"object\"}}",
+    "{\"name\":\"scrimmage_result\",\"parameters\":{\"additionalProperties\":false,\"properties\":{\"submission_id\":{\"pattern\":\"^s_[0-9a-f]{32}$\",\"type\":\"string\"}},\"required\":[\"submission_id\"],\"type\":\"object\"}}",
+    "{\"name\":\"scrimmage_replay\",\"parameters\":{\"additionalProperties\":false,\"properties\":{\"submission_id\":{\"pattern\":\"^s_[0-9a-f]{32}$\",\"type\":\"string\"}},\"required\":[\"submission_id\"],\"type\":\"object\"}}"
+  ]
+}

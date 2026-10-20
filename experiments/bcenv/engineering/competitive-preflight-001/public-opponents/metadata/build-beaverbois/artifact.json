@@ -1,0 +1,93 @@
+{
+  "binary_files": {
+    "USQualifiers/Amplifier.class": "c50091f23c9ba3fa6529a0104f660fd294e40e59471cd7d89389707a477ec5eb",
+    "USQualifiers/Booster.class": "ff5f379de6740e3f3f2c2adb6b710acf1784f618092dfee17624631c6296906c",
+    "USQualifiers/Carrier$1.class": "7bd014b4fe565f3aa4a8ca37e1e0560399c5eb690d402ff7fd1e4e3b3737c196",
+    "USQualifiers/Carrier$CarrierState.class": "1fbb449cf771b347bd3af40fe224bb19f0a3806be554ce6a8c0aa1506ffc9fa1",
+    "USQualifiers/Carrier.class": "71f875d8bba3950f56fd72e26b473ab332f17b65e06d45d7c784b5c54e834e49",
+    "USQualifiers/CarrierSync.class": "3a7df492228a398b2c3fa6fe69092ffd281527bb5ad8879d6d73fcae01fcb3de",
+    "USQualifiers/Destabilizer.class": "effbcca37ce91a1cd94e129ecf77b3710d780326dbefdefd687868a2555d7adb",
+    "USQualifiers/Graph.class": "ad2d1a99f1075dac4f8c0e947744e68adaa25f5be1b84d2600e5d2bf5c0905fd",
+    "USQualifiers/HQSync.class": "31caa7571ef132ec3d47ac2f73d10bd209998ca5bd178e4feda7a9d73a384469",
+    "USQualifiers/Headquarters.class": "e0f204fc8865fe033f8e203ad613279a3b2d29e6a53cd75490ce74d7822a84b8",
+    "USQualifiers/Launcher$1.class": "68bbab374df8aad5ed7ea7a4c2d06ada91656526387251fd153959859a327dc3",
+    "USQualifiers/Launcher$LauncherState.class": "2b9102cb457d35a2001e4bd5a237c985f27952b4edffdd1a84eecdd8fd7db52b",
+    "USQualifiers/Launcher.class": "abf1891b3de8c6918c4bb077994e76a8fad031fb78cad2b8913c6f59579349a5",
+    "USQualifiers/LauncherSync.class": "36c0fec99d455353236d67ba308cdc0584ddf1e25830c292ee63e01d4a8fcc8e",
+    "USQualifiers/RobotPlayer$1.class": "73f96326169de4baa5dab2074e353fa46bce281944fe6fa9d2d451c78598aa07",
+    "USQualifiers/RobotPlayer.class": "49ceb96ed4988cad601e0752fb1057da45fec338b1595c304e9b1bc651b559f5",
+    "USQualifiers/Util.class": "db04b1d2673751b13602fe5ec8b9efc85ff5fb2b6067be07207b409d4f61c7b1"
+  },
+  "binary_sha256": "5622b5cea35f7ddd7d2aa8f2ba4b4e06299f9431046774ba02e7b93b08e73ab1",
+  "engine_sha256": "2b6db98e312e0e509d599acc46bffbb55c2569de0f12c8214a85ee57625f15f2",
+  "kind": "build",
+  "package": "USQualifiers",
+  "schema": "bcenv.artifact.v1",
+  "season": "2023",
+  "source_files": {
+    "USQualifiers/Amplifier.java": "dab31e4a19b4eed2d40b0c062cacd1be430af4c7f8a3fa4bf3a6f2fd73f5725f",
+    "USQualifiers/Booster.java": "b8e216fd105580b238ab3e034219975595eacf026cec48302ca2156f4acad7db",
+    "USQualifiers/Carrier.java": "dc1a4b2af65223719f9d9cfc7205e008610bccd4b444bbd663514430e6c95c36",
+    "USQualifiers/CarrierSync.java": "9bf5d35a6efc61bd30b1bd3c7a1381573354d951b26938b4d7b0b16cca4c1ea2",
+    "USQualifiers/Destabilizer.java": "0ec55f1390406f96fe4ee5ccb2aa4f925cddac7862ff17b0d448deec8471e41c",
+    "USQualifiers/Graph.java": "40809a541944910ba0d4a36948834afc671d60f392e8563de40c19b84493f777",
+    "USQualifiers/HQSync.java": "c4f65daccd87210df81e978fe6514960d9278fd60333b85e9cb54bfb3180b051",
+    "USQualifiers/Headquarters.java": "9f034a1bfcf950f341e00e092684168071096832628c00d6ed6ec324c8bdf7e7",
+    "USQualifiers/Launcher.java": "916430edc1639e1f8c6c7c1c4eb6159692bf1b5f5175d97985a6b355fb4c1ac3",
+    "USQualifiers/LauncherSync.java": "4981c92a785d4b7b29d78f1f75dd60092a07f0c86adbb13992bb5b519560c517",
+    "USQualifiers/RobotPlayer.java": "dae3958caaf40f42f8b786cbcdfa447f96998f36666562d0a26e6beaae1ff603",
+    "USQualifiers/Util.java": "2d82ab7da9c185ddca03c594ea2cc99381eb0ea20a80fcbb6029ef730491827c"
+  },
+  "source_sha256": "112165fbf9b1f93ae78ab5e77653803b71e26f0f77aef67238e65c83b3ba9bd8",
+  "status": "verified",
+  "steps": [
+    {
+      "command": [
+        "/nix/store/84sr5jfh99mdgfwa0sa8nxifgy0vqicf-openjdk-8u504-b01/bin/javac",
+        "-source",
+        "8",
+        "-target",
+        "8",
+        "-encoding",
+        "UTF-8",
+        "-proc:none",
+        "-classpath",
+        "/opt/battlecode23/engine.jar",
+        "-d",
+        "/workspace/work/build-beaverbois/classes",
+        "/workspace/work/build-beaverbois/source/USQualifiers/Amplifier.java",
+        "/workspace/work/build-beaverbois/source/USQualifiers/Booster.java",
+        "/workspace/work/build-beaverbois/source/USQualifiers/Carrier.java",
+        "/workspace/work/build-beaverbois/source/USQualifiers/CarrierSync.java",
+        "/workspace/work/build-beaverbois/source/USQualifiers/Destabilizer.java",
+        "/workspace/work/build-beaverbois/source/USQualifiers/Graph.java",
+        "/workspace/work/build-beaverbois/source/USQualifiers/HQSync.java",
+        "/workspace/work/build-beaverbois/source/USQualifiers/Headquarters.java",
+        "/workspace/work/build-beaverbois/source/USQualifiers/Launcher.java",
+        "/workspace/work/build-beaverbois/source/USQualifiers/LauncherSync.java",
+        "/workspace/work/build-beaverbois/source/USQualifiers/RobotPlayer.java",
+        "/workspace/work/build-beaverbois/source/USQualifiers/Util.java"
+      ],
+      "elapsed_seconds": 0.77,
+      "exit_code": 0,
+      "log": "compile.log",
+      "log_sha256": "129575537d048690a34fd3e7614c77f53feaa3fa9656bb397a043fa4b3de371f",
+      "status": "succeeded"
+    },
+    {
+      "command": [
+        "/nix/store/84sr5jfh99mdgfwa0sa8nxifgy0vqicf-openjdk-8u504-b01/bin/java",
+        "-cp",
+        "/opt/battlecode23/engine.jar",
+        "battlecode.instrumenter.Verifier",
+        "USQualifiers",
+        "/workspace/work/build-beaverbois/classes"
+      ],
+      "elapsed_seconds": 0.315,
+      "exit_code": 0,
+      "log": "verify.log",
+      "log_sha256": "2edc0ba36ae8c5184abdbc26ac514b96f3b1c683162f23dd8517d9c0a837333d",
+      "status": "succeeded"
+    }
+  ]
+}

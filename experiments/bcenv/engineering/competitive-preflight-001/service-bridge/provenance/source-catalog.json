@@ -1,0 +1,767 @@
+{
+  "schema": "bc23.public-source-catalog.v1",
+  "checkedAt": "2026-10-19",
+  "purpose": "Public candidate-source integration; not a selected benchmark or evaluation schedule",
+  "nixpkgsRevision": "21a67dc470149f337cecafbe965d8d252a390518",
+  "sourceAcquisition": {
+    "method": "Nix fetchzip fixed-output",
+    "hashMode": "recursive SHA-256 NAR of stripped archive root",
+    "verified": true,
+    "portableExpressionBuiltOfflineFromVerifiedFodOutputs": true,
+    "tls": "Verified HTTPS; existing configured trust bundle imported only by local audit expression; portable catalog has no local trust paths"
+  },
+  "zipMeasurement": {
+    "content": "Java source only, relative to src, sorted paths",
+    "timestamp": "1980-01-01T00:00:00",
+    "method": "DEFLATE level 9",
+    "mode": "regular 0644",
+    "note": "These are measurement ZIPs, not redistribution bundles. Root AGPL licenses remain separately preserved."
+  },
+  "proposedServiceLimits": {
+    "files": 128,
+    "maxFileBytes": 131072,
+    "totalSourceBytes": 1048576,
+    "archiveBytes": 1048576,
+    "maxMemberCompressionRatio": 100
+  },
+  "candidates": [
+    {
+      "declaredEngineVersion": "3.0.5",
+      "historicalTier": "non-finalist-field",
+      "id": "beaverbois",
+      "license": "AGPL-3.0",
+      "licensePath": "LICENSE",
+      "licenseSha256": "76a97c878c9c7a8321bb395c2b44d3fe2f8d81314d219b20138ed0e2dddd5182",
+      "package": "USQualifiers",
+      "repository": "beaverbois/battlecode23",
+      "revision": "4892382943da5a8527906467739a64db51ccc50d",
+      "sourceNarHash": "sha256-/gRZ+d4O06AvXA3k4E04G8jr3VdD+tpKhNppuETAHIs=",
+      "sourceRoot": "src/USQualifiers",
+      "sourceStorePath": "/nix/store/3psaigdzhpkr392k40b24ih6fwvpgfby-bc23-beaverbois-source",
+      "catalogKey": "beaverbois",
+      "sourceUrl": "https://github.com/beaverbois/battlecode23/archive/4892382943da5a8527906467739a64db51ccc50d.tar.gz",
+      "licenseUrl": "https://github.com/beaverbois/battlecode23/blob/4892382943da5a8527906467739a64db51ccc50d/LICENSE",
+      "entrypoint": "USQualifiers.RobotPlayer",
+      "sourceVerifiedAgainstNixFod": true,
+      "compilationStatus": "pending-final-rule-runtime-smoke",
+      "metrics": {
+        "file_count": 12,
+        "total_source_bytes": 115079,
+        "largest_file": {
+          "path": "USQualifiers/Carrier.java",
+          "bytes": 31938,
+          "sha256": "dc1a4b2af65223719f9d9cfc7205e008610bccd4b444bbd663514430e6c95c36"
+        },
+        "zip_bytes": 26893,
+        "zip_sha256": "b63b5b9594ecca95879c08e881bcd4cc1185cdb12049d33fe820ac5c3b23553a",
+        "overall_compression_ratio": 4.279143271483286,
+        "largest_member_compression_ratio": {
+          "path": "USQualifiers/Carrier.java",
+          "ratio": 5.432556557237626,
+          "compressed_bytes": 5879
+        },
+        "proposed_limit_violations": []
+      },
+      "sourceFiles": [
+        {
+          "path": "USQualifiers/Amplifier.java",
+          "bytes": 149,
+          "sha256": "dab31e4a19b4eed2d40b0c062cacd1be430af4c7f8a3fa4bf3a6f2fd73f5725f"
+        },
+        {
+          "path": "USQualifiers/Booster.java",
+          "bytes": 147,
+          "sha256": "b8e216fd105580b238ab3e034219975595eacf026cec48302ca2156f4acad7db"
+        },
+        {
+          "path": "USQualifiers/Carrier.java",
+          "bytes": 31938,
+          "sha256": "dc1a4b2af65223719f9d9cfc7205e008610bccd4b444bbd663514430e6c95c36"
+        },
+        {
+          "path": "USQualifiers/CarrierSync.java",
+          "bytes": 7711,
+          "sha256": "9bf5d35a6efc61bd30b1bd3c7a1381573354d951b26938b4d7b0b16cca4c1ea2"
+        },
+        {
+          "path": "USQualifiers/Destabilizer.java",
+          "bytes": 153,
+          "sha256": "0ec55f1390406f96fe4ee5ccb2aa4f925cddac7862ff17b0d448deec8471e41c"
+        },
+        {
+          "path": "USQualifiers/Graph.java",
+          "bytes": 1734,
+          "sha256": "40809a541944910ba0d4a36948834afc671d60f392e8563de40c19b84493f777"
+        },
+        {
+          "path": "USQualifiers/HQSync.java",
+          "bytes": 2175,
+          "sha256": "c4f65daccd87210df81e978fe6514960d9278fd60333b85e9cb54bfb3180b051"
+        },
+        {
+          "path": "USQualifiers/Headquarters.java",
+          "bytes": 10300,
+          "sha256": "9f034a1bfcf950f341e00e092684168071096832628c00d6ed6ec324c8bdf7e7"
+        },
+        {
+          "path": "USQualifiers/Launcher.java",
+          "bytes": 31280,
+          "sha256": "916430edc1639e1f8c6c7c1c4eb6159692bf1b5f5175d97985a6b355fb4c1ac3"
+        },
+        {
+          "path": "USQualifiers/LauncherSync.java",
+          "bytes": 9908,
+          "sha256": "4981c92a785d4b7b29d78f1f75dd60092a07f0c86adbb13992bb5b519560c517"
+        },
+        {
+          "path": "USQualifiers/RobotPlayer.java",
+          "bytes": 7763,
+          "sha256": "dae3958caaf40f42f8b786cbcdfa447f96998f36666562d0a26e6beaae1ff603"
+        },
+        {
+          "path": "USQualifiers/Util.java",
+          "bytes": 11821,
+          "sha256": "2d82ab7da9c185ddca03c594ea2cc99381eb0ea20a80fcbb6029ef730491827c"
+        }
+      ],
+      "buildScope": {
+        "sourceRoot": "src/USQualifiers",
+        "recursiveJavaOnly": true,
+        "includeSamePackageSubdirectories": true,
+        "upstreamGradle": false,
+        "strategyChanges": false,
+        "licenseKeptSeparately": true
+      }
+    },
+    {
+      "declaredEngineVersion": "3.0.13",
+      "historicalTier": "finalist-official-history-seventh",
+      "id": "dont-at-me",
+      "license": "AGPL-3.0",
+      "licensePath": "LICENSE",
+      "licenseSha256": "76a97c878c9c7a8321bb395c2b44d3fe2f8d81314d219b20138ed0e2dddd5182",
+      "package": "FB_ZZZ",
+      "repository": "georgezhang02/battlecode23",
+      "revision": "83f81b5568772ecb4f77af462f512dae7aaa4968",
+      "sourceNarHash": "sha256-sc4D+D+9XU4I89kkGR5EtMCXwmqIaNmSFJ/RJY6RFwo=",
+      "sourceRoot": "src/FB_ZZZ",
+      "sourceStorePath": "/nix/store/rg4maw7bcc7l4xwrhg6ymzr26gafrnhf-bc23-dont-at-me-source",
+      "catalogKey": "dont_at_me",
+      "sourceUrl": "https://github.com/georgezhang02/battlecode23/archive/83f81b5568772ecb4f77af462f512dae7aaa4968.tar.gz",
+      "licenseUrl": "https://github.com/georgezhang02/battlecode23/blob/83f81b5568772ecb4f77af462f512dae7aaa4968/LICENSE",
+      "entrypoint": "FB_ZZZ.RobotPlayer",
+      "sourceVerifiedAgainstNixFod": true,
+      "compilationStatus": "pending-final-rule-runtime-smoke",
+      "metrics": {
+        "file_count": 14,
+        "total_source_bytes": 261089,
+        "largest_file": {
+          "path": "FB_ZZZ/BFPathing20.java",
+          "bytes": 72250,
+          "sha256": "f04204ffb3447a4e01ec00f0f164d1945b3311fe7ae7af421c190a0e62df7a65"
+        },
+        "zip_bytes": 42411,
+        "zip_sha256": "60a4e5dfed418c5a49d740b092e8ba0e641d2df3bb896879a9afbf649ff51ebb",
+        "overall_compression_ratio": 6.156162316380184,
+        "largest_member_compression_ratio": {
+          "path": "FB_ZZZ/BFPathing20.java",
+          "ratio": 10.548985253321653,
+          "compressed_bytes": 6849
+        },
+        "proposed_limit_violations": []
+      },
+      "sourceFiles": [
+        {
+          "path": "FB_ZZZ/Amplifier.java",
+          "bytes": 7880,
+          "sha256": "21a938e8f73344f84d255f97baf8d27895b6b8d9f643d8619339acb4fca4abb3"
+        },
+        {
+          "path": "FB_ZZZ/BFPathing20.java",
+          "bytes": 72250,
+          "sha256": "f04204ffb3447a4e01ec00f0f164d1945b3311fe7ae7af421c190a0e62df7a65"
+        },
+        {
+          "path": "FB_ZZZ/Booster.java",
+          "bytes": 5764,
+          "sha256": "d3e1a83ff84c44fa556768e6b06a074a5e0195b616c982905bde15a46a6df531"
+        },
+        {
+          "path": "FB_ZZZ/Carrier.java",
+          "bytes": 23613,
+          "sha256": "315c14978d943ff28487d8f40a7fd64a1ec7994c755f9b7af8917e1e91a9b734"
+        },
+        {
+          "path": "FB_ZZZ/Comms.java",
+          "bytes": 33671,
+          "sha256": "ec97f71033534fb4a0409d986635b30da3d06139eadd43d909fe68d3ae8a96f0"
+        },
+        {
+          "path": "FB_ZZZ/Database.java",
+          "bytes": 23538,
+          "sha256": "630fc8564e3682b41bcf0197270038c8485d318e7a1b46a13319d2d54124c0f7"
+        },
+        {
+          "path": "FB_ZZZ/Destabilizer.java",
+          "bytes": 8771,
+          "sha256": "d0abffc6b0a3a43a80c2960fdd8d2dc6c575b5e736a2493f1e7a132c359e9d99"
+        },
+        {
+          "path": "FB_ZZZ/Explorer.java",
+          "bytes": 5526,
+          "sha256": "01b80585ae6dad747137f43f9e6183df90d8c76bc30deacba4dd28926ead1b7f"
+        },
+        {
+          "path": "FB_ZZZ/HQ.java",
+          "bytes": 14183,
+          "sha256": "c19bdf89df2d180be3c7ec8a7aa9fbcc4e2de81e84d0ec0d4c5ff97375de49e6"
+        },
+        {
+          "path": "FB_ZZZ/HashSet.java",
+          "bytes": 8595,
+          "sha256": "8f006b7097e15d30453981d9dd3c2a5562a12a90d0403b31bc3572c4abe4a6f6"
+        },
+        {
+          "path": "FB_ZZZ/Helper.java",
+          "bytes": 2141,
+          "sha256": "55d73aa3717e5b07121caca0216cfe7e8bb17cff25724854db5fb2f923777763"
+        },
+        {
+          "path": "FB_ZZZ/Launcher.java",
+          "bytes": 27949,
+          "sha256": "74b0b39ea48524479e97aa372a1caac491ba4cd8012c4b95e2bd92bb8ce3c21f"
+        },
+        {
+          "path": "FB_ZZZ/Pathfinder.java",
+          "bytes": 23845,
+          "sha256": "ab2173a4dbf56de2d794cf57f61fccdf3d0e80029df442e72c5d55f1607e9b44"
+        },
+        {
+          "path": "FB_ZZZ/RobotPlayer.java",
+          "bytes": 3363,
+          "sha256": "15b4e24f65419b864b2a4c3090f9a6b0804463992b95e83a3714c5c8417b603d"
+        }
+      ],
+      "buildScope": {
+        "sourceRoot": "src/FB_ZZZ",
+        "recursiveJavaOnly": true,
+        "includeSamePackageSubdirectories": true,
+        "upstreamGradle": false,
+        "strategyChanges": false,
+        "licenseKeptSeparately": true
+      }
+    },
+    {
+      "declaredEngineVersion": "3.0.13",
+      "historicalTier": "finalist-third",
+      "id": "four-musketeers",
+      "license": "AGPL-3.0",
+      "licensePath": "LICENSE",
+      "licenseSha256": "76a97c878c9c7a8321bb395c2b44d3fe2f8d81314d219b20138ed0e2dddd5182",
+      "package": "MPWorking",
+      "repository": "maxwelljones14/BattleCode2023",
+      "revision": "074963dacf1c597518655de4c7542c36de6bc554",
+      "sourceNarHash": "sha256-USWoQxph1sdmpaCeu0uUz/qv/2KoPDcV7Nfre4sRwgs=",
+      "sourceRoot": "src/MPWorking",
+      "sourceStorePath": "/nix/store/vzdx39jqdwqav41jmqjxz8pip2s518y0-bc23-four-musketeers-source",
+      "catalogKey": "four_musketeers",
+      "sourceUrl": "https://github.com/maxwelljones14/BattleCode2023/archive/074963dacf1c597518655de4c7542c36de6bc554.tar.gz",
+      "licenseUrl": "https://github.com/maxwelljones14/BattleCode2023/blob/074963dacf1c597518655de4c7542c36de6bc554/LICENSE",
+      "entrypoint": "MPWorking.RobotPlayer",
+      "sourceVerifiedAgainstNixFod": true,
+      "compilationStatus": "pending-final-rule-runtime-smoke",
+      "metrics": {
+        "file_count": 35,
+        "total_source_bytes": 1057245,
+        "largest_file": {
+          "path": "MPWorking/Comms.java",
+          "bytes": 245440,
+          "sha256": "d7276803a3a6dd0871507fe2f63f0db71b9a4a74bd33dec8cf0e7442a071a9b5"
+        },
+        "zip_bytes": 165411,
+        "zip_sha256": "d6d4863646bbf6cbfbaed6eb3b3da3eb2774e8080356d75571bb575fbc402827",
+        "overall_compression_ratio": 6.39162449897528,
+        "largest_member_compression_ratio": {
+          "path": "MPWorking/fast/FastSort.java",
+          "ratio": 19.096618357487923,
+          "compressed_bytes": 2898
+        },
+        "proposed_limit_violations": [
+          "max_file_bytes",
+          "total_source_bytes"
+        ]
+      },
+      "sourceFiles": [
+        {
+          "path": "MPWorking/Amplifier.java",
+          "bytes": 12855,
+          "sha256": "5ef35ce94c15eba4cafe4fbf3b5cd354c0dc4a313a584a8c25dac40e05b7617a"
+        },
+        {
+          "path": "MPWorking/Booster.java",
+          "bytes": 347,
+          "sha256": "e62201b3ded05cb042afe8ed1f5701b5c28807b1162b7ff6911858f72d19990d"
+        },
+        {
+          "path": "MPWorking/Carrier.java",
+          "bytes": 43469,
+          "sha256": "d48be3a7bd2840c5e472f2292402e87ffb25a8b9e94dc960e2391a43bbb8e932"
+        },
+        {
+          "path": "MPWorking/Comms.java",
+          "bytes": 245440,
+          "sha256": "d7276803a3a6dd0871507fe2f63f0db71b9a4a74bd33dec8cf0e7442a071a9b5"
+        },
+        {
+          "path": "MPWorking/Debug.java",
+          "bytes": 2266,
+          "sha256": "c44da9e78a613b702aa5fa499b7eeb69f25b2a52d1892a94a2557c4c495da247"
+        },
+        {
+          "path": "MPWorking/Destabilizer.java",
+          "bytes": 38392,
+          "sha256": "d1883da17a7d777bf69b259c455e46e55668d58a2360d165afa9ab01b9c3e1a5"
+        },
+        {
+          "path": "MPWorking/Explore.java",
+          "bytes": 10678,
+          "sha256": "b331ca585a5086d569af86c84f26a31ecc759af3bfb262acbc3839299374c8e0"
+        },
+        {
+          "path": "MPWorking/Headquarters.java",
+          "bytes": 43454,
+          "sha256": "3bc22b79210930cdecb65a9c3396458050059fac1ccf16a49b23038e36c970b9"
+        },
+        {
+          "path": "MPWorking/Launcher.java",
+          "bytes": 48186,
+          "sha256": "ec3f20ec1f8bb905d620c1400cf98e6db0a64cb17364a9b0ddc0fd622bc5b629"
+        },
+        {
+          "path": "MPWorking/MapTracker.java",
+          "bytes": 28503,
+          "sha256": "54a460368c3cf4509cb6b427280429df632c90470214280840b780a7cb150ec5"
+        },
+        {
+          "path": "MPWorking/Nav.java",
+          "bytes": 13762,
+          "sha256": "ba151acd45704e9e0d898a245dd28e563eb85822369d41f199caaabc2d2143cc"
+        },
+        {
+          "path": "MPWorking/Pathfinding.java",
+          "bytes": 13322,
+          "sha256": "b916f90266c58addd411be3bb7ad4cab51bda24aa557709db2ab02f11af2a197"
+        },
+        {
+          "path": "MPWorking/Robot.java",
+          "bytes": 81600,
+          "sha256": "1217f417f06b045826bd019fb1f1aa3b84574df00a3d878744a32fda9f7c2ca9"
+        },
+        {
+          "path": "MPWorking/RobotPlayer.java",
+          "bytes": 3533,
+          "sha256": "57c70ffc8d98dc0d151639183beb69069322f805d9cfa52b3be356f2aa7e7016"
+        },
+        {
+          "path": "MPWorking/SectorDatabase.java",
+          "bytes": 468,
+          "sha256": "957f3eb076af248f4650f57da1cdb66f009e3b26c611d5f79c45f08fabf375f1"
+        },
+        {
+          "path": "MPWorking/SectorInfo.java",
+          "bytes": 10011,
+          "sha256": "a9c75955c3a5ed4dff2abdc7828de440a0c8c232c0afc21b3f014e52d3b01bc5"
+        },
+        {
+          "path": "MPWorking/Util.java",
+          "bytes": 31437,
+          "sha256": "d8a91bcf08a02267654dc359f8bb1d617899cc3a3a10c5fa5161165e4035d41f"
+        },
+        {
+          "path": "MPWorking/VisitedTracker.java",
+          "bytes": 765,
+          "sha256": "da3e98ac411667ddeb8b40888a7f41403f9f0216bddd93277164e8c577079773"
+        },
+        {
+          "path": "MPWorking/bfs/BFSCooldown10.java",
+          "bytes": 40735,
+          "sha256": "30e0f24154b32d400f28903bfac53fe5e49807583e6e457c39aab8139b872584"
+        },
+        {
+          "path": "MPWorking/bfs/BFSCooldown20.java",
+          "bytes": 73437,
+          "sha256": "2637bb8bd7573411e1d11ded24dd2a3b509770ccbc2170865bedc06100396a27"
+        },
+        {
+          "path": "MPWorking/bfs/BFSCooldown34.java",
+          "bytes": 112026,
+          "sha256": "a0c212cda4d88df3043f3cc0ee1d02f4dfdae54f4e8ed4be891212be5926a119"
+        },
+        {
+          "path": "MPWorking/fast/FastDirectionSet.java",
+          "bytes": 569,
+          "sha256": "02fd46e0e572ae23a1a8c934debd0e6423f10ad63dedf192cf98af04785c288f"
+        },
+        {
+          "path": "MPWorking/fast/FastIntIntMap.java",
+          "bytes": 2269,
+          "sha256": "87333ce3836de2612f667fe8b564483920cb6655d032feacba8cfd46b4e79a20"
+        },
+        {
+          "path": "MPWorking/fast/FastIntLocMap.java",
+          "bytes": 2166,
+          "sha256": "aad5f9b04486d444f9b715fb5551aaa7c3fff2353bf87067958ba6c3d41807f2"
+        },
+        {
+          "path": "MPWorking/fast/FastIntSet.java",
+          "bytes": 835,
+          "sha256": "ecb9eb3df431e4840a53efefb6c8fd3a5a0628b95c6f162cf1e94af3e45b8be2"
+        },
+        {
+          "path": "MPWorking/fast/FastIterableIntSet.java",
+          "bytes": 2123,
+          "sha256": "5cb050a520783ce62ffec24043dca535f1ac1d7583f2210d292e62ea8b5847c9"
+        },
+        {
+          "path": "MPWorking/fast/FastIterableLocSet.java",
+          "bytes": 2235,
+          "sha256": "500c3da639826156fd220ff5e7eeea28a8c40fc1a18e5edfb7efaab3a2ad0959"
+        },
+        {
+          "path": "MPWorking/fast/FastLocIntMap.java",
+          "bytes": 2888,
+          "sha256": "bced76b5a5d1550dfcad5af2ec23d4b14d6fefaad1f9f0ae0eba76b957783f1d"
+        },
+        {
+          "path": "MPWorking/fast/FastLocSet.java",
+          "bytes": 2297,
+          "sha256": "b95c1b99058b8ada7935db606c6f36015b41cc7db632a8cd76e37b97e42a1459"
+        },
+        {
+          "path": "MPWorking/fast/FastMath.java",
+          "bytes": 122414,
+          "sha256": "2e1d2fc51213968ecd668502c53523a27171dc7cd0b002fee0a4df0b8b112d8d"
+        },
+        {
+          "path": "MPWorking/fast/FastMinQueue.java",
+          "bytes": 5108,
+          "sha256": "8a308e77ac935a4713117a39889c0007b92863c1503fe1a436495721c772f1f3"
+        },
+        {
+          "path": "MPWorking/fast/FastQueue.java",
+          "bytes": 1047,
+          "sha256": "7fcca71a40e4537dd0c9320fed4e0db825d7f749ef8505e6f5258c66807f0083"
+        },
+        {
+          "path": "MPWorking/fast/FastSort.java",
+          "bytes": 55342,
+          "sha256": "40d9479e1e3dc2f87b7a7335c3528366af101322f2f0f4628343a4eb83bc7b5f"
+        },
+        {
+          "path": "MPWorking/fast/FastUnitTracker.java",
+          "bytes": 2328,
+          "sha256": "820bb5209d8bf14e1d0d0f4c530c8586129b662631f5779f7ccc44927cf9cfed"
+        },
+        {
+          "path": "MPWorking/fast/FasterQueue.java",
+          "bytes": 938,
+          "sha256": "ffe5cf321b22fc1886f0779183d4756cf9a5cefe492bb3a2eec414621ce3dbc5"
+        }
+      ],
+      "buildScope": {
+        "sourceRoot": "src/MPWorking",
+        "recursiveJavaOnly": true,
+        "includeSamePackageSubdirectories": true,
+        "upstreamGradle": false,
+        "strategyChanges": false,
+        "licenseKeptSeparately": true
+      }
+    },
+    {
+      "declaredEngineVersion": "3.0.13",
+      "historicalTier": "finalist-runner-up",
+      "id": "gone-fishin",
+      "license": "AGPL-3.0",
+      "licensePath": "LICENSE",
+      "licenseSha256": "76a97c878c9c7a8321bb395c2b44d3fe2f8d81314d219b20138ed0e2dddd5182",
+      "package": "submit26_final",
+      "repository": "carlguo866/battlecode23-gonefishin",
+      "revision": "1c3ff39bca59e302c6c1092025e413bd0a102ab9",
+      "sourceNarHash": "sha256-/BhvNZnaUqGFMRZcBqDT3Ia55FHujBjHxib5CqDhRaU=",
+      "sourceRoot": "src/submit26_final",
+      "sourceStorePath": "/nix/store/yfbc51yz491rx981yzrin9zs99pkqljm-bc23-gone-fishin-source",
+      "catalogKey": "gone_fishin",
+      "sourceUrl": "https://github.com/carlguo866/battlecode23-gonefishin/archive/1c3ff39bca59e302c6c1092025e413bd0a102ab9.tar.gz",
+      "licenseUrl": "https://github.com/carlguo866/battlecode23-gonefishin/blob/1c3ff39bca59e302c6c1092025e413bd0a102ab9/LICENSE",
+      "entrypoint": "submit26_final.RobotPlayer",
+      "sourceVerifiedAgainstNixFod": true,
+      "compilationStatus": "pending-final-rule-runtime-smoke",
+      "metrics": {
+        "file_count": 13,
+        "total_source_bytes": 248576,
+        "largest_file": {
+          "path": "submit26_final/util/FastMath.java",
+          "bytes": 121166,
+          "sha256": "64b55d5b9faeabc68b9b3325e0fc198344c2c821e89fb9a0779b1805e66027ee"
+        },
+        "zip_bytes": 74722,
+        "zip_sha256": "8a0bc494ef2cb92ee5bbf66ba38ea18469ef98153dc6db9ae08b9b0c3b3fa984",
+        "overall_compression_ratio": 3.326677551457402,
+        "largest_member_compression_ratio": {
+          "path": "submit26_final/Launcher.java",
+          "ratio": 5.072207895258877,
+          "compressed_bytes": 5041
+        },
+        "proposed_limit_violations": []
+      },
+      "sourceFiles": [
+        {
+          "path": "submit26_final/Amplifier.java",
+          "bytes": 5395,
+          "sha256": "be9d5fe6e5247d0d2c3dbf46a7359a7a9aeb6ed2a226ed2a30c8c41c3a9d8f60"
+        },
+        {
+          "path": "submit26_final/Carrier.java",
+          "bytes": 27771,
+          "sha256": "188bf650e8aa3011ae3537a944fcd4db0a91e8c52478f25e1c85c0974e5ca1f0"
+        },
+        {
+          "path": "submit26_final/Comm.java",
+          "bytes": 19131,
+          "sha256": "456a9dbe93654e9e323bc5f171a211e3ed0329807a71e7bfc4cf4a72134c1802"
+        },
+        {
+          "path": "submit26_final/Constants.java",
+          "bytes": 1523,
+          "sha256": "11376281ce5a2e78c10a94dc79fdec315089a9321b1541d0589f02211c79235c"
+        },
+        {
+          "path": "submit26_final/Headquarter.java",
+          "bytes": 10289,
+          "sha256": "67e4c865a0d31aadd7c4e50c9dd7d349b6dcabcbffe18558dd8233dc7f84dad5"
+        },
+        {
+          "path": "submit26_final/Launcher.java",
+          "bytes": 25569,
+          "sha256": "923d8284cc3306b63c5a9fe69eb888671a4bb7be5c5adc9a2fbf002079d878c6"
+        },
+        {
+          "path": "submit26_final/MapRecorder.java",
+          "bytes": 11178,
+          "sha256": "9e4fd5027fb0639384f2ec236c74b07d49e4cfca344c5da3be597ad160d1c64d"
+        },
+        {
+          "path": "submit26_final/RobotPlayer.java",
+          "bytes": 3565,
+          "sha256": "058f5dffc33bcc6b183728fb23d48d503f95b4dd986e980f9e4b36a27ff613fb"
+        },
+        {
+          "path": "submit26_final/Unit.java",
+          "bytes": 16037,
+          "sha256": "0cdc720143e2f74278e5a20ef8d3edb2c5324010d7be1c3077bd92e8d8c19f0f"
+        },
+        {
+          "path": "submit26_final/util/FastIterableIntSet.java",
+          "bytes": 2120,
+          "sha256": "63801a1e675c68efac9b97b5639ded48f9c24eaef2658cc0638b4c18c300a2cb"
+        },
+        {
+          "path": "submit26_final/util/FastIterableLocSet.java",
+          "bytes": 2289,
+          "sha256": "28625a0cf79f72599d8590745dc1e6ff505bcb216ecf902068409626a0b893ce"
+        },
+        {
+          "path": "submit26_final/util/FastLocIntMap.java",
+          "bytes": 2543,
+          "sha256": "561a6e8ac1b6eeef1542100dd37e13168f9d74fa4e0712b8744d45119a4c8283"
+        },
+        {
+          "path": "submit26_final/util/FastMath.java",
+          "bytes": 121166,
+          "sha256": "64b55d5b9faeabc68b9b3325e0fc198344c2c821e89fb9a0779b1805e66027ee"
+        }
+      ],
+      "buildScope": {
+        "sourceRoot": "src/submit26_final",
+        "recursiveJavaOnly": true,
+        "includeSamePackageSubdirectories": true,
+        "upstreamGradle": false,
+        "strategyChanges": false,
+        "licenseKeptSeparately": true
+      }
+    },
+    {
+      "declaredEngineVersion": "2.0.1",
+      "historicalTier": "tutorial",
+      "id": "lectureplayer",
+      "license": "AGPL-3.0",
+      "licensePath": "LICENSE",
+      "licenseSha256": "76a97c878c9c7a8321bb395c2b44d3fe2f8d81314d219b20138ed0e2dddd5182",
+      "package": "lectureplayer",
+      "repository": "battlecode/battlecode23-lectureplayer",
+      "revision": "57063ad07b2311c21c99ba7be100a55fcdb3de6b",
+      "sourceNarHash": "sha256-VgVZukWaQ56FlNIKf2yhIiunbm/0p0ISnc963a6XHO8=",
+      "sourceRoot": "src/lectureplayer",
+      "sourceStorePath": "/nix/store/6ch4d7bqrqdhqvf236ijc126wg3ddp9a-bc23-lectureplayer-source",
+      "catalogKey": "lectureplayer",
+      "sourceUrl": "https://github.com/battlecode/battlecode23-lectureplayer/archive/57063ad07b2311c21c99ba7be100a55fcdb3de6b.tar.gz",
+      "licenseUrl": "https://github.com/battlecode/battlecode23-lectureplayer/blob/57063ad07b2311c21c99ba7be100a55fcdb3de6b/LICENSE",
+      "entrypoint": "lectureplayer.RobotPlayer",
+      "sourceVerifiedAgainstNixFod": true,
+      "compilationStatus": "pending-final-rule-runtime-smoke",
+      "metrics": {
+        "file_count": 6,
+        "total_source_bytes": 25967,
+        "largest_file": {
+          "path": "lectureplayer/Communication.java",
+          "bytes": 8306,
+          "sha256": "75b248f1ca80e36df5d6d5208530be147eda18edf3190568cda4b0870a346645"
+        },
+        "zip_bytes": 8702,
+        "zip_sha256": "420d5b5b9a29036b362cce0774a0455821b345beb3046e862747bb9689122eed",
+        "overall_compression_ratio": 2.984026660537807,
+        "largest_member_compression_ratio": {
+          "path": "lectureplayer/Communication.java",
+          "ratio": 4.197069226882264,
+          "compressed_bytes": 1979
+        },
+        "proposed_limit_violations": []
+      },
+      "sourceFiles": [
+        {
+          "path": "lectureplayer/CarrierStrategy.java",
+          "bytes": 4092,
+          "sha256": "5da0dd915314f76a580893bc72214daae7e03b4fde12a653e8de5af847bc987a"
+        },
+        {
+          "path": "lectureplayer/Communication.java",
+          "bytes": 8306,
+          "sha256": "75b248f1ca80e36df5d6d5208530be147eda18edf3190568cda4b0870a346645"
+        },
+        {
+          "path": "lectureplayer/LauncherStrategy.java",
+          "bytes": 2904,
+          "sha256": "00d792565a48f713b8141a41bfa0e66c41643d20673eba1496df2678fff61af4"
+        },
+        {
+          "path": "lectureplayer/OptimalResource.java",
+          "bytes": 1744,
+          "sha256": "a59fe49815ff9611dd5ea7c72047a1b4aaa27fcd3686aec6dcfc7d6adcfe0ead"
+        },
+        {
+          "path": "lectureplayer/Pathing.java",
+          "bytes": 1313,
+          "sha256": "44c5022c385370b2f093e33f4cc1182209d5efdc81ddfb98e993095aaf19b168"
+        },
+        {
+          "path": "lectureplayer/RobotPlayer.java",
+          "bytes": 7608,
+          "sha256": "7777eae1b68a466b7165b643dca1ddc0c32c597edd0c5d259b7496cde3260480"
+        }
+      ],
+      "buildScope": {
+        "sourceRoot": "src/lectureplayer",
+        "recursiveJavaOnly": true,
+        "includeSamePackageSubdirectories": true,
+        "upstreamGradle": false,
+        "strategyChanges": false,
+        "licenseKeptSeparately": true
+      }
+    },
+    {
+      "declaredEngineVersion": "3.0.13",
+      "historicalTier": "newbie-runner-up",
+      "id": "no-thoughts",
+      "license": "AGPL-3.0",
+      "licensePath": "LICENSE",
+      "licenseSha256": "76a97c878c9c7a8321bb395c2b44d3fe2f8d81314d219b20138ed0e2dddd5182",
+      "package": "v5anaconda",
+      "repository": "reeceyang/battlecode-2023",
+      "revision": "0a9a855ea15780f692dc994a390e39041a184597",
+      "sourceNarHash": "sha256-2n2yjnpvMZrnt4UNyfwik001v5YxG7yPrrWTl7ck2Y8=",
+      "sourceRoot": "src/v5anaconda",
+      "sourceStorePath": "/nix/store/janfp9ig419401i5h743wrmp8yd5614c-bc23-no-thoughts-source",
+      "catalogKey": "no_thoughts",
+      "sourceUrl": "https://github.com/reeceyang/battlecode-2023/archive/0a9a855ea15780f692dc994a390e39041a184597.tar.gz",
+      "licenseUrl": "https://github.com/reeceyang/battlecode-2023/blob/0a9a855ea15780f692dc994a390e39041a184597/LICENSE",
+      "entrypoint": "v5anaconda.RobotPlayer",
+      "sourceVerifiedAgainstNixFod": true,
+      "compilationStatus": "pending-final-rule-runtime-smoke",
+      "metrics": {
+        "file_count": 9,
+        "total_source_bytes": 376366,
+        "largest_file": {
+          "path": "v5anaconda/BellmanFord.java",
+          "bytes": 269818,
+          "sha256": "79153e14386280c1c78ed1f84d54d7fc4dcf0c4ba6e12ae8920cf8bb26a109b7"
+        },
+        "zip_bytes": 35179,
+        "zip_sha256": "cab9f94eba82da2fb3b2b8017d4f0d2578f455ef1e721b1190706e1eed865de8",
+        "overall_compression_ratio": 10.698598595753149,
+        "largest_member_compression_ratio": {
+          "path": "v5anaconda/BellmanFord.java",
+          "ratio": 24.87489628468701,
+          "compressed_bytes": 10847
+        },
+        "proposed_limit_violations": [
+          "max_file_bytes"
+        ]
+      },
+      "sourceFiles": [
+        {
+          "path": "v5anaconda/AmplifierStrategy.java",
+          "bytes": 19519,
+          "sha256": "706861707abdbe19a96b5913466de07e5526752f8300a1b5dae0ab8e442963cb"
+        },
+        {
+          "path": "v5anaconda/BellmanFord.java",
+          "bytes": 269818,
+          "sha256": "79153e14386280c1c78ed1f84d54d7fc4dcf0c4ba6e12ae8920cf8bb26a109b7"
+        },
+        {
+          "path": "v5anaconda/CarrierStrategy.java",
+          "bytes": 24932,
+          "sha256": "8c5993d04f5da8d8ce438986292a6fc4b7691bbf352ba3cc8d1c643dd22cb794"
+        },
+        {
+          "path": "v5anaconda/Communication.java",
+          "bytes": 20436,
+          "sha256": "22ca4442bf39e661f376f91475e2c78ae478474ca1ae9a6dae3c0398f9b484d6"
+        },
+        {
+          "path": "v5anaconda/HQStrategy.java",
+          "bytes": 10958,
+          "sha256": "2e53cb0d9d0a5e56ef949d2d8905ad05d62745e0c12e38d8dcd6ae2101f7071d"
+        },
+        {
+          "path": "v5anaconda/LauncherStrategy.java",
+          "bytes": 12355,
+          "sha256": "d197844d0fcefb7842ccea11c359729ec2918e109cd28948892184bb615a5fde"
+        },
+        {
+          "path": "v5anaconda/Pathing.java",
+          "bytes": 11467,
+          "sha256": "09f9788c8bd3d3ca04c0f0c4508acd5ced1bae2933033481b66028e1cc1a1f02"
+        },
+        {
+          "path": "v5anaconda/RobotPlayer.java",
+          "bytes": 5253,
+          "sha256": "2993ec8084f6f5712120e12c93e6f93d094f79e1f89d5ff2c660fbedc492585c"
+        },
+        {
+          "path": "v5anaconda/SusList.java",
+          "bytes": 1628,
+          "sha256": "5134c5ceed5f6a414532a2145da88a265327469a29a3e02b153da715cae1ed59"
+        }
+      ],
+      "buildScope": {
+        "sourceRoot": "src/v5anaconda",
+        "recursiveJavaOnly": true,
+        "includeSamePackageSubdirectories": true,
+        "upstreamGradle": false,
+        "strategyChanges": false,
+        "licenseKeptSeparately": true
+      }
+    }
+  ]
+}

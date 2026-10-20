@@ -1,0 +1,108 @@
+{
+  "declaredEngineVersion": "3.0.5",
+  "historicalTier": "non-finalist-field",
+  "id": "beaverbois",
+  "license": "AGPL-3.0",
+  "licensePath": "LICENSE",
+  "licenseSha256": "76a97c878c9c7a8321bb395c2b44d3fe2f8d81314d219b20138ed0e2dddd5182",
+  "package": "USQualifiers",
+  "repository": "beaverbois/battlecode23",
+  "revision": "4892382943da5a8527906467739a64db51ccc50d",
+  "sourceNarHash": "sha256-/gRZ+d4O06AvXA3k4E04G8jr3VdD+tpKhNppuETAHIs=",
+  "sourceRoot": "src/USQualifiers",
+  "sourceStorePath": "/nix/store/3psaigdzhpkr392k40b24ih6fwvpgfby-bc23-beaverbois-source",
+  "catalogKey": "beaverbois",
+  "sourceUrl": "https://github.com/beaverbois/battlecode23/archive/4892382943da5a8527906467739a64db51ccc50d.tar.gz",
+  "licenseUrl": "https://github.com/beaverbois/battlecode23/blob/4892382943da5a8527906467739a64db51ccc50d/LICENSE",
+  "entrypoint": "USQualifiers.RobotPlayer",
+  "sourceVerifiedAgainstNixFod": true,
+  "compilationStatus": "pending-final-rule-runtime-smoke",
+  "metrics": {
+    "file_count": 12,
+    "total_source_bytes": 115079,
+    "largest_file": {
+      "path": "USQualifiers/Carrier.java",
+      "bytes": 31938,
+      "sha256": "dc1a4b2af65223719f9d9cfc7205e008610bccd4b444bbd663514430e6c95c36"
+    },
+    "zip_bytes": 26893,
+    "zip_sha256": "b63b5b9594ecca95879c08e881bcd4cc1185cdb12049d33fe820ac5c3b23553a",
+    "overall_compression_ratio": 4.279143271483286,
+    "largest_member_compression_ratio": {
+      "path": "USQualifiers/Carrier.java",
+      "ratio": 5.432556557237626,
+      "compressed_bytes": 5879
+    },
+    "proposed_limit_violations": []
+  },
+  "sourceFiles": [
+    {
+      "path": "USQualifiers/Amplifier.java",
+      "bytes": 149,
+      "sha256": "dab31e4a19b4eed2d40b0c062cacd1be430af4c7f8a3fa4bf3a6f2fd73f5725f"
+    },
+    {
+      "path": "USQualifiers/Booster.java",
+      "bytes": 147,
+      "sha256": "b8e216fd105580b238ab3e034219975595eacf026cec48302ca2156f4acad7db"
+    },
+    {
+      "path": "USQualifiers/Carrier.java",
+      "bytes": 31938,
+      "sha256": "dc1a4b2af65223719f9d9cfc7205e008610bccd4b444bbd663514430e6c95c36"
+    },
+    {
+      "path": "USQualifiers/CarrierSync.java",
+      "bytes": 7711,
+      "sha256": "9bf5d35a6efc61bd30b1bd3c7a1381573354d951b26938b4d7b0b16cca4c1ea2"
+    },
+    {
+      "path": "USQualifiers/Destabilizer.java",
+      "bytes": 153,
+      "sha256": "0ec55f1390406f96fe4ee5ccb2aa4f925cddac7862ff17b0d448deec8471e41c"
+    },
+    {
+      "path": "USQualifiers/Graph.java",
+      "bytes": 1734,
+      "sha256": "40809a541944910ba0d4a36948834afc671d60f392e8563de40c19b84493f777"
+    },
+    {
+      "path": "USQualifiers/HQSync.java",
+      "bytes": 2175,
+      "sha256": "c4f65daccd87210df81e978fe6514960d9278fd60333b85e9cb54bfb3180b051"
+    },
+    {
+      "path": "USQualifiers/Headquarters.java",
+      "bytes": 10300,
+      "sha256": "9f034a1bfcf950f341e00e092684168071096832628c00d6ed6ec324c8bdf7e7"
+    },
+    {
+      "path": "USQualifiers/Launcher.java",
+      "bytes": 31280,
+      "sha256": "916430edc1639e1f8c6c7c1c4eb6159692bf1b5f5175d97985a6b355fb4c1ac3"
+    },
+    {
+      "path": "USQualifiers/LauncherSync.java",
+      "bytes": 9908,
+      "sha256": "4981c92a785d4b7b29d78f1f75dd60092a07f0c86adbb13992bb5b519560c517"
+    },
+    {
+      "path": "USQualifiers/RobotPlayer.java",
+      "bytes": 7763,
+      "sha256": "dae3958caaf40f42f8b786cbcdfa447f96998f36666562d0a26e6beaae1ff603"
+    },
+    {
+      "path": "USQualifiers/Util.java",
+      "bytes": 11821,
+      "sha256": "2d82ab7da9c185ddca03c594ea2cc99381eb0ea20a80fcbb6029ef730491827c"
+    }
+  ],
+  "buildScope": {
+    "sourceRoot": "src/USQualifiers",
+    "recursiveJavaOnly": true,
+    "includeSamePackageSubdirectories": true,
+    "upstreamGradle": false,
+    "strategyChanges": false,
+    "licenseKeptSeparately": true
+  }
+}

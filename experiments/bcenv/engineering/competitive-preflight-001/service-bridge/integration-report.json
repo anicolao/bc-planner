@@ -1,0 +1,528 @@
+{
+  "candidate": {
+    "accepted_sha256": "256135f17298d6276fc252c5009110e4c29a4f4ce5b24e923740fdf2c163e377",
+    "build_binary_sha256": "5622b5cea35f7ddd7d2aa8f2ba4b4e06299f9431046774ba02e7b93b08e73ab1",
+    "build_source_sha256": "112165fbf9b1f93ae78ab5e77653803b71e26f0f77aef67238e65c83b3ba9bd8",
+    "invocation": {
+      "elapsed_seconds": 1.273,
+      "exit_code": 0,
+      "log_sha256": "2dc901d0a2fd588cb82a8d9106c5e75afe85038d146a7b17d8224c808b559949",
+      "status": "succeeded"
+    },
+    "job": "/workspace/shared/bc23-service-integration/root/workspace/jobs/s_2d2e4853c25b468d91da192666e77350",
+    "package": "USQualifiers",
+    "provenance": {
+      "buildScope": {
+        "includeSamePackageSubdirectories": true,
+        "licenseKeptSeparately": true,
+        "recursiveJavaOnly": true,
+        "sourceRoot": "src/USQualifiers",
+        "strategyChanges": false,
+        "upstreamGradle": false
+      },
+      "catalogKey": "beaverbois",
+      "compilationStatus": "pending-final-rule-runtime-smoke",
+      "declaredEngineVersion": "3.0.5",
+      "entrypoint": "USQualifiers.RobotPlayer",
+      "historicalTier": "non-finalist-field",
+      "id": "beaverbois",
+      "license": "AGPL-3.0",
+      "licensePath": "LICENSE",
+      "licenseSha256": "76a97c878c9c7a8321bb395c2b44d3fe2f8d81314d219b20138ed0e2dddd5182",
+      "licenseUrl": "https://github.com/beaverbois/battlecode23/blob/4892382943da5a8527906467739a64db51ccc50d/LICENSE",
+      "metrics": {
+        "file_count": 12,
+        "largest_file": {
+          "bytes": 31938,
+          "path": "USQualifiers/Carrier.java",
+          "sha256": "dc1a4b2af65223719f9d9cfc7205e008610bccd4b444bbd663514430e6c95c36"
+        },
+        "largest_member_compression_ratio": {
+          "compressed_bytes": 5879,
+          "path": "USQualifiers/Carrier.java",
+          "ratio": 5.432556557237626
+        },
+        "overall_compression_ratio": 4.279143271483286,
+        "proposed_limit_violations": [],
+        "total_source_bytes": 115079,
+        "zip_bytes": 26893,
+        "zip_sha256": "b63b5b9594ecca95879c08e881bcd4cc1185cdb12049d33fe820ac5c3b23553a"
+      },
+      "package": "USQualifiers",
+      "repository": "beaverbois/battlecode23",
+      "revision": "4892382943da5a8527906467739a64db51ccc50d",
+      "sourceFiles": [
+        {
+          "bytes": 149,
+          "path": "USQualifiers/Amplifier.java",
+          "sha256": "dab31e4a19b4eed2d40b0c062cacd1be430af4c7f8a3fa4bf3a6f2fd73f5725f"
+        },
+        {
+          "bytes": 147,
+          "path": "USQualifiers/Booster.java",
+          "sha256": "b8e216fd105580b238ab3e034219975595eacf026cec48302ca2156f4acad7db"
+        },
+        {
+          "bytes": 31938,
+          "path": "USQualifiers/Carrier.java",
+          "sha256": "dc1a4b2af65223719f9d9cfc7205e008610bccd4b444bbd663514430e6c95c36"
+        },
+        {
+          "bytes": 7711,
+          "path": "USQualifiers/CarrierSync.java",
+          "sha256": "9bf5d35a6efc61bd30b1bd3c7a1381573354d951b26938b4d7b0b16cca4c1ea2"
+        },
+        {
+          "bytes": 153,
+          "path": "USQualifiers/Destabilizer.java",
+          "sha256": "0ec55f1390406f96fe4ee5ccb2aa4f925cddac7862ff17b0d448deec8471e41c"
+        },
+        {
+          "bytes": 1734,
+          "path": "USQualifiers/Graph.java",
+          "sha256": "40809a541944910ba0d4a36948834afc671d60f392e8563de40c19b84493f777"
+        },
+        {
+          "bytes": 2175,
+          "path": "USQualifiers/HQSync.java",
+          "sha256": "c4f65daccd87210df81e978fe6514960d9278fd60333b85e9cb54bfb3180b051"
+        },
+        {
+          "bytes": 10300,
+          "path": "USQualifiers/Headquarters.java",
+          "sha256": "9f034a1bfcf950f341e00e092684168071096832628c00d6ed6ec324c8bdf7e7"
+        },
+        {
+          "bytes": 31280,
+          "path": "USQualifiers/Launcher.java",
+          "sha256": "916430edc1639e1f8c6c7c1c4eb6159692bf1b5f5175d97985a6b355fb4c1ac3"
+        },
+        {
+          "bytes": 9908,
+          "path": "USQualifiers/LauncherSync.java",
+          "sha256": "4981c92a785d4b7b29d78f1f75dd60092a07f0c86adbb13992bb5b519560c517"
+        },
+        {
+          "bytes": 7763,
+          "path": "USQualifiers/RobotPlayer.java",
+          "sha256": "dae3958caaf40f42f8b786cbcdfa447f96998f36666562d0a26e6beaae1ff603"
+        },
+        {
+          "bytes": 11821,
+          "path": "USQualifiers/Util.java",
+          "sha256": "2d82ab7da9c185ddca03c594ea2cc99381eb0ea20a80fcbb6029ef730491827c"
+        }
+      ],
+      "sourceNarHash": "sha256-/gRZ+d4O06AvXA3k4E04G8jr3VdD+tpKhNppuETAHIs=",
+      "sourceRoot": "src/USQualifiers",
+      "sourceStorePath": "/nix/store/3psaigdzhpkr392k40b24ih6fwvpgfby-bc23-beaverbois-source",
+      "sourceUrl": "https://github.com/beaverbois/battlecode23/archive/4892382943da5a8527906467739a64db51ccc50d.tar.gz",
+      "sourceVerifiedAgainstNixFod": true
+    },
+    "sealed_files": {
+      "artifact.json": "4d736a4f1fd8ee792c6d7e1d24fe84b339691de31f1f91a59befb63767113f64",
+      "classes/USQualifiers/Amplifier.class": "c50091f23c9ba3fa6529a0104f660fd294e40e59471cd7d89389707a477ec5eb",
+      "classes/USQualifiers/Booster.class": "ff5f379de6740e3f3f2c2adb6b710acf1784f618092dfee17624631c6296906c",
+      "classes/USQualifiers/Carrier$1.class": "7bd014b4fe565f3aa4a8ca37e1e0560399c5eb690d402ff7fd1e4e3b3737c196",
+      "classes/USQualifiers/Carrier$CarrierState.class": "1fbb449cf771b347bd3af40fe224bb19f0a3806be554ce6a8c0aa1506ffc9fa1",
+      "classes/USQualifiers/Carrier.class": "71f875d8bba3950f56fd72e26b473ab332f17b65e06d45d7c784b5c54e834e49",
+      "classes/USQualifiers/CarrierSync.class": "3a7df492228a398b2c3fa6fe69092ffd281527bb5ad8879d6d73fcae01fcb3de",
+      "classes/USQualifiers/Destabilizer.class": "effbcca37ce91a1cd94e129ecf77b3710d780326dbefdefd687868a2555d7adb",
+      "classes/USQualifiers/Graph.class": "ad2d1a99f1075dac4f8c0e947744e68adaa25f5be1b84d2600e5d2bf5c0905fd",
+      "classes/USQualifiers/HQSync.class": "31caa7571ef132ec3d47ac2f73d10bd209998ca5bd178e4feda7a9d73a384469",
+      "classes/USQualifiers/Headquarters.class": "e0f204fc8865fe033f8e203ad613279a3b2d29e6a53cd75490ce74d7822a84b8",
+      "classes/USQualifiers/Launcher$1.class": "68bbab374df8aad5ed7ea7a4c2d06ada91656526387251fd153959859a327dc3",
+      "classes/USQualifiers/Launcher$LauncherState.class": "2b9102cb457d35a2001e4bd5a237c985f27952b4edffdd1a84eecdd8fd7db52b",
+      "classes/USQualifiers/Launcher.class": "abf1891b3de8c6918c4bb077994e76a8fad031fb78cad2b8913c6f59579349a5",
+      "classes/USQualifiers/LauncherSync.class": "36c0fec99d455353236d67ba308cdc0584ddf1e25830c292ee63e01d4a8fcc8e",
+      "classes/USQualifiers/RobotPlayer$1.class": "73f96326169de4baa5dab2074e353fa46bce281944fe6fa9d2d451c78598aa07",
+      "classes/USQualifiers/RobotPlayer.class": "49ceb96ed4988cad601e0752fb1057da45fec338b1595c304e9b1bc651b559f5",
+      "classes/USQualifiers/Util.class": "db04b1d2673751b13602fe5ec8b9efc85ff5fb2b6067be07207b409d4f61c7b1",
+      "compile.log": "9d586477efa198d688317d9499d5cc7e688ed438606e4505110c729bb5ed8879",
+      "source/USQualifiers/Amplifier.java": "dab31e4a19b4eed2d40b0c062cacd1be430af4c7f8a3fa4bf3a6f2fd73f5725f",
+      "source/USQualifiers/Booster.java": "b8e216fd105580b238ab3e034219975595eacf026cec48302ca2156f4acad7db",
+      "source/USQualifiers/Carrier.java": "dc1a4b2af65223719f9d9cfc7205e008610bccd4b444bbd663514430e6c95c36",
+      "source/USQualifiers/CarrierSync.java": "9bf5d35a6efc61bd30b1bd3c7a1381573354d951b26938b4d7b0b16cca4c1ea2",
+      "source/USQualifiers/Destabilizer.java": "0ec55f1390406f96fe4ee5ccb2aa4f925cddac7862ff17b0d448deec8471e41c",
+      "source/USQualifiers/Graph.java": "40809a541944910ba0d4a36948834afc671d60f392e8563de40c19b84493f777",
+      "source/USQualifiers/HQSync.java": "c4f65daccd87210df81e978fe6514960d9278fd60333b85e9cb54bfb3180b051",
+      "source/USQualifiers/Headquarters.java": "9f034a1bfcf950f341e00e092684168071096832628c00d6ed6ec324c8bdf7e7",
+      "source/USQualifiers/Launcher.java": "916430edc1639e1f8c6c7c1c4eb6159692bf1b5f5175d97985a6b355fb4c1ac3",
+      "source/USQualifiers/LauncherSync.java": "4981c92a785d4b7b29d78f1f75dd60092a07f0c86adbb13992bb5b519560c517",
+      "source/USQualifiers/RobotPlayer.java": "dae3958caaf40f42f8b786cbcdfa447f96998f36666562d0a26e6beaae1ff603",
+      "source/USQualifiers/Util.java": "2d82ab7da9c185ddca03c594ea2cc99381eb0ea20a80fcbb6029ef730491827c",
+      "verify.log": "2edc0ba36ae8c5184abdbc26ac514b96f3b1c683162f23dd8517d9c0a837333d"
+    }
+  },
+  "engine_sha256": "2b6db98e312e0e509d599acc46bffbb55c2569de0f12c8214a85ee57625f15f2",
+  "engine_version": "3.0.13",
+  "heldout_gate": "closed",
+  "map_sha256": "a53211fc3fb4cc6427693f6f65b0732cc4bdf9ecb90f911ffbd71b5af82bb910",
+  "match": {
+    "all_schema_fields_validated": false,
+    "directory": "/workspace/shared/bc23-service-integration/root/workspace/matches/match_1c05d0460ecc467b9fb68af72c8b9a25",
+    "internal": "/workspace/matches/match_1c05d0460ecc467b9fb68af72c8b9a25",
+    "invocation": {
+      "elapsed_seconds": 7.962,
+      "exit_code": 0,
+      "log_sha256": "ff3390360cd097e631f1a77b33fe0c084db5fc9f0c06e0ebec07336f0985c9f8",
+      "status": "succeeded"
+    },
+    "parser_limitations": [
+      "Resource deltas are net recorded team changes, not gross mining, spending, or efficiency.",
+      "Movement events record locations, not pathfinding quality, intent, or movement cause; currents may contribute.",
+      "Action targets retain official raw encoding; counts are events, not successful hits or damage totals.",
+      "Only extracted fields and event ordering are checked; this is not a full FlatBuffers verifier.",
+      "No strategy quality, combat effectiveness, visibility, or unrecorded telemetry is inferred."
+    ],
+    "replay_sha256": "62a5a7aee958455efc2a4d1dae7f0a11872d92048d845fec7a2001e75c4a59cd",
+    "rounds": 318,
+    "sealed_files": {
+      "engine.log": "0aefcfb482b492d2d37afffa2a33d81bc3a304bd0ef2f2489a5473bb266ecf05",
+      "maps/DefaultMap.map23": "a53211fc3fb4cc6427693f6f65b0732cc4bdf9ecb90f911ffbd71b5af82bb910",
+      "replay-extractor.log": "2edc0ba36ae8c5184abdbc26ac514b96f3b1c683162f23dd8517d9c0a837333d",
+      "replay-summary.json": "a0ca3b4f11d724ac7db90077a59699edab8566f0cb46b8ac6fc93950c8d95085",
+      "replay.bc23": "62a5a7aee958455efc2a4d1dae7f0a11872d92048d845fec7a2001e75c4a59cd",
+      "result.json": "9b51a83b80880b5311310ba396a7821a4282e066ce38c352d2a6b7fa98a1d042",
+      "team-A/USQualifiers/Amplifier.class": "c50091f23c9ba3fa6529a0104f660fd294e40e59471cd7d89389707a477ec5eb",
+      "team-A/USQualifiers/Booster.class": "ff5f379de6740e3f3f2c2adb6b710acf1784f618092dfee17624631c6296906c",
+      "team-A/USQualifiers/Carrier$1.class": "7bd014b4fe565f3aa4a8ca37e1e0560399c5eb690d402ff7fd1e4e3b3737c196",
+      "team-A/USQualifiers/Carrier$CarrierState.class": "1fbb449cf771b347bd3af40fe224bb19f0a3806be554ce6a8c0aa1506ffc9fa1",
+      "team-A/USQualifiers/Carrier.class": "71f875d8bba3950f56fd72e26b473ab332f17b65e06d45d7c784b5c54e834e49",
+      "team-A/USQualifiers/CarrierSync.class": "3a7df492228a398b2c3fa6fe69092ffd281527bb5ad8879d6d73fcae01fcb3de",
+      "team-A/USQualifiers/Destabilizer.class": "effbcca37ce91a1cd94e129ecf77b3710d780326dbefdefd687868a2555d7adb",
+      "team-A/USQualifiers/Graph.class": "ad2d1a99f1075dac4f8c0e947744e68adaa25f5be1b84d2600e5d2bf5c0905fd",
+      "team-A/USQualifiers/HQSync.class": "31caa7571ef132ec3d47ac2f73d10bd209998ca5bd178e4feda7a9d73a384469",
+      "team-A/USQualifiers/Headquarters.class": "e0f204fc8865fe033f8e203ad613279a3b2d29e6a53cd75490ce74d7822a84b8",
+      "team-A/USQualifiers/Launcher$1.class": "68bbab374df8aad5ed7ea7a4c2d06ada91656526387251fd153959859a327dc3",
+      "team-A/USQualifiers/Launcher$LauncherState.class": "2b9102cb457d35a2001e4bd5a237c985f27952b4edffdd1a84eecdd8fd7db52b",
+      "team-A/USQualifiers/Launcher.class": "abf1891b3de8c6918c4bb077994e76a8fad031fb78cad2b8913c6f59579349a5",
+      "team-A/USQualifiers/LauncherSync.class": "36c0fec99d455353236d67ba308cdc0584ddf1e25830c292ee63e01d4a8fcc8e",
+      "team-A/USQualifiers/RobotPlayer$1.class": "73f96326169de4baa5dab2074e353fa46bce281944fe6fa9d2d451c78598aa07",
+      "team-A/USQualifiers/RobotPlayer.class": "49ceb96ed4988cad601e0752fb1057da45fec338b1595c304e9b1bc651b559f5",
+      "team-A/USQualifiers/Util.class": "db04b1d2673751b13602fe5ec8b9efc85ff5fb2b6067be07207b409d4f61c7b1",
+      "team-B/lectureplayer/CarrierStrategy.class": "14312bacc41383e97d96d52e4d7772aa0334d023e35404740e010cde62e3ec47",
+      "team-B/lectureplayer/Communication.class": "f1dac5f50cf7a18978dc8f64baa072c1a1e0adcd2b4b0c6e0d3acdb901c24bb8",
+      "team-B/lectureplayer/LauncherStrategy.class": "052e18c68da746a3d53148285be882567215c881af3346c73cb48a84dd14ac59",
+      "team-B/lectureplayer/Message.class": "d93749acc539c6abac291e0232a9a55de799fb4708210e42713a5df21318a62e",
+      "team-B/lectureplayer/OptimalResource.class": "2c6fb07c4e0c3bd9bd9dd626d4d9d31d412944a5bcce0161bb086663e8d896c9",
+      "team-B/lectureplayer/Pathing.class": "1f95a64ed246532d941b1ccf75facb5ee201d89be65ab35144d0a0254e8da1fa",
+      "team-B/lectureplayer/RobotPlayer$1.class": "9ea6aeb007d22e05f5bfa2cf574c09bb7dca715b1f9f8a821efd7a6de52368cb",
+      "team-B/lectureplayer/RobotPlayer.class": "8ba0173bc3d706f61c007de7dade33a12d98c8d43b6a3b09ac65727c8c656481"
+    },
+    "summary_sha256": "a0ca3b4f11d724ac7db90077a59699edab8566f0cb46b8ac6fc93950c8d95085",
+    "winner_slot": "A"
+  },
+  "negative_checks": [
+    {
+      "case": "traversal_zip",
+      "compiler_invoked": false,
+      "public_result": {
+        "reason": "invalid_archive",
+        "schema": "bcenv.scrimmage.v1",
+        "status": "rejected",
+        "submission_id": "s_7cc330688a1340ca8873343855d14f51"
+      }
+    },
+    {
+      "artifact": "/workspace/shared/bc23-service-integration/root/workspace/jobs/s_ff9ae8ec71714d248e9e63fdfd2fb2b6/build/artifact.json",
+      "case": "invalid_java",
+      "compiler_invoked": true,
+      "invocation": {
+        "elapsed_seconds": 0.417,
+        "exit_code": 1,
+        "log_sha256": "c94c28023dc8c3f4f5b4b8af623cd92baa87a859e8cf25ae9d056ba643b453c7",
+        "status": "failed"
+      },
+      "public_result": {
+        "reason": "compile_rejected",
+        "schema": "bcenv.scrimmage.v1",
+        "status": "rejected",
+        "submission_id": "s_ff9ae8ec71714d248e9e63fdfd2fb2b6"
+      }
+    },
+    {
+      "case": "tampered_real_build_copy",
+      "public_result": {
+        "reason": "invalid_evidence",
+        "schema": "bcenv.scrimmage.v1",
+        "status": "infrastructure_failure",
+        "submission_id": "s_395b9b0d8f6b4ebbac92330094e1bd4e"
+      },
+      "reason": "binary_drift",
+      "validation": "rejected"
+    },
+    {
+      "case": "missing_winner_real_match_copy",
+      "public_result": {
+        "reason": "invalid_evidence",
+        "schema": "bcenv.scrimmage.v1",
+        "status": "infrastructure_failure",
+        "submission_id": "s_cfc8f93531fa41148782e37fa39aba55"
+      },
+      "reason": "missing_winner",
+      "validation": "rejected"
+    }
+  ],
+  "new_games": 1,
+  "public_fixture": {
+    "accepted_sha256": "5e0f8324fdf0651c1806035fab242dfc5163c20042401f54d55147f8c1a54cea",
+    "invocation": {
+      "elapsed_seconds": 0.876,
+      "exit_code": 0,
+      "log_sha256": "12a1a54cf68a9431c82bb8391989607a9156326f4c8ec8d87dca39da3119dcce",
+      "status": "succeeded"
+    },
+    "job": "/workspace/shared/bc23-service-integration/root/workspace/jobs/fixture_aa86aac449194711981311bf5afbad2c",
+    "package": "lectureplayer",
+    "provenance": {
+      "buildScope": {
+        "includeSamePackageSubdirectories": true,
+        "licenseKeptSeparately": true,
+        "recursiveJavaOnly": true,
+        "sourceRoot": "src/lectureplayer",
+        "strategyChanges": false,
+        "upstreamGradle": false
+      },
+      "catalogKey": "lectureplayer",
+      "compilationStatus": "pending-final-rule-runtime-smoke",
+      "declaredEngineVersion": "2.0.1",
+      "entrypoint": "lectureplayer.RobotPlayer",
+      "historicalTier": "tutorial",
+      "id": "lectureplayer",
+      "license": "AGPL-3.0",
+      "licensePath": "LICENSE",
+      "licenseSha256": "76a97c878c9c7a8321bb395c2b44d3fe2f8d81314d219b20138ed0e2dddd5182",
+      "licenseUrl": "https://github.com/battlecode/battlecode23-lectureplayer/blob/57063ad07b2311c21c99ba7be100a55fcdb3de6b/LICENSE",
+      "metrics": {
+        "file_count": 6,
+        "largest_file": {
+          "bytes": 8306,
+          "path": "lectureplayer/Communication.java",
+          "sha256": "75b248f1ca80e36df5d6d5208530be147eda18edf3190568cda4b0870a346645"
+        },
+        "largest_member_compression_ratio": {
+          "compressed_bytes": 1979,
+          "path": "lectureplayer/Communication.java",
+          "ratio": 4.197069226882264
+        },
+        "overall_compression_ratio": 2.984026660537807,
+        "proposed_limit_violations": [],
+        "total_source_bytes": 25967,
+        "zip_bytes": 8702,
+        "zip_sha256": "420d5b5b9a29036b362cce0774a0455821b345beb3046e862747bb9689122eed"
+      },
+      "package": "lectureplayer",
+      "repository": "battlecode/battlecode23-lectureplayer",
+      "revision": "57063ad07b2311c21c99ba7be100a55fcdb3de6b",
+      "sourceFiles": [
+        {
+          "bytes": 4092,
+          "path": "lectureplayer/CarrierStrategy.java",
+          "sha256": "5da0dd915314f76a580893bc72214daae7e03b4fde12a653e8de5af847bc987a"
+        },
+        {
+          "bytes": 8306,
+          "path": "lectureplayer/Communication.java",
+          "sha256": "75b248f1ca80e36df5d6d5208530be147eda18edf3190568cda4b0870a346645"
+        },
+        {
+          "bytes": 2904,
+          "path": "lectureplayer/LauncherStrategy.java",
+          "sha256": "00d792565a48f713b8141a41bfa0e66c41643d20673eba1496df2678fff61af4"
+        },
+        {
+          "bytes": 1744,
+          "path": "lectureplayer/OptimalResource.java",
+          "sha256": "a59fe49815ff9611dd5ea7c72047a1b4aaa27fcd3686aec6dcfc7d6adcfe0ead"
+        },
+        {
+          "bytes": 1313,
+          "path": "lectureplayer/Pathing.java",
+          "sha256": "44c5022c385370b2f093e33f4cc1182209d5efdc81ddfb98e993095aaf19b168"
+        },
+        {
+          "bytes": 7608,
+          "path": "lectureplayer/RobotPlayer.java",
+          "sha256": "7777eae1b68a466b7165b643dca1ddc0c32c597edd0c5d259b7496cde3260480"
+        }
+      ],
+      "sourceNarHash": "sha256-VgVZukWaQ56FlNIKf2yhIiunbm/0p0ISnc963a6XHO8=",
+      "sourceRoot": "src/lectureplayer",
+      "sourceStorePath": "/nix/store/6ch4d7bqrqdhqvf236ijc126wg3ddp9a-bc23-lectureplayer-source",
+      "sourceUrl": "https://github.com/battlecode/battlecode23-lectureplayer/archive/57063ad07b2311c21c99ba7be100a55fcdb3de6b.tar.gz",
+      "sourceVerifiedAgainstNixFod": true
+    },
+    "sealed_files": {
+      "artifact.json": "2555f2f642bc2fd2587144b1da2685e9fb70042fd89c1c784ef2fd5416c53bf1",
+      "classes/lectureplayer/CarrierStrategy.class": "14312bacc41383e97d96d52e4d7772aa0334d023e35404740e010cde62e3ec47",
+      "classes/lectureplayer/Communication.class": "f1dac5f50cf7a18978dc8f64baa072c1a1e0adcd2b4b0c6e0d3acdb901c24bb8",
+      "classes/lectureplayer/LauncherStrategy.class": "052e18c68da746a3d53148285be882567215c881af3346c73cb48a84dd14ac59",
+      "classes/lectureplayer/Message.class": "d93749acc539c6abac291e0232a9a55de799fb4708210e42713a5df21318a62e",
+      "classes/lectureplayer/OptimalResource.class": "2c6fb07c4e0c3bd9bd9dd626d4d9d31d412944a5bcce0161bb086663e8d896c9",
+      "classes/lectureplayer/Pathing.class": "1f95a64ed246532d941b1ccf75facb5ee201d89be65ab35144d0a0254e8da1fa",
+      "classes/lectureplayer/RobotPlayer$1.class": "9ea6aeb007d22e05f5bfa2cf574c09bb7dca715b1f9f8a821efd7a6de52368cb",
+      "classes/lectureplayer/RobotPlayer.class": "8ba0173bc3d706f61c007de7dade33a12d98c8d43b6a3b09ac65727c8c656481",
+      "compile.log": "2edc0ba36ae8c5184abdbc26ac514b96f3b1c683162f23dd8517d9c0a837333d",
+      "source/lectureplayer/CarrierStrategy.java": "5da0dd915314f76a580893bc72214daae7e03b4fde12a653e8de5af847bc987a",
+      "source/lectureplayer/Communication.java": "75b248f1ca80e36df5d6d5208530be147eda18edf3190568cda4b0870a346645",
+      "source/lectureplayer/LauncherStrategy.java": "00d792565a48f713b8141a41bfa0e66c41643d20673eba1496df2678fff61af4",
+      "source/lectureplayer/OptimalResource.java": "a59fe49815ff9611dd5ea7c72047a1b4aaa27fcd3686aec6dcfc7d6adcfe0ead",
+      "source/lectureplayer/Pathing.java": "44c5022c385370b2f093e33f4cc1182209d5efdc81ddfb98e993095aaf19b168",
+      "source/lectureplayer/RobotPlayer.java": "7777eae1b68a466b7165b643dca1ddc0c32c597edd0c5d259b7496cde3260480",
+      "verify.log": "2edc0ba36ae8c5184abdbc26ac514b96f3b1c683162f23dd8517d9c0a837333d"
+    }
+  },
+  "public_result": {
+    "schema": "bcenv.scrimmage.v1",
+    "status": "complete",
+    "submission_id": "s_2d2e4853c25b468d91da192666e77350",
+    "summary": {
+      "draws": 0,
+      "games": 1,
+      "losses": 0,
+      "wins": 1
+    }
+  },
+  "public_result_bytes": 156,
+  "public_source_edits": false,
+  "remaining_gaps": [
+    "Experimental existing namespace/chroot, not independently audited agent/tool/host isolation.",
+    "No durable queue/ownership/authentication/service transport; facade and observer state are process-local.",
+    "No model inference/controller integration or supported provider transport.",
+    "No sanitized replay publication through the service; full tactical learning loop remains unproved.",
+    "Core replay fields and ordering validated; parser is not a full FlatBuffers schema verifier.",
+    "No hidden opponents, strength ranking, tournament-equivalence or statistical performance claim.",
+    "Runtime and build hashes detect drift under this trusted observer; they are not signatures or filesystem enforcement."
+  ],
+  "replay_publication": "withheld",
+  "runtime": {
+    "bridge": "35db89803b97b1d3c8474da0f3335c61474c9773aff1998d03c3fbd8d4a4b78a",
+    "facade": "6128436a9d2a43fca1a7359d9add89a64ce4598ed1d2b6b1f914ee56d674746a",
+    "launcher": "673c02eac4bc4d4c6bcca6a9c6415c128b1ca5fa305514fb29d4d47aa70c59db",
+    "opt_files": {
+      "battlecode23/engine.jar": "2b6db98e312e0e509d599acc46bffbb55c2569de0f12c8214a85ee57625f15f2",
+      "battlecode23/fixtures/classes/testplayerclock/RobotPlayer.class": "9ff84c116e0c8768a18ba2c886d08b1aa1e97b9627a7f9478a1b30ea80e80591",
+      "battlecode23/fixtures/classes/testplayerempty/RobotPlayer.class": "58fb054e6170a1b2d160fae87cf6b00424c23284f7046ba5349e24e14982a07a",
+      "battlecode23/fixtures/src/testplayerclock/RobotPlayer.java": "f809d1a0ad58d8f33cf289148aa24b93843c8d7ab54ad5f2bf0f40f3745bd5ae",
+      "battlecode23/fixtures/src/testplayerempty/RobotPlayer.java": "cc2e4c9bd7eb2de63819f3b6835094d5c4f615d408d1b9fb429bfc0ecc79c27f",
+      "battlecode23/maps/AbsoluteW.map23": "3f2c445db9ff46d2ddd57bccf00325e68545949f7a3ef7c77458de577db00189",
+      "battlecode23/maps/AllElements.map23": "374eb3562e196131abcb543bb7671c1481d09c9f47a8462fe700d2c2d1c81e1a",
+      "battlecode23/maps/ArtistRendition.map23": "8f5b230d1f7bb01d4610763271efcaa22dc86a2857f7e0bd904fb0d0cae562be",
+      "battlecode23/maps/Barcode.map23": "21e5b30d789a167b1337228f1b5a29e62601c321ec0fd460b187d1a8a6f52e13",
+      "battlecode23/maps/BatSignal.map23": "e814e7dded37841bf00f99dbfef4e7577a147a62a0397954cae56d5188ff21c0",
+      "battlecode23/maps/BattleSuns.map23": "47dcae229e0c50b4a559dacd71a02d5d9e8dd0b046bd718775fbbed4bc712dca",
+      "battlecode23/maps/BowAndArrow.map23": "85010673dd610155d9d07dedd96c54a493dfc730b68c137d3fb5e34b2b681d70",
+      "battlecode23/maps/Buggy.map23": "00c364386dad56808a348d71f046dbbc7e66d7018467a18f9a772f8adbfb97c1",
+      "battlecode23/maps/BuildSite.map23": "44e636f73e59e7aeb92f9892e19438ac63b911fa6bed015b8cd80a9b4ce65212",
+      "battlecode23/maps/Cat.map23": "b2f381a4efbb8a2c8e442dc12aaa66e8f75d9c12ad00f7b73bb9962b5a2b0203",
+      "battlecode23/maps/Cave.map23": "c8d7955846d7938dc61122b260914dff5661db842dd551a8a01bd8179b7432e1",
+      "battlecode23/maps/Cee.map23": "c4a0f1f5c02048be3bd91e5f06fe5742be4134d9c65ad2dc23a301f40330df40",
+      "battlecode23/maps/Checkmate2.map23": "111c9e54d7654e0eb77670a7e2498a11a05c516ab58da5f2283006f65842e423",
+      "battlecode23/maps/Clown.map23": "33ef8c396e9aaae83f63a83096e504f41d51d893e3e99a5eaab3a4a272e67392",
+      "battlecode23/maps/Contraction.map23": "acb19793e74e6bbf50abbc9ba9ecbf990c62f1276782e26f6e791dee739e1a31",
+      "battlecode23/maps/Cornucopia.map23": "1926d95958d55527b231b6a627eca674da336416b0c4c55169e4b8abc3158f2a",
+      "battlecode23/maps/Crossword.map23": "b233d4b0edf165437027d49976274808b67d26af0f3e9e22eb4e6f40a567be26",
+      "battlecode23/maps/CrownJewels.map23": "cf7f48bcd33ad3f25e5679feee3ed2e89cbabd53b15c086c2bd8d2710f6abe79",
+      "battlecode23/maps/Cube.map23": "b03b2c132a3e8cdeff2232f3a6319d5635a3ac45e2509d1a8f4b0671350616bc",
+      "battlecode23/maps/DefaultMap.map23": "a53211fc3fb4cc6427693f6f65b0732cc4bdf9ecb90f911ffbd71b5af82bb910",
+      "battlecode23/maps/Diagonal.map23": "cf0768097f63c1ec588fee32f97ab4fd7020d3a489d770af1eb05882689377ba",
+      "battlecode23/maps/Divergence.map23": "a7e6d4fd10b542687969361bc3de2c669c5b7c7f030c892439ab9bdb1173ce79",
+      "battlecode23/maps/Dreamy.map23": "b547eda7cdae0dca82c4287581152089843b6ffb7f1049f16485d1ab96c2ee2f",
+      "battlecode23/maps/Elephant.map23": "87c0f362b047d31ae4887cb8aef43d84a83045aca9b9b878f1beee95ea9cc4e2",
+      "battlecode23/maps/ExtremelyMid.map23": "7099536ba340f376efda3116c25c034575d32aad1b97994853f061acc0891393",
+      "battlecode23/maps/Eyelands.map23": "3e500f2da562964ed5d610889159386f118f80c45b6a2f96f56ee612441687f3",
+      "battlecode23/maps/FishCake.map23": "7ea690750941dfb7cfbaae95265a34e07e6d0a11e4fdecbe6fb87c6e83b61658",
+      "battlecode23/maps/Flower.map23": "24e38c63c380b24424da67d4b6f8998af817a5f5a54e7343486a723f4b774fbf",
+      "battlecode23/maps/Forest.map23": "7130ae0991fa17a3a71e651f98e75f7ce3370722d5ef4db01ea35b0b08d25aad",
+      "battlecode23/maps/FourNations.map23": "a548398e00dca157ee05336ef3828a8abd0cfe6be84b11d3b0e9521b4d618ced",
+      "battlecode23/maps/Fractured.map23": "62799c7a98ff523285976c1d2790c3c2a1de18995a499a5c8030ee1e397c2116",
+      "battlecode23/maps/Frog.map23": "46f8140a5915c245ea189dc7ae4e467ca4d711b4d883d22745dcf50931278078",
+      "battlecode23/maps/Grapes.map23": "6efce2288c8e175562204a7a36df2547c2b24080a21b5361920417e51d8249b2",
+      "battlecode23/maps/Grievance.map23": "3e47a824f2fea02eec51679008a4138b6ded4bf386700fbf05c3eea4ef0087b8",
+      "battlecode23/maps/Hah.map23": "5a19c0ceff5c7f360c22c0b246cad6dc7883348d612c89a68450fa68f3302317",
+      "battlecode23/maps/Heart.map23": "2da2b44c4e9841b83bdcedd7407a755b8f565e7861785346587996fa092b6f1d",
+      "battlecode23/maps/HideAndSeek.map23": "75a4b994b6962882910daf8e99dc6f64f61c87b938912bbbf8ad7e61f184afa3",
+      "battlecode23/maps/HotAirBalloon.map23": "f55e1c0d5c7d5e7d86ac961b419807b5dedfb70421862f5c33229412541fe8dd",
+      "battlecode23/maps/IslandHopping.map23": "40f09bc012798d9a1bdc3013b9a2f28be03f70dd2e0327136cc34fa978dccb59",
+      "battlecode23/maps/IslandHoppingTwo.map23": "6b2cd37c777f9c5dd554853392ed78263f23485ecc65daee0ef9101f4453ef2e",
+      "battlecode23/maps/Jail.map23": "8c993e1c01a287ae3c491ed6c0fd88eae942ba65c681cf1d528cd1c6a881f527",
+      "battlecode23/maps/KingdomRush.map23": "72893c68210afe6dd210da4703351bd41b0058ab9ef83f418e20dcafe9155188",
+      "battlecode23/maps/Lantern.map23": "957883a7114e1c5c92b59c6a58cdf4f528ac50bf783786ca5ef8cdbc7bf4335e",
+      "battlecode23/maps/LightWork.map23": "dd6d2728dcc3b9fcc883db52a8838fb64aa69069d91550cf8f9490dbb7736025",
+      "battlecode23/maps/Lines.map23": "f7ecacbf7cb92152f4e79cac93ee68ecddfa3bc0c4d31460bf4b90bada19f5d6",
+      "battlecode23/maps/LookingGlass.map23": "052ff23b41612689b9ea0cc9b2ffab67a65b5e14d15ebce04cac8759ad43b7e6",
+      "battlecode23/maps/Marsh.map23": "90f4d3a09eb6075345b3bfabf5422fd36dbbe5f0dcd3a3aac54b98186330ca84",
+      "battlecode23/maps/MassiveL.map23": "03a6ae16dc774f02e20ad972d6349d8977c68446bea124e98915d2b94b267fbc",
+      "battlecode23/maps/Maze.map23": "93bf405b00dca7d9a380dd80654c66d6e90eefbf153e4f7d7ace86410f88b911",
+      "battlecode23/maps/Minefield.map23": "27ae95928490a85ae7a458339070de963df8fb60ce35700e75a45f5200de11f0",
+      "battlecode23/maps/MoonPhases.map23": "fcf247c9afcb8a79375ff211fe43e682e0f10e05bca660c1516787c0d84c81ed",
+      "battlecode23/maps/Movepls.map23": "ab320b905bacdf10a9008ef40db48b2e794ff00013a153dc8d95f888e5b690f3",
+      "battlecode23/maps/Orbit.map23": "9594352cb89bf3cf307a57b21806d344433b26452a74675783dc899f7aa09f9a",
+      "battlecode23/maps/PairedProgramming.map23": "a1ba84451d7ef632ed6777b228dd563290029931cd7b0e2303509d403218b6b7",
+      "battlecode23/maps/Pakbot.map23": "0c6fe04f6a88682c9b1ceed4f9ccd99453daa31b5a7ddda9885454389755fcd5",
+      "battlecode23/maps/Pathfind.map23": "20e05aa164ecd170f14cebc67b5c79035ec5032782a91852c6c00076cfbf125c",
+      "battlecode23/maps/Piglets.map23": "8e3eb8560bfc913644ed7116f4aeec49d01294176c4c2768273996a17164a820",
+      "battlecode23/maps/Pillars.map23": "0555a1c0474d0e6df074a4d4835a8c95ee5c1749ace4618808cd3b81004f1d5d",
+      "battlecode23/maps/PipesAndParabolas.map23": "7b7791c9389f92553df821c414471a96d46e82868b2b3684f981333d0739d45b",
+      "battlecode23/maps/Pit.map23": "faab6162d157e4602101bc24c9f0cd2f8b606c95c690bd2d6eee9b2634ccccd0",
+      "battlecode23/maps/Pizza.map23": "9ac8468fb1edf92515f843610c2ba40812cc896e4236aa38417abf0df491452a",
+      "battlecode23/maps/Potions.map23": "9b19efffa239431bd8e487bed24c29f676d18057dbcc6c9d75c5ce402f2d4ec3",
+      "battlecode23/maps/Quiet.map23": "1baf7407d8ea4c5f83e60da2c522e4dee08545cceca4aa26bfb006d412885d14",
+      "battlecode23/maps/RaceToTheTop.map23": "a64f7b2ff09079c8e8d092dfbbb97600c519aff8dad19e646004354c5a0b493c",
+      "battlecode23/maps/Rainbow.map23": "7c5a4b0e914d0815e61e99234fe7a84a76d4beeb60d07dac72222dcaf8203fdc",
+      "battlecode23/maps/Rectangle.map23": "6112212dbc999d776e15a2b88d0c32fbbf8341483e549c9a7a6f45a0489642e6",
+      "battlecode23/maps/Repetition.map23": "82c5d3ad1e63f896ae131433afcdfe29b5f9ee8b9f5041ae5400065e416479e4",
+      "battlecode23/maps/Resign.map23": "216af18a340067e7303862c8c36fb986722ecea9a1097176687a44a51a5841bc",
+      "battlecode23/maps/ReverseFunnel.map23": "3b67b57e5fa5e4f9f7029333cd0c54fbdbcbd6b202b84342dae93d3cd33dac4d",
+      "battlecode23/maps/Rewind.map23": "060f48835ba9e9502c5a6dcf832ce62033d28853fcb387bb3d99e0993609c6f6",
+      "battlecode23/maps/Risk.map23": "7525741a9da375eca57f09d4c7dbd93130047618ab9487c1bdcff1fe5958415d",
+      "battlecode23/maps/River.map23": "c589287b11d530180c2ce5b1209a3911c19321d3c0cfd7227cfa4e57132475b6",
+      "battlecode23/maps/RockWall.map23": "e150b6754126dc131e80fe17c5c9c02918b9a9ca6f0238fb114d3dfe899f1836",
+      "battlecode23/maps/Sakura.map23": "a421f580c4e6c16f604aa45851823e7bff5aa68070cd51611f685aa8cafcb50c",
+      "battlecode23/maps/Scatter.map23": "8ab0a5f0f38bf675c04769184bd40d257dc1f30f90e993ea0ec7000ac686802f",
+      "battlecode23/maps/Sine.map23": "68b659388b39b500a4bdee4ab04ae347686dd7f658ea5f86523288513e83ac6e",
+      "battlecode23/maps/SmallElements.map23": "85d2835f910b40442523b5db054c9d3fd961906ce41822a6cc3cf27dab5f3c06",
+      "battlecode23/maps/Sneaky.map23": "7ca841f5354600911e2848cfe38dc64dfe58b38c0cd0804160ba732532b852ae",
+      "battlecode23/maps/Snowflake.map23": "6a9089c13b12d7cdbe4b6d1d346d700a3f495199e464400032f3bb4ae5136b33",
+      "battlecode23/maps/SomethingFishy.map23": "f502e803dfd73fcd74dd090a1321fab4fcd04c6bebe77cc60dbb61d6af6fec7d",
+      "battlecode23/maps/SoundWave.map23": "f93649494fb69741b8d964e42a4ebffe8e28ca88f56c368bc4d4c416fadda714",
+      "battlecode23/maps/Spiderweb.map23": "07f4cc645a86982b1d37f2209b1a539be397c3bcf8cf42e1133499749a6e84c4",
+      "battlecode23/maps/Spin.map23": "371fab83361cfdac837c038d0862d30cb452754a82663a2e8a3fd7f9fd219193",
+      "battlecode23/maps/Spiral.map23": "caf42f7c4f81bc33ab49150931414ec639942a0039adf1182bb7062fd0c53627",
+      "battlecode23/maps/Spots.map23": "72bdacc2135c2102c69a8089bfee3178fd880eb0f1558089b0562a312eab8b1f",
+      "battlecode23/maps/Squares.map23": "08d5db435e93e63cd2745d976b43b57b99339f213d4d4a1fe27bc597119681c6",
+      "battlecode23/maps/Star.map23": "5243037581985d8874de68dd46815bfc54a6125182404f10c3aae59b217f4c7e",
+      "battlecode23/maps/Sun.map23": "51622835d6b7945bec538f945f635a0303ad392ec914b81a69ab6747493884aa",
+      "battlecode23/maps/Sus.map23": "d57cf6472e3b50eb0bfd385dd49a2e9f3c9a1e94d9ea34e4840c7466e3ec427f",
+      "battlecode23/maps/SweetDreams.map23": "dfa9a9683bd8f1ff1494a0d6d1249061400a8d3d10616269beb03cbc2c6d98db",
+      "battlecode23/maps/Swooshy.map23": "1983a9a502e808b98aa639cfc6d6500f517b8fd09703ed766c0ef83ae4fc9cd3",
+      "battlecode23/maps/Tacocat.map23": "8e05fea9bef0bdfe938f2063e226462c4c6558d1b889d7a62ccc94c6b82df6db",
+      "battlecode23/maps/Target.map23": "b1a32e670dcfe179a0cccee7362c66c59d69f7f9e3361c5ea7d75305e4ffd707",
+      "battlecode23/maps/ThirtyFive.map23": "35a26b23dd56e6b6547802f7044a1b15f9367642ec76e753c0bc114c7e35f87c",
+      "battlecode23/maps/TicTacToe.map23": "309ea27bf0d54447cd119bc340052ebd3ee7b1507aad94aa993c23be0ba4a3c2",
+      "battlecode23/maps/Tightrope.map23": "a64b30d6996bd2f39e9cf9362be9f288cf40bdaa17ce496bd59256e422614e29",
+      "battlecode23/maps/TimesUp.map23": "6ce6347d2f28363b547aa37958b8593363f7dd5bc765f5ce822891439b4e2b58",
+      "battlecode23/maps/TreasureMap.map23": "2b13c2af5fa2fe853186d6389efaf9f3dc6535fe8b264794bc287e8c11e48210",
+      "battlecode23/maps/Turtle.map23": "3353754a1aa37c5507012252c045aea133972e292fc28ff96e25afb914d0d6bb",
+      "battlecode23/maps/USA.map23": "4393a3a92282ecb15ec5fb4fb39829de7e887aa333f441babd2edbb66d354949",
+      "battlecode23/maps/VeryReasonable.map23": "b25e03e7e593d8a1966bfeee6595a370f6f83d06736f5611786e0218b4ccafde",
+      "battlecode23/maps/Zig.map23": "7d9924d1a8d0c23137e541ed5fa8881dceed62c4bfe29d655ab1e196913cd344",
+      "battlecode23/maps/maptestsmall.map23": "a48119644e73faa11b06dd51ad2e25fbfd47b19dc4c5704da9cbf7496150f31a",
+      "battlecode23/source-revision": "149faf190f44263151f1750bf61525f030e2ec35a7f3f039e378876e39c1a4a1",
+      "battlecode23/version": "69cb5b2652867269b790b5c613ff9e0141f3b4103558c7f19a42240e85b97d03",
+      "bcenv/replay-classes/ReplayQuery$Body.class": "d11f40127702f96a206bc830c52dfef22888fedd0215da132f531bca3da91c68",
+      "bcenv/replay-classes/ReplayQuery$Collector.class": "f01aae4364d7536077de046a7cbc8d912272ecb2ff916789462ea5bef9b1a6d2",
+      "bcenv/replay-classes/ReplayQuery$Selection.class": "f6d3d9111775cc6f96ed952b718cf10020655f95de9f906e41868920f55701c3",
+      "bcenv/replay-classes/ReplayQuery.class": "d3cae30805a811766b70c68de13d2b7544b30da987adb11ef2b880aed0242130",
+      "bcenv/replay-classes/ReplaySummary$Match.class": "e1c30883072cabecd2cbb46d0494fa2c8c20af17152d6cdf574fe56c8db28bff",
+      "bcenv/replay-classes/ReplaySummary.class": "46f8b9a8dd908c3ca01d7b614c07539ebe8ea39318d1aaf74eb4eea4681e193a",
+      "bcenv/runtime/__pycache__/artifacts.cpython-313.pyc": "17e9c8bedf735f3f90621dfc34a3d7147d7eb630da0293f17884daeefec0b598",
+      "bcenv/runtime/artifacts.py": "a7d7b8ba7266ed53855b904fd85c60996a43deba0cf78d6231221c9ec10a62fa",
+      "bcenv/seasons/2023/adapter.py": "a3bc74dfaf17e9873bfd143a97496f9baf70f111bf28f753dc57b98a957ed249",
+      "launch.py": "327068683547c1447001f382f4f37cda8f831752ec489bf9849ff1c6123a35d9"
+    }
+  },
+  "schema": "bcenv.public-service-integration.scratch.v1",
+  "scope": "One NEW real public-source match; no reuse of historical match outputs for positive result."
+}

@@ -1,0 +1,40 @@
+{
+  "scope": "local uncommitted composition build; no merge, game, model invocation or live deployment",
+  "base_engine_commit": "f3e37cb9f96c41334aa649a4f24813a880515ff8",
+  "trusted_services_commit": "04c815954154a9be691bb531245f74e35cbd6edf",
+  "ledger_commit": "df7a20d63d04faae829b97e786f4cb4f985b0071",
+  "responses_commit": "be041d3d18ecd9fa474cbfb076c86c336d5b6ff3",
+  "new_games": 0,
+  "python_tests_passed": 190,
+  "runtime_store_path": "/nix/store/4zc8xn60wym7zyxm50gmxm6ky1izxdkl-bcenv-2023-0.1.0",
+  "python_test_drv": "/nix/store/g5ibzm7lbbaygjpnx4piwj4127k4hw54-bcenv-python-unit.drv",
+  "trusted_implementation_files_in_competitor_package": [],
+  "composed_source_hashes": {
+    "services/controller.py": "83d585a54d1e3c8698cf7efba8ae16e494683230865b698e0677f9b7964b4929",
+    "services/ledger.py": "b98577bd5e558c2c59862041fd0b0a85172b0c815a08f532f06d5e44c2eb2a96",
+    "services/replay_feedback.py": "bd68a1c4a768a07cc90f7d0cd65017053d2d542fb9fc48f9fcc9b59d235be865",
+    "services/responses_transport.py": "da54bce79e4de81b616731b13991d5b6128a60ea862a901e2a7730f5f550925c",
+    "services/scrimmage.py": "6128436a9d2a43fca1a7359d9add89a64ce4598ed1d2b6b1f914ee56d674746a",
+    "tests/test_artifacts.py": "0bf4ed08266c90fc7f87cfa7bfc28bfcf1bd8ba828014a8bdf252549a4d8bd7f",
+    "tests/test_controller.py": "80b9d320532099383e8ad5ee87bbf7c59a0dc8276f34fe13d271c9aec15f528c",
+    "tests/test_ledger.py": "baafd673986388f5a032f2be8c1a215bc7dc764193ecbe1df031b40add007cae",
+    "tests/test_pilot_export.py": "7ce0d2e0d923f7a2ef8f3886c486eab7ac01880b7ddc36ba8ffa6f376fb1e811",
+    "tests/test_replay_feedback.py": "d18ceeb110997326b052b252522a4967efa5959b7d7082d7831b024b6ba8db55",
+    "tests/test_replay_query.py": "5aa7d7cdfedd69f7886c548bc929a73981a7ce86f2686b435bdfe2f25bb4c35f",
+    "tests/test_responses_transport.py": "f906fc49f65dc2c516923f6cea144c6a0581c2bc86344648aea4fe24b95442ee",
+    "tests/test_scrimmage.py": "d92ab899206f40184e2bd302d1643c471dff4e5d4604f5958bda60b61e4b8c3f",
+    "contracts/artifacts-v1.md": "d2cf43d6a5fe840e3c7bebad59deb36ee5c751dc1ab962ac3312bd2e69aeaad3",
+    "contracts/controller-v1.md": "7c67dabe54b406d62c9d25fdcce848492d934a379f8b576588f73fb75c32842b",
+    "contracts/ledger-v1.md": "747c707095d385e2abfe97efb2b352611509e664ae3aaf7568d5cd3c09dd5771",
+    "contracts/replay-feedback-v1.md": "f8b8516865b65376c7dd28cf65d07d5301ec00730e18583dcc15a85c0c848e8e",
+    "contracts/responses-transport-v1.md": "9d8058678f26d9eb49b1fb9f48e962014828d508eef68baacb25ce9d908a8906",
+    "contracts/scrimmage-v1.md": "54c713f34f217805bee2f92a5f0248d84ff0c3bf5e9a1874a373a61555181c18"
+  },
+  "limitations": [
+    "Uncommitted composition is not a frozen release or trial artifact.",
+    "No full rerun of 13 engine readiness checks or new match.",
+    "Separate replay contract producer-version caveat needs reconciliation before an integrated release.",
+    "Controller-to-durable-ledger source handoff is not included; work in progress.",
+    "No live sender, authenticated deployment, aggregate resource isolation or competitive evidence."
+  ]
+}

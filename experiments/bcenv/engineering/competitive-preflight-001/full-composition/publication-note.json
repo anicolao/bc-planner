@@ -1,0 +1,15 @@
+{
+  "schema": "bcenv.composition-publication-note.v1",
+  "recorded_at": "2026-10-20T00:41Z",
+  "original_source_manifest_unchanged": true,
+  "bridge_publication": {
+    "repository": "https://github.com/anicolao/bcenv",
+    "pull_request": 11,
+    "commit": "8f2125d12db4df1f16bca721179ec52cf16273d6",
+    "path": "services/controller_ledger.py",
+    "sha256": "738c263437acb3427b8543f4481622c9966a7ce1ee42897fbc899c7a2badc2ff",
+    "matches_original_snapshot": true
+  },
+  "portable_default_flake_uri": "github:anicolao/bcenv/be041d3d18ecd9fa474cbfb076c86c336d5b6ff3",
+  "verified_flake_uri": "git+file:///workspace/shared/bcenv-responses-transport?rev=be041d3d18ecd9fa474cbfb076c86c336d5b6ff3"
+}

@@ -1,0 +1,33 @@
+test_actual_six_tool_controller_export_submit_feedback_zero_games (__main__.SourceExportTests.test_actual_six_tool_controller_export_submit_feedback_zero_games) ... ok
+test_archive_size_limit (__main__.SourceExportTests.test_archive_size_limit) ... ok
+test_candidate_stdout_cannot_mint_handle (__main__.SourceExportTests.test_candidate_stdout_cannot_mint_handle) ... ok
+test_collector_requires_readonly_workspace_and_is_immutable (__main__.SourceExportTests.test_collector_requires_readonly_workspace_and_is_immutable) ... ok
+test_depth_limit (__main__.SourceExportTests.test_depth_limit) ... ok
+test_duplicate_capture_is_deterministic_bytes (__main__.SourceExportTests.test_duplicate_capture_is_deterministic_bytes) ... ok
+test_empty_source_rejected (__main__.SourceExportTests.test_empty_source_rejected) ... ok
+test_export_timeout_never_publishes_handle (__main__.SourceExportTests.test_export_timeout_never_publishes_handle) ... ok
+test_fifo_rejected_without_blocking (__main__.SourceExportTests.test_fifo_rejected_without_blocking) ... ok
+test_file_count_limit (__main__.SourceExportTests.test_file_count_limit) ... ok
+test_file_size_limit (__main__.SourceExportTests.test_file_size_limit) ... ok
+test_hardlink_rejected (__main__.SourceExportTests.test_hardlink_rejected) ... ok
+test_hostile_candidate_teardown_precedes_capture (__main__.SourceExportTests.test_hostile_candidate_teardown_precedes_capture) ... ok
+test_intake_reserved_identifier_rejected (__main__.SourceExportTests.test_intake_reserved_identifier_rejected) ... ok
+test_invalid_unicode_and_nul_rejected (__main__.SourceExportTests.test_invalid_unicode_and_nul_rejected) ... ok
+test_malformed_collector_result_never_publishes_handle (__main__.SourceExportTests.test_malformed_collector_result_never_publishes_handle) ... ok
+test_non_java_name_rejected (__main__.SourceExportTests.test_non_java_name_rejected) ... ok
+test_operation_lock_waits_for_candidate_exit_before_capture (__main__.SourceExportTests.test_operation_lock_waits_for_candidate_exit_before_capture) ... ok
+test_outside_symlink_leaf_rejected (__main__.SourceExportTests.test_outside_symlink_leaf_rejected) ... ok
+test_owner_and_run_scope_cannot_resolve_handle (__main__.SourceExportTests.test_owner_and_run_scope_cannot_resolve_handle) ... ok
+test_private_collector_output_limit_is_enforced (__main__.SourceExportTests.test_private_collector_output_limit_is_enforced) ... ok
+test_real_export_validates_and_private_zip_is_not_tool_output (__main__.SourceExportTests.test_real_export_validates_and_private_zip_is_not_tool_output) ... ok
+test_reserved_operation_is_exact_and_has_no_path_parameter (__main__.SourceExportTests.test_reserved_operation_is_exact_and_has_no_path_parameter) ... ok
+test_snapshot_stays_frozen_after_candidate_mutation (__main__.SourceExportTests.test_snapshot_stays_frozen_after_candidate_mutation) ... ok
+test_symlink_directory_rejected (__main__.SourceExportTests.test_symlink_directory_rejected) ... ok
+test_uncertain_exec_cleanup_permanently_blocks_export (__main__.SourceExportTests.test_uncertain_exec_cleanup_permanently_blocks_export) ... ok
+test_uncertain_read_cleanup_blocks_export (__main__.SourceExportTests.test_uncertain_read_cleanup_blocks_export) ... ok
+test_wrong_package_tree_rejected (__main__.SourceExportTests.test_wrong_package_tree_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 28 tests in 7.727s
+
+OK

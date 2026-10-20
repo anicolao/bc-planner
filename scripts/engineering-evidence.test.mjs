@@ -23,7 +23,7 @@ function checkedFile(directory, name) {
   assert.equal(lstatSync(filename).isFile(), true);
   return readFileSync(filename);
 }
-for (const directory of ['public-opponents', 'service-bridge', 'replay-feedback', 'composition']) {
+for (const directory of ['public-opponents', 'service-bridge', 'replay-feedback', 'composition', 'full-composition', 'source-export']) {
   test(`compact ${directory} checksum inventory matches committed bytes`, () => {
     const lines = checkedFile(directory, 'SHA256SUMS').toString('utf8').trimEnd().split('\n');
     const seen = new Set();
@@ -61,4 +61,24 @@ test('published feedback examples retain recorded bytes and closed launch scope'
     assert.equal(output.spec_version, report.expected_spec_version);
     assert.ok(output.records.length <= 1024);
   }
+});
+
+test('full offline composition snapshot matches imported source manifest', () => {
+  const directory = 'full-composition';
+  const manifest = JSON.parse(checkedFile(directory, 'source-manifest.json'));
+  assert.equal(manifest.schema, 'bcenv.offline-composition-sources.v1');
+  assert.equal(manifest.sources.length, 5);
+  for (const source of manifest.sources) {
+    const bytes = checkedFile(directory, `snapshot/${source.path}`);
+    assert.equal(bytes.length, source.bytes);
+    assert.equal(digest(bytes), source.sha256);
+  }
+  const result = JSON.parse(checkedFile(directory, 'results.json'));
+  assert.equal(result.schema, 'bcenv.full-composition-smoke.v1');
+  assert.equal(result.tests_run, 5);
+  assert.equal(result.success, true);
+  assert.equal(result.cases.launch_gate, 'real_launch_unsupported');
+  assert.equal(result.cases.full_continuity.all_six_tools, true);
+  assert.equal(result.cases.failed_export.sqlite_jobs, 0);
+  assert.deepEqual(result.source_manifest, manifest);
 });

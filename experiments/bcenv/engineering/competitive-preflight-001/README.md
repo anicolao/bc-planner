@@ -66,3 +66,17 @@ or network request. They detect accidental drift, not coordinated record rewrite
 combining the public runtime with service, ledger and offline Responses modules.
 It includes exact source hashes and package-exclusion inspection, with no new game
 or model invocation. It is a disposable uncommitted integration, not a release.
+
+## Source capture and full offline protocol
+
+[Source-export fixtures](source-export/README.md) retain actual namespaced source
+collection through immutable artifacts into a queued SQLite job: 28 local and
+38 independent tests (28 repeated plus 10 added), zero games/models. Production
+aggregate quotas, workspace lifecycle and authentication remain unproved.
+
+[Full offline composition](full-composition/README.md) retains five executable
+model-protocol/controller/artifact/SQLite probes. Its model/count/game-result
+inputs are deliberately fabricated. Its inert workspace is distinct from the
+actual namespace collector. These are two narrower demonstrations, not a complete
+live learning loop. The component build later passed 211 tests; earlier evidence
+is preserved alongside it.

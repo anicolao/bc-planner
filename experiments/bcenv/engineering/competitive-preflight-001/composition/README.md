@@ -29,3 +29,13 @@ matching test files and contracts from PR7; add `ledger.py`/`test_ledger.py` and
 `responses-transport-v1.md` and the updated `controller-v1.md` from PR10. Stage
 new files so flake evaluation includes them. Compare all file hashes with
 `report.json` before building. Do not treat this disposable tree as a release.
+
+## Later controller-to-ledger composition
+
+`report-controller-ledger.json` and `python-unit-controller-ledger.log` retain the
+later PR11 integration: 211 tests (the previous 190 plus 21 adapter tests), with
+six trusted modules absent from the built competitor package. The inherited
+ledger tests also contain reviewed explicit SQLite connection cleanup. Original
+190-test records remain unchanged. This later build has the same closed scope;
+the actual namespace collector and offline full-composition smoke are separate
+experiments, not silently included in these unit/build counts.

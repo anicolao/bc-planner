@@ -52,3 +52,10 @@ selection, secret schedule, credential or private opponent source is included.
 Hash consistency does not resist a malicious writer who can change both artifacts
 and records. The builder workspace remains shared. Claims about actual competitor
 access must use the separately tested full capability boundary, not these hashes.
+
+## Repository checks
+
+`npm test` now checks the committed compact checksum inventories, matches the five
+namespace sources to the independent review snapshot, and checks recorded replay
+example byte bounds/scope. These offline checks execute no bot, sandbox, parser
+or network request. They detect accidental drift, not coordinated record rewrites.

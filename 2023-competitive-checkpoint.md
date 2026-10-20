@@ -83,8 +83,10 @@ No provider account, key, paid infrastructure or persistent access was created.
 2. Implement and independently review durable ownership/job reservation,
    idempotency/quotas and crash recovery in the separate service worktree. Use
    synthetic principals only; this does not create authentication or a listener.
-3. Research named supported model/worker deployment options and explicit cost and
-   setup decisions, using official documentation without provisioning anything.
+3. [Named deployment options](2023-supported-deployment-options.md) now document
+   official model/runtime capabilities and bounded integration costs. The user
+   decision/setup is pending; no paid resource, credential or security change is
+   authorized by that report. Continue synthetic-safe engineering meanwhile.
 4. Integrate and retest runtime/services only after their separate changes are
    reviewed. Keep heldout and real-model launch gates closed until the complete
    deployed boundary passes, then freeze a new trial protocol before a fresh

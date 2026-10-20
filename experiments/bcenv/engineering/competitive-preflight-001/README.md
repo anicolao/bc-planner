@@ -87,3 +87,11 @@ is preserved alongside it.
 with a committed composition, exact origin hashes and all 13 x86_64 flake checks
 (230 Python tests). Historical evidence is not replaced. No component PR was
 merged, and this remains preflight with live deployment gates closed.
+
+## Genuine replay pages
+
+[Replay v2 evidence](replay-pages-v2/README.md) contains 67 sanitized pages from
+two existing windows, exact code hashes and a rerunnable read-only proof. Later
+records remain reachable after source and output caps; independent review tests
+both pinned profiles and preserves v1 compatibility. No new games/provider calls,
+raw replay binaries or claim of a complete game-state renderer are included.

@@ -3,7 +3,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { createHash } from 'node:crypto';
-import { readFileSync, lstatSync } from 'node:fs';
+import { readFileSync, lstatSync, readdirSync } from 'node:fs';
 import { resolve, sep } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -23,7 +23,7 @@ function checkedFile(directory, name) {
   assert.equal(lstatSync(filename).isFile(), true);
   return readFileSync(filename);
 }
-for (const directory of ['public-opponents', 'service-bridge', 'replay-feedback', 'composition', 'full-composition', 'source-export', 'integration-baseline']) {
+for (const directory of ['public-opponents', 'service-bridge', 'replay-feedback', 'composition', 'full-composition', 'source-export', 'integration-baseline', 'replay-pages-v2']) {
   test(`compact ${directory} checksum inventory matches committed bytes`, () => {
     const lines = checkedFile(directory, 'SHA256SUMS').toString('utf8').trimEnd().split('\n');
     const seen = new Set();
@@ -81,4 +81,41 @@ test('full offline composition snapshot matches imported source manifest', () =>
   assert.equal(result.cases.full_continuity.all_six_tools, true);
   assert.equal(result.cases.failed_export.sqlite_jobs, 0);
   assert.deepEqual(result.source_manifest, manifest);
+});
+
+test('retained replay v2 pages have continuous bounded progress and honest scope', () => {
+  const directory = 'replay-pages-v2';
+  const report = JSON.parse(checkedFile(directory, 'verification.json'));
+  assert.equal(report.new_games, 0);
+  assert.equal(report.provider_calls, 0);
+  assert.equal(report.original_replay_unchanged, true);
+  assert.equal(report.actual_cli_page_passed, true);
+  let totalPages = 0;
+  for (const window of report.windows) {
+    const prefix = `${window.round_start}-${window.round_end}-offset-`;
+    const pages = readdirSync(resolve(root, directory, 'feedback'))
+      .filter(name => name.startsWith(prefix))
+      .map(name => {
+        const bytes = checkedFile(directory, `feedback/${name}`);
+        assert.ok(bytes.length <= window.projection_byte_limit);
+        return JSON.parse(bytes);
+      }).sort((a, b) => a.query.record_offset - b.query.record_offset);
+    assert.equal(pages.length, window.pages);
+    let offset = 0;
+    pages.forEach((page, index) => {
+      assert.equal(page.schema, 'bcenv.bc2023.replay-feedback.v2');
+      assert.equal(page.query.record_offset, offset);
+      assert.equal(page.query.round_start, window.round_start);
+      assert.equal(page.query.round_end, window.round_end);
+      assert.equal(page.coverage.matching_record_count, window.matching_records);
+      assert.equal(page.coverage.returned_record_count, page.records.length);
+      assert.ok(page.records.length > 0 && page.records.length <= window.projection_record_limit);
+      offset += page.records.length;
+      assert.equal(page.coverage.output_page_end_offset, offset);
+      assert.equal(page.coverage.next_record_offset, index + 1 === pages.length ? null : offset);
+    });
+    assert.equal(offset, window.matching_records);
+    totalPages += pages.length;
+  }
+  assert.equal(totalPages, 67);
 });

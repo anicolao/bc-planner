@@ -1,6 +1,6 @@
 # Competitive program checkpoint
 
-Updated 2026-10-20 01:03 UTC. **The competitive goal is not achieved.** No new
+Updated 2026-10-20 01:17 UTC. **The competitive goal is not achieved.** No new
 competitor model trial, private benchmark selection or deployed service exists.
 [Roadmap](2023-competitive-program.md) and
 [boundary design](2023-isolated-scrimmage-architecture.md) remain authoritative.
@@ -10,7 +10,7 @@ competitor model trial, private benchmark selection or deployed service exists.
 - Planner [PR12](https://github.com/anicolao/bc-planner/pull/12), branch
   `plan/competitive-bc23-program`, stacked on PR11: roadmap, threat model and
   [public opponent provenance](2023-public-opponent-candidates.md). CI passed at
-  `4226ba5`. Prior experiments and evidence remain unchanged.
+  `43f82fe`. Prior experiments and evidence remain unchanged.
 - bcenv [PR7](https://github.com/anicolao/bcenv/pull/7), branch
   `feat/scrimmage-contract`, stacked on PR6: bounded source intake/public results,
   fixed-tool synthetic controller and versioned gameplay-feedback projection.
@@ -54,6 +54,13 @@ competitor model trial, private benchmark selection or deployed service exists.
   All 13 x86_64 flake checks, 230 Python tests and CI pass. Independent audit
   verifies 14 source/test origins, unchanged runtime/gates and seven trusted
   modules excluded from the package. This does not merge any component PR.
+
+- bcenv [PR14](https://github.com/anicolao/bcenv/pull/14), branch
+  `feat/replay-page-v2`, stacked on PR13: genuine producer-side offsets, v2
+  projection and separate CLI page command. Head `f3963b7`; 256 Python tests and
+  CI pass. Independent review covered both pinned profiles, 9,908 actual
+  Java-to-projector page comparisons per profile, >10,000-row adverse events,
+  exact EOF and byte-identical v1 behavior. No new games were run.
 
 No PR is merged. PR13 is an explicitly reviewed composition commit. Do not
 silently infer that later changes on component branches are included or retested.
@@ -144,15 +151,22 @@ token counts and completed-game evidence are fabricated fixtures, not inference,
 charges or played results. This test uses an inert workspace, not the namespace
 collector. No single test yet combines real model, sandbox, worker and game.
 
+[Portable v2 page evidence](experiments/bcenv/engineering/competitive-preflight-001/replay-pages-v2/README.md)
+retains exact source hashes, 67 sanitized pages and the reproduction script.
+Windows 35–40 (455 rows) and 300–301 (237 rows) reconstruct exactly under
+simultaneous source-row, projected-row and byte caps. Raw replay/engine/map
+binaries are omitted. These remain six extracted record kinds, not complete
+state reconstruction or a new competition result.
+
 ## Resume next
 
-1. Implement/review [genuine bounded replay retrieval](2023-bounded-replay-service-design.md),
-   the remaining meaningful safe integration slice. A truncated stored prefix
-   cannot be called pagination. Producer/projector work is on
-   `feat/replay-page-v2`; durable ownership/routing work is on
-   `feat/durable-replay-route`, both based on `d769760`. Preserve default v1
-   withholding and add explicit opt-in versioning, real offsets/windows and
-   complete-source/coverage markers. Separate independent reviews are active.
+1. Finish/review the durable route for [genuine bounded replay retrieval](2023-bounded-replay-service-design.md).
+   Producer/projector PR14 is now reviewed and published. The route remains on
+   `feat/durable-replay-route` at base `d769760`, with 24 first-checkpoint tests
+   and final protocol/metadata tests still in progress. Its reviewed owned-file
+   changes will be copied into a clean PR14-based publication worktree, preserving
+   original evidence without rebasing unfinished work. V1 withholding stays the
+   default; v2 is explicit host-selected policy.
 2. Replay-route design must retain immutable owner/run/submission/source/view
    binding, bounded storage/attempts and complete controller envelopes, with no
    model-selected paths/URLs/commands. Host fixtures and source receipts are not

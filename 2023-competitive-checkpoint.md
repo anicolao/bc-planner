@@ -1,6 +1,6 @@
 # Competitive program checkpoint
 
-Updated 2026-10-20 01:17 UTC. **The competitive goal is not achieved.** No new
+Updated 2026-10-20 01:34 UTC. **The competitive goal is not achieved.** No new
 competitor model trial, private benchmark selection or deployed service exists.
 [Roadmap](2023-competitive-program.md) and
 [boundary design](2023-isolated-scrimmage-architecture.md) remain authoritative.
@@ -10,7 +10,8 @@ competitor model trial, private benchmark selection or deployed service exists.
 - Planner [PR12](https://github.com/anicolao/bc-planner/pull/12), branch
   `plan/competitive-bc23-program`, stacked on PR11: roadmap, threat model and
   [public opponent provenance](2023-public-opponent-candidates.md). CI passed at
-  `43f82fe`. Prior experiments and evidence remain unchanged.
+  `0bdd2a1` (31 checks); the final freeze commit adds the release guide and route
+  evidence. Prior experiments and evidence remain unchanged.
 - bcenv [PR7](https://github.com/anicolao/bcenv/pull/7), branch
   `feat/scrimmage-contract`, stacked on PR6: bounded source intake/public results,
   fixed-tool synthetic controller and versioned gameplay-feedback projection.
@@ -61,6 +62,14 @@ competitor model trial, private benchmark selection or deployed service exists.
   CI pass. Independent review covered both pinned profiles, 9,908 actual
   Java-to-projector page comparisons per profile, >10,000-row adverse events,
   exact EOF and byte-identical v1 behavior. No new games were run.
+
+- bcenv [PR15](https://github.com/anicolao/bcenv/pull/15), branch
+  `feat/replay-service-v2`, stacked on PR14: durable owner/run replay binding,
+  atomic completion/source publication, bounded manifest/window/page retrieval
+  and explicit controller protocol v2. Head `59242ba`; all 13 x86_64 checks,
+  286 Python tests, 27 independent probes and CI pass. Exact published-commit
+  probe rerun passed. All eleven trusted service modules excluded from package.
+  Three independently found defects were fixed; v1 withholding/live closure remain.
 
 No PR is merged. PR13 is an explicitly reviewed composition commit. Do not
 silently infer that later changes on component branches are included or retested.
@@ -160,27 +169,28 @@ state reconstruction or a new competition result.
 
 ## Resume next
 
-1. Finish/review the durable route for [genuine bounded replay retrieval](2023-bounded-replay-service-design.md).
-   Producer/projector PR14 is now reviewed and published. The route remains on
-   `feat/durable-replay-route` at base `d769760`, with 24 first-checkpoint tests
-   and final protocol/metadata tests still in progress. Its reviewed owned-file
-   changes will be copied into a clean PR14-based publication worktree, preserving
-   original evidence without rebasing unfinished work. V1 withholding stays the
-   default; v2 is explicit host-selected policy.
-2. Replay-route design must retain immutable owner/run/submission/source/view
-   binding, bounded storage/attempts and complete controller envelopes, with no
-   model-selected paths/URLs/commands. Host fixtures and source receipts are not
-   authentication or actual game validation. No real launch or heldout use.
-3. Integrate the reviewed replay changes and produce one coherent frozen
-   preflight release/resume guide. Do not keep adding unrelated synthetic
-   scaffolding after that meaningful gate is complete. Live-dependent work must
-   pause if deployment capabilities/authorization remain unavailable.
-4. [Named deployment options](2023-supported-deployment-options.md) and their
-   setup question remain pending; the coordinator confirmed no reply at
-   2026-10-20 01:00 UTC. No paid resource, credential or security change is
-   authorized by the proposal. Aggregate process-tree containment, supported
-   live model connection, authentication and production workspace/worker
-   lifecycle remain unpassed.
-5. Keep heldout and real-model launch gates closed until the deployed boundary
-   passes. Then freeze a prospective trial protocol before a fresh autonomous
-   attempt. Provisioning and passing component tests do not establish competence.
+The [frozen preflight release guide](2023-competitive-preflight-release.md) and
+[portable durable replay proof](experiments/bcenv/engineering/competitive-preflight-001/durable-replay-v2/README.md)
+complete the current safe offline engineering slice. No unresolved must-fix was
+found within its reviewed scope. This is not a deployment acceptance or competitive
+outcome; trusted fixtures cannot authenticate themselves.
+
+1. The [named deployment options](2023-supported-deployment-options.md) question
+   remains unanswered, confirmed by the coordinator at 2026-10-20 01:32 UTC.
+   Select an existing supported Linux VM and authorized OpenAI account, or review
+   actual hosted cost/terms/security before any provisioning or key setup.
+2. On the specifically approved host, implement and independently test aggregate
+   descendant containment, workspace ownership/lifecycle, authenticated routing,
+   supported live model sender/accounting and authentic supervised match validation.
+   These remain engineering gates after setup, not automatic effects of provisioning.
+3. Keep real-model launch and protected benchmark use closed until end-to-end
+   acceptance passes with synthetic canaries. Then freeze environment/tool schema,
+   kickoff and a prospective public trial budget before a fresh autonomous attempt.
+4. Do not silently extend the exhausted public compatibility budget or treat
+   synthetic success as competitive evidence. Preserve failures and evaluate code,
+   tests, replay-linked reasoning and replicated outcomes under the roadmap.
+
+Dependent live work is paused pending the required deployment/model capability
+and authorization. No paid resource, credential configuration, security change or
+merge has been performed. Resume from the exact final pin rather than assuming
+new component-branch changes were tested.

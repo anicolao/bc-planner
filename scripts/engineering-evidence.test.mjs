@@ -23,7 +23,7 @@ function checkedFile(directory, name) {
   assert.equal(lstatSync(filename).isFile(), true);
   return readFileSync(filename);
 }
-for (const directory of ['public-opponents', 'service-bridge', 'replay-feedback', 'composition', 'full-composition', 'source-export', 'integration-baseline', 'replay-pages-v2']) {
+for (const directory of ['public-opponents', 'service-bridge', 'replay-feedback', 'composition', 'full-composition', 'source-export', 'integration-baseline', 'replay-pages-v2', 'durable-replay-v2']) {
   test(`compact ${directory} checksum inventory matches committed bytes`, () => {
     const lines = checkedFile(directory, 'SHA256SUMS').toString('utf8').trimEnd().split('\n');
     const seen = new Set();
@@ -118,4 +118,32 @@ test('retained replay v2 pages have continuous bounded progress and honest scope
     totalPages += pages.length;
   }
   assert.equal(totalPages, 67);
+});
+
+
+test('durable replay publication preserves review hashes and closed scope', () => {
+  const directory = 'durable-replay-v2';
+  const review = JSON.parse(checkedFile(directory, 'bcenv-durable-replay-review-sources.json'));
+  const integration = JSON.parse(checkedFile(directory, 'integration-checks.json'));
+  const publication = JSON.parse(checkedFile(directory, 'publication.json'));
+  for (const artifact of review.review_artifacts) {
+    assert.equal(digest(checkedFile(directory, artifact.path)), artifact.sha256);
+  }
+  assert.equal(review.reviewed_files.length, 8);
+  assert.equal(integration.trusted_module_sources.length, 11);
+  for (const source of integration.trusted_module_sources) {
+    const reviewed = review.reviewed_files.find(item => item.path === source.path);
+    if (reviewed) assert.equal(source.sha256, reviewed.sha256);
+  }
+  assert.equal(integration.flake_checks_passed.length, 13);
+  assert.equal(integration.python_tests_passed, 286);
+  assert.deepEqual(integration.trusted_modules_found_in_package, []);
+  assert.equal(publication.portable_rerun_passed, 27);
+  assert.equal(publication.new_public_games, 0);
+  assert.equal(publication.provider_calls, 0);
+  assert.equal(publication.real_launch_supported, false);
+  assert.equal(publication.composed_fixture.pages, 5);
+  assert.equal(publication.composed_fixture.records, 196);
+  assert.ok(publication.composed_fixture.maximum_envelope_bytes <= 16384);
+  assert.ok(publication.composed_fixture.aggregate_output_bytes <= 131072);
 });

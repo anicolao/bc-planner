@@ -1,0 +1,475 @@
+warning: Git tree '/workspace/shared/bcenv-replay-service-v2' is dirty
+evaluating flake...
+checking flake output 'packages'...
+checking derivation packages.x86_64-linux.bcenv...
+derivation evaluated to /nix/store/8ll2wr6lnm4aqx7r1cc0rxkq5cgqa6a6-bcenv-2023-0.1.0.drv
+checking derivation packages.x86_64-linux.battlecode23...
+derivation evaluated to /nix/store/fnsai7ahf89xdl1fz0z9iy811nz39kb9-battlecode23-engine-3.0.13.drv
+checking derivation packages.x86_64-linux.battlecode23-diagnostic-2_0_3...
+derivation evaluated to /nix/store/vhizhf9ic3nv091zvbnhh61ybq6jpb7b-battlecode23-engine-2.0.3.drv
+checking derivation packages.x86_64-linux.bcenv-diagnostic-2_0_3...
+derivation evaluated to /nix/store/5qdj0jv2fmviazp64xfc72dk2xzp4fmn-bcenv-2023-0.1.0.drv
+checking derivation packages.x86_64-linux.default...
+derivation evaluated to /nix/store/8ll2wr6lnm4aqx7r1cc0rxkq5cgqa6a6-bcenv-2023-0.1.0.drv
+checking derivation packages.x86_64-linux.jdk...
+derivation evaluated to /nix/store/bxldi17z0m91z5c07732xkjhfg95xpl9-openjdk-8u504-b01.drv
+checking derivation packages.x86_64-linux.python...
+derivation evaluated to /nix/store/zzj9gf51pr4l8r3gxwfqpnb6zdm5h35k-python3-3.13.15.drv
+checking derivation packages.x86_64-linux.nodejs...
+derivation evaluated to /nix/store/hvwzlz4yspi1as779zjvyv3ag5w7jcxq-nodejs-24.19.0.drv
+checking derivation packages.x86_64-linux.git...
+derivation evaluated to /nix/store/6rdgb4mmph4sfrj5yphgqh2gvnb0m08v-git-2.54.0.drv
+checking derivation packages.x86_64-linux.npm-cache...
+derivation evaluated to /nix/store/m1wvs8vzpxd5xq34jlvmgcpvji28hv4r-bcenv-npm-cache.drv
+checking flake output 'devShells'...
+checking derivation devShells.x86_64-linux.default...
+derivation evaluated to /nix/store/bnpfsrj2aw55dfhwyv1hxm2lljzzsa8l-nix-shell.drv
+checking flake output 'checks'...
+checking derivation checks.x86_64-linux.engine...
+derivation evaluated to /nix/store/fnsai7ahf89xdl1fz0z9iy811nz39kb9-battlecode23-engine-3.0.13.drv
+checking derivation checks.x86_64-linux.diagnostic-engine-api...
+derivation evaluated to /nix/store/v84yn0r8ym203x2fc2bnj5axjwyriykk-bcenv-engine-api-2.0.3.drv
+checking derivation checks.x86_64-linux.engine-api...
+derivation evaluated to /nix/store/3qdy5775406rjaai0z3f6xkkqyajdwfp-bcenv-engine-api-3.0.13.drv
+checking derivation checks.x86_64-linux.diagnostic-replay-parser...
+derivation evaluated to /nix/store/mcf7wil3k35w1ad9w1svf87wi6jscklq-bcenv-replay-parser.drv
+checking derivation checks.x86_64-linux.replay-parser...
+derivation evaluated to /nix/store/zy73pavmw8h7743k6c6ahvnylyafjlan-bcenv-replay-parser.drv
+checking derivation checks.x86_64-linux.diagnostic-replay-query...
+derivation evaluated to /nix/store/s7a11pzmhl04ma2xnalpblrq7qwsrnvw-bcenv-replay-query.drv
+checking derivation checks.x86_64-linux.replay-query...
+derivation evaluated to /nix/store/i4h67p771jy5fb2lj5j5ah05nlrr9b02-bcenv-replay-query.drv
+checking derivation checks.x86_64-linux.diagnostic-fixture-game...
+derivation evaluated to /nix/store/dwrv5r09avi31bbrs2im1ndhprkh18bk-bcenv-fixture-game.drv
+checking derivation checks.x86_64-linux.fixture-game...
+derivation evaluated to /nix/store/lz4aa885x3rp8kwvg65m4xb6qn6nqhsj-bcenv-fixture-game.drv
+checking derivation checks.x86_64-linux.replay-version-isolation...
+derivation evaluated to /nix/store/pzvviv3k8j8a4r9hk773ybq1d5lsn4yv-bcenv-replay-version-isolation.drv
+checking derivation checks.x86_64-linux.prompt-tooling...
+derivation evaluated to /nix/store/czv3sy02mnld8ipn9czhs34idw3zm80k-bcenv-prompt-tooling.drv
+checking derivation checks.x86_64-linux.python-unit...
+derivation evaluated to /nix/store/vrn1krawjsikdwr3f979sxmp7h5q2l0i-bcenv-python-unit.drv
+checking derivation checks.x86_64-linux.galaxy-contract...
+derivation evaluated to /nix/store/kiqidxv9g8lfr1dlwicx4acvmi71hb5m-bcenv-galaxy-contract.drv
+running 13 flake checks...
+building '/nix/store/kiqidxv9g8lfr1dlwicx4acvmi71hb5m-bcenv-galaxy-contract.drv'...
+bcenv-galaxy-contract> test_all_audited_source_hashes (__main__.Contracts.test_all_audited_source_hashes) ... ok
+bcenv-galaxy-contract> test_compile_payload_golden (__main__.Contracts.test_compile_payload_golden) ... ok
+bcenv-galaxy-contract> test_execute_payload_golden (__main__.Contracts.test_execute_payload_golden) ... ok
+bcenv-galaxy-contract> test_failed_compile_is_completed_but_unaccepted (__main__.Contracts.test_failed_compile_is_completed_but_unaccepted) ... ok
+bcenv-galaxy-contract> test_interrupted_retry_does_not_consume_failure_budget (__main__.Contracts.test_interrupted_retry_does_not_consume_failure_budget) ... ok
+bcenv-galaxy-contract> test_nonterminal_statuses (__main__.Contracts.test_nonterminal_statuses) ... ok
+bcenv-galaxy-contract> test_null_publisher_receipt_is_not_work (__main__.Contracts.test_null_publisher_receipt_is_not_work) ... ok
+bcenv-galaxy-contract> test_public_domain_codes (__main__.Contracts.test_public_domain_codes) ... ok
+bcenv-galaxy-contract> test_request_order_and_alternation (__main__.Contracts.test_request_order_and_alternation) ... ok
+bcenv-galaxy-contract> test_retry_consumes_budget_and_exhausts (__main__.Contracts.test_retry_consumes_budget_and_exhausts) ... ok
+bcenv-galaxy-contract> test_terminal_repeated_reports_are_rejected_without_mutation (__main__.Contracts.test_terminal_repeated_reports_are_rejected_without_mutation) ... ok
+bcenv-galaxy-contract> 
+bcenv-galaxy-contract> ----------------------------------------------------------------------
+bcenv-galaxy-contract> Ran 11 tests in 0.156s
+bcenv-galaxy-contract> 
+bcenv-galaxy-contract> OK
+building '/nix/store/5qdj0jv2fmviazp64xfc72dk2xzp4fmn-bcenv-2023-0.1.0.drv'...
+bcenv> Running phase: unpackPhase
+bcenv> unpacking source archive /nix/store/ixhflfzqbjqxnjqakfkyk51rjj0g13w7-source
+bcenv> source root is source
+bcenv> Running phase: patchPhase
+bcenv> Running phase: updateAutotoolsGnuConfigScriptsPhase
+bcenv> Running phase: configurePhase
+bcenv> no configure script, doing nothing
+bcenv> Running phase: buildPhase
+bcenv> no Makefile or custom buildPhase, doing nothing
+bcenv> Running phase: installPhase
+bcenv> Running phase: fixupPhase
+bcenv> shrinking RPATHs of ELF executables and libraries in /nix/store/9100vshq452ynm2h7pcfrngy1543kgxy-bcenv-2023-0.1.0
+bcenv> checking for references to /build/ in /nix/store/9100vshq452ynm2h7pcfrngy1543kgxy-bcenv-2023-0.1.0...
+bcenv> patching script interpreter paths in /nix/store/9100vshq452ynm2h7pcfrngy1543kgxy-bcenv-2023-0.1.0
+building '/nix/store/8ll2wr6lnm4aqx7r1cc0rxkq5cgqa6a6-bcenv-2023-0.1.0.drv'...
+bcenv> Running phase: unpackPhase
+bcenv> unpacking source archive /nix/store/ixhflfzqbjqxnjqakfkyk51rjj0g13w7-source
+bcenv> source root is source
+bcenv> Running phase: patchPhase
+bcenv> Running phase: updateAutotoolsGnuConfigScriptsPhase
+bcenv> Running phase: configurePhase
+bcenv> no configure script, doing nothing
+bcenv> Running phase: buildPhase
+bcenv> no Makefile or custom buildPhase, doing nothing
+bcenv> Running phase: installPhase
+bcenv> Running phase: fixupPhase
+bcenv> shrinking RPATHs of ELF executables and libraries in /nix/store/lxma744svicl1mmr51j31aqi5g1z9c9q-bcenv-2023-0.1.0
+bcenv> checking for references to /build/ in /nix/store/lxma744svicl1mmr51j31aqi5g1z9c9q-bcenv-2023-0.1.0...
+bcenv> patching script interpreter paths in /nix/store/lxma744svicl1mmr51j31aqi5g1z9c9q-bcenv-2023-0.1.0
+building '/nix/store/dwrv5r09avi31bbrs2im1ndhprkh18bk-bcenv-fixture-game.drv'...
+bcenv-fixture-game> /build/build-empty/artifact.json
+bcenv-fixture-game> /build/build-clock/artifact.json
+bcenv-fixture-game> /build/match-one/result.json
+bcenv-fixture-game> /build/match-repeat/result.json
+bcenv-fixture-game> /build/match-swapped/result.json
+bcenv-fixture-game> /build/submission/package.json
+bcenv-fixture-game> /build/invalid-build/artifact.json
+bcenv-fixture-game> PASS: real verified fixture match, repeat, swapped slots and source package
+bcenv-fixture-game> /build/fixture-query/query-result.json
+bcenv-fixture-game> match-one/replay.bc23: OK
+bcenv-fixture-game> match-one/replay-summary.json: OK
+building '/nix/store/lz4aa885x3rp8kwvg65m4xb6qn6nqhsj-bcenv-fixture-game.drv'...
+bcenv-fixture-game> /build/build-empty/artifact.json
+bcenv-fixture-game> /build/build-clock/artifact.json
+bcenv-fixture-game> /build/match-one/result.json
+bcenv-fixture-game> /build/match-repeat/result.json
+bcenv-fixture-game> /build/match-swapped/result.json
+bcenv-fixture-game> /build/submission/package.json
+bcenv-fixture-game> /build/invalid-build/artifact.json
+bcenv-fixture-game> PASS: real verified fixture match, repeat, swapped slots and source package
+bcenv-fixture-game> /build/fixture-query/query-result.json
+bcenv-fixture-game> match-one/replay.bc23: OK
+bcenv-fixture-game> match-one/replay-summary.json: OK
+building '/nix/store/czv3sy02mnld8ipn9czhs34idw3zm80k-bcenv-prompt-tooling.drv'...
+bcenv-prompt-tooling> \
+bcenv-prompt-tooling> added 1 package in 254ms
+bcenv-prompt-tooling> \patching script interpreter paths in node_modules
+bcenv-prompt-tooling> node_modules/husky/bin.js: interpreter directive changed from "#!/usr/bin/env node" to "/nix/store/viadyk3hg56ib6vky4cm3sb2y3n305aw-nodejs-24.19.0/bin/node"
+bcenv-prompt-tooling> 
+bcenv-prompt-tooling> > prepare
+bcenv-prompt-tooling> > husky
+bcenv-prompt-tooling> 
+bcenv-prompt-tooling> \
+bcenv-prompt-tooling> > test
+bcenv-prompt-tooling> > node --test scripts/check-prompts.test.mjs
+bcenv-prompt-tooling> 
+bcenv-prompt-tooling> ✔ Husky requires a staged, strictly append-only prompt record (608.132312ms)
+bcenv-prompt-tooling> ℹ tests 1
+bcenv-prompt-tooling> ℹ suites 0
+bcenv-prompt-tooling> ℹ pass 1
+bcenv-prompt-tooling> ℹ fail 0
+bcenv-prompt-tooling> ℹ cancelled 0
+bcenv-prompt-tooling> ℹ skipped 0
+bcenv-prompt-tooling> ℹ todo 0
+bcenv-prompt-tooling> ℹ duration_ms 662.312413
+bcenv-prompt-tooling> \
+building '/nix/store/vrn1krawjsikdwr3f979sxmp7h5q2l0i-bcenv-python-unit.drv'...
+bcenv-python-unit> test_embedded_engine_version (test_artifacts.ArtifactTests.test_embedded_engine_version) ... ok
+bcenv-python-unit> test_engine_mismatch_rejected (test_artifacts.ArtifactTests.test_engine_mismatch_rejected) ... ok
+bcenv-python-unit> test_identity_order_independent (test_artifacts.ArtifactTests.test_identity_order_independent) ... ok
+bcenv-python-unit> test_inventory_rejects_symlink (test_artifacts.ArtifactTests.test_inventory_rejects_symlink) ... ok
+bcenv-python-unit> test_launch_failure_is_evidence (test_artifacts.ArtifactTests.test_launch_failure_is_evidence) ... ok
+bcenv-python-unit> test_mutation_rejected (test_artifacts.ArtifactTests.test_mutation_rejected) ... ok
+bcenv-python-unit> test_outputs_never_overwrite (test_artifacts.ArtifactTests.test_outputs_never_overwrite) ... ok
+bcenv-python-unit> test_package_validation (test_artifacts.ArtifactTests.test_package_validation) ... ok
+bcenv-python-unit> test_replay_identity_binding (test_artifacts.ArtifactTests.test_replay_identity_binding) ... ok
+bcenv-python-unit> test_separate_machine_output_from_stderr (test_artifacts.ArtifactTests.test_separate_machine_output_from_stderr) ... ok
+bcenv-python-unit> test_timeout_and_nonzero_distinct (test_artifacts.ArtifactTests.test_timeout_and_nonzero_distinct) ... ok
+bcenv-python-unit> test_zip_deterministic_and_source_only (test_artifacts.ArtifactTests.test_zip_deterministic_and_source_only) ... /build/tmptenk90p8-package1/package.json
+bcenv-python-unit> /build/tmptenk90p8-package2/package.json
+bcenv-python-unit> ok
+bcenv-python-unit> test_adapter_exception_text_is_never_forwarded (test_controller.ControllerTests.test_adapter_exception_text_is_never_forwarded) ... ok
+bcenv-python-unit> test_adapter_output_shape_and_read_bound (test_controller.ControllerTests.test_adapter_output_shape_and_read_bound) ... ok
+bcenv-python-unit> test_all_operations_are_mediated_by_typed_adapters (test_controller.ControllerTests.test_all_operations_are_mediated_by_typed_adapters) ... ok
+bcenv-python-unit> test_arbitrary_test_and_shell_argv_are_only_inert_sandbox_inputs (test_controller.ControllerTests.test_arbitrary_test_and_shell_argv_are_only_inert_sandbox_inputs) ... ok
+bcenv-python-unit> test_duplicate_keys_malformed_and_nonobject_json_are_rejected (test_controller.ControllerTests.test_duplicate_keys_malformed_and_nonobject_json_are_rejected) ... ok
+bcenv-python-unit> test_exact_frozen_initial_context_and_fixed_tools_on_every_turn (test_controller.ControllerTests.test_exact_frozen_initial_context_and_fixed_tools_on_every_turn) ... ok
+bcenv-python-unit> test_exec_argument_cwd_and_time_limits (test_controller.ControllerTests.test_exec_argument_cwd_and_time_limits) ... ok
+bcenv-python-unit> test_exec_cwd_allows_fresh_roots_and_descendants_but_file_tools_require_leaf (test_controller.ControllerTests.test_exec_cwd_allows_fresh_roots_and_descendants_but_file_tools_require_leaf) ... ok
+bcenv-python-unit> test_exec_has_no_model_selected_host_launcher_or_sandbox_configuration (test_controller.ControllerTests.test_exec_has_no_model_selected_host_launcher_or_sandbox_configuration) ... ok
+bcenv-python-unit> test_exec_output_is_truncated_and_encoded_output_is_capped (test_controller.ControllerTests.test_exec_output_is_truncated_and_encoded_output_is_capped) ... ok
+bcenv-python-unit> test_extra_fields_are_rejected_for_every_tool (test_controller.ControllerTests.test_extra_fields_are_rejected_for_every_tool) ... ok
+bcenv-python-unit> test_fallback_error_envelope_cannot_exceed_small_configured_cap (test_controller.ControllerTests.test_fallback_error_envelope_cannot_exceed_small_configured_cap) ... ok
+bcenv-python-unit> test_half_megabyte_source_file_can_be_written_with_fixed_limits (test_controller.ControllerTests.test_half_megabyte_source_file_can_be_written_with_fixed_limits) ... ok
+bcenv-python-unit> test_handles_must_be_issued_inside_this_run (test_controller.ControllerTests.test_handles_must_be_issued_inside_this_run) ... ok
+bcenv-python-unit> test_invalid_transport_shapes_duplicate_ids_and_oversized_model_output (test_controller.ControllerTests.test_invalid_transport_shapes_duplicate_ids_and_oversized_model_output) ... ok
+bcenv-python-unit> test_invalid_utf8_final_text_is_a_malformed_model_reply (test_controller.ControllerTests.test_invalid_utf8_final_text_is_a_malformed_model_reply) ... ok
+bcenv-python-unit> test_malformed_duplicate_call_ids_prevent_all_batch_side_effects (test_controller.ControllerTests.test_malformed_duplicate_call_ids_prevent_all_batch_side_effects) ... ok
+bcenv-python-unit> test_model_unicode_surrogates_fail_as_arguments_without_adapter_calls (test_controller.ControllerTests.test_model_unicode_surrogates_fail_as_arguments_without_adapter_calls) ... ok
+bcenv-python-unit> test_public_result_projection_removes_internal_metadata (test_controller.ControllerTests.test_public_result_projection_removes_internal_metadata) ... ok
+bcenv-python-unit> test_read_write_limits_and_strict_integer_types (test_controller.ControllerTests.test_read_write_limits_and_strict_integer_types) ... ok
+bcenv-python-unit> test_real_launch_is_always_unsupported_even_with_claimed_attestations (test_controller.ControllerTests.test_real_launch_is_always_unsupported_even_with_claimed_attestations) ... ok
+bcenv-python-unit> test_registry_is_immutable_closed_and_provider_neutral (test_controller.ControllerTests.test_registry_is_immutable_closed_and_provider_neutral) ... ok
+bcenv-python-unit> test_time_cap_is_checked_after_transport_and_adapter (test_controller.ControllerTests.test_time_cap_is_checked_after_transport_and_adapter) ... ok
+bcenv-python-unit> test_transport_failure_is_bounded_and_context_limits_are_checked (test_controller.ControllerTests.test_transport_failure_is_bounded_and_context_limits_are_checked) ... ok
+bcenv-python-unit> test_turn_call_and_total_output_caps (test_controller.ControllerTests.test_turn_call_and_total_output_caps) ... ok
+bcenv-python-unit> test_unknown_native_network_or_host_tools_never_reach_adapters (test_controller.ControllerTests.test_unknown_native_network_or_host_tools_never_reach_adapters) ... ok
+bcenv-python-unit> test_workspace_path_escape_and_protected_writes_are_denied (test_controller.ControllerTests.test_workspace_path_escape_and_protected_writes_are_denied) ... ok
+bcenv-python-unit> test_wrong_submission_identity_or_raw_replay_cannot_escape (test_controller.ControllerTests.test_wrong_submission_identity_or_raw_replay_cannot_escape) ... ok
+bcenv-python-unit> test_adapter_errors_are_closed_in_controller_output (test_controller_ledger.CompositionTests.test_adapter_errors_are_closed_in_controller_output) ... ok
+bcenv-python-unit> test_all_six_tools_compose_with_real_durable_state_and_bounded_feedback (test_controller_ledger.CompositionTests.test_all_six_tools_compose_with_real_durable_state_and_bounded_feedback) ... ok
+bcenv-python-unit> test_archive_intake_blocks_traversal_duplicate_and_non_source (test_controller_ledger.CompositionTests.test_archive_intake_blocks_traversal_duplicate_and_non_source) ... ok
+bcenv-python-unit> test_backend_cannot_supply_an_exec_reply_with_chosen_handle (test_controller_ledger.CompositionTests.test_backend_cannot_supply_an_exec_reply_with_chosen_handle) ... ok
+bcenv-python-unit> test_bad_export_never_consumes_a_record_or_publishes_handle (test_controller_ledger.CompositionTests.test_bad_export_never_consumes_a_record_or_publishes_handle) ... ok
+bcenv-python-unit> test_concurrent_capture_enforces_global_quota_and_unique_handles (test_controller_ledger.CompositionTests.test_concurrent_capture_enforces_global_quota_and_unique_handles) ... ok
+bcenv-python-unit> test_cross_owner_and_cross_run_artifacts_are_uniformly_denied (test_controller_ledger.CompositionTests.test_cross_owner_and_cross_run_artifacts_are_uniformly_denied) ... ok
+bcenv-python-unit> test_different_source_run_or_owner_is_a_separate_job (test_controller_ledger.CompositionTests.test_different_source_run_or_owner_is_a_separate_job) ... ok
+bcenv-python-unit> test_invalid_worker_evidence_remains_a_failure_through_controller_projection (test_controller_ledger.CompositionTests.test_invalid_worker_evidence_remains_a_failure_through_controller_projection) ... ok
+bcenv-python-unit> test_ledger_quota_failure_does_not_publish_a_submission_or_damage_artifact (test_controller_ledger.CompositionTests.test_ledger_quota_failure_does_not_publish_a_submission_or_damage_artifact) ... ok
+bcenv-python-unit> test_malformed_direct_requests_configuration_and_real_launch_are_closed (test_controller_ledger.CompositionTests.test_malformed_direct_requests_configuration_and_real_launch_are_closed) ... ok
+bcenv-python-unit> test_mutable_buffers_and_duck_typed_exports_are_rejected (test_controller_ledger.CompositionTests.test_mutable_buffers_and_duck_typed_exports_are_rejected) ... ok
+bcenv-python-unit> test_mutation_after_capture_cannot_change_submitted_source (test_controller_ledger.CompositionTests.test_mutation_after_capture_cannot_change_submitted_source) ... ok
+bcenv-python-unit> test_package_mismatch_rejected_before_durable_submit (test_controller_ledger.CompositionTests.test_package_mismatch_rejected_before_durable_submit) ... ok
+bcenv-python-unit> test_repeat_submit_charges_ledger_rate_without_duplicate_job (test_controller_ledger.CompositionTests.test_repeat_submit_charges_ledger_rate_without_duplicate_job) ... ok
+bcenv-python-unit> test_run_and_global_artifact_byte_quotas_charge_duplicate_snapshots (test_controller_ledger.CompositionTests.test_run_and_global_artifact_byte_quotas_charge_duplicate_snapshots) ... ok
+bcenv-python-unit> test_run_and_global_artifact_record_quotas_are_atomic (test_controller_ledger.CompositionTests.test_run_and_global_artifact_record_quotas_are_atomic) ... ok
+bcenv-python-unit> test_same_owner_different_run_cannot_read_existing_submission (test_controller_ledger.CompositionTests.test_same_owner_different_run_cannot_read_existing_submission) ... ok
+bcenv-python-unit> test_same_run_content_idempotency_survives_adapter_and_ledger_restart (test_controller_ledger.CompositionTests.test_same_run_content_idempotency_survives_adapter_and_ledger_restart) ... ok
+bcenv-python-unit> test_stdout_claims_and_paths_never_issue_artifact_authority (test_controller_ledger.CompositionTests.test_stdout_claims_and_paths_never_issue_artifact_authority) ... ok
+bcenv-python-unit> test_worker_failure_and_restart_recovery_remain_unscored (test_controller_ledger.CompositionTests.test_worker_failure_and_restart_recovery_remain_unscored) ... ok
+bcenv-python-unit> test_abrupt_worker_process_exit_preserves_claim_then_recovers_failure (test_ledger.LedgerTests.test_abrupt_worker_process_exit_preserves_claim_then_recovers_failure) ... ok
+bcenv-python-unit> test_clock_regression_refuses_work_fails_running_claims_and_preserves_quota (test_ledger.LedgerTests.test_clock_regression_refuses_work_fails_running_claims_and_preserves_quota) ... ok
+bcenv-python-unit> test_concurrent_first_open_serializes_database_identity_and_schema (test_ledger.LedgerTests.test_concurrent_first_open_serializes_database_identity_and_schema) ... ok
+bcenv-python-unit> test_concurrent_threads_can_reserve_a_job_only_once (test_ledger.LedgerTests.test_concurrent_threads_can_reserve_a_job_only_once) ... ok
+bcenv-python-unit> test_configuration_schema_and_foreign_database_fail_closed (test_ledger.LedgerTests.test_configuration_schema_and_foreign_database_fail_closed) ... ok
+bcenv-python-unit> test_crash_before_transaction_commit_rolls_back_job_reservation (test_ledger.LedgerTests.test_crash_before_transaction_commit_rolls_back_job_reservation) ... ok
+bcenv-python-unit> test_cross_owner_deduplication_never_discounts_quota_at_global_cap (test_ledger.LedgerTests.test_cross_owner_deduplication_never_discounts_quota_at_global_cap) ... ok
+bcenv-python-unit> test_cross_owner_guesses_and_missing_ids_have_same_closed_errors (test_ledger.LedgerTests.test_cross_owner_guesses_and_missing_ids_have_same_closed_errors) ... ok
+bcenv-python-unit> test_cross_process_idempotency_is_atomic (test_ledger.LedgerTests.test_cross_process_idempotency_is_atomic) ... ok
+bcenv-python-unit> test_cross_process_pending_quota_is_atomic (test_ledger.LedgerTests.test_cross_process_pending_quota_is_atomic) ... ok
+bcenv-python-unit> test_expired_lease_recovers_terminally_without_retry_or_score (test_ledger.LedgerTests.test_expired_lease_recovers_terminally_without_retry_or_score) ... ok
+bcenv-python-unit> test_fixed_safe_errors_request_shapes_and_no_real_launch (test_ledger.LedgerTests.test_fixed_safe_errors_request_shapes_and_no_real_launch) ... ok
+bcenv-python-unit> test_idempotency_keys_are_owner_scoped_and_source_blob_deduplicated (test_ledger.LedgerTests.test_idempotency_keys_are_owner_scoped_and_source_blob_deduplicated) ... ok
+bcenv-python-unit> test_idempotency_uses_complete_normalized_source_not_zip_metadata (test_ledger.LedgerTests.test_idempotency_uses_complete_normalized_source_not_zip_metadata) ... ok
+bcenv-python-unit> test_internal_fields_do_not_leak_before_or_after_restart (test_ledger.LedgerTests.test_internal_fields_do_not_leak_before_or_after_restart) ... ok
+bcenv-python-unit> test_invalid_clock_never_changes_job_state (test_ledger.LedgerTests.test_invalid_clock_never_changes_job_state) ... ok
+bcenv-python-unit> test_invalid_or_failed_evidence_never_becomes_a_score (test_ledger.LedgerTests.test_invalid_or_failed_evidence_never_becomes_a_score) ... ok
+bcenv-python-unit> test_large_integer_clock_identity_does_not_round_into_false_regression (test_ledger.LedgerTests.test_large_integer_clock_identity_does_not_round_into_false_regression) ... ok
+bcenv-python-unit> test_large_integer_clock_regression_cannot_round_back_to_equality (test_ledger.LedgerTests.test_large_integer_clock_regression_cannot_round_back_to_equality) ... ok
+bcenv-python-unit> test_pending_and_running_limits_are_distinct (test_ledger.LedgerTests.test_pending_and_running_limits_are_distinct) ... ok
+bcenv-python-unit> test_queued_or_unreserved_job_cannot_report_a_score (test_ledger.LedgerTests.test_queued_or_unreserved_job_cannot_report_a_score) ... ok
+bcenv-python-unit> test_real_sqlite_restart_preserves_source_identity_and_public_result (test_ledger.LedgerTests.test_real_sqlite_restart_preserves_source_identity_and_public_result) ... ok
+bcenv-python-unit> test_record_retention_caps_include_terminal_and_rejected_jobs (test_ledger.LedgerTests.test_record_retention_caps_include_terminal_and_rejected_jobs) ... ok
+bcenv-python-unit> test_recovery_fences_a_live_process_but_does_not_terminate_it (test_ledger.LedgerTests.test_recovery_fences_a_live_process_but_does_not_terminate_it) ... ok
+bcenv-python-unit> test_rejected_archive_is_durable_and_idempotent_without_source_blob (test_ledger.LedgerTests.test_rejected_archive_is_durable_and_idempotent_without_source_blob) ... ok
+bcenv-python-unit> test_rejected_attempts_and_quota_denials_are_charged (test_ledger.LedgerTests.test_rejected_attempts_and_quota_denials_are_charged) ... ok
+bcenv-python-unit> test_result_poll_also_recovers_expired_job_after_restart (test_ledger.LedgerTests.test_result_poll_also_recovers_expired_job_after_restart) ... ok
+bcenv-python-unit> test_source_caps_are_durable_and_logically_charged_even_when_deduplicated (test_ledger.LedgerTests.test_source_caps_are_durable_and_logically_charged_even_when_deduplicated) ... ok
+bcenv-python-unit> test_source_integrity_is_rechecked_before_reservation (test_ledger.LedgerTests.test_source_integrity_is_rechecked_before_reservation) ... ok
+bcenv-python-unit> test_source_updates_and_deletes_are_blocked_by_database_invariants (test_ledger.LedgerTests.test_source_updates_and_deletes_are_blocked_by_database_invariants) ... ok
+bcenv-python-unit> test_submit_and_read_rate_limits_survive_restart_and_count_retries_or_guesses (test_ledger.LedgerTests.test_submit_and_read_rate_limits_survive_restart_and_count_retries_or_guesses) ... ok
+bcenv-python-unit> test_subsecond_clock_regression_also_commits_terminal_failure (test_ledger.LedgerTests.test_subsecond_clock_regression_also_commits_terminal_failure) ... ok
+bcenv-python-unit> test_terminal_report_is_immutable_with_idempotent_exact_retries (test_ledger.LedgerTests.test_terminal_report_is_immutable_with_idempotent_exact_retries) ... ok
+bcenv-python-unit> test_trusted_worker_and_monotonic_generation_fence_reports (test_ledger.LedgerTests.test_trusted_worker_and_monotonic_generation_fence_reports) ... ok
+bcenv-python-unit> test_export_is_self_contained_and_has_no_candidate (test_pilot_export.PilotExportTests.test_export_is_self_contained_and_has_no_candidate) ... ok
+bcenv-python-unit> test_all_six_kinds_retained_without_side_or_outcome_filtering (test_replay_feedback.ReplayFeedbackTests.test_all_six_kinds_retained_without_side_or_outcome_filtering) ... ok
+bcenv-python-unit> test_byte_cap_is_measured_after_final_json_encoding (test_replay_feedback.ReplayFeedbackTests.test_byte_cap_is_measured_after_final_json_encoding) ... ok
+bcenv-python-unit> test_byte_cap_keeps_longest_fitting_prefix_including_zero (test_replay_feedback.ReplayFeedbackTests.test_byte_cap_keeps_longest_fitting_prefix_including_zero) ... ok
+bcenv-python-unit> test_cap_inside_any_last_group_is_supported (test_replay_feedback.ReplayFeedbackTests.test_cap_inside_any_last_group_is_supported) ... ok
+bcenv-python-unit> test_closed_action_and_body_enums (test_replay_feedback.ReplayFeedbackTests.test_closed_action_and_body_enums) ... ok
+bcenv-python-unit> test_context_is_narrow_and_bytes_are_required (test_replay_feedback.ReplayFeedbackTests.test_context_is_narrow_and_bytes_are_required) ... ok
+bcenv-python-unit> test_corrupt_tail_after_local_cap_still_rejects (test_replay_feedback.ReplayFeedbackTests.test_corrupt_tail_after_local_cap_still_rejects) ... ok
+bcenv-python-unit> test_counts_and_coverage_cannot_contradict_the_prefix (test_replay_feedback.ReplayFeedbackTests.test_counts_and_coverage_cannot_contradict_the_prefix) ... ok
+bcenv-python-unit> test_cross_version_and_unsupported_evidence_are_rejected (test_replay_feedback.ReplayFeedbackTests.test_cross_version_and_unsupported_evidence_are_rejected) ... ok
+bcenv-python-unit> test_duplicate_or_excess_resource_team_rows_rejected (test_replay_feedback.ReplayFeedbackTests.test_duplicate_or_excess_resource_team_rows_rejected) ... ok
+bcenv-python-unit> test_empty_selection_does_not_claim_requested_rounds_exist (test_replay_feedback.ReplayFeedbackTests.test_empty_selection_does_not_claim_requested_rounds_exist) ... ok
+bcenv-python-unit> test_exact_source_and_projection_limits_are_not_truncation (test_replay_feedback.ReplayFeedbackTests.test_exact_source_and_projection_limits_are_not_truncation) ... ok
+bcenv-python-unit> test_hard_limits_cannot_be_expanded_or_retyped (test_replay_feedback.ReplayFeedbackTests.test_hard_limits_cannot_be_expanded_or_retyped) ... ok
+bcenv-python-unit> test_header_cannot_fit_fails_without_partial_metrics (test_replay_feedback.ReplayFeedbackTests.test_header_cannot_fit_fails_without_partial_metrics) ... ok
+bcenv-python-unit> test_host_selects_expected_version_explicitly_for_each_call (test_replay_feedback.ReplayFeedbackTests.test_host_selects_expected_version_explicitly_for_each_call) ... ok
+bcenv-python-unit> test_incomplete_invalid_or_unsupported_evidence_fails_closed (test_replay_feedback.ReplayFeedbackTests.test_incomplete_invalid_or_unsupported_evidence_fails_closed) ... ok
+bcenv-python-unit> test_initial_zero_round_and_match_local_identity (test_replay_feedback.ReplayFeedbackTests.test_initial_zero_round_and_match_local_identity) ... ok
+bcenv-python-unit> test_input_byte_budget_before_parsing (test_replay_feedback.ReplayFeedbackTests.test_input_byte_budget_before_parsing) ... ok
+bcenv-python-unit> test_input_is_not_mutated_and_result_does_not_alias (test_replay_feedback.ReplayFeedbackTests.test_input_is_not_mutated_and_result_does_not_alias) ... ok
+bcenv-python-unit> test_invalid_json_duplicate_keys_depth_and_numbers_are_closed_errors (test_replay_feedback.ReplayFeedbackTests.test_invalid_json_duplicate_keys_depth_and_numbers_are_closed_errors) ... ok
+bcenv-python-unit> test_invalid_order_round_filter_and_event_context (test_replay_feedback.ReplayFeedbackTests.test_invalid_order_round_filter_and_event_context) ... ok
+bcenv-python-unit> test_kind_specific_allowlists_do_not_copy_other_kinds_fields (test_replay_feedback.ReplayFeedbackTests.test_kind_specific_allowlists_do_not_copy_other_kinds_fields) ... ok
+bcenv-python-unit> test_missing_required_fields_and_identity_consistency (test_replay_feedback.ReplayFeedbackTests.test_missing_required_fields_and_identity_consistency) ... ok
+bcenv-python-unit> test_mixed_resource_coverage_sets_a_lower_bound_beyond_source_cap (test_replay_feedback.ReplayFeedbackTests.test_mixed_resource_coverage_sets_a_lower_bound_beyond_source_cap) ... ok
+bcenv-python-unit> test_multiple_caps_are_not_conflated (test_replay_feedback.ReplayFeedbackTests.test_multiple_caps_are_not_conflated) ... ok
+bcenv-python-unit> test_no_raw_replay_fallback_and_facade_remains_closed (test_replay_feedback.ReplayFeedbackTests.test_no_raw_replay_fallback_and_facade_remains_closed) ... ok
+bcenv-python-unit> test_numeric_types_and_bounds_are_strict (test_replay_feedback.ReplayFeedbackTests.test_numeric_types_and_bounds_are_strict) ... ok
+bcenv-python-unit> test_private_metadata_and_unknown_nested_extensions_never_escape (test_replay_feedback.ReplayFeedbackTests.test_private_metadata_and_unknown_nested_extensions_never_escape) ... ok
+bcenv-python-unit> test_projection_record_cap_keeps_exact_prefix (test_replay_feedback.ReplayFeedbackTests.test_projection_record_cap_keeps_exact_prefix) ... ok
+bcenv-python-unit> test_range_match_and_input_record_caps (test_replay_feedback.ReplayFeedbackTests.test_range_match_and_input_record_caps) ... ok
+bcenv-python-unit> test_resource_completeness_is_checked_for_each_match (test_replay_feedback.ReplayFeedbackTests.test_resource_completeness_is_checked_for_each_match) ... ok
+bcenv-python-unit> test_resource_coverage_not_reconstructed_or_overclaimed (test_replay_feedback.ReplayFeedbackTests.test_resource_coverage_not_reconstructed_or_overclaimed) ... ok
+bcenv-python-unit> test_round_gaps_are_exposed_without_calling_stream_incomplete (test_replay_feedback.ReplayFeedbackTests.test_round_gaps_are_exposed_without_calling_stream_incomplete) ... ok
+bcenv-python-unit> test_selected_round_count_cannot_be_less_than_visible_rounds (test_replay_feedback.ReplayFeedbackTests.test_selected_round_count_cannot_be_less_than_visible_rounds) ... ok
+bcenv-python-unit> test_signed_schema_int32_values_preserved_without_decoding (test_replay_feedback.ReplayFeedbackTests.test_signed_schema_int32_values_preserved_without_decoding) ... ok
+bcenv-python-unit> test_source_derived_semantic_fixture (test_replay_feedback.ReplayFeedbackTests.test_source_derived_semantic_fixture) ... ok
+bcenv-python-unit> test_source_prefix_truncation_is_accepted_and_honest (test_replay_feedback.ReplayFeedbackTests.test_source_prefix_truncation_is_accepted_and_honest) ... ok
+bcenv-python-unit> test_supported_string_fields_reject_injected_values (test_replay_feedback.ReplayFeedbackTests.test_supported_string_fields_reject_injected_values) ... ok
+bcenv-python-unit> test_team_mapping_only_comes_from_trusted_host (test_replay_feedback.ReplayFeedbackTests.test_team_mapping_only_comes_from_trusted_host) ... ok
+bcenv-python-unit> test_truncated_prefix_checks_complete_rounds_and_prior_matches (test_replay_feedback.ReplayFeedbackTests.test_truncated_prefix_checks_complete_rounds_and_prior_matches) ... ok
+bcenv-python-unit> test_unknown_identity_is_explicit_and_never_invented (test_replay_feedback.ReplayFeedbackTests.test_unknown_identity_is_explicit_and_never_invented) ... ok
+bcenv-python-unit> test_all_offsets_and_boundaries_match_exact_source_rows (test_replay_feedback_v2.PageFeedbackTests.test_all_offsets_and_boundaries_match_exact_source_rows) ... ok
+bcenv-python-unit> test_bad_query_construction_and_context (test_replay_feedback_v2.PageFeedbackTests.test_bad_query_construction_and_context) ... ok
+bcenv-python-unit> test_bad_rows_past_local_cap_reject (test_replay_feedback_v2.PageFeedbackTests.test_bad_rows_past_local_cap_reject) ... ok
+bcenv-python-unit> test_complete_source_required_even_for_empty_page (test_replay_feedback_v2.PageFeedbackTests.test_complete_source_required_even_for_empty_page) ... ok
+bcenv-python-unit> test_duplicate_json_keys_and_depth_limits (test_replay_feedback_v2.PageFeedbackTests.test_duplicate_json_keys_and_depth_limits) ... ok
+bcenv-python-unit> test_empty_and_exact_eof_distinguished (test_replay_feedback_v2.PageFeedbackTests.test_empty_and_exact_eof_distinguished) ... ok
+bcenv-python-unit> test_exact_source_page_arithmetic_required (test_replay_feedback_v2.PageFeedbackTests.test_exact_source_page_arithmetic_required) ... ok
+bcenv-python-unit> test_expected_query_cannot_be_overridden (test_replay_feedback_v2.PageFeedbackTests.test_expected_query_cannot_be_overridden) ... ok
+bcenv-python-unit> test_global_resource_lower_bound_survives_hidden_prefix (test_replay_feedback_v2.PageFeedbackTests.test_global_resource_lower_bound_survives_hidden_prefix) ... ok
+bcenv-python-unit> test_late_adverse_rows_beyond_10000_are_retrievable (test_replay_feedback_v2.PageFeedbackTests.test_late_adverse_rows_beyond_10000_are_retrievable) ... ok
+bcenv-python-unit> test_late_page_keeps_whole_window_coverage (test_replay_feedback_v2.PageFeedbackTests.test_late_page_keeps_whole_window_coverage) ... ok
+bcenv-python-unit> test_longest_whole_row_prefix_and_progress_receipt (test_replay_feedback_v2.PageFeedbackTests.test_longest_whole_row_prefix_and_progress_receipt) ... ok
+bcenv-python-unit> test_nested_metadata_and_string_injection_dropped (test_replay_feedback_v2.PageFeedbackTests.test_nested_metadata_and_string_injection_dropped) ... ok
+bcenv-python-unit> test_order_duplicate_resource_and_wrong_identity_reject (test_replay_feedback_v2.PageFeedbackTests.test_order_duplicate_resource_and_wrong_identity_reject) ... ok
+bcenv-python-unit> test_record_and_byte_caps_concatenate_without_skips (test_replay_feedback_v2.PageFeedbackTests.test_record_and_byte_caps_concatenate_without_skips) ... ok
+bcenv-python-unit> test_resource_row1_only_allowed_at_true_page_boundary (test_replay_feedback_v2.PageFeedbackTests.test_resource_row1_only_allowed_at_true_page_boundary) ... ok
+bcenv-python-unit> test_spec_is_explicit_and_exact (test_replay_feedback_v2.PageFeedbackTests.test_spec_is_explicit_and_exact) ... ok
+bcenv-python-unit> test_v1_inputs_not_implicitly_upgraded (test_replay_feedback_v2.PageFeedbackTests.test_v1_inputs_not_implicitly_upgraded) ... ok
+bcenv-python-unit> test_visible_complete_round_cannot_hide_resource_row (test_replay_feedback_v2.PageFeedbackTests.test_visible_complete_round_cannot_hide_resource_row) ... ok
+bcenv-python-unit> test_visible_rounds_cannot_exceed_supplied_coverage (test_replay_feedback_v2.PageFeedbackTests.test_visible_rounds_cannot_exceed_supplied_coverage) ... ok
+bcenv-python-unit> test_zero_progress_budget_rejects (test_replay_feedback_v2.PageFeedbackTests.test_zero_progress_budget_rejects) ... ok
+bcenv-python-unit> test_explicit_page_command_and_receipt (test_replay_query.ReplayPageTests.test_explicit_page_command_and_receipt) ... /build/tmpfi87qmzp/out/query-result.json
+bcenv-python-unit> ok
+bcenv-python-unit> test_page_cli_requires_explicit_offset (test_replay_query.ReplayPageTests.test_page_cli_requires_explicit_offset) ... usage: adapter.py replay page [-h] --replay REPLAY --round-start ROUND_START
+bcenv-python-unit>                               --round-end ROUND_END [--robot-id ROBOT_ID]
+bcenv-python-unit>                               --record-offset RECORD_OFFSET [--limit LIMIT]
+bcenv-python-unit>                               --output OUTPUT [--timeout TIMEOUT]
+bcenv-python-unit> adapter.py replay page: error: the following arguments are required: --record-offset
+bcenv-python-unit> ok
+bcenv-python-unit> test_page_parameters_reject_before_allocating_output (test_replay_query.ReplayPageTests.test_page_parameters_reject_before_allocating_output) ... ok
+bcenv-python-unit> test_page_rejects_wrong_format_or_position (test_replay_query.ReplayPageTests.test_page_rejects_wrong_format_or_position) ... /build/tmpcdahyzd0/out0/query-result.json
+bcenv-python-unit> /build/tmpcdahyzd0/out1/query-result.json
+bcenv-python-unit> /build/tmpcdahyzd0/out2/query-result.json
+bcenv-python-unit> /build/tmpcdahyzd0/out3/query-result.json
+bcenv-python-unit> /build/tmpcdahyzd0/out4/query-result.json
+bcenv-python-unit> /build/tmpcdahyzd0/out5/query-result.json
+bcenv-python-unit> /build/tmpcdahyzd0/out6/query-result.json
+bcenv-python-unit> /build/tmpcdahyzd0/out7/query-result.json
+bcenv-python-unit> ok
+bcenv-python-unit> test_page_timeout_and_mutation_not_completed (test_replay_query.ReplayPageTests.test_page_timeout_and_mutation_not_completed) ... /build/tmp9ops2v64/out/query-result.json
+bcenv-python-unit> /build/tmp9ops2v64/mutated/query-result.json
+bcenv-python-unit> ok
+bcenv-python-unit> test_hash_mismatch_rejected (test_replay_query.ReplayQueryTests.test_hash_mismatch_rejected) ... /build/tmpgkmgzg8_/out/query-result.json
+bcenv-python-unit> ok
+bcenv-python-unit> test_input_mutation_rejected (test_replay_query.ReplayQueryTests.test_input_mutation_rejected) ... /build/tmprwd5swtg/out/query-result.json
+bcenv-python-unit> ok
+bcenv-python-unit> test_invalid_parameters_reject_before_output (test_replay_query.ReplayQueryTests.test_invalid_parameters_reject_before_output) ... ok
+bcenv-python-unit> test_replay_must_be_regular_file (test_replay_query.ReplayQueryTests.test_replay_must_be_regular_file) ... ok
+bcenv-python-unit> test_timeout_not_completed (test_replay_query.ReplayQueryTests.test_timeout_not_completed) ... /build/tmpxik408ko/out/query-result.json
+bcenv-python-unit> ok
+bcenv-python-unit> test_valid_capped_query_success_with_artifact (test_replay_query.ReplayQueryTests.test_valid_capped_query_success_with_artifact) ... /build/tmpbyfsc123/out/query-result.json
+bcenv-python-unit> ok
+bcenv-python-unit> test_adapter_run_binding_survives_restart_and_v1_still_withholds (test_replay_route.ReplayRouteTests.test_adapter_run_binding_survives_restart_and_v1_still_withholds) ... ok
+bcenv-python-unit> test_atomic_completion_retry_and_changed_batch_conflict (test_replay_route.ReplayRouteTests.test_atomic_completion_retry_and_changed_batch_conflict) ... ok
+bcenv-python-unit> test_atomic_submit_binding_and_normalized_idempotency_restart (test_replay_route.ReplayRouteTests.test_atomic_submit_binding_and_normalized_idempotency_restart) ... ok
+bcenv-python-unit> test_configuration_init_races_and_version_drift (test_replay_route.ReplayRouteTests.test_configuration_init_races_and_version_drift) ... ok
+bcenv-python-unit> test_controller_complete_envelopes_and_total_budget (test_replay_route.ReplayRouteTests.test_controller_complete_envelopes_and_total_budget) ... ok
+bcenv-python-unit> test_cross_owner_run_submission_and_guessed_handles_are_uniform (test_replay_route.ReplayRouteTests.test_cross_owner_run_submission_and_guessed_handles_are_uniform) ... ok
+bcenv-python-unit> test_exact_route_completion_repeat_after_expiry_is_not_new_publication (test_replay_route.ReplayRouteTests.test_exact_route_completion_repeat_after_expiry_is_not_new_publication) ... ok
+bcenv-python-unit> test_expiry_during_callback_fences_result_and_explicit_requery (test_replay_route.ReplayRouteTests.test_expiry_during_callback_fences_result_and_explicit_requery) ... ok
+bcenv-python-unit> test_failed_registration_and_expiry_during_prepare_leave_no_orphans (test_replay_route.ReplayRouteTests.test_failed_registration_and_expiry_during_prepare_leave_no_orphans) ... ok
+bcenv-python-unit> test_flat_schema_default_v1_and_registry_selection (test_replay_route.ReplayRouteTests.test_flat_schema_default_v1_and_registry_selection) ... ok
+bcenv-python-unit> test_identical_source_bytes_charge_full_logical_capacity (test_replay_route.ReplayRouteTests.test_identical_source_bytes_charge_full_logical_capacity) ... ok
+bcenv-python-unit> test_invalid_source_is_bound_terminal_but_never_replayable (test_replay_route.ReplayRouteTests.test_invalid_source_is_bound_terminal_but_never_replayable) ... ok
+bcenv-python-unit> test_legacy_unbound_and_legacy_finish_cannot_retroactively_register (test_replay_route.ReplayRouteTests.test_legacy_unbound_and_legacy_finish_cannot_retroactively_register) ... ok
+bcenv-python-unit> test_malformed_registration_metadata_never_invokes_provider (test_replay_route.ReplayRouteTests.test_malformed_registration_metadata_never_invokes_provider) ... ok
+bcenv-python-unit> test_manifest_wide_ledger_clock_and_ttl_use_bounded_route_integers (test_replay_route.ReplayRouteTests.test_manifest_wide_ledger_clock_and_ttl_use_bounded_route_integers) ... ok
+bcenv-python-unit> test_provider_exception_malformed_or_wrong_echo_never_publishes (test_replay_route.ReplayRouteTests.test_provider_exception_malformed_or_wrong_echo_never_publishes) ... ok
+bcenv-python-unit> test_restart_pages_exact_progress_to_eof_and_no_sensitive_fields (test_replay_route.ReplayRouteTests.test_restart_pages_exact_progress_to_eof_and_no_sensitive_fields) ... ok
+bcenv-python-unit> test_rollback_terminalizes_attempt_and_persists_across_connection (test_replay_route.ReplayRouteTests.test_rollback_terminalizes_attempt_and_persists_across_connection) ... ok
+bcenv-python-unit> test_same_page_requery_fingerprint_and_conflict (test_replay_route.ReplayRouteTests.test_same_page_requery_fingerprint_and_conflict) ... ok
+bcenv-python-unit> test_second_projection_rejects_boolean_manifest_offset_and_false_coverage (test_replay_route.ReplayRouteTests.test_second_projection_rejects_boolean_manifest_offset_and_false_coverage) ... ok
+bcenv-python-unit> test_source_and_view_expiry_never_reopen_after_restart (test_replay_route.ReplayRouteTests.test_source_and_view_expiry_never_reopen_after_restart) ... ok
+bcenv-python-unit> test_source_result_policy_drift_fails_closed (test_replay_route.ReplayRouteTests.test_source_result_policy_drift_fails_closed) ... ok
+bcenv-python-unit> test_stale_generation_and_concurrent_active_limit (test_replay_route.ReplayRouteTests.test_stale_generation_and_concurrent_active_limit) ... ok
+bcenv-python-unit> test_storage_failure_rolls_back_terminal_and_sources_atomically (test_replay_route.ReplayRouteTests.test_storage_failure_rolls_back_terminal_and_sources_atomically) ... ok
+bcenv-python-unit> test_strict_arguments_and_closed_second_projection (test_replay_route.ReplayRouteTests.test_strict_arguments_and_closed_second_projection) ... ok
+bcenv-python-unit> test_tiny_attempt_and_view_caps_fail_explicitly_not_eof (test_replay_route.ReplayRouteTests.test_tiny_attempt_and_view_caps_fail_explicitly_not_eof) ... ok
+bcenv-python-unit> test_triggers_and_blob_integrity_and_guarded_submit_configuration (test_replay_route.ReplayRouteTests.test_triggers_and_blob_integrity_and_guarded_submit_configuration) ... ok
+bcenv-python-unit> test_uncertain_publication_has_no_automatic_retry_or_failure_write (test_replay_route.ReplayRouteTests.test_uncertain_publication_has_no_automatic_retry_or_failure_write) ... ok
+bcenv-python-unit> test_v1_dispatch_never_opens_v2_and_unknown_handles_fail_first (test_replay_route.ReplayRouteTests.test_v1_dispatch_never_opens_v2_and_unknown_handles_fail_first) ... ok
+bcenv-python-unit> test_valid_controller_six_tool_flow_retrieves_multiple_pages (test_replay_route.ReplayRouteTests.test_valid_controller_six_tool_flow_retrieves_multiple_pages) ... ok
+bcenv-python-unit> test_candidate_strings_cannot_select_model_endpoint_effort_or_registry (test_responses_transport.ResponsesTests.test_candidate_strings_cannot_select_model_endpoint_effort_or_registry) ... ok
+bcenv-python-unit> test_commentary_can_precede_exactly_one_final_message (test_responses_transport.ResponsesTests.test_commentary_can_precede_exactly_one_final_message) ... ok
+bcenv-python-unit> test_configuration_errors_and_closed_error_constructor (test_responses_transport.ResponsesTests.test_configuration_errors_and_closed_error_constructor) ... ok
+bcenv-python-unit> test_controller_end_to_end_and_stateless_opaque_continuation (test_responses_transport.ResponsesTests.test_controller_end_to_end_and_stateless_opaque_continuation) ... ok
+bcenv-python-unit> test_controller_still_checks_semantic_arguments_before_side_effects (test_responses_transport.ResponsesTests.test_controller_still_checks_semantic_arguments_before_side_effects) ... ok
+bcenv-python-unit> test_counter_failures_count_toward_attempt_budget_without_exchange (test_responses_transport.ResponsesTests.test_counter_failures_count_toward_attempt_budget_without_exchange) ... ok
+bcenv-python-unit> test_cross_turn_function_and_reasoning_item_ids_are_unique (test_responses_transport.ResponsesTests.test_cross_turn_function_and_reasoning_item_ids_are_unique) ... ok
+bcenv-python-unit> test_custom_controller_schema_limits_must_match (test_responses_transport.ResponsesTests.test_custom_controller_schema_limits_must_match) ... ok
+bcenv-python-unit> test_every_fixed_function_maps_to_typed_call (test_responses_transport.ResponsesTests.test_every_fixed_function_maps_to_typed_call) ... ok
+bcenv-python-unit> test_exchange_receives_only_remaining_attempt_time (test_responses_transport.ResponsesTests.test_exchange_receives_only_remaining_attempt_time) ... ok
+bcenv-python-unit> test_failed_attempt_does_not_poison_committed_output_ids (test_responses_transport.ResponsesTests.test_failed_attempt_does_not_poison_committed_output_ids) ... ok
+bcenv-python-unit> test_invalid_and_regressing_clocks_fail_with_closed_errors (test_responses_transport.ResponsesTests.test_invalid_and_regressing_clocks_fail_with_closed_errors) ... ok
+bcenv-python-unit> test_no_network_credential_subprocess_or_real_launch (test_responses_transport.ResponsesTests.test_no_network_credential_subprocess_or_real_launch) ... ok
+bcenv-python-unit> test_no_partial_batch_dispatch (test_responses_transport.ResponsesTests.test_no_partial_batch_dispatch) ... ok
+bcenv-python-unit> test_output_shapes_fields_phases_and_plaintext_reasoning_are_closed (test_responses_transport.ResponsesTests.test_output_shapes_fields_phases_and_plaintext_reasoning_are_closed) ... ok
+bcenv-python-unit> test_per_request_and_cumulative_byte_limits (test_responses_transport.ResponsesTests.test_per_request_and_cumulative_byte_limits) ... ok
+bcenv-python-unit> test_provider_model_and_actual_tier_must_match_pinned_configuration (test_responses_transport.ResponsesTests.test_provider_model_and_actual_tier_must_match_pinned_configuration) ... ok
+bcenv-python-unit> test_registry_and_initial_context_cannot_change (test_responses_transport.ResponsesTests.test_registry_and_initial_context_cannot_change) ... ok
+bcenv-python-unit> test_request_and_token_reservations_exhaust_on_errors_without_refunds (test_responses_transport.ResponsesTests.test_request_and_token_reservations_exhaust_on_errors_without_refunds) ... ok
+bcenv-python-unit> test_response_parser_and_error_payloads_are_sanitized_and_bounded (test_responses_transport.ResponsesTests.test_response_parser_and_error_payloads_are_sanitized_and_bounded) ... ok
+bcenv-python-unit> test_retry_cannot_change_payload_even_after_unknown_outcome (test_responses_transport.ResponsesTests.test_retry_cannot_change_payload_even_after_unknown_outcome) ... ok
+bcenv-python-unit> test_six_strict_tools_pinned_model_and_exact_context (test_responses_transport.ResponsesTests.test_six_strict_tools_pinned_model_and_exact_context) ... ok
+bcenv-python-unit> test_soft_deadlines_and_reentrant_callbacks_cannot_dispatch (test_responses_transport.ResponsesTests.test_soft_deadlines_and_reentrant_callbacks_cannot_dispatch) ... ok
+bcenv-python-unit> test_status_truncation_and_exhaustion_never_dispatch_partial_output (test_responses_transport.ResponsesTests.test_status_truncation_and_exhaustion_never_dispatch_partial_output) ... ok
+bcenv-python-unit> test_token_count_fixture_must_bind_all_request_bytes (test_responses_transport.ResponsesTests.test_token_count_fixture_must_bind_all_request_bytes) ... ok
+bcenv-python-unit> test_transcript_prefix_call_and_result_are_not_replaceable (test_responses_transport.ResponsesTests.test_transcript_prefix_call_and_result_are_not_replaceable) ... ok
+bcenv-python-unit> test_unknown_multiple_duplicate_and_malformed_calls_fail_closed (test_responses_transport.ResponsesTests.test_unknown_multiple_duplicate_and_malformed_calls_fail_closed) ... ok
+bcenv-python-unit> test_unknown_outcomes_and_explicit_retries_reserve_full_ceiling (test_responses_transport.ResponsesTests.test_unknown_outcomes_and_explicit_retries_reserve_full_ceiling) ... ok
+bcenv-python-unit> test_usage_must_be_complete_bounded_and_internally_consistent (test_responses_transport.ResponsesTests.test_usage_must_be_complete_bounded_and_internally_consistent) ... ok
+bcenv-python-unit> test_bad_reports_fail_closed_and_nonterminal_reports_are_rejected (test_scrimmage.FacadeTests.test_bad_reports_fail_closed_and_nonterminal_reports_are_rejected) ... ok
+bcenv-python-unit> test_concurrent_pending_and_rate_limits_are_atomic (test_scrimmage.FacadeTests.test_concurrent_pending_and_rate_limits_are_atomic) ... ok
+bcenv-python-unit> test_pending_and_total_record_quotas (test_scrimmage.FacadeTests.test_pending_and_total_record_quotas) ... ok
+bcenv-python-unit> test_quota_configuration_validation (test_scrimmage.FacadeTests.test_quota_configuration_validation) ... ok
+bcenv-python-unit> test_rate_counts_rejections_and_recovers_after_window (test_scrimmage.FacadeTests.test_rate_counts_rejections_and_recovers_after_window) ... ok
+bcenv-python-unit> test_rejected_intake_is_terminal_and_not_a_game_loss (test_scrimmage.FacadeTests.test_rejected_intake_is_terminal_and_not_a_game_loss) ... ok
+bcenv-python-unit> test_replay_never_exposes_raw_bytes_or_paths (test_scrimmage.FacadeTests.test_replay_never_exposes_raw_bytes_or_paths) ... ok
+bcenv-python-unit> test_result_and_receipt_mutation_does_not_change_stored_state (test_scrimmage.FacadeTests.test_result_and_receipt_mutation_does_not_change_stored_state) ... ok
+bcenv-python-unit> test_results_are_owner_scoped_and_ids_not_content_hashes (test_scrimmage.FacadeTests.test_results_are_owner_scoped_and_ids_not_content_hashes) ... ok
+bcenv-python-unit> test_shared_read_limit_counts_missing_ids_and_replay (test_scrimmage.FacadeTests.test_shared_read_limit_counts_missing_ids_and_replay) ... ok
+bcenv-python-unit> test_submit_read_finish_and_no_scheduler_side_effects (test_scrimmage.FacadeTests.test_submit_read_finish_and_no_scheduler_side_effects) ... ok
+bcenv-python-unit> test_missing_forged_expired_or_all_true_attestations_cannot_open_gate (test_scrimmage.HeldoutGateTests.test_missing_forged_expired_or_all_true_attestations_cannot_open_gate) ... ok
+bcenv-python-unit> test_no_verifier_or_enabled_flag_is_supported (test_scrimmage.HeldoutGateTests.test_no_verifier_or_enabled_flag_is_supported) ... ok
+bcenv-python-unit> test_archive_count_expansion_size_and_path_limits (test_scrimmage.IntakeTests.test_archive_count_expansion_size_and_path_limits) ... ok
+bcenv-python-unit> test_content_identity_ignores_archive_order_compression_and_timestamp (test_scrimmage.IntakeTests.test_content_identity_ignores_archive_order_compression_and_timestamp) ... ok
+bcenv-python-unit> test_crc_and_local_central_name_mismatch (test_scrimmage.IntakeTests.test_crc_and_local_central_name_mismatch) ... ok
+bcenv-python-unit> test_duplicate_and_case_ambiguous_files_or_directories (test_scrimmage.IntakeTests.test_duplicate_and_case_ambiguous_files_or_directories) ... ok
+bcenv-python-unit> test_embedded_nul_name (test_scrimmage.IntakeTests.test_embedded_nul_name) ... ok
+bcenv-python-unit> test_empty_archive_and_non_bytes (test_scrimmage.IntakeTests.test_empty_archive_and_non_bytes) ... ok
+bcenv-python-unit> test_empty_non_utf8_or_nul_source (test_scrimmage.IntakeTests.test_empty_non_utf8_or_nul_source) ... ok
+bcenv-python-unit> test_forged_small_entry_count_rejected_before_zipfile_allocates_records (test_scrimmage.IntakeTests.test_forged_small_entry_count_rejected_before_zipfile_allocates_records) ... ok
+bcenv-python-unit> test_generated_source_sized_inputs_fit_bounded_defaults (test_scrimmage.IntakeTests.test_generated_source_sized_inputs_fit_bounded_defaults) ... ok
+bcenv-python-unit> test_immutable_normalized_content (test_scrimmage.IntakeTests.test_immutable_normalized_content) ... ok
+bcenv-python-unit> test_invalid_packages (test_scrimmage.IntakeTests.test_invalid_packages) ... ok
+bcenv-python-unit> test_limits_reject_bool_zero_and_negative (test_scrimmage.IntakeTests.test_limits_reject_bool_zero_and_negative) ... ok
+bcenv-python-unit> test_metadata_channels_comments_extra_fields_and_unsupported_compression (test_scrimmage.IntakeTests.test_metadata_channels_comments_extra_fields_and_unsupported_compression) ... ok
+bcenv-python-unit> test_multipart_zip64_flags_and_declared_size_lies (test_scrimmage.IntakeTests.test_multipart_zip64_flags_and_declared_size_lies) ... ok
+bcenv-python-unit> test_path_surprises (test_scrimmage.IntakeTests.test_path_surprises) ... ok
+bcenv-python-unit> test_prefix_trailer_and_truncation (test_scrimmage.IntakeTests.test_prefix_trailer_and_truncation) ... ok
+bcenv-python-unit> test_symlink_fifo_socket_and_directory_attributes (test_scrimmage.IntakeTests.test_symlink_fifo_socket_and_directory_attributes) ... ok
+bcenv-python-unit> test_underdeclared_deflate_output_cannot_be_silently_truncated (test_scrimmage.IntakeTests.test_underdeclared_deflate_output_cannot_be_silently_truncated) ... ok
+bcenv-python-unit> test_valid_nested_package (test_scrimmage.IntakeTests.test_valid_nested_package) ... ok
+bcenv-python-unit> test_valid_stored_and_deflated (test_scrimmage.IntakeTests.test_valid_stored_and_deflated) ... ok
+bcenv-python-unit> test_trusted_scaffold_is_outside_competitor_package_inputs (test_scrimmage.PackagingTests.test_trusted_scaffold_is_outside_competitor_package_inputs) ... ok
+bcenv-python-unit> test_allowlist_strips_all_internal_fields_at_every_level (test_scrimmage.PublicBoundaryTests.test_allowlist_strips_all_internal_fields_at_every_level) ... ok
+bcenv-python-unit> test_bad_complete_evidence_never_becomes_loss_or_win (test_scrimmage.PublicBoundaryTests.test_bad_complete_evidence_never_becomes_loss_or_win) ... ok
+bcenv-python-unit> test_rejection_infrastructure_failure_and_accepted_distinct (test_scrimmage.PublicBoundaryTests.test_rejection_infrastructure_failure_and_accepted_distinct) ... ok
+bcenv-python-unit> test_response_bound_and_unknown_ids (test_scrimmage.PublicBoundaryTests.test_response_bound_and_unknown_ids) ... ok
+bcenv-python-unit> test_unknown_free_text_reasons_are_not_copied (test_scrimmage.PublicBoundaryTests.test_unknown_free_text_reasons_are_not_copied) ... ok
+bcenv-python-unit> test_base_exception_leaves_reserved_job_for_terminal_recovery (test_worker_lifecycle.WorkerLifecycleTests.test_base_exception_leaves_reserved_job_for_terminal_recovery) ... ok
+bcenv-python-unit> test_callback_exception_is_closed_terminal_failure_and_never_retried (test_worker_lifecycle.WorkerLifecycleTests.test_callback_exception_is_closed_terminal_failure_and_never_retried) ... ok
+bcenv-python-unit> test_clock_regression_during_callback_commits_failure_before_refusal (test_worker_lifecycle.WorkerLifecycleTests.test_clock_regression_during_callback_commits_failure_before_refusal) ... ok
+bcenv-python-unit> test_closed_failure_and_compile_rejection_receipts_never_get_scores (test_worker_lifecycle.WorkerLifecycleTests.test_closed_failure_and_compile_rejection_receipts_never_get_scores) ... ok
+bcenv-python-unit> test_concurrent_bridge_calls_invoke_worker_exactly_once (test_worker_lifecycle.WorkerLifecycleTests.test_concurrent_bridge_calls_invoke_worker_exactly_once) ... ok
+bcenv-python-unit> test_concurrent_terminal_write_wins_without_overwrite (test_worker_lifecycle.WorkerLifecycleTests.test_concurrent_terminal_write_wins_without_overwrite) ... ok
+bcenv-python-unit> test_constructor_and_real_launch_remain_closed (test_worker_lifecycle.WorkerLifecycleTests.test_constructor_and_real_launch_remain_closed) ... ok
+bcenv-python-unit> test_expiry_between_reserve_and_precheck_prevents_callback (test_worker_lifecycle.WorkerLifecycleTests.test_expiry_between_reserve_and_precheck_prevents_callback) ... ok
+bcenv-python-unit> test_expiry_during_callback_prevents_late_score (test_worker_lifecycle.WorkerLifecycleTests.test_expiry_during_callback_prevents_late_score) ... ok
+bcenv-python-unit> test_fixed_specification_and_exact_immutable_source_reach_callback (test_worker_lifecycle.WorkerLifecycleTests.test_fixed_specification_and_exact_immutable_source_reach_callback) ... ok
+bcenv-python-unit> test_precheck_does_not_consume_public_read_quota (test_worker_lifecycle.WorkerLifecycleTests.test_precheck_does_not_consume_public_read_quota) ... ok
+bcenv-python-unit> test_precheck_revalidates_source_integrity (test_worker_lifecycle.WorkerLifecycleTests.test_precheck_revalidates_source_integrity) ... ok
+bcenv-python-unit> test_receipt_bytes_utf8_depth_duplicate_keys_and_types_are_bounded (test_worker_lifecycle.WorkerLifecycleTests.test_receipt_bytes_utf8_depth_duplicate_keys_and_types_are_bounded) ... ok
+bcenv-python-unit> test_receipt_identity_mismatches_all_become_invalid_evidence (test_worker_lifecycle.WorkerLifecycleTests.test_receipt_identity_mismatches_all_become_invalid_evidence) ... ok
+bcenv-python-unit> test_stale_generation_between_reserve_and_precheck_prevents_callback (test_worker_lifecycle.WorkerLifecycleTests.test_stale_generation_between_reserve_and_precheck_prevents_callback) ... ok
+bcenv-python-unit> test_uncertain_commit_is_propagated_and_not_changed_into_failure_or_retried (test_worker_lifecycle.WorkerLifecycleTests.test_uncertain_commit_is_propagated_and_not_changed_into_failure_or_retried) ... ok
+bcenv-python-unit> test_unknown_private_fields_and_incorrect_single_game_counts_are_rejected (test_worker_lifecycle.WorkerLifecycleTests.test_unknown_private_fields_and_incorrect_single_game_counts_are_rejected) ... ok
+bcenv-python-unit> test_valid_fabricated_receipt_completes_one_synthetic_job (test_worker_lifecycle.WorkerLifecycleTests.test_valid_fabricated_receipt_completes_one_synthetic_job) ... ok
+bcenv-python-unit> test_wrong_owner_and_unqueued_job_prevent_callback (test_worker_lifecycle.WorkerLifecycleTests.test_wrong_owner_and_unqueued_job_prevent_callback) ... ok
+bcenv-python-unit> 
+bcenv-python-unit> ----------------------------------------------------------------------
+bcenv-python-unit> Ran 286 tests in 3.516s
+bcenv-python-unit> 
+bcenv-python-unit> OK
+building '/nix/store/mcf7wil3k35w1ad9w1svf87wi6jscklq-bcenv-replay-parser.drv'...
+bcenv-replay-parser> ReplaySummaryTest: PASS (synthetic schema, net resources, movement/actions, team slots, incomplete, malformed, gzip truncation, bounds)
+bcenv-replay-parser> ReplayQueryTest: PASS (late raw vectors, identity, inclusive filters, cap, multi-match, gaps, malformed tails, provenance)
+building '/nix/store/zy73pavmw8h7743k6c6ahvnylyafjlan-bcenv-replay-parser.drv'...
+bcenv-replay-parser> ReplaySummaryTest: PASS (synthetic schema, net resources, movement/actions, team slots, incomplete, malformed, gzip truncation, bounds)
+bcenv-replay-parser> ReplayQueryTest: PASS (late raw vectors, identity, inclusive filters, cap, multi-match, gaps, malformed tails, provenance)
+building '/nix/store/i4h67p771jy5fb2lj5j5ah05nlrr9b02-bcenv-replay-query.drv'...
+bcenv-replay-query> Packaged replay query integration: PASS
+building '/nix/store/s7a11pzmhl04ma2xnalpblrq7qwsrnvw-bcenv-replay-query.drv'...
+bcenv-replay-query> Packaged replay query integration: PASS
+building '/nix/store/pzvviv3k8j8a4r9hk773ybq1d5lsn4yv-bcenv-replay-version-isolation.drv'...
+warning: The check omitted these incompatible systems: aarch64-linux
+Use '--all-systems' to check all.

@@ -1,0 +1,17 @@
+{
+  "commit": "59242ba9935d777f787596adfc0b2b1efc34650d",
+  "pr": "https://github.com/anicolao/bcenv/pull/15",
+  "ci": "https://github.com/anicolao/bcenv/actions/runs/39353978881/job/118404427565",
+  "reviewed_files_match_commit": 8,
+  "portable_rerun_passed": 27,
+  "new_public_games": 0,
+  "provider_calls": 0,
+  "real_launch_supported": false,
+  "composed_fixture": {
+    "pages": 5,
+    "records": 196,
+    "tool_calls": 11,
+    "maximum_envelope_bytes": 11476,
+    "aggregate_output_bytes": 50406
+  }
+}

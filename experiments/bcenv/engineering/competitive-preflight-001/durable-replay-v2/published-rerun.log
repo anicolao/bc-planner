@@ -1,0 +1,37 @@
+this derivation will be built:
+  /nix/store/5sbsddmx10nhy5jx8bgx1drdw4q04xl3-bcenv-published-replay-route-independent-review.drv
+building '/nix/store/5sbsddmx10nhy5jx8bgx1drdw4q04xl3-bcenv-published-replay-route-independent-review.drv'...
+bcenv-published-replay-route-independent-review> test_01_fresh_database_eight_process_init_submit (__main__.Review.test_01_fresh_database_eight_process_init_submit) ... ok
+bcenv-published-replay-route-independent-review> test_02_incompatible_initializers_commit_one_complete_configuration (__main__.Review.test_02_incompatible_initializers_commit_one_complete_configuration) ... ok
+bcenv-published-replay-route-independent-review> test_03_atomic_submit_binding_failure_has_no_payload_orphans (__main__.Review.test_03_atomic_submit_binding_failure_has_no_payload_orphans) ... ok
+bcenv-published-replay-route-independent-review> test_04_second_registration_failure_rolls_back_entire_completion (__main__.Review.test_04_second_registration_failure_rolls_back_entire_completion) ... ok
+bcenv-published-replay-route-independent-review> test_05_expired_exact_repeat_never_reruns_provider_or_changes_rows (__main__.Review.test_05_expired_exact_repeat_never_reruns_provider_or_changes_rows) ... ok
+bcenv-published-replay-route-independent-review> test_06_legacy_and_other_run_guesses_have_no_existence_oracle (__main__.Review.test_06_legacy_and_other_run_guesses_have_no_existence_oracle) ... ok
+bcenv-published-replay-route-independent-review> test_07_legacy_finish_never_gains_replay (__main__.Review.test_07_legacy_finish_never_gains_replay) ... ok
+bcenv-published-replay-route-independent-review> test_08_supported_clock_and_large_ttl_manifest_numbers (__main__.Review.test_08_supported_clock_and_large_ttl_manifest_numbers) ... ok
+bcenv-published-replay-route-independent-review> test_09_fractional_rollback_via_legacy_api_fences_page_durably (__main__.Review.test_09_fractional_rollback_via_legacy_api_fences_page_durably) ... ok
+bcenv-published-replay-route-independent-review> test_10_stale_generation_after_retry_cannot_publish (__main__.Review.test_10_stale_generation_after_retry_cannot_publish) ... ok
+bcenv-published-replay-route-independent-review> test_11_cross_submission_view_and_altered_reservation_never_publish (__main__.Review.test_11_cross_submission_view_and_altered_reservation_never_publish) ... ok
+bcenv-published-replay-route-independent-review> test_12_unknown_reservation_commit_has_no_provider_or_retry (__main__.Review.test_12_unknown_reservation_commit_has_no_provider_or_retry) ... ok
+bcenv-published-replay-route-independent-review> test_13_actual_commit_uncertainty_preserves_unknown_outcome (__main__.Review.test_13_actual_commit_uncertainty_preserves_unknown_outcome) ... ok
+bcenv-published-replay-route-independent-review> test_14_unknown_completion_commit_exact_inspection_no_second_provider (__main__.Review.test_14_unknown_completion_commit_exact_inspection_no_second_provider) ... ok
+bcenv-published-replay-route-independent-review> test_15_failed_page_preserves_first_fingerprint_and_charge (__main__.Review.test_15_failed_page_preserves_first_fingerprint_and_charge) ... ok
+bcenv-published-replay-route-independent-review> test_16_logical_source_cap_equal_and_distinct_guesses_fail_equally (__main__.Review.test_16_logical_source_cap_equal_and_distinct_guesses_fail_equally) ... ok
+bcenv-published-replay-route-independent-review> test_17_source_integrity_changed_during_callback_never_releases_page (__main__.Review.test_17_source_integrity_changed_during_callback_never_releases_page) ... ok
+bcenv-published-replay-route-independent-review> test_18_exact_v1_registry_flat_strict_v2_and_transport_binding (__main__.Review.test_18_exact_v1_registry_flat_strict_v2_and_transport_binding) ... ok
+bcenv-published-replay-route-independent-review> test_19_strict_inactive_fields_boolean_offset_and_malformed_envelopes (__main__.Review.test_19_strict_inactive_fields_boolean_offset_and_malformed_envelopes) ... ok
+bcenv-published-replay-route-independent-review> test_20_v2_complete_envelope_cap_and_exact_aggregate_accounting (__main__.Review.test_20_v2_complete_envelope_cap_and_exact_aggregate_accounting) ... ok
+bcenv-published-replay-route-independent-review> test_21_composed_offline_responses_capture_ledger_and_full_pagination (__main__.Review.test_21_composed_offline_responses_capture_ledger_and_full_pagination) ... ok
+bcenv-published-replay-route-independent-review> test_22_eight_process_page_admission_charges_exactly_one_attempt (__main__.Review.test_22_eight_process_page_admission_charges_exactly_one_attempt) ... COMPOSED_SYNTHETIC_EVIDENCE {"envelope_max": 11476, "output_bytes": 50406, "pages": 5, "records": 196, "tool_calls": 11}
+bcenv-published-replay-route-independent-review> ok
+bcenv-published-replay-route-independent-review> test_23_failed_attempt_quota_survives_restart_and_blocks_callback (__main__.Review.test_23_failed_attempt_quota_survives_restart_and_blocks_callback) ... ok
+bcenv-published-replay-route-independent-review> test_24_expired_source_stays_charged_and_immutable (__main__.Review.test_24_expired_source_stays_charged_and_immutable) ... ok
+bcenv-published-replay-route-independent-review> test_25_default_v1_with_v2_adapter_still_withholds (__main__.Review.test_25_default_v1_with_v2_adapter_still_withholds) ... ok
+bcenv-published-replay-route-independent-review> test_26_minimum_payload_budget_keeps_exact_pagination_progress (__main__.Review.test_26_minimum_payload_budget_keeps_exact_pagination_progress) ... ok
+bcenv-published-replay-route-independent-review> test_27_explicit_3013_profile_is_bound_without_version_inference (__main__.Review.test_27_explicit_3013_profile_is_bound_without_version_inference) ... ok
+bcenv-published-replay-route-independent-review> 
+bcenv-published-replay-route-independent-review> ----------------------------------------------------------------------
+bcenv-published-replay-route-independent-review> Ran 27 tests in 0.551s
+bcenv-published-replay-route-independent-review> 
+bcenv-published-replay-route-independent-review> OK
+/nix/store/cxs6qq6i1f0gpmnqjxd8iaxf2yfqx8qf-bcenv-published-replay-route-independent-review

@@ -59,3 +59,10 @@ access must use the separately tested full capability boundary, not these hashes
 namespace sources to the independent review snapshot, and checks recorded replay
 example byte bounds/scope. These offline checks execute no bot, sandbox, parser
 or network request. They detect accidental drift, not coordinated record rewrites.
+
+## Reviewed component composition
+
+[Composition evidence](composition/README.md) records a later 190-test build
+combining the public runtime with service, ledger and offline Responses modules.
+It includes exact source hashes and package-exclusion inspection, with no new game
+or model invocation. It is a disposable uncommitted integration, not a release.

@@ -1,6 +1,6 @@
 # Competitive program checkpoint
 
-Updated 2026-10-20 00:11 UTC. **The competitive goal is not achieved.** No new
+Updated 2026-10-20 00:33 UTC. **The competitive goal is not achieved.** No new
 competitor model trial, private benchmark selection or deployed service exists.
 [Roadmap](2023-competitive-program.md) and
 [boundary design](2023-isolated-scrimmage-architecture.md) remain authoritative.
@@ -10,7 +10,7 @@ competitor model trial, private benchmark selection or deployed service exists.
 - Planner [PR12](https://github.com/anicolao/bc-planner/pull/12), branch
   `plan/competitive-bc23-program`, stacked on PR11: roadmap, threat model and
   [public opponent provenance](2023-public-opponent-candidates.md). CI passed at
-  `6da144d`. Prior experiments and evidence remain unchanged.
+  `448d609`. Prior experiments and evidence remain unchanged.
 - bcenv [PR7](https://github.com/anicolao/bcenv/pull/7), branch
   `feat/scrimmage-contract`, stacked on PR6: bounded source intake/public results,
   fixed-tool synthetic controller and versioned gameplay-feedback projection.
@@ -22,6 +22,19 @@ competitor model trial, private benchmark selection or deployed service exists.
   Head `f3e37cb`; all 13 x86_64 Nix checks and CI pass. aarch64 untested.
   Private 3.0.14 release artifacts returned HTTP403; no access bypass attempted.
   Public source rule equivalence does not establish identical finals binaries/maps.
+
+- bcenv [PR9](https://github.com/anicolao/bcenv/pull/9), branch
+  `feat/durable-service-ledger`, stacked on PR7: SQLite source ownership,
+  normalized idempotency, logical quotas, reservation fencing and fail-closed
+  expiry/clock recovery. Head `df7a20d`; 160 tests and CI pass. Independent
+  review adds 13 probes. Worker fencing does not terminate processes or enforce
+  physical resources; synthetic principals are not authentication.
+- bcenv [PR10](https://github.com/anicolao/bcenv/pull/10), branch
+  `feat/responses-transport`, separately stacked on PR7: offline Responses codec
+  for gpt-6.1-sol/high and the six fixed tools. Head `be041d3`; 155 tests and CI pass,
+  with 8 independent regressions and 104 malformed-provider cases. The review
+  fixed continuation IDs, reported model/tier checks and invalid clocks. There
+  is no HTTP sender, credential access, live count or provider call.
 
 No PR is merged. Do not silently combine independently stacked branches without
 retesting the integrated runtime and trusted services.
@@ -71,23 +84,35 @@ Trusted non-dumpable init now retains PID1 and launches candidate PID2. This is
 fixture-only evidence; aggregate resource containment, fresh/concurrent workspace
 lifecycle and full production policy remain unpassed. No real secret is used.
 
-A supported model inference transport with only the fixed controller tools is
-still missing. Credentials must remain outside the candidate sandbox. The current
+The offline transport codec is reviewed; a supported live inference connection
+with only the fixed controller tools is still missing. Credentials must remain outside the candidate sandbox. The current
 native tools and blocked CLI cannot be substituted for that capability boundary.
 No provider account, key, paid infrastructure or persistent access was created.
 
+## Combined build checkpoint
+
+A local, uncommitted composition of PR8's public runtime and the reviewed
+PR7/9/10 service files passes **190 Python tests** and builds the competitor
+package. Inspection finds none of the five trusted service implementation files
+inside that package. [Exact commits, hashes and build log](experiments/bcenv/engineering/competitive-preflight-001/composition/README.md)
+are retained. This is not a merged/frozen release, full engine requalification,
+new game, model trial or complete lifecycle integration.
+
 ## Resume next
 
-1. Finish publishing compact preflight evidence and reviewed executable fixture
-   adapter/tests; preserve failed probes and exact fixes, not just passing totals.
-2. Implement and independently review durable ownership/job reservation,
-   idempotency/quotas and crash recovery in the separate service worktree. Use
-   synthetic principals only; this does not create authentication or a listener.
-3. [Named deployment options](2023-supported-deployment-options.md) now document
-   official model/runtime capabilities and bounded integration costs. The user
-   decision/setup is pending; no paid resource, credential or security change is
-   authorized by that report. Continue synthetic-safe engineering meanwhile.
-4. Integrate and retest runtime/services only after their separate changes are
-   reviewed. Keep heldout and real-model launch gates closed until the complete
-   deployed boundary passes, then freeze a new trial protocol before a fresh
-   autonomous attempt. Provisioning alone does not complete the engineering.
+1. Finish the synthetic source-export receipt to immutable run-owned artifact to
+   durable-job adapter. Do not treat model stdout, paths or claimed identifiers
+   as trusted export authority. Test cross-owner/run handles, mutation, restart,
+   idempotency and closed failures. The six model tools remain unchanged.
+2. Independently review that integration, compose it with the offline transport,
+   and rerun the pinned tests. Actual sandbox export, authenticated routing,
+   durable model accounting, physical resource budgets and worker supervision
+   remain separate implementation/acceptance gates.
+3. [Named deployment options](2023-supported-deployment-options.md) document
+   official capabilities and a small integration cost estimate. The setup
+   choice remains pending; no resource, credential, security change or spending
+   is authorized by that report. Continue synthetic-safe engineering meanwhile.
+4. Keep heldout and real-model launch gates closed until the deployed boundary
+   passes. Then freeze a prospective trial protocol before a fresh autonomous
+   attempt. Provisioning and these passing component tests do not complete the
+   engineering or establish competitive strength.

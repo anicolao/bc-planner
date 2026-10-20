@@ -1,0 +1,19 @@
+{
+  "schema": "bcenv.synthetic-sandbox-probe.v1",
+  "observed_utc_date": "2026-10-19",
+  "scope": "fresh synthetic fixture; existing executor; no model invocation",
+  "namespace_creation": {"status": "passed_narrow_probe", "exit_code": 0},
+  "sandbox_launch": {
+    "status": "blocked",
+    "exit_code": 1,
+    "stderr": "bwrap: loopback: Failed to create NETLINK_ROUTE socket: Operation not permitted",
+    "candidate_output_observed": false,
+    "retries": 0
+  },
+  "closure": {"paths": 22, "registered_nar_bytes": 209890448},
+  "adversarial_execution_tests": "not_run_startup_failed",
+  "aggregate_resource_enforcement": "unverified_no_cgroup_interface_exposed",
+  "fixed_sandbox_adapter": "not_implemented_launch_gate_failed",
+  "real_inference": "not_invoked_separately_blocked",
+  "isolation_claim": "not_accepted"
+}

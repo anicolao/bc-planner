@@ -1,0 +1,23 @@
+{
+  "schema": "bc23.runtime-files.v1",
+  "adapterStorePath": "/nix/store/wzmq4kaajn9bizwmy4x6n0hbjn97v46a-bcenv-2023-0.1.0",
+  "engineStorePath": "/nix/store/gyyg1xgc61p759d7qw9w28hgh7ip6nvk-battlecode23-engine-3.0.13",
+  "copiedRuntimeMatchesNamedStoreOutput": true,
+  "publishedFinalPackageEquivalence": "not asserted",
+  "files": {
+    "bcenv": "673c02eac4bc4d4c6bcca6a9c6415c128b1ca5fa305514fb29d4d47aa70c59db",
+    "root/nix/store/wzmq4kaajn9bizwmy4x6n0hbjn97v46a-bcenv-2023-0.1.0/lib/bcenv/seasons/2023/replay/ReplayQuery.java": "971b1fba90fabe066d8d7a291a391267ce2dd97d85b2265dd4b83b050a6b6311",
+    "root/nix/store/wzmq4kaajn9bizwmy4x6n0hbjn97v46a-bcenv-2023-0.1.0/lib/bcenv/seasons/2023/replay/ReplayQueryTest.java": "567a8134e653e98bfe9a5363e878f76e5ac2743aa610fff43d213ac8a488d156",
+    "root/nix/store/wzmq4kaajn9bizwmy4x6n0hbjn97v46a-bcenv-2023-0.1.0/lib/bcenv/seasons/2023/replay/ReplaySummary.java": "ad13c29639d0893e744bce0e04736c8c84959a439d0b0843d7f8a3b44cb2c349",
+    "root/nix/store/wzmq4kaajn9bizwmy4x6n0hbjn97v46a-bcenv-2023-0.1.0/lib/bcenv/seasons/2023/replay/ReplaySummaryTest.java": "212de9c026ae84bf84a313f345fe60e62e7564e36e0306509c535b31207a2708",
+    "root/opt/bcenv/replay-classes/ReplayQuery$Body.class": "d11f40127702f96a206bc830c52dfef22888fedd0215da132f531bca3da91c68",
+    "root/opt/bcenv/replay-classes/ReplayQuery$Collector.class": "f01aae4364d7536077de046a7cbc8d912272ecb2ff916789462ea5bef9b1a6d2",
+    "root/opt/bcenv/replay-classes/ReplayQuery$Selection.class": "f6d3d9111775cc6f96ed952b718cf10020655f95de9f906e41868920f55701c3",
+    "root/opt/bcenv/replay-classes/ReplayQuery.class": "d3cae30805a811766b70c68de13d2b7544b30da987adb11ef2b880aed0242130",
+    "root/opt/bcenv/replay-classes/ReplaySummary$Match.class": "e1c30883072cabecd2cbb46d0494fa2c8c20af17152d6cdf574fe56c8db28bff",
+    "root/opt/bcenv/replay-classes/ReplaySummary.class": "46f8b9a8dd908c3ca01d7b614c07539ebe8ea39318d1aaf74eb4eea4681e193a",
+    "root/opt/bcenv/runtime/artifacts.py": "a7d7b8ba7266ed53855b904fd85c60996a43deba0cf78d6231221c9ec10a62fa",
+    "root/opt/bcenv/seasons/2023/adapter.py": "a3bc74dfaf17e9873bfd143a97496f9baf70f111bf28f753dc57b98a957ed249",
+    "root/opt/launch.py": "327068683547c1447001f382f4f37cda8f831752ec489bf9849ff1c6123a35d9"
+  }
+}

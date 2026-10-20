@@ -1,0 +1,13 @@
+test_exactly_one_new_game_and_two_public_sources (test_bridge.PersistedIntegrationTests.test_exactly_one_new_game_and_two_public_sources) ... ok
+test_frozen_build_observer_seals_still_match (test_bridge.PersistedIntegrationTests.test_frozen_build_observer_seals_still_match) ... ok
+test_invalid_java_was_real_compiler_failure_not_a_loss (test_bridge.PersistedIntegrationTests.test_invalid_java_was_real_compiler_failure_not_a_loss) ... ok
+test_pinned_runtime_and_public_response_are_unchanged_and_bounded (test_bridge.PersistedIntegrationTests.test_pinned_runtime_and_public_response_are_unchanged_and_bounded) ... ok
+test_real_match_copy_without_winner_never_becomes_a_score (test_bridge.PersistedIntegrationTests.test_real_match_copy_without_winner_never_becomes_a_score) ... ok
+test_real_match_replay_and_output_seals_still_match (test_bridge.PersistedIntegrationTests.test_real_match_replay_and_output_seals_still_match) ... ok
+test_tampered_copy_of_real_build_is_rejected (test_bridge.PersistedIntegrationTests.test_tampered_copy_of_real_build_is_rejected) ... ok
+test_traversal_was_rejected_before_compile (test_bridge.PersistedIntegrationTests.test_traversal_was_rejected_before_compile) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.105s
+
+OK

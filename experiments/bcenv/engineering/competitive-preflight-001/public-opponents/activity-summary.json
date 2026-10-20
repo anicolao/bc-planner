@@ -1,0 +1,487 @@
+[
+  {
+    "match": "smoke-lectureplayer-A",
+    "candidate": "lectureplayer",
+    "candidateSide": "A",
+    "roundRange": [
+      1,
+      50
+    ],
+    "queryReturnedRows": 1611,
+    "queryComplete": true,
+    "teams": {
+      "A": {
+        "spawn_count": 3,
+        "spawns_by_type": {
+          "CARRIER": 3
+        },
+        "action_counts": {
+          "CHANGE_ADAMANTIUM": 74,
+          "CHANGE_MANA": 70,
+          "CHANGE_ELIXIR": 9,
+          "BUILD_ANCHOR": 6,
+          "SPAWN_UNIT": 3,
+          "PICK_UP_ANCHOR": 3,
+          "PLACE_ANCHOR": 2,
+          "PICK_UP_RESOURCE": 60
+        }
+      },
+      "B": {
+        "spawn_count": 10,
+        "spawns_by_type": {
+          "CARRIER": 10
+        },
+        "action_counts": {
+          "CHANGE_ADAMANTIUM": 146,
+          "CHANGE_MANA": 126,
+          "CHANGE_ELIXIR": 13,
+          "BUILD_ANCHOR": 3,
+          "SPAWN_UNIT": 10,
+          "PICK_UP_ANCHOR": 3,
+          "PLACE_ANCHOR": 2,
+          "PICK_UP_RESOURCE": 178,
+          "PLACE_RESOURCE": 1
+        }
+      }
+    },
+    "querySha256": "d3c772f89b7719944368c434d915072858ac3517d32b6d6de3ad50a49de42c89",
+    "queryPath": "root/workspace/work/query-smoke-lectureplayer-A/replay-query.json"
+  },
+  {
+    "match": "smoke-beaverbois-A",
+    "candidate": "beaverbois",
+    "candidateSide": "A",
+    "roundRange": [
+      1,
+      50
+    ],
+    "queryReturnedRows": 3721,
+    "queryComplete": true,
+    "teams": {
+      "A": {
+        "spawn_count": 33,
+        "spawns_by_type": {
+          "LAUNCHER": 18,
+          "CARRIER": 15
+        },
+        "action_counts": {
+          "CHANGE_ADAMANTIUM": 103,
+          "CHANGE_MANA": 378,
+          "CHANGE_ELIXIR": 33,
+          "SPAWN_UNIT": 33,
+          "LAUNCH_ATTACK": 235,
+          "PICK_UP_RESOURCE": 325,
+          "PLACE_RESOURCE": 12,
+          "CHANGE_HEALTH": 1
+        }
+      },
+      "B": {
+        "spawn_count": 10,
+        "spawns_by_type": {
+          "CARRIER": 10
+        },
+        "action_counts": {
+          "CHANGE_ADAMANTIUM": 146,
+          "CHANGE_MANA": 126,
+          "CHANGE_ELIXIR": 13,
+          "BUILD_ANCHOR": 3,
+          "SPAWN_UNIT": 10,
+          "PICK_UP_ANCHOR": 3,
+          "PLACE_ANCHOR": 2,
+          "PICK_UP_RESOURCE": 178,
+          "PLACE_RESOURCE": 1,
+          "CHANGE_HEALTH": 6
+        }
+      }
+    },
+    "querySha256": "71ca9d4a11575e35f7abffb564338aae5e342e2745204369f95ad5448b42f3f3",
+    "queryPath": "root/workspace/work/query-smoke-beaverbois-A/replay-query.json"
+  },
+  {
+    "match": "smoke-beaverbois-B",
+    "candidate": "beaverbois",
+    "candidateSide": "B",
+    "roundRange": [
+      1,
+      50
+    ],
+    "queryReturnedRows": 3426,
+    "queryComplete": true,
+    "teams": {
+      "A": {
+        "spawn_count": 3,
+        "spawns_by_type": {
+          "CARRIER": 3
+        },
+        "action_counts": {
+          "CHANGE_ADAMANTIUM": 74,
+          "CHANGE_MANA": 70,
+          "CHANGE_ELIXIR": 9,
+          "BUILD_ANCHOR": 6,
+          "SPAWN_UNIT": 3,
+          "PICK_UP_ANCHOR": 3,
+          "PLACE_ANCHOR": 2,
+          "PICK_UP_RESOURCE": 60
+        }
+      },
+      "B": {
+        "spawn_count": 35,
+        "spawns_by_type": {
+          "LAUNCHER": 18,
+          "CARRIER": 17
+        },
+        "action_counts": {
+          "CHANGE_ADAMANTIUM": 255,
+          "CHANGE_MANA": 380,
+          "CHANGE_ELIXIR": 35,
+          "SPAWN_UNIT": 35,
+          "PICK_UP_RESOURCE": 461,
+          "LAUNCH_ATTACK": 117,
+          "PLACE_RESOURCE": 19
+        }
+      }
+    },
+    "querySha256": "94f8b40e79b29f0a21da90ef27f7cf306d6fae54fd195ad15454819704e4a89a",
+    "queryPath": "root/workspace/work/query-smoke-beaverbois-B/replay-query.json"
+  },
+  {
+    "match": "smoke-dont_at_me-A",
+    "candidate": "dont_at_me",
+    "candidateSide": "A",
+    "roundRange": [
+      1,
+      50
+    ],
+    "queryReturnedRows": 3871,
+    "queryComplete": true,
+    "teams": {
+      "A": {
+        "spawn_count": 30,
+        "spawns_by_type": {
+          "LAUNCHER": 15,
+          "CARRIER": 15
+        },
+        "action_counts": {
+          "CHANGE_ADAMANTIUM": 63,
+          "CHANGE_MANA": 552,
+          "CHANGE_ELIXIR": 30,
+          "SPAWN_UNIT": 30,
+          "LAUNCH_ATTACK": 443,
+          "PICK_UP_RESOURCE": 485,
+          "PLACE_RESOURCE": 2,
+          "CHANGE_HEALTH": 52
+        }
+      },
+      "B": {
+        "spawn_count": 9,
+        "spawns_by_type": {
+          "CARRIER": 9
+        },
+        "action_counts": {
+          "CHANGE_ADAMANTIUM": 64,
+          "CHANGE_MANA": 87,
+          "CHANGE_ELIXIR": 18,
+          "BUILD_ANCHOR": 3,
+          "SPAWN_UNIT": 9,
+          "PICK_UP_ANCHOR": 3,
+          "PLACE_ANCHOR": 2,
+          "PICK_UP_RESOURCE": 49,
+          "CHANGE_HEALTH": 47
+        }
+      }
+    },
+    "querySha256": "f1f8d82cd486b1de9c82321b2dd3641b47c8c8ed9dd2f5033143a78ee2d7f6b0",
+    "queryPath": "root/workspace/work/query-smoke-dont_at_me-A/replay-query.json"
+  },
+  {
+    "match": "smoke-dont_at_me-B",
+    "candidate": "dont_at_me",
+    "candidateSide": "B",
+    "roundRange": [
+      1,
+      50
+    ],
+    "queryReturnedRows": 3541,
+    "queryComplete": true,
+    "teams": {
+      "A": {
+        "spawn_count": 3,
+        "spawns_by_type": {
+          "CARRIER": 3
+        },
+        "action_counts": {
+          "CHANGE_ADAMANTIUM": 48,
+          "CHANGE_MANA": 45,
+          "CHANGE_ELIXIR": 12,
+          "BUILD_ANCHOR": 6,
+          "SPAWN_UNIT": 3,
+          "PICK_UP_ANCHOR": 3,
+          "CHANGE_HEALTH": 23,
+          "PLACE_ANCHOR": 2,
+          "PICK_UP_RESOURCE": 3
+        }
+      },
+      "B": {
+        "spawn_count": 31,
+        "spawns_by_type": {
+          "LAUNCHER": 16,
+          "CARRIER": 15
+        },
+        "action_counts": {
+          "CHANGE_ADAMANTIUM": 64,
+          "CHANGE_MANA": 555,
+          "CHANGE_ELIXIR": 31,
+          "SPAWN_UNIT": 31,
+          "LAUNCH_ATTACK": 397,
+          "PICK_UP_RESOURCE": 485,
+          "PLACE_RESOURCE": 3,
+          "CHANGE_HEALTH": 58
+        }
+      }
+    },
+    "querySha256": "4a278df469c87eff1f4d5457dafc4006e35caf2d0e1867d390631552707d3551",
+    "queryPath": "root/workspace/work/query-smoke-dont_at_me-B/replay-query.json"
+  },
+  {
+    "match": "smoke-four_musketeers-A",
+    "candidate": "four_musketeers",
+    "candidateSide": "A",
+    "roundRange": [
+      1,
+      50
+    ],
+    "queryReturnedRows": 3673,
+    "queryComplete": true,
+    "teams": {
+      "A": {
+        "spawn_count": 32,
+        "spawns_by_type": {
+          "CARRIER": 15,
+          "LAUNCHER": 17
+        },
+        "action_counts": {
+          "CHANGE_ADAMANTIUM": 71,
+          "CHANGE_MANA": 545,
+          "CHANGE_ELIXIR": 32,
+          "SPAWN_UNIT": 32,
+          "PICK_UP_RESOURCE": 476,
+          "LAUNCH_ATTACK": 341,
+          "CHANGE_HEALTH": 9,
+          "PLACE_RESOURCE": 5
+        }
+      },
+      "B": {
+        "spawn_count": 9,
+        "spawns_by_type": {
+          "CARRIER": 9
+        },
+        "action_counts": {
+          "CHANGE_ADAMANTIUM": 67,
+          "CHANGE_MANA": 86,
+          "CHANGE_ELIXIR": 21,
+          "BUILD_ANCHOR": 3,
+          "SPAWN_UNIT": 9,
+          "PICK_UP_ANCHOR": 3,
+          "PLACE_ANCHOR": 2,
+          "PICK_UP_RESOURCE": 45,
+          "CHANGE_HEALTH": 69
+        }
+      }
+    },
+    "querySha256": "dff3ef29b2ca7548dda97b9fcf5aa652d1b9b1f50ceaea23a09bf5144c8a0473",
+    "queryPath": "root/workspace/work/query-smoke-four_musketeers-A/replay-query.json"
+  },
+  {
+    "match": "smoke-four_musketeers-B",
+    "candidate": "four_musketeers",
+    "candidateSide": "B",
+    "roundRange": [
+      1,
+      50
+    ],
+    "queryReturnedRows": 3350,
+    "queryComplete": true,
+    "teams": {
+      "A": {
+        "spawn_count": 3,
+        "spawns_by_type": {
+          "CARRIER": 3
+        },
+        "action_counts": {
+          "CHANGE_ADAMANTIUM": 45,
+          "CHANGE_MANA": 45,
+          "CHANGE_ELIXIR": 12,
+          "BUILD_ANCHOR": 6,
+          "SPAWN_UNIT": 3,
+          "PICK_UP_ANCHOR": 3,
+          "CHANGE_HEALTH": 23,
+          "PLACE_ANCHOR": 1
+        }
+      },
+      "B": {
+        "spawn_count": 31,
+        "spawns_by_type": {
+          "CARRIER": 15,
+          "LAUNCHER": 16
+        },
+        "action_counts": {
+          "CHANGE_ADAMANTIUM": 66,
+          "CHANGE_MANA": 531,
+          "CHANGE_ELIXIR": 31,
+          "SPAWN_UNIT": 31,
+          "PICK_UP_RESOURCE": 463,
+          "LAUNCH_ATTACK": 347,
+          "CHANGE_HEALTH": 16,
+          "PLACE_RESOURCE": 3
+        }
+      }
+    },
+    "querySha256": "dfceadf645397b3676ca0e100a38b1a09c9a6802e2c151fca75ea5d9d2524964",
+    "queryPath": "root/workspace/work/query-smoke-four_musketeers-B/replay-query.json"
+  },
+  {
+    "match": "smoke-gone_fishin-A",
+    "candidate": "gone_fishin",
+    "candidateSide": "A",
+    "roundRange": [
+      1,
+      50
+    ],
+    "queryReturnedRows": 3714,
+    "queryComplete": true,
+    "teams": {
+      "A": {
+        "spawn_count": 31,
+        "spawns_by_type": {
+          "LAUNCHER": 16,
+          "CARRIER": 15
+        },
+        "action_counts": {
+          "CHANGE_ADAMANTIUM": 147,
+          "CHANGE_MANA": 471,
+          "CHANGE_ELIXIR": 31,
+          "SPAWN_UNIT": 31,
+          "LAUNCH_ATTACK": 332,
+          "PICK_UP_RESOURCE": 486,
+          "CHANGE_HEALTH": 6,
+          "PLACE_RESOURCE": 2
+        }
+      },
+      "B": {
+        "spawn_count": 9,
+        "spawns_by_type": {
+          "CARRIER": 9
+        },
+        "action_counts": {
+          "CHANGE_ADAMANTIUM": 63,
+          "CHANGE_MANA": 86,
+          "CHANGE_ELIXIR": 18,
+          "BUILD_ANCHOR": 3,
+          "SPAWN_UNIT": 9,
+          "PICK_UP_ANCHOR": 3,
+          "PLACE_ANCHOR": 2,
+          "PICK_UP_RESOURCE": 47,
+          "CHANGE_HEALTH": 50
+        }
+      }
+    },
+    "querySha256": "178dd6321ee0b3d5f7ed69c654b0bf5ab514a4bcd1fed8e839b62777f44ce980",
+    "queryPath": "root/workspace/work/query-smoke-gone_fishin-A/replay-query.json"
+  },
+  {
+    "match": "smoke-gone_fishin-B",
+    "candidate": "gone_fishin",
+    "candidateSide": "B",
+    "roundRange": [
+      1,
+      50
+    ],
+    "queryReturnedRows": 3407,
+    "queryComplete": true,
+    "teams": {
+      "A": {
+        "spawn_count": 3,
+        "spawns_by_type": {
+          "CARRIER": 3
+        },
+        "action_counts": {
+          "CHANGE_ADAMANTIUM": 47,
+          "CHANGE_MANA": 45,
+          "CHANGE_ELIXIR": 12,
+          "BUILD_ANCHOR": 6,
+          "SPAWN_UNIT": 3,
+          "PICK_UP_ANCHOR": 3,
+          "CHANGE_HEALTH": 22,
+          "PLACE_ANCHOR": 1,
+          "PICK_UP_RESOURCE": 2
+        }
+      },
+      "B": {
+        "spawn_count": 30,
+        "spawns_by_type": {
+          "LAUNCHER": 15,
+          "CARRIER": 15
+        },
+        "action_counts": {
+          "CHANGE_ADAMANTIUM": 142,
+          "CHANGE_MANA": 466,
+          "CHANGE_ELIXIR": 30,
+          "SPAWN_UNIT": 30,
+          "LAUNCH_ATTACK": 345,
+          "PICK_UP_RESOURCE": 478,
+          "CHANGE_HEALTH": 10,
+          "PLACE_RESOURCE": 2
+        }
+      }
+    },
+    "querySha256": "450cb2dead82663af36902a836f2305f92337301e14faa561a474725a23e0f6d",
+    "queryPath": "root/workspace/work/query-smoke-gone_fishin-B/replay-query.json"
+  },
+  {
+    "match": "smoke-no_thoughts-B",
+    "candidate": "no_thoughts",
+    "candidateSide": "B",
+    "roundRange": [
+      1,
+      50
+    ],
+    "queryReturnedRows": 3550,
+    "queryComplete": true,
+    "teams": {
+      "A": {
+        "spawn_count": 3,
+        "spawns_by_type": {
+          "CARRIER": 3
+        },
+        "action_counts": {
+          "CHANGE_ADAMANTIUM": 74,
+          "CHANGE_MANA": 70,
+          "CHANGE_ELIXIR": 9,
+          "BUILD_ANCHOR": 6,
+          "SPAWN_UNIT": 3,
+          "PICK_UP_ANCHOR": 3,
+          "PLACE_ANCHOR": 2,
+          "CHANGE_HEALTH": 2,
+          "PICK_UP_RESOURCE": 60
+        }
+      },
+      "B": {
+        "spawn_count": 27,
+        "spawns_by_type": {
+          "LAUNCHER": 12,
+          "CARRIER": 15
+        },
+        "action_counts": {
+          "CHANGE_ADAMANTIUM": 140,
+          "CHANGE_MANA": 463,
+          "CHANGE_ELIXIR": 27,
+          "SPAWN_UNIT": 27,
+          "LAUNCH_ATTACK": 425,
+          "PICK_UP_RESOURCE": 483
+        }
+      }
+    },
+    "querySha256": "e0d8cca646670e30cfe2742e844622e6a0e02932827134b61c37c65bb25a5ff3",
+    "queryPath": "root/workspace/work/query-smoke-no_thoughts-B/replay-query.json"
+  }
+]

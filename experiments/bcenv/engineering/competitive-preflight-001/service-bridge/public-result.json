@@ -1,0 +1,11 @@
+{
+  "schema": "bcenv.scrimmage.v1",
+  "status": "complete",
+  "submission_id": "s_2d2e4853c25b468d91da192666e77350",
+  "summary": {
+    "draws": 0,
+    "games": 1,
+    "losses": 0,
+    "wins": 1
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "config": {
+    "bc.engine.debug-methods": "false",
+    "bc.engine.enable-profiler": "false",
+    "bc.engine.show-indicators": "true",
+    "bc.game.map-path": "/workspace/work/smoke-four_musketeers-B/maps",
+    "bc.game.maps": "DefaultMap",
+    "bc.game.team-a": "A",
+    "bc.game.team-a.package": "lectureplayer",
+    "bc.game.team-a.url": "/workspace/work/smoke-four_musketeers-B/team-A",
+    "bc.game.team-b": "B",
+    "bc.game.team-b.package": "MPWorking",
+    "bc.game.team-b.url": "/workspace/work/smoke-four_musketeers-B/team-B",
+    "bc.server.alternate-order": "false",
+    "bc.server.debug": "false",
+    "bc.server.mode": "headless",
+    "bc.server.robot-player-to-system-out": "false",
+    "bc.server.save-file": "/workspace/work/smoke-four_musketeers-B/replay.bc23",
+    "bc.server.validate-maps": "true",
+    "bc.server.wait-for-client": "false",
+    "bc.server.websocket": "false"
+  },
+  "engine_sha256": "2b6db98e312e0e509d599acc46bffbb55c2569de0f12c8214a85ee57625f15f2",
+  "engine_version": "3.0.13",
+  "extraction": {
+    "command": [
+      "/nix/store/84sr5jfh99mdgfwa0sa8nxifgy0vqicf-openjdk-8u504-b01/bin/java",
+      "-Xmx512m",
+      "-cp",
+      "/opt/bcenv/replay-classes:/opt/battlecode23/engine.jar",
+      "ReplaySummary",
+      "/workspace/work/smoke-four_musketeers-B/replay.bc23"
+    ],
+    "elapsed_seconds": 0.215,
+    "exit_code": 0,
+    "log": "replay-summary.json",
+    "log_sha256": "31e29d923f56875b4ebb25845a6f168e0d52fa0ecf553c93cb4d576a76ae9a1a",
+    "status": "succeeded",
+    "stderr_log": "replay-extractor.log",
+    "stderr_sha256": "2edc0ba36ae8c5184abdbc26ac514b96f3b1c683162f23dd8517d9c0a837333d"
+  },
+  "kind": "match",
+  "map_sha256": "a53211fc3fb4cc6427693f6f65b0732cc4bdf9ecb90f911ffbd71b5af82bb910",
+  "process": {
+    "command": [
+      "/nix/store/84sr5jfh99mdgfwa0sa8nxifgy0vqicf-openjdk-8u504-b01/bin/java",
+      "-Xmx512m",
+      "-Dbc.server.mode=headless",
+      "-Dbc.server.wait-for-client=false",
+      "-Dbc.server.websocket=false",
+      "-Dbc.game.map-path=/workspace/work/smoke-four_musketeers-B/maps",
+      "-Dbc.server.robot-player-to-system-out=false",
+      "-Dbc.server.debug=false",
+      "-Dbc.engine.debug-methods=false",
+      "-Dbc.engine.enable-profiler=false",
+      "-Dbc.engine.show-indicators=true",
+      "-Dbc.game.team-a=A",
+      "-Dbc.game.team-b=B",
+      "-Dbc.game.team-a.url=/workspace/work/smoke-four_musketeers-B/team-A",
+      "-Dbc.game.team-b.url=/workspace/work/smoke-four_musketeers-B/team-B",
+      "-Dbc.game.team-a.package=lectureplayer",
+      "-Dbc.game.team-b.package=MPWorking",
+      "-Dbc.game.maps=DefaultMap",
+      "-Dbc.server.validate-maps=true",
+      "-Dbc.server.alternate-order=false",
+      "-Dbc.server.save-file=/workspace/work/smoke-four_musketeers-B/replay.bc23",
+      "-cp",
+      "/opt/battlecode23/engine.jar",
+      "battlecode.server.Main",
+      "-c=-"
+    ],
+    "elapsed_seconds": 68.477,
+    "exit_code": 0,
+    "log": "engine.log",
+    "log_sha256": "e011f000eb9dbbbdf899c674fd5bda61aa9d00edfe49f03fb93ba443ae8c21f8",
+    "status": "succeeded"
+  },
+  "replay": {
+    "path": "replay.bc23",
+    "sha256": "dc0f0255cc02f514acc04045aba4fa11587f21564c9d579a69650b30e070e11b",
+    "summary": "replay-summary.json",
+    "summary_sha256": "31e29d923f56875b4ebb25845a6f168e0d52fa0ecf553c93cb4d576a76ae9a1a"
+  },
+  "schema": "bcenv.artifact.v1",
+  "season": "2023",
+  "status": "completed",
+  "teams": {
+    "A": {
+      "binary_sha256": "2ec96f458fb2cb6219efb33da246dd0d6f3da610693ac60d440fedc95ad2c008",
+      "package": "lectureplayer",
+      "source_sha256": "f824855a89f50784b5c848ee559232d4405789788ddda92317b3b419257bc694"
+    },
+    "B": {
+      "binary_sha256": "bb7580475b0661a15074b95d15713e7e32efda87eb0204862dd50180b40b2981",
+      "package": "MPWorking",
+      "source_sha256": "34f894989e73dccf5f5914e49926cfd5bb245fe069014af4feb1e9d5b3d6dbd7"
+    }
+  },
+  "winner": "B"
+}

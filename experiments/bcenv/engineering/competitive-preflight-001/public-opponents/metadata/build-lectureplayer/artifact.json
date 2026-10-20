@@ -1,0 +1,72 @@
+{
+  "binary_files": {
+    "lectureplayer/CarrierStrategy.class": "14312bacc41383e97d96d52e4d7772aa0334d023e35404740e010cde62e3ec47",
+    "lectureplayer/Communication.class": "f1dac5f50cf7a18978dc8f64baa072c1a1e0adcd2b4b0c6e0d3acdb901c24bb8",
+    "lectureplayer/LauncherStrategy.class": "052e18c68da746a3d53148285be882567215c881af3346c73cb48a84dd14ac59",
+    "lectureplayer/Message.class": "d93749acc539c6abac291e0232a9a55de799fb4708210e42713a5df21318a62e",
+    "lectureplayer/OptimalResource.class": "2c6fb07c4e0c3bd9bd9dd626d4d9d31d412944a5bcce0161bb086663e8d896c9",
+    "lectureplayer/Pathing.class": "1f95a64ed246532d941b1ccf75facb5ee201d89be65ab35144d0a0254e8da1fa",
+    "lectureplayer/RobotPlayer$1.class": "9ea6aeb007d22e05f5bfa2cf574c09bb7dca715b1f9f8a821efd7a6de52368cb",
+    "lectureplayer/RobotPlayer.class": "8ba0173bc3d706f61c007de7dade33a12d98c8d43b6a3b09ac65727c8c656481"
+  },
+  "binary_sha256": "2ec96f458fb2cb6219efb33da246dd0d6f3da610693ac60d440fedc95ad2c008",
+  "engine_sha256": "2b6db98e312e0e509d599acc46bffbb55c2569de0f12c8214a85ee57625f15f2",
+  "kind": "build",
+  "package": "lectureplayer",
+  "schema": "bcenv.artifact.v1",
+  "season": "2023",
+  "source_files": {
+    "lectureplayer/CarrierStrategy.java": "5da0dd915314f76a580893bc72214daae7e03b4fde12a653e8de5af847bc987a",
+    "lectureplayer/Communication.java": "75b248f1ca80e36df5d6d5208530be147eda18edf3190568cda4b0870a346645",
+    "lectureplayer/LauncherStrategy.java": "00d792565a48f713b8141a41bfa0e66c41643d20673eba1496df2678fff61af4",
+    "lectureplayer/OptimalResource.java": "a59fe49815ff9611dd5ea7c72047a1b4aaa27fcd3686aec6dcfc7d6adcfe0ead",
+    "lectureplayer/Pathing.java": "44c5022c385370b2f093e33f4cc1182209d5efdc81ddfb98e993095aaf19b168",
+    "lectureplayer/RobotPlayer.java": "7777eae1b68a466b7165b643dca1ddc0c32c597edd0c5d259b7496cde3260480"
+  },
+  "source_sha256": "f824855a89f50784b5c848ee559232d4405789788ddda92317b3b419257bc694",
+  "status": "verified",
+  "steps": [
+    {
+      "command": [
+        "/nix/store/84sr5jfh99mdgfwa0sa8nxifgy0vqicf-openjdk-8u504-b01/bin/javac",
+        "-source",
+        "8",
+        "-target",
+        "8",
+        "-encoding",
+        "UTF-8",
+        "-proc:none",
+        "-classpath",
+        "/opt/battlecode23/engine.jar",
+        "-d",
+        "/workspace/work/build-lectureplayer/classes",
+        "/workspace/work/build-lectureplayer/source/lectureplayer/CarrierStrategy.java",
+        "/workspace/work/build-lectureplayer/source/lectureplayer/Communication.java",
+        "/workspace/work/build-lectureplayer/source/lectureplayer/LauncherStrategy.java",
+        "/workspace/work/build-lectureplayer/source/lectureplayer/OptimalResource.java",
+        "/workspace/work/build-lectureplayer/source/lectureplayer/Pathing.java",
+        "/workspace/work/build-lectureplayer/source/lectureplayer/RobotPlayer.java"
+      ],
+      "elapsed_seconds": 0.465,
+      "exit_code": 0,
+      "log": "compile.log",
+      "log_sha256": "2edc0ba36ae8c5184abdbc26ac514b96f3b1c683162f23dd8517d9c0a837333d",
+      "status": "succeeded"
+    },
+    {
+      "command": [
+        "/nix/store/84sr5jfh99mdgfwa0sa8nxifgy0vqicf-openjdk-8u504-b01/bin/java",
+        "-cp",
+        "/opt/battlecode23/engine.jar",
+        "battlecode.instrumenter.Verifier",
+        "lectureplayer",
+        "/workspace/work/build-lectureplayer/classes"
+      ],
+      "elapsed_seconds": 0.214,
+      "exit_code": 0,
+      "log": "verify.log",
+      "log_sha256": "2edc0ba36ae8c5184abdbc26ac514b96f3b1c683162f23dd8517d9c0a837333d",
+      "status": "succeeded"
+    }
+  ]
+}

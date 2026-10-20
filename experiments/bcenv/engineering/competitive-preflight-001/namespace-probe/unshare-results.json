@@ -1,0 +1,458 @@
+{
+  "schema": "bcenv.unshare-boundary-probe.v1",
+  "scope": "fresh synthetic fixture, no model invocation",
+  "tests": [
+    {
+      "test": "outside_root_confidentiality",
+      "status": "passed",
+      "evidence": {
+        "attempts": {
+          "/workspace/shared/bc23-sandbox-probe/host-canary.txt": {
+            "errno": 2
+          },
+          "/proc/1/root/workspace/shared/bc23-sandbox-probe/host-canary.txt": {
+            "errno": 13
+          },
+          "/proc/self/root/workspace/shared/bc23-sandbox-probe/host-canary.txt": {
+            "errno": 2
+          },
+          "/../../workspace/shared/bc23-sandbox-probe/host-canary.txt": {
+            "errno": 2
+          },
+          "/workspace/../../workspace/shared/bc23-sandbox-probe/host-canary.txt": {
+            "errno": 2
+          }
+        },
+        "supervisor": {
+          "exit_code": 0,
+          "stop_reason": null,
+          "elapsed_seconds": 0.0784,
+          "output_bytes_retained": 401
+        }
+      },
+      "elapsed_seconds": 0.0785
+    },
+    {
+      "test": "immutable_reference_runtime_helper",
+      "status": "passed",
+      "evidence": {
+        "candidate": {
+          "attempts": {
+            "/workspace/docs/canary.txt": {
+              "write": 30,
+              "chmod": 30
+            },
+            "/opt/io_worker.py": {
+              "write": 30,
+              "chmod": 30
+            },
+            "/nix/store/h3l4z7p6wny3phbckwwhy1i2g52pdnj4-python3-3.13.15/bin/python3": {
+              "write": 13,
+              "chmod": 30
+            }
+          },
+          "mount_options": {
+            "/": "ro,nosuid,nodev,relatime",
+            "/workspace/src": "rw,nosuid,nodev,relatime",
+            "/workspace/scratch": "rw,nosuid,nodev,relatime",
+            "/proc": "rw,nosuid,nodev,noexec,relatime",
+            "/tmp": "rw,nosuid,nodev,noexec,relatime"
+          }
+        },
+        "hashes_unchanged": true,
+        "supervisor": {
+          "exit_code": 0,
+          "stop_reason": null,
+          "elapsed_seconds": 0.0767,
+          "output_bytes_retained": 460
+        }
+      },
+      "elapsed_seconds": 0.0772
+    },
+    {
+      "test": "dropped_capabilities_no_new_privileges",
+      "status": "passed",
+      "evidence": {
+        "candidate": {
+          "status": {
+            "CapInh": "0000000000000000",
+            "CapPrm": "0000000000000000",
+            "CapEff": "0000000000000000",
+            "CapBnd": "0000000000000000",
+            "CapAmb": "0000000000000000",
+            "NoNewPrivs": "1",
+            "Seccomp": "2",
+            "Seccomp_filters": "1"
+          },
+          "pid": 2,
+          "chroot": 1,
+          "remount": {
+            "rc": -1,
+            "errno": 1
+          }
+        },
+        "supervisor": {
+          "exit_code": 0,
+          "stop_reason": null,
+          "elapsed_seconds": 0.1297,
+          "output_bytes_retained": 280
+        }
+      },
+      "elapsed_seconds": 0.1299
+    },
+    {
+      "test": "clean_descriptors_and_environment",
+      "status": "passed",
+      "evidence": {
+        "candidate": {
+          "fds": {
+            "0": "pipe:[173040]",
+            "1": "pipe:[173041]",
+            "2": "pipe:[173042]"
+          },
+          "environment": {
+            "HOME": "/workspace",
+            "PATH": "/nix/store/h3l4z7p6wny3phbckwwhy1i2g52pdnj4-python3-3.13.15/bin",
+            "LANG": "C.UTF-8",
+            "PYTHONDONTWRITEBYTECODE": "1"
+          }
+        },
+        "supervisor": {
+          "exit_code": 0,
+          "stop_reason": null,
+          "elapsed_seconds": 0.0787,
+          "output_bytes_retained": 241
+        }
+      },
+      "elapsed_seconds": 0.079
+    },
+    {
+      "test": "private_process_namespace",
+      "status": "passed",
+      "evidence": {
+        "candidate": {
+          "pids": [
+            1,
+            2
+          ],
+          "outside_process_signal_zero": 3
+        },
+        "supervisor": {
+          "exit_code": 0,
+          "stop_reason": null,
+          "elapsed_seconds": 0.0722,
+          "output_bytes_retained": 51
+        }
+      },
+      "elapsed_seconds": 0.0739
+    },
+    {
+      "test": "host_loopback_unreachable",
+      "status": "passed",
+      "evidence": {
+        "candidate": {
+          "errno": 101
+        },
+        "host_listener_accepted": false,
+        "supervisor": {
+          "exit_code": 0,
+          "stop_reason": null,
+          "elapsed_seconds": 0.0809,
+          "output_bytes_retained": 15
+        },
+        "network_configuration": "none; no NETLINK_ROUTE use"
+      },
+      "elapsed_seconds": 0.2816
+    },
+    {
+      "test": "same_root_read_write_exec",
+      "status": "passed",
+      "evidence": {
+        "read_write_exec_same_file": true,
+        "supervisor": {
+          "exit_code": 0,
+          "stop_reason": null,
+          "elapsed_seconds": 0.0731,
+          "output_bytes_retained": 30
+        }
+      },
+      "elapsed_seconds": 0.2812
+    },
+    {
+      "test": "symlink_io_rejection",
+      "status": "passed",
+      "evidence": {
+        "rejected_operations": [
+          "outside-link-1792454897453079420:read",
+          "outside-link-1792454897453079420:write",
+          "reference-link-1792454897453079420:read",
+          "reference-link-1792454897453079420:write"
+        ],
+        "canaries_unchanged": true,
+        "supervisor": {
+          "exit_code": 0,
+          "stop_reason": null,
+          "elapsed_seconds": 0.0768,
+          "output_bytes_retained": 37
+        }
+      },
+      "elapsed_seconds": 0.448
+    },
+    {
+      "test": "timeout_kills_setsid_descendant",
+      "status": "passed",
+      "evidence": {
+        "status": "timeout",
+        "heartbeat_bytes": 38,
+        "heartbeat_stable_after_return_seconds": 0.2,
+        "supervisor": {
+          "exit_code": -9,
+          "stop_reason": "timeout",
+          "elapsed_seconds": 1.0045,
+          "output_bytes_retained": 0
+        }
+      },
+      "elapsed_seconds": 1.2049
+    },
+    {
+      "test": "init_exit_kills_setsid_descendant",
+      "status": "passed",
+      "evidence": {
+        "status": "succeeded",
+        "heartbeat_bytes": 13,
+        "heartbeat_stable_after_return_seconds": 0.2,
+        "supervisor": {
+          "exit_code": 0,
+          "stop_reason": null,
+          "elapsed_seconds": 0.3718,
+          "output_bytes_retained": 0
+        }
+      },
+      "elapsed_seconds": 0.5722
+    },
+    {
+      "test": "bounded_combined_output",
+      "status": "passed",
+      "evidence": {
+        "exit_code": -9,
+        "stop_reason": "output_limit",
+        "elapsed_seconds": 0.0577,
+        "output_bytes_retained": 2048
+      },
+      "elapsed_seconds": 0.0579
+    },
+    {
+      "test": "closed_streams_cannot_evade_deadline",
+      "status": "passed",
+      "evidence": {
+        "exit_code": -9,
+        "stop_reason": "timeout",
+        "elapsed_seconds": 1.004,
+        "output_bytes_retained": 0
+      },
+      "elapsed_seconds": 1.0042
+    },
+    {
+      "test": "selector_setup_failure_cleans_process_and_pipes",
+      "status": "passed",
+      "evidence": {
+        "setup_failure": "DefaultSelector constructor",
+        "child_reaped": true,
+        "all_three_pipes_closed": true,
+        "exit_code": -9
+      },
+      "elapsed_seconds": 0.0024
+    },
+    {
+      "test": "outer_controller_death_kills_setsid_descendant",
+      "status": "passed",
+      "evidence": {
+        "outer_controller_exit_code": -9,
+        "setsid_descendant_heartbeat_bytes": 1,
+        "heartbeat_stable_seconds": 0.25,
+        "candidate_natural_duration_seconds": 3
+      },
+      "elapsed_seconds": 0.5279
+    },
+    {
+      "test": "hostile_candidate_cannot_disable_timeout_teardown",
+      "status": "passed",
+      "evidence": {
+        "candidate_actions": [
+          "setsid",
+          "clear own PDEATHSIG",
+          "close 0/1/2"
+        ],
+        "natural_duration_seconds": 3,
+        "heartbeat_bytes": 38,
+        "heartbeat_stable_seconds": 0.25,
+        "supervisor": {
+          "exit_code": -9,
+          "stop_reason": "timeout",
+          "elapsed_seconds": 1.0042,
+          "output_bytes_retained": 0
+        }
+      },
+      "elapsed_seconds": 1.4048
+    },
+    {
+      "test": "hostile_candidate_cannot_disable_outer_death_teardown",
+      "status": "passed",
+      "evidence": {
+        "candidate_actions": [
+          "setsid",
+          "clear own PDEATHSIG",
+          "close 0/1/2"
+        ],
+        "natural_duration_seconds": 3,
+        "heartbeat_bytes": 1,
+        "heartbeat_stable_seconds": 0.25,
+        "supervisor": {
+          "outer_controller_exit_code": -9
+        }
+      },
+      "elapsed_seconds": 0.528
+    },
+    {
+      "test": "trusted_namespace_init_protected_from_candidate",
+      "status": "passed",
+      "evidence": {
+        "candidate": {
+          "candidate_pid": 2,
+          "parent_pid": 1,
+          "/proc/1/mem": 13,
+          "/proc/1/fd/0": 13,
+          "ptrace_attach": {
+            "rc": -1,
+            "errno": 1
+          }
+        },
+        "supervisor": {
+          "exit_code": 0,
+          "stop_reason": null,
+          "elapsed_seconds": 0.0763,
+          "output_bytes_retained": 118
+        }
+      },
+      "elapsed_seconds": 0.0765
+    },
+    {
+      "test": "per_process_address_space_limit",
+      "status": "passed",
+      "evidence": {
+        "candidate": {
+          "memory_error": true
+        },
+        "per_process_only": true,
+        "supervisor": {
+          "exit_code": 0,
+          "stop_reason": null,
+          "elapsed_seconds": 0.0691,
+          "output_bytes_retained": 23
+        }
+      },
+      "elapsed_seconds": 0.0692
+    },
+    {
+      "test": "per_file_size_limit",
+      "status": "passed",
+      "evidence": {
+        "candidate": {
+          "errno": 27,
+          "size": 1048576
+        },
+        "per_file_only": true,
+        "supervisor": {
+          "exit_code": 0,
+          "stop_reason": null,
+          "elapsed_seconds": 0.0759,
+          "output_bytes_retained": 31
+        }
+      },
+      "elapsed_seconds": 0.0761
+    },
+    {
+      "test": "synthetic_controller_actual_adapter",
+      "status": "passed",
+      "evidence": {
+        "status": "complete",
+        "tool_calls": 3,
+        "initial_sha256": "3b6a242acb1bae77ae732dbb469a16643432f56b1527caf223ad7803ca8b59a9",
+        "outputs": [
+          {
+            "call_id": "w",
+            "result": {
+              "bytes_written": 25,
+              "status": "complete"
+            }
+          },
+          {
+            "call_id": "r",
+            "result": {
+              "status": "complete",
+              "text": "controller actual sandbox"
+            }
+          },
+          {
+            "call_id": "e",
+            "result": {
+              "status": "succeeded",
+              "stderr": "",
+              "stdout": "controller actual sandbox\n",
+              "truncated": false
+            }
+          }
+        ],
+        "transport": "synthetic fixed replies; no model invocation"
+      },
+      "elapsed_seconds": 0.2204
+    },
+    {
+      "test": "six_tool_controller_host_io_rejection",
+      "status": "passed",
+      "evidence": {
+        "status": "complete",
+        "tool_calls": 4,
+        "outputs": [
+          {
+            "call_id": "host_read",
+            "result": {
+              "reason": "invalid_arguments",
+              "status": "rejected"
+            }
+          },
+          {
+            "call_id": "host_write",
+            "result": {
+              "reason": "invalid_arguments",
+              "status": "rejected"
+            }
+          },
+          {
+            "call_id": "native_exec",
+            "result": {
+              "reason": "unknown_tool",
+              "status": "rejected"
+            }
+          },
+          {
+            "call_id": "isolated_exec",
+            "result": {
+              "status": "succeeded",
+              "stderr": "",
+              "stdout": "False\n",
+              "truncated": false
+            }
+          }
+        ],
+        "outside_canary_unchanged": true,
+        "transport": "synthetic fixed replies; no model invocation"
+      },
+      "elapsed_seconds": 0.0706
+    }
+  ],
+  "passed": 21,
+  "failed": 0,
+  "aggregate_resource_enforcement": "not implemented or accepted",
+  "complete_isolation_claim": "not accepted"
+}

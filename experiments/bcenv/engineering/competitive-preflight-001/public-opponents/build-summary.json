@@ -1,0 +1,44 @@
+[
+  {
+    "candidate": "beaverbois",
+    "returncode": 0,
+    "elapsedSeconds": 1.2176268100738525,
+    "status": "verified",
+    "artifactPath": "root/workspace/work/build-beaverbois/artifact.json"
+  },
+  {
+    "candidate": "dont_at_me",
+    "returncode": 0,
+    "elapsedSeconds": 1.423635482788086,
+    "status": "verified",
+    "artifactPath": "root/workspace/work/build-dont_at_me/artifact.json"
+  },
+  {
+    "candidate": "four_musketeers",
+    "returncode": 0,
+    "elapsedSeconds": 1.947432279586792,
+    "status": "verified",
+    "artifactPath": "root/workspace/work/build-four_musketeers/artifact.json"
+  },
+  {
+    "candidate": "gone_fishin",
+    "returncode": 0,
+    "elapsedSeconds": 1.0997891426086426,
+    "status": "verified",
+    "artifactPath": "root/workspace/work/build-gone_fishin/artifact.json"
+  },
+  {
+    "candidate": "lectureplayer",
+    "returncode": 0,
+    "elapsedSeconds": 0.758347749710083,
+    "status": "verified",
+    "artifactPath": "root/workspace/work/build-lectureplayer/artifact.json"
+  },
+  {
+    "candidate": "no_thoughts",
+    "returncode": 0,
+    "elapsedSeconds": 1.3336553573608398,
+    "status": "verified",
+    "artifactPath": "root/workspace/work/build-no_thoughts/artifact.json"
+  }
+]

@@ -128,3 +128,34 @@ Do not stage actual holdouts in the shared agent-visible filesystem, copy existi
 credentials, weaken platform requirements, provision paid resources, or use the
 user's computer. Report the narrow unresolved requirement: a supported inference
 route with no tools outside the enforced competitor workspace and scrimmage RPC.
+
+## Engineering checkpoint: 2026-10-20
+
+The fixed-tool controller, bounded result facade and replay projector are now
+implemented in [bcenv PR7](https://github.com/anicolao/bcenv/pull/7), with 126
+pinned-Nix Python tests and independent malformed-input review. The final-rule
+runtime is separately reviewed in [PR8](https://github.com/anicolao/bcenv/pull/8).
+Public source-to-build-to-game and existing-replay-to-bounded-feedback plumbing
+have executed; these do not open the deployment or model gates.
+
+A disposable actual namespace fixture now runs through the concrete adapter and
+scripted controller. The permitted route does not configure loopback or request
+the NETLINK_ROUTE operation denied to the first bubblewrap attempt. Candidate
+capability sets are checked after exec, not merely cleared before it. Independent
+review identified setup-exception leaks, missing parent-death linkage and a
+confirmed hostile-PID1 teardown escape. The corrected trusted-init fixture passes
+all 21 checks independently; the untrusted candidate no longer owns PID1. See
+[preflight evidence](experiments/bcenv/engineering/competitive-preflight-001/README.md).
+Aggregate process-tree CPU/memory/
+PID/disk controls and full model transport remain unpassed. Read-only cgroup
+inspection did not find a delegated control interface. No host delegation or
+security-policy changes are attempted.
+
+The minimal deployment prerequisite is a supported cloud runner with enforceable
+aggregate process-tree budgets and bounded writable storage, together with an
+inference connection whose entire tool inventory is the reviewed controller.
+A platform-enforced equivalent can satisfy the resource requirement; a larger
+per-process timeout cannot. Credentials, if later authorized, must stay in the
+trusted connection layer. A user-selected provider would also require explicit
+setup/spending authority and model availability verification. Do not request
+secret keys in chat or copy an existing login.

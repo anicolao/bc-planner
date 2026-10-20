@@ -1,0 +1,100 @@
+{
+  "config": {
+    "bc.engine.debug-methods": "false",
+    "bc.engine.enable-profiler": "false",
+    "bc.engine.show-indicators": "true",
+    "bc.game.map-path": "/workspace/work/smoke-no_thoughts-B/maps",
+    "bc.game.maps": "DefaultMap",
+    "bc.game.team-a": "A",
+    "bc.game.team-a.package": "lectureplayer",
+    "bc.game.team-a.url": "/workspace/work/smoke-no_thoughts-B/team-A",
+    "bc.game.team-b": "B",
+    "bc.game.team-b.package": "v5anaconda",
+    "bc.game.team-b.url": "/workspace/work/smoke-no_thoughts-B/team-B",
+    "bc.server.alternate-order": "false",
+    "bc.server.debug": "false",
+    "bc.server.mode": "headless",
+    "bc.server.robot-player-to-system-out": "false",
+    "bc.server.save-file": "/workspace/work/smoke-no_thoughts-B/replay.bc23",
+    "bc.server.validate-maps": "true",
+    "bc.server.wait-for-client": "false",
+    "bc.server.websocket": "false"
+  },
+  "engine_sha256": "2b6db98e312e0e509d599acc46bffbb55c2569de0f12c8214a85ee57625f15f2",
+  "engine_version": "3.0.13",
+  "extraction": {
+    "command": [
+      "/nix/store/84sr5jfh99mdgfwa0sa8nxifgy0vqicf-openjdk-8u504-b01/bin/java",
+      "-Xmx512m",
+      "-cp",
+      "/opt/bcenv/replay-classes:/opt/battlecode23/engine.jar",
+      "ReplaySummary",
+      "/workspace/work/smoke-no_thoughts-B/replay.bc23"
+    ],
+    "elapsed_seconds": 0.215,
+    "exit_code": 0,
+    "log": "replay-summary.json",
+    "log_sha256": "27a19fabb0a5f55361be1191ec339e3e66ff47be60ddbdfa3273fa7e6dfab93d",
+    "status": "succeeded",
+    "stderr_log": "replay-extractor.log",
+    "stderr_sha256": "2edc0ba36ae8c5184abdbc26ac514b96f3b1c683162f23dd8517d9c0a837333d"
+  },
+  "kind": "match",
+  "map_sha256": "a53211fc3fb4cc6427693f6f65b0732cc4bdf9ecb90f911ffbd71b5af82bb910",
+  "process": {
+    "command": [
+      "/nix/store/84sr5jfh99mdgfwa0sa8nxifgy0vqicf-openjdk-8u504-b01/bin/java",
+      "-Xmx512m",
+      "-Dbc.server.mode=headless",
+      "-Dbc.server.wait-for-client=false",
+      "-Dbc.server.websocket=false",
+      "-Dbc.game.map-path=/workspace/work/smoke-no_thoughts-B/maps",
+      "-Dbc.server.robot-player-to-system-out=false",
+      "-Dbc.server.debug=false",
+      "-Dbc.engine.debug-methods=false",
+      "-Dbc.engine.enable-profiler=false",
+      "-Dbc.engine.show-indicators=true",
+      "-Dbc.game.team-a=A",
+      "-Dbc.game.team-b=B",
+      "-Dbc.game.team-a.url=/workspace/work/smoke-no_thoughts-B/team-A",
+      "-Dbc.game.team-b.url=/workspace/work/smoke-no_thoughts-B/team-B",
+      "-Dbc.game.team-a.package=lectureplayer",
+      "-Dbc.game.team-b.package=v5anaconda",
+      "-Dbc.game.maps=DefaultMap",
+      "-Dbc.server.validate-maps=true",
+      "-Dbc.server.alternate-order=false",
+      "-Dbc.server.save-file=/workspace/work/smoke-no_thoughts-B/replay.bc23",
+      "-cp",
+      "/opt/battlecode23/engine.jar",
+      "battlecode.server.Main",
+      "-c=-"
+    ],
+    "elapsed_seconds": 21.713,
+    "exit_code": 0,
+    "log": "engine.log",
+    "log_sha256": "355cc91f29531d561554ae8701e73c46aa281c181d18dc18c5ddc322dd004e49",
+    "status": "succeeded"
+  },
+  "replay": {
+    "path": "replay.bc23",
+    "sha256": "e6762089b6fb5224c34ab6d9725e5a56f62b46604e1880cd4d39f6817e80048f",
+    "summary": "replay-summary.json",
+    "summary_sha256": "27a19fabb0a5f55361be1191ec339e3e66ff47be60ddbdfa3273fa7e6dfab93d"
+  },
+  "schema": "bcenv.artifact.v1",
+  "season": "2023",
+  "status": "completed",
+  "teams": {
+    "A": {
+      "binary_sha256": "2ec96f458fb2cb6219efb33da246dd0d6f3da610693ac60d440fedc95ad2c008",
+      "package": "lectureplayer",
+      "source_sha256": "f824855a89f50784b5c848ee559232d4405789788ddda92317b3b419257bc694"
+    },
+    "B": {
+      "binary_sha256": "0fd0495ec4cd76c042f3f23cbcdc4cb1eadb6cccd8ca2833f10ce8faf1905d88",
+      "package": "v5anaconda",
+      "source_sha256": "0a769441f3f50a4b3670987d91779be661689507b2a91858a4e069b3118dd8f7"
+    }
+  },
+  "winner": "B"
+}

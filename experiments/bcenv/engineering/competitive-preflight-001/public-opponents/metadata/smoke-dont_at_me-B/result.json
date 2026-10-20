@@ -1,0 +1,100 @@
+{
+  "config": {
+    "bc.engine.debug-methods": "false",
+    "bc.engine.enable-profiler": "false",
+    "bc.engine.show-indicators": "true",
+    "bc.game.map-path": "/workspace/work/smoke-dont_at_me-B/maps",
+    "bc.game.maps": "DefaultMap",
+    "bc.game.team-a": "A",
+    "bc.game.team-a.package": "lectureplayer",
+    "bc.game.team-a.url": "/workspace/work/smoke-dont_at_me-B/team-A",
+    "bc.game.team-b": "B",
+    "bc.game.team-b.package": "FB_ZZZ",
+    "bc.game.team-b.url": "/workspace/work/smoke-dont_at_me-B/team-B",
+    "bc.server.alternate-order": "false",
+    "bc.server.debug": "false",
+    "bc.server.mode": "headless",
+    "bc.server.robot-player-to-system-out": "false",
+    "bc.server.save-file": "/workspace/work/smoke-dont_at_me-B/replay.bc23",
+    "bc.server.validate-maps": "true",
+    "bc.server.wait-for-client": "false",
+    "bc.server.websocket": "false"
+  },
+  "engine_sha256": "2b6db98e312e0e509d599acc46bffbb55c2569de0f12c8214a85ee57625f15f2",
+  "engine_version": "3.0.13",
+  "extraction": {
+    "command": [
+      "/nix/store/84sr5jfh99mdgfwa0sa8nxifgy0vqicf-openjdk-8u504-b01/bin/java",
+      "-Xmx512m",
+      "-cp",
+      "/opt/bcenv/replay-classes:/opt/battlecode23/engine.jar",
+      "ReplaySummary",
+      "/workspace/work/smoke-dont_at_me-B/replay.bc23"
+    ],
+    "elapsed_seconds": 0.365,
+    "exit_code": 0,
+    "log": "replay-summary.json",
+    "log_sha256": "f2b089981e64b3d86cf94614b1d8cc57a1b61a754584877006538946a01ecd13",
+    "status": "succeeded",
+    "stderr_log": "replay-extractor.log",
+    "stderr_sha256": "2edc0ba36ae8c5184abdbc26ac514b96f3b1c683162f23dd8517d9c0a837333d"
+  },
+  "kind": "match",
+  "map_sha256": "a53211fc3fb4cc6427693f6f65b0732cc4bdf9ecb90f911ffbd71b5af82bb910",
+  "process": {
+    "command": [
+      "/nix/store/84sr5jfh99mdgfwa0sa8nxifgy0vqicf-openjdk-8u504-b01/bin/java",
+      "-Xmx512m",
+      "-Dbc.server.mode=headless",
+      "-Dbc.server.wait-for-client=false",
+      "-Dbc.server.websocket=false",
+      "-Dbc.game.map-path=/workspace/work/smoke-dont_at_me-B/maps",
+      "-Dbc.server.robot-player-to-system-out=false",
+      "-Dbc.server.debug=false",
+      "-Dbc.engine.debug-methods=false",
+      "-Dbc.engine.enable-profiler=false",
+      "-Dbc.engine.show-indicators=true",
+      "-Dbc.game.team-a=A",
+      "-Dbc.game.team-b=B",
+      "-Dbc.game.team-a.url=/workspace/work/smoke-dont_at_me-B/team-A",
+      "-Dbc.game.team-b.url=/workspace/work/smoke-dont_at_me-B/team-B",
+      "-Dbc.game.team-a.package=lectureplayer",
+      "-Dbc.game.team-b.package=FB_ZZZ",
+      "-Dbc.game.maps=DefaultMap",
+      "-Dbc.server.validate-maps=true",
+      "-Dbc.server.alternate-order=false",
+      "-Dbc.server.save-file=/workspace/work/smoke-dont_at_me-B/replay.bc23",
+      "-cp",
+      "/opt/battlecode23/engine.jar",
+      "battlecode.server.Main",
+      "-c=-"
+    ],
+    "elapsed_seconds": 87.219,
+    "exit_code": 0,
+    "log": "engine.log",
+    "log_sha256": "e5d7fcf874391810f6757846147342c279bad443fbbb92046c97a9e85214eeae",
+    "status": "succeeded"
+  },
+  "replay": {
+    "path": "replay.bc23",
+    "sha256": "b5a56bffeb25a6798828c4bfc8b671aea56b99c68676397cf5a387d1c4cc249d",
+    "summary": "replay-summary.json",
+    "summary_sha256": "f2b089981e64b3d86cf94614b1d8cc57a1b61a754584877006538946a01ecd13"
+  },
+  "schema": "bcenv.artifact.v1",
+  "season": "2023",
+  "status": "completed",
+  "teams": {
+    "A": {
+      "binary_sha256": "2ec96f458fb2cb6219efb33da246dd0d6f3da610693ac60d440fedc95ad2c008",
+      "package": "lectureplayer",
+      "source_sha256": "f824855a89f50784b5c848ee559232d4405789788ddda92317b3b419257bc694"
+    },
+    "B": {
+      "binary_sha256": "5e8c84f2448e76395cd0152d657ddd927061f6e6f2adaccf0862cf4e440b8c57",
+      "package": "FB_ZZZ",
+      "source_sha256": "176754f31f6486a264bee05d33aa9871720eff50006aeea4a00d3edaac3c8bb0"
+    }
+  },
+  "winner": "B"
+}

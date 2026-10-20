@@ -80,3 +80,10 @@ inputs are deliberately fabricated. Its inert workspace is distinct from the
 actual namespace collector. These are two narrower demonstrations, not a complete
 live learning loop. The component build later passed 211 tests; earlier evidence
 is preserved alongside it.
+
+## Committed integration baseline
+
+[Baseline audit](integration-baseline/README.md) follows the disposable checks
+with a committed composition, exact origin hashes and all 13 x86_64 flake checks
+(230 Python tests). Historical evidence is not replaced. No component PR was
+merged, and this remains preflight with live deployment gates closed.

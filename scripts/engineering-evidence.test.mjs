@@ -23,7 +23,7 @@ function checkedFile(directory, name) {
   assert.equal(lstatSync(filename).isFile(), true);
   return readFileSync(filename);
 }
-for (const directory of ['public-opponents', 'service-bridge', 'replay-feedback', 'composition', 'full-composition', 'source-export']) {
+for (const directory of ['public-opponents', 'service-bridge', 'replay-feedback', 'composition', 'full-composition', 'source-export', 'integration-baseline']) {
   test(`compact ${directory} checksum inventory matches committed bytes`, () => {
     const lines = checkedFile(directory, 'SHA256SUMS').toString('utf8').trimEnd().split('\n');
     const seen = new Set();

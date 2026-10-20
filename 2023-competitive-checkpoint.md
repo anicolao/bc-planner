@@ -1,6 +1,6 @@
 # Competitive program checkpoint
 
-Updated 2026-10-20 00:47 UTC. **The competitive goal is not achieved.** No new
+Updated 2026-10-20 01:03 UTC. **The competitive goal is not achieved.** No new
 competitor model trial, private benchmark selection or deployed service exists.
 [Roadmap](2023-competitive-program.md) and
 [boundary design](2023-isolated-scrimmage-architecture.md) remain authoritative.
@@ -10,7 +10,7 @@ competitor model trial, private benchmark selection or deployed service exists.
 - Planner [PR12](https://github.com/anicolao/bc-planner/pull/12), branch
   `plan/competitive-bc23-program`, stacked on PR11: roadmap, threat model and
   [public opponent provenance](2023-public-opponent-candidates.md). CI passed at
-  `f89d249`. Prior experiments and evidence remain unchanged.
+  `4226ba5`. Prior experiments and evidence remain unchanged.
 - bcenv [PR7](https://github.com/anicolao/bcenv/pull/7), branch
   `feat/scrimmage-contract`, stacked on PR6: bounded source intake/public results,
   fixed-tool synthetic controller and versioned gameplay-feedback projection.
@@ -43,8 +43,20 @@ competitor model trial, private benchmark selection or deployed service exists.
   helpers now close cleanly. Source receipts still require a trusted capture
   adapter; this module alone does not prove isolation or authentication.
 
-No PR is merged. Do not silently combine independently stacked branches without
-retesting the integrated runtime and trusted services.
+- bcenv [PR12](https://github.com/anicolao/bcenv/pull/12), branch
+  `feat/synthetic-worker-lifecycle`, stacked on PR11: fixed inert callback,
+  reservation precheck and authoritative finish, bounded receipts and explicit
+  uncertain-commit behavior. Head `287ac43`; 200 tests, 12 independent probes and
+  CI pass. No process supervisor or authentic match validator is implied.
+- bcenv [PR13](https://github.com/anicolao/bcenv/pull/13), branch
+  `feat/competitive-service-integration`, stacked on PR8: committed integration
+  baseline `d769760` copies exact reviewed code from the component branches.
+  All 13 x86_64 flake checks, 230 Python tests and CI pass. Independent audit
+  verifies 14 source/test origins, unchanged runtime/gates and seven trusted
+  modules excluded from the package. This does not merge any component PR.
+
+No PR is merged. PR13 is an explicitly reviewed composition commit. Do not
+silently infer that later changes on component branches are included or retested.
 
 ## Actual public integration evidence
 
@@ -106,6 +118,10 @@ are retained. This is not a merged/frozen release, full engine requalification,
 new game, model trial or complete lifecycle integration. The earlier 190-test
 checkpoint is retained alongside the later result.
 
+The later [committed integration baseline](experiments/bcenv/engineering/competitive-preflight-001/integration-baseline/README.md)
+adds the reviewed synthetic worker: 230 tests plus all 13 flake checks. Historical
+disposable-build evidence remains unchanged.
+
 ## Actual source handoff and offline model protocol
 
 [Source-export evidence](experiments/bcenv/engineering/competitive-preflight-001/source-export/README.md)
@@ -130,21 +146,27 @@ collector. No single test yet combines real model, sandbox, worker and game.
 
 ## Resume next
 
-1. Finish the synthetic durable-worker seam now under implementation: fixed
-   trusted specification and immutable source, reservation/fencing checks,
-   bounded closed receipts, conservative expiry and no implicit retry. Its
-   callback remains inert; it cannot establish process supervision or actual
-   game authenticity. Independently review before publishing.
-2. Replay projection exists but the service route still withholds replay.
-   Authenticated routing, durable model/controller/artifact recovery, physical
-   resource budgets, worker supervision and live model transport remain open.
-   Do not equate typed receipts, host fixture scopes or packaging exclusion with
-   complete access enforcement.
-3. [Named deployment options](2023-supported-deployment-options.md) document
-   official capabilities and a small integration cost estimate. The setup
-   choice remains pending; no resource, credential, security change or spending
-   is authorized by that report. Continue synthetic-safe engineering meanwhile.
-4. Keep heldout and real-model launch gates closed until the deployed boundary
+1. Implement/review [genuine bounded replay retrieval](2023-bounded-replay-service-design.md),
+   the remaining meaningful safe integration slice. A truncated stored prefix
+   cannot be called pagination. Producer/projector work is on
+   `feat/replay-page-v2`; durable ownership/routing work is on
+   `feat/durable-replay-route`, both based on `d769760`. Preserve default v1
+   withholding and add explicit opt-in versioning, real offsets/windows and
+   complete-source/coverage markers. Separate independent reviews are active.
+2. Replay-route design must retain immutable owner/run/submission/source/view
+   binding, bounded storage/attempts and complete controller envelopes, with no
+   model-selected paths/URLs/commands. Host fixtures and source receipts are not
+   authentication or actual game validation. No real launch or heldout use.
+3. Integrate the reviewed replay changes and produce one coherent frozen
+   preflight release/resume guide. Do not keep adding unrelated synthetic
+   scaffolding after that meaningful gate is complete. Live-dependent work must
+   pause if deployment capabilities/authorization remain unavailable.
+4. [Named deployment options](2023-supported-deployment-options.md) and their
+   setup question remain pending; the coordinator confirmed no reply at
+   2026-10-20 01:00 UTC. No paid resource, credential or security change is
+   authorized by the proposal. Aggregate process-tree containment, supported
+   live model connection, authentication and production workspace/worker
+   lifecycle remain unpassed.
+5. Keep heldout and real-model launch gates closed until the deployed boundary
    passes. Then freeze a prospective trial protocol before a fresh autonomous
-   attempt. Provisioning and these passing component tests do not complete the
-   engineering or establish competitive strength.
+   attempt. Provisioning and passing component tests do not establish competence.

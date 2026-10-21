@@ -1,0 +1,21 @@
+{
+  "trial": "BCENV-005",
+  "complete_assignments": 24,
+  "planned_assignments": 24,
+  "wins": 9,
+  "losses": 15,
+  "draws": 0,
+  "timeouts": 0,
+  "retries": 0,
+  "infrastructure_failures": 0,
+  "terminal_reasons": {
+    "75_percent_island_capture": 24
+  },
+  "both_teams_active_all_games": true,
+  "freeze_and_build_hashes_unchanged": true,
+  "plan_sha256": "5b8bdaec588f4bd9ecb92c0648a5890647869d1bd9417f7d18139137e50bbfd6",
+  "blind_code_audit_sha256": "8e4fdbf8ecfeffe9e5eee81a5612db72bd700170d881c9d79d3822b8b67cd79b",
+  "native_full_tool_history_available": false,
+  "interpretation": "Working cooperative experiment infrastructure; single frozen candidate not established competent. Different opponents/maps from BCENV-004 prohibit a causal improvement claim. Public-source historical model exposure unknown.",
+  "publication_scope": "Aggregate summary only; raw opponent sources, identities, selected maps, schedule and result details remain local."
+}

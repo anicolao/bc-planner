@@ -1279,3 +1279,11 @@ Repeated exact user approval Sentinel_7394f361f4e881919d712f2e0bda2fd6 for pre-l
 ````text
 Ok let's proceed.
 ````
+
+## Prompt 121: Record practical trial start
+
+Repeated exact approval Sentinel_7394f361f4e881919d712f2e0bda2fd6 for the authorized fresh trial start. Source reconciliation remains Prompts117–119; no later user instruction supplied.
+
+````text
+Ok let's proceed.
+````

@@ -1,0 +1,39 @@
+{
+  "audit_sha256": "a1c90ef6986e319080b8adf6f9a0d89606feb5889ac925b70cc98b89058190bc",
+  "events": 91,
+  "failures": [],
+  "final_event_sha256": "911f6e5fa722ae15872c3ab6a9a2bd044a7978edc0c877b3ba69c45548176584",
+  "limits": {
+    "games": 64,
+    "mailbox_requests": 2200,
+    "notes": 24,
+    "reads": 2000,
+    "replay_queries": 150,
+    "submissions": 8
+  },
+  "operations": {
+    "complete": 8,
+    "completed_games": 64,
+    "experiment_note": 8,
+    "game_attempts": 64,
+    "mailbox_responses": 83,
+    "replay": 53,
+    "result": 14,
+    "submit": 8
+  },
+  "quota_observed": {
+    "games": 64,
+    "mailbox_requests": null,
+    "notes": 8,
+    "reads": 67,
+    "replay_queries": 53,
+    "submissions": 8
+  },
+  "scope": "Cooperative recorded ordering/integrity only; no same-user tamper resistance, hypothesis-quality or full behavioral audit claim.",
+  "status": "consistent_with_limits",
+  "unknowns": [
+    "mailbox stopped marker unavailable; stop must be independently established",
+    "Refused/failed request operations are not fully logged; read/replay counters are lower bounds, not proof of every charged attempt."
+  ],
+  "verified_feedback_receipts": 53
+}

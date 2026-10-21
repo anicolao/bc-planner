@@ -82,3 +82,7 @@ The learning loop and code assessment must remain separate from win counts.
 One successful cooperative development run neither completes the larger
 three-agent competence campaign nor supplies merge permission. Held-out feedback
 will not be given to this stopped competitor.
+
+## Post-freeze outcome
+
+The frozen candidate won **4/24** valid diagnostic held-out games, with no retries or infrastructure failures. See [aggregate evaluation summary](EVALUATION-SUMMARY.md). Detailed benchmark material remains observer-local. The cooperative environment functions; broader competitive competence is not achieved. No feedback returned to the stopped competitor.

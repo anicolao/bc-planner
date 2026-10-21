@@ -1303,3 +1303,11 @@ Repeated exact approval Sentinel_7394f361f4e881919d712f2e0bda2fd6 for authorized
 ````text
 Ok let's proceed.
 ````
+
+## Prompt 124: Publish aggregate evaluation summary
+
+Repeated exact approval Sentinel_7394f361f4e881919d712f2e0bda2fd6 for authorized summary documents. Source coverage: why-blocked→117; VM correction→118; proceed→119. No later direct user message supplied to worker; parent handles room/automation coverage. Detailed benchmark artifact publication was denied and not retried; this clean commit contains only aggregate summary, hashes and native spawn metadata, no heldout plan/maps/opponents/raw data. No inaccessible history claimed audited.
+
+````text
+Ok let's proceed.
+````

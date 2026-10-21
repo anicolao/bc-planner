@@ -1,0 +1,18 @@
+{
+  "record_type": "observer_transcription_of_visible_native_spawn_exchange",
+  "observed_at": "2026-10-21T13:25:42Z",
+  "request": {
+    "task_name": "competitor_004",
+    "fork_turns": "none",
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "high",
+    "message_file": "kickoff.txt",
+    "message_file_sha256": "1b843434e85f81b273c6656c2c46e567b32561e73d8e0394450ccf6d75c3ee86",
+    "message_transform": "File text without final newline, as passed to spawn",
+    "message_sha256": "5e6340f783594ce002463d9bd6cbad608bfa5dbbb86ed0757e1a7d468c04f357"
+  },
+  "response": {
+    "task_name": "/root/reassess_vm_service_requirements/competitor_004"
+  },
+  "limits": "Response acknowledged task name, not runtime model identity/effort attestation. This is observer transcription of visible tool exchange, not a signed provider transcript. Full native activity transcript unavailable."
+}

@@ -1335,3 +1335,11 @@ Repeated exact approval Sentinel_7394f361f4e881919d712f2e0bda2fd6 for authorized
 ````text
 Ok let's proceed.
 ````
+
+## Prompt 128: Record fresh trial start
+
+Repeated exact approval Sentinel_7394f361f4e881919d712f2e0bda2fd6 for authorized fresh trial after parent gate review. Source coverage remains117–119; no later direct user message supplied. Exact published kickoff and manifest reused, no strategic advice or inherited history.
+
+````text
+Ok let's proceed.
+````

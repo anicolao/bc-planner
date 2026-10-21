@@ -1287,3 +1287,11 @@ Repeated exact approval Sentinel_7394f361f4e881919d712f2e0bda2fd6 for the author
 ````text
 Ok let's proceed.
 ````
+
+## Prompt 122: Preserve prospective evaluation commitment
+
+Repeated exact approval Sentinel_7394f361f4e881919d712f2e0bda2fd6 for authorized observer records; source reconciliation remains Prompts117–119. This commit publishes prior local integration pins, corrects a run label alias and records a private plan hash, without exposing heldout content.
+
+````text
+Ok let's proceed.
+````

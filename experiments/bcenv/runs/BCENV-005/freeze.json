@@ -1,0 +1,26 @@
+{
+  "frozen_at": "2026-10-21T14:53:12.142466+00:00",
+  "competitor_status": "completed; native list_agents confirmed",
+  "service_status": "stopped exit130 session88839",
+  "submission_id": "s_4b963e20fb334da6afa80bfd71797428",
+  "normalized_service_source_sha256": "e1605b1680175e5bd91dd66616a1e0e69f618c3c737226de2aaceef59c00e8a7",
+  "file_hashes": {
+    "FINAL.md": "065c14bbda766e91a5f32d611c5aa5cc990cae1e1845e9a5107e8b40734ac4fe",
+    "candidate-verification.json": "14ecc91f6b96ece9fac549576914f0ed995376bb13fa312a8c51f152fce4caa2",
+    "development-result.json": "faf5d2db2a64531ed1b2ad5096edc67a345aa013b5d4a662b600f87a0bef15f9",
+    "source.zip": "500e31721c32e8c355687568f4707627efb54674dc7e8f8efc0806ee68b2810e",
+    "src/tide/RobotPlayer.java": "3f852d409a9f4bb840d4f99bdc516d288364436990f64c9ed7bb5aecb2d5a33d"
+  },
+  "supplied_input_files_checked": 55,
+  "supplied_input_files_changed": [],
+  "service_operation_counts": {
+    "experiment_note": 8,
+    "submit": 8,
+    "result": 14,
+    "complete": 8,
+    "replay": 53
+  },
+  "full_native_tool_transcript_available": false,
+  "new_panel_material_introduced_before_freeze": false,
+  "note": "Hashes fix artifacts, not same-user immutable security storage. Prior004 evaluator artifacts outside instructed workspace remained technically accessible."
+}

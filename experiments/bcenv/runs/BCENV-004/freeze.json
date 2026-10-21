@@ -1,0 +1,25 @@
+{
+  "frozen_at": "2026-10-21T13:37:36Z",
+  "competitor_status": "completed, native list_agents confirmed",
+  "service_status": "stopped exit130 after final report, session53456",
+  "submission_id": "s_f6c3960b5ace4284ace24ed6a4fe5a6e",
+  "normalized_service_source_sha256": "0ae8c2f32053048f84537ee01bedda217abde5efc03deb8225c3f0564a22780f",
+  "file_hashes": {
+    "candidate-verification.json": "3f6bb652ec6a310a7e969108eda36f0d548f4831ba79e94b19eb082033c6cb73",
+    "source.zip": "743294b954d934bd20824f462ccd878cec713cefa1900ab4d8a89529a2b5b48e",
+    "development-result.json": "64a79e1af2af532b2dac0645b4ffa4c5a325d762a48a433830e1ebd5f33462bd",
+    "FINAL.md": "c70755c945cd25965293f87ebb3ed2cef421e2cc0ae403d2a3b135b9d62bbffd",
+    "src/tempest/RobotPlayer.java": "2e235e4f9c29a5b904fae2633d28e96f21126184c62ea8bf450f62db88c85b42"
+  },
+  "supplied_input_files_checked": 50,
+  "supplied_input_files_changed": [],
+  "service_operation_counts": {
+    "submit": 6,
+    "complete": 6,
+    "result": 11,
+    "replay": 49
+  },
+  "full_native_tool_transcript_available": false,
+  "no_holdout_material_introduced_before_freeze": true,
+  "note": "Frozen source bytes equal service-compiled source. SHA256 hashes fix artifacts; same-user filesystem is not immutable security storage."
+}

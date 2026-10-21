@@ -1,0 +1,14 @@
+{
+  "note_id": "n_529f92c95fa141d58d359013bffc5004",
+  "note_sequence": 1,
+  "note_sha256": "ef2454cc5b36277f9aea377ea541e93f0127716339a34ec708fde8103ef97511",
+  "schema": "bcenv.local-trial.v1",
+  "source_sha256": "5e0f8324fdf0651c1806035fab242dfc5163c20042401f54d55147f8c1a54cea",
+  "status": "accepted",
+  "submission_id": "s_f5afb21ebd404675a312ef67d11f4ab1",
+  "submission_receipt": {
+    "event_sha256": "c0545efdab862e54f0c180da5afdeee4768cd741dde38330fb9da830eff6321a",
+    "sequence": 2,
+    "time_ns": 1792592100185871145
+  }
+}

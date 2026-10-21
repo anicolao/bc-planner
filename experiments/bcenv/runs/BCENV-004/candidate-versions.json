@@ -1,0 +1,93 @@
+[
+  {
+    "version": 1,
+    "submission_id": "s_9ce31b2af2994541960423fa79626e8c",
+    "service_source_sha256": "f2e4831df8fbf2e8dd6d671cb327597ee38309a0fa5d0faf0ef67b3d9154a333",
+    "source_file_sha256": "c5052aba34542bf6fe7849270472461b696a17017571f0664b10218d728e8210",
+    "local_build_status": "failed",
+    "terminal_result": "work/result-v1-001.json",
+    "status": "rejected",
+    "wins": null,
+    "rounds": []
+  },
+  {
+    "version": 2,
+    "submission_id": "s_f894356e94d941bfa8bffa792c7b4dd1",
+    "service_source_sha256": "92901fc678fb11e43849f73b7ccaeeaba3452478650af15a623d7bb797baaadb",
+    "source_file_sha256": "4deefac9c7468135a7135f5acf92d51aa300f12137e954e09afbe5da5dfba5dc",
+    "local_build_status": "verified",
+    "terminal_result": "work/result-v2-003.json",
+    "status": "complete",
+    "wins": 4,
+    "rounds": [
+      405,
+      435,
+      299,
+      392
+    ]
+  },
+  {
+    "version": 3,
+    "submission_id": "s_6acbf32216384bf2a72955f33e72e4ec",
+    "service_source_sha256": "784e07964e2b866227c25a5bf7a56a2d283f7956da0a0a0e3e20e59166b2344b",
+    "source_file_sha256": "61db20d51a675518b8a929d763a5c00ad581592ebc4ce88c930417d4e437cf4d",
+    "local_build_status": "verified",
+    "terminal_result": "work/result-v3-002.json",
+    "status": "complete",
+    "wins": 4,
+    "rounds": [
+      412,
+      531,
+      517,
+      444
+    ]
+  },
+  {
+    "version": 4,
+    "submission_id": "s_ea571da612b44ba6b348934916505e4d",
+    "service_source_sha256": "600510bca5d5dd104838e22ddb0080c3bb46d359d76735fae26f5c6b72ff4bdb",
+    "source_file_sha256": "1cbc756796dd0d5073d166f7d5842578c49e8af4fb674f8630a81c14e94410ec",
+    "local_build_status": "verified",
+    "terminal_result": "work/result-v4-002.json",
+    "status": "complete",
+    "wins": 3,
+    "rounds": [
+      629,
+      277,
+      160,
+      178
+    ]
+  },
+  {
+    "version": 5,
+    "submission_id": "s_32969a52d94d4ba59a5a3974f5ee557e",
+    "service_source_sha256": "885e89bfbb62de4170adcad02f469fd284f723dc7044e60d7d50a5727f33bd1c",
+    "source_file_sha256": "c5581c61acdcac63239730a35f75252746e130d86d156a90f6d82b115e9806df",
+    "local_build_status": "verified",
+    "terminal_result": "work/result-v5-001.json",
+    "status": "complete",
+    "wins": 4,
+    "rounds": [
+      469,
+      460,
+      251,
+      222
+    ]
+  },
+  {
+    "version": 6,
+    "submission_id": "s_f6c3960b5ace4284ace24ed6a4fe5a6e",
+    "service_source_sha256": "0ae8c2f32053048f84537ee01bedda217abde5efc03deb8225c3f0564a22780f",
+    "source_file_sha256": "2e235e4f9c29a5b904fae2633d28e96f21126184c62ea8bf450f62db88c85b42",
+    "local_build_status": "verified",
+    "status": "complete",
+    "terminal_result": "work/result-v6-002.json",
+    "wins": 4,
+    "rounds": [
+      395,
+      447,
+      251,
+      222
+    ]
+  }
+]

@@ -1,0 +1,142 @@
+[
+  {
+    "game_index": 0,
+    "label": "beaver-Quiet-A",
+    "replay_sha256": "6ae1d64ff2471332ef2a3cd59bf2dcfa358f5012ea95766ec6a26a9f0847c40f",
+    "pages": 2,
+    "records": 202,
+    "counts": {
+      "opponent:action": 68,
+      "opponent:movement": 82,
+      "opponent:spawn": 8,
+      "opponent:team_resource_delta": 10,
+      "own:action": 14,
+      "own:movement": 10,
+      "own:team_resource_delta": 10
+    },
+    "active_both_teams": true
+  },
+  {
+    "game_index": 1,
+    "label": "beaver-Quiet-B",
+    "replay_sha256": "eafca95070fc3c6aaf003072438e9dd446d731f39e526f96443d1a9eef7de7f7",
+    "pages": 2,
+    "records": 220,
+    "counts": {
+      "opponent:action": 86,
+      "opponent:movement": 82,
+      "opponent:spawn": 8,
+      "opponent:team_resource_delta": 10,
+      "own:action": 14,
+      "own:movement": 10,
+      "own:team_resource_delta": 10
+    },
+    "active_both_teams": true
+  },
+  {
+    "game_index": 2,
+    "label": "beaver-BowAndArrow-A",
+    "replay_sha256": "a6a9069e2b99900b5f2c431c682641824cc519ffd683dc44de6fd2815cb469e1",
+    "pages": 4,
+    "records": 439,
+    "counts": {
+      "opponent:action": 191,
+      "opponent:movement": 164,
+      "opponent:spawn": 16,
+      "opponent:team_resource_delta": 10,
+      "own:action": 28,
+      "own:movement": 20,
+      "own:team_resource_delta": 10
+    },
+    "active_both_teams": true
+  },
+  {
+    "game_index": 3,
+    "label": "beaver-BowAndArrow-B",
+    "replay_sha256": "9f121be06fb844a464ab049e7ee57c5382294c6d9a148f15ea9fa2ed2cbfb4b6",
+    "pages": 5,
+    "records": 519,
+    "counts": {
+      "opponent:action": 195,
+      "opponent:movement": 163,
+      "opponent:spawn": 16,
+      "opponent:team_resource_delta": 10,
+      "own:action": 77,
+      "own:death": 3,
+      "own:movement": 41,
+      "own:spawn": 4,
+      "own:team_resource_delta": 10
+    },
+    "active_both_teams": true
+  },
+  {
+    "game_index": 4,
+    "label": "musketeers-Quiet-A",
+    "replay_sha256": "9a0dec400d38ef0ced7fa68619a1027aea85c4c8d09e6920246b54cc98d331b5",
+    "pages": 2,
+    "records": 213,
+    "counts": {
+      "opponent:action": 74,
+      "opponent:movement": 87,
+      "opponent:spawn": 8,
+      "opponent:team_resource_delta": 10,
+      "own:action": 14,
+      "own:movement": 10,
+      "own:team_resource_delta": 10
+    },
+    "active_both_teams": true
+  },
+  {
+    "game_index": 5,
+    "label": "musketeers-Quiet-B",
+    "replay_sha256": "ce9d95159b4e4a862752da5842dc2ea789f86b9a17ab4e4dfa99b02621ce0ffb",
+    "pages": 2,
+    "records": 217,
+    "counts": {
+      "opponent:action": 78,
+      "opponent:movement": 87,
+      "opponent:spawn": 8,
+      "opponent:team_resource_delta": 10,
+      "own:action": 14,
+      "own:movement": 10,
+      "own:team_resource_delta": 10
+    },
+    "active_both_teams": true
+  },
+  {
+    "game_index": 6,
+    "label": "musketeers-BowAndArrow-A",
+    "replay_sha256": "4176681bd74c9b53c385df052b8b896f525c542657097970cb89fb5a25a2b77c",
+    "pages": 4,
+    "records": 446,
+    "counts": {
+      "opponent:action": 190,
+      "opponent:movement": 172,
+      "opponent:spawn": 16,
+      "opponent:team_resource_delta": 10,
+      "own:action": 28,
+      "own:movement": 20,
+      "own:team_resource_delta": 10
+    },
+    "active_both_teams": true
+  },
+  {
+    "game_index": 7,
+    "label": "musketeers-BowAndArrow-B",
+    "replay_sha256": "f2fbbb3655dd03ebf1953785c5589d298e6f0e8f655f404ad930b3c3d17483c5",
+    "pages": 4,
+    "records": 493,
+    "counts": {
+      "opponent:action": 201,
+      "opponent:movement": 172,
+      "opponent:spawn": 16,
+      "opponent:team_resource_delta": 10,
+      "own:action": 49,
+      "own:death": 1,
+      "own:movement": 32,
+      "own:spawn": 2,
+      "own:team_resource_delta": 10
+    },
+    "active_both_teams": true
+  }
+]

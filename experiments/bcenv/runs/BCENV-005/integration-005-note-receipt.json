@@ -1,0 +1,15 @@
+{
+  "audit_receipt": {
+    "event_sha256": "ad243778b03777f1794edff65f416a93f946e714b430e7d40334a6b76f953562",
+    "sequence": 1,
+    "time_ns": 1792592100031679795
+  },
+  "note_id": "n_529f92c95fa141d58d359013bffc5004",
+  "note_sha256": "ef2454cc5b36277f9aea377ea541e93f0127716339a34ec708fde8103ef97511",
+  "package": "lectureplayer",
+  "replay_references": [],
+  "schema": "bcenv.local-trial.v1",
+  "source_sha256": "5e0f8324fdf0651c1806035fab242dfc5163c20042401f54d55147f8c1a54cea",
+  "status": "noted",
+  "text": "Engineering integration prediction: unchanged official tutorial source passes verification, all eight fixed public development games terminate with active complete replay evidence, and bounded replay receipts bind this source. Outcomes are a service check, not model competence.\n"
+}

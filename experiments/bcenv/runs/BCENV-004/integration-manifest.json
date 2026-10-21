@@ -1,0 +1,50 @@
+{
+  "experiment": "BCENV-004",
+  "phase": "public prelaunch integration",
+  "max_match_attempts": 4,
+  "config": {
+    "command": [
+      "/workspace/scratch/1523a3f802eb/nix-canonical-root/nix-root",
+      "run",
+      "path:/workspace/scratch/1523a3f802eb/vm-reassessment/source#bcenv",
+      "--"
+    ],
+    "games": [
+      {
+        "label": "DefaultMap-A",
+        "opponent_build": "/workspace/scratch/1523a3f802eb/vm-reassessment/development/beaver-selected-build",
+        "map_path": "/workspace/scratch/1523a3f802eb/nix-canonical-root/root/nix/store/gyyg1xgc61p759d7qw9w28hgh7ip6nvk-battlecode23-engine-3.0.13/share/battlecode23/maps/DefaultMap.map23",
+        "own_slot": "A"
+      },
+      {
+        "label": "DefaultMap-B",
+        "opponent_build": "/workspace/scratch/1523a3f802eb/vm-reassessment/development/beaver-selected-build",
+        "map_path": "/workspace/scratch/1523a3f802eb/nix-canonical-root/root/nix/store/gyyg1xgc61p759d7qw9w28hgh7ip6nvk-battlecode23-engine-3.0.13/share/battlecode23/maps/DefaultMap.map23",
+        "own_slot": "B"
+      },
+      {
+        "label": "Rectangle-A",
+        "opponent_build": "/workspace/scratch/1523a3f802eb/vm-reassessment/development/beaver-selected-build",
+        "map_path": "/workspace/scratch/1523a3f802eb/nix-canonical-root/root/nix/store/gyyg1xgc61p759d7qw9w28hgh7ip6nvk-battlecode23-engine-3.0.13/share/battlecode23/maps/Rectangle.map23",
+        "own_slot": "A"
+      },
+      {
+        "label": "Rectangle-B",
+        "opponent_build": "/workspace/scratch/1523a3f802eb/vm-reassessment/development/beaver-selected-build",
+        "map_path": "/workspace/scratch/1523a3f802eb/nix-canonical-root/root/nix/store/gyyg1xgc61p759d7qw9w28hgh7ip6nvk-battlecode23-engine-3.0.13/share/battlecode23/maps/Rectangle.map23",
+        "own_slot": "B"
+      }
+    ],
+    "timeout": 120,
+    "max_submissions": 1
+  },
+  "map_sha256": {
+    "DefaultMap.map23": "a53211fc3fb4cc6427693f6f65b0732cc4bdf9ecb90f911ffbd71b5af82bb910",
+    "Rectangle.map23": "6112212dbc999d776e15a2b88d0c32fbbf8341483e549c9a7a6f45a0489642e6"
+  },
+  "source": "official lectureplayer selected package only",
+  "candidate_build_artifact_sha256": "b8ecc546c871fb9bfde19c8356a9670a34faf81e7791226374bdf1c90f30d12c",
+  "opponent_build_artifact_sha256": "e81c49ba7654cf12a9455ddb2271f87de9686cf9c746dded3aad7bcc82a4f9e0",
+  "protocol_commit": "75908e0",
+  "note": "Recorded before any match; candidate source is official tutorial, not a model competitor."
+}

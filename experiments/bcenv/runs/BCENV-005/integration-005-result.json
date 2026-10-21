@@ -1,0 +1,98 @@
+{
+  "games": [
+    {
+      "index": 0,
+      "label": "beaver-Quiet-A",
+      "outcome": "loss",
+      "own_slot": "A",
+      "replay_sha256": "6ae1d64ff2471332ef2a3cd59bf2dcfa358f5012ea95766ec6a26a9f0847c40f",
+      "status": "completed",
+      "terminal_reason": null,
+      "total_rounds": 306
+    },
+    {
+      "index": 1,
+      "label": "beaver-Quiet-B",
+      "outcome": "loss",
+      "own_slot": "B",
+      "replay_sha256": "eafca95070fc3c6aaf003072438e9dd446d731f39e526f96443d1a9eef7de7f7",
+      "status": "completed",
+      "terminal_reason": null,
+      "total_rounds": 420
+    },
+    {
+      "index": 2,
+      "label": "beaver-BowAndArrow-A",
+      "outcome": "loss",
+      "own_slot": "A",
+      "replay_sha256": "a6a9069e2b99900b5f2c431c682641824cc519ffd683dc44de6fd2815cb469e1",
+      "status": "completed",
+      "terminal_reason": null,
+      "total_rounds": 678
+    },
+    {
+      "index": 3,
+      "label": "beaver-BowAndArrow-B",
+      "outcome": "loss",
+      "own_slot": "B",
+      "replay_sha256": "9f121be06fb844a464ab049e7ee57c5382294c6d9a148f15ea9fa2ed2cbfb4b6",
+      "status": "completed",
+      "terminal_reason": null,
+      "total_rounds": 666
+    },
+    {
+      "index": 4,
+      "label": "musketeers-Quiet-A",
+      "outcome": "loss",
+      "own_slot": "A",
+      "replay_sha256": "9a0dec400d38ef0ced7fa68619a1027aea85c4c8d09e6920246b54cc98d331b5",
+      "status": "completed",
+      "terminal_reason": null,
+      "total_rounds": 480
+    },
+    {
+      "index": 5,
+      "label": "musketeers-Quiet-B",
+      "outcome": "loss",
+      "own_slot": "B",
+      "replay_sha256": "ce9d95159b4e4a862752da5842dc2ea789f86b9a17ab4e4dfa99b02621ce0ffb",
+      "status": "completed",
+      "terminal_reason": null,
+      "total_rounds": 446
+    },
+    {
+      "index": 6,
+      "label": "musketeers-BowAndArrow-A",
+      "outcome": "loss",
+      "own_slot": "A",
+      "replay_sha256": "4176681bd74c9b53c385df052b8b896f525c542657097970cb89fb5a25a2b77c",
+      "status": "completed",
+      "terminal_reason": null,
+      "total_rounds": 412
+    },
+    {
+      "index": 7,
+      "label": "musketeers-BowAndArrow-B",
+      "outcome": "loss",
+      "own_slot": "B",
+      "replay_sha256": "f2fbbb3655dd03ebf1953785c5589d298e6f0e8f655f404ad930b3c3d17483c5",
+      "status": "completed",
+      "terminal_reason": null,
+      "total_rounds": 391
+    }
+  ],
+  "losses": 8,
+  "note_id": "n_529f92c95fa141d58d359013bffc5004",
+  "note_sequence": 1,
+  "note_sha256": "ef2454cc5b36277f9aea377ea541e93f0127716339a34ec708fde8103ef97511",
+  "schema": "bcenv.local-trial.v1",
+  "source_sha256": "5e0f8324fdf0651c1806035fab242dfc5163c20042401f54d55147f8c1a54cea",
+  "status": "complete",
+  "submission_id": "s_f5afb21ebd404675a312ef67d11f4ab1",
+  "submission_receipt": {
+    "event_sha256": "c0545efdab862e54f0c180da5afdeee4768cd741dde38330fb9da830eff6321a",
+    "sequence": 2,
+    "time_ns": 1792592100185871145
+  },
+  "wins": 0
+}

@@ -1,5 +1,32 @@
 # Competitive program checkpoint
 
+Updated 2026-10-22 12:36 UTC. **The competitive goal is not achieved.**
+The existing VM now runs the cooperative scrimmage service; a missing host or
+provider API is not the current execution blocker. This is not hard filesystem
+isolation. Historical statements below describe their dates, not current state.
+
+Current work: [BCENV-009 public finalist validation](2023-public-finalist-validation-009.md),
+[planner PR16](https://github.com/anicolao/bc-planner/pull/16), stacked on PR15;
+[bcenv PR21](https://github.com/anicolao/bcenv/pull/21), stacked on PR20.
+Code CI and390 local tests passed. The separate32-game public tutorial phase
+preflight passed, with110 replay queries and independent code/input reviews.
+Updated protocol CI, parent readiness and independent live parity passed.
+Fresh009 completed64 training plus16 locked-finalist validation games and stopped
+before its deadline. Both finalists tied at4/8 public validation; provisional V3
+remained selected. Independent blind source/process review and exact selected
+rebuild passed, with narrow correctness and cooperative-boundary limitations.
+This is a functioning selection workflow, not established broad competence.
+No merge is authorized.
+
+Recent cooperative work and public-development checkpoints are recorded in
+[replication006/007](2023-cooperative-replication-006.md) and
+[validation008](2023-cooperative-validation-008.md). The private evaluator
+summary publication request remains separate and pending; no such outcome
+payload is included here. Existing frozen competitors are not resumed.
+
+## Historical checkpoint snapshot — 2026-10-20
+
+
 Updated 2026-10-20 01:34 UTC. **The competitive goal is not achieved.** No new
 competitor model trial, private benchmark selection or deployed service exists.
 [Roadmap](2023-competitive-program.md) and

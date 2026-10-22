@@ -1,0 +1,957 @@
+{
+  "algorithm": {
+    "evaluator_inventory_consulted": false,
+    "exclusion_names": [
+      "BowAndArrow.map23",
+      "Quiet.map23"
+    ],
+    "filename_encoding": "UTF-8, case preserved",
+    "geometry_or_results_used": false,
+    "line_ending": "LF byte0x0a; final LF included; no BOM",
+    "map_hash_representation": "64 lowercase ASCII hex characters, not raw digest bytes",
+    "ranking": "SHA256(UTF8(seed + LF + exact filename including .map23 + LF + lowercase hexadecimal SHA256(raw map file bytes) + LF))",
+    "selection": "first two after excluding ONLY Quiet.map23 and BowAndArrow.map23",
+    "sorting": "ascending ranking_sha256 hexadecimal, then exact filename lexicographically for ties"
+  },
+  "eligible_count": 101,
+  "engine": {
+    "engine_sha256": "2b6db98e312e0e509d599acc46bffbb55c2569de0f12c8214a85ee57625f15f2",
+    "public_map_root": "/workspace/scratch/1523a3f802eb/nix-canonical-root/root/nix/store/gyyg1xgc61p759d7qw9w28hgh7ip6nvk-battlecode23-engine-3.0.13/share/battlecode23/maps",
+    "source_revision": "9b890f83672c98b81cc153f618bd56e1ab6134b5",
+    "version": "3.0.13"
+  },
+  "engine_heap_mib": 512,
+  "experiment_id": "BCENV-009",
+  "finalists": 2,
+  "game_timeout_seconds": 120,
+  "games_per_finalist": [
+    {
+      "label": "beaver-Elephant-A",
+      "map_path": "/workspace/scratch/1523a3f802eb/nix-canonical-root/root/nix/store/gyyg1xgc61p759d7qw9w28hgh7ip6nvk-battlecode23-engine-3.0.13/share/battlecode23/maps/Elephant.map23",
+      "map_sha256": "87c0f362b047d31ae4887cb8aef43d84a83045aca9b9b878f1beee95ea9cc4e2",
+      "opponent_build": "/workspace/scratch/1523a3f802eb/replication-006/development/beaver-selected-build",
+      "own_slot": "A"
+    },
+    {
+      "label": "beaver-Elephant-B",
+      "map_path": "/workspace/scratch/1523a3f802eb/nix-canonical-root/root/nix/store/gyyg1xgc61p759d7qw9w28hgh7ip6nvk-battlecode23-engine-3.0.13/share/battlecode23/maps/Elephant.map23",
+      "map_sha256": "87c0f362b047d31ae4887cb8aef43d84a83045aca9b9b878f1beee95ea9cc4e2",
+      "opponent_build": "/workspace/scratch/1523a3f802eb/replication-006/development/beaver-selected-build",
+      "own_slot": "B"
+    },
+    {
+      "label": "beaver-Spiderweb-A",
+      "map_path": "/workspace/scratch/1523a3f802eb/nix-canonical-root/root/nix/store/gyyg1xgc61p759d7qw9w28hgh7ip6nvk-battlecode23-engine-3.0.13/share/battlecode23/maps/Spiderweb.map23",
+      "map_sha256": "07f4cc645a86982b1d37f2209b1a539be397c3bcf8cf42e1133499749a6e84c4",
+      "opponent_build": "/workspace/scratch/1523a3f802eb/replication-006/development/beaver-selected-build",
+      "own_slot": "A"
+    },
+    {
+      "label": "beaver-Spiderweb-B",
+      "map_path": "/workspace/scratch/1523a3f802eb/nix-canonical-root/root/nix/store/gyyg1xgc61p759d7qw9w28hgh7ip6nvk-battlecode23-engine-3.0.13/share/battlecode23/maps/Spiderweb.map23",
+      "map_sha256": "07f4cc645a86982b1d37f2209b1a539be397c3bcf8cf42e1133499749a6e84c4",
+      "opponent_build": "/workspace/scratch/1523a3f802eb/replication-006/development/beaver-selected-build",
+      "own_slot": "B"
+    },
+    {
+      "label": "musketeers-Elephant-A",
+      "map_path": "/workspace/scratch/1523a3f802eb/nix-canonical-root/root/nix/store/gyyg1xgc61p759d7qw9w28hgh7ip6nvk-battlecode23-engine-3.0.13/share/battlecode23/maps/Elephant.map23",
+      "map_sha256": "87c0f362b047d31ae4887cb8aef43d84a83045aca9b9b878f1beee95ea9cc4e2",
+      "opponent_build": "/workspace/scratch/1523a3f802eb/replication-006/development/musketeers-java-build",
+      "own_slot": "A"
+    },
+    {
+      "label": "musketeers-Elephant-B",
+      "map_path": "/workspace/scratch/1523a3f802eb/nix-canonical-root/root/nix/store/gyyg1xgc61p759d7qw9w28hgh7ip6nvk-battlecode23-engine-3.0.13/share/battlecode23/maps/Elephant.map23",
+      "map_sha256": "87c0f362b047d31ae4887cb8aef43d84a83045aca9b9b878f1beee95ea9cc4e2",
+      "opponent_build": "/workspace/scratch/1523a3f802eb/replication-006/development/musketeers-java-build",
+      "own_slot": "B"
+    },
+    {
+      "label": "musketeers-Spiderweb-A",
+      "map_path": "/workspace/scratch/1523a3f802eb/nix-canonical-root/root/nix/store/gyyg1xgc61p759d7qw9w28hgh7ip6nvk-battlecode23-engine-3.0.13/share/battlecode23/maps/Spiderweb.map23",
+      "map_sha256": "07f4cc645a86982b1d37f2209b1a539be397c3bcf8cf42e1133499749a6e84c4",
+      "opponent_build": "/workspace/scratch/1523a3f802eb/replication-006/development/musketeers-java-build",
+      "own_slot": "A"
+    },
+    {
+      "label": "musketeers-Spiderweb-B",
+      "map_path": "/workspace/scratch/1523a3f802eb/nix-canonical-root/root/nix/store/gyyg1xgc61p759d7qw9w28hgh7ip6nvk-battlecode23-engine-3.0.13/share/battlecode23/maps/Spiderweb.map23",
+      "map_sha256": "07f4cc645a86982b1d37f2209b1a539be397c3bcf8cf42e1133499749a6e84c4",
+      "opponent_build": "/workspace/scratch/1523a3f802eb/replication-006/development/musketeers-java-build",
+      "own_slot": "B"
+    }
+  ],
+  "games_per_finalist_count": 8,
+  "interpretation": "Public selection evidence novel to Quiet/BowAndArrow training, not an independent held-out estimate; no assertion about evaluator membership or prior global observation.",
+  "inventory": [
+    {
+      "bytes": 22628,
+      "excluded_training": false,
+      "filename": "AbsoluteW.map23",
+      "map_sha256": "3f2c445db9ff46d2ddd57bccf00325e68545949f7a3ef7c77458de577db00189",
+      "ranking_sha256": "36981764ea4fc506c99effd68ac7276fc79c597cb8cc2ca434520b6ce494b3d9"
+    },
+    {
+      "bytes": 12848,
+      "excluded_training": false,
+      "filename": "AllElements.map23",
+      "map_sha256": "374eb3562e196131abcb543bb7671c1481d09c9f47a8462fe700d2c2d1c81e1a",
+      "ranking_sha256": "ad80ab58cb3f95456ff43ce99979a72af07cefd41ed39a587394b47a758136de"
+    },
+    {
+      "bytes": 22652,
+      "excluded_training": false,
+      "filename": "ArtistRendition.map23",
+      "map_sha256": "8f5b230d1f7bb01d4610763271efcaa22dc86a2857f7e0bd904fb0d0cae562be",
+      "ranking_sha256": "a9d154d5e32af6ad1dea1ccd715d646ab506625c7dd7839fc08e3e81be8f28ef"
+    },
+    {
+      "bytes": 5844,
+      "excluded_training": false,
+      "filename": "Barcode.map23",
+      "map_sha256": "21e5b30d789a167b1337228f1b5a29e62601c321ec0fd460b187d1a8a6f52e13",
+      "ranking_sha256": "5c9c203f4ee69cb159f9bae22f19231f1951feebde98274a279cb4ff6e24fc0c"
+    },
+    {
+      "bytes": 17028,
+      "excluded_training": false,
+      "filename": "BatSignal.map23",
+      "map_sha256": "e814e7dded37841bf00f99dbfef4e7577a147a62a0397954cae56d5188ff21c0",
+      "ranking_sha256": "c317c42865ea480f6dbc9b086ee3f7b34002553aadfb7f7747d75812b34c0cc4"
+    },
+    {
+      "bytes": 35248,
+      "excluded_training": false,
+      "filename": "BattleSuns.map23",
+      "map_sha256": "47dcae229e0c50b4a559dacd71a02d5d9e8dd0b046bd718775fbbed4bc712dca",
+      "ranking_sha256": "75732f20eb47cd5261cebc9a9c542a5e83a497cf84a8017d2fd3400b76502872"
+    },
+    {
+      "bytes": 12504,
+      "excluded_training": true,
+      "filename": "BowAndArrow.map23",
+      "map_sha256": "85010673dd610155d9d07dedd96c54a493dfc730b68c137d3fb5e34b2b681d70",
+      "ranking_sha256": "69baeead1e1b9658c2d7103281f3ae0e0f6aaad548852d262904155133ada590"
+    },
+    {
+      "bytes": 28248,
+      "excluded_training": false,
+      "filename": "Buggy.map23",
+      "map_sha256": "00c364386dad56808a348d71f046dbbc7e66d7018467a18f9a772f8adbfb97c1",
+      "ranking_sha256": "a658de2c5f6edbc08dcad41826333192bb41f434d3971613615ba8a873cea4cd"
+    },
+    {
+      "bytes": 35248,
+      "excluded_training": false,
+      "filename": "BuildSite.map23",
+      "map_sha256": "44e636f73e59e7aeb92f9892e19438ac63b911fa6bed015b8cd80a9b4ce65212",
+      "ranking_sha256": "d0642180b3f4ed9945d3254e8350e91466a576ec13223858c981ca43bbf92fbc"
+    },
+    {
+      "bytes": 35244,
+      "excluded_training": false,
+      "filename": "Cat.map23",
+      "map_sha256": "b2f381a4efbb8a2c8e442dc12aaa66e8f75d9c12ad00f7b73bb9962b5a2b0203",
+      "ranking_sha256": "ec94833078cfc8273b39feaec256768ce981c013c78e85cebcb8377a17554e40"
+    },
+    {
+      "bytes": 8644,
+      "excluded_training": false,
+      "filename": "Cave.map23",
+      "map_sha256": "c8d7955846d7938dc61122b260914dff5661db842dd551a8a01bd8179b7432e1",
+      "ranking_sha256": "1a3e2a90ebbf391ec87dd057feea5c19ef6e43a7922f8221d6ef86d3721b04bc"
+    },
+    {
+      "bytes": 17044,
+      "excluded_training": false,
+      "filename": "Cee.map23",
+      "map_sha256": "c4a0f1f5c02048be3bd91e5f06fe5742be4134d9c65ad2dc23a301f40330df40",
+      "ranking_sha256": "9925a7a89b0bb360b502ceded3a2f6296d51e8f7637a84517f1ef0d1ab445a53"
+    },
+    {
+      "bytes": 6428,
+      "excluded_training": false,
+      "filename": "Checkmate2.map23",
+      "map_sha256": "111c9e54d7654e0eb77670a7e2498a11a05c516ab58da5f2283006f65842e423",
+      "ranking_sha256": "40957967c7c9ba9a475a53ef9ce66baf3003622ba9bf839da02d92afaf0ff4e9"
+    },
+    {
+      "bytes": 6128,
+      "excluded_training": false,
+      "filename": "Clown.map23",
+      "map_sha256": "33ef8c396e9aaae83f63a83096e504f41d51d893e3e99a5eaab3a4a272e67392",
+      "ranking_sha256": "42c7edd427b411ae8b1c9cd8935f589f50d40e7896e7810a9744a97809fbc579"
+    },
+    {
+      "bytes": 50652,
+      "excluded_training": false,
+      "filename": "Contraction.map23",
+      "map_sha256": "acb19793e74e6bbf50abbc9ba9ecbf990c62f1276782e26f6e791dee739e1a31",
+      "ranking_sha256": "eb0a2ffd31ca243c1c88a4761a2bbbea8e327aeb0928110b87b435f8a5d8f132"
+    },
+    {
+      "bytes": 49020,
+      "excluded_training": false,
+      "filename": "Cornucopia.map23",
+      "map_sha256": "1926d95958d55527b231b6a627eca674da336416b0c4c55169e4b8abc3158f2a",
+      "ranking_sha256": "fc23112e8fba619903e780bf8596f335aef0a81bd2b24a683e7e94d7ed0f2a9f"
+    },
+    {
+      "bytes": 28604,
+      "excluded_training": false,
+      "filename": "Crossword.map23",
+      "map_sha256": "b233d4b0edf165437027d49976274808b67d26af0f3e9e22eb4e6f40a567be26",
+      "ranking_sha256": "f55e4da173b9dd6ff2f2c12b959b832becaad94cce95ce3fe046a4e207bb5bed"
+    },
+    {
+      "bytes": 12828,
+      "excluded_training": false,
+      "filename": "CrownJewels.map23",
+      "map_sha256": "cf7f48bcd33ad3f25e5679feee3ed2e89cbabd53b15c086c2bd8d2710f6abe79",
+      "ranking_sha256": "7298a2b7113ac077fa2cf1894750b5e844b2e75974315c717ac567eb7c5121c6"
+    },
+    {
+      "bytes": 12848,
+      "excluded_training": false,
+      "filename": "Cube.map23",
+      "map_sha256": "b03b2c132a3e8cdeff2232f3a6319d5635a3ac45e2509d1a8f4b0671350616bc",
+      "ranking_sha256": "d6d3909271f2bff2fb313afd737ffa9411940034ced6fc96b12ffa3de6ddfff7"
+    },
+    {
+      "bytes": 14616,
+      "excluded_training": false,
+      "filename": "DefaultMap.map23",
+      "map_sha256": "a53211fc3fb4cc6427693f6f65b0732cc4bdf9ecb90f911ffbd71b5af82bb910",
+      "ranking_sha256": "bd545eb2419bd4b9b23d803a48959b060be1087de1ffaac701f3436125057c76"
+    },
+    {
+      "bytes": 22624,
+      "excluded_training": false,
+      "filename": "Diagonal.map23",
+      "map_sha256": "cf0768097f63c1ec588fee32f97ab4fd7020d3a489d770af1eb05882689377ba",
+      "ranking_sha256": "251c66625d30464e98cef9ada1e1485716946667a114e7205c21ae1d5a76d732"
+    },
+    {
+      "bytes": 11428,
+      "excluded_training": false,
+      "filename": "Divergence.map23",
+      "map_sha256": "a7e6d4fd10b542687969361bc3de2c669c5b7c7f030c892439ab9bdb1173ce79",
+      "ranking_sha256": "bbd24b18b7a310c87c8a0c73df62401bc2cc7fd37d0727c7f6f4f686311cca50"
+    },
+    {
+      "bytes": 12844,
+      "excluded_training": false,
+      "filename": "Dreamy.map23",
+      "map_sha256": "b547eda7cdae0dca82c4287581152089843b6ffb7f1049f16485d1ab96c2ee2f",
+      "ranking_sha256": "9959b86891aa36992aeb94e897cc84b1d4eaf74059e5e14ee63c278f2d747242"
+    },
+    {
+      "bytes": 17048,
+      "excluded_training": false,
+      "filename": "Elephant.map23",
+      "map_sha256": "87c0f362b047d31ae4887cb8aef43d84a83045aca9b9b878f1beee95ea9cc4e2",
+      "ranking_sha256": "0c9c9208ea316302da5618ec4051014cedac0d075d286e75a38e111cbb1c76cf"
+    },
+    {
+      "bytes": 16496,
+      "excluded_training": false,
+      "filename": "ExtremelyMid.map23",
+      "map_sha256": "7099536ba340f376efda3116c25c034575d32aad1b97994853f061acc0891393",
+      "ranking_sha256": "2e357ab2fb11b88c56245f2d70abccd87eddb7f6da5fe67d150a496a014e9af0"
+    },
+    {
+      "bytes": 21252,
+      "excluded_training": false,
+      "filename": "Eyelands.map23",
+      "map_sha256": "3e500f2da562964ed5d610889159386f118f80c45b6a2f96f56ee612441687f3",
+      "ranking_sha256": "210f32146637c127b4ad02a29c21900161db457ec2dddac4be7b38a92789c183"
+    },
+    {
+      "bytes": 10584,
+      "excluded_training": false,
+      "filename": "FishCake.map23",
+      "map_sha256": "7ea690750941dfb7cfbaae95265a34e07e6d0a11e4fdecbe6fb87c6e83b61658",
+      "ranking_sha256": "cc9aee7fa1188fb919b7ca9da07373230e23de8b57c84dffdad0ef3f5e6e0132"
+    },
+    {
+      "bytes": 17400,
+      "excluded_training": false,
+      "filename": "Flower.map23",
+      "map_sha256": "24e38c63c380b24424da67d4b6f8998af817a5f5a54e7343486a723f4b774fbf",
+      "ranking_sha256": "b084877d0917bfbbcafb9a03f96d3c4b857ad3c0e1bf20699bf56783850d1512"
+    },
+    {
+      "bytes": 50704,
+      "excluded_training": false,
+      "filename": "Forest.map23",
+      "map_sha256": "7130ae0991fa17a3a71e651f98e75f7ce3370722d5ef4db01ea35b0b08d25aad",
+      "ranking_sha256": "c5412ecc74d60edd6dbd11e71a65da8a465f60a17b7a00d772166cb2e4ecfe95"
+    },
+    {
+      "bytes": 28604,
+      "excluded_training": false,
+      "filename": "FourNations.map23",
+      "map_sha256": "a548398e00dca157ee05336ef3828a8abd0cfe6be84b11d3b0e9521b4d618ced",
+      "ranking_sha256": "1ebebae63ecfee143be8d191d87c801fb9514c364fcd5986b812c4433acf3132"
+    },
+    {
+      "bytes": 50704,
+      "excluded_training": false,
+      "filename": "Fractured.map23",
+      "map_sha256": "62799c7a98ff523285976c1d2790c3c2a1de18995a499a5c8030ee1e397c2116",
+      "ranking_sha256": "e278a5bad42a3af0594320bcef53e8daf0707e0a88ad8e50a12e711668e059e0"
+    },
+    {
+      "bytes": 21580,
+      "excluded_training": false,
+      "filename": "Frog.map23",
+      "map_sha256": "46f8140a5915c245ea189dc7ae4e467ca4d711b4d883d22745dcf50931278078",
+      "ranking_sha256": "9e34b44dd05b1102c19ee926ef56a0bf36b37010afd02c5f777272d146a29c92"
+    },
+    {
+      "bytes": 12848,
+      "excluded_training": false,
+      "filename": "Grapes.map23",
+      "map_sha256": "6efce2288c8e175562204a7a36df2547c2b24080a21b5361920417e51d8249b2",
+      "ranking_sha256": "fcdf992108b4c754cef31daeaddd8744c2a1d1d7dbb1cc9886cbe03a5d759605"
+    },
+    {
+      "bytes": 50648,
+      "excluded_training": false,
+      "filename": "Grievance.map23",
+      "map_sha256": "3e47a824f2fea02eec51679008a4138b6ded4bf386700fbf05c3eea4ef0087b8",
+      "ranking_sha256": "be5b71c0e39e85df119fcf471fe4ab4e70a32d31db763424f4c2d74cf84c3771"
+    },
+    {
+      "bytes": 17748,
+      "excluded_training": false,
+      "filename": "Hah.map23",
+      "map_sha256": "5a19c0ceff5c7f360c22c0b246cad6dc7883348d612c89a68450fa68f3302317",
+      "ranking_sha256": "c70c8074d1d39cf0db29c6d864b4d88994db0ac0b3ebb285529512f97f4bc47d"
+    },
+    {
+      "bytes": 21248,
+      "excluded_training": false,
+      "filename": "Heart.map23",
+      "map_sha256": "2da2b44c4e9841b83bdcedd7407a755b8f565e7861785346587996fa092b6f1d",
+      "ranking_sha256": "4c3fcd7cd9e1fd353d76fcb16d1a7bd2e11f8484994c018230d5f7e09af9d939"
+    },
+    {
+      "bytes": 16308,
+      "excluded_training": false,
+      "filename": "HideAndSeek.map23",
+      "map_sha256": "75a4b994b6962882910daf8e99dc6f64f61c87b938912bbbf8ad7e61f184afa3",
+      "ranking_sha256": "95f4d232557b5ab398101ebdb905fc2789e56a22d575d65c12b9bf072ea6fad0"
+    },
+    {
+      "bytes": 17052,
+      "excluded_training": false,
+      "filename": "HotAirBalloon.map23",
+      "map_sha256": "f55e1c0d5c7d5e7d86ac961b419807b5dedfb70421862f5c33229412541fe8dd",
+      "ranking_sha256": "bc6857a4ff0e00d3e2b91edadecee443bfcc03081d4604e3720ad1c15c8305c4"
+    },
+    {
+      "bytes": 25456,
+      "excluded_training": false,
+      "filename": "IslandHopping.map23",
+      "map_sha256": "40f09bc012798d9a1bdc3013b9a2f28be03f70dd2e0327136cc34fa978dccb59",
+      "ranking_sha256": "c32acba1381ed886c9a86bf3e513a7542da495e90d0dad690172ec4fd97cf042"
+    },
+    {
+      "bytes": 45692,
+      "excluded_training": false,
+      "filename": "IslandHoppingTwo.map23",
+      "map_sha256": "6b2cd37c777f9c5dd554853392ed78263f23485ecc65daee0ef9101f4453ef2e",
+      "ranking_sha256": "da38e7e6ff81e2e5357e75d22fa759527b1709b5725c0e023643d5f33550bd5e"
+    },
+    {
+      "bytes": 8624,
+      "excluded_training": false,
+      "filename": "Jail.map23",
+      "map_sha256": "8c993e1c01a287ae3c491ed6c0fd88eae942ba65c681cf1d528cd1c6a881f527",
+      "ranking_sha256": "4b87324b4aa374651ee81250fce5030b991d0c91cffe7f1de9fc71ea2fd61007"
+    },
+    {
+      "bytes": 15368,
+      "excluded_training": false,
+      "filename": "KingdomRush.map23",
+      "map_sha256": "72893c68210afe6dd210da4703351bd41b0058ab9ef83f418e20dcafe9155188",
+      "ranking_sha256": "d97d95ffe484b8c5514a397c6e3065264064b31064e1849ec6d8b4c19a710d5a"
+    },
+    {
+      "bytes": 5824,
+      "excluded_training": false,
+      "filename": "Lantern.map23",
+      "map_sha256": "957883a7114e1c5c92b59c6a58cdf4f528ac50bf783786ca5ef8cdbc7bf4335e",
+      "ranking_sha256": "abb46a565186a346a11e1f1ab1ccad428b4e17f0d635d70182f030f71f42a805"
+    },
+    {
+      "bytes": 12852,
+      "excluded_training": false,
+      "filename": "LightWork.map23",
+      "map_sha256": "dd6d2728dcc3b9fcc883db52a8838fb64aa69069d91550cf8f9490dbb7736025",
+      "ranking_sha256": "c451f06050797f16f5682a6a08cb439d853e9a54dc6b19db0f6c2537e47ec62d"
+    },
+    {
+      "bytes": 22648,
+      "excluded_training": false,
+      "filename": "Lines.map23",
+      "map_sha256": "f7ecacbf7cb92152f4e79cac93ee68ecddfa3bc0c4d31460bf4b90bada19f5d6",
+      "ranking_sha256": "d6c68132ad8736d61f118a62efc9225c4277943fe03f3d28467fb030215cf22f"
+    },
+    {
+      "bytes": 19192,
+      "excluded_training": false,
+      "filename": "LookingGlass.map23",
+      "map_sha256": "052ff23b41612689b9ea0cc9b2ffab67a65b5e14d15ebce04cac8759ad43b7e6",
+      "ranking_sha256": "a0350ca6236cc5e985809ccee0874b8a86d2006a36f3ba8ee10e4e52eb271afe"
+    },
+    {
+      "bytes": 42220,
+      "excluded_training": false,
+      "filename": "Marsh.map23",
+      "map_sha256": "90f4d3a09eb6075345b3bfabf5422fd36dbbe5f0dcd3a3aac54b98186330ca84",
+      "ranking_sha256": "da2e66793d2df8932e5c9b69e383fd1025dd9065cd1613d00def9b656ad992d7"
+    },
+    {
+      "bytes": 22648,
+      "excluded_training": false,
+      "filename": "MassiveL.map23",
+      "map_sha256": "03a6ae16dc774f02e20ad972d6349d8977c68446bea124e98915d2b94b267fbc",
+      "ranking_sha256": "6dbd0db9a85ccede38209436db497f8af6cb045096e713fcc5a95329c74bef81"
+    },
+    {
+      "bytes": 35276,
+      "excluded_training": false,
+      "filename": "Maze.map23",
+      "map_sha256": "93bf405b00dca7d9a380dd80654c66d6e90eefbf153e4f7d7ace86410f88b911",
+      "ranking_sha256": "24244bb54d7e7babaf34979124854c7cd18d8a93e9e22a0d2fda40cde27335c0"
+    },
+    {
+      "bytes": 17028,
+      "excluded_training": false,
+      "filename": "Minefield.map23",
+      "map_sha256": "27ae95928490a85ae7a458339070de963df8fb60ce35700e75a45f5200de11f0",
+      "ranking_sha256": "5e43531a59a653723ec55137d30d6c13d87cd0ce00ae2924dd90dbf656b6f48c"
+    },
+    {
+      "bytes": 9700,
+      "excluded_training": false,
+      "filename": "MoonPhases.map23",
+      "map_sha256": "fcf247c9afcb8a79375ff211fe43e682e0f10e05bca660c1516787c0d84c81ed",
+      "ranking_sha256": "5f30b31320a5db28e9927938b6fc8692f41625ad0fd40d43c1491cf1ae50342f"
+    },
+    {
+      "bytes": 19148,
+      "excluded_training": false,
+      "filename": "Movepls.map23",
+      "map_sha256": "ab320b905bacdf10a9008ef40db48b2e794ff00013a153dc8d95f888e5b690f3",
+      "ranking_sha256": "5cfc69cd49efc0b85d6113ebe92591055a089b71cfa4d4002acc1803e8773471"
+    },
+    {
+      "bytes": 9080,
+      "excluded_training": false,
+      "filename": "Orbit.map23",
+      "map_sha256": "9594352cb89bf3cf307a57b21806d344433b26452a74675783dc899f7aa09f9a",
+      "ranking_sha256": "4b148868d5fd41bc0090f11a8a2e0509d337f0512a25d8e62c214f80a75216ad"
+    },
+    {
+      "bytes": 12892,
+      "excluded_training": false,
+      "filename": "PairedProgramming.map23",
+      "map_sha256": "a1ba84451d7ef632ed6777b228dd563290029931cd7b0e2303509d403218b6b7",
+      "ranking_sha256": "c8e61d3c12257ab31b4a18dd8a03aa6ca3930e844ffba530bb9c478b49ea25f9"
+    },
+    {
+      "bytes": 12848,
+      "excluded_training": false,
+      "filename": "Pakbot.map23",
+      "map_sha256": "0c6fe04f6a88682c9b1ceed4f9ccd99453daa31b5a7ddda9885454389755fcd5",
+      "ranking_sha256": "9f2cf41b2937c092a3eb27d6054b048e888de02ea060fe3f54d8a8ad827fa57c"
+    },
+    {
+      "bytes": 28604,
+      "excluded_training": false,
+      "filename": "Pathfind.map23",
+      "map_sha256": "20e05aa164ecd170f14cebc67b5c79035ec5032782a91852c6c00076cfbf125c",
+      "ranking_sha256": "96a74c97c998249dfae8c168d562590d6f3c5f68cb3570804e8f13b2bb8496a7"
+    },
+    {
+      "bytes": 33848,
+      "excluded_training": false,
+      "filename": "Piglets.map23",
+      "map_sha256": "8e3eb8560bfc913644ed7116f4aeec49d01294176c4c2768273996a17164a820",
+      "ranking_sha256": "33990af0e7c2dd2c6c85ef8d4b433d1ee7e939f58c96d95d999f8b6b7ea64993"
+    },
+    {
+      "bytes": 10540,
+      "excluded_training": false,
+      "filename": "Pillars.map23",
+      "map_sha256": "0555a1c0474d0e6df074a4d4835a8c95ee5c1749ace4618808cd3b81004f1d5d",
+      "ranking_sha256": "6274548590d0aa268955a43b2f5a172c7f084282d034fad9465b7dc874786a88"
+    },
+    {
+      "bytes": 34912,
+      "excluded_training": false,
+      "filename": "PipesAndParabolas.map23",
+      "map_sha256": "7b7791c9389f92553df821c414471a96d46e82868b2b3684f981333d0739d45b",
+      "ranking_sha256": "6ab248a36edbc9449fbc68d95b3702d30223a1cc9e0bb0dd544c88cb930a1f33"
+    },
+    {
+      "bytes": 25444,
+      "excluded_training": false,
+      "filename": "Pit.map23",
+      "map_sha256": "faab6162d157e4602101bc24c9f0cd2f8b606c95c690bd2d6eee9b2634ccccd0",
+      "ranking_sha256": "474629d4370f42a297b055cb84bfd052769fa4c98b5c1132ce8b2d05e4a3a99d"
+    },
+    {
+      "bytes": 12848,
+      "excluded_training": false,
+      "filename": "Pizza.map23",
+      "map_sha256": "9ac8468fb1edf92515f843610c2ba40812cc896e4236aa38417abf0df491452a",
+      "ranking_sha256": "9bca6a718d523029258fbe661d49ff646c9a004ce472be733f97a33e901f1cc5"
+    },
+    {
+      "bytes": 17024,
+      "excluded_training": false,
+      "filename": "Potions.map23",
+      "map_sha256": "9b19efffa239431bd8e487bed24c29f676d18057dbcc6c9d75c5ce402f2d4ec3",
+      "ranking_sha256": "b8842ed3a30eb5ef7622d7faf345b2326214820f38cfae511a34b45bd516db2b"
+    },
+    {
+      "bytes": 5820,
+      "excluded_training": true,
+      "filename": "Quiet.map23",
+      "map_sha256": "1baf7407d8ea4c5f83e60da2c522e4dee08545cceca4aa26bfb006d412885d14",
+      "ranking_sha256": "f01485bf3a1aa988391ff2a7a6f03a6991c54ee7b3a83f2d1c6001e106a030b3"
+    },
+    {
+      "bytes": 8912,
+      "excluded_training": false,
+      "filename": "RaceToTheTop.map23",
+      "map_sha256": "a64f7b2ff09079c8e8d092dfbbb97600c519aff8dad19e646004354c5a0b493c",
+      "ranking_sha256": "130c944594674d316a5331533e0161b75798088b50715b87c74df7ddb6076052"
+    },
+    {
+      "bytes": 17048,
+      "excluded_training": false,
+      "filename": "Rainbow.map23",
+      "map_sha256": "7c5a4b0e914d0815e61e99234fe7a84a76d4beeb60d07dac72222dcaf8203fdc",
+      "ranking_sha256": "a5b2a37814329c7479e2809022c6d42380dd168642883a33917e31dacaa9377e"
+    },
+    {
+      "bytes": 21248,
+      "excluded_training": false,
+      "filename": "Rectangle.map23",
+      "map_sha256": "6112212dbc999d776e15a2b88d0c32fbbf8341483e549c9a7a6f45a0489642e6",
+      "ranking_sha256": "c6e339e3b51451e22ffc9e181d267d54ef8544888f48706fcbb2a6bb7b3b92f7"
+    },
+    {
+      "bytes": 42664,
+      "excluded_training": false,
+      "filename": "Repetition.map23",
+      "map_sha256": "82c5d3ad1e63f896ae131433afcdfe29b5f9ee8b9f5041ae5400065e416479e4",
+      "ranking_sha256": "a24b8a64d629f5f51059c3866a52cdff04f09fc9930aff3755a80468e5906004"
+    },
+    {
+      "bytes": 8648,
+      "excluded_training": false,
+      "filename": "Resign.map23",
+      "map_sha256": "216af18a340067e7303862c8c36fb986722ecea9a1097176687a44a51a5841bc",
+      "ranking_sha256": "a427736226f8ddf664ff461749c8ef42bd169d11c919b7b2ae33f54601c83521"
+    },
+    {
+      "bytes": 11456,
+      "excluded_training": false,
+      "filename": "ReverseFunnel.map23",
+      "map_sha256": "3b67b57e5fa5e4f9f7029333cd0c54fbdbcbd6b202b84342dae93d3cd33dac4d",
+      "ranking_sha256": "8e4a194c162769d5004a9031364474cb807902783180020c41c2b27156d4c1d5"
+    },
+    {
+      "bytes": 12852,
+      "excluded_training": false,
+      "filename": "Rewind.map23",
+      "map_sha256": "060f48835ba9e9502c5a6dcf832ce62033d28853fcb387bb3d99e0993609c6f6",
+      "ranking_sha256": "6de41a42c2403adb96b329c1060484f834b6a1dbde1cbbed0e6d2b8c0d96f9bf"
+    },
+    {
+      "bytes": 5824,
+      "excluded_training": false,
+      "filename": "Risk.map23",
+      "map_sha256": "7525741a9da375eca57f09d4c7dbd93130047618ab9487c1bdcff1fe5958415d",
+      "ranking_sha256": "736962dc7060b6ef2f1c8693f0b8ee4fd1138d04c69f09b2390099344569e789"
+    },
+    {
+      "bytes": 17076,
+      "excluded_training": false,
+      "filename": "River.map23",
+      "map_sha256": "c589287b11d530180c2ce5b1209a3911c19321d3c0cfd7227cfa4e57132475b6",
+      "ranking_sha256": "f038cf4a4f7970d700971a2178d004c65b5a2efbaa84cd5823e2d54d95fb7637"
+    },
+    {
+      "bytes": 8628,
+      "excluded_training": false,
+      "filename": "RockWall.map23",
+      "map_sha256": "e150b6754126dc131e80fe17c5c9c02918b9a9ca6f0238fb114d3dfe899f1836",
+      "ranking_sha256": "ae5b93eef78828c41111f7ac75e4ca08b54e8c7fcb39afea190107dd8f20e068"
+    },
+    {
+      "bytes": 28604,
+      "excluded_training": false,
+      "filename": "Sakura.map23",
+      "map_sha256": "a421f580c4e6c16f604aa45851823e7bff5aa68070cd51611f685aa8cafcb50c",
+      "ranking_sha256": "c87d426ddf9e9452afcbc63216d9034b0c663566e2e1a9aabf65dd1d13fd9f84"
+    },
+    {
+      "bytes": 21244,
+      "excluded_training": false,
+      "filename": "Scatter.map23",
+      "map_sha256": "8ab0a5f0f38bf675c04769184bd40d257dc1f30f90e993ea0ec7000ac686802f",
+      "ranking_sha256": "f37873dbebd91b0c262fbe0854de71699e2e4d36a7c09df955ab2c09152ccc91"
+    },
+    {
+      "bytes": 11444,
+      "excluded_training": false,
+      "filename": "Sine.map23",
+      "map_sha256": "68b659388b39b500a4bdee4ab04ae347686dd7f658ea5f86523288513e83ac6e",
+      "ranking_sha256": "c21b614699d4d1ac1450798072eacf204e66490ab8e7f8dc8c436bac73eb8c56"
+    },
+    {
+      "bytes": 5852,
+      "excluded_training": false,
+      "filename": "SmallElements.map23",
+      "map_sha256": "85d2835f910b40442523b5db054c9d3fd961906ce41822a6cc3cf27dab5f3c06",
+      "ranking_sha256": "d25fb6eb8065a6f1bec4c68a795bd56ef04cdf4f5f0f71cfd535f005cc9147de"
+    },
+    {
+      "bytes": 5876,
+      "excluded_training": false,
+      "filename": "Sneaky.map23",
+      "map_sha256": "7ca841f5354600911e2848cfe38dc64dfe58b38c0cd0804160ba732532b852ae",
+      "ranking_sha256": "ed4142e1a6fc9362fe1c57308f5e80e82f4833cc4bd0c74cecc7119cbf68a648"
+    },
+    {
+      "bytes": 13276,
+      "excluded_training": false,
+      "filename": "Snowflake.map23",
+      "map_sha256": "6a9089c13b12d7cdbe4b6d1d346d700a3f495199e464400032f3bb4ae5136b33",
+      "ranking_sha256": "73b0df2161408434151d70ae4f3e1d791b089789cab39bb4cbd3344ef19b54e9"
+    },
+    {
+      "bytes": 17032,
+      "excluded_training": false,
+      "filename": "SomethingFishy.map23",
+      "map_sha256": "f502e803dfd73fcd74dd090a1321fab4fcd04c6bebe77cc60dbb61d6af6fec7d",
+      "ranking_sha256": "685191349f91ac75960da91452c9e883a6605d1bf4ad9d02df7898bdd50049b5"
+    },
+    {
+      "bytes": 17052,
+      "excluded_training": false,
+      "filename": "SoundWave.map23",
+      "map_sha256": "f93649494fb69741b8d964e42a4ebffe8e28ca88f56c368bc4d4c416fadda714",
+      "ranking_sha256": "f45255e8804c7840d020f5dc7e650832a49bf39d692b2443736444606c0861d5"
+    },
+    {
+      "bytes": 28604,
+      "excluded_training": false,
+      "filename": "Spiderweb.map23",
+      "map_sha256": "07f4cc645a86982b1d37f2209b1a539be397c3bcf8cf42e1133499749a6e84c4",
+      "ranking_sha256": "0c9efdb66a50545abadcd9256c41812149d05195aa69b1219eae9636d409419d"
+    },
+    {
+      "bytes": 5820,
+      "excluded_training": false,
+      "filename": "Spin.map23",
+      "map_sha256": "371fab83361cfdac837c038d0862d30cb452754a82663a2e8a3fd7f9fd219193",
+      "ranking_sha256": "9364a82eb7af3c770e436b4958194f80c817d558587a11f0c6adb79458c1be97"
+    },
+    {
+      "bytes": 12844,
+      "excluded_training": false,
+      "filename": "Spiral.map23",
+      "map_sha256": "caf42f7c4f81bc33ab49150931414ec639942a0039adf1182bb7062fd0c53627",
+      "ranking_sha256": "bf7fa6bcf8a10462950e539b062bad4a07e99d55269f44b9bdded73eed377dc8"
+    },
+    {
+      "bytes": 50648,
+      "excluded_training": false,
+      "filename": "Spots.map23",
+      "map_sha256": "72bdacc2135c2102c69a8089bfee3178fd880eb0f1558089b0562a312eab8b1f",
+      "ranking_sha256": "576d56b03ed01d61b00b4c28bb5a7b260339b6a4ce577bdf24f1dea7ac4dfc67"
+    },
+    {
+      "bytes": 22620,
+      "excluded_training": false,
+      "filename": "Squares.map23",
+      "map_sha256": "08d5db435e93e63cd2745d976b43b57b99339f213d4d4a1fe27bc597119681c6",
+      "ranking_sha256": "d5653f882ec4860641f2c5b311d02857417544dc8faea39d5bac8de0d65c91ba"
+    },
+    {
+      "bytes": 12848,
+      "excluded_training": false,
+      "filename": "Star.map23",
+      "map_sha256": "5243037581985d8874de68dd46815bfc54a6125182404f10c3aae59b217f4c7e",
+      "ranking_sha256": "af9d3d89161d815ebe028602c81d68f777e5d9aa57ef9e043a1e3ebf623818f8"
+    },
+    {
+      "bytes": 8972,
+      "excluded_training": false,
+      "filename": "Sun.map23",
+      "map_sha256": "51622835d6b7945bec538f945f635a0303ad392ec914b81a69ab6747493884aa",
+      "ranking_sha256": "4a2c98922c7d6416de57e17ed4351380af6debef611597fab580675c7f436480"
+    },
+    {
+      "bytes": 11420,
+      "excluded_training": false,
+      "filename": "Sus.map23",
+      "map_sha256": "d57cf6472e3b50eb0bfd385dd49a2e9f3c9a1e94d9ea34e4840c7466e3ec427f",
+      "ranking_sha256": "9b23bb04d71a3bd068bd26800dacbe01667040e4f1e33ee73b27a39f7cb5295b"
+    },
+    {
+      "bytes": 17384,
+      "excluded_training": false,
+      "filename": "SweetDreams.map23",
+      "map_sha256": "dfa9a9683bd8f1ff1494a0d6d1249061400a8d3d10616269beb03cbc2c6d98db",
+      "ranking_sha256": "34752202b224f7a0ffcb371993dbb1574e788b032ee1269b1746f70d02f43900"
+    },
+    {
+      "bytes": 28952,
+      "excluded_training": false,
+      "filename": "Swooshy.map23",
+      "map_sha256": "1983a9a502e808b98aa639cfc6d6500f517b8fd09703ed766c0ef83ae4fc9cd3",
+      "ranking_sha256": "a7c58dd5b1f25d649345b8e447680f6efabd6f09e700ba83f867a2590cdae777"
+    },
+    {
+      "bytes": 17048,
+      "excluded_training": false,
+      "filename": "Tacocat.map23",
+      "map_sha256": "8e05fea9bef0bdfe938f2063e226462c4c6558d1b889d7a62ccc94c6b82df6db",
+      "ranking_sha256": "63a1e7edcddf07cdc133d752d676116ac04beef63eb63bfa7dc3a4c6ce981c03"
+    },
+    {
+      "bytes": 50644,
+      "excluded_training": false,
+      "filename": "Target.map23",
+      "map_sha256": "b1a32e670dcfe179a0cccee7362c66c59d69f7f9e3361c5ea7d75305e4ffd707",
+      "ranking_sha256": "e3c8bcc8692142f8241288f74905fe23b71a5fa0f9eef3c8cf4fddc164c1ef47"
+    },
+    {
+      "bytes": 31864,
+      "excluded_training": false,
+      "filename": "ThirtyFive.map23",
+      "map_sha256": "35a26b23dd56e6b6547802f7044a1b15f9367642ec76e753c0bc114c7e35f87c",
+      "ranking_sha256": "b9ab4ed0790d9bcbfd4f6043a619a85f64bf2fe5f8b213e06d8b1d05ee739d07"
+    },
+    {
+      "bytes": 12852,
+      "excluded_training": false,
+      "filename": "TicTacToe.map23",
+      "map_sha256": "309ea27bf0d54447cd119bc340052ebd3ee7b1507aad94aa993c23be0ba4a3c2",
+      "ranking_sha256": "4c39cde64a049e391b023dd2ee69092647c4251d4ca9534b446d8cf5fa614571"
+    },
+    {
+      "bytes": 14228,
+      "excluded_training": false,
+      "filename": "Tightrope.map23",
+      "map_sha256": "a64b30d6996bd2f39e9cf9362be9f288cf40bdaa17ce496bd59256e422614e29",
+      "ranking_sha256": "aa016d5fe406fb88fc1644b789ed07b7d202940947a9b72834beddaa0e087b64"
+    },
+    {
+      "bytes": 8648,
+      "excluded_training": false,
+      "filename": "TimesUp.map23",
+      "map_sha256": "6ce6347d2f28363b547aa37958b8593363f7dd5bc765f5ce822891439b4e2b58",
+      "ranking_sha256": "4c7b6fe61f4c8f47861db7f7989456fb97682db02ebdd734a921d9d6ba0832d7"
+    },
+    {
+      "bytes": 6404,
+      "excluded_training": false,
+      "filename": "TreasureMap.map23",
+      "map_sha256": "2b13c2af5fa2fe853186d6389efaf9f3dc6535fe8b264794bc287e8c11e48210",
+      "ranking_sha256": "803e7c8f986e056fe48a6ac8ea19e06fe812e8858cdaa0007dee3b71126fdd53"
+    },
+    {
+      "bytes": 22648,
+      "excluded_training": false,
+      "filename": "Turtle.map23",
+      "map_sha256": "3353754a1aa37c5507012252c045aea133972e292fc28ff96e25afb914d0d6bb",
+      "ranking_sha256": "bafb7338ea1a42ca9c71588b4b04a9fc9f8aee5f8aede2ba5d6fe5ea697520f4"
+    },
+    {
+      "bytes": 8900,
+      "excluded_training": false,
+      "filename": "USA.map23",
+      "map_sha256": "4393a3a92282ecb15ec5fb4fb39829de7e887aa333f441babd2edbb66d354949",
+      "ranking_sha256": "ce93d0985df2020372bcb261f4f75676bccae0cdef4b62b57d24a9755ee876dd"
+    },
+    {
+      "bytes": 7512,
+      "excluded_training": false,
+      "filename": "VeryReasonable.map23",
+      "map_sha256": "b25e03e7e593d8a1966bfeee6595a370f6f83d06736f5611786e0218b4ccafde",
+      "ranking_sha256": "1732630ae68e1323a9e7d553e76ae29c9c7098600ddaa5a501c4a5a82966fa0c"
+    },
+    {
+      "bytes": 10400,
+      "excluded_training": false,
+      "filename": "Zig.map23",
+      "map_sha256": "7d9924d1a8d0c23137e541ed5fa8881dceed62c4bfe29d655ab1e196913cd344",
+      "ranking_sha256": "ed497c8dd6b4d69bf90b2eec29da89ddd3e54d63b92d01ef424676560b543f32"
+    },
+    {
+      "bytes": 5828,
+      "excluded_training": false,
+      "filename": "maptestsmall.map23",
+      "map_sha256": "a48119644e73faa11b06dd51ad2e25fbfd47b19dc4c5704da9cbf7496150f31a",
+      "ranking_sha256": "ec927e9a5aeb460d338efa545f611a49b5e1827cd319a6e2893133dee3baf9d3"
+    }
+  ],
+  "inventory_count": 103,
+  "phase": "prospective metadata only; no games or candidate launch",
+  "public_opponents": [
+    {
+      "build_dir": "/workspace/scratch/1523a3f802eb/replication-006/development/beaver-selected-build",
+      "name": "beaver",
+      "package": "USQualifiers",
+      "repository": "https://github.com/beaverbois/battlecode23",
+      "revision": "4892382943da5a8527906467739a64db51ccc50d",
+      "source_sha256": "112165fbf9b1f93ae78ab5e77653803b71e26f0f77aef67238e65c83b3ba9bd8"
+    },
+    {
+      "build_dir": "/workspace/scratch/1523a3f802eb/replication-006/development/musketeers-java-build",
+      "name": "musketeers",
+      "package": "MPWorking",
+      "repository": "https://github.com/maxwelljones14/BattleCode2023",
+      "revision": "074963dacf1c597518655de4c7542c36de6bc554",
+      "source_sha256": "34f894989e73dccf5f5914e49926cfd5bb245fe069014af4feb1e9d5b3d6dbd7"
+    }
+  ],
+  "ranked_eligible_filenames": [
+    "Elephant.map23",
+    "Spiderweb.map23",
+    "RaceToTheTop.map23",
+    "VeryReasonable.map23",
+    "Cave.map23",
+    "FourNations.map23",
+    "Eyelands.map23",
+    "Maze.map23",
+    "Diagonal.map23",
+    "ExtremelyMid.map23",
+    "Piglets.map23",
+    "SweetDreams.map23",
+    "AbsoluteW.map23",
+    "Checkmate2.map23",
+    "Clown.map23",
+    "Pit.map23",
+    "Sun.map23",
+    "Orbit.map23",
+    "Jail.map23",
+    "TicTacToe.map23",
+    "Heart.map23",
+    "TimesUp.map23",
+    "Spots.map23",
+    "Barcode.map23",
+    "Movepls.map23",
+    "Minefield.map23",
+    "MoonPhases.map23",
+    "Pillars.map23",
+    "Tacocat.map23",
+    "SomethingFishy.map23",
+    "PipesAndParabolas.map23",
+    "MassiveL.map23",
+    "Rewind.map23",
+    "CrownJewels.map23",
+    "Risk.map23",
+    "Snowflake.map23",
+    "BattleSuns.map23",
+    "TreasureMap.map23",
+    "ReverseFunnel.map23",
+    "Spin.map23",
+    "HideAndSeek.map23",
+    "Pathfind.map23",
+    "Cee.map23",
+    "Dreamy.map23",
+    "Sus.map23",
+    "Pizza.map23",
+    "Frog.map23",
+    "Pakbot.map23",
+    "LookingGlass.map23",
+    "Repetition.map23",
+    "Resign.map23",
+    "Rainbow.map23",
+    "Buggy.map23",
+    "Swooshy.map23",
+    "ArtistRendition.map23",
+    "Tightrope.map23",
+    "Lantern.map23",
+    "AllElements.map23",
+    "RockWall.map23",
+    "Star.map23",
+    "Flower.map23",
+    "Potions.map23",
+    "ThirtyFive.map23",
+    "Turtle.map23",
+    "Divergence.map23",
+    "HotAirBalloon.map23",
+    "DefaultMap.map23",
+    "Grievance.map23",
+    "Spiral.map23",
+    "Sine.map23",
+    "BatSignal.map23",
+    "IslandHopping.map23",
+    "LightWork.map23",
+    "Forest.map23",
+    "Rectangle.map23",
+    "Hah.map23",
+    "Sakura.map23",
+    "PairedProgramming.map23",
+    "FishCake.map23",
+    "USA.map23",
+    "BuildSite.map23",
+    "SmallElements.map23",
+    "Squares.map23",
+    "Lines.map23",
+    "Cube.map23",
+    "KingdomRush.map23",
+    "Marsh.map23",
+    "IslandHoppingTwo.map23",
+    "Fractured.map23",
+    "Target.map23",
+    "Contraction.map23",
+    "maptestsmall.map23",
+    "Cat.map23",
+    "Sneaky.map23",
+    "Zig.map23",
+    "River.map23",
+    "Scatter.map23",
+    "SoundWave.map23",
+    "Crossword.map23",
+    "Cornucopia.map23",
+    "Grapes.map23"
+  ],
+  "retry_policy": "no retries/substitutions; stop on infrastructure failure",
+  "schedule_reuse": "Exactly same eight ordered cells for both locked immutable finalists",
+  "schema": "bcenv.public-validation-map-plan.v1",
+  "seed": "BCENV-009-public-validation-v1",
+  "selected": [
+    {
+      "bytes": 17048,
+      "excluded_training": false,
+      "filename": "Elephant.map23",
+      "map_sha256": "87c0f362b047d31ae4887cb8aef43d84a83045aca9b9b878f1beee95ea9cc4e2",
+      "ranking_sha256": "0c9c9208ea316302da5618ec4051014cedac0d075d286e75a38e111cbb1c76cf"
+    },
+    {
+      "bytes": 28604,
+      "excluded_training": false,
+      "filename": "Spiderweb.map23",
+      "map_sha256": "07f4cc645a86982b1d37f2209b1a539be397c3bcf8cf42e1133499749a6e84c4",
+      "ranking_sha256": "0c9efdb66a50545abadcd9256c41812149d05195aa69b1219eae9636d409419d"
+    }
+  ],
+  "total_game_cap": 80,
+  "total_validation_game_cap": 16,
+  "training_game_cap": 64,
+  "wall_budget_minutes": 45
+}

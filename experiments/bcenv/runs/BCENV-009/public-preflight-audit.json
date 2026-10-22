@@ -1,0 +1,58 @@
+{
+  "audit_sha256": "07c2f9b90f44ea1e528b52a71535fec3de66511fd0f69cf51b71f36baf3fcd1b",
+  "deadline_process_receipts_checked": 182,
+  "events": 296,
+  "failures": [],
+  "final_choice": "s_a6d270e900f84f9e8679ac60a482df1f",
+  "final_event_sha256": "76e5f3a975bfb6567ac2c34de00e61a4d765c23d96d945aef27a3f164ad9d54d",
+  "freeze_record_sha256": "952dbb2c7614650e1e7e95094a56c64f01559e4dbdcc66ebcb8148634a36158c",
+  "game_attempts": 32,
+  "observed_error_responses": [
+    {
+      "file": "25a165dd9b7a438280b1a9137e02fa51.json",
+      "reason": "training_closed"
+    },
+    {
+      "file": "36a9c14851054cb2a387be59cbfa30d2.json",
+      "reason": "finalists_locked"
+    },
+    {
+      "file": "77251d13bbaa4d22bed794e84dcd5b3c.json",
+      "reason": "finalists_locked"
+    },
+    {
+      "file": "78dc2a394f364f5cb417c7d761096f01.json",
+      "reason": "selection_complete"
+    },
+    {
+      "file": "acfc798d39c74c24a0647791aed047d7.json",
+      "reason": "validation_incomplete"
+    }
+  ],
+  "operations": {
+    "complete": 2,
+    "experiment_note": 2,
+    "game_attempt": 32,
+    "lock_finalists": 1,
+    "replay": 110,
+    "result": 141,
+    "select_finalist": 1,
+    "submit": 2,
+    "validation_complete": 2,
+    "validation_finished": 1,
+    "validation_start": 1,
+    "validation_status": 1
+  },
+  "schema": "bcenv.public-finalist-audit.v1",
+  "status": "consistent_recorded_evidence",
+  "terminal_phase": "selected",
+  "unknowns": [
+    "Process receipt count includes repeated immutable build snapshots, not unique process launches.",
+    "Launch checks and reaping are application observations, not exact kernel spawn/kill timestamps. Cleanup may outlive execution deadline; scheduler latency is not bounded by this audit.",
+    "Cooperative evidence, not tamper-proof or complete native-access audit.",
+    "One lock event supports recorded atomic nomination, not proof of concurrency correctness.",
+    "Rejected/failed requests incompletely logged; successful read/replay counts are lower bounds.",
+    "Postdeadline observer diagnostics, if performed, must be separately declared and must not count as candidate-budget feedback. No such diagnostics are inferred from absent data."
+  ],
+  "verified_feedback_receipts": 110
+}

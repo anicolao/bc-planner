@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "training_submissions": [
+    "s_a6d270e900f84f9e8679ac60a482df1f",
+    "s_aef62f9f92b94100b515852d37d9cf5e"
+  ],
+  "validation_ids": {
+    "s_a6d270e900f84f9e8679ac60a482df1f": "s_2c746c308caf462bb5313a04aba56f33",
+    "s_aef62f9f92b94100b515852d37d9cf5e": "s_d708569926e34de2adbc95fc56052224"
+  },
+  "games": 32,
+  "replay_queries": 110,
+  "final_choice": "s_a6d270e900f84f9e8679ac60a482df1f",
+  "training_replays_match_prior_fixture": 16,
+  "negative_phase_requests": 5,
+  "no_retries": true
+}

@@ -1,0 +1,69 @@
+{
+  "schema": "bcenv.public-development-summary.v1",
+  "experiment_id": "BCENV-009",
+  "scope": "Public development and blind source/process evidence only; no independent evaluator outcomes.",
+  "candidate_stopped": true,
+  "candidate_terminal_received_utc": "2026-10-22T12:30:25Z",
+  "service_stopped": true,
+  "service_exit_code": 130,
+  "service_stop_confirmed_utc": "2026-10-22T12:30:35Z",
+  "graceful_stop_marker": false,
+  "frozen_at": "2026-10-22T12:30:57.988001+00:00",
+  "hard_deadline_utc": "2026-10-22T12:45:06.398226Z",
+  "training_submissions": 8,
+  "training_games_completed": 64,
+  "validation_games_completed": 16,
+  "total_games_completed": 80,
+  "retries": 0,
+  "recorded_errors": 0,
+  "notes": 8,
+  "replay_receipts": 38,
+  "audit_events": 209,
+  "training_wins_by_version": [
+    5,
+    5,
+    5,
+    5,
+    4,
+    4,
+    2,
+    3
+  ],
+  "finalists": [
+    {
+      "original_submission_id": "s_236fe7567b554adf9b9c56092f2bad22",
+      "validation_submission_id": "s_c5e440b834b34bd7b3192fbdfb9c5092",
+      "training_wins": 5,
+      "training_games": 8,
+      "validation_wins": 4,
+      "validation_games": 8,
+      "selected": true
+    },
+    {
+      "original_submission_id": "s_b66f78f1144149798f72fcd3afbc961a",
+      "validation_submission_id": "s_0e52a7e930bd4e4a9047170798e38710",
+      "training_wins": 5,
+      "training_games": 8,
+      "validation_wins": 4,
+      "validation_games": 8,
+      "selected": false
+    }
+  ],
+  "selection_changed_from_provisional": false,
+  "selected_service_normalized_source_sha256": "7fe96c7fe63df8eaa9b4aa482fb7eabea3666de7907e8adc8c7b76f8aff7794c",
+  "selected_java_file_sha256": "7c42d9ac5d1fbd8e8cf25733fe8da76692685dbe023dc752d585bc8aab40c288",
+  "fixed_inputs_unchanged": 56,
+  "frozen_files_rehashed": 5011,
+  "old_evaluation_runtime_rebuild_matches_public_runtime_binary": true,
+  "source_audit_sha256": "8f7c093112f1e1f73976dcfc14c3840c10a8f7a5deef2a32ab17bb8a1d1c9d02",
+  "rebuild_audit_sha256": "d48b487c0c796e83fb66c500731cec383560465be4f09bbdcb5f66f3f7344b1d",
+  "receipt_audit_sha256": "56326537c8f471205cbeccf12e99e04f10bc9d5e803a52c8368adf0d49831d59",
+  "blind_review_sha256": "87ec8e6416c806dfb61a9055e336b6d9a550aaa9ecadc07b1fda7188e51b0f29",
+  "limitations": [
+    "Single bundled feasibility run, not causal comparison.",
+    "Training and validation are adaptive public selection evidence, not independent heldout performance.",
+    "Both finalists tied; validation did not change provisional choice.",
+    "Meaningful actual-class tests are narrow and do not establish engine correctness.",
+    "Cooperative point-in-time integrity and service receipts do not prove all native accesses or intermediate edits."
+  ]
+}

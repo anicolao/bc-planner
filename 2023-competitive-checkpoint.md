@@ -1,13 +1,60 @@
 # Competitive program checkpoint
 
-Updated 2026-10-22 22:51 UTC. **The competitive goal is not achieved.**
-The existing VM runs the cooperative scrimmage service; missing host/provider access is not the current execution blocker. This is not hard filesystem isolation. Historical statements below describe their dates, not current state.
+Updated 2026-10-22 23:41 UTC. **The competitive goal is not achieved.**
+The existing VM hosts the cooperative scrimmage environment; missing host/provider access is not the current execution blocker. This is not hard filesystem isolation. Historical statements below describe their dates, not current state.
+
+## Latest: BCENV-013 infrastructure-continuity incomplete
+
+BCENV-013 is interrupted, **not a performance result or full freeze**. The actual
+service initialized at23:02:12.843267 UTC with deadline05:02:12.843267 UTC on
+October23. The fresh author spawn is bounded by23:03:05–23:03:18 UTC, consuming
+52.157–65.157 seconds of the six-hour service clock. `fork-none` was used with
+model/reasoning overrides omitted; resolved model identity was not attested.
+Public prospective [CI39868617665](https://github.com/anicolao/bc-planner/actions/runs/39868617665)
+passed at exact597553fb268b5dedbaa72c535e2b33c52824b035 before launch; independent
+live-readiness review commitment was
+`58580c477982e849b363f10d17efcdc4f29ddc179faffeb220577439d4b980df`.
+
+The last audit event is23:11:23.613430 UTC. The parent reports its wait aborted
+around23:11:20, without a substantive user-stop instruction, and a developer
+skill-catalog replacement at23:11:34. These are temporal correlations, not a
+causal finding or fixed-lifetime proof. The parent reactivated the coordinator
+at23:37. The native author was then
+absent from the agent list, without a received terminal message, and the original
+owned service handle was unknown. These are loss-of-observation/ownership facts,
+not proof of process death, a surviving process or the cause of the interruption.
+One private operator cancel was published at23:37:32 UTC, without a retry,
+replacement or tool signal. No consumption, stopped receipt, normal terminal
+record or complete cleanup is established. **Helper quiescence remains unknown.**
+
+The point-in-time evidence records four submitted versions,26 game attempts and
+25 completed per-game **result artifacts**. Three complete batch receipts cover24
+games; one additional result belongs to the unfinished fourth batch. One attempted
+game lacks a result; six remaining submitted cells have no recorded attempt.
+These counts are not independently validated performance-panel results. There is
+no validation, final selection, fallback, selected-artifact rebuild or private evaluation.
+Fifty engine/extractor child receipts and39 adapter acknowledgments cover completed
+invocations only; they do not cover the unfinished invocation or a lost supervisor.
+All57 fixed inputs match. The bounded checkpoint was hashed, not strategy-reviewed.
+
+Interrupted snapshot commitment:
+`8cb3ce9739c33ab01c7950e862c2d5c57482c110664cb89273da5541940d722a`.
+Independent lifecycle review commitment:
+`7c52301c3d4c6e15294fb3a5ed391fed640831163962b653a69c621db02344aa`.
+Mechanical review commitment:
+`d4d577de8f30253c78d9c9616463dfc4653eaf84756ab553b55109afe79aed50`.
+Raw snapshots, inventories, candidate material, control coordinates and private
+outcomes are not published here. The prospective013 protocol is unchanged.
+This does not demonstrate six-hour native continuity or competitive competence;
+no014 trial, retry or replacement is proposed automatically by this checkpoint.
+
+## Prior BCENV-012 interruption
 
 [BCENV-012 is incomplete after a native-reported exec transport failure](2023-continuity-012-preflight-and-launch.md#interruption-checkpoint--2026-10-22-2010-utc). Native FINAL was observed at 19:59:08 UTC, about 30 minutes after the observed spawn response—not six-hour continuity. The original owned service PTY returned exit 1 / `^C` at 19:59:28 after operator interruption, without a graceful-stop marker. Helper quiescence remains **unknown**, not a demonstrated survivor or termination; a working observer connection does not restore native author continuity. No full freeze, final selection, fallback, private evaluation, author resume or replacement is established or authorized.
 
-The interrupted point-in-time snapshot records 108 attempts and 107 completed **result artifacts** (96 training + 11 validation), not independently validated full-game outcomes. One attempted validation result is unresolved; four reserved cells have no recorded attempt/result. Separately, 13 complete batch receipts cover 104 game entries. All 57 fixed inputs match; the checkpoint was bounded/hash-only. Zero scan warnings do not prove stopped helpers or atomic capture. The previously passed B preflight and code/protocol gates remain historical readiness evidence; the [frozen protocol](2023-continuity-capacity-feasibility-012.md) is unchanged. [bcenv PR24](https://github.com/anicolao/bcenv/pull/24) and [planner PR19](https://github.com/anicolao/bc-planner/pull/19) remain draft and unmerged. The interrupted012 author cannot be resumed under its failed transport/ownership evidence; this is not a new user-permission or VM-access blocker. Separately identified013 preparation is described below. Narrow engineering qualification has progressed, but production in-flight cancellation and native continuity remain unqualified. No private outcomes or candidate strategy/source are included.
+The interrupted point-in-time snapshot records 108 attempts and 107 completed **result artifacts** (96 training + 11 validation), not independently validated full-game outcomes. One attempted validation result is unresolved; four reserved cells have no recorded attempt/result. Separately, 13 complete batch receipts cover 104 game entries. All 57 fixed inputs match; the checkpoint was bounded/hash-only. Zero scan warnings do not prove stopped helpers or atomic capture. The previously passed B preflight and code/protocol gates remain historical readiness evidence; the [frozen protocol](2023-continuity-capacity-feasibility-012.md) is unchanged. [bcenv PR24](https://github.com/anicolao/bcenv/pull/24) and [planner PR19](https://github.com/anicolao/bc-planner/pull/19) remain draft and unmerged. The interrupted012 author cannot be resumed under its failed transport/ownership evidence; this is not a new user-permission or VM-access blocker. The separately identified013 attempt is summarized above. Narrow engineering qualification has progressed, but production in-flight cancellation and native continuity remain unqualified. No private outcomes or candidate strategy/source are included.
 
-## BCENV-013: prospective fresh-author preparation
+## BCENV-013 prospective setup (historical)
 
 The [separate BCENV-013 protocol](2023-operator-continuity-013.md) prepares a fresh,
 source-empty author, not a BCENV-012 resume or replacement. The six-hour
@@ -17,13 +64,14 @@ queries, with the existing shared read/mailbox/storage/deadline limits. Capacity
 is not a promised workload or competence result. The intended service topology
 uses the reviewed direct installed runtime and operator-file stop channel.
 
-Model and reasoning overrides will be **omitted**, inheriting the parent
+Model and reasoning overrides were **omitted**, inheriting the parent
 configuration with `fork-none`; no verified user override provenance supports the
 earlier explicit Sol/high declaration. This configuration difference is disclosed
 prospectively, not presented as same-model replication or verified resolved model
-identity. A new author has not launched at this checkpoint. Exact protocol/input
-review, public CI and fresh-service parity remain gates; no additional ad hoc
-qualification games are implied by this preparation. Only the evaluator's sealed
+identity. At the prospective checkpoint, no author had launched and exact
+protocol/input review, public CI and fresh-service parity remained gates. The
+actual launch and interruption are recorded above; no additional ad hoc
+qualification games were implied by that preparation. Only the evaluator's sealed
 commitment and method are public, never private outcomes or benchmark material.
 
 ### Completed public runtime parity, not an author experiment

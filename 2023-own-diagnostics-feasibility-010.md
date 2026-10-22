@@ -107,11 +107,12 @@ Before any fresh launch:
    recording continuation/coverage honestly. No lock-phase games are added:
    unchanged phase logic is covered by009's independent32-game preflight.
 3. Independently audit source/config/runtime identity, receipts and preflight
-   result. Preflight caps accepted versions at1 to enforce its8-game budget;
-   live permits8. This is the sole allowlisted preflight/live configuration
-   difference, independently checked; full configuration-byte equality is not
-   claimed. Runtime/command/launcher parity still must match. Obtain parent
-   conditional readiness before live initialization.
+   result. Preflight and live configurations are byte-identical, including the
+   required8-version phase capacity. An exclusive one-shot driver makes exactly
+   one tutorial submission and no lock request; audit exactly8 attempted games,
+   with no retry. Service capacity is not authority to exceed this engineering
+   budget. Runtime/command/launcher parity must match. Obtain parent conditional
+   readiness before live initialization.
    Start the conservative45-minute clock, verify actual live/integration parity
    and empty service/input state independently, then promptly spawn fork-none
    with the exact fixed kickoff. Only a never-used empty pre-candidate service
@@ -146,3 +147,14 @@ This document publishes no private evaluation outcomes or raw benchmark material
 Denied outcome-summary publication remains pending separately; its local commit
 is not in this branch's ancestry. Public engineering/prospective records are not
 an alternate route for that payload. No merge is authorized.
+
+## Preparation correction before execution — 2026-10-22 13:18 UTC
+
+The initial protocol proposed preflight-only `max_submissions=1`. Static
+inspection found the reviewed finalist service requires exactly8; that proposal
+would fail initialization. No service or game ran with it. Preserve the reviewed
+runtime and byte-identical live/preflight configuration instead. The exclusive
+one-submit/no-lock driver and postrun8-attempt audit bound authorized preflight
+work; the larger service capacity is not permission for extra games. This is a
+prospective preparation correction, not a hidden experiment retry or relaxed
+service guard. The latest corrected protocol CI must pass before preflight.

@@ -1,0 +1,68 @@
+{
+  "adapter_command": [
+    "/workspace/scratch/1523a3f802eb/nix-canonical-root/nix-root",
+    "shell",
+    "--offline",
+    "/nix/store/29fs10m7al0k5lk5k3w2qqjbhmba57pn-bcenv-2023-0.1.0",
+    "-c",
+    "bcenv"
+  ],
+  "candidate_launch_prefix": [
+    "/workspace/scratch/1523a3f802eb/nix-canonical-root/nix-root",
+    "shell",
+    "--offline",
+    "/nix/store/h3l4z7p6wny3phbckwwhy1i2g52pdnj4-python3-3.13.15",
+    "/nix/store/84sr5jfh99mdgfwa0sa8nxifgy0vqicf-openjdk-8u504-b01",
+    "-c"
+  ],
+  "code_commit": "b3906876ae81154dd7f49458c42f52deaf11a109",
+  "engine": "/nix/store/gyyg1xgc61p759d7qw9w28hgh7ip6nvk-battlecode23-engine-3.0.13",
+  "engine_version": "3.0.13",
+  "generic_ordinary_cell_smoke": {
+    "build": "runtime-smoke-build.json",
+    "export": "runtime-smoke-export.json",
+    "result": "verified build and actual Java test passed; no match",
+    "test": "runtime-smoke-test.json"
+  },
+  "installed_runtime_file_hashes": "runtime-file-hashes.json",
+  "maps": 103,
+  "operator_runtime_environment": "/workspace/scratch/1523a3f802eb/replication-006/runtime-env.sh",
+  "prior_runtime_discrepancy": {
+    "both_full_tree_b390687_and_362f15c_reproduce": "/nix/store/29fs10m7al0k5lk5k3w2qqjbhmba57pn-bcenv-2023-0.1.0",
+    "cause": "not established; previous runtime built from selective restored snapshot. No claim of identical full closure. Engine and public helper hashes match published005.",
+    "code_diff_b390687_to_362f15c": "none in nix,flake,flake.lock,runtime,seasons,skills,prompts,contracts",
+    "published_005_runtime": "/nix/store/lxma744svicl1mmr51j31aqi5g1z9c9q-bcenv-2023-0.1.0"
+  },
+  "repository_commit": "362f15c64dba3f3e7995d4175a66c4540aa0419c",
+  "restoration": {
+    "dependency_installation": "Nix fixed-output derivations and locked nixpkgs binary caches only",
+    "flake_lock_unchanged": true,
+    "global_settings_changed": false,
+    "nix_version": "2.26.3",
+    "nixpkgs_revision": "21a67dc470149f337cecafbe965d8d252a390518",
+    "per_build_sandbox_paths": "/bin/sh=/workspace/scratch/1523a3f802eb/nix-canonical-root/root/nix/store/qm7f996qpi1bn1xdr6w12vm1kb4z7ksj-bash-interactive-static-x86_64-unknown-linux-musl-5.3p9/bin/bash",
+    "sandbox_disabled": false,
+    "store_root": "/workspace/scratch/1523a3f802eb/nix-canonical-root/root"
+  },
+  "restored_at": "2026-10-22T07:14:21Z",
+  "run": "BCENV-006",
+  "runtime": "/nix/store/29fs10m7al0k5lk5k3w2qqjbhmba57pn-bcenv-2023-0.1.0",
+  "runtime_pins": {
+    "BCENV_ENGINE_JAR": "/nix/store/gyyg1xgc61p759d7qw9w28hgh7ip6nvk-battlecode23-engine-3.0.13/share/battlecode23/engine.jar",
+    "BCENV_JAVA": "/nix/store/84sr5jfh99mdgfwa0sa8nxifgy0vqicf-openjdk-8u504-b01/lib/openjdk/bin/java",
+    "BCENV_JAVAC": "/nix/store/84sr5jfh99mdgfwa0sa8nxifgy0vqicf-openjdk-8u504-b01/lib/openjdk/bin/javac"
+  },
+  "runtime_sha256": {
+    "BCENV_ENGINE_JAR": "2b6db98e312e0e509d599acc46bffbb55c2569de0f12c8214a85ee57625f15f2",
+    "BCENV_JAVA": "b88c44d3230f5a791661cc11c5be19360e819e284d8b81af90a4212f08cd46b6",
+    "BCENV_JAVAC": "7ff7024b0cd5c809cc56a8168f69f58579570c88b084d02dd3ccae0db9531ce1"
+  },
+  "schema": "bcenv.runtime-restoration.v1",
+  "source_revision": "9b890f83672c98b81cc153f618bd56e1ab6134b5",
+  "tests": {
+    "log": "runtime-tests.log",
+    "passed": 339,
+    "real_java_enabled": true,
+    "skipped": 0
+  }
+}

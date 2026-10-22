@@ -1,0 +1,44 @@
+{
+  "artifact_comparison_note": "Build artifact JSON includes absolute command paths and elapsed durations; compare source/binary/engine identities, not byte-for-byte artifact JSON, across restoration.",
+  "builds": [
+    {
+      "artifact_sha256": "9bd84d405765e51ad7fb512cb97c29dfb1998ac091a081d1ce939940f55079a2",
+      "binary_sha256": "5622b5cea35f7ddd7d2aa8f2ba4b4e06299f9431046774ba02e7b93b08e73ab1",
+      "build_dir": "/workspace/scratch/1523a3f802eb/replication-006/development/beaver-selected-build",
+      "engine_sha256": "2b6db98e312e0e509d599acc46bffbb55c2569de0f12c8214a85ee57625f15f2",
+      "name": "beaver",
+      "package": "USQualifiers",
+      "source_sha256": "112165fbf9b1f93ae78ab5e77653803b71e26f0f77aef67238e65c83b3ba9bd8",
+      "status": "verified"
+    },
+    {
+      "artifact_sha256": "45620bfa9e3a97adc90999e23b68280c9aeb06e714c2deb7e2460495a7fd8533",
+      "binary_sha256": "bb7580475b0661a15074b95d15713e7e32efda87eb0204862dd50180b40b2981",
+      "build_dir": "/workspace/scratch/1523a3f802eb/replication-006/development/musketeers-java-build",
+      "engine_sha256": "2b6db98e312e0e509d599acc46bffbb55c2569de0f12c8214a85ee57625f15f2",
+      "name": "musketeers",
+      "package": "MPWorking",
+      "source_sha256": "34f894989e73dccf5f5914e49926cfd5bb245fe069014af4feb1e9d5b3d6dbd7",
+      "status": "verified"
+    },
+    {
+      "artifact_sha256": "8c36e2db7814cd358993f81237c41cf6d42f1c97de068ea178281dad763606f0",
+      "binary_sha256": "2ec96f458fb2cb6219efb33da246dd0d6f3da610693ac60d440fedc95ad2c008",
+      "build_dir": "/workspace/scratch/1523a3f802eb/replication-006/development/lecture-selected-build",
+      "engine_sha256": "2b6db98e312e0e509d599acc46bffbb55c2569de0f12c8214a85ee57625f15f2",
+      "name": "lecture",
+      "package": "lectureplayer",
+      "source_sha256": "f824855a89f50784b5c848ee559232d4405789788ddda92317b3b419257bc694",
+      "status": "verified"
+    }
+  ],
+  "command": [
+    "/workspace/scratch/1523a3f802eb/nix-canonical-root/nix-root",
+    "shell",
+    "--offline",
+    "/nix/store/29fs10m7al0k5lk5k3w2qqjbhmba57pn-bcenv-2023-0.1.0",
+    "-c",
+    "bcenv"
+  ],
+  "matches_run": 0
+}

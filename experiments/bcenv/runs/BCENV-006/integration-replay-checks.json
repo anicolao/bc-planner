@@ -1,0 +1,199 @@
+{
+  "games": [
+    {
+      "game_index": 0,
+      "both_teams_active": true,
+      "active_teams": [
+        1,
+        2
+      ],
+      "replay_pages": 2,
+      "windows": [
+        {
+          "window": "early",
+          "start": 1,
+          "end": 5,
+          "fully_paginated": true
+        },
+        {
+          "window": "terminal",
+          "start": 306,
+          "end": 306,
+          "fully_paginated": true
+        }
+      ],
+      "complete_terminal_stream": true
+    },
+    {
+      "game_index": 1,
+      "both_teams_active": true,
+      "active_teams": [
+        1,
+        2
+      ],
+      "replay_pages": 2,
+      "windows": [
+        {
+          "window": "early",
+          "start": 1,
+          "end": 5,
+          "fully_paginated": true
+        },
+        {
+          "window": "terminal",
+          "start": 420,
+          "end": 420,
+          "fully_paginated": true
+        }
+      ],
+      "complete_terminal_stream": true
+    },
+    {
+      "game_index": 2,
+      "both_teams_active": true,
+      "active_teams": [
+        1,
+        2
+      ],
+      "replay_pages": 3,
+      "windows": [
+        {
+          "window": "early",
+          "start": 1,
+          "end": 5,
+          "fully_paginated": true
+        },
+        {
+          "window": "terminal",
+          "start": 678,
+          "end": 678,
+          "fully_paginated": true
+        }
+      ],
+      "complete_terminal_stream": true
+    },
+    {
+      "game_index": 3,
+      "both_teams_active": true,
+      "active_teams": [
+        1,
+        2
+      ],
+      "replay_pages": 4,
+      "windows": [
+        {
+          "window": "early",
+          "start": 1,
+          "end": 5,
+          "fully_paginated": true
+        },
+        {
+          "window": "terminal",
+          "start": 666,
+          "end": 666,
+          "fully_paginated": true
+        }
+      ],
+      "complete_terminal_stream": true
+    },
+    {
+      "game_index": 4,
+      "both_teams_active": true,
+      "active_teams": [
+        1,
+        2
+      ],
+      "replay_pages": 3,
+      "windows": [
+        {
+          "window": "early",
+          "start": 1,
+          "end": 5,
+          "fully_paginated": true
+        },
+        {
+          "window": "terminal",
+          "start": 480,
+          "end": 480,
+          "fully_paginated": true
+        }
+      ],
+      "complete_terminal_stream": true
+    },
+    {
+      "game_index": 5,
+      "both_teams_active": true,
+      "active_teams": [
+        1,
+        2
+      ],
+      "replay_pages": 2,
+      "windows": [
+        {
+          "window": "early",
+          "start": 1,
+          "end": 5,
+          "fully_paginated": true
+        },
+        {
+          "window": "terminal",
+          "start": 446,
+          "end": 446,
+          "fully_paginated": true
+        }
+      ],
+      "complete_terminal_stream": true
+    },
+    {
+      "game_index": 6,
+      "both_teams_active": true,
+      "active_teams": [
+        1,
+        2
+      ],
+      "replay_pages": 5,
+      "windows": [
+        {
+          "window": "early",
+          "start": 1,
+          "end": 5,
+          "fully_paginated": true
+        },
+        {
+          "window": "terminal",
+          "start": 412,
+          "end": 412,
+          "fully_paginated": true
+        }
+      ],
+      "complete_terminal_stream": true
+    },
+    {
+      "game_index": 7,
+      "both_teams_active": true,
+      "active_teams": [
+        1,
+        2
+      ],
+      "replay_pages": 5,
+      "windows": [
+        {
+          "window": "early",
+          "start": 1,
+          "end": 5,
+          "fully_paginated": true
+        },
+        {
+          "window": "terminal",
+          "start": 391,
+          "end": 391,
+          "fully_paginated": true
+        }
+      ],
+      "complete_terminal_stream": true
+    }
+  ],
+  "replay_queries": 26,
+  "all_passed": true,
+  "criterion": "movement OR action evidence for both teams; no spawning threshold"
+}

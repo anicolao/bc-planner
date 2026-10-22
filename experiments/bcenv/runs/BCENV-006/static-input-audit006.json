@@ -1,0 +1,8 @@
+{
+  "schema": "bcenv.static-input-freeze-check.v1",
+  "status": "passed",
+  "files_checked": 55,
+  "mismatched_or_missing": [],
+  "manifest_sha256": "d2078481897e9055b969e171d4f0d9dd6cfe2d98aee091e4c6723555a79c06ec",
+  "scope": "Only pinned initial export files; added competitor work is captured in frozen inventory, not considered static drift."
+}

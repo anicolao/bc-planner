@@ -1,0 +1,74 @@
+{
+  "experiment_id": "BCENV-006",
+  "status": "ready; all gates verified; parent conditional launch gate accepted",
+  "recorded_at": "2026-10-22T07:32:35.145901+00:00",
+  "profile": "cooperative native same-user; no hard confinement",
+  "requested_model": "gpt-6.1-sol",
+  "requested_effort": "high",
+  "fork_turns": "none",
+  "candidate_workspace": "/workspace/scratch/1523a3f802eb/replication-006/competitor-006",
+  "protocol_commit": "945d903792f6813b021368877909fd5aa88de03b",
+  "published_input_commit": "b3f378fc688a4d2eabfb0f56200ee98f60c3f405",
+  "service_helper_commit": "362f15c64dba3f3e7995d4175a66c4540aa0419c",
+  "code_equivalent_trial005_commit": "b3906876ae81154dd7f49458c42f52deaf11a109",
+  "private_regression_protocol": {
+    "ascii_bytes": 7102,
+    "sha256": "8c00d14bdc348da836ecf34b65f99bde1c61e08de89e47442072cba9c75ad345",
+    "label": "reconstructed observed evaluator regression; withheld from fresh candidate"
+  },
+  "budget": {
+    "wall_seconds": 2700,
+    "submissions": 8,
+    "games_per_submission": 8,
+    "max_games": 64,
+    "max_notes": 24,
+    "max_replay_queries": 150
+  },
+  "service": {
+    "exec_session": 28216,
+    "root": "/workspace/scratch/1523a3f802eb/replication-006/development-service006",
+    "mailbox": "/workspace/scratch/1523a3f802eb/replication-006/competitor-006/mailbox",
+    "config_sha256": "f6467170d43b4da3ea0eabeafee1a3f1a2a629c6a34075e6ddf9a504483558cd",
+    "accepted_submissions": 0
+  },
+  "gates": {
+    "input_review_sha256": "e8ee9491dafd9276509e876c57ed15f20931740e59e42dfb65d302758a212f21",
+    "input_manifest_sha256": "d2078481897e9055b969e171d4f0d9dd6cfe2d98aee091e4c6723555a79c06ec",
+    "export_diff_sha256": "5a0490a29f0b8775b99d6d7124e2d383237e136c19847a3dd4613b976520578c",
+    "static_inputs": 55,
+    "unchanged_since_review": true,
+    "source_empty": true,
+    "runtime_tests_passed": 339,
+    "runtime_tests_skipped": 0,
+    "ordinary_helper_smoke": true,
+    "preflight_games": 8,
+    "preflight_replay_hashes_identical_to005": 8,
+    "preflight_replay_queries": 26,
+    "integration_summary_sha256": "57572cf9a6e0fe0b034f673adc9ae8f00f27e9717fa311faafbb3fc9725fa099"
+  },
+  "ci": {
+    "code": {
+      "run_id": 39623057934,
+      "head": "362f15c64dba3f3e7995d4175a66c4540aa0419c",
+      "conclusion": "SUCCESS"
+    },
+    "protocol": {
+      "run_id": 39739237419,
+      "head": "945d903792f6813b021368877909fd5aa88de03b",
+      "conclusion": "SUCCESS"
+    },
+    "inputs": {
+      "run_id": 39739850780,
+      "head": "b3f378fc688a4d2eabfb0f56200ee98f60c3f405",
+      "conclusion": "SUCCESS"
+    }
+  },
+  "limitations": [
+    "Reconstructed README/replay docs, not byte-identical instruction replication.",
+    "49/55static inputs hash-identical; six documented path/doc/manifest changes.",
+    "Prior whole-runtime closure equivalence unproven; all8 restored preflight replay hashes match.",
+    "Prior private004/005raw artifacts unavailable after VM refresh.",
+    "No complete native-tool access trace or technical filesystem confinement."
+  ],
+  "parent_gate": "2026-10-22T07:25:37Z conditional launch accepted after exact newest CI success"
+}

@@ -1,0 +1,7 @@
+{
+  "sha256": "6d1a6c4d0fb5e8b28b6b7fff2bfba08a817bb9f99c20431529e71e79e906aad5",
+  "bytes": 844490,
+  "status": "passed",
+  "access": "local observer-only byte inventory; raw candidate/service artifacts not published",
+  "limitation": "Point-in-time cooperative inventory, not immutable storage or full host-access audit"
+}

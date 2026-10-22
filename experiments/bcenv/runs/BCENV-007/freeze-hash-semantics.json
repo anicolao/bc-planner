@@ -1,0 +1,8 @@
+{
+  "scope": "Labels for unchanged freeze007.json selected_source_sha256; distinct algorithms, not mismatched bytes",
+  "service_normalized_source_sha256": "a049472f068333e355a69c3d2f4aae5d9c1d909b28c4a074fdc7d05bdc6a495f",
+  "adapter_source_inventory_sha256": "f56b2693e294eef5f1a0a70e91712ad3d3eadc24407d1b56c5bb410bc15ce732",
+  "adapter_binary_inventory_sha256": "59a2dfc117f86f9bdd27909430856c536ba0763759af15f6d11b27dbc5a44c88",
+  "selected_java_file_sha256": "4f1d11aea772bc42bbbd9312794b01cececfd532ec623e0ff3ccd6d041c00d04",
+  "independent_audit": "selected-source-audit007.json"
+}

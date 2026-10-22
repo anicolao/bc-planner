@@ -1,0 +1,15 @@
+{
+  "experiment_id": "BCENV-007",
+  "candidate_stopped": true,
+  "candidate_status": "native final at 2026-10-22T08:55:53Z; explicitly stopped all development",
+  "service_stopped": true,
+  "service_exit_code": 130,
+  "graceful_stop_marker": false,
+  "frozen_at": "2026-10-22T08:56:06.492392+00:00",
+  "classification": "completed bounded development; evaluation pending",
+  "accepted_submissions": 8,
+  "games_completed": 64,
+  "selected_submission": "s_0bee2d14d8904e82acf94ef6ef0fb8b5",
+  "selected_source_sha256": "a049472f068333e355a69c3d2f4aae5d9c1d909b28c4a074fdc7d05bdc6a495f",
+  "no_evaluator_acquisition": true
+}

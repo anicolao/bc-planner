@@ -1,0 +1,9 @@
+# Independent service-launch repair review
+
+2026-10-22 07:42 UTC. Reviewed services/launch_local_trial.py, focused tests, operator docs and prospective007 gates; observed retained host probe success/nested probe mount-namespace failure. No candidate or private evaluator material used for repair.
+
+No publication blocker identified. Launcher validates worker config, computes drift identity, refuses parity mismatch before probe/readiness, probes fixed adapter in same inherited process context as subsequent worker, retains capped diagnostics (64KiB), times out at30seconds and kills probe process group, and refuses failed probes before LocalTrial/mailbox creation. It uses same in-memory config without a second wrapper. No namespace/sandbox/security relaxation or dependency install is introduced.
+
+Nine focused tests cover check-only, pre-readiness failure, context snapshot, allowed quota drift, rejected command drift, absolute executable requirement, output limit, timeout and process-launch failure. Coordinator reports full348 tests passed0skipped; this reviewer inspected code/tests and retained probe logs, did not rerun full suite.
+
+Limits: parity is a selected code/interpreter/cwd/worker/schedule identity, not full environment or transitive closure attestation. Review flagged protocol's environment overclaim; docs/protocol now explicitly state ambient environment is unrecorded/uncompared and prohibit claiming cross-launch environment equality. No credential-bearing environment dump requested. Live probe and worker share one context. A check-only probe can satisfy parity input; it is not evidence of end-to-end success. Full independent fixture note→submit→result→replay gate through this same launcher remains mandatory before fresh007 launch. Exact public code CI and runtime readiness are separate pending gates.

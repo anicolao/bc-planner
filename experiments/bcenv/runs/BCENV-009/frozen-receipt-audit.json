@@ -1,0 +1,37 @@
+{
+  "audit_sha256": "9e494ff219d47b76c966eb5b480e81c3c8c91eb58831faf38566d593f92ccbf2",
+  "deadline_process_receipts_checked": 218,
+  "events": 209,
+  "failures": [],
+  "final_choice": "s_236fe7567b554adf9b9c56092f2bad22",
+  "final_event_sha256": "c3ab085ae1a39dbbc788d2e6e83a3300270fd22665aba51a5997a11e079c1ff8",
+  "freeze_record_sha256": "0fec07d60d97aec5e38dc29dc60635f777082bd8d2b9cbcf62171e76651896a2",
+  "game_attempts": 80,
+  "observed_error_responses": [],
+  "operations": {
+    "complete": 8,
+    "experiment_note": 8,
+    "game_attempt": 80,
+    "lock_finalists": 1,
+    "replay": 38,
+    "result": 48,
+    "select_finalist": 1,
+    "submit": 8,
+    "validation_complete": 2,
+    "validation_finished": 1,
+    "validation_start": 1,
+    "validation_status": 13
+  },
+  "schema": "bcenv.public-finalist-audit.v1",
+  "status": "consistent_recorded_evidence",
+  "terminal_phase": "selected",
+  "unknowns": [
+    "Process receipt count includes repeated immutable build snapshots, not unique process launches.",
+    "Launch checks and reaping are application observations, not exact kernel spawn/kill timestamps. Cleanup may outlive execution deadline; scheduler latency is not bounded by this audit.",
+    "Cooperative evidence, not tamper-proof or complete native-access audit.",
+    "One lock event supports recorded atomic nomination, not proof of concurrency correctness.",
+    "Rejected/failed requests incompletely logged; successful read/replay counts are lower bounds.",
+    "Postdeadline observer diagnostics, if performed, must be separately declared and must not count as candidate-budget feedback. No such diagnostics are inferred from absent data."
+  ],
+  "verified_feedback_receipts": 38
+}

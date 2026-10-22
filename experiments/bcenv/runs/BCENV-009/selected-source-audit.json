@@ -1,0 +1,34 @@
+{
+  "status": "passed",
+  "submission_id": "s_236fe7567b554adf9b9c56092f2bad22",
+  "checks": {
+    "static56unchanged": true,
+    "six_source_trees_equal": true,
+    "normalized_source_identity": true,
+    "adapter_source_inventory": true,
+    "adapter_binary_inventory": true,
+    "zip_members": true,
+    "build_verified": true,
+    "selected_locked_and_complete": true,
+    "freeze_inventory_unchanged": true,
+    "no_symlinks": true
+  },
+  "static_files_checked": 56,
+  "static_mismatches": [],
+  "service_normalized_source_sha256": {
+    "candidate": "7fe96c7fe63df8eaa9b4aa482fb7eabea3666de7907e8adc8c7b76f8aff7794c",
+    "accepted": "7fe96c7fe63df8eaa9b4aa482fb7eabea3666de7907e8adc8c7b76f8aff7794c",
+    "build": "7fe96c7fe63df8eaa9b4aa482fb7eabea3666de7907e8adc8c7b76f8aff7794c",
+    "validation": "7fe96c7fe63df8eaa9b4aa482fb7eabea3666de7907e8adc8c7b76f8aff7794c"
+  },
+  "individual_java_file_sha256": {
+    "tempest/RobotPlayer.java": "7c42d9ac5d1fbd8e8cf25733fe8da76692685dbe023dc752d585bc8aab40c288"
+  },
+  "adapter_source_inventory_sha256": "9f7fee62a360b3632f458adbfeeed39d0a0928eef790ffa14488699c60f7f170",
+  "adapter_binary_inventory_sha256": "6d89f484d0acf9dd068d62382d55583af0dd83404c58d05967a3ceff2551c9ad",
+  "raw_zip_sha256": "a0ae0341da0821a74094b1740076bb5ae113e731ac3bc98697d65ba53f1f7fa4",
+  "engine_jar_sha256": "2b6db98e312e0e509d599acc46bffbb55c2569de0f12c8214a85ee57625f15f2",
+  "symlinks": [],
+  "inventory_drift": [],
+  "scope": "Mechanical current correspondence and receipt ordering, not complete filesystem edit/access trace. Service normalized manifest, adapter inventories, individual files and raw ZIP are distinct hash domains."
+}

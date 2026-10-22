@@ -182,3 +182,38 @@ See [launch record](experiments/bcenv/runs/BCENV-009/launch.json).
 Observer-only monitoring follows; no strategy intervention or duplicate trial.
 Stop and freeze before private evaluator materialization. This active launch
 is not a completion or competency result.
+
+## Frozen public development result — 2026-10-22 12:36 UTC
+
+The fresh candidate completed all64 training and16 locked-finalist validation
+games, with no recorded infrastructure failure or retry. Eight source-bound
+notes and38 bounded replay receipts are retained in a verified209-event chain.
+Exactly two completed versions locked before validation; no subsequent source
+submission or re-nomination occurred. Both finalists had5/8 training and4/8
+validation wins. The final selection kept provisional V3 under its stated tie
+rule; this run does not demonstrate that validation improved selection.
+
+Native completion was received12:30:25 UTC. Explicit service interruption
+returned exit130 at12:30:35; no graceful shutdown marker is inferred. Freeze
+was recorded12:30:57.988 UTC, before the12:45:06.398 hard deadline. All56 fixed
+inputs and5011 frozen-file hashes were independently rechecked unchanged.
+Selected source matches original and validation snapshots; an independent
+old-runtime rebuild reproduces source inventory, class bytes, binary identity
+and raw package ZIP exactly. The service normalized source hash, adapter
+inventory hashes, raw Java digest and ZIP hash are separately labeled.
+
+The [blind review](experiments/bcenv/runs/BCENV-009/blind-source-process-review.md)
+was fixed before independent evaluator outcomes. Eleven copied compile/JVM
+reruns reproduced four finalist passes, four retained failures and three later
+experimental passes. Explicit checks are genuine, but mostly narrow arithmetic,
+ownership and local predicates: successful execution is not general correctness.
+Later tests do not transfer to older selected sources; retained counterexamples
+and source-level limitations are distinguished from new engine failures.
+
+The interface and immutable finalist workflow functioned in this bounded run.
+Training and validation remain separate public selection evidence, not an
+independent performance estimate. No causal improvement, broad competence,
+hard confinement or complete intermediate access/edit trace is claimed.
+See the [development summary](experiments/bcenv/runs/BCENV-009/development-summary.json)
+and its linked hash-bound mechanical records. No independent evaluator outcomes
+or denied publication payload are included in this update.

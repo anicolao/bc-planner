@@ -1,6 +1,6 @@
 # Competitive program checkpoint
 
-Updated 2026-10-22 12:01 UTC. **The competitive goal is not achieved.**
+Updated 2026-10-22 12:36 UTC. **The competitive goal is not achieved.**
 The existing VM now runs the cooperative scrimmage service; a missing host or
 provider API is not the current execution blocker. This is not hard filesystem
 isolation. Historical statements below describe their dates, not current state.
@@ -11,9 +11,12 @@ Current work: [BCENV-009 public finalist validation](2023-public-finalist-valida
 Code CI and390 local tests passed. The separate32-game public tutorial phase
 preflight passed, with110 replay queries and independent code/input reviews.
 Updated protocol CI, parent readiness and independent live parity passed.
-Fresh009 is active: service-start12:00:06.398 UTC, hard deadline12:45:06.398 UTC;
-startup time is included in that budget. Observer-only monitoring; no merge
-is authorized.
+Fresh009 completed64 training plus16 locked-finalist validation games and stopped
+before its deadline. Both finalists tied at4/8 public validation; provisional V3
+remained selected. Independent blind source/process review and exact selected
+rebuild passed, with narrow correctness and cooperative-boundary limitations.
+This is a functioning selection workflow, not established broad competence.
+No merge is authorized.
 
 Recent cooperative work and public-development checkpoints are recorded in
 [replication006/007](2023-cooperative-replication-006.md) and

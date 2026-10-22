@@ -1,6 +1,6 @@
 # Competitive program checkpoint
 
-Updated 2026-10-22 14:30 UTC. **The competitive goal is not achieved.**
+Updated 2026-10-22 14:42 UTC. **The competitive goal is not achieved.**
 The existing VM runs the cooperative scrimmage service; missing host/provider
 access is not the current execution blocker. This is not hard filesystem
 isolation. Historical statements below describe their dates, not current state.
@@ -15,12 +15,18 @@ The own-team diagnostic channel was used, but this is not evidence of competence
 A separately preregistered, one-attempt public engineering diagnostic completed
 in122.407 seconds with the same frozen inputs and a300-second cap. This supports
 a prospective cap increase for that execution, not a retroactive repair or causal
-explanation of010. BCENV-011 preparation changes only the trusted public match-run
+explanation of010. [BCENV-011 preparation](2023-match-timeout-feasibility-011.md) changes only the trusted public match-run
 cap to300 seconds, uniformly in both phases, with the unchanged45-minute global
-deadline/max80 games and120-second unrelated operation limits. Code review/CI,
+deadline/max80 games and unchanged timeout=120 for other child subprocesses. Code review/CI,
 an8-game public tutorial preflight and independent clean-input/live-parity gates
-remain required before a fresh launch. [bcenv PR22](https://github.com/anicolao/bcenv/pull/22)
-remains draft and is the parent implementation; no merge is authorized.
+remain required before a fresh launch. [bcenv PR23](https://github.com/anicolao/bcenv/pull/23)
+is draft, stacked onPR22;433 local tests and20 independent focused/deadline
+checks passed. Exact code head31ac671 passed CI39796568851; the CI merge
+tree and installed runtime identity match local evidence. Protocol CI and
+preflight remain pending. The installed adapter/engine
+closure is unchanged because this is a trusted host-service-only change.
+The independently reviewed57-file export is source-empty; no011 games or
+candidate execution have started. No merge is authorized.
 
 [BCENV-009](2023-public-finalist-validation-009.md) completed its public phases
 and is stopped/frozen with blind review and exact selected rebuild verified.

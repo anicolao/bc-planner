@@ -1,0 +1,50 @@
+{
+  "status": "release_verified",
+  "base_commit": "66ff4650fd6481cf3a69925098e48e6abc865e53",
+  "branch": "feat/separate-match-timeout",
+  "full_tests": 433,
+  "focused_tests": 12,
+  "experimental_games": 0,
+  "source_sha256": {
+    "services/local_trial.py": "9b818d2c6183532159f140d4cae354f8bb99233e50602a39c3147cd9d913f1ba",
+    "services/public_finalist.py": "0fae1f3fa6f5d1ddb3f2caba3732c54c391b8f4a8ed83fc0d81adfbea74b9863",
+    "services/launch_local_trial.py": "2bdb63e8344229c2b63347ec99395ac2e28d0b88a1d121774ec220b5d53c2b7a",
+    "tests/test_match_timeout.py": "c77904ef2630220563dbb1f8e50d0772b97861521e3fd92e6437521c09fba852",
+    "docs/COOPERATIVE-LOCAL-TRIAL.md": "2ecd7f91cc788195044423ae51e57369f61982be73a047c972f9c177fcd55e9a",
+    "docs/COOPERATIVE-LAUNCH-PARITY.md": "185d4c26759b0e7f4db049f86009b030858e2149d51076761621b8da277f482f",
+    "PROMPTS.md": "c4d7d62110ad5177391d8eca09b8952c006aae0432fbbefb8c537964bdb8bb40"
+  },
+  "prompt_provenance": {
+    "existing_bytes_unchanged": true,
+    "exact_appended_blocks": 5,
+    "retrospective_omissions": [
+      "2026-10-22T08:35:22+00:00",
+      "2026-10-22T09:35:22+00:00",
+      "2026-10-22T10:35:22+00:00",
+      "2026-10-22T11:35:22+00:00"
+    ],
+    "latest": "2026-10-22T13:35:22+00:00",
+    "latest_actual_receipt": "2026-10-22T13:39:31+00:00",
+    "standing_mandate_and_direct_messages": "previously recorded; current orchestration decisions are metadata, not user quotes"
+  },
+  "scope": "trusted run-only match_timeout; default legacy process behavior; no engine/strategy/projection/deadline change; resolved timeout bound in launch parity",
+  "commit": "31ac67103993f7d16e9458de5235eb02841477c8",
+  "tree": "e46b2dcf4e2efd5eb0bad4bcbfe9ef50ed72d096",
+  "pull_request": "https://github.com/anicolao/bcenv/pull/23",
+  "ci_run": "https://github.com/anicolao/bcenv/actions/runs/39796568851",
+  "runtime": "/nix/store/1bbk58382aq40pplbyy2fir27qnx3jxj-bcenv-2023-0.1.0",
+  "runtime_unchanged_from010": true,
+  "runtime_reason": "trusted host services changed; packaged adapter/engine inputs unchanged",
+  "review_sha256": "b1a228ad9642cfefdf0d45bae6e7dd1c46e8c2ada8d789a4b8f6b53b5c07bf62",
+  "engine_sha256": "2b6db98e312e0e509d599acc46bffbb55c2569de0f12c8214a85ee57625f15f2",
+  "java_path": "/nix/store/84sr5jfh99mdgfwa0sa8nxifgy0vqicf-openjdk-8u504-b01/bin/java",
+  "java_sha256": "b88c44d3230f5a791661cc11c5be19360e819e284d8b81af90a4212f08cd46b6",
+  "hooks_path": ".husky/_",
+  "npm_ci": "Nix offline; succeeded",
+  "ci_conclusion": "success",
+  "ci_merge_revision": "681518d577734a590010f5c3075cbdfed449e303",
+  "ci_merge_tree_equals_head": true,
+  "ci_runtime_identity_equals_local": true,
+  "ci_manifest_lock_equals_local": true,
+  "runtime_nar_sha256": "sha256-1MzBzVI1R4gsIv6dpxJceQfgznGm4zyvUMJlyXvUNxo="
+}

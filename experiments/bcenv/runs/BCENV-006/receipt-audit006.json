@@ -1,0 +1,43 @@
+{
+  "audit_sha256": "be33ccea67f6b1d30f4a85f8b0210631df71513f02d1cb177fd53b6dc17cf88d",
+  "events": 4,
+  "failures": [],
+  "final_event_sha256": "58db9d5ab496ae5e87df41454c54f7312cfcc195a3c015e1a923282cf3a1102f",
+  "freeze_record_sha256": "fa6d28fb2919362f74576e36a24bcbc905545f288daab0438ec2374315e9c8c6",
+  "limits": {
+    "games": 64,
+    "mailbox_requests": 2200,
+    "notes": 24,
+    "reads": 2000,
+    "replay_queries": 150,
+    "submissions": 8
+  },
+  "observed_error_responses": [],
+  "operations": {
+    "complete": 1,
+    "completed_games": 0,
+    "experiment_note": 1,
+    "game_attempts": 0,
+    "mailbox_responses": 3,
+    "result": 1,
+    "submit": 1
+  },
+  "quota_observed": {
+    "games": 0,
+    "mailbox_requests": null,
+    "notes": 1,
+    "reads": 1,
+    "replay_queries": 0,
+    "submissions": 1
+  },
+  "scope": "Cooperative recorded integrity/order only; no tamper resistance, hypothesis-quality or exhaustive behavior claim.",
+  "status": "consistent_with_limits",
+  "unknowns": [
+    "Cooperative logs are not tamper-resistant; no exhaustive host-access or rejected-attempt audit.",
+    "Logged result/replay counts are lower bounds on charged attempts; refused/failed operations are not fully logged.",
+    "No build artifact for s_be0dedf27a6d43e0992f4d9f776da110; cannot independently verify package/source snapshot",
+    "Mailbox stopped marker unavailable; supplied independent freeze record is required."
+  ],
+  "verified_feedback_receipts": 0,
+  "wall_clock_regression_sequences": []
+}

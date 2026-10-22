@@ -1,0 +1,16 @@
+{
+  "experiment_id": "BCENV-006",
+  "candidate_stopped": true,
+  "candidate_status": "native final at2026-10-22T07:35:53Z",
+  "service_stopped": true,
+  "service_exit_code": 130,
+  "frozen_at": "2026-10-22T07:36:55.265727+00:00",
+  "classification": "infrastructure-invalid; not model competence failure",
+  "accepted_submissions": 1,
+  "games_started": 0,
+  "games_completed": 0,
+  "replay_queries": 0,
+  "root_cause_evidence": "build.log: error: setting up a private mount namespace: Operation not permitted; outer service launch used Nix wrapper, unlike successful host-Python integration launcher. Nested Nix invocation failed before adapter build.",
+  "selected_submission": "s_be0dedf27a6d43e0992f4d9f776da110",
+  "no_evaluator_acquisition": true
+}

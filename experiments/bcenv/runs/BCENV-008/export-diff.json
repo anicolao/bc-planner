@@ -1,0 +1,39 @@
+{
+  "old_manifest_sha256": "cb9ac0bcd5b4465e0864b26622a41cf4539583e13c00c27b19942b978b67733f",
+  "new_manifest_sha256": "c80781dc5c5caeb68bf8ba544534db3d33991a0bcdbf7f3916c18cea6328cd66",
+  "changed_files": [
+    {
+      "path": ".candidate-check/inner-launcher",
+      "old_sha256": "073c2f03da5b58224a1f0b6bb0e031128490f5a96d138fd56e5836b0ce094f54",
+      "new_sha256": "85c072ef4e9e0dcf00f4303dfd4a40e611fb7cbdbb438f4d0bf0f04ed933a588"
+    },
+    {
+      "path": ".candidate-check/manifest.json",
+      "old_sha256": "fe37e130aa6cc6efaf215dda8ed40544977d0f3ce9d71ec7020f445de21db2a9",
+      "new_sha256": "9bf3776486d873b1f7315a53250032d241eb494c4a381f6ce44c955de4073128"
+    },
+    {
+      "path": ".candidate-check/tools/candidate_check.py",
+      "old_sha256": "d6385c2911e9d155e425c4b01338f8d65f2cf4dfc7576a372ec67786af2e0c83",
+      "new_sha256": "15f483fec4daa26d3a62170d822404711ea4e376c570f92597f9178f931051a5"
+    },
+    {
+      "path": "KICKOFF.txt",
+      "old_sha256": "de80d3d80fe73f0e953ed847d9d1fb6b7e7dead2a487d2a2f714da38961e0bda",
+      "new_sha256": "de981ec710951b2aefb0edcd973fc7643fd997f172ccea57414ce7ef4706d7e6"
+    },
+    {
+      "path": "README.md",
+      "old_sha256": "9bcd3c28a08f967b745bc7f34a733a991ea3562e94a61f1f7a71e843afb09284",
+      "new_sha256": "834a7f0eff2fa7db60d90705783fa024b1c8c235db87c5844a648fc0038389ce"
+    },
+    {
+      "path": "candidate-check",
+      "old_sha256": "c49437823535bbebd43c9d2777210aa44c9306fd3e09c96f2712b0e9c49a5e42",
+      "new_sha256": "7e24eba7a951a95e2b71a2bf6ab1feedb39f6ffba19c5e46f9d3294d2a8c57ea"
+    }
+  ],
+  "unchanged_files": 49,
+  "diff_sha256": "2cb1739b6968917b9ade11eb8cb5b202991c1d6ad4dfe89cb18793a9de5c0b6f",
+  "scope": "No candidate execution or helper tests performed in clean export."
+}

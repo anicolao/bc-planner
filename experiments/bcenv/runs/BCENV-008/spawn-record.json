@@ -1,0 +1,12 @@
+{
+  "experiment_id": "BCENV-008",
+  "agent": "/root/replicate_competitive_bc_environment/competitor_008",
+  "requested_model": "gpt-6.1-sol",
+  "requested_effort": "high",
+  "fork_turns": "none",
+  "launch_utc": "2026-10-22T10:15:22Z",
+  "deadline_utc": "2026-10-22T11:00:22Z",
+  "kickoff_sha256": "de981ec710951b2aefb0edcd973fc7643fd997f172ccea57414ce7ef4706d7e6",
+  "launch_ready_sha256": "8fa6b445a66865743186bddfcd23793623109d12eebe04c40ae2c0efd53af0dc",
+  "note": "Exact generic kickoff with trailing two newlines; request acknowledgment not independent model attestation; no candidate history/coaching."
+}

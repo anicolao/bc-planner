@@ -2099,3 +2099,11 @@ Rules:
 Task:
 Check progress on the authorized long-running BC2023 competitive-environment project in anicolao/bcenv and anicolao/bc-planner. Verify the latest project checkpoint, active work, experiments and CI; identify stalled work and resume or repair authorized steps without duplicating active execution. Continue toward a credible environment in which a fresh autonomous LLM builds a competent bot and uses scrimmages through an enforced interface without access to evaluator infrastructure or held-out competitor bots. Evaluate observable reasoning, code quality, replay-grounded experimentation and performance against genuine held-out 2023 competitors. Publish incremental PRs and summary documents as authorized. Do not infer merge permission, incur unapproved charges, weaken access restrictions, disclose held-out benchmark material to the competitor, or coach its strategy. Share meaningful milestones, blockers requiring user action and completion in this ChatGPT conversation; stay quiet on unchanged routine checks and avoid nonurgent overnight updates. When the goal is credibly achieved or the user stops it, close the progress check.
 ````
+
+## Prompt 167: Record validation-gated fresh launch
+
+Repeated exact direct approval Sentinel_7394f361f4e881919d712f2e0bda2fd6 under standing mandate107. Available user-message coverage remains direct117–119 and scheduled131–159,162,165–166; no later direct instruction supplied. Both exact CI heads, actual integration/live parity and independent input review passed before008launch. Coordinator lesson: inspect agent status before delegation and use followup_task to activate completed reviewers; send_message alone does not restart them. This is observer coordination metadata, not competitor instruction. No denied outcome payload included.
+
+````text
+Ok let's proceed.
+````

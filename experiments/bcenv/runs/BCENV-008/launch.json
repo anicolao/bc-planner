@@ -1,0 +1,62 @@
+{
+  "experiment_id": "BCENV-008",
+  "status": "ready all gates passed",
+  "recorded_at": "2026-10-22T10:14:12.117722+00:00",
+  "requested_model": "gpt-6.1-sol",
+  "requested_effort": "high",
+  "fork_turns": "none",
+  "candidate_workspace": "/workspace/scratch/1523a3f802eb/replication-006/competitor-008",
+  "profile": "cooperative same-user native; no hard confinement",
+  "code_commit": "ceaac7af0c940d4587b890eff17f2924fe7ddbe1",
+  "code_ci": {
+    "run": 39759479654,
+    "conclusion": "SUCCESS"
+  },
+  "protocol_commit": "cfbc496a51be3b609cd1124c78d176ec892a8491",
+  "protocol_ci": {
+    "run": 39758263786,
+    "conclusion": "SUCCESS"
+  },
+  "private_regression_protocol": {
+    "ascii_bytes": 7562,
+    "sha256": "3478cca51f516624ff7e347390fda0350ab5b8590131aab701838dc9f129038f",
+    "label": "observed regression; prospective uniform300s512MiB"
+  },
+  "budget": {
+    "wall_seconds": 2700,
+    "submissions": 8,
+    "games_per_submission": 8,
+    "max_games": 64,
+    "max_notes": 24,
+    "max_replay_queries": 150
+  },
+  "gates": {
+    "unit_tests": 351,
+    "skipped": 0,
+    "input_review_sha256": "8f04c5edc75f9f6baef8037315aad3aa333dd223fee331ba478e0103e3dc09c2",
+    "repair_review_sha256": "89e3a0b4813024d8b6cb632e04f88e349d580f048eec2704d6257bcef5a7c949",
+    "export_sha256": "c80781dc5c5caeb68bf8ba544534db3d33991a0bcdbf7f3916c18cea6328cd66",
+    "static_files": 55,
+    "source_empty": true,
+    "preflight_games": 8,
+    "preflight_replay_queries": 26,
+    "integration_summary_sha256": "db4b2f5f715517383f3c4a97dbf2c8d719c86cc64fa81bddeef81e8ee3a7a0d5",
+    "integration_launch_sha256": "d18191076fc22ff0e9cf87ed67e2a50d74870635b924bd5cc9674d776952d45f",
+    "live_launch_sha256": "69a9f20422aacacebeb81a3f42ae990e3b59fd78f8525adf54d2fcb11646f217",
+    "same_launch_identity": true,
+    "live_probe_passed": true,
+    "live_service_empty": true,
+    "helper_smoke_sha256": "c703f301c7ac1600e4b752f217a17a934b6c64015ceffcb0c19f7c86b09db040",
+    "preflight_exact007_replay_matches": 8
+  },
+  "service_exec_session": 42845,
+  "development_config_sha256": "f6467170d43b4da3ea0eabeafee1a3f1a2a629c6a34075e6ddf9a504483558cd",
+  "limitations": [
+    "Cooperative same-user restrictions, no complete native access trace.",
+    "Cross-launch ambient environment equivalence not recorded; live probe/worker same process.",
+    "Generic execution/claim-evidence documentation changed; historical reconstructed docs retained otherwise.",
+    "Historical fullruntime closure differs;8fixed preflight replay hashes match.",
+    "Private prior raw archival loss disclosed."
+  ],
+  "parent_gate": "2026-10-22T10:14:57Z accepted conditional final check; independent final parity confirmed10:14:50Z"
+}

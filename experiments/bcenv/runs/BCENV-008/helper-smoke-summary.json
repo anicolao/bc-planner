@@ -1,0 +1,243 @@
+{
+  "candidate_workspace_accessed": false,
+  "code_commit": "ceaac7af0c940d4587b890eff17f2924fe7ddbe1",
+  "helper_sha256": "15f483fec4daa26d3a62170d822404711ea4e376c570f92597f9178f931051a5",
+  "kind": "ordinary-host exported-helper smoke",
+  "matches": 0,
+  "new_installs": false,
+  "runs": [
+    {
+      "exit_code": 0,
+      "name": "build",
+      "receipt": {
+        "artifact": "/workspace/scratch/1523a3f802eb/replication-006/engineering/helper008-smoke/build/artifact.json",
+        "artifact_sha256": "fa951a81d3101502715700e8cfc2d8091c2f1d54270ef57ffb2f83d1cdb5c4a6",
+        "binary_sha256": "998f8b2235a59b1c93e41a91e46da4b802386bcc5ef6acdbbaed6aa83f3a2e15",
+        "compile_status": "succeeded",
+        "kind": "build-check",
+        "official_verifier_status": "succeeded",
+        "schema": "bcenv.candidate-check.v1",
+        "source_sha256": "e8df3a75f05df0bd94293b3fc16c3ba1d69a07e68f1660726f9560826ca9a990",
+        "status": "verified"
+      }
+    },
+    {
+      "exit_code": 0,
+      "name": "assertion",
+      "receipt": {
+        "assertion_coverage": "unknown",
+        "assertions_enabled": true,
+        "binary_sha256": "998f8b2235a59b1c93e41a91e46da4b802386bcc5ef6acdbbaed6aa83f3a2e15",
+        "correctness": "not_established",
+        "engine_sha256": "2b6db98e312e0e509d599acc46bffbb55c2569de0f12c8214a85ee57625f15f2",
+        "execution_status": "succeeded",
+        "kind": "java-test",
+        "main_class": "AssertionMain",
+        "schema": "bcenv.candidate-check.v2",
+        "semantics": "uninstrumented-jvm",
+        "source_sha256": "e8df3a75f05df0bd94293b3fc16c3ba1d69a07e68f1660726f9560826ca9a990",
+        "status": "execution_succeeded",
+        "steps": [
+          {
+            "command": [
+              "/nix/store/84sr5jfh99mdgfwa0sa8nxifgy0vqicf-openjdk-8u504-b01/lib/openjdk/bin/javac",
+              "-J-Xmx256m",
+              "-source",
+              "8",
+              "-target",
+              "8",
+              "-encoding",
+              "UTF-8",
+              "-proc:none",
+              "-classpath",
+              "/workspace/scratch/1523a3f802eb/replication-006/engineering/helper008-smoke/assertion/candidate-classes:/nix/store/gyyg1xgc61p759d7qw9w28hgh7ip6nvk-battlecode23-engine-3.0.13/share/battlecode23/engine.jar",
+              "-d",
+              "/workspace/scratch/1523a3f802eb/replication-006/engineering/helper008-smoke/assertion/test-classes",
+              "/workspace/scratch/1523a3f802eb/replication-006/engineering/helper008-smoke/assertion/test-source/AssertionMain.java",
+              "/workspace/scratch/1523a3f802eb/replication-006/engineering/helper008-smoke/assertion/test-source/FailureMain.java",
+              "/workspace/scratch/1523a3f802eb/replication-006/engineering/helper008-smoke/assertion/test-source/PrintMain.java"
+            ],
+            "elapsed_seconds": 0.876,
+            "exit_code": 0,
+            "log": "compile.log",
+            "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "status": "succeeded"
+          },
+          {
+            "command": [
+              "/nix/store/84sr5jfh99mdgfwa0sa8nxifgy0vqicf-openjdk-8u504-b01/lib/openjdk/bin/java",
+              "-Xmx256m",
+              "-ea",
+              "-cp",
+              "/workspace/scratch/1523a3f802eb/replication-006/engineering/helper008-smoke/assertion/candidate-classes:/nix/store/gyyg1xgc61p759d7qw9w28hgh7ip6nvk-battlecode23-engine-3.0.13/share/battlecode23/engine.jar:/workspace/scratch/1523a3f802eb/replication-006/engineering/helper008-smoke/assertion/test-classes",
+              "AssertionMain"
+            ],
+            "elapsed_seconds": 0.178,
+            "exit_code": 0,
+            "log": "test.log",
+            "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "status": "succeeded"
+          }
+        ],
+        "test_binary_files": {
+          "AssertionMain.class": "51700346defbe50a32d353a658e1e1c8ba8ed975f972ebf954b66bd2003ea136",
+          "FailureMain.class": "e4ffcb458ab70595d927503b92771743566a19848506726d1ee53a708608713f",
+          "PrintMain.class": "8048606b34944baee1fd2fde1fefda65c3d9f7cc8edf4bd0847d224fb0312e65"
+        },
+        "test_binary_sha256": "be6d4d8472fb1b728e3789afb04d63c6b25799e93898862e82469e4a2a8f3102",
+        "test_files": {
+          "AssertionMain.java": "ad4900a5f97f5082603ec98c61c64910aa72855b6589dffe8ca7481c4bd95a1b",
+          "FailureMain.java": "d9b1a62a9469b786c7aa8f64f44a9fe27cb9b9e18e148a6e8b74250d697b9c6c",
+          "PrintMain.java": "df9409086e53bf942bf92240197915a5dec7e79de2786cb0c804d6ec1300024d"
+        },
+        "test_sha256": "a875cfa70224e59de14664b1ca57443166587bf32a26ecc0db1f75ac7a73cfb3"
+      }
+    },
+    {
+      "exit_code": 0,
+      "name": "print-only",
+      "receipt": {
+        "assertion_coverage": "unknown",
+        "assertions_enabled": true,
+        "binary_sha256": "998f8b2235a59b1c93e41a91e46da4b802386bcc5ef6acdbbaed6aa83f3a2e15",
+        "correctness": "not_established",
+        "engine_sha256": "2b6db98e312e0e509d599acc46bffbb55c2569de0f12c8214a85ee57625f15f2",
+        "execution_status": "succeeded",
+        "kind": "java-test",
+        "main_class": "PrintMain",
+        "schema": "bcenv.candidate-check.v2",
+        "semantics": "uninstrumented-jvm",
+        "source_sha256": "e8df3a75f05df0bd94293b3fc16c3ba1d69a07e68f1660726f9560826ca9a990",
+        "status": "execution_succeeded",
+        "steps": [
+          {
+            "command": [
+              "/nix/store/84sr5jfh99mdgfwa0sa8nxifgy0vqicf-openjdk-8u504-b01/lib/openjdk/bin/javac",
+              "-J-Xmx256m",
+              "-source",
+              "8",
+              "-target",
+              "8",
+              "-encoding",
+              "UTF-8",
+              "-proc:none",
+              "-classpath",
+              "/workspace/scratch/1523a3f802eb/replication-006/engineering/helper008-smoke/print-only/candidate-classes:/nix/store/gyyg1xgc61p759d7qw9w28hgh7ip6nvk-battlecode23-engine-3.0.13/share/battlecode23/engine.jar",
+              "-d",
+              "/workspace/scratch/1523a3f802eb/replication-006/engineering/helper008-smoke/print-only/test-classes",
+              "/workspace/scratch/1523a3f802eb/replication-006/engineering/helper008-smoke/print-only/test-source/AssertionMain.java",
+              "/workspace/scratch/1523a3f802eb/replication-006/engineering/helper008-smoke/print-only/test-source/FailureMain.java",
+              "/workspace/scratch/1523a3f802eb/replication-006/engineering/helper008-smoke/print-only/test-source/PrintMain.java"
+            ],
+            "elapsed_seconds": 0.914,
+            "exit_code": 0,
+            "log": "compile.log",
+            "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "status": "succeeded"
+          },
+          {
+            "command": [
+              "/nix/store/84sr5jfh99mdgfwa0sa8nxifgy0vqicf-openjdk-8u504-b01/lib/openjdk/bin/java",
+              "-Xmx256m",
+              "-ea",
+              "-cp",
+              "/workspace/scratch/1523a3f802eb/replication-006/engineering/helper008-smoke/print-only/candidate-classes:/nix/store/gyyg1xgc61p759d7qw9w28hgh7ip6nvk-battlecode23-engine-3.0.13/share/battlecode23/engine.jar:/workspace/scratch/1523a3f802eb/replication-006/engineering/helper008-smoke/print-only/test-classes",
+              "PrintMain"
+            ],
+            "elapsed_seconds": 0.102,
+            "exit_code": 0,
+            "log": "test.log",
+            "log_sha256": "4174dc7a5f3a8aa016fa430359f29ae6e144dd2573fa1da0cba6c95c5816563d",
+            "status": "succeeded"
+          }
+        ],
+        "test_binary_files": {
+          "AssertionMain.class": "51700346defbe50a32d353a658e1e1c8ba8ed975f972ebf954b66bd2003ea136",
+          "FailureMain.class": "e4ffcb458ab70595d927503b92771743566a19848506726d1ee53a708608713f",
+          "PrintMain.class": "8048606b34944baee1fd2fde1fefda65c3d9f7cc8edf4bd0847d224fb0312e65"
+        },
+        "test_binary_sha256": "be6d4d8472fb1b728e3789afb04d63c6b25799e93898862e82469e4a2a8f3102",
+        "test_files": {
+          "AssertionMain.java": "ad4900a5f97f5082603ec98c61c64910aa72855b6589dffe8ca7481c4bd95a1b",
+          "FailureMain.java": "d9b1a62a9469b786c7aa8f64f44a9fe27cb9b9e18e148a6e8b74250d697b9c6c",
+          "PrintMain.java": "df9409086e53bf942bf92240197915a5dec7e79de2786cb0c804d6ec1300024d"
+        },
+        "test_sha256": "a875cfa70224e59de14664b1ca57443166587bf32a26ecc0db1f75ac7a73cfb3"
+      }
+    },
+    {
+      "exit_code": 1,
+      "name": "failed-assertion",
+      "receipt": {
+        "assertion_coverage": "unknown",
+        "assertions_enabled": true,
+        "binary_sha256": "998f8b2235a59b1c93e41a91e46da4b802386bcc5ef6acdbbaed6aa83f3a2e15",
+        "correctness": "not_established",
+        "engine_sha256": "2b6db98e312e0e509d599acc46bffbb55c2569de0f12c8214a85ee57625f15f2",
+        "execution_status": "failed",
+        "kind": "java-test",
+        "main_class": "FailureMain",
+        "schema": "bcenv.candidate-check.v2",
+        "semantics": "uninstrumented-jvm",
+        "source_sha256": "e8df3a75f05df0bd94293b3fc16c3ba1d69a07e68f1660726f9560826ca9a990",
+        "status": "failed",
+        "steps": [
+          {
+            "command": [
+              "/nix/store/84sr5jfh99mdgfwa0sa8nxifgy0vqicf-openjdk-8u504-b01/lib/openjdk/bin/javac",
+              "-J-Xmx256m",
+              "-source",
+              "8",
+              "-target",
+              "8",
+              "-encoding",
+              "UTF-8",
+              "-proc:none",
+              "-classpath",
+              "/workspace/scratch/1523a3f802eb/replication-006/engineering/helper008-smoke/failed-assertion/candidate-classes:/nix/store/gyyg1xgc61p759d7qw9w28hgh7ip6nvk-battlecode23-engine-3.0.13/share/battlecode23/engine.jar",
+              "-d",
+              "/workspace/scratch/1523a3f802eb/replication-006/engineering/helper008-smoke/failed-assertion/test-classes",
+              "/workspace/scratch/1523a3f802eb/replication-006/engineering/helper008-smoke/failed-assertion/test-source/AssertionMain.java",
+              "/workspace/scratch/1523a3f802eb/replication-006/engineering/helper008-smoke/failed-assertion/test-source/FailureMain.java",
+              "/workspace/scratch/1523a3f802eb/replication-006/engineering/helper008-smoke/failed-assertion/test-source/PrintMain.java"
+            ],
+            "elapsed_seconds": 0.744,
+            "exit_code": 0,
+            "log": "compile.log",
+            "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "status": "succeeded"
+          },
+          {
+            "command": [
+              "/nix/store/84sr5jfh99mdgfwa0sa8nxifgy0vqicf-openjdk-8u504-b01/lib/openjdk/bin/java",
+              "-Xmx256m",
+              "-ea",
+              "-cp",
+              "/workspace/scratch/1523a3f802eb/replication-006/engineering/helper008-smoke/failed-assertion/candidate-classes:/nix/store/gyyg1xgc61p759d7qw9w28hgh7ip6nvk-battlecode23-engine-3.0.13/share/battlecode23/engine.jar:/workspace/scratch/1523a3f802eb/replication-006/engineering/helper008-smoke/failed-assertion/test-classes",
+              "FailureMain"
+            ],
+            "elapsed_seconds": 0.106,
+            "exit_code": 1,
+            "log": "test.log",
+            "log_sha256": "59f24cde141aada7c83ddbe90e3b607383f4e3ee3ad889ecb0b182b2d5243f63",
+            "status": "failed"
+          }
+        ],
+        "test_binary_files": {
+          "AssertionMain.class": "51700346defbe50a32d353a658e1e1c8ba8ed975f972ebf954b66bd2003ea136",
+          "FailureMain.class": "e4ffcb458ab70595d927503b92771743566a19848506726d1ee53a708608713f",
+          "PrintMain.class": "8048606b34944baee1fd2fde1fefda65c3d9f7cc8edf4bd0847d224fb0312e65"
+        },
+        "test_binary_sha256": "be6d4d8472fb1b728e3789afb04d63c6b25799e93898862e82469e4a2a8f3102",
+        "test_files": {
+          "AssertionMain.java": "ad4900a5f97f5082603ec98c61c64910aa72855b6589dffe8ca7481c4bd95a1b",
+          "FailureMain.java": "d9b1a62a9469b786c7aa8f64f44a9fe27cb9b9e18e148a6e8b74250d697b9c6c",
+          "PrintMain.java": "df9409086e53bf942bf92240197915a5dec7e79de2786cb0c804d6ec1300024d"
+        },
+        "test_sha256": "a875cfa70224e59de14664b1ca57443166587bf32a26ecc0db1f75ac7a73cfb3"
+      }
+    }
+  ],
+  "status": "passed",
+  "workspace": "/workspace/scratch/1523a3f802eb/replication-006/engineering/helper008-smoke"
+}

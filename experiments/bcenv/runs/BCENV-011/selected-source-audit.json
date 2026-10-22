@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "selected_original": "s_c683aa49e68c42709906eee18d420ebf",
+  "selected_source_files": {
+    "tempest/RobotPlayer.java": "cdb6c7f307743a19e21616a29b8f65ede632d38eada4d34c29ccc2de3912c430"
+  },
+  "two_finalists_original_validation_source_build_package_identical": true,
+  "final_workspace_exact_selected_source": true,
+  "selected_before_deadline_seconds": 168.97584909899888,
+  "phase_observations": 4,
+  "postlock_point_observations": 3,
+  "point_observations_all_selected_source_hash": true,
+  "observation_limitation": "Not a complete filesystem write trace",
+  "pending_requests": 0
+}

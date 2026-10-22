@@ -1,0 +1,77 @@
+{
+  "accepted_training_submissions": 8,
+  "candidate_completed_verified_utc": "2026-10-22T16:07:52+00:00",
+  "candidate_stop_method": "Native final answer received; collaboration.list_agents independently reports completed. No interruption or reactivation.",
+  "candidate_stopped": true,
+  "candidate_was_not_resumed": true,
+  "classification": "Completed locked public validation; private evaluation not started",
+  "completed_engine_games": 80,
+  "experiment_id": "BCENV-011",
+  "final_phase": {
+    "deadline_monotonic": 34682.034683289996,
+    "deadline_unix": 1792685384.0476162,
+    "final_choice": "s_c683aa49e68c42709906eee18d420ebf",
+    "finalists": [
+      "s_59fe72e450ef4bfcaddbf7926b7bfdbb",
+      "s_c683aa49e68c42709906eee18d420ebf"
+    ],
+    "game_budget": 80,
+    "games_attempted": 80,
+    "halted": false,
+    "locked_monotonic": 33506.574546439,
+    "max_run_seconds": 2700,
+    "phase": "selected",
+    "provisional_choice": "s_59fe72e450ef4bfcaddbf7926b7bfdbb",
+    "remaining_seconds": 168.9755867789936,
+    "schema": "bcenv.public-finalists.v1",
+    "selected_monotonic": 34513.058834191,
+    "started_monotonic": 31982.03468329,
+    "started_unix": 1792682684.0476162,
+    "training_games_attempted": 64,
+    "validation_games_attempted": 16,
+    "validation_games_reserved": 16,
+    "validation_ids": {
+      "s_59fe72e450ef4bfcaddbf7926b7bfdbb": "s_c3952283ba134d819990a3ac38e1d953",
+      "s_c683aa49e68c42709906eee18d420ebf": "s_0488b8bbdf3e4633919db15122bffebf"
+    }
+  },
+  "fixed_input_hashes_unchanged": 57,
+  "frozen_at": "2026-10-22T16:08:57.696132+00:00",
+  "game_result_artifacts": 80,
+  "games_completed": 80,
+  "graceful_stop_marker_present": false,
+  "hard_deadline_utc": "2026-10-22T16:09:44.047616+00:00",
+  "limitation": "Completed-game counts use service-reported completed statuses, pending independent receipt/content verification; result-file presence is counted separately. Native/process stop is separately observed, not established by this script.",
+  "native_deadline_interrupted": false,
+  "pending_mailbox_requests": 0,
+  "phase_observer_exit_code": 0,
+  "phase_observer_session": 72994,
+  "prior_evaluator_material_already_present_outside_candidate_workspace": true,
+  "private_011_plan_materialized": false,
+  "private_evaluation_started": false,
+  "private_plan_check_scope": "Standard local plan path absent before evaluator release; not an exhaustive filesystem audit.",
+  "recorded_utc": "2026-10-22T16:08:57.521145+00:00",
+  "selected_java_files_sha256": {
+    "tempest/RobotPlayer.java": "cdb6c7f307743a19e21616a29b8f65ede632d38eada4d34c29ccc2de3912c430"
+  },
+  "selected_service_normalized_source_sha256": "e33da104ca12b94d7b96c79401b1958753e58c68a8ed3f329407a01c5859c0a5",
+  "selected_submission": "s_c683aa49e68c42709906eee18d420ebf",
+  "service_exit_code": 1,
+  "service_reported_final_choice": "s_c683aa49e68c42709906eee18d420ebf",
+  "service_reported_training_game_statuses": {
+    "completed": 64
+  },
+  "service_reported_validation_game_statuses": {
+    "completed": 16
+  },
+  "service_session": 42463,
+  "service_stop_method": "Explicit operator Ctrl-C after native completion, selection and all80 game results completed; write_stdin returned terminal exit1.",
+  "service_stopped": true,
+  "service_terminal_verified_utc": "2026-10-22T16:07:55+00:00",
+  "stop_limitation": "Output was ^C with terminal exit1; no traceback or explanation of signal exit-code difference. No graceful shutdown or global process-namespace absence claim.",
+  "stop_record_sha256": "6b99b0f6bde8585c86edd5c9f20adc2479bd6da3ef60dbfdb26a618f3519a67c",
+  "submission_count_semantics": "Accepted means admitted source version, not successful compilation or completed games.",
+  "training_games_completed": 64,
+  "training_submit_receipts": 8,
+  "validation_games_completed": 16
+}

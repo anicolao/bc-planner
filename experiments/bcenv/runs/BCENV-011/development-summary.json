@@ -1,0 +1,93 @@
+{
+  "schema": "bcenv.public-development-summary.v1",
+  "experiment_id": "BCENV-011",
+  "scope": "Public development and blind source/process evidence only; no independent evaluator outcomes.",
+  "candidate_stopped": true,
+  "candidate_completed_verified_utc": "2026-10-22T16:07:52+00:00",
+  "service_stopped": true,
+  "service_exit_code": 1,
+  "service_terminal_verified_utc": "2026-10-22T16:07:55+00:00",
+  "graceful_stop_marker": false,
+  "stop_limitation": "Output was ^C with terminal exit1; no traceback or explanation of signal exit-code difference. No graceful shutdown or global process-namespace absence claim.",
+  "frozen_at": "2026-10-22T16:08:57.696132+00:00",
+  "hard_deadline_utc": "2026-10-22T16:09:44.047616+00:00",
+  "training_submissions": 8,
+  "training_games_completed": 64,
+  "validation_games_completed": 16,
+  "total_games_completed": 80,
+  "service_game_failures": 0,
+  "game_retries_or_substitutions": 0,
+  "notes": 8,
+  "replay_receipts": 24,
+  "replay_modes": {
+    "own_diagnostics": 18,
+    "actions": 6
+  },
+  "audit_events": 196,
+  "training_wins_by_version": [
+    4,
+    4,
+    5,
+    5,
+    5,
+    4,
+    5,
+    5
+  ],
+  "finalists": [
+    {
+      "original_submission_id": "s_59fe72e450ef4bfcaddbf7926b7bfdbb",
+      "validation_submission_id": "s_c3952283ba134d819990a3ac38e1d953",
+      "training_wins": 5,
+      "training_games": 8,
+      "validation_wins": 3,
+      "validation_games": 8,
+      "selected": false
+    },
+    {
+      "original_submission_id": "s_c683aa49e68c42709906eee18d420ebf",
+      "validation_submission_id": "s_0488b8bbdf3e4633919db15122bffebf",
+      "training_wins": 5,
+      "training_games": 8,
+      "validation_wins": 4,
+      "validation_games": 8,
+      "selected": true
+    }
+  ],
+  "selection_changed_from_provisional": true,
+  "selected_service_normalized_source_sha256": "e33da104ca12b94d7b96c79401b1958753e58c68a8ed3f329407a01c5859c0a5",
+  "selected_java_files_sha256": {
+    "tempest/RobotPlayer.java": "cdb6c7f307743a19e21616a29b8f65ede632d38eada4d34c29ccc2de3912c430"
+  },
+  "fixed_inputs_unchanged": 57,
+  "frozen_files_rehashed": 4898,
+  "old_evaluation_runtime_rebuild_matches_public_runtime_binary": true,
+  "freeze_sha256": "1de1c42406dd7f061b988cafa29c8daaf8bcc41c448a7207a430be220e4b7893",
+  "frozen_inventory_sha256": "01d2a6a0b3ba50d38f2b35df196a222b6621a2e0bc5b3db3297568f462ea122f",
+  "source_audit_sha256": "e261450770de04e41754053cdc8520a3b6955bbe74ec5a857c72bd9ea1a08fdc",
+  "rebuild_audit_sha256": "803affe6c7ac91fb9450a207d6d1ab3234c58677b24ba24c1e16515f6a7f90b2",
+  "receipt_audit_sha256": "23e68064859074cd32c012dad0d931b63dfc8e803eb5e71ab8a74f7e0a3a22c6",
+  "limitations": [
+    "One fresh-agent feasibility run, not a causal comparison or universal timeout sufficiency proof.",
+    "Training and validation are adaptive public selection evidence, not independent held-out performance.",
+    "Local unsubmitted build/test failures are retained; zero service-game failures does not mean zero local errors.",
+    "Cooperative point-in-time integrity, source observations and receipts do not prove every native access or intermediate edit.",
+    "Meaningful actual-class mock tests are narrow and do not establish complete engine correctness."
+  ],
+  "blind_review_sha256": "0b5717cdcbeff1e6e966cc4e6b00c4da70536419bcaac59d0cf2fb019490bc15",
+  "prior_replay_references_verified": 14,
+  "retained_local_test_receipts": {
+    "succeeded": 28,
+    "failed": 6
+  },
+  "independent_final_test_mains": {
+    "relevant_final_mains_passed": 6,
+    "disclosed_abandoned_policy_main_failed": 1
+  },
+  "engine_elapsed_seconds": {
+    "minimum": 2.786,
+    "maximum": 122.661,
+    "over_120_seconds": 1
+  },
+  "engine_and_initial_summary_children_reaped_before_deadline": 160
+}

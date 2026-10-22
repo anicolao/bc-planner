@@ -130,3 +130,35 @@ This prospective document contains no independent evaluation outcomes. Private
 raw records remain local; any pending denied summary payload is excluded from
 this branch and is not indirectly published here. Public development/engineering
 records and future summaries remain subject to their applicable permissions.
+
+## Engineering readiness — 2026-10-22 11:53 UTC
+
+[bcenv PR21](https://github.com/anicolao/bcenv/pull/21), exact head
+`f0a7591d3f5ec401384e3120d0c12d5c3cb40922`, passed CI39771651402 and
+390 local tests. Independent review fixed deadline propagation into detached
+engine/compiler children and late phase decisions. A loaded-host synthetic
+fixture wait timed out once; isolated rerun passed, test-only wait slack was
+increased, and all29 phase tests passed. This is not omitted from the review.
+
+The separate fixed tutorial preflight completed32 games,110 bounded replay
+queries, both-team activity and terminal source coverage for every game. All16
+training replays reproduce the prior eight tutorial fixtures. Lock, both
+validation jobs and selection succeeded; five negative phase requests were
+rejected without extra games. No retry or runtime substitution occurred.
+The driver exited0; explicit service interruption exited130. No graceful
+shutdown marker is inferred. Mechanical audit found no discrepancy in296
+chained events,32 game charges and110 feedback receipts. Its182 process receipt
+instances include repeated immutable snapshots, not182 unique launches.
+
+The installed local runtime remains `7yh1yrs7m8yk4idh1x2rpqcqn7f7yhx9`. CI's
+clean-Git runtime is `jbi5ggy37yggb8fhfrs9f98sfyb0xdp1`: the CI merge and head
+have the same Git tree, all52 installed entries were compared,51 are exactly
+byte/mode/type identical, and the sole wrapper difference is its own store
+prefix. External dependency references match. Raw NAR equality is not claimed.
+The live service must retain the exact preflight runtime and configuration.
+
+The fresh56-file export is independently hash-checked, source/test/work-empty
+and free of prior candidate or evaluator material. All remaining launch gates
+are explicit in [engineering readiness](experiments/bcenv/runs/BCENV-009/engineering-readiness.json).
+No009 candidate has launched at this checkpoint; the live45minute clock must
+start only after updated protocol CI and parent conditional readiness.

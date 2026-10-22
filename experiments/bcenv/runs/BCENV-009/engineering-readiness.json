@@ -1,0 +1,47 @@
+{
+  "schema": "bcenv.public-engineering-readiness.v1",
+  "recorded_utc": "2026-10-22T11:55:44.463645+00:00",
+  "candidate_started": false,
+  "code_commit": "f0a7591d3f5ec401384e3120d0c12d5c3cb40922",
+  "code_pr": 21,
+  "code_ci_run": 39771651402,
+  "protocol_preflight_commit": "a311f5f897cd9386d31da3f62c740f0a89fda29c",
+  "protocol_ci_run": 39770729959,
+  "local_tests": 390,
+  "fixed_export_files": 56,
+  "runtime": "/nix/store/7yh1yrs7m8yk4idh1x2rpqcqn7f7yhx9-bcenv-2023-0.1.0",
+  "public_preflight_games": 32,
+  "replay_queries": 110,
+  "negative_phase_rejections": 5,
+  "prior_training_replay_matches": 16,
+  "mechanical_audit_failures": 0,
+  "service_exit": 130,
+  "driver_exit": 0,
+  "remaining_gates": [
+    "updated protocol exact-head CI",
+    "parent conditional gate",
+    "live shared-launcher parity and independent empty-state check",
+    "fresh candidate launch within service-start deadline"
+  ],
+  "limitations": [
+    "Public tutorial engineering fixture, not a competitor capability result.",
+    "Bounded pages preserve continuation; terminal source coverage does not mean every selected record was enumerated.",
+    "CI and local store NARs differ; all installed files are identical except self-prefix in wrapper, and external dependencies match.",
+    "Cooperative access restrictions and application timing observations are not hostile isolation or kernel realtime attestation."
+  ],
+  "evidence_sha256": {
+    "integration_summary": "e205a053f80d5eae7a900d82da30d88ee11665d11dc966150cc0556165635d6c",
+    "mechanical_audit": "f422537a32be8f1d76e9695de686f4465122431f61f1bab9537d101d685e152b",
+    "replay_checks": "ae5e379a32643398c4baa2867f8040b89cbdcd451d124dccd04366e367b32cd7",
+    "preflight_freeze": "952dbb2c7614650e1e7e95094a56c64f01559e4dbdcc66ebcb8148634a36158c",
+    "integration_launch": "08b4454bac40bd274b066a73be55d536b3640cac5ff88d9ebc20e57f6dd456f6",
+    "config": "52464602026d5660085fd4159e49f45531dc770960756db1e1c5ee782a9269bc",
+    "driver": "7336f18eaba5db6e9ac99fd7f1ac75750187786d5297ef2794f321ab8e2b7248",
+    "export_manifest": "b756faeeebec02e292b94f6f36df0fe984c603ca5e6588de5b5f0c0982356e1d",
+    "engineering_review": "951b65e9355c526541c2b75bf13bdf3719742e347ad3b11677a4ffd1c331b3bb",
+    "original_preflight_review": "eec5463b219fc523825d738766fc5443632c0cafee7cf5898e6fe7d1b571b89e",
+    "input_review": "3e31d3665f2a8a55b6ba0cb81e99921d5b9a3419c1bbf605b637b8d01a46c6d2",
+    "runtime_equivalence": "9ffd9af5625223707989c5c70931244cc324bacafffc24a281e62ae3fa1c66a2",
+    "independent_preflight_review": "611e3df68e399145074feee0461c09326805786cbf554a3207b80eec22b361a3"
+  }
+}

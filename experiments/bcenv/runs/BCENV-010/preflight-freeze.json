@@ -1,0 +1,12 @@
+{
+  "schema": "bcenv010.preflight.freeze.v1",
+  "inventory_sha256": "91296c925908eb18441d77d23250a8e44004a7a9369d83676a7988e6399bf623",
+  "summary_sha256": "8eb130811577e58386414f7c4845337919af59cf271eb9f0af7fb94fae5dbd47",
+  "stop_sha256": "b4ba8f753b2afefd8f6460d40c919e8f1f24909edbc25ba0ac06fa94f75e9df7",
+  "files": 978,
+  "completed": true,
+  "service_stopped": true,
+  "new_games": 8,
+  "replay_queries": 39,
+  "no_retries": true
+}

@@ -1,6 +1,6 @@
 # Competitive program checkpoint
 
-Updated 2026-10-22 13:14 UTC. **The competitive goal is not achieved.**
+Updated 2026-10-22 13:32 UTC. **The competitive goal is not achieved.**
 The existing VM runs the cooperative scrimmage service; missing host/provider
 access is not the current execution blocker. This is not hard filesystem
 isolation. Historical statements below describe their dates, not current state.
@@ -10,9 +10,15 @@ Current preparation: [BCENV-010 own-team diagnostics feasibility](2023-own-diagn
 passed, and independent code/release review passed. The new mode projects bounded
 own-robot indicator strings and bytecode counts; it does not expose raw logs or
 provide automatic exception detection. Engine behavior and009's80-game/45-minute
-public finalist profile remain unchanged. Fresh inputs and a separately bounded
-8-game public tutorial preflight precede any010 launch. No010 competitor has
-launched at this checkpoint, and no merge is authorized.
+public finalist profile remain unchanged. The independently reviewed57-file export is clean and source-empty. The separate
+8-game tutorial preflight passed with39 replay queries, both-slot diagnostic/raw
+agreement and unchanged legacy action/replay evidence. Independent audit verified
+80 chained events and978 frozen files; driver exited0, service explicitly stopped
+with exit130. Pagination/coverage limitations remain explicit. See
+[engineering readiness](experiments/bcenv/runs/BCENV-010/engineering-readiness.json).
+Latest readiness-publication CI and parent conditional gate still precede live
+clock initialization and actual parity review. No010 competitor has launched
+at this checkpoint, and no merge is authorized.
 
 [BCENV-009](2023-public-finalist-validation-009.md) completed its public phases
 and is stopped/frozen with blind review and exact selected rebuild verified.

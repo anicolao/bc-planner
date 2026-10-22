@@ -1,0 +1,68 @@
+{
+  "schema": "bcenv010.engineering-readiness.v1",
+  "recorded_utc": "2026-10-22T13:32:48.394924+00:00",
+  "status": "preflight_pass_latest_publication_ci_and_parent_live_gate_pending",
+  "candidate_launched": false,
+  "code_commit": "66ff4650fd6481cf3a69925098e48e6abc865e53",
+  "code_pr": "https://github.com/anicolao/bcenv/pull/22",
+  "code_ci": {
+    "run": 39783686439,
+    "conclusion": "success"
+  },
+  "prospective_protocol_commit": "8edfc122383b23e38941bc3002f4664d775e9d6a",
+  "prospective_protocol_ci": {
+    "run": 39785756107,
+    "conclusion": "success"
+  },
+  "planner_pr": "https://github.com/anicolao/bc-planner/pull/17",
+  "runtime": "/nix/store/1bbk58382aq40pplbyy2fir27qnx3jxj-bcenv-2023-0.1.0",
+  "runtime_nar_hash": "sha256-1MzBzVI1R4gsIv6dpxJceQfgznGm4zyvUMJlyXvUNxo=",
+  "engine_sha256": "2b6db98e312e0e509d599acc46bffbb55c2569de0f12c8214a85ee57625f15f2",
+  "input_files": 57,
+  "input_manifest_sha256": "671d78f3ab4869ab5a9d9865c0f1ea1cca2ea1bda75393e69d698cca1962d9ae",
+  "kickoff_sha256": "165587d2108f30e6d9d655dbd8dc69c630e3fa980fd19ecc922555e0b89999b6",
+  "live_preflight_config_byte_identity": true,
+  "config_sha256": "9936ba1e9f832424a13acb3ac517c501476ccd4baaabbe8079c519958481ed5d",
+  "preflight_games": 8,
+  "preflight_queries": 39,
+  "preflight_modes": {
+    "actions": 23,
+    "own_diagnostics": 16
+  },
+  "raw_diagnostic_rows_checked": 89,
+  "training_replays_matching009": 8,
+  "validation_games": 0,
+  "preflight_retries": 0,
+  "audit_events": 80,
+  "frozen_preflight_files": 978,
+  "driver_exit_code": 0,
+  "service_exit_code": 130,
+  "graceful_shutdown_marker_claimed": false,
+  "parent_live_gate_received": false,
+  "actual_live_parity_checked": false,
+  "sealed_private_plan": {
+    "bytes": 9915,
+    "sha256": "31def260435a8be76cd49ffc72793eb7e96e0e87008e134d23f0ae780e864628",
+    "contents_published": false
+  },
+  "limits": [
+    "cooperative same-VM access restrictions, not hard confinement or complete historical access trace",
+    "prior operator artifacts remain outside instructed candidate workspace; no OS-inaccessibility claim",
+    "bounded source/terminal coverage does not imply full action-window enumeration",
+    "eight-game preflight references unchanged009 32-game phase proof rather than rerunning that phase",
+    "functionality and recorded process do not establish competitive quality",
+    "private evaluator outcomes and denied-publication commit excluded",
+    "new candidate requires latest publication CI, parent conditional gate, then actual live parity"
+  ],
+  "public_evidence_sha256": {
+    "preflight-audit.json": "c09c027585eb746d5a0d914b19a5e0e77ca0413bdc42523d8b0c30451a9c139a",
+    "diagnostics-release-review.md": "6eeea85b3b09ba2fa4d2e49dff15cc86f1e6b5d64f24eaaf8e9dd335e9b9bb4b",
+    "preflight-freeze.json": "0ee95d70e54bfeca44a6cab973f67c9e92109a214c648d86480527c0ae2f04b2",
+    "preflight-stop.json": "b4ba8f753b2afefd8f6460d40c919e8f1f24909edbc25ba0ac06fa94f75e9df7",
+    "diagnostics-engineering-readiness.json": "7504030ee1f234bbd419d27ba8631cdb544642821dc9ed101d0af73696637f2d",
+    "diagnostics-engineering-review.md": "b1fc3f9453a6409c90e49337248638acd3ea7f7647dcd114462918b05d860897",
+    "input-review.md": "7be8d7bbc179c7e906dedde71730c90a3b847aeb7e02e28789f7ab0458174785",
+    "preflight-review.md": "bd987b220ed898ccd51543ee44364f3ec90263f7e5d7a8d0682646c1902ab645",
+    "preflight-summary.json": "8eb130811577e58386414f7c4845337919af59cf271eb9f0af7fb94fae5dbd47"
+  }
+}

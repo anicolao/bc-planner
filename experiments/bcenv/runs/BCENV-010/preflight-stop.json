@@ -1,0 +1,12 @@
+{
+  "schema": "bcenv010.preflight.stop.v1",
+  "recorded_at": "2026-10-22T13:28:44.189740+00:00",
+  "driver_session": 99946,
+  "driver_exit_code": 0,
+  "service_session": 33676,
+  "stop_action": "explicit Ctrl-C via write_stdin after successful driver completion",
+  "service_exit_code": 130,
+  "retries": 0,
+  "new_games": 8,
+  "live_candidate_launched": false
+}

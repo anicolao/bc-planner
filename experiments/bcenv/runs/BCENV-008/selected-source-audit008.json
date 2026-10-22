@@ -1,0 +1,35 @@
+{
+  "status": "passed",
+  "submission_id": "s_5f423d044c5a4c8a98872e3f0d92a5bf",
+  "checks": {
+    "static_55_unchanged": true,
+    "selected_service_normalized_identity": true,
+    "public_result_identity": true,
+    "source_trees_equal": true,
+    "build_inventory_matches": true,
+    "adapter_build_source_identity_matches": true,
+    "binary_inventory_matches": true,
+    "adapter_binary_identity_matches": true,
+    "build_verified": true,
+    "selected_java_file_sha_matches": true,
+    "packaged_java_files_match": true,
+    "no_symlinks_in_frozen_roots": true,
+    "freeze_inventory_unchanged": true
+  },
+  "static_files_checked": 55,
+  "static_mismatches": [],
+  "service_normalized_source_sha256": {
+    "candidate": "caea60de8f53c12076870788ad6689cdfe8f100630900d1f640e76a3e78a6881",
+    "accepted": "caea60de8f53c12076870788ad6689cdfe8f100630900d1f640e76a3e78a6881",
+    "build_snapshot": "caea60de8f53c12076870788ad6689cdfe8f100630900d1f640e76a3e78a6881"
+  },
+  "individual_java_file_sha256": {
+    "tide/RobotPlayer.java": "4d6e7daaba76393e55b28cc3628872e7559da9ec408f93c2bc5d440edeb0452c"
+  },
+  "adapter_source_inventory_sha256": "8c618a314e301f703e92aa3fbc1e5f39689f4e96e3ec6fc34812beb32fa293ff",
+  "adapter_binary_inventory_sha256": "6376ebf4271b1f248d1a184d98c3177dcfab56e5b1279cae9e2cc595152f7d4f",
+  "engine_jar_sha256": "2b6db98e312e0e509d599acc46bffbb55c2569de0f12c8214a85ee57625f15f2",
+  "symlinks": [],
+  "inventory_drift": [],
+  "scope": "Mechanical correspondence only; service normalized source identity, individual file digest, and adapter inventory digests are distinct hash domains; no competence or strategy assessment."
+}

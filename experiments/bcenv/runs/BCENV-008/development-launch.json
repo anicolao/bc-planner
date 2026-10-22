@@ -1,0 +1,170 @@
+{
+  "check_only": false,
+  "config": {
+    "command": [
+      "/workspace/scratch/1523a3f802eb/nix-canonical-root/nix-root",
+      "shell",
+      "--offline",
+      "/nix/store/29fs10m7al0k5lk5k3w2qqjbhmba57pn-bcenv-2023-0.1.0",
+      "-c",
+      "bcenv"
+    ],
+    "games": [
+      {
+        "label": "beaver-Quiet-A",
+        "map_path": "/workspace/scratch/1523a3f802eb/nix-canonical-root/root/nix/store/gyyg1xgc61p759d7qw9w28hgh7ip6nvk-battlecode23-engine-3.0.13/share/battlecode23/maps/Quiet.map23",
+        "opponent_build": "/workspace/scratch/1523a3f802eb/replication-006/development/beaver-selected-build",
+        "own_slot": "A"
+      },
+      {
+        "label": "beaver-Quiet-B",
+        "map_path": "/workspace/scratch/1523a3f802eb/nix-canonical-root/root/nix/store/gyyg1xgc61p759d7qw9w28hgh7ip6nvk-battlecode23-engine-3.0.13/share/battlecode23/maps/Quiet.map23",
+        "opponent_build": "/workspace/scratch/1523a3f802eb/replication-006/development/beaver-selected-build",
+        "own_slot": "B"
+      },
+      {
+        "label": "beaver-BowAndArrow-A",
+        "map_path": "/workspace/scratch/1523a3f802eb/nix-canonical-root/root/nix/store/gyyg1xgc61p759d7qw9w28hgh7ip6nvk-battlecode23-engine-3.0.13/share/battlecode23/maps/BowAndArrow.map23",
+        "opponent_build": "/workspace/scratch/1523a3f802eb/replication-006/development/beaver-selected-build",
+        "own_slot": "A"
+      },
+      {
+        "label": "beaver-BowAndArrow-B",
+        "map_path": "/workspace/scratch/1523a3f802eb/nix-canonical-root/root/nix/store/gyyg1xgc61p759d7qw9w28hgh7ip6nvk-battlecode23-engine-3.0.13/share/battlecode23/maps/BowAndArrow.map23",
+        "opponent_build": "/workspace/scratch/1523a3f802eb/replication-006/development/beaver-selected-build",
+        "own_slot": "B"
+      },
+      {
+        "label": "musketeers-Quiet-A",
+        "map_path": "/workspace/scratch/1523a3f802eb/nix-canonical-root/root/nix/store/gyyg1xgc61p759d7qw9w28hgh7ip6nvk-battlecode23-engine-3.0.13/share/battlecode23/maps/Quiet.map23",
+        "opponent_build": "/workspace/scratch/1523a3f802eb/replication-006/development/musketeers-java-build",
+        "own_slot": "A"
+      },
+      {
+        "label": "musketeers-Quiet-B",
+        "map_path": "/workspace/scratch/1523a3f802eb/nix-canonical-root/root/nix/store/gyyg1xgc61p759d7qw9w28hgh7ip6nvk-battlecode23-engine-3.0.13/share/battlecode23/maps/Quiet.map23",
+        "opponent_build": "/workspace/scratch/1523a3f802eb/replication-006/development/musketeers-java-build",
+        "own_slot": "B"
+      },
+      {
+        "label": "musketeers-BowAndArrow-A",
+        "map_path": "/workspace/scratch/1523a3f802eb/nix-canonical-root/root/nix/store/gyyg1xgc61p759d7qw9w28hgh7ip6nvk-battlecode23-engine-3.0.13/share/battlecode23/maps/BowAndArrow.map23",
+        "opponent_build": "/workspace/scratch/1523a3f802eb/replication-006/development/musketeers-java-build",
+        "own_slot": "A"
+      },
+      {
+        "label": "musketeers-BowAndArrow-B",
+        "map_path": "/workspace/scratch/1523a3f802eb/nix-canonical-root/root/nix/store/gyyg1xgc61p759d7qw9w28hgh7ip6nvk-battlecode23-engine-3.0.13/share/battlecode23/maps/BowAndArrow.map23",
+        "opponent_build": "/workspace/scratch/1523a3f802eb/replication-006/development/musketeers-java-build",
+        "own_slot": "B"
+      }
+    ],
+    "max_notes": 24,
+    "max_submissions": 8,
+    "require_experiment_notes": true,
+    "timeout": 120
+  },
+  "config_sha256": "f6467170d43b4da3ea0eabeafee1a3f1a2a629c6a34075e6ddf9a504483558cd",
+  "identity": {
+    "cwd": "/workspace/scratch/1523a3f802eb/replication-006/bcenv",
+    "games": [
+      {
+        "label": "beaver-Quiet-A",
+        "map_path": "/workspace/scratch/1523a3f802eb/nix-canonical-root/root/nix/store/gyyg1xgc61p759d7qw9w28hgh7ip6nvk-battlecode23-engine-3.0.13/share/battlecode23/maps/Quiet.map23",
+        "opponent_build": "/workspace/scratch/1523a3f802eb/replication-006/development/beaver-selected-build",
+        "own_slot": "A"
+      },
+      {
+        "label": "beaver-Quiet-B",
+        "map_path": "/workspace/scratch/1523a3f802eb/nix-canonical-root/root/nix/store/gyyg1xgc61p759d7qw9w28hgh7ip6nvk-battlecode23-engine-3.0.13/share/battlecode23/maps/Quiet.map23",
+        "opponent_build": "/workspace/scratch/1523a3f802eb/replication-006/development/beaver-selected-build",
+        "own_slot": "B"
+      },
+      {
+        "label": "beaver-BowAndArrow-A",
+        "map_path": "/workspace/scratch/1523a3f802eb/nix-canonical-root/root/nix/store/gyyg1xgc61p759d7qw9w28hgh7ip6nvk-battlecode23-engine-3.0.13/share/battlecode23/maps/BowAndArrow.map23",
+        "opponent_build": "/workspace/scratch/1523a3f802eb/replication-006/development/beaver-selected-build",
+        "own_slot": "A"
+      },
+      {
+        "label": "beaver-BowAndArrow-B",
+        "map_path": "/workspace/scratch/1523a3f802eb/nix-canonical-root/root/nix/store/gyyg1xgc61p759d7qw9w28hgh7ip6nvk-battlecode23-engine-3.0.13/share/battlecode23/maps/BowAndArrow.map23",
+        "opponent_build": "/workspace/scratch/1523a3f802eb/replication-006/development/beaver-selected-build",
+        "own_slot": "B"
+      },
+      {
+        "label": "musketeers-Quiet-A",
+        "map_path": "/workspace/scratch/1523a3f802eb/nix-canonical-root/root/nix/store/gyyg1xgc61p759d7qw9w28hgh7ip6nvk-battlecode23-engine-3.0.13/share/battlecode23/maps/Quiet.map23",
+        "opponent_build": "/workspace/scratch/1523a3f802eb/replication-006/development/musketeers-java-build",
+        "own_slot": "A"
+      },
+      {
+        "label": "musketeers-Quiet-B",
+        "map_path": "/workspace/scratch/1523a3f802eb/nix-canonical-root/root/nix/store/gyyg1xgc61p759d7qw9w28hgh7ip6nvk-battlecode23-engine-3.0.13/share/battlecode23/maps/Quiet.map23",
+        "opponent_build": "/workspace/scratch/1523a3f802eb/replication-006/development/musketeers-java-build",
+        "own_slot": "B"
+      },
+      {
+        "label": "musketeers-BowAndArrow-A",
+        "map_path": "/workspace/scratch/1523a3f802eb/nix-canonical-root/root/nix/store/gyyg1xgc61p759d7qw9w28hgh7ip6nvk-battlecode23-engine-3.0.13/share/battlecode23/maps/BowAndArrow.map23",
+        "opponent_build": "/workspace/scratch/1523a3f802eb/replication-006/development/musketeers-java-build",
+        "own_slot": "A"
+      },
+      {
+        "label": "musketeers-BowAndArrow-B",
+        "map_path": "/workspace/scratch/1523a3f802eb/nix-canonical-root/root/nix/store/gyyg1xgc61p759d7qw9w28hgh7ip6nvk-battlecode23-engine-3.0.13/share/battlecode23/maps/BowAndArrow.map23",
+        "opponent_build": "/workspace/scratch/1523a3f802eb/replication-006/development/musketeers-java-build",
+        "own_slot": "B"
+      }
+    ],
+    "launcher_sha256": "37aa04238bf158b03a4519409afb5b01ad6e26cc7cc8bb9b93fc7e7baed27134",
+    "python": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12",
+    "python_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+    "require_experiment_notes": true,
+    "service_code": {
+      "runtime/artifacts.py": "a7d7b8ba7266ed53855b904fd85c60996a43deba0cf78d6231221c9ec10a62fa",
+      "services/controller.py": "cddf84fca4ae18bc25296f64cdec0fe0bd18c1242fbbdfafe925c0641feac2bf",
+      "services/controller_ledger.py": "738c263437acb3427b8543f4481622c9966a7ce1ee42897fbc899c7a2badc2ff",
+      "services/launch_local_trial.py": "37aa04238bf158b03a4519409afb5b01ad6e26cc7cc8bb9b93fc7e7baed27134",
+      "services/ledger.py": "e2263e79c9f75079bfeed5af8d3aae094a20bf0277fd19e58786e05cea52ea5b",
+      "services/local_trial.py": "a5fc47aafbd351d211b5bd262d43ad550f8702f767fd7161caf44988977df537",
+      "services/local_trial_client.py": "808a8ffb0f527dc1e02f13a892f492dac02538f211f455560013480009dc25bc",
+      "services/replay_feedback.py": "bd68a1c4a768a07cc90f7d0cd65017053d2d542fb9fc48f9fcc9b59d235be865",
+      "services/replay_feedback_v2.py": "d1864505c392a520f69f38aa9f865be940c300bc884fce5c506045d92695f927",
+      "services/replay_protocol.py": "09eeab010910c7b41a0b473e37c05c189db734f755079f28fe9b923b15387486",
+      "services/replay_route.py": "2763d59771e5b8a71a566687a2031e998fb28b99e32c4206a92e8ddb7f708f81",
+      "services/replay_store.py": "c143d79f54253b8ef36402b5f1e911b91e6b8876d445eb67c0d0c6f27fea1129",
+      "services/responses_transport.py": "75552cad3465bf7a4cc5cb700989d1824e9c05f28a72a876c4dde3e91ac185bd",
+      "services/scrimmage.py": "6128436a9d2a43fca1a7359d9add89a64ce4598ed1d2b6b1f914ee56d674746a",
+      "services/worker_lifecycle.py": "a1521bd8f915a96fed423391d3d70659ef49a7a390bda95c560bf1446d3b8ead"
+    },
+    "timeout": 120,
+    "worker_command": [
+      "/workspace/scratch/1523a3f802eb/nix-canonical-root/nix-root",
+      "shell",
+      "--offline",
+      "/nix/store/29fs10m7al0k5lk5k3w2qqjbhmba57pn-bcenv-2023-0.1.0",
+      "-c",
+      "bcenv"
+    ],
+    "worker_executable_sha256": "8607b1dfc713994b6231c6723625f479671c004be750489795e3fbedef21cddc"
+  },
+  "limitation": "Probe does not establish end-to-end integration, confinement or performance.",
+  "probe": {
+    "command": [
+      "/workspace/scratch/1523a3f802eb/nix-canonical-root/nix-root",
+      "shell",
+      "--offline",
+      "/nix/store/29fs10m7al0k5lk5k3w2qqjbhmba57pn-bcenv-2023-0.1.0",
+      "-c",
+      "bcenv",
+      "--help"
+    ],
+    "exit_code": 0,
+    "log": "/workspace/scratch/1523a3f802eb/replication-006/development-launch008/worker-probe.log",
+    "log_sha256": "e8c194deceb6917e007c653aa572ef1d97cf244344c4784088e59cebefe30567",
+    "status": "succeeded"
+  },
+  "schema": "bcenv.operator-launch.v1",
+  "status": "probe_passed"
+}

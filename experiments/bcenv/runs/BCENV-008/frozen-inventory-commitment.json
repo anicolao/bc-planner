@@ -1,0 +1,7 @@
+{
+  "sha256": "78f1b75532a2cccc22299804f1bc61197ebbc2c5a41eb7c008993d489b56c252",
+  "bytes": 738781,
+  "status": "passed",
+  "access": "observer-local raw byte inventory; no raw records published",
+  "limitation": "Cooperative point-in-time inventory, not immutable storage or exhaustive access audit"
+}

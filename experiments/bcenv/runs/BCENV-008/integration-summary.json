@@ -1,0 +1,18 @@
+{
+  "experiment_id": "BCENV-008-integration",
+  "status": "passed",
+  "submission_id": "s_fb07b2e4649d464f9b25012d42aa9fac",
+  "games_completed": 8,
+  "tutorial_wins": 0,
+  "tutorial_losses": 8,
+  "replay_queries": 26,
+  "both_teams_activity_all_games": true,
+  "terminal_source_round_coverage_validated": true,
+  "all_eight_replay_hashes_equal_007": true,
+  "service_stopped": true,
+  "service_exit_code": 130,
+  "shutdown_evidence": "exec session49052 Ctrl-C exit130 after complete integration",
+  "shutdown_marker_present": false,
+  "finished_at": "2026-10-22T10:13:46.485874+00:00",
+  "launch_json_sha256": "d18191076fc22ff0e9cf87ed67e2a50d74870635b924bd5cc9674d776952d45f"
+}

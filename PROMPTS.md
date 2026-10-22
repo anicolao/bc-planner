@@ -2039,3 +2039,11 @@ Rules:
 Task:
 Check progress on the authorized long-running BC2023 competitive-environment project in anicolao/bcenv and anicolao/bc-planner. Verify the latest project checkpoint, active work, experiments and CI; identify stalled work and resume or repair authorized steps without duplicating active execution. Continue toward a credible environment in which a fresh autonomous LLM builds a competent bot and uses scrimmages through an enforced interface without access to evaluator infrastructure or held-out competitor bots. Evaluate observable reasoning, code quality, replay-grounded experimentation and performance against genuine held-out 2023 competitors. Publish incremental PRs and summary documents as authorized. Do not infer merge permission, incur unapproved charges, weaken access restrictions, disclose held-out benchmark material to the competitor, or coach its strategy. Share meaningful milestones, blockers requiring user action and completion in this ChatGPT conversation; stay quiet on unchanged routine checks and avoid nonurgent overnight updates. When the goal is credibly achieved or the user stops it, close the progress check.
 ````
+
+## Prompt 163: Preregister launch-parity replacement
+
+Repeated exact direct approval Sentinel_7394f361f4e881919d712f2e0bda2fd6 under standing autonomous mandate107. Source coverage direct117–119, scheduled131–159 and162; no later direct instruction supplied. New007 must be fresh, never a resumed/coached006candidate; no hidden evaluation or new authority. Shared-launcher code and separate preflight/CI/review gates precede all newgames.
+
+````text
+Ok let's proceed.
+````

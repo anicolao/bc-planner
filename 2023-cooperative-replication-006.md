@@ -25,8 +25,8 @@ strategy fixtures, or observer coaching are permitted.
 Fresh requested model `gpt-6.1-sol`, high effort, `fork_turns:none`; distinguish
 requested/accepted settings from independent model-runtime attestation. The
 candidate receives a source-empty export of the same public rules/API, generic
-helpers and kickoff (only run paths/identifiers change). The original README
-bytes were not retained; a minimal interface-only README is reconstructed,
+helpers and kickoff (only run paths/identifiers change). The original README and replay-semantics documentation
+bytes were not retained; minimal interface-only documents are reconstructed,
 so this is not a byte-identical instruction replication. No previous
 candidate source, review, results, evaluator plan, or benchmark material is
 exported. Inventory differences versus the005 manifest are explained before

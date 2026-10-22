@@ -1,6 +1,6 @@
 # Competitive program checkpoint
 
-Updated 2026-10-22 13:32 UTC. **The competitive goal is not achieved.**
+Updated 2026-10-22 13:39 UTC. **The competitive goal is not achieved.**
 The existing VM runs the cooperative scrimmage service; missing host/provider
 access is not the current execution blocker. This is not hard filesystem
 isolation. Historical statements below describe their dates, not current state.
@@ -16,9 +16,16 @@ agreement and unchanged legacy action/replay evidence. Independent audit verifie
 80 chained events and978 frozen files; driver exited0, service explicitly stopped
 with exit130. Pagination/coverage limitations remain explicit. See
 [engineering readiness](experiments/bcenv/runs/BCENV-010/engineering-readiness.json).
-Latest readiness-publication CI and parent conditional gate still precede live
-clock initialization and actual parity review. No010 competitor has launched
-at this checkpoint, and no merge is authorized.
+Exact readiness head `5a3f0ec` passed CI39787884948 before live initialization.
+Parent conditional readiness and independent actual live parity/empty-input
+review passed. Fresh fork-none requested Sol/high launch occurred within
+13:38:11–13:38:35 UTC, using the exact fixed kickoff. The service clock started
+13:37:24.184 UTC; hard deadline14:22:24.184 UTC, with about2629 seconds remaining
+by launch acknowledgement. No clock reset or strategy intervention occurred.
+See the [launch record](experiments/bcenv/runs/BCENV-010/launch.json) and
+[independent live review](experiments/bcenv/runs/BCENV-010/live-parity-review.md).
+Observer-only monitoring continues; stop/freeze precedes private evaluation.
+This active trial is not a completion or competency result. No merge is authorized.
 
 [BCENV-009](2023-public-finalist-validation-009.md) completed its public phases
 and is stopped/frozen with blind review and exact selected rebuild verified.

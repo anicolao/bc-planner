@@ -1,0 +1,43 @@
+{
+  "audit_sha256": "06a110fd93b85e3aa2a9d8ccddbee2b15c7eeaf7517a76d4972fef59cb45dc61",
+  "events": 84,
+  "failures": [],
+  "final_event_sha256": "b456b20d16a1195b126475d58dec11e2daae1c488a7d443cf5c289ad886d122d",
+  "freeze_record_sha256": "4e2d4f0f6d52f6e0da937a228d3261de2f7be163539b7ba8284d31bfbe2e8131",
+  "limits": {
+    "games": 64,
+    "mailbox_requests": 2200,
+    "notes": 24,
+    "reads": 2000,
+    "replay_queries": 150,
+    "submissions": 8
+  },
+  "observed_error_responses": [],
+  "operations": {
+    "complete": 8,
+    "completed_games": 64,
+    "experiment_note": 9,
+    "game_attempts": 64,
+    "mailbox_responses": 76,
+    "replay": 41,
+    "result": 18,
+    "submit": 8
+  },
+  "quota_observed": {
+    "games": 64,
+    "mailbox_requests": null,
+    "notes": 9,
+    "reads": 59,
+    "replay_queries": 41,
+    "submissions": 8
+  },
+  "scope": "Cooperative recorded integrity/order only; no tamper resistance, hypothesis-quality or exhaustive behavior claim.",
+  "status": "consistent_with_limits",
+  "unknowns": [
+    "Cooperative logs are not tamper-resistant; no exhaustive host-access or rejected-attempt audit.",
+    "Logged result/replay counts are lower bounds on charged attempts; refused/failed operations are not fully logged.",
+    "Mailbox stopped marker unavailable; supplied independent freeze record is required."
+  ],
+  "verified_feedback_receipts": 41,
+  "wall_clock_regression_sequences": []
+}

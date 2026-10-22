@@ -1,0 +1,63 @@
+{
+  "adapter_source_sha256": "8c618a314e301f703e92aa3fbc1e5f39689f4e96e3ec6fc34812beb32fa293ff",
+  "binary_files": {
+    "tide/RobotPlayer.class": "a6784289dab7e2ac4ed33080c026f20d0f910071b3bcf1ff8156b7a7c501ac41"
+  },
+  "binary_sha256": "6376ebf4271b1f248d1a184d98c3177dcfab56e5b1279cae9e2cc595152f7d4f",
+  "candidate_changes": false,
+  "engine_sha256": "2b6db98e312e0e509d599acc46bffbb55c2569de0f12c8214a85ee57625f15f2",
+  "execution": "Ordinary host parent invokes one fixed offline Nix worker closure; no outer nested Nix wrapper.",
+  "experiment_id": "BCENV-008",
+  "hash_semantics": "Service SHA hashes schema/package/path/size/content-hash manifest; adapter SHA hashes file inventory. Both independently match originals.",
+  "heldout_access": false,
+  "kind": "independent selected-source rebuild and package audit",
+  "matches": {
+    "binary_files": true,
+    "binary_sha256": true,
+    "class_bytes": true,
+    "engine_sha256": true,
+    "java_file_matches_freeze": true,
+    "package": true,
+    "raw_zip": true,
+    "service_source_matches_freeze": true,
+    "source_files": true,
+    "source_sha256": true,
+    "source_tree_equals_original_snapshot": true,
+    "source_tree_equals_rebuild_snapshot": true,
+    "status": true,
+    "zip_members": true
+  },
+  "matches_run": 0,
+  "output_root": "/workspace/scratch/1523a3f802eb/replication-006/engineering/rebuild008",
+  "package_zip_sha256": "93a11d3ee5ad63bdd1666d39527a3974b4ab50310765b025595830b16d81b463",
+  "rebuild_status": "verified",
+  "runtime": "/nix/store/29fs10m7al0k5lk5k3w2qqjbhmba57pn-bcenv-2023-0.1.0",
+  "selected_frozen_inventory_check": {
+    "failures": [],
+    "files_checked": 8,
+    "status": "passed"
+  },
+  "selected_submission": "s_5f423d044c5a4c8a98872e3f0d92a5bf",
+  "service_source_sha256": "caea60de8f53c12076870788ad6689cdfe8f100630900d1f640e76a3e78a6881",
+  "source_files": {
+    "tide/RobotPlayer.java": "4d6e7daaba76393e55b28cc3628872e7559da9ec408f93c2bc5d440edeb0452c"
+  },
+  "status": "passed",
+  "steps": [
+    {
+      "exit_code": 0,
+      "status": "succeeded"
+    },
+    {
+      "exit_code": 0,
+      "status": "succeeded"
+    }
+  ],
+  "zip_members": {
+    "tide/RobotPlayer.java": {
+      "sha256": "4d6e7daaba76393e55b28cc3628872e7559da9ec408f93c2bc5d440edeb0452c",
+      "size": 16535
+    }
+  },
+  "zip_note": "Raw ZIP bytes also match, not merely member contents. No timestamp difference observed."
+}

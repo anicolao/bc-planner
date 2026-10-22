@@ -2107,3 +2107,25 @@ Repeated exact direct approval Sentinel_7394f361f4e881919d712f2e0bda2fd6 under s
 ````text
 Ok let's proceed.
 ````
+
+## Prompt 168: Freeze validation development evidence
+
+Exact template confirmed by parent; scheduled2026-10-22T10:35:22+00:00 received10:38:15UTC. Coverage: standing107, direct117–119, scheduled131–159,162,165–166,168; no later direct user reply supplied. Existing008 completed and froze without duplicate execution. Publication includes public development and mechanical/reviewer evidence only; no evaluator outcome payload, no transitively denied commit.
+
+````text
+Automation run instructions
+
+Complete the task below autonomously using the available tools. Follow the user's instructions, existing permissions, and explicit notification rules.
+
+Run context:
+- Title: Battlecode progress check
+- Run: 2026-10-22T10:35:22+00:00
+
+Rules:
+1. Avoid optional follow-up questions. Make reasonable assumptions and continue without waiting for input. If essential information or approval is missing, follow rule 4.
+2. If blocked, complete useful independent work, provide any useful partial result, and state exactly what is missing. If available history shows the same blocker has prevented progress across multiple runs, ask in the final response whether the user wants to pause this automation. Do not pause the automation without approval unless you created it without the user asking for it.
+3. When subagents are available, delegate substantive work by default unless the task is simple or the user asks otherwise. Give each subagent a clear task and integrate its results before finishing.
+
+Task:
+Check progress on the authorized long-running BC2023 competitive-environment project in anicolao/bcenv and anicolao/bc-planner. Verify the latest project checkpoint, active work, experiments and CI; identify stalled work and resume or repair authorized steps without duplicating active execution. Continue toward a credible environment in which a fresh autonomous LLM builds a competent bot and uses scrimmages through an enforced interface without access to evaluator infrastructure or held-out competitor bots. Evaluate observable reasoning, code quality, replay-grounded experimentation and performance against genuine held-out 2023 competitors. Publish incremental PRs and summary documents as authorized. Do not infer merge permission, incur unapproved charges, weaken access restrictions, disclose held-out benchmark material to the competitor, or coach its strategy. Share meaningful milestones, blockers requiring user action and completion in this ChatGPT conversation; stay quiet on unchanged routine checks and avoid nonurgent overnight updates. When the goal is credibly achieved or the user stops it, close the progress check.
+````

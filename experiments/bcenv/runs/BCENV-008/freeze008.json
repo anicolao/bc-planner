@@ -1,0 +1,16 @@
+{
+  "experiment_id": "BCENV-008",
+  "candidate_stopped": true,
+  "candidate_status": "native final at 2026-10-22T10:37:41Z; explicitly stopped all work",
+  "service_stopped": true,
+  "service_exit_code": 130,
+  "graceful_stop_marker": false,
+  "frozen_at": "2026-10-22T10:37:55.828395+00:00",
+  "classification": "completed bounded development; evaluation pending",
+  "accepted_submissions": 8,
+  "games_completed": 64,
+  "selected_submission": "s_5f423d044c5a4c8a98872e3f0d92a5bf",
+  "selected_service_normalized_source_sha256": "caea60de8f53c12076870788ad6689cdfe8f100630900d1f640e76a3e78a6881",
+  "selected_java_file_sha256": "4d6e7daaba76393e55b28cc3628872e7559da9ec408f93c2bc5d440edeb0452c",
+  "no_evaluator_acquisition": true
+}

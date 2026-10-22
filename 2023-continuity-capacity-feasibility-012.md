@@ -1,7 +1,9 @@
 # BCENV-012: six-hour continuity and capacity feasibility
 
-Prospective design, 2026-10-22. No012 candidate or engineering preflight has
-started. The competitive goal remains unmet. Existing-VM engineering continues
+Prospective design with engineering update, 2026-10-22 18:40 UTC. No012 candidate
+has started. The first engineering preflight is incomplete and preserved; the
+separate replacement below has not run. The competitive goal remains unmet.
+Existing-VM engineering continues
 under the standing mandate: no new spending, merge permission, access relaxation,
 prior competitor resumption or strategic coaching.
 
@@ -149,6 +151,65 @@ validation means no legal final selection, no fallback and no private evaluation
 7. If a legal selection exists, independently bind selected source/receipt and
    rebuild identity. Fix blind code/process review before private outcome release.
    No private plan materialization or reference acquisition before stop/freeze.
+
+## Preserved preflight A and prospective replacement B
+
+The first eight-game official-tutorial preflight ran against code
+`877aa5d0f38ef8e56b8d6259d0c654d5929d284b`, after its exact CI and independent
+review passed. All eight games completed, with replay hashes identical to the
+unchanged009 tutorial fixture. Sixteen engine/initial-summary child processes
+were reaped successfully. The feedback verification returned19 replay responses,
+then one request had an uncertain outcome; it was **not resent**. The published
+JSON remains retained without a response. Both owned service and driver tool
+sessions ended with exit1; the overall preflight is **not passed**.
+
+Independent diagnosis established a mailbox publication bug, not an engine or
+replay timeout: the unchanged client writes a canonical UUID `.tmp` file before
+atomically renaming it to `.json`. New continuity invalid-name handling charged
+that legitimate staging file, then raced the rename and raised FileNotFoundError
+while deleting it. Stop counters record47 mailbox attempts versus46 dispatched
+operations, with44 reads,19 replay debits, one note and one source version. The
+extra transport charge is retained, not silently corrected. The772-file failed
+attempt inventory and a concise [failure record](experiments/bcenv/runs/BCENV-012/preflight-a-failure-summary.json)
+are fixed; no candidate was launched.
+
+The narrow repair is code `03e01f178cbe80f7170e7a80dec6b9791f998a4f` in
+[bcenv PR24](https://github.com/anicolao/bcenv/pull/24). Canonical regular staging
+files, including partial writes within the existing request-size bound, are
+uncommitted: they are not deleted, dispatched or charged. Queue32 and storage
+accounting still include staging. Bad staging types/sizes fail closed. Only
+missing-target cleanup is tolerated; other errors remain visible. Shared cleanup
+also makes the exceptional legacy disappearance case more tolerant; ordinary
+valid behavior and defaults are unchanged. The separate conservative storage-scan
+race limitation remains, and no uncertain-operation retry is introduced.
+
+A real-client deterministic negative control fails against the old consumer and
+passes the repaired consumer. All498 local tests pass. The independent reviewer
+reran14 new interleaving/denial tests plus the actual2200-attempt ceiling test and
+fixed [this review](experiments/bcenv/runs/BCENV-012/transport-repair-review.md).
+Exact repaired-head CI39833135087 must pass before replacement execution; local
+success is not substituted for that gate.
+
+**Replacement012-B is prospectively limited to one unchanged official-tutorial
+submission, eight new games and at most128 replay requests**, with no lock,
+validation, retry or source edits. It uses fresh service/mailbox/evidence roots,
+not the failed request or original directory. The client,57 fixed candidate
+inputs, profile bounds, config bytes, adapter/engine and public schedules are
+unchanged. Existing00932-game phase evidence is referenced rather than rerun.
+Eight completed games from012-A remain in the engineering accounting; a completed
+012-B would bring these two preflight attempts to16 games, not erase the first.
+Normal existing CI fixtures are separate from these experiment budgets.
+
+The [replacement preparation](experiments/bcenv/runs/BCENV-012/preflight-b-preparation.json)
+binds the repaired code, configuration, driver, source inventory and expected
+counter checks. Before any match: exact code/protocol CI, independent preparation
+review, clean inputs and a sealed GO record are required. After a successful
+preflight: original-session stop proof, independent actual live parity and the
+parent readiness gate remain mandatory before a fresh author starts. No external
+PID is inferred from a numeric PID file: execution namespaces differ. The original
+substring-based PID inference was corrected before any signal; future operator
+stop uses only the owned original tool-session handle, with actual terminal and
+child-reaping evidence. This is not a namespace or security-setting change.
 
 ## Measurements and stopping rules
 

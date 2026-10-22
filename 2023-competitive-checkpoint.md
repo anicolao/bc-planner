@@ -1,7 +1,9 @@
 # Competitive program checkpoint
 
-Updated 2026-10-22 16:17 UTC. **The competitive goal is not achieved.**
+Updated 2026-10-22 18:40 UTC. **The competitive goal is not achieved.**
 The existing VM runs the cooperative scrimmage service; missing host/provider access is not the current execution blocker. This is not hard filesystem isolation. Historical statements below describe their dates, not current state.
+
+[BCENV-012 is a prospectively bounded six-hour continuity/capacity pilot](2023-continuity-capacity-feasibility-012.md), not an active candidate or a demonstrated quality improvement. The opt-in profile allows at most24 training versions/192 training games plus16 locked-finalist validation games, with explicit request/storage/deadline limits. The first eight-game tutorial preflight completed its games but failed during feedback on an atomic-mailbox staging race; its evidence and uncertain request are preserved without resend. A deterministic real-client negative control reproduces the defect against the old code. The narrow repair passes498 local tests and independent targeted review; exact repaired-head CI and a separately registered eight-game replacement preflight remain gates. [bcenv PR24](https://github.com/anicolao/bcenv/pull/24) and [planner PR19](https://github.com/anicolao/bc-planner/pull/19) are draft and unmerged. No012 competitor has been launched. This is an engineering repair, not a missing-host or new-user-approval blocker.
 
 [BCENV-011 completed its public phases and is stopped/frozen](2023-match-timeout-011-public-outcome.md): eight submitted versions, 64 training games, 16 locked-finalist validation games and no service-game failure. Both finalists trained5/8; public validation changed selection from provisional V7 (3/8) to V8 (4/8). These are adaptive public selection results, not a competence estimate. Native completion and service stop preceded the hard deadline; terminal exit1 without a graceful marker is retained explicitly. All160 engine/initial-summary children were reaped before deadline.
 

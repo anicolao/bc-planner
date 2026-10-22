@@ -1,0 +1,30 @@
+{
+  "schema": "bcenv.mailbox-transport-repair-readiness.v1",
+  "base_head": "877aa5d0f38ef8e56b8d6259d0c654d5929d284b",
+  "files": {
+    "services/local_trial.py": "a3b7547984206eea38b4bdbc1063fef651621c36db45f088515f5785aca5591f",
+    "tests/test_mailbox_publication.py": "6979429fea2b5c9bf8e2741520ae215a43779b9a791b36ba75ddae76c315fe38",
+    "docs/continuity-profile.md": "84369126b761abfadbdc336cae657185c6edf6ee54b4b7e2b780e6131295115c",
+    "PROMPTS.md": "1411069013a3bb247d006342fd80df98bebcdd31211b8be19f61844d64cc5188"
+  },
+  "tests": {
+    "focused": 14,
+    "aggregate": 498,
+    "aggregate_seconds": 46.441,
+    "old_head_negative_control": "Expected assertion failure: consumer removed uncommitted staging; uses real unchanged producer and preserved old service function."
+  },
+  "test_logs": {
+    "focused-tests-final.log": "0bb8d7cae2eb72885cb47db14ceb04e2daceca6c8764e1a0aa6558457ce7b02c",
+    "full-tests.log": "c8ec459f7b42eabb49435a707d64abcc68e0bd6e6b88b90fda7c6c3d4edb3862",
+    "old-head-negative-control.log": "d33028bd6f39b3b5fa3e4abc13a031c87504f2615565e0fd439e0516de1ca2a5"
+  },
+  "engine_runtime_client_profile_changed": false,
+  "new_games": 0,
+  "preserved_failed_preflight": "integration012 untouched; no requests resent",
+  "limitations": [
+    "Storage scanner concurrent-disappearance fail-closed behavior remains unchanged.",
+    "No claim of hostile-process filesystem isolation or future long-run reliability.",
+    "A new preflight requires independent prospective authorization and exact-head CI."
+  ],
+  "prompt_coverage": "Append-only exact 17:35 automation, actual receipt17:34:46 UTC; earlier source prompts preserved. Parent repair decisions recorded as agent decisions, not quotations."
+}

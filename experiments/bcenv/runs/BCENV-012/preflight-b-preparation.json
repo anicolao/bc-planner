@@ -1,0 +1,51 @@
+{
+  "attempt": "012-B",
+  "candidate_launched": false,
+  "change": "Narrow atomic-mailbox staging repair only; unchanged client/profile/configuration/adapter/engine/schedules/candidate inputs.",
+  "code_commit": "03e01f178cbe80f7170e7a80dec6b9791f998a4f",
+  "created_utc": "2026-10-22T18:40:12.313062+00:00",
+  "existing_phase_proof": "integration009/completed-summary.json",
+  "failed_prior_attempt": {
+    "frozen_inventory_sha256": "f3707e056c4685d37f0911fff36d0c503c1592c9a9fd1cbeef4bbfc16d948ada",
+    "path": "integration012",
+    "status": "incomplete transport race after8 completed tutorial games; no request resend",
+    "summary_sha256": "aad400dc02c1d2d27b4f2008c4559a5e38fa1b02986086e170ced803b406bdcb"
+  },
+  "files": {
+    "/workspace/scratch/1523a3f802eb/replication-006/competitor012-export-manifest.json": "9333e9d1f8fee6353f32dd9b03dd71dd80d91757213a35846523524dd3bab80a",
+    "/workspace/scratch/1523a3f802eb/replication-006/development/lecture-selected-source/lectureplayer/CarrierStrategy.java": "5da0dd915314f76a580893bc72214daae7e03b4fde12a653e8de5af847bc987a",
+    "/workspace/scratch/1523a3f802eb/replication-006/development/lecture-selected-source/lectureplayer/Communication.java": "75b248f1ca80e36df5d6d5208530be147eda18edf3190568cda4b0870a346645",
+    "/workspace/scratch/1523a3f802eb/replication-006/development/lecture-selected-source/lectureplayer/LauncherStrategy.java": "00d792565a48f713b8141a41bfa0e66c41643d20673eba1496df2678fff61af4",
+    "/workspace/scratch/1523a3f802eb/replication-006/development/lecture-selected-source/lectureplayer/OptimalResource.java": "a59fe49815ff9611dd5ea7c72047a1b4aaa27fcd3686aec6dcfc7d6adcfe0ead",
+    "/workspace/scratch/1523a3f802eb/replication-006/development/lecture-selected-source/lectureplayer/Pathing.java": "44c5022c385370b2f093e33f4cc1182209d5efdc81ddfb98e993095aaf19b168",
+    "/workspace/scratch/1523a3f802eb/replication-006/development/lecture-selected-source/lectureplayer/RobotPlayer.java": "7777eae1b68a466b7165b643dca1ddc0c32c597edd0c5d259b7496cde3260480",
+    "/workspace/scratch/1523a3f802eb/replication-006/development/service012-config.json": "7fafdf738f2a1dca89fff7ea60acdcc1ce960b7a69404f5a27f2a4774d7be84a",
+    "/workspace/scratch/1523a3f802eb/replication-006/development/start-service012b.sh": "50a6ff39a5a0e9449cd63c39780f96fe0e4e7b75a8cec5fe97783e5321feb5b6",
+    "/workspace/scratch/1523a3f802eb/replication-006/integration012b/RawAgreement.java": "02845be70b69871d794d1eafd1410587fef7681cdba5c6aa8c5f86c4cd612438",
+    "/workspace/scratch/1523a3f802eb/replication-006/integration012b/RawWindow.java": "d5776cb4ed94e017668dbd0025b9071d57f3d98ec5b381a5b65590b5b6ead578",
+    "/workspace/scratch/1523a3f802eb/replication-006/integration012b/check-gate.py": "f70e825ce48b0cd54e92772ca537678f3a9deb63d16c3e42636ef50ab4ab682f",
+    "/workspace/scratch/1523a3f802eb/replication-006/integration012b/config.json": "7fafdf738f2a1dca89fff7ea60acdcc1ce960b7a69404f5a27f2a4774d7be84a",
+    "/workspace/scratch/1523a3f802eb/replication-006/integration012b/operator-session-policy.md": "4f26351a7586ddf5474bbf71614b91b78ca8580756edf385f814f0ed81bdec7f",
+    "/workspace/scratch/1523a3f802eb/replication-006/integration012b/run-check.py": "1d3ce5683da76f90cd8a537da6890b545ef860ab74dd3da63bc14311b98adfef",
+    "/workspace/scratch/1523a3f802eb/replication-006/integration012b/start-service.sh": "7b19d83d37249755e126c95e82a35f94b1f1913f35a05de4273bdbe2bf267089"
+  },
+  "new_games_so_far": 0,
+  "operator_session": {
+    "stop": "Owned original tool-session handle only; no cross-session PID signaling.",
+    "tty": true
+  },
+  "preflight_games_max": 8,
+  "preflight_live_config_bytes_equal": true,
+  "preflight_replay_requests_max": 128,
+  "preflight_result_poll_attempts_max": 540,
+  "preflight_submissions": 1,
+  "preflight_validation_games": 0,
+  "repair_review_sha256": "e2f332510c999275f6f63c15f8ffc3339eff5e7d4fe65fcebc6f10e8d23a3bf4",
+  "replacement_is_new_eight_game_attempt": true,
+  "resource_hold": "Previous independent resource use is terminal; exact code/protocol CI and independent replacement-preparation review remain required.",
+  "runtime": "/nix/store/1bbk58382aq40pplbyy2fir27qnx3jxj-bcenv-2023-0.1.0",
+  "schema": "bcenv012.preparation.v2",
+  "sealed_panel_sha256": "35f3cc798c6282df3e083968c07b71ac8313d869056dd26511de269a2f04ed7a",
+  "state": "prepared_not_authorized_to_execute",
+  "usage_validation": "Exact initial and final actual counters asserted from the one-shot request schedule; no additional requests/games."
+}

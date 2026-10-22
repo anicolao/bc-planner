@@ -1,0 +1,64 @@
+{
+  "schema": "bcenv.continuity-release-audit.v1",
+  "commit": "877aa5d0f38ef8e56b8d6259d0c654d5929d284b",
+  "tree": "e572a965fea447b5397b8ce4c64b320a7ed87f10",
+  "ci": {
+    "run_id": 39823862662,
+    "url": "https://github.com/anicolao/bcenv/actions/runs/39823862662",
+    "head_sha": "877aa5d0f38ef8e56b8d6259d0c654d5929d284b",
+    "status": "completed",
+    "conclusion": "success",
+    "updated_at": "2026-10-22T17:35:26Z",
+    "artifact_revision": "b1cb6c2b8ee188565b0f55d09abdbe7eb6bd5ce1",
+    "merge_tree_equals_head": true
+  },
+  "runtime": {
+    "path": "/nix/store/1bbk58382aq40pplbyy2fir27qnx3jxj-bcenv-2023-0.1.0",
+    "nar_hash": "sha256-1MzBzVI1R4gsIv6dpxJceQfgznGm4zyvUMJlyXvUNxo=",
+    "local_ci_path_nar_references_equal": true,
+    "changed": false
+  },
+  "artifact": {
+    "id": 12445223244,
+    "name": "bc23-foundation-evidence",
+    "local_directory": "engineering/systems-review-after011/continuity-ci-evidence",
+    "metadata_sha256": {
+      "revision.txt": "6e90bba6bdc92de7b1e07ebcb05a3079c5be8eb1a4cc09e8856c28099f7de323",
+      "store-path.json": "08583cc2d14e669760574fe08a2b59fa2275761bede8e3b4ec37efb7386c69e4",
+      "manifest.json": "35eab2be35df391ed70a0adeb0bd479b25da75314df71723955428b516cb6903",
+      "flake.lock": "74e82887c605bf915315abfe5fe722cb45dcda293f6808de48375b75a68862d5"
+    }
+  },
+  "tests": {
+    "local_unit_passed": 484,
+    "ci_unit_passed": 484,
+    "ci_unit_seconds": 37.966
+  },
+  "ordinary_ci_fixture_matches": {
+    "authorized": true,
+    "workflow_scope_unchanged_from": "31ac67103993f7d16e9458de5235eb02841477c8",
+    "declared_maximum": 6,
+    "observed_executed": 6,
+    "per_engine": {
+      "3.0.13": 3,
+      "2.0.3": 3
+    },
+    "commands_per_engine": [
+      "match-one",
+      "match-repeat",
+      "match-swapped"
+    ],
+    "evidence": "Both fixture derivations are logged building, with two result-path outputs for each of the three fixture commands. This is execution evidence, not merely evaluation/cache evidence. The later artifact-copy build reuses the successful output.",
+    "result_path_counts": {
+      "match-one": 2,
+      "match-repeat": 2,
+      "match-swapped": 2
+    },
+    "new_experimental_or_candidate_matches": 0
+  },
+  "ci_log_sha256": "f97fd4845dbb06e7608cbcb5314d7f747bc40c5bfa7710c9f1a1479016c0738b",
+  "limitations": [
+    "This is code/release readiness evidence, not candidate/preflight authorization.",
+    "The unchanged runtime foundation manifest is not a replacement for cooperative host-service/prospective trial gates."
+  ]
+}

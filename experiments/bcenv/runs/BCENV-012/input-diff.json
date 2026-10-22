@@ -1,0 +1,89 @@
+{
+  "added": {},
+  "baseline_manifest": "competitor011-export-manifest.json",
+  "baseline_manifest_sha256": "26b216760992f4975f9d22aad152578bc854c89a11e7f20286f9631c50abff80",
+  "baseline_static_hashes_reverified_after_export": true,
+  "changed": {
+    ".candidate-check/inner-launcher": {
+      "after": "83018b128dd80c01d783a1912527b36184a9ebbda278e81a9a8e0517ef0310d3",
+      "before": "02b2fdc0cf826ac8161d0426934c6a433dc44b42e11702e022279a0310186869"
+    },
+    ".candidate-check/manifest.json": {
+      "after": "215433b0daf43b53fc42f23998139166a6c68a87c8e3adce5aa786a0886047a7",
+      "before": "d16920f77e2f159485fe48f7a6afb28db8bf3a4ab2287192c979a2524f881d63"
+    },
+    "KICKOFF.txt": {
+      "after": "67a48ac7535d65567ab2ad362a04af439006de50f2e23f08da60cb69b16ed5bb",
+      "before": "91d87d694bbb0fb4f116eea8b2cc20271592438625a2cf27423fd1dcb6082ecc"
+    },
+    "README.md": {
+      "after": "6f348b2891e15727d8eb1015ece5ce8ca26715a0a19534bcc122655ae1a66113",
+      "before": "8aa8dc67d8ae219b8d10f8e6295edc6c6b76d5757405685d0a31026aea912d36"
+    },
+    "candidate-check": {
+      "after": "c1ed751c63a418bc5c309753fce30b0e3e923ed6d2a080a9c5616e0d1d815336",
+      "before": "a3c2f5d9cc1d94791365c4dc78f04770bb1c473c3207b91473a2e0ae28d874a3"
+    },
+    "docs/public-finalist-validation.md": {
+      "after": "4e1f9180b6bba72a147071026221bc450e7c6c9e64abe4b4310fb0203415b43e",
+      "before": "f033e176342c3d7445e13fd64cc25a6b91b1559630e18680222b237d66f943d8"
+    }
+  },
+  "new_manifest": "competitor012-export-manifest.json",
+  "new_manifest_sha256": "9333e9d1f8fee6353f32dd9b03dd71dd80d91757213a35846523524dd3bab80a",
+  "removed": [],
+  "schema": "bcenv.candidate-input-diff.v1",
+  "unchanged": [
+    ".candidate-check/runtime/artifacts.py",
+    ".candidate-check/seasons/2023/adapter.py",
+    ".candidate-check/tools/candidate_check.py",
+    "docs/api-source/Anchor.java",
+    "docs/api-source/Clock.java",
+    "docs/api-source/Direction.java",
+    "docs/api-source/GameActionException.java",
+    "docs/api-source/GameActionExceptionType.java",
+    "docs/api-source/GameConstants.java",
+    "docs/api-source/MapInfo.java",
+    "docs/api-source/MapLocation.java",
+    "docs/api-source/ResourceType.java",
+    "docs/api-source/RobotController.java",
+    "docs/api-source/RobotInfo.java",
+    "docs/api-source/RobotType.java",
+    "docs/api-source/Team.java",
+    "docs/api-source/WellInfo.java",
+    "docs/api/META-INF/MANIFEST.MF",
+    "docs/api/allclasses-frame.html",
+    "docs/api/allclasses-noframe.html",
+    "docs/api/battlecode/common/Anchor.html",
+    "docs/api/battlecode/common/Clock.html",
+    "docs/api/battlecode/common/Direction.html",
+    "docs/api/battlecode/common/GameActionException.html",
+    "docs/api/battlecode/common/GameActionExceptionType.html",
+    "docs/api/battlecode/common/GameConstants.html",
+    "docs/api/battlecode/common/MapInfo.html",
+    "docs/api/battlecode/common/MapLocation.html",
+    "docs/api/battlecode/common/ResourceType.html",
+    "docs/api/battlecode/common/RobotController.html",
+    "docs/api/battlecode/common/RobotInfo.html",
+    "docs/api/battlecode/common/RobotType.html",
+    "docs/api/battlecode/common/Team.html",
+    "docs/api/battlecode/common/WellInfo.html",
+    "docs/api/battlecode/common/package-frame.html",
+    "docs/api/battlecode/common/package-summary.html",
+    "docs/api/battlecode/common/package-tree.html",
+    "docs/api/constant-values.html",
+    "docs/api/deprecated-list.html",
+    "docs/api/help-doc.html",
+    "docs/api/index-all.html",
+    "docs/api/index.html",
+    "docs/api/overview-tree.html",
+    "docs/api/package-list",
+    "docs/api/script.js",
+    "docs/api/serialized-form.html",
+    "docs/api/stylesheet.css",
+    "docs/own-team-diagnostics.md",
+    "docs/replay-semantics.md",
+    "docs/rules.html",
+    "tools/service.py"
+  ]
+}

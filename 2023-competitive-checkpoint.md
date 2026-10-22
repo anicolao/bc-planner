@@ -1,11 +1,56 @@
 # Competitive program checkpoint
 
-Updated 2026-10-22 20:10 UTC. **The competitive goal is not achieved.**
+Updated 2026-10-22 21:29 UTC. **The competitive goal is not achieved.**
 The existing VM runs the cooperative scrimmage service; missing host/provider access is not the current execution blocker. This is not hard filesystem isolation. Historical statements below describe their dates, not current state.
 
 [BCENV-012 is incomplete after a native-reported exec transport failure](2023-continuity-012-preflight-and-launch.md#interruption-checkpoint--2026-10-22-2010-utc). Native FINAL was observed at 19:59:08 UTC, about 30 minutes after the observed spawn response—not six-hour continuity. The original owned service PTY returned exit 1 / `^C` at 19:59:28 after operator interruption, without a graceful-stop marker. Helper quiescence remains **unknown**, not a demonstrated survivor or termination; a working observer connection does not restore native author continuity. No full freeze, final selection, fallback, private evaluation, author resume or replacement is established or authorized.
 
-The interrupted point-in-time snapshot records 108 attempts and 107 completed **result artifacts** (96 training + 11 validation), not independently validated full-game outcomes. One attempted validation result is unresolved; four reserved cells have no recorded attempt/result. Separately, 13 complete batch receipts cover 104 game entries. All 57 fixed inputs match; the checkpoint was bounded/hash-only. Zero scan warnings do not prove stopped helpers or atomic capture. The previously passed B preflight and code/protocol gates remain historical readiness evidence; the [frozen protocol](2023-continuity-capacity-feasibility-012.md) is unchanged. [bcenv PR24](https://github.com/anicolao/bcenv/pull/24) and [planner PR19](https://github.com/anicolao/bc-planner/pull/19) remain draft and unmerged. Further trial execution is blocked by actual transport/ownership limitations, not new user permission or missing VM access; offline design is pending. No private outcomes or candidate strategy/source are included.
+The interrupted point-in-time snapshot records 108 attempts and 107 completed **result artifacts** (96 training + 11 validation), not independently validated full-game outcomes. One attempted validation result is unresolved; four reserved cells have no recorded attempt/result. Separately, 13 complete batch receipts cover 104 game entries. All 57 fixed inputs match; the checkpoint was bounded/hash-only. Zero scan warnings do not prove stopped helpers or atomic capture. The previously passed B preflight and code/protocol gates remain historical readiness evidence; the [frozen protocol](2023-continuity-capacity-feasibility-012.md) is unchanged. [bcenv PR24](https://github.com/anicolao/bcenv/pull/24) and [planner PR19](https://github.com/anicolao/bc-planner/pull/19) remain draft and unmerged. Further trial execution is blocked by actual transport/ownership limitations, not new user permission or missing VM access; narrow remote engineering qualification has progressed as recorded below, but the actual VM lifecycle and native continuity limits remain unresolved. No private outcomes or candidate strategy/source are included.
+
+## Narrow cooperative lifecycle qualification — 2026-10-22
+
+[bcenv PR25](https://github.com/anicolao/bcenv/pull/25), exact head
+`47ba6442f3432f7f0e80de7ed0728917c0b02130`, passed
+[CI39855389436](https://github.com/anicolao/bcenv/actions/runs/39855389436)
+on its first attempt: **544 unit tests**, exactly one five-case remote qualification
+sequence, and six unchanged standard public fixture matches. No lifecycle fixture
+or runtime qualification was executed on the interrupted trial's VM.
+
+The five cases cover packaged CLI live-writer/EOF/invalid-FD controls and source
+service/runtime paths using inert adapter fixtures: nested SIGINT with queued-work
+fencing, synchronous replay-dispatch SIGINT, nested SIGTERM, and cleanup followed
+by intentional receipt-publication failure. Actual evidence binds inner direct
+wait, fixture acknowledgment, outer owning wait/return, close and receipt order.
+There were three packaged wrapper controls, one synthetic-query JVM, four source
+adapter fixtures and four inner helpers. The diagnostic check was explicitly
+not selected; the reviewed active-only check graph and non-building retention
+avoid the previous active/diagnostic duplication. The 40/600-second case/harness checks are elapsed/admission bounds,
+not hard watchdogs or unconditional reaping guarantees.
+
+The earlier `cccec35` / [CI39853320731](https://github.com/anicolao/bcenv/actions/runs/39853320731)
+ran the harness in both existing active and diagnostic check instantiations:
+**ten cases**, exceeding its prospective single-sequence bound. Both records are
+preserved; green CI did not erase that deviation or establish global fail-stop
+ordering. One separately authorized corrected attempt used explicit active-only
+selection, verified the diagnostic-negative output, and retained the deviation.
+No blind rerun or new experimental game was used to repair the claim.
+
+The [retained release artifact12460171400](https://github.com/anicolao/bcenv/actions/runs/39855389436/artifacts/12460171400)
+contains `qualification-identity.json`, SHA256
+`38b9fa33c6e39d510fb926e3bf636c6e5427c1e55455bc757ce8712023cc8cc7`.
+It binds installed/source/fixture hashes, runtime metadata, exact PR head and
+tested merge `d7fd25eeb3f28d3b4286601d340b8ebd6d6ac81c`; both trees equal
+`2bfaf53e6f966bcdf0fb715479c1c988bb8612c3`. Independent actual-evidence review
+passed with fixed report commitment
+`2aa16eeca0853184d2e5b398dfb62fbe863edd7f65b8b18c027992dc5174f9c5`.
+
+This qualifies only the stated remote source-fixture lifecycle and packaged FD
+controls. **Installed in-flight cancellation, sole-writer/inode ownership, the
+actual VM's external Nix wrapper and exec-tool PTY route, supervisor-death
+containment, and BCENV-012 helper quiescence remain unqualified.** It does not
+restore the interrupted author, permit a replacement/evaluation, prove six-hour
+continuity or establish competitive competence. PR25 remains draft and unmerged;
+the frozen012 protocol and all interrupted evidence remain unchanged.
 
 [BCENV-011 completed its public phases and is stopped/frozen](2023-match-timeout-011-public-outcome.md): eight submitted versions, 64 training games, 16 locked-finalist validation games and no service-game failure. Both finalists trained5/8; public validation changed selection from provisional V7 (3/8) to V8 (4/8). These are adaptive public selection results, not a competence estimate. Native completion and service stop preceded the hard deadline; terminal exit1 without a graceful marker is retained explicitly. All160 engine/initial-summary children were reaped before deadline.
 

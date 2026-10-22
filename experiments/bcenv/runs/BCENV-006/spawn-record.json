@@ -1,0 +1,13 @@
+{
+  "experiment_id": "BCENV-006",
+  "agent": "/root/replicate_competitive_bc_environment/competitor_006",
+  "requested_model": "gpt-6.1-sol",
+  "requested_effort": "high",
+  "fork_turns": "none",
+  "launch_time_utc": "2026-10-22T07:32:49Z",
+  "deadline_utc": "2026-10-22T08:17:49Z",
+  "settings_evidence": "native spawn tool accepted request; not independent runtime/model attestation",
+  "kickoff_sha256": "633adaeb984643c9020d8674eb408babfc1ec38640df1305439de171f1edf2ac",
+  "status": "running; no coaching or prior context provided",
+  "ready_record_sha256": "b5ab33cef71220ecacf47588d85bd9f8c91ae48e4265e453db51ed31feb49655"
+}

@@ -1,0 +1,26 @@
+{
+  "status": "passed",
+  "experiment_id": "BCENV-006-integration",
+  "submission_id": "s_89ddc3fd1a844a959db533800e21fe01",
+  "games_completed": 8,
+  "tutorial_wins": 0,
+  "tutorial_losses": 8,
+  "replay_queries": 26,
+  "all_games_both_teams_active": true,
+  "terminal_source_round_coverage_validated": true,
+  "service_stopped": true,
+  "service_exit_code": 130,
+  "stop_method": "SIGINT via retained service exec session after completed execution and replay checks",
+  "finished_at": "2026-10-22T07:23:17Z",
+  "evidence_sha256": {
+    "config.json": "1ec9de88823c051cf8d883c52646a6a899fbb93b74eaf8a6e336345246764cd0",
+    "manifest.json": "7fdb0bbaa65504b116be01c1c5fbe33237807d77d63bf48348bc34a6f7fc663e",
+    "note.json": "633706e80599c9aa0534b8a903212313ab3ccd481932b0bc57d3b98a81800fa7",
+    "submit.json": "950341be8d2dda5d6449178ca8535310d3ea7a23fdba4308573ad9c7b34eb6dd",
+    "result.json": "c61aa906fbec9e882ba43eaec98282001b8b491378e95ae112ff621bd357bbe6",
+    "replay-checks.json": "00347e8af45e918af644994f16f2ca4c402ad9f12291804048948ce6f01cbb5d"
+  },
+  "shutdown_marker_present": false,
+  "shutdown_evidence": "tools.write_stdin session81444 returned exit_code130 on Ctrl-C; no graceful mailbox stopped marker",
+  "retained_raw_evidence": "service/ contains source build package match/replay/query artifacts; mailbox/ contains RPC requests and responses"
+}

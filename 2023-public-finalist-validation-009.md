@@ -162,3 +162,23 @@ and free of prior candidate or evaluator material. All remaining launch gates
 are explicit in [engineering readiness](experiments/bcenv/runs/BCENV-009/engineering-readiness.json).
 No009 candidate has launched at this checkpoint; the live45minute clock must
 start only after updated protocol CI and parent conditional readiness.
+
+## Fresh launch — 2026-10-22 12:01 UTC
+
+Updated readiness head `0a5fb11bf827ea0158aa10f6aedea376a68a3e71` passed
+CI39774405244 before service initialization. Parent orchestration accepted the
+conditional gate under the standing mandate, not a new user reply. Independent
+live review verified actual preflight identity/config parity,56 unchanged
+inputs and empty source/tests/work/service/mailbox.
+
+The live clock started12:00:06.398226 UTC; hard deadline12:45:06.398226 UTC.
+Fresh fork-none requested gpt-6.1-sol/high launch was requested12:00:50 and
+acknowledged12:01:07; creation is bounded by that interval, not independently
+attested to a finer time. Startup consumed about60.6seconds by acknowledgement,
+leaving2639.4seconds. The clock was not reset for the candidate. Exact fixed
+KICKOFF.txt bytes were supplied without prior candidate/evaluator context.
+See [launch record](experiments/bcenv/runs/BCENV-009/launch.json).
+
+Observer-only monitoring follows; no strategy intervention or duplicate trial.
+Stop and freeze before private evaluator materialization. This active launch
+is not a completion or competency result.

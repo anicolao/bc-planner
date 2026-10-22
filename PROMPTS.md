@@ -2519,3 +2519,47 @@ Rules:
 Task:
 Check progress on the authorized long-running BC2023 competitive-environment project in anicolao/bcenv and anicolao/bc-planner. Verify the latest project checkpoint, active work, experiments and CI; identify stalled work and resume or repair authorized steps without duplicating active execution. Continue toward a credible environment in which a fresh autonomous LLM builds a competent bot and uses scrimmages through an enforced interface without access to evaluator infrastructure or held-out competitor bots. Evaluate observable reasoning, code quality, replay-grounded experimentation and performance against genuine held-out 2023 competitors. Publish incremental PRs and summary documents as authorized. Do not infer merge permission, incur unapproved charges, weaken access restrictions, disclose held-out benchmark material to the competitor, or coach its strategy. Share meaningful milestones, blockers requiring user action and completion in this ChatGPT conversation; stay quiet on unchanged routine checks and avoid nonurgent overnight updates. When the goal is credibly achieved or the user stops it, close the progress check.
 ````
+
+## Prompt 188: Record preflight and live launch
+
+Explained exact repetition of Prompt187 for this separate public engineering/launch checkpoint commit, as required by the append-only per-commit policy. Source boundary remains the scheduled2026-10-22T18:35:22+00:00 automation, actual parent receipt18:37:51 UTC and coordinator delivery18:38:57 UTC. Available-source reconciliation: model preference74; standing mandate107; direct blocker/VM/proceed messages117–119; prior scheduled messages remain mapped in187, and this exact latest automation maps to187 and repeated188. No19:35 receipt or newer direct user message has been supplied at preparation; none is fabricated. The coordinator's publication preparation and accepted launch gate are agent implementation decisions, not new user quotations. No inaccessible history is claimed audited. Only public engineering/timing facts and hashes are included; no private evaluator/calibration material, candidate source or denied-payload ancestry is added. The live-hashed prospective protocol is unchanged.
+
+````text
+Automation run instructions
+
+Complete the task below autonomously using the available tools. Follow the user's instructions, existing permissions, and explicit notification rules.
+
+Run context:
+- Title: Battlecode progress check
+- Run: 2026-10-22T18:35:22+00:00
+
+Rules:
+1. Avoid optional follow-up questions. Make reasonable assumptions and continue without waiting for input. If essential information or approval is missing, follow rule 4.
+2. If blocked, complete useful independent work, provide any useful partial result, and state exactly what is missing. If available history shows the same blocker has prevented progress across multiple runs, ask in the final response whether the user wants to pause this automation. Do not pause the automation without approval unless you created it without the user asking for it.
+3. When subagents are available, delegate substantive work by default unless the task is simple or the user asks otherwise. Give each subagent a clear task and integrate its results before finishing.
+
+Task:
+Check progress on the authorized long-running BC2023 competitive-environment project in anicolao/bcenv and anicolao/bc-planner. Verify the latest project checkpoint, active work, experiments and CI; identify stalled work and resume or repair authorized steps without duplicating active execution. Continue toward a credible environment in which a fresh autonomous LLM builds a competent bot and uses scrimmages through an enforced interface without access to evaluator infrastructure or held-out competitor bots. Evaluate observable reasoning, code quality, replay-grounded experimentation and performance against genuine held-out 2023 competitors. Publish incremental PRs and summary documents as authorized. Do not infer merge permission, incur unapproved charges, weaken access restrictions, disclose held-out benchmark material to the competitor, or coach its strategy. Share meaningful milestones, blockers requiring user action and completion in this ChatGPT conversation; stay quiet on unchanged routine checks and avoid nonurgent overnight updates. When the goal is credibly achieved or the user stops it, close the progress check.
+````
+
+## Prompt 189: Continue active trial oversight
+
+New actual automation occurrence: scheduled2026-10-22T19:35:22+00:00, actual parent receipt19:38:15 UTC and coordinator delivery19:38:23 UTC, supplied during this launch-checkpoint preparation. Exact unchanged template with this Run value was supplied by the coordinator. Source coverage extends187 (18:35) and the explained repetition188 with this new19:35 occurrence189; all earlier bytes and their historical preparation context remain intact. Standing107, model74 and direct117–119 remain recorded. No additional direct reply or private-publication authorization was supplied. Parent task decisions are not user quotations; inaccessible history is not claimed audited. This remains a public engineering/launch checkpoint, without private evaluator/calibration material or candidate source.
+
+````text
+Automation run instructions
+
+Complete the task below autonomously using the available tools. Follow the user's instructions, existing permissions, and explicit notification rules.
+
+Run context:
+- Title: Battlecode progress check
+- Run: 2026-10-22T19:35:22+00:00
+
+Rules:
+1. Avoid optional follow-up questions. Make reasonable assumptions and continue without waiting for input. If essential information or approval is missing, follow rule 4.
+2. If blocked, complete useful independent work, provide any useful partial result, and state exactly what is missing. If available history shows the same blocker has prevented progress across multiple runs, ask in the final response whether the user wants to pause this automation. Do not pause the automation without approval unless you created it without the user asking for it.
+3. When subagents are available, delegate substantive work by default unless the task is simple or the user asks otherwise. Give each subagent a clear task and integrate its results before finishing.
+
+Task:
+Check progress on the authorized long-running BC2023 competitive-environment project in anicolao/bcenv and anicolao/bc-planner. Verify the latest project checkpoint, active work, experiments and CI; identify stalled work and resume or repair authorized steps without duplicating active execution. Continue toward a credible environment in which a fresh autonomous LLM builds a competent bot and uses scrimmages through an enforced interface without access to evaluator infrastructure or held-out competitor bots. Evaluate observable reasoning, code quality, replay-grounded experimentation and performance against genuine held-out 2023 competitors. Publish incremental PRs and summary documents as authorized. Do not infer merge permission, incur unapproved charges, weaken access restrictions, disclose held-out benchmark material to the competitor, or coach its strategy. Share meaningful milestones, blockers requiring user action and completion in this ChatGPT conversation; stay quiet on unchanged routine checks and avoid nonurgent overnight updates. When the goal is credibly achieved or the user stops it, close the progress check.
+````

@@ -1,11 +1,57 @@
 # Competitive program checkpoint
 
-Updated 2026-10-22 22:30 UTC. **The competitive goal is not achieved.**
+Updated 2026-10-22 22:51 UTC. **The competitive goal is not achieved.**
 The existing VM runs the cooperative scrimmage service; missing host/provider access is not the current execution blocker. This is not hard filesystem isolation. Historical statements below describe their dates, not current state.
 
 [BCENV-012 is incomplete after a native-reported exec transport failure](2023-continuity-012-preflight-and-launch.md#interruption-checkpoint--2026-10-22-2010-utc). Native FINAL was observed at 19:59:08 UTC, about 30 minutes after the observed spawn response—not six-hour continuity. The original owned service PTY returned exit 1 / `^C` at 19:59:28 after operator interruption, without a graceful-stop marker. Helper quiescence remains **unknown**, not a demonstrated survivor or termination; a working observer connection does not restore native author continuity. No full freeze, final selection, fallback, private evaluation, author resume or replacement is established or authorized.
 
-The interrupted point-in-time snapshot records 108 attempts and 107 completed **result artifacts** (96 training + 11 validation), not independently validated full-game outcomes. One attempted validation result is unresolved; four reserved cells have no recorded attempt/result. Separately, 13 complete batch receipts cover 104 game entries. All 57 fixed inputs match; the checkpoint was bounded/hash-only. Zero scan warnings do not prove stopped helpers or atomic capture. The previously passed B preflight and code/protocol gates remain historical readiness evidence; the [frozen protocol](2023-continuity-capacity-feasibility-012.md) is unchanged. [bcenv PR24](https://github.com/anicolao/bcenv/pull/24) and [planner PR19](https://github.com/anicolao/bc-planner/pull/19) remain draft and unmerged. Further trial execution is blocked by actual transport/ownership limitations, not new user permission or missing VM access; narrow engineering qualification has progressed, including the single inert operator-file case below, but production lifecycle and native continuity limits remain unresolved. No private outcomes or candidate strategy/source are included.
+The interrupted point-in-time snapshot records 108 attempts and 107 completed **result artifacts** (96 training + 11 validation), not independently validated full-game outcomes. One attempted validation result is unresolved; four reserved cells have no recorded attempt/result. Separately, 13 complete batch receipts cover 104 game entries. All 57 fixed inputs match; the checkpoint was bounded/hash-only. Zero scan warnings do not prove stopped helpers or atomic capture. The previously passed B preflight and code/protocol gates remain historical readiness evidence; the [frozen protocol](2023-continuity-capacity-feasibility-012.md) is unchanged. [bcenv PR24](https://github.com/anicolao/bcenv/pull/24) and [planner PR19](https://github.com/anicolao/bc-planner/pull/19) remain draft and unmerged. The interrupted012 author cannot be resumed under its failed transport/ownership evidence; this is not a new user-permission or VM-access blocker. Separately identified013 preparation is described below. Narrow engineering qualification has progressed, but production in-flight cancellation and native continuity remain unqualified. No private outcomes or candidate strategy/source are included.
+
+## BCENV-013: prospective fresh-author preparation
+
+The [separate BCENV-013 protocol](2023-operator-continuity-013.md) prepares a fresh,
+source-empty author, not a BCENV-012 resume or replacement. The six-hour
+`continuity-v1` capacity limits remain unchanged: at most24 training versions,
+192 training games plus16 locked-finalist validation games,72 notes and450 replay
+queries, with the existing shared read/mailbox/storage/deadline limits. Capacity
+is not a promised workload or competence result. The intended service topology
+uses the reviewed direct installed runtime and operator-file stop channel.
+
+Model and reasoning overrides will be **omitted**, inheriting the parent
+configuration with `fork-none`; no verified user override provenance supports the
+earlier explicit Sol/high declaration. This configuration difference is disclosed
+prospectively, not presented as same-model replication or verified resolved model
+identity. A new author has not launched at this checkpoint. Exact protocol/input
+review, public CI and fresh-service parity remain gates; no additional ad hoc
+qualification games are implied by this preparation. Only the evaluator's sealed
+commitment and method are public, never private outcomes or benchmark material.
+
+### Completed public runtime parity, not an author experiment
+
+One separately authorized eight-game tutorial attempt completed at22:43:47–
+22:45:42 UTC with normal service/driver exit0 and no retry, replacement or tool
+signal. All eight result/replay artifacts match the retained public baseline;
+four packaged action/own-diagnostics projections match their retained references
+under only documented submission/job-ID normalization. There was one tutorial
+submission, no validation phase, no finalist selection and no candidate author.
+
+The receipt chain records19 mailbox/dispatch operations,17 shared reads,
+4 replay queries and11 result polls. Twenty-two direct-child receipts report
+success/reaping;14 invocation-specific acknowledgments cover build/package/runs/
+queries. One operator stop followed normal completed work, and the watcher joined.
+This validates normal packaged work and idle shutdown in the new topology—not
+deliberate in-flight production-engine cancellation or global process absence.
+No conclusion about old012/prior-probe helper quiescence follows.
+
+Independent actual-result review commitment:
+`01f03210c92041945105a50b4078b943d0bde6c60547867fb858b24f969aa92b`.
+Completed-summary commitment:
+`00a05f111ff41fa5ea173b8316f1aa8c704163a6f9641882472ec965bd084ba8`.
+Terminal-inventory commitment:
+`2744741d02e448cc27c45e3c7f1c0f3fbe2a84c902ea22399de5d458011e951e`.
+Raw artifacts remain local. The previous interrupted evidence and frozen012
+protocol remain unchanged; this result neither repairs012 nor establishes
+sustained autonomous author continuity or competitive competence.
 
 ## One same-VM operator-file case — 2026-10-22
 
@@ -44,8 +90,9 @@ Only these summary facts and commitments are published here, not raw probe paylo
 CLI/engine/game cancellation, already-open FD passage through the external wrapper,
 supervisor death, arbitrary descendants, native author continuity, and old012 or
 prior-probe helper quiescence are not established. No additional qualification is
-assumed necessary by default: the next authorized work is a minimal public parity
-**plan only**, with no execution or new candidate authorized at this checkpoint.
+assumed necessary by default. At that earlier checkpoint, the next authorized
+work was a minimal public parity **plan only**, not execution or a new candidate;
+the subsequent separately authorized parity and013 preparation are recorded above.
 PR26 remains draft and unmerged; the frozen012 protocol and interrupted evidence
 are unchanged. The competitive goal remains unmet.
 

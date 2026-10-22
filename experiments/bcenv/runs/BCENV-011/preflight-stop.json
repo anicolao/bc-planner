@@ -1,0 +1,18 @@
+{
+  "schema": "bcenv011.preflight.stop.v1",
+  "recorded_at": "2026-10-22T15:03:04.269923+00:00",
+  "driver_session": 61065,
+  "driver_exit_code": 0,
+  "service_session": 3570,
+  "stop_action": "Explicit Ctrl-C via write_stdin after successful driver completion; tool reported terminal exit1.",
+  "service_exit_code": 1,
+  "explicit_terminal_receipt_observed": true,
+  "graceful_stop_marker_present": false,
+  "no_pending_mailbox_requests": true,
+  "completed_engine_games": 8,
+  "completed_replay_queries": 39,
+  "retries": 0,
+  "new_games": 8,
+  "live_candidate_launched": false,
+  "limitation": "Operator-initiated process stop, not graceful shutdown attestation. Separate exec process listings are namespace-scoped and not standalone stop proof."
+}

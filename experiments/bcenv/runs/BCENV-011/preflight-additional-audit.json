@@ -1,0 +1,16 @@
+{
+  "engine_seconds": [
+    5.765,
+    6.73,
+    14.826,
+    16.275,
+    19.338,
+    16.977,
+    27.255,
+    22.166
+  ],
+  "all_sixteen_children_reaped_before_same_deadline": true,
+  "pending_mailbox_requests": 0,
+  "inventory_extras_only_inventory_and_freeze": true,
+  "freeze_internal_hashes_verified": true
+}

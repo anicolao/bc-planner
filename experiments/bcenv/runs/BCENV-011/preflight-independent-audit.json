@@ -1,0 +1,34 @@
+{
+  "status": "passed",
+  "frozen_files_verified": 980,
+  "candidate_fixed_files": 57,
+  "audit_events": 81,
+  "audit_operations": {
+    "validation_status": 2,
+    "experiment_note": 1,
+    "submit": 1,
+    "result": 29,
+    "game_attempt": 8,
+    "complete": 1,
+    "replay": 39
+  },
+  "games": 8,
+  "match_timeout": 300,
+  "other_timeout": 120,
+  "validation_games": 0,
+  "queries": 39,
+  "modes": {
+    "own_diagnostics": 16,
+    "actions": 23
+  },
+  "diagnostic_rows_compared": 89,
+  "responses_with_continuation": 10,
+  "terminal_source_coverage_games": 8,
+  "both_team_activity_games": 8,
+  "source_and_eight_replay_parity": true,
+  "driver_exit": 0,
+  "service_exit": 1,
+  "stop_evidence": "retained explicit session terminal receipt; no graceful marker; namespace-scoped ps is not proof",
+  "inventory_sha256": "40eee7033f46159cca0d83e2208db0ba5859186ec4681dd8d0c8f809349c4ec4",
+  "freeze_sha256": "21d7182503bdb98da3cecc0231591f3d2dcb101584683ccf30a8196ce971d9a9"
+}

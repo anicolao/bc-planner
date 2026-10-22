@@ -1,6 +1,6 @@
 # Competitive program checkpoint
 
-Updated 2026-10-22 14:42 UTC. **The competitive goal is not achieved.**
+Updated 2026-10-22 15:07 UTC. **The competitive goal is not achieved.**
 The existing VM runs the cooperative scrimmage service; missing host/provider
 access is not the current execution blocker. This is not hard filesystem
 isolation. Historical statements below describe their dates, not current state.
@@ -17,9 +17,13 @@ in122.407 seconds with the same frozen inputs and a300-second cap. This supports
 a prospective cap increase for that execution, not a retroactive repair or causal
 explanation of010. [BCENV-011 preparation](2023-match-timeout-feasibility-011.md) changes only the trusted public match-run
 cap to300 seconds, uniformly in both phases, with the unchanged45-minute global
-deadline/max80 games and unchanged timeout=120 for other child subprocesses. Code review/CI,
-an8-game public tutorial preflight and independent clean-input/live-parity gates
-remain required before a fresh launch. [bcenv PR23](https://github.com/anicolao/bcenv/pull/23)
+deadline/max80 games and unchanged timeout=120 for other child subprocesses. Code/protocol exact-head CI and independent review passed. The eight-game public
+tutorial preflight completed with39 replay queries, unchanged replay hashes and
+no retries; all57 fixed inputs remain clean. The explicit operator stop returned
+exit1 without a graceful marker after all work completed, retained as such rather
+than normalized. [Readiness evidence](experiments/bcenv/runs/BCENV-011/engineering-readiness.json)
+records the limits. Readiness-publication CI, parent conditional live-clock
+authorization and independent actual live parity remain before a fresh launch. [bcenv PR23](https://github.com/anicolao/bcenv/pull/23)
 is draft, stacked onPR22;433 local tests and20 independent focused/deadline
 checks passed. Exact code head31ac671 passed CI39796568851; the CI merge
 tree and installed runtime identity match local evidence. Protocol CI and

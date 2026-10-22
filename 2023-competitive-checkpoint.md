@@ -1,6 +1,6 @@
 # Competitive program checkpoint
 
-Updated 2026-10-22 15:07 UTC. **The competitive goal is not achieved.**
+Updated 2026-10-22 15:28 UTC. **The competitive goal is not achieved.**
 The existing VM runs the cooperative scrimmage service; missing host/provider
 access is not the current execution blocker. This is not hard filesystem
 isolation. Historical statements below describe their dates, not current state.
@@ -22,8 +22,14 @@ tutorial preflight completed with39 replay queries, unchanged replay hashes and
 no retries; all57 fixed inputs remain clean. The explicit operator stop returned
 exit1 without a graceful marker after all work completed, retained as such rather
 than normalized. [Readiness evidence](experiments/bcenv/runs/BCENV-011/engineering-readiness.json)
-records the limits. Readiness-publication CI, parent conditional live-clock
-authorization and independent actual live parity remain before a fresh launch. [bcenv PR23](https://github.com/anicolao/bcenv/pull/23)
+records the limits. Readiness-publication CI passed on exact `a31f8f0`; parent
+conditional authorization and independent actual live parity passed. A fresh
+fork-none requested Sol/high candidate is now active, with no prior bot/review
+context or strategy coaching. [Launch record](experiments/bcenv/runs/BCENV-011/launch.json):
+service start15:24:44.047616 UTC, hard deadline16:09:44.047616 UTC;
+2619 seconds remained at native acknowledgement. Counts/phase are monitored
+without strategy feedback. Stop/freeze and independent review must precede
+private evaluation; no private outcome is published here. [bcenv PR23](https://github.com/anicolao/bcenv/pull/23)
 is draft, stacked onPR22;433 local tests and20 independent focused/deadline
 checks passed. Exact code head31ac671 passed CI39796568851; the CI merge
 tree and installed runtime identity match local evidence. Protocol CI and

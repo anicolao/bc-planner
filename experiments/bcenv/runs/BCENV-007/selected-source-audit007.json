@@ -1,0 +1,31 @@
+{
+  "status": "passed",
+  "submission_id": "s_0bee2d14d8904e82acf94ef6ef0fb8b5",
+  "checks": {
+    "static_55_unchanged": true,
+    "selected_normalized_identity": true,
+    "public_result_identity": true,
+    "source_trees_equal": true,
+    "build_inventory_matches": true,
+    "build_source_identity_matches": true,
+    "binary_inventory_matches": true,
+    "binary_identity_matches": true,
+    "build_verified": true,
+    "no_symlinks_in_frozen_roots": true,
+    "freeze_inventory_unchanged": true
+  },
+  "static_files_checked": 55,
+  "static_mismatches": [],
+  "normalized_source_sha256": {
+    "candidate": "a049472f068333e355a69c3d2f4aae5d9c1d909b28c4a074fdc7d05bdc6a495f",
+    "accepted": "a049472f068333e355a69c3d2f4aae5d9c1d909b28c4a074fdc7d05bdc6a495f",
+    "build_snapshot": "a049472f068333e355a69c3d2f4aae5d9c1d909b28c4a074fdc7d05bdc6a495f"
+  },
+  "source_inventory_sha256": "f56b2693e294eef5f1a0a70e91712ad3d3eadc24407d1b56c5bb410bc15ce732",
+  "binary_sha256": "59a2dfc117f86f9bdd27909430856c536ba0763759af15f6d11b27dbc5a44c88",
+  "engine_sha256": "2b6db98e312e0e509d599acc46bffbb55c2569de0f12c8214a85ee57625f15f2",
+  "source_file_count": 1,
+  "symlinks": [],
+  "inventory_drift": [],
+  "scope": "Mechanical correspondence only; no source strategy or competence assessment."
+}

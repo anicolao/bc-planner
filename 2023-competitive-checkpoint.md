@@ -1,31 +1,26 @@
 # Competitive program checkpoint
 
-Updated 2026-10-22 13:39 UTC. **The competitive goal is not achieved.**
+Updated 2026-10-22 14:30 UTC. **The competitive goal is not achieved.**
 The existing VM runs the cooperative scrimmage service; missing host/provider
 access is not the current execution blocker. This is not hard filesystem
 isolation. Historical statements below describe their dates, not current state.
 
-Current preparation: [BCENV-010 own-team diagnostics feasibility](2023-own-diagnostics-feasibility-010.md).
-[bcenv PR22](https://github.com/anicolao/bcenv/pull/22) is draft, exact-head CI
-passed, and independent code/release review passed. The new mode projects bounded
-own-robot indicator strings and bytecode counts; it does not expose raw logs or
-provide automatic exception detection. Engine behavior and009's80-game/45-minute
-public finalist profile remain unchanged. The independently reviewed57-file export is clean and source-empty. The separate
-8-game tutorial preflight passed with39 replay queries, both-slot diagnostic/raw
-agreement and unchanged legacy action/replay evidence. Independent audit verified
-80 chained events and978 frozen files; driver exited0, service explicitly stopped
-with exit130. Pagination/coverage limitations remain explicit. See
-[engineering readiness](experiments/bcenv/runs/BCENV-010/engineering-readiness.json).
-Exact readiness head `5a3f0ec` passed CI39787884948 before live initialization.
-Parent conditional readiness and independent actual live parity/empty-input
-review passed. Fresh fork-none requested Sol/high launch occurred within
-13:38:11–13:38:35 UTC, using the exact fixed kickoff. The service clock started
-13:37:24.184 UTC; hard deadline14:22:24.184 UTC, with about2629 seconds remaining
-by launch acknowledgement. No clock reset or strategy intervention occurred.
-See the [launch record](experiments/bcenv/runs/BCENV-010/launch.json) and
-[independent live review](experiments/bcenv/runs/BCENV-010/live-parity-review.md).
-Observer-only monitoring continues; stop/freeze precedes private evaluation.
-This active trial is not a completion or competency result. No merge is authorized.
+[BCENV-010 stopped without a final selection](2023-own-diagnostics-010-public-outcome.md):
+six submissions, 48 completed training games, 14 completed validation games,
+one unscored engine timeout and one unattempted reserved cell. Both competitor
+and service are stopped; the frozen inventory and immutable finalist snapshots
+passed independent mechanical review. No fallback or private evaluation occurred.
+The own-team diagnostic channel was used, but this is not evidence of competence.
+
+A separately preregistered, one-attempt public engineering diagnostic completed
+in122.407 seconds with the same frozen inputs and a300-second cap. This supports
+a prospective cap increase for that execution, not a retroactive repair or causal
+explanation of010. BCENV-011 preparation changes only the trusted public match-run
+cap to300 seconds, uniformly in both phases, with the unchanged45-minute global
+deadline/max80 games and120-second unrelated operation limits. Code review/CI,
+an8-game public tutorial preflight and independent clean-input/live-parity gates
+remain required before a fresh launch. [bcenv PR22](https://github.com/anicolao/bcenv/pull/22)
+remains draft and is the parent implementation; no merge is authorized.
 
 [BCENV-009](2023-public-finalist-validation-009.md) completed its public phases
 and is stopped/frozen with blind review and exact selected rebuild verified.

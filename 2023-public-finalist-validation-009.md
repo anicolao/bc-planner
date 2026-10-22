@@ -23,7 +23,8 @@ reliable broad competence. Training-map rotation is deliberately deferred.
 
 ## Prospective budget and phases
 
-- Fresh fork-none requested gpt-6.1-sol/high,45minutes from recorded launch.
+- Fresh fork-none requested gpt-6.1-sol/high, remaining time within a hard
+  45minute live-service-start budget.
   Requested settings are not independent runtime attestation.
 - Up to8 accepted training source versions,8games each,64 training games maximum.
   Build rejections consume a version but do not create replacement games.
@@ -41,9 +42,22 @@ reliable broad competence. Training-map rotation is deliberately deferred.
   restores its exact submitted source bytes, writes final evidence/limitations
   and stops. No post-validation code version is accepted.
 - Total maximum80 public games,24notes,150replay requests; all phases consume the
-  same45minute native wall budget. Public match wall limit120seconds/512MiB heap
+  same conservative service-start45minute deadline; candidate receives the
+  remaining time, at most45minutes. Public match wall limit120seconds/512MiB heap
   remains fixed. Incomplete work/deadline/failure remains explicit; no arbitrary
   operator final selection or hidden extra games to complete a favorable result.
+
+The trusted service records UTC start/deadline plus monotonic elapsed-time
+bounds at initialization. Every worker invocation is capped by the smaller of
+its ordinary timeout and remaining run time; no new match, submission, finalist
+lock or final selection begins after expiry/stop. Candidate is stopped at the
+same hard deadline. Incomplete validation cannot produce a completed selection;
+no operator fallback is fabricated. Observer-only diagnostics may be retained.
+All CI/preflight/parent-conditional readiness gates precede live initialization;
+independent final parity and native spawn follow immediately. Preflight has its
+own separately recorded deadline. Only a never-used, empty pre-candidate service
+may be restarted after a readiness delay, with the attempt explicitly recorded;
+never reset a running competitor's deadline.
 
 State transitions: training → finalists locked → validation running → validation
 complete → selected. Pending training prevents locking; incomplete/failed builds
@@ -82,6 +96,9 @@ are therefore not an independent held-out performance estimate.
    create no games. This32game engineering gate is separate from80candidate
    games. Preserve all attempts, no automatic retries.
    Verify real locking, both finalist jobs/results and bounded terminal replays.
+   At most2pages per early/terminal window (≤128queries total); retain any
+   continuation and distinguish terminal source coverage from full selected
+   record enumeration. Both-team activity must be positively observed.
 3. Same integration/live identity plus same-process bounded adapter probe;
    no nested outer Nix service. Ambient environment equality across launches
    is not independently attested. Same-user native workspace restrictions remain

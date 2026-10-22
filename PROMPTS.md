@@ -2137,3 +2137,11 @@ Repeated exact direct approval Sentinel_7394f361f4e881919d712f2e0bda2fd6 under s
 ````text
 Ok let's proceed.
 ````
+
+## Prompt 170: Bound all finalist phases
+
+Repeated exact direct approval Sentinel_7394f361f4e881919d712f2e0bda2fd6 under standing107. Source coverage unchanged from169. Parent accepted conservative service-start45minute deadline and separate32game public tutorial preflight as execution decisions, not new user text. Public candidate receives remaining≤45minutes; no unfinished-selection fallback, deadline reset or extra games. No denied evaluator payload included.
+
+````text
+Ok let's proceed.
+````

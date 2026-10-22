@@ -18,7 +18,7 @@
     "/workspace/scratch/1523a3f802eb/replication-006/integration012/RawWindow.java": "d5776cb4ed94e017668dbd0025b9071d57f3d98ec5b381a5b65590b5b6ead578",
     "/workspace/scratch/1523a3f802eb/replication-006/integration012/check-gate.py": "b51756b2acff45633c7347a034e1448e2cf382a88449e6933fb0b5f6ecb4e275",
     "/workspace/scratch/1523a3f802eb/replication-006/integration012/config.json": "7fafdf738f2a1dca89fff7ea60acdcc1ce960b7a69404f5a27f2a4774d7be84a",
-    "/workspace/scratch/1523a3f802eb/replication-006/integration012/run-check.py": "3b5b22b016bdfadf41b100ba278f289a7341d368207a2c552ea383c8109f302d",
+    "/workspace/scratch/1523a3f802eb/replication-006/integration012/run-check.py": "1d3ce5683da76f90cd8a537da6890b545ef860ab74dd3da63bc14311b98adfef",
     "/workspace/scratch/1523a3f802eb/replication-006/integration012/start-service.sh": "e8d61bcb4f7d5e385806a272b8465179405806f637356272e32b155348dec34e"
   },
   "new_games_so_far": 0,
@@ -32,5 +32,6 @@
   "runtime": "/nix/store/1bbk58382aq40pplbyy2fir27qnx3jxj-bcenv-2023-0.1.0",
   "schema": "bcenv012.preparation.v1",
   "sealed_panel_sha256": "35f3cc798c6282df3e083968c07b71ac8313d869056dd26511de269a2f04ed7a",
-  "state": "prepared_not_authorized_to_execute"
+  "state": "prepared_not_authorized_to_execute",
+  "usage_validation": "Exact initial and final actual counters asserted from the one-shot request schedule; no additional requests/games."
 }

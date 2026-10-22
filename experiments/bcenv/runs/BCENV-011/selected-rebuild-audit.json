@@ -1,0 +1,43 @@
+{
+  "status": "passed",
+  "experiment_id": "BCENV-011",
+  "selected_submission": "s_c683aa49e68c42709906eee18d420ebf",
+  "runtime": "/nix/store/29fs10m7al0k5lk5k3w2qqjbhmba57pn-bcenv-2023-0.1.0",
+  "command_prefix": [
+    "/workspace/scratch/1523a3f802eb/nix-canonical-root/nix-root",
+    "shell",
+    "--offline",
+    "/nix/store/29fs10m7al0k5lk5k3w2qqjbhmba57pn-bcenv-2023-0.1.0",
+    "-c",
+    "bcenv"
+  ],
+  "public_runtime": "/nix/store/1bbk58382aq40pplbyy2fir27qnx3jxj-bcenv-2023-0.1.0",
+  "matches": {
+    "source_sha256": true,
+    "source_files": true,
+    "binary_sha256": true,
+    "binary_files": true,
+    "engine_sha256": true,
+    "package": true,
+    "status": true,
+    "class_bytes": true,
+    "source_tree": true,
+    "raw_zip": true
+  },
+  "service_normalized_source_sha256": "e33da104ca12b94d7b96c79401b1958753e58c68a8ed3f329407a01c5859c0a5",
+  "adapter_source_inventory_sha256": "782dd0f97f1d977b0870efae46375639be61eecfb68b98a73c7e2f0e6ec466fe",
+  "adapter_binary_inventory_sha256": "0ab6775da7757c9e721d5e2f876db2612bc4ff2e77aa07327747ea1dc0f72bf4",
+  "raw_package_zip_sha256": "4b05799bbcd9f493bb54ac904d5ff9c3723d737f76624089ce7c0fd3e460b860",
+  "source_files": {
+    "tempest/RobotPlayer.java": "cdb6c7f307743a19e21616a29b8f65ede632d38eada4d34c29ccc2de3912c430"
+  },
+  "binary_files": {
+    "tempest/RobotPlayer.class": "9fc048848b4618b4d58a87317ffd374ddf0fccc4a41483f574b2771087945365"
+  },
+  "engine_sha256": "2b6db98e312e0e509d599acc46bffbb55c2569de0f12c8214a85ee57625f15f2",
+  "output_root": "/workspace/scratch/1523a3f802eb/replication-006/engineering/rebuild011",
+  "matches_run": 0,
+  "candidate_changes": false,
+  "heldout_access": false,
+  "scope": "Independent old29fs rebuild versus new1bbk public-service artifact. Hash domains separately labeled; no strategy assessment."
+}

@@ -1,0 +1,32 @@
+{
+  "schema": "bcenv011.preparation.v1",
+  "state": "prepared_not_authorized_to_execute",
+  "code_commit": "31ac67103993f7d16e9458de5235eb02841477c8",
+  "runtime": "/nix/store/1bbk58382aq40pplbyy2fir27qnx3jxj-bcenv-2023-0.1.0",
+  "sealed_panel_sha256": "efa11291c09b5a8a8040a4395238796642da49968de1f9a485395ca470bf1800",
+  "files": {
+    "/workspace/scratch/1523a3f802eb/replication-006/integration011/config.json": "41810ce987d5148469ef62cf1e053e897bff9b4975215bfd852c2eca99a22c68",
+    "/workspace/scratch/1523a3f802eb/replication-006/integration011/start-service.sh": "5f22f49f2bca8e2a527cf7697edbbebc4d7261555c6831e40dff905e03749ec3",
+    "/workspace/scratch/1523a3f802eb/replication-006/integration011/check-gate.py": "ec13a854222e55d71c2c982abcf5ede2661d87a8631238e4e750afd3d33f1613",
+    "/workspace/scratch/1523a3f802eb/replication-006/integration011/run-check.py": "2e6d8de05dc0aac57ebaab4079a560f0198ce0809787fdaa5f584fb82adee890",
+    "/workspace/scratch/1523a3f802eb/replication-006/integration011/RawAgreement.java": "02845be70b69871d794d1eafd1410587fef7681cdba5c6aa8c5f86c4cd612438",
+    "/workspace/scratch/1523a3f802eb/replication-006/integration011/RawWindow.java": "d5776cb4ed94e017668dbd0025b9071d57f3d98ec5b381a5b65590b5b6ead578",
+    "/workspace/scratch/1523a3f802eb/replication-006/development/service011-config.json": "41810ce987d5148469ef62cf1e053e897bff9b4975215bfd852c2eca99a22c68",
+    "/workspace/scratch/1523a3f802eb/replication-006/development/start-service011.sh": "001b073233e871307674445dad91fd76f29a75e5294169b04d0ce3e7c6eefd92",
+    "/workspace/scratch/1523a3f802eb/replication-006/competitor011-export-manifest.json": "26b216760992f4975f9d22aad152578bc854c89a11e7f20286f9631c50abff80",
+    "/workspace/scratch/1523a3f802eb/replication-006/development/lecture-selected-source/lectureplayer/CarrierStrategy.java": "5da0dd915314f76a580893bc72214daae7e03b4fde12a653e8de5af847bc987a",
+    "/workspace/scratch/1523a3f802eb/replication-006/development/lecture-selected-source/lectureplayer/Communication.java": "75b248f1ca80e36df5d6d5208530be147eda18edf3190568cda4b0870a346645",
+    "/workspace/scratch/1523a3f802eb/replication-006/development/lecture-selected-source/lectureplayer/LauncherStrategy.java": "00d792565a48f713b8141a41bfa0e66c41643d20673eba1496df2678fff61af4",
+    "/workspace/scratch/1523a3f802eb/replication-006/development/lecture-selected-source/lectureplayer/OptimalResource.java": "a59fe49815ff9611dd5ea7c72047a1b4aaa27fcd3686aec6dcfc7d6adcfe0ead",
+    "/workspace/scratch/1523a3f802eb/replication-006/development/lecture-selected-source/lectureplayer/Pathing.java": "44c5022c385370b2f093e33f4cc1182209d5efdc81ddfb98e993095aaf19b168",
+    "/workspace/scratch/1523a3f802eb/replication-006/development/lecture-selected-source/lectureplayer/RobotPlayer.java": "7777eae1b68a466b7165b643dca1ddc0c32c597edd0c5d259b7496cde3260480"
+  },
+  "preflight_games_max": 8,
+  "preflight_submissions": 1,
+  "preflight_validation_games": 0,
+  "preflight_live_config_bytes_equal": true,
+  "new_games_so_far": 0,
+  "candidate_launched": false,
+  "existing_phase_proof": "integration009/completed-summary.json",
+  "change": "trusted match_timeout300 only; timeout120 and global2700 unchanged; installed adapter/engine runtime unchanged"
+}

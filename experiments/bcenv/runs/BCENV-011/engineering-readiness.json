@@ -1,0 +1,73 @@
+{
+  "schema": "bcenv011.engineering-readiness.v1",
+  "recorded_utc": "2026-10-22T15:07:57.949072+00:00",
+  "status": "preflight_pass_readiness_publication_ci_and_parent_live_gate_pending",
+  "candidate_launched": false,
+  "code_commit": "31ac67103993f7d16e9458de5235eb02841477c8",
+  "code_pr": "https://github.com/anicolao/bcenv/pull/23",
+  "code_ci": {
+    "run_id": 39796568851,
+    "conclusion": "success"
+  },
+  "prospective_protocol_commit": "e6da0a34412fa32c0703eeae3b4a0a8f43f8bfb9",
+  "prospective_protocol_ci": {
+    "run_id": 39798244799,
+    "conclusion": "success"
+  },
+  "runtime": "/nix/store/1bbk58382aq40pplbyy2fir27qnx3jxj-bcenv-2023-0.1.0",
+  "runtime_changed": false,
+  "match_timeout": 300,
+  "other_child_timeout_parameter": 120,
+  "global_service_seconds": 2700,
+  "preflight": {
+    "training_games_attempted": 8,
+    "training_games_completed": 8,
+    "validation_games": 0,
+    "submissions": 1,
+    "retries": 0,
+    "replay_queries": 39,
+    "diagnostic_queries": 16,
+    "action_queries": 23,
+    "raw_own_diagnostic_rows_checked": 89,
+    "same009_replay_hashes": 8,
+    "completed_reaped_engine_and_initial_summary_children": 16,
+    "receipt_chain_events": 81,
+    "service_exit_code": 1,
+    "graceful_stop_marker_present": false,
+    "pending_mailbox_requests": 0,
+    "terminal_session_poll": "Subsequent read-only write_stdin returned Unknown process id3570; no new service or games started."
+  },
+  "stop_limitation": "Explicit operator Ctrl-C ended the service tool session with exit1 after all work completed. Output contained startup text and ^C, no traceback; the reason for1 rather than130 is not established. No graceful shutdown claim or namespace-scoped process-absence proof.",
+  "clean_inputs": {
+    "files": 57,
+    "manifest_sha256": "26b216760992f4975f9d22aad152578bc854c89a11e7f20286f9631c50abff80",
+    "source_tests_work_empty": true,
+    "no_symlinks": true,
+    "candidate_mailbox_absent": true
+  },
+  "config_sha256": "41810ce987d5148469ef62cf1e053e897bff9b4975215bfd852c2eca99a22c68",
+  "integration_launch_sha256": "d67ea37607d8d3050a5c3a4e8febe9a1fd2059cde04fe944d6a1f29fa2db967a",
+  "sealed_evaluation_protocol_sha256": "efa11291c09b5a8a8040a4395238796642da49968de1f9a485395ca470bf1800",
+  "remaining_gates": [
+    "Exact readiness-publication CI success",
+    "Parent conditional live-clock gate",
+    "Independent actual live/integration identity equality and empty-state check before immediate fresh agent launch"
+  ],
+  "limits": [
+    "Eight-game preflight tests routing/parity, not sufficiency of300 seconds for every bot.",
+    "Existing00932-game phase proof remains separate; no new validation preflight games.",
+    "Cooperative workspace boundaries, not hard filesystem confinement.",
+    "No private evaluation contents or outcomes included.",
+    "Raw preflight evidence remains local; public hashes are not a durable raw-data archive."
+  ],
+  "files": {
+    "preflight-review.md": "4e81b1005bec07af4c93d4af57d4f0bce1ed7852f875ad82d06326c187785e74",
+    "preflight-summary.json": "e0ae5f13f230520e010febb651b96fe392c3efde65cdeed44908989190bb7a3c",
+    "preflight-stop.json": "4b49c37d9e5b204a7568a8252c2373baade71cc2874472cc9d302b317b28a42e",
+    "preflight-freeze.json": "21d7182503bdb98da3cecc0231591f3d2dcb101584683ccf30a8196ce971d9a9",
+    "preflight-independent-audit.json": "c4410a2bd1ac43686574ed6e1c745949ad91228468326a8e2a39911044b15b83",
+    "preflight-additional-audit.json": "ee2fd42068b10c909b0ab6eb13388c6adc6c431ef6f7140fcda779cf4d37336a",
+    "candidate-README.md": "8aa8dc67d8ae219b8d10f8e6295edc6c6b76d5757405685d0a31026aea912d36",
+    "kickoff.txt": "91d87d694bbb0fb4f116eea8b2cc20271592438625a2cf27423fd1dcb6082ecc"
+  }
+}

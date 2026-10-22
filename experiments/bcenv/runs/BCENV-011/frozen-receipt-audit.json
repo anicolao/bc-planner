@@ -1,0 +1,30 @@
+{
+  "status": "passed",
+  "scope": "Mechanical frozen inventory/receipts only; not code/test quality or historical filesystem edits",
+  "freeze_sha256": "1de1c42406dd7f061b988cafa29c8daaf8bcc41c448a7207a430be220e4b7893",
+  "inventory_sha256": "01d2a6a0b3ba50d38f2b35df196a222b6621a2e0bc5b3db3297568f462ea122f",
+  "files_verified": 4898,
+  "fixed_inputs": 57,
+  "audit_events": 196,
+  "operations": {
+    "validation_status": 17,
+    "experiment_note": 8,
+    "submit": 8,
+    "game_attempt": 80,
+    "result": 45,
+    "complete": 8,
+    "replay": 24,
+    "lock_finalists": 1,
+    "validation_start": 1,
+    "validation_complete": 2,
+    "validation_finished": 1,
+    "select_finalist": 1
+  },
+  "replay_modes": {
+    "own_diagnostics": 18,
+    "actions": 6
+  },
+  "mailbox_replay_responses_verified": 24,
+  "phase": "selected",
+  "game_attempts": 80
+}

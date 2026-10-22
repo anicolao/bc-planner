@@ -1,0 +1,15 @@
+{
+  "existing_phase_proof": "integration009/completed-summary.json",
+  "experimental_games_added": 8,
+  "games": 8,
+  "legacy_action_agreement": true,
+  "no_retries": true,
+  "raw_diagnostic_agreement": true,
+  "replay_queries": 39,
+  "same_tutorial_source": true,
+  "status": "passed",
+  "submission_id": "s_f3e95b101afb47329454fdb010f8a37e",
+  "training_replays_match009": 8,
+  "training_submissions": 1,
+  "validation_games": 0
+}

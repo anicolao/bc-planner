@@ -1,0 +1,18 @@
+{
+  "experiment_id": "BCENV-007-integration",
+  "status": "passed",
+  "submission_id": "s_0af9cdae8f4c477c81d6f11602b46193",
+  "games_completed": 8,
+  "tutorial_wins": 0,
+  "tutorial_losses": 8,
+  "replay_queries": 26,
+  "both_teams_activity_all_games": true,
+  "terminal_source_round_coverage_validated": true,
+  "all_eight_replay_hashes_equal_005": true,
+  "service_stopped": true,
+  "service_exit_code": 130,
+  "shutdown_evidence": "Retained exec session21847 Ctrl-C returned exit130 after all games and replay checks",
+  "shutdown_marker_present": false,
+  "finished_at": "2026-10-22T08:23:45Z",
+  "launch_json_sha256": "52c41a82d4832956cf65608784b0ddcdfe06dd1c8abb01f4b7585fdeb24184ca"
+}

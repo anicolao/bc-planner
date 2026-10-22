@@ -104,3 +104,54 @@ those raw records public.
 | B frozen 972-file inventory | `9de40fd66c5c79566372d69fc4bfd7b09cd2cfea80e357fa7ea0175cc78611bd` |
 | Independent actual live parity review | `f66283028482f484babf982bd8279c1a18e052926d5bbddcc171b519263723ab` |
 | Native launch observation record | `c057db5c0be3121205df7dedf07d764f4efa3af78d640f0549f43647bcf8bf75` |
+
+## Interruption checkpoint — 2026-10-22 20:10 UTC
+
+**The live attempt is incomplete.** This supersedes the launch-state description
+above; it does not revise the frozen prospective protocol. Native FINAL was
+observed at 19:59:08 UTC and reported: `Failed to create unified exec process:
+exec-server transport disconnected`. The observed interval from the spawn response
+was about 30 minutes, **not a demonstration of six-hour continuity**. A working
+observer connection does not establish restoration of the native author's session
+or explain the underlying transport failure.
+
+The original owned service PTY returned terminal exit 1 / `^C` at 19:59:28 UTC,
+after Ctrl-C was sent immediately beforehand. Exact signal-delivery time is not
+established; there is no graceful-stop marker. Helper quiescence is **unknown**,
+not demonstrated survival or termination. Detached helpers and potentially lost
+supervision receipts prevent inferring whole-process shutdown from the PTY result
+or elapsed timeout alone.
+
+The read-only interrupted snapshot at 20:08:39.999–20:08:41.486 UTC records:
+
+- 108 unique attempted game cells and 107 completed **result artifacts**:
+  96 training plus 11 validation. These are recorded statuses, not independent
+  full-game validation. Each of those 107 results reports engine and extractor
+  reaped; that excludes the unresolved attempted game.
+- One attempted validation cell without a result, plus four reserved validation
+  cells without a recorded attempt/result. No missing outcome is filled in.
+- Separately, 13 complete eight-game batch receipts cover 104 game entries
+  (96 training plus 8 validation), not all 107 individual result artifacts.
+- All 57 fixed inputs unchanged. The checkpoint was verified only as a bounded
+  regular 6,281-byte file and hashed; its contents were not inspected.
+- Zero scan-stability warnings across 6,058 files. Sequential stable reads do not
+  establish an atomic snapshot, immutable storage, stopped writers or full freeze.
+
+There is no final selection or selected fallback, no private evaluation, and no
+native-author resume or replacement. Persisted phase/usage values are stale service
+metadata, not proof of current process state. The competitive goal remains unmet.
+Further trial execution is blocked by the actual transport/ownership limitation,
+not a new user-permission or missing-VM requirement; offline design is pending.
+
+Independent reviews corroborate the bounded bookkeeping and snapshot interpretation,
+**not** a helper-stop/full-freeze PASS or competence conclusion. Only summary facts
+and hash commitments are published; the snapshot, inventory, candidate contents,
+replays and private evaluator material remain excluded.
+
+| Interrupted evidence commitment | SHA-256 |
+| --- | --- |
+| Point-in-time snapshot | `63661abb244f83e465dc7280124b75bce02d2d5bcb45b1563d5bf7ac60e30c30` |
+| Point-in-time inventory | `ed72990a81531760fb58c80ee1e350bac7fe2022c00e0e53321592fc4274884a` |
+| Preliminary incomplete-run review | `5d241db3c42c0b69810c5c5def0c890eea6808f3e52c015358f1199163dc7600` |
+| Interrupted-snapshot review | `937f9bde74b98ebbd6f43fb2e72c42c30e5958cf571b2ac7e7716648a7914d4b` |
+| Bounded checkpoint file, hash only | `88e3d22411024c4da39e8c601561cdd9e47ec28f99001323cc05a74378ffd7fb` |

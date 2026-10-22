@@ -1,0 +1,68 @@
+{
+  "schema": "bcenv.public-development-terminal.v1",
+  "trial": "BCENV-010",
+  "status": "infrastructure-incomplete",
+  "competitor_stopped": true,
+  "trusted_service_stopped": true,
+  "service_exit_code": 130,
+  "selected_submission": null,
+  "fallback_selected": false,
+  "private_evaluation_games": 0,
+  "service_started_utc": "2026-10-22T13:37:24.184463+00:00",
+  "original_hard_deadline_utc": "2026-10-22T14:22:24.184463+00:00",
+  "candidate_and_service_stop_confirmed_utc": "2026-10-22T14:07:30+00:00",
+  "frozen_at_utc": "2026-10-22T14:08:51.373191+00:00",
+  "submissions": 6,
+  "training_completed": 48,
+  "locked_finalists": 2,
+  "validation_attempted": 15,
+  "validation_completed": 14,
+  "validation_timeout_unscored": 1,
+  "validation_reserved_unattempted": 1,
+  "total_attempted": 63,
+  "total_completed": 62,
+  "experiment_notes": 8,
+  "replay_queries": 24,
+  "replay_modes": {
+    "own_diagnostics": 18,
+    "actions": 6
+  },
+  "diagnostic_rows_returned": 551,
+  "diagnostic_nonempty_strings": 550,
+  "diagnostic_pages_with_continuation": 1,
+  "later_note_links": {
+    "own_diagnostics": 10,
+    "actions": 4
+  },
+  "failure": {
+    "stage": "engine",
+    "wall_cap_seconds": 120,
+    "elapsed_seconds": 120.182,
+    "exit_code": -9,
+    "child_reaped": true,
+    "global_seconds_remaining_at_termination_request": 989.835,
+    "replay_created": false,
+    "replay_projection_invoked_for_failed_cell": false,
+    "cause_of_duration": "not established"
+  },
+  "audit": {
+    "events": 169,
+    "frozen_files_verified": 3922,
+    "fixed_inputs_unchanged": 57,
+    "finalist_sources_builds_packages_identical": true,
+    "review_scope": "Mechanical preservation and public process, not competence or a complete filesystem-access audit"
+  },
+  "hashes": {
+    "freeze": "e3a99de8eb2f7e1aaf451c0caeb63720439a81264fc3403e5be4792d723d3853",
+    "inventory": "9fe019091cc1437c0c3c435f8c1d076f0f9bc9d4223919500eb6f3996e18be41",
+    "independent_incomplete_review": "1816d23327bc89e7d1de1a7f884b82cd10c79bcdba712f207d771033946eb9b9",
+    "failed_public_result": "037a706160683e00f95047b5a2ae9ac4b48a41081ff1ddcd250403a8f4b96562"
+  },
+  "limits": [
+    "No timeout scored as a loss.",
+    "No final selection or private evaluation; no competency conclusion.",
+    "No retry or fallback inside the original trial.",
+    "Current unsubmitted local source is not a selected finalist.",
+    "Cooperative filesystem boundary, not hard confinement."
+  ]
+}

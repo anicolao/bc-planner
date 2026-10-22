@@ -1,0 +1,32 @@
+{
+  "status": "passed",
+  "frozen_files_verified": 978,
+  "candidate_fixed_files": 57,
+  "audit_events": 80,
+  "audit_operations": {
+    "validation_status": 2,
+    "experiment_note": 1,
+    "submit": 1,
+    "result": 28,
+    "game_attempt": 8,
+    "complete": 1,
+    "replay": 39
+  },
+  "games": 8,
+  "validation_games": 0,
+  "queries": 39,
+  "modes": {
+    "own_diagnostics": 16,
+    "actions": 23
+  },
+  "diagnostic_rows_compared": 89,
+  "responses_with_continuation": 10,
+  "terminal_source_coverage_games": 8,
+  "both_team_activity_games": 8,
+  "source_and_eight_replay_parity": true,
+  "driver_exit": 0,
+  "service_exit": 130,
+  "service_process_observed_absent": true,
+  "inventory_sha256": "91296c925908eb18441d77d23250a8e44004a7a9369d83676a7988e6399bf623",
+  "freeze_sha256": "0ee95d70e54bfeca44a6cab973f67c9e92109a214c648d86480527c0ae2f04b2"
+}

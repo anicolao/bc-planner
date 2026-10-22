@@ -1,28 +1,34 @@
 # Competitive program checkpoint
 
-Updated 2026-10-22 12:36 UTC. **The competitive goal is not achieved.**
-The existing VM now runs the cooperative scrimmage service; a missing host or
-provider API is not the current execution blocker. This is not hard filesystem
+Updated 2026-10-22 14:30 UTC. **The competitive goal is not achieved.**
+The existing VM runs the cooperative scrimmage service; missing host/provider
+access is not the current execution blocker. This is not hard filesystem
 isolation. Historical statements below describe their dates, not current state.
 
-Current work: [BCENV-009 public finalist validation](2023-public-finalist-validation-009.md),
-[planner PR16](https://github.com/anicolao/bc-planner/pull/16), stacked on PR15;
-[bcenv PR21](https://github.com/anicolao/bcenv/pull/21), stacked on PR20.
-Code CI and390 local tests passed. The separate32-game public tutorial phase
-preflight passed, with110 replay queries and independent code/input reviews.
-Updated protocol CI, parent readiness and independent live parity passed.
-Fresh009 completed64 training plus16 locked-finalist validation games and stopped
-before its deadline. Both finalists tied at4/8 public validation; provisional V3
-remained selected. Independent blind source/process review and exact selected
-rebuild passed, with narrow correctness and cooperative-boundary limitations.
-This is a functioning selection workflow, not established broad competence.
-No merge is authorized.
+[BCENV-010 stopped without a final selection](2023-own-diagnostics-010-public-outcome.md):
+six submissions, 48 completed training games, 14 completed validation games,
+one unscored engine timeout and one unattempted reserved cell. Both competitor
+and service are stopped; the frozen inventory and immutable finalist snapshots
+passed independent mechanical review. No fallback or private evaluation occurred.
+The own-team diagnostic channel was used, but this is not evidence of competence.
 
-Recent cooperative work and public-development checkpoints are recorded in
-[replication006/007](2023-cooperative-replication-006.md) and
-[validation008](2023-cooperative-validation-008.md). The private evaluator
-summary publication request remains separate and pending; no such outcome
-payload is included here. Existing frozen competitors are not resumed.
+A separately preregistered, one-attempt public engineering diagnostic completed
+in122.407 seconds with the same frozen inputs and a300-second cap. This supports
+a prospective cap increase for that execution, not a retroactive repair or causal
+explanation of010. BCENV-011 preparation changes only the trusted public match-run
+cap to300 seconds, uniformly in both phases, with the unchanged45-minute global
+deadline/max80 games and120-second unrelated operation limits. Code review/CI,
+an8-game public tutorial preflight and independent clean-input/live-parity gates
+remain required before a fresh launch. [bcenv PR22](https://github.com/anicolao/bcenv/pull/22)
+remains draft and is the parent implementation; no merge is authorized.
+
+[BCENV-009](2023-public-finalist-validation-009.md) completed its public phases
+and is stopped/frozen with blind review and exact selected rebuild verified.
+A functioning workflow or recorded process is not established competence.
+Earlier public-development records remain in [006/007](2023-cooperative-replication-006.md)
+and [008](2023-cooperative-validation-008.md). Existing competitors are never resumed.
+The separate private evaluator-summary publication request remains pending; no
+such outcome payload is included here.
 
 ## Historical checkpoint snapshot — 2026-10-20
 

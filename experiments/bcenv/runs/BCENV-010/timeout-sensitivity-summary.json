@@ -1,0 +1,29 @@
+{
+  "schema": "bcenv.public-timeout-sensitivity-summary.v1",
+  "trial": "BCENV-010-diagnostic-only",
+  "prospectively_authorized_attempts": 1,
+  "actual_attempts": 1,
+  "started_utc": "2026-10-22T14:18:57+00:00",
+  "engine_wall_cap_seconds": 300,
+  "heap_mib": 512,
+  "engine_elapsed_seconds": 122.407,
+  "engine_exit_code": 0,
+  "initial_summary_elapsed_seconds": 0.369,
+  "outer_elapsed_seconds": 123.16635050300101,
+  "status": "completed",
+  "replay_valid": true,
+  "frozen_source_binary_map_engine_unchanged": true,
+  "normalized_engine_config_unchanged_except_output_paths": true,
+  "original_service_candidate_opponent_roots_unchanged": true,
+  "hashes": {
+    "prospective_protocol": "ab497622e88e65212e70a1a5bf753284c61360a5a94b97e7ddc3750395ff59b5",
+    "driver": "2be23589d6994d211d31758e6140f924087e443d3add940dc6b98179abfbff48",
+    "replay": "632060708525ff2ab890105a0d0b5e15f53f2a87177521a463cd355e35bc0032",
+    "diagnostic_freeze": "7ca982838590b9ec62e7f16d6f3240cce1dc6bc08f81d0f3b62dcbd724962ba9",
+    "independent_review": "798089618c8a3586dc17424c47745b5258e7473405811845c9a9ab7ea078a643"
+  },
+  "interpretation": "120 seconds was insufficient for this separate execution. This does not establish the original timeout cause, repair validation, select a finalist or evaluate model competence.",
+  "private_evaluation": false,
+  "candidate_restarted": false,
+  "original_trial_modified": false
+}

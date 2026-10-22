@@ -1,0 +1,59 @@
+{
+  "schema": "bcenv.own-diagnostics-readiness.v1",
+  "status": "engineering_pass",
+  "commit": "66ff4650fd6481cf3a69925098e48e6abc865e53",
+  "pr": "https://github.com/anicolao/bcenv/pull/22",
+  "base_pr": 21,
+  "draft": true,
+  "ci_run": "https://github.com/anicolao/bcenv/actions/runs/39783686439",
+  "ci_status": "success",
+  "candidate_launch_authorized_by_this_record": false,
+  "merged": false,
+  "runtime": "/nix/store/1bbk58382aq40pplbyy2fir27qnx3jxj-bcenv-2023-0.1.0",
+  "local_smoke_runtime": "/nix/store/ir2mliawfvi6gg07rgrx1pfcp0bf3f0f-bcenv-2023-0.1.0",
+  "engine_sha256": "2b6db98e312e0e509d599acc46bffbb55c2569de0f12c8214a85ee57625f15f2",
+  "tests": {
+    "full_python": 420,
+    "final_focused": 31,
+    "nix_active_and_legacy_replay_parser": "passed",
+    "npm_ci_offline_and_hooks": "passed",
+    "actual_adapter_worker_slots": [
+      "A",
+      "B"
+    ],
+    "public_raw_vector_rows": 106573,
+    "public_raw_vector_queries": 46,
+    "replay_and_result_bytes_unchanged": true,
+    "default_action_query_bytes_unchanged": true
+  },
+  "new_experimental_games": 0,
+  "unchanged_ci_fixture_games_maximum_uncached": 6,
+  "ci_reruns": 0,
+  "evidence": {
+    "engineering/diagnostics-final-full-tests.log": "47f0f344974b635b3a0456e00bfe2b3f7c15a11af7425addb59dd4b69a4413e8",
+    "engineering/diagnostics-final-focused-tests.log": "84f6313a18f0e821d3b041bb95a69861a012514754e61f231777bad7c9bbb883",
+    "engineering/diagnostics-hooks-tests.log": "41bc181e4a17ebef7f2a952df215a15e4328ed76c9ea1de4f9f2f46ee41d6b6a",
+    "engineering/diagnostics-nix-parser-checks.log": "59de8e2a4f01772aa7b1e29b2c6d5585e439bc9d1d9fc6d92727076df72bb901",
+    "engineering/diagnostics-runtime-smoke/summary.json": "aff8f5c6a67b8e5c1780a25e5c635dc41363ae48e342272f03c6a380e4660553",
+    "engineering/diagnostics-public-replay-check/summary.json": "a8967bfd4595bc9b4296907f414d96d14eaa3080a2968f532259cfe8cc13cde2",
+    "engineering/diagnostics-runtime-equivalence.json": "1c8b65595156ac24952053968fa3477c1679db8a246744e8834e33a61765ad9a",
+    "reviewer/OWN-DIAGNOSTICS-ENGINEERING-REVIEW.md": "b1fc3f9453a6409c90e49337248638acd3ea7f7647dcd114462918b05d860897",
+    "engineering/diagnostics-ci-result.json": "a9892b5e85a2b0a225478a4ff7b92d00f216f2e9d2512ee24aa07752a96b5d8f",
+    "engineering/diagnostics-ci-commit.json": "5b20ecdf87947a889de0d354c584db2f619616a2c7fcc27c23098d3a746fbc33",
+    "engineering/diagnostics-ci-evidence/store-path.json": "3b86c7810770c30977e09eeb233ced25acf2f25cb5710134d41c96cd68ecb35a",
+    "engineering/diagnostics-local-nar.json": "7e03704e4094ea3ed2012201b3d3cffddcd265723c67ea24eb1bf87238d560c2"
+  },
+  "limits": [
+    "cooperative same-VM profile unchanged",
+    "no automatic exception capture",
+    "no CPU-time/correctness claim",
+    "no competitive-performance conclusion",
+    "no candidate010 launch or protocol authorized"
+  ],
+  "ci_merge_commit": "5c254eb4dad9942d0c7712d5cc6dded12184f37d",
+  "equal_git_tree": "fecf508d573cd92a779c102e1c18c55dbe00e97d",
+  "ci_runtime": "/nix/store/1bbk58382aq40pplbyy2fir27qnx3jxj-bcenv-2023-0.1.0",
+  "ci_nar_hash": "sha256-1MzBzVI1R4gsIv6dpxJceQfgznGm4zyvUMJlyXvUNxo=",
+  "local_ci_nar_equal": true,
+  "local_ci_dependency_references_equal": true
+}

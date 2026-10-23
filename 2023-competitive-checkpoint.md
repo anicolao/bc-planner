@@ -1,9 +1,29 @@
 # Competitive program checkpoint
 
-Updated 2026-10-23 03:32 UTC. **The competitive goal is not achieved.**
+Updated 2026-10-23 03:52 UTC. **The competitive goal is not achieved.**
 The existing VM hosts the cooperative scrimmage environment; missing host/provider access is not the current execution blocker. This is not hard filesystem isolation. Historical statements below describe their dates, not current state.
 
-## Latest: BCENV-015 incomplete after local compiler timeout
+## Latest: BCENV-016 prospective local-receipt preparation
+
+[BCENV016 method](2023-local-receipt-016.md) is a separately identified fresh author,
+not015 recovery or a retrospective change to015's stopping contract. Only the
+reviewed local helper receipts and generic local-failure taxonomy change from015;
+transfer/recovery schedules, caps and original six-hour deadline semantics remain.
+[bcenv PR30](https://github.com/anicolao/bcenv/pull/30) source9a48db55 has
+[exact-head CI39896396793](https://github.com/anicolao/bcenv/actions/runs/39896396793)
+passing797 Python tests. Runtime0azcm is unchanged. The audited public transfer
+parity is reused; no extra game preflight is claimed or required for this delta.
+
+An ordinary failed local experiment may permit an author-directed revision or
+distinct diagnostic only with positive owned-cleanup receipt, actual external
+terminal observation and no uncertain service effect. Identical timeout retries
+are not automatic; infrastructure/ownership/UNKNOWN/ambiguous-service conditions
+still stop. No operator strategy advice, forced usage or competence inference.
+Static review corrected an opaque-hash transcription error before launch and
+rebound the final inputs. Public preregistration, final CI and actual live gates
+remain pending; no author or service launch is claimed. Prior015 remains incomplete.
+
+## Prior: BCENV-015 incomplete after local compiler timeout
 
 BCENV015 ended without finalist selection or private evaluation. Transfer was
 unused; this is not a performance result or evidence about the transfer intervention.

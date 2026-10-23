@@ -1,9 +1,28 @@
 # Competitive program checkpoint
 
-Updated 2026-10-23 02:03 UTC. **The competitive goal is not achieved.**
+Updated 2026-10-23 03:07 UTC. **The competitive goal is not achieved.**
 The existing VM hosts the cooperative scrimmage environment; missing host/provider access is not the current execution blocker. This is not hard filesystem isolation. Historical statements below describe their dates, not current state.
 
-## Latest: BCENV-014 development completed; independent assessment remains separate
+## Latest: BCENV-015 prospective public-transfer preparation
+
+[BCENV015 method](2023-public-transfer-015.md) proposes a fresh inherited-configuration
+author with an optional public-transfer intervention, not014 recovery or a
+same-model replication. [bcenv PR29](https://github.com/anicolao/bcenv/pull/29)
+sourcec046129 has [exact-head green CI39891793354](https://github.com/anicolao/bcenv/actions/runs/39891793354),
+782 Python tests and independent201 guarded-test review. Runtime0azcm is unchanged.
+At most two optional eight-cell transfer batches reuse a completed ordinary
+source/build/package without rebuilding and consume existing24/192 capacity;
+locked16 validation and six-hour deadline remain unchanged. Transfer cannot
+supply a finalist. Map choice uses public103-map dimensional metadata only, not
+private membership or outcomes. No forced usage or strategic coaching is added.
+
+Actual separately authorized parity is pending independent outcome review;
+preparation/static review is not a passing runtime result. No author/service
+launch is claimed. Publication/preregistration, exact CI, actual parity PASS and
+independent live readiness remain gates. The prior014 development evidence below
+is unchanged, and private assessment is not part of this publication.
+
+## Prior: BCENV-014 development completed; independent assessment remains separate
 
 The fresh inherited-configuration author finished voluntarily in epoch0, without
 recovery or replacement. Development kickoff was observed01:24:51 UTC, native

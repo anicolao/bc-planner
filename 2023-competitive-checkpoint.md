@@ -1,9 +1,68 @@
 # Competitive program checkpoint
 
-Updated 2026-10-23 02:03 UTC. **The competitive goal is not achieved.**
+Updated 2026-10-23 03:32 UTC. **The competitive goal is not achieved.**
 The existing VM hosts the cooperative scrimmage environment; missing host/provider access is not the current execution blocker. This is not hard filesystem isolation. Historical statements below describe their dates, not current state.
 
-## Latest: BCENV-014 development completed; independent assessment remains separate
+## Latest: BCENV-015 incomplete after local compiler timeout
+
+BCENV015 ended without finalist selection or private evaluation. Transfer was
+unused; this is not a performance result or evidence about the transfer intervention.
+The original clock began03:14:12 UTC, development kickoff03:15:56, author stop
+03:25:46 and owned service normal exit0 at03:25:54. Six hours was a maximum,
+not endurance demonstrated. No retry, replacement or retrospective policy change
+repairs this run.
+
+Three COMPLETE ordinary batches contain24 COMMITTED games. A fourth batch is
+UNKNOWN/unscored with five admitted cells: four physically completed result
+artifacts and one cancelled attempt. Thus29 games were admitted/debited, not29
+committed or scored games. No validation or transfer batch ran; no selected
+fallback exists. Independent preservation checks verified59 unchanged fixed
+inputs and1719 stable candidate/live snapshot files.44 adapter acknowledgments
+and72 persisted owned inner waits support observed direct-child cleanup, not
+system-wide process absence or old012/013 helper quiescence.
+
+The fixed candidate_check local compiler receipt reports timeout, elapsed36.137s,
+exit−9,256MiB Java heap, empty log and verifier not run. Its requested timeout is
+not retained and remains unknown; documented default is30s, allowed1–120s per
+phase. Elapsed time includes helper cleanup, not compiler CPU time or a strict
+cutoff guarantee. This path uses the helper's own bounded runner, not the service
+runtime executor. Empty output/exit−9 do not establish the underlying cause or
+compilability under another budget. No diagnostic rebuild or retry was performed
+for this checkpoint. Earlier execution-success receipts do not establish semantic
+correctness of this unfinished source.
+
+The prospective protocol remains frozen. Independent review supports preservation
+and incomplete classification only, not competence, six-hour continuity or a
+causal performance conclusion. Public-safe SHA256 commitments: final freeze index
+`fa965977f4c5398c2012d2301236079a28eb033d5484dd01da541bdf7ba4b373`;
+mechanical gate
+`31954c2c9a420b8d95cee4299ee1151e02e58a06aec3cb51a62b8588d5c80314`;
+inventory `04fbc27d7435d46bb04877ee564840c9e692384410ca99ff5749e0f4ef2598fd`;
+independent stop/timeout review
+`8d07b864953107a8b45f86914cf4239735591a1f6904acf822300e3f8a400b9f`.
+No raw candidate/runtime or private evaluator payload is published. The project
+goal remains unmet.
+
+## Prior: BCENV-015 prospective public-transfer preparation
+
+[BCENV015 method](2023-public-transfer-015.md) proposes a fresh inherited-configuration
+author with an optional public-transfer intervention, not014 recovery or a
+same-model replication. [bcenv PR29](https://github.com/anicolao/bcenv/pull/29)
+sourcec046129 has [exact-head green CI39891793354](https://github.com/anicolao/bcenv/actions/runs/39891793354),
+782 Python tests and independent201 guarded-test review. Runtime0azcm is unchanged.
+At most two optional eight-cell transfer batches reuse a completed ordinary
+source/build/package without rebuilding and consume existing24/192 capacity;
+locked16 validation and six-hour deadline remain unchanged. Transfer cannot
+supply a finalist. Map choice uses public103-map dimensional metadata only, not
+private membership or outcomes. No forced usage or strategic coaching is added.
+
+Actual separately authorized parity is pending independent outcome review;
+preparation/static review is not a passing runtime result. No author/service
+launch is claimed. Publication/preregistration, exact CI, actual parity PASS and
+independent live readiness remain gates. The prior014 development evidence below
+is unchanged, and private assessment is not part of this publication.
+
+## Prior: BCENV-014 development completed; independent assessment remains separate
 
 The fresh inherited-configuration author finished voluntarily in epoch0, without
 recovery or replacement. Development kickoff was observed01:24:51 UTC, native

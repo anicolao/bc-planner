@@ -1,9 +1,71 @@
 # Competitive program checkpoint
 
-Updated 2026-10-23 03:32 UTC. **The competitive goal is not achieved.**
+Updated 2026-10-23 05:05 UTC. **The competitive goal is not achieved.**
 The existing VM hosts the cooperative scrimmage environment; missing host/provider access is not the current execution blocker. This is not hard filesystem isolation. Historical statements below describe their dates, not current state.
 
-## Latest: BCENV-015 incomplete after local compiler timeout
+## Latest: BCENV-016 public development completed and frozen
+
+The fresh author voluntarily completed epoch0 with no recovery. Original service
+clock03:55:38 UTC, native terminal05:00:31 and normal service exit0 at05:00:38
+represent roughly65 minutes, **not six-hour endurance**. The prospective protocol
+remains unchanged; no private evaluation result is included here.
+
+All128 public games committed:96 ordinary,16 optional transfer and16 locked
+validation. Twelve ordinary versions plus two transfer admissions consumed existing
+capacity. The selected ordinary original006 scored **6/8 ordinary,4/8 transfer,
+6/8 public validation**. These distinct blocks are not pooled or represented as
+private held-out performance. Both immutable finalists completed validation; the
+allowed final choice changed from provisional012 to006 after feedback. A one-cell
+validation advantage is not a robust superiority or competence finding.
+
+Both optional transfer slots were actually used with exact original
+source/build/package copies. Recorded feedback informed subsequent source-bound
+experimentation, including disclosed negative evidence; this does not establish
+a causal benefit. The new local-timeout continuation branch was not exercised.
+Independent copied-test checks found selected CoreRegression passing and the
+retained historical NavigationTest failing its long-wall assertion. Execution
+success is not comprehensive correctness; these limitations remain explicit.
+
+Independent checks rehashed7286 frozen candidate/live files and59 unchanged fixed
+inputs.181 adapter acknowledgments and317 persisted inner waits were reaped under
+the owned cleanup contract; no global descendant or old012/013 quiescence claim
+follows. The sole old29fs-runtime selected rebuild matched all10 checked identities
+and was independently verified. Frozen copies/current hashes are not OS immutability.
+Blind process review supports meaningful bounded tests, replay-grounded iteration,
+immutable selection and actual transfer use, not general competence, causal
+improvement, native recovery or six-hour continuity.
+
+Public-safe SHA256 commitments: final freeze index
+`b0520e6cc2543c0a108098131c9875d657c5dbbe9d8ad8b731bedeb072223bf5`;
+inventory `fc4b832e023306423f379d66e43af92a0e2561a866f9a38ced300700ac95c9e6`;
+source verification `efdac4f4db6f5a6d6a809b695c5d3ec3cf8eb5154b11b06a422b0a66daaa4831`;
+rebuild audit `87eeef44a028f36cd805033510c2812c61a406746c648d362140b7197b710dc9`;
+blind review `1e86155913c1a855c9d0a58e348058b0754f973a05b2f8bab863c4df276e9ea9`.
+The blind review was fixed before private outcomes. No raw candidate bundle,
+private panel or outcome payload is published. The competitive goal remains
+unestablished by this development-only checkpoint.
+
+## Prior: BCENV-016 prospective local-receipt preparation
+
+[BCENV016 method](2023-local-receipt-016.md) is a separately identified fresh author,
+not015 recovery or a retrospective change to015's stopping contract. Only the
+reviewed local helper receipts and generic local-failure taxonomy change from015;
+transfer/recovery schedules, caps and original six-hour deadline semantics remain.
+[bcenv PR30](https://github.com/anicolao/bcenv/pull/30) source9a48db55 has
+[exact-head CI39896396793](https://github.com/anicolao/bcenv/actions/runs/39896396793)
+passing797 Python tests. Runtime0azcm is unchanged. The audited public transfer
+parity is reused; no extra game preflight is claimed or required for this delta.
+
+An ordinary failed local experiment may permit an author-directed revision or
+distinct diagnostic only with positive owned-cleanup receipt, actual external
+terminal observation and no uncertain service effect. Identical timeout retries
+are not automatic; infrastructure/ownership/UNKNOWN/ambiguous-service conditions
+still stop. No operator strategy advice, forced usage or competence inference.
+Static review corrected an opaque-hash transcription error before launch and
+rebound the final inputs. Public preregistration, final CI and actual live gates
+remain pending; no author or service launch is claimed. Prior015 remains incomplete.
+
+## Prior: BCENV-015 incomplete after local compiler timeout
 
 BCENV015 ended without finalist selection or private evaluation. Transfer was
 unused; this is not a performance result or evidence about the transfer intervention.

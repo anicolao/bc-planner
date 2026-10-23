@@ -1,9 +1,52 @@
 # Competitive program checkpoint
 
-Updated 2026-10-23 01:18 UTC. **The competitive goal is not achieved.**
+Updated 2026-10-23 02:03 UTC. **The competitive goal is not achieved.**
 The existing VM hosts the cooperative scrimmage environment; missing host/provider access is not the current execution blocker. This is not hard filesystem isolation. Historical statements below describe their dates, not current state.
 
-## Latest: BCENV-014 prospective resumable-profile preparation
+## Latest: BCENV-014 development completed; independent assessment remains separate
+
+The fresh inherited-configuration author finished voluntarily in epoch0, without
+recovery or replacement. Development kickoff was observed01:24:51 UTC, native
+terminal01:56:52, and normal owned service return/exit0 at01:57:00. Roughly34
+minutes of initialized service is **not six-hour endurance**; six hours was a
+maximum. Public protocol and preregistration remain unchanged.
+
+Authoritative evidence contains9 versions,72 training games and16 locked public
+validation games (88 total). Exactly two immutable finalists completed validation;
+selected V07 won **7/8 public training and4/8 public validation** games, verified
+against retained result winner/own-slot fields. These are development scores,
+not private benchmark results or a competence conclusion. Counters also record
+9 notes,15 replay admissions,51 reads and75 mailbox attempts. No epoch advance,
+renomination or fallback selection occurred.
+
+Independent mechanical verification checked59 unchanged fixed inputs and5122
+frozen candidate/live files, exact selected source and all11 COMPLETE manifests.
+An independent old29fs-runtime rebuild matched selected source/class/package
+identity; no extra matches were run for verification.121 adapter acknowledgments
+and209 persisted inner waits support direct-child cleanup through the reviewed
+adapter path; individual outer-wait records were not separately persisted. One
+operator stop was accepted; this is neither a global process census nor evidence
+of old012/013 helper quiescence. Frozen copies/hash equality are not OS immutability.
+
+Blind public-only review supports meaningful source-bound iteration, bounded
+replay use and narrow assertions, with explicitly disclosed negative evidence.
+A navigation assertion failure was reproduced; several other focused tests passed.
+Broader correctness/generalization remain partial or unestablished. Interface
+completion does not establish competitive competence or native recovery ability.
+Private assessment is a separate gated process; **no private outcomes, panel
+contents or raw candidate bundle are published here**. The project goal remains
+unmet on this public checkpoint alone.
+
+Public-safe SHA256 commitments: mechanical gate
+`4223df8fa83c2129b891465d9dc7c356c0d8c3d242b6cc73c36854c24b918717`;
+full inventory `a3599bcc30f007cd94af3deb0c83dbd0d95a4615901b3b974e1d0aa0e4ad6489`;
+source verification `8f5a3a556f8bc634b77dee1ba3efda4c0958f9dcc7d0a9f0fc2073fcae5d2f39`;
+rebuild audit `93673d62b117635030c901b2b8535e8c3f83459fc08dd68f4b667362dee60832`;
+blind review `638ab225ad41a47ba7217090ef6110950cad1a760c1b8db936e8449d1ed60e35`.
+The blind review was fixed before private outcomes. Source composition remains
+4c467808 with unchanged installed0azcm runtime; public code/docs head293bae1.
+
+## Prior: BCENV-014 prospective resumable-profile preparation
 
 [BCENV014 method](2023-resumable-continuity-014.md) is a separately identified fresh
 author/profile, not recovery of012/013. Source composition4c467808 and reviewed

@@ -1,9 +1,31 @@
 # Competitive program checkpoint
 
-Updated 2026-10-22 23:41 UTC. **The competitive goal is not achieved.**
+Updated 2026-10-23 01:18 UTC. **The competitive goal is not achieved.**
 The existing VM hosts the cooperative scrimmage environment; missing host/provider access is not the current execution blocker. This is not hard filesystem isolation. Historical statements below describe their dates, not current state.
 
-## Latest: BCENV-013 infrastructure-continuity incomplete
+## Latest: BCENV-014 prospective resumable-profile preparation
+
+[BCENV014 method](2023-resumable-continuity-014.md) is a separately identified fresh
+author/profile, not recovery of012/013. Source composition4c467808 and reviewed
+engineering checkpoint293bae1 are published in [bcenv PR28](https://github.com/anicolao/bcenv/pull/28);
+[exact-head CI39882717591](https://github.com/anicolao/bcenv/actions/runs/39882717591)
+passed729 Python tests. The installed0azcm runtime is unchanged. One independently
+audited inert recovery and one authorized public8-game/4-projection recovery
+qualified their exact compositions:449 COMPLETE manifest files restored, original
+accounting/deadlines conserved and normal owned stop. These do not establish
+native competitor continuity, engine in-flight cancellation or legacy helper death.
+
+014 uses59 clean fixed inputs, inherited model/reasoning configuration and a
+prospective identity-only initialization before the one original six-hour service
+clock. Development begins only on the same saved handle after independent live
+empty-state/binding review. Recovery, if needed and valid, is same-author only,
+with original deadlines/debits and committed own evidence; UNKNOWN work is never
+retried/refunded. Capacity remains24 versions/208 games, not a promised outcome.
+Public preregistration/final CI and actual live readiness are pending; no author
+or service launch is claimed here. Evaluator/rubric commitments alone are public,
+not private contents or results. The competitive goal remains unmet.
+
+## Prior: BCENV-013 infrastructure-continuity incomplete
 
 BCENV-013 is interrupted, **not a performance result or full freeze**. The actual
 service initialized at23:02:12.843267 UTC with deadline05:02:12.843267 UTC on

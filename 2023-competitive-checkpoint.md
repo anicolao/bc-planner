@@ -1,9 +1,44 @@
 # Competitive program checkpoint
 
-Updated 2026-10-23 05:54 UTC. **The competitive goal is not achieved.**
-The existing VM hosts the cooperative scrimmage environment; missing host/provider access is not the current execution blocker. This is not hard filesystem isolation. Historical statements below describe their dates, not current state.
+Updated 2026-10-23 12:36 UTC. **The competitive goal is not achieved.**
+The earlier cooperative environment is not currently available at its former local path. This is not hard filesystem isolation. Historical statements below describe their dates, not current state.
 
-## Latest: BCENV-017 prospective workflow repeat
+## Latest: BCENV-017 expired incomplete; raw evidence currently unavailable
+
+The original service clock was06:01:20.229189UTC with deadline12:01:20.229189UTC;
+kickoff was06:03:10. The original deadline has elapsed. Coordinator observations
+report that the author stopped after an uncertain result-read transport timeout,
+without final selection. No resume, replacement author, epoch CAS or evaluation
+is authorized or represented by this checkpoint.
+
+The last retained ledger observation at06:09:45 reported two COMPLETE batches
+and16 committed games, with a third RUNNING batch and six admitted cells.
+Later author reports of versions04/05 being accepted are not terminal ledger or
+completion evidence. These are last-known observations, **not final counts**;
+no final game totals, selected artifact or result is inferred.
+
+Coordinator-reported environment access failures continued through11:57. Access
+returned around12:34, but a bounded independent inspection found the former
+replication-006 tree absent at its expected path and no matching directory within
+depth3 of the two checked workspace roots. Older repositories remain accessible.
+This establishes current bounded absence, not permanent deletion, a refresh cause
+or global irrecoverability. A poll of the previously owned service handle returned
+a transport error, not normal exit, process death or child-reaping evidence.
+
+Final SQL state, source freeze, artifact inventory, terminal receipts and raw
+local evidence are presently unavailable. Published hashes and retained context
+are not raw copies, a reconstructed freeze or proof of cleanup. Final reconciliation
+and evaluation-release gates cannot pass on this evidence. Old helper quiescence
+also remains unknown. No private outcomes or raw payload are published.
+
+Independent bounded access-loss assessment SHA256
+`b90a0c0dc51f42941d162502504b24aae03197f4e155d18221f41e8117846a13`
+distinguishes earlier observations from current inspection and coordinator reports.
+The prospective017 protocol and earlier commitments remain unchanged. Future
+experiments require a retention plan and separate gates; no automatic next trial
+or six-hour continuity success is implied. The competitive goal remains unmet.
+
+## Prior: BCENV-017 prospective workflow repeat
 
 [BCENV017 method](2023-evaluator-policy-017.md) proposes a separately identified
 fresh author with unchanged016 candidate environment: source9a48db55/runtime0azcm,

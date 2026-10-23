@@ -1,9 +1,63 @@
 # Competitive program checkpoint
 
-Updated 2026-10-23 05:05 UTC. **The competitive goal is not achieved.**
+Updated 2026-10-23 05:54 UTC. **The competitive goal is not achieved.**
 The existing VM hosts the cooperative scrimmage environment; missing host/provider access is not the current execution blocker. This is not hard filesystem isolation. Historical statements below describe their dates, not current state.
 
-## Latest: BCENV-016 public development completed and frozen
+## Latest: BCENV-017 prospective workflow repeat
+
+[BCENV017 method](2023-evaluator-policy-017.md) proposes a separately identified
+fresh author with unchanged016 candidate environment: source9a48db55/runtime0azcm,
+59 fixed inputs (55 unchanged, four path/derived changes), no prior candidate work.
+Inherited model configuration is not resolved-model attestation or same-model
+replication. The purpose is workflow repeatability, not an improvement claim.
+The evaluator-only policy/harness and explicit9000s global allowance change
+prospectively;016 had no explicit evaluator global deadline. The original candidate
+21600s clock and all public capacities remain unchanged.
+
+Independent final input review, public preregistration/exact-head CI and actual
+service-ready/live-empty gates remain required before author development. Existing
+audited public route evidence is reused; no extra qualification game or launch is
+claimed by this publication. The opaque evaluator commitment is
+`fbcb230fb4813bca123526dcfd7d591c1e05f5007b44c94bf38f48b460780a73`;
+no private payload or outcome is published.
+
+## Engineering: prospective evaluator-policy qualification
+
+[bcenv PR31](https://github.com/anicolao/bcenv/pull/31), exact source
+`9938eb130f6645162db76efd87f2376edd718cee`, has
+[CI39907463430](https://github.com/anicolao/bcenv/actions/runs/39907463430)
+passing831 Python tests. Runtime0azcm and its NAR remain unchanged. The generic
+prospective timeout classifier, durable censor record and single-assignment seam
+are engineering work, not retroactive changes to016 or a new trial authorization.
+Concrete local integration has been reviewed separately; no private implementation,
+panel, calibration, candidate source or evaluation outcome is published here.
+
+One separately authorized public tutorial normal assignment completed with normal
+exit0 and one valid result. Its replay and summary were byte-identical to the
+prior public reference. Engine elapsed3.285s and extraction0.165s both have positive
+owned reaping records. This establishes narrow normal-path/reference agreement,
+not candidate competence or actual timeout/censor-branch qualification.
+
+The actual outer wait was validated in memory but its timestamp was omitted from
+the durable valid record. It cannot now be reconstructed from inner receipts or
+batch/tool times; no retry or backfill occurred. This is a retention limitation,
+not evidence that cleanup failed. A separate prospective local harness amendment
+retains the actual outer wait and fails closed on missing or inconsistent normal
+receipt fields; seven guarded pure/mock tests passed. It has not run another
+qualification game. The next separately authorized normal assignment must retain
+those fields. No CPU/RSS telemetry, underlying timeout-cause conclusion, production
+engine timeout proof, old-helper quiescence or016 resumption is claimed.
+
+Public-safe SHA256 commitments: actual normal-path review
+`8c2d6d0047932678dd4c8efb61d43ba82fb77c7e746aa81c9b70f2d8b4675fad`;
+terminal audit `50d2c71648e7dc1a4befee006c250fcc570db8f664a122d2552e50dab0079736`;
+inventory `6e924c5907d738e24578eb3179742237194f1945c100ddd2a65b7e36938637a0`;
+prospective local harness `6cfcf26b9a47fda77fb77cb3e4dae89ec8cdb41db2abc9dcad2bc3a4876a8bbb`;
+prospective amendment review
+`851e274b548779adc75457c0d4f1cd228d23673cec4abacd3effc80d9aa097d5`.
+Raw execution material remains local. The competitive goal remains unachieved.
+
+## Prior: BCENV-016 public development completed and frozen
 
 The fresh author voluntarily completed epoch0 with no recovery. Original service
 clock03:55:38 UTC, native terminal05:00:31 and normal service exit0 at05:00:38
